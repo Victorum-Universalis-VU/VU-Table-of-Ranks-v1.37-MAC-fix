@@ -81,5 +81,5 @@ To San Felipe and the VU team, including consultants on our discord server (both
 To everyone over on the EU4 Mod Coop and BT servers.
 To all our fans, patrons/subcribers, mod testers and everyone else who has contributed to this mod out of pure passion and love for historical accuracy and the game francise Europa Universalis 1, 2, 3 & 4.
 
-Please visit our server over on Discord @ https://discord.gg/SExBqxHVBR for any help and or assistance with the mod, as well as for all other enquiries.
+Please visit our server over on Discord @ [https://discord.gg/SExBqxHVBR](https://discord.gg/adMNgrAj) for any help and or assistance with the mod, as well as for all other enquiries.
 
