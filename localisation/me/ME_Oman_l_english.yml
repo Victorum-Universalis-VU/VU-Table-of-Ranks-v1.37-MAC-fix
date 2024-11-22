@@ -1,4 +1,5 @@
 ﻿l_english:
+ #Missions:
  OMA_capture_hormuz_title: "Capture Hormuz"
  OMA_capture_hormuz_desc: "The vile Sultans of Hormuz dared to exploit our weakness and to seize our coast. As per our revenge, let us enter their sprawling islander city and do away with it."
  OMA_mahra_title: "Integrate the Mahra"
@@ -47,6 +48,7 @@
  OMA_zanzibar: "Zanzibar"
  OMA_zanzibar_ADJ: "Zanzibari"
  
+ #Events:
  ME_Oman_Events.1.t: "The Looting of Hormuz"
  ME_Oman_Events.1.d: "The vile Hormuzi have dared seize our coastline and terrorize our population. Much of Oman nowadays is under their control. As such the capture of Hormuz is a chance for us to reclaim our honor and to take vengeance for the crimes they had committed. But is it really something that is good? Isn't revenge evil? Shouldn't we perhaps choose to forgive them?"
  ME_Oman_Events.1.a: "Loot the city to the brim!"
@@ -76,20 +78,37 @@
  ME_Oman_Events.6.d: "As our forces enter the city, crowds cheer and praise Allah, as their city is finally liberated from the Hormuzi. It would be an understatement to say that the have been given a warm welcome, as there is nothing precious as the joy of the local families. [400.GetName] will remain Omani. We will ensure that."
  ME_Oman_Events.6.a: "A Warm Welcome is what we love."
  
+ #Modifiers:
  OMA_colonial_empire: "Colonial Ambitions"
+ desc_OMA_colonial_empire: ""
  OMA_marine_buff: "Amphibious Strikeforce"
+ desc_OMA_marine_buff: ""
  OMA_mahri_culture: "Brotherhood with the Mahri"
+ desc_OMA_mahri_culture: ""
  OMA_suqutra_modifier: "Strategic Island Secured"
- OMA_took_over_ormuz: "Secured Ormuz"
+ desc_OMA_suqutra_modifier: ""
  OMA_looted: "Looted to the Brim"
+ desc_OMA_looted: ""
  OMA_new_residence: "New Residence of the Sultan"
+ desc_OMA_new_residence: ""
  OMA_pearls_of_muscat: "Pearls of Muscat"
+ desc_OMA_pearls_of_muscat: ""
  OMA_bayah_received: "Bayah Received"
+ desc_OMA_bayah_received: ""
  OMA_oman_reunited: "Oman Reunited"
+ desc_OMA_oman_reunited: ""
  OMA_mosque_of_samail: "Mosque of Samail"
+ desc_OMA_mosque_of_samail: ""
  OMA_nakhal_fort: "Nakhal Fort"
+ desc_OMA_nakhal_fort: ""
  OMA_control_over_the_western_indian_ocean: "Control over the Western Indian Ocean"
+ desc_OMA_control_over_the_western_indian_ocean: ""
  OMA_center_of_trade: "A Center of Trade"
+ desc_OMA_center_of_trade: ""
  OMA_new_merchants: "Under New Management"
- 
+ desc_OMA_new_merchants: ""
  OMA_highlighted: "Is §YHighlighted§! by the Mission"
+ desc_OMA_highlighted: ""
+
+ #Keys:
+ OMA_took_over_ormuz: "Secured Ormuz"

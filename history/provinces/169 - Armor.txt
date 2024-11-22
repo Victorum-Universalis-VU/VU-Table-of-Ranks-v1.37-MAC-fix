@@ -26,12 +26,6 @@ base_manpower = 2
 
 #Known by Technology groups
 
-
-
-
-
-
-
 #Province history completed by - Darth Modus
 #1291.5.21 = { #VictorumUniversalis batch edit shortcut the first shattering begins
 #	owner = ---
@@ -55,8 +49,6 @@ base_manpower = 2
 #	controller = ---
 #	remove_core = ---
 #} #Return to proper mod added owners and cuts vanilla core, typically.
-
-1400.1.1 = { culture = gallo_culture }
 
 #1444.11.13 = { #VictorumUniversalis batch edit shortcut the second shattering begins
 #	owner = ---

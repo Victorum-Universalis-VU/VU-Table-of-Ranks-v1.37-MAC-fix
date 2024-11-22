@@ -67,6 +67,8 @@ sca_conquest_slot_2 = {
 			OR = {
 				area = weser_area
 				area = holstein_area
+				area = hamburg_area
+				area = lauenburg_area
 				area = lower_saxony_area
 				area = mecklenburg_area
 				area = vorpommern_area
@@ -79,6 +81,8 @@ sca_conquest_slot_2 = {
 				OR = {
 					area = weser_area
 					area = holstein_area
+					area = hamburg_area
+					area = lauenburg_area
 					area = lower_saxony_area
 					area = mecklenburg_area
 					area = vorpommern_area
@@ -95,6 +99,8 @@ sca_conquest_slot_2 = {
 						OR = {
 							area = weser_area
 							area = holstein_area
+							area = hamburg_area
+							area = lauenburg_area
 							area = lower_saxony_area
 							area = mecklenburg_area
 							area = vorpommern_area
@@ -217,7 +223,7 @@ sca_conquqest_slot_3 = {
 		}
 		trigger = {
 			total_own_and_non_tributary_subject_development = 3000
-			government_rank = 3
+			government_rank = 9
 			stability = 3
 			has_any_disaster = no
 		}
@@ -729,8 +735,8 @@ sca_development_slot_2 = {
 		}
 		effect = {
 			if = {
-				limit = { NOT = { government_rank = 3 } }
-				set_government_rank = 3
+				limit = { NOT = { government_rank = 9 } }
+				set_government_rank = 9
 			}
 			add_country_modifier = {
 				name = sca_scandinavian_tenacity

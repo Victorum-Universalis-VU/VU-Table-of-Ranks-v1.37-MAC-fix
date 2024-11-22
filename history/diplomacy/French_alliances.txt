@@ -1,9 +1,9 @@
-#VU updated by San Felipe
+#VU updated by San Felipe #
 #Vanilla EU4
 #EU4 1.35 turned French vassals into appanages ##
 #France-Orleans
 dependency = {
-	subject_type = appanage
+	subject_type = "french_duchy"
 	first = FRA
 	second = ORL
 	start_date = 1444.1.1
@@ -12,7 +12,7 @@ dependency = {
 
 # France-Armagnac
 dependency = {
-	subject_type = appanage
+	subject_type = "french_county"
 	first = FRA
 	second = AMG
 	start_date = 1444.1.1
@@ -21,7 +21,7 @@ dependency = {
 
 # France-Auvergne
 dependency = {
-	subject_type = appanage
+	subject_type = "french_duchy"
 	first = FRA
 	second = AUV
 	start_date = 1444.1.1
@@ -30,7 +30,7 @@ dependency = {
 
 # France-Comminges
 dependency = {
-	subject_type = appanage
+	subject_type = "french_county"
 	first = FRA
 	second = CMG
 	start_date = 1444.1.1
@@ -49,7 +49,7 @@ dependency = {
 
 # France-Foix
 dependency = {
-	subject_type = appanage
+	subject_type = "french_county"
 	first = FRA
 	second = FOI
 	start_date = 1444.1.1
@@ -58,7 +58,7 @@ dependency = {
 
 # France-Bourbon
 dependency = {
-	subject_type = appanage
+	subject_type = "french_duchy"
 	first = FRA
 	second = BOU
 	start_date = 1444.1.1
@@ -69,7 +69,8 @@ dependency = {
 ##################
 
 # France-Brittany
-union = {
+dependency = {
+	subject_type = "french_crown_PU"
 	first = FRA
 	second = BRI
 	start_date = 1491.12.6
@@ -77,7 +78,8 @@ union = {
 }
 
 # Poland and France under Henri III
-union = {
+dependency = {
+	subject_type = "french_crown_PU"
 	first = FRA
 	second = PLC
 	start_date = 1574.5.30
@@ -85,7 +87,8 @@ union = {
 }
 
 # France-Genoa
-union = {
+dependency = {
+	subject_type = "french_crown_PU"
 	first = FRA
 	second = GEN
 	start_date = 1458.1.1
@@ -93,7 +96,16 @@ union = {
 }
 
 # Provence and Lorraine under René of Anjou
-union = {
+dependency = {
+	subject_type = "french_crown_PU"
+	first = PRO 
+	second = BAR
+	start_date = 1400.7.12
+	end_date = 1620.1.1
+}
+
+dependency = {
+	subject_type = "french_crown_PU"
 	first = PRO
 	second = LOR
 	start_date = 1431.1.25
@@ -139,7 +151,7 @@ vassal = {
 
 # Normandy, a French vassal
 dependency = {
-	subject_type = appanage
+	subject_type = "french_duchy"
 	first = FRA
 	second = NRM
 	start_date = 1465.8.15
@@ -148,7 +160,7 @@ dependency = {
 
 # Nevers, a French vassal
 dependency = {
-	subject_type = appanage
+	subject_type = "french_county"
 	first = FRA
 	second = NEV
 	start_date = 1465.1.1
@@ -345,22 +357,6 @@ vassal = {
 	second = THU
 	start_date = 1806.10.14
 	end_date = 1813.10.13
-}
-
-# Switzerland and Austria (League of Constance)
-alliance = {
-	first = SWI
-	second = HAB
-	start_date = 1474.3.30
-	end_date = 1477.1.6
-}	
-
-# Switzerland and Lorraine (League of Constance)
-alliance = {
-	first = SWI
-	second = LOR
-	start_date = 1474.4.18
-	end_date = 1477.1.6
 }
 
 # Auld Alliance
@@ -636,7 +632,8 @@ alliance = {
 }
 
 # Kingdom of Italy
-union = {
+dependency = {
+	subject_type = "french_crown_PU"
 	first = NPF
 	second = ITA
 	start_date = 1805.3.18
@@ -676,7 +673,8 @@ vassal = {
 }
 
 # Ferdinand VII
-union = {
+dependency = {
+	subject_type = "french_crown_PU"
 	first = NPF
 	second = SPA
 	start_date = 1808.5.6
@@ -684,7 +682,8 @@ union = {
 }
 
 # Napoleonic Grand Duchy of Berg
-union = {
+dependency = {
+	subject_type = "french_crown_PU"
 	first = NPF
 	second = BRG
 	start_date = 1808.8.1
@@ -839,7 +838,7 @@ guarantee = {
 
 #French Counts of Rethel (VU)
 dependency = {
-	subject_type = "vassal"
+	subject_type = "french_county"
 	first = FRA
 	second = RET
 	start_date = 1431.1.25
@@ -847,15 +846,19 @@ dependency = {
 }
 
 dependency = {
-	subject_type = "vassal"
+	subject_type = "french_county"
 	first = BFR
 	second = RET
 	start_date = 1589.4.23
 	end_date = 1644.4.22
 }
 
+#################
+# Archbishopric #
+#################
+
 dependency = {
-	subject_type = "vassal"
+	subject_type = "european_archbishopric"
 	first = FRA
 	second = RHM
 	start_date = 1444.11.1 #VictorumUniversalis batch edit shortcut second performance start ends
@@ -863,7 +866,7 @@ dependency = {
 }
 
 dependency = {
-	subject_type = "vassal"
+	subject_type = "european_archbishopric"
 	first = BFR
 	second = RHM
 	start_date = 1589.1.2 #VictorumUniversalis batch edit shortcut second performance start ends
@@ -887,7 +890,7 @@ dependency = {
 #}
 
 dependency = {
-	subject_type = "vassal"
+	subject_type = "european_abbacy"
 	first = FRA
 	second = LGR
 	start_date = 1444.11.1 #VictorumUniversalis batch edit shortcut second performance start ends
@@ -895,7 +898,7 @@ dependency = {
 }
 
 dependency = {
-	subject_type = "vassal"
+	subject_type = "european_abbacy"
 	first = BFR
 	second = LGR
 	start_date = 1589.1.2 #VictorumUniversalis batch edit shortcut second performance start ends
@@ -904,89 +907,11 @@ dependency = {
 
 # France-Armagnac
 dependency = {
-	subject_type = appanage
+	subject_type = "appanage"
 	first = BFR
 	second = AMG
 	start_date = 1589.1.2
 	end_date = 1607.1.1
-}
-
-
-guarantee = {
-	first = BUR
-	second = CMB
-	start_date = 1444.11.18 #VictorumUniversalis batch edit shortcut second performance start ends
-	end_date = 1477.1.5
-}
-
-guarantee = {
-	first = BUR
-	second = TOA
-	start_date = 1444.11.18 #VictorumUniversalis batch edit shortcut second performance start ends
-	end_date = 1477.1.5
-}
-
-guarantee = {
-	first = BUR
-	second = SPO
-	start_date = 1444.11.18 #VictorumUniversalis batch edit shortcut second performance start ends
-	end_date = 1477.1.5
-}
-
-guarantee = {
-	first = BUR
-	second = UTR
-	start_date = 1444.11.18 #VictorumUniversalis batch edit shortcut second performance start ends
-	end_date = 1477.1.5
-}
-
-vassal = {
-	first = BUR
-	second = BSA
-	start_date = 1444.1.1 #VictorumUniversalis batch edit shortcut second performance start ends
-	end_date = 1477.1.5
-}
-
-vassal = {
-	first = BUR
-	second = LXL
-	start_date = 1444.1.1 #VictorumUniversalis batch edit shortcut second performance start ends
-	end_date = 1477.1.5
-}
-
-union = {
-				  
-	first = BUR
-	second = LUX
-	start_date = 1444.1.1 #VictorumUniversalis batch edit shortcut second performance start ends
-	end_date = 1477.1.5
-}
-union = {
-	first = BUR
-	second = HAI
-	start_date = 1444.1.1 #VictorumUniversalis batch edit shortcut second performance start ends
-	end_date = 1477.1.5
-}
-
-union = {
-	first = BUR
-	second = PIC
-	start_date = 1444.1.1 #VictorumUniversalis batch edit shortcut second performance start ends
-	end_date = 1477.1.5
-}
-
-union = {
-	first = BUR
-	second = ATS
-	start_date = 1444.1.1 #VictorumUniversalis batch edit shortcut second performance start ends
-	end_date = 1477.1.5
-}
-
-union = {
-	first = BUR
-	second = FLA
-	start_date = 1384.1.1 #VU
-	end_date = 1506.1.5
 }
 
 ################################################################
@@ -998,7 +923,8 @@ union = {
 ################
 
 #Provencal Dukes of Anjou
-vassal = {
+dependency = {
+	subject_type = "french_duchy"
 	first = PRO
 	second = ANJ
 	start_date = 1434.11.15
@@ -1006,7 +932,8 @@ vassal = {
 }
 
 #Provencal Dukes of Maine
-vassal = {
+dependency = {
+	subject_type = "french_duchy"
 	first = PRO
 	second = MNE
 	start_date = 1449.1.1

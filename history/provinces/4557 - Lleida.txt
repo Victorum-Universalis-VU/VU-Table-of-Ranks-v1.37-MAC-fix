@@ -1,8 +1,8 @@
+#4557 - Lleida
 
 owner = ARA		# Alfons V of Aragon
 controller = ARA
 add_core = ARA
-add_core = CTT
 culture = catalan
 religion = catholic
 hre = no
@@ -13,18 +13,14 @@ base_manpower = 1
 capital = "Lleida" 
 is_city = yes
 
-
-
-
-
-
-
+#Histories
+1444.11.11 = { owner = CAT controller = CAT add_core = CAT } # Portuguese territorial lands - By San Felipe
 
 1516.1.23 = {	controller = SPA
 	owner = SPA
 	add_core = SPA
 	capital = "Calatayud"
-} # King Fernando dies, Carlos inherits Aragon and becames co-regent of Castille
+} # King Fernando dies, Carlos inherits Aragon and becames co-regent of Castile
 1705.6.29 = { controller = HAB } # Aragon joins the Austrian side in the War of Spanish Succession
 1707.5.26 = { controller = SPA } # Aragon falls to the Borbonic troops
 1710.6.13 = { controller = HAB } # Archduke Carlos takes Zaragoza, paving again the way to Madrid

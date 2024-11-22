@@ -4,7 +4,7 @@
 
 owner = GLC
 controller = GLC
-culture = russian #116novogorodian
+culture = muscovite #116novogorodian
 religion = orthodox
 hre = no
 base_tax = 6

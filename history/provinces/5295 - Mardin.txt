@@ -2,6 +2,7 @@
 
 owner = BHT
 controller = BHT
+add_core = BHT
 culture = kurdish
 religion = sunni			#Appears to have been dominantly Yazidi from 1300s to 1800s
 capital = "Cizir"			#Kurdish version
@@ -11,28 +12,6 @@ base_tax = 4
 base_production = 4
 base_manpower = 2 
 is_city = yes
-add_core = BHT
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 1444.11.16 = { #VictorumUniversalis batch edit shortcut no vassal start date begin
 	owner = QAR

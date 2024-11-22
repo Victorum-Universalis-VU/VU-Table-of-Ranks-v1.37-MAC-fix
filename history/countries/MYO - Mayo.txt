@@ -1,6 +1,6 @@
 government = monarchy
 add_government_reform = irish_clann_reform
-government_rank = 1
+government_rank = 1 #Clan
 #technology_group = western
 technology_group = english_tech_group
 unit_type = western
@@ -11,7 +11,7 @@ fixed_capital = 3014
 
 1440.1.1 = {
 	monarch = {
-		name = "Edmund na FÃ©asÃ³ige"
+		name = "Edmund na Féasóige"
 		dynasty = "Burke"
 		adm = 1
 		dip = 3

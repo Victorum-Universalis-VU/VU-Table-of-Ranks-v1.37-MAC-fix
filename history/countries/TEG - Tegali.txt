@@ -1,6 +1,6 @@
-government_rank = 1
 government = tribal
 add_government_reform = tribal_kingdom
+government_rank = 6 #Petty_Kingdom
 primary_culture = tegali_culture
 religion = shamanism
 technology_group = sub_saharan

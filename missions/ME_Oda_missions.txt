@@ -8,6 +8,12 @@ ODA_missions_1 = {
 			AND = {
 				NOT = { has_reform = indep_daimyo }
 				NOT = { has_reform = daimyo }
+		        NOT = { has_reform = daimyo_barony_reform }
+		        NOT = { has_reform = daimyo_viscounty_reform }
+		        NOT = { has_reform = daimyo_county_reform }
+		        NOT = { has_reform = daimyo_marquisate_reform }
+		        NOT = { has_reform = daimyo_duchy_reform }
+		        NOT = { has_reform = daimyo_principality_reform }
 				NOT = { has_reform = shogunate }
 			}
 			has_country_flag = use_missions_expanded_missions_instead_of_paradox
@@ -225,6 +231,12 @@ ODA_missions_2 = {
 			AND = {
 				NOT = { has_reform = indep_daimyo }
 				NOT = { has_reform = daimyo }
+		        NOT = { has_reform = daimyo_barony_reform }
+		        NOT = { has_reform = daimyo_viscounty_reform }
+		        NOT = { has_reform = daimyo_county_reform }
+		        NOT = { has_reform = daimyo_marquisate_reform }
+		        NOT = { has_reform = daimyo_duchy_reform }
+		        NOT = { has_reform = daimyo_principality_reform }
 				NOT = { has_reform = shogunate }
 			}
 			has_country_flag = use_missions_expanded_missions_instead_of_paradox
@@ -353,6 +365,12 @@ ODA_missions_3 = {
 			AND = {
 				NOT = { has_reform = indep_daimyo }
 				NOT = { has_reform = daimyo }
+		        NOT = { has_reform = daimyo_barony_reform }
+		        NOT = { has_reform = daimyo_viscounty_reform }
+		        NOT = { has_reform = daimyo_county_reform }
+		        NOT = { has_reform = daimyo_marquisate_reform }
+		        NOT = { has_reform = daimyo_duchy_reform }
+		        NOT = { has_reform = daimyo_principality_reform }
 				NOT = { has_reform = shogunate }
 			}
 			has_country_flag = use_missions_expanded_missions_instead_of_paradox
@@ -492,7 +510,15 @@ ODA_missions_3 = {
 				tooltip = ODA_has_more_development_than_daymios
 				NOT = {
 					any_country = {
-						has_reform = daimyo
+						OR = {
+							has_reform = daimyo
+							has_reform = daimyo_barony_reform
+		                    has_reform = daimyo_viscounty_reform
+		                    has_reform = daimyo_county_reform
+		                    has_reform = daimyo_marquisate_reform
+		                    has_reform = daimyo_duchy_reform
+		                    has_reform = daimyo_principality_reform
+						}
 						NOT = { tag = ROOT }
 						OR = {
 							army_size = ROOT
@@ -563,7 +589,7 @@ ODA_missions_3 = {
 			}
 			add_country_modifier = {
 				name = oda_blaze_dragon
-				duration = 7300
+				duration = -1
 			}
 			japan_region = {
 				limit = {
@@ -586,6 +612,12 @@ ODA_missions_4 = {
 			AND = {
 				NOT = { has_reform = indep_daimyo }
 				NOT = { has_reform = daimyo }
+		        NOT = { has_reform = daimyo_barony_reform }
+		        NOT = { has_reform = daimyo_viscounty_reform }
+		        NOT = { has_reform = daimyo_county_reform }
+		        NOT = { has_reform = daimyo_marquisate_reform }
+		        NOT = { has_reform = daimyo_duchy_reform }
+		        NOT = { has_reform = daimyo_principality_reform }
 				NOT = { has_reform = shogunate }
 			}
 			has_country_flag = use_missions_expanded_missions_instead_of_paradox
@@ -724,6 +756,12 @@ ODA_missions_5 = {
 			AND = {
 				NOT = { has_reform = indep_daimyo }
 				NOT = { has_reform = daimyo }
+		        NOT = { has_reform = daimyo_barony_reform }
+		        NOT = { has_reform = daimyo_viscounty_reform }
+		        NOT = { has_reform = daimyo_county_reform }
+		        NOT = { has_reform = daimyo_marquisate_reform }
+		        NOT = { has_reform = daimyo_duchy_reform }
+		        NOT = { has_reform = daimyo_principality_reform }
 				NOT = { has_reform = shogunate }
 			}
 			has_country_flag = use_missions_expanded_missions_instead_of_paradox

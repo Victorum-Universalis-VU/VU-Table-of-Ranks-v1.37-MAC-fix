@@ -26,9 +26,13 @@
  TRADE_COMPANY_KOELN_Root_Culture_GetName:0 "[Root.Culture.GetName] Dutch Commissariat"
  TRADE_COMPANY_KOELN_European_Trade_Company:0 "Dutch Commissariat"
  #
- trade_company_danzig_trade:0 "Commissariat of the Baltics"
- TRADE_COMPANY_DANZIG_Root_Culture_GetName:0 "[Root.Culture.GetName] Baltic Commissariat"
- TRADE_COMPANY_DANZIG_European_Trade_Company:0 "Baltic Commissariat"
+ trade_company_danzig_trade:0 "Commissariat of the Danzig"
+ TRADE_COMPANY_DANZIG_Root_Culture_GetName:0 "[Root.Culture.GetName] Danzig Commissariat"
+ TRADE_COMPANY_DANZIG_European_Trade_Company:0 "Danzig Commissariat"
+ #
+ trade_company_riga_trade:0 "Commissariat of the Baltics"
+ TRADE_COMPANY_RIGA_Root_Culture_GetName:0 "[Root.Culture.GetName] Baltic Commissariat"
+ TRADE_COMPANY_RIGA_European_Trade_Company:0 "Baltic Commissariat"
  #
  trade_company_lyon_trade:0 "Commissariat of Switzerland"
  TRADE_COMPANY_LYON_Root_Culture_GetName:0 "[Root.Culture.GetName] Swiss Commissariat"

@@ -5,7 +5,7 @@
 owner = YLT
 controller = YLT
 add_core = YLT
-culture = russian #116ryazanian
+culture = ryazanian #116ryazanian
 religion = orthodox
 hre = no
 base_tax = 2

@@ -1,5 +1,6 @@
 government = monarchy
-add_government_reform = feudalism_reform
+add_government_reform = eue_kingdom_reform
+government_rank = 8 #Kingdom
 primary_culture = norwegian
 add_accepted_culture = icelandic
 add_accepted_culture = faroese
@@ -16,11 +17,10 @@ capital = 23 #Bergen
 }
 
 1436.1.1 = { 
-capital = 17 # Oslo 
+	capital = 17 # Oslo 
 	leader = { 
 		name = "Amund Bolt"
 		type = general 
- 
 		fire = 1 
 		shock = 2 
 		manuever = 2 
@@ -33,7 +33,6 @@ capital = 17 # Oslo
 	leader = { 
 		name = "Olav Galle" 
 		type = general 
- 
 		fire = 1 
 		shock = 2 
 		manuever = 2 
@@ -42,12 +41,26 @@ capital = 17 # Oslo
 	} 
 }
 
-1521.1.1 = { leader = { name = "Engelbriktsson"         type = general fire = 1 shock = 1 manuever = 3 siege = 0 death_date = 1538.2.7 } }
+1521.1.1 = { 
+	leader = { 
+		name = "Engelbriktsson"         
+		type = general 
+		fire = 1 
+		shock = 1 
+		manuever = 3 
+		siege = 0 
+		death_date = 1538.2.7 
+	} 
+}
 
-1537.1.1 = { religion = protestant } # Christian III decrees Lutheranism as State Church
+1537.1.1 = { 
+	religion = protestant 
+} # Christian III decrees Lutheranism as State Church
 
-1670.2.10 = { government = monarchy
-add_government_reform = autocracy_reform }
+1670.2.10 = { 
+	government = monarchy
+	add_government_reform = autocracy_reform 
+}
 
 1814.2.16 = {
 	monarch = {

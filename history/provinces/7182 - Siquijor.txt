@@ -3,7 +3,7 @@
 culture = visayan
 religion = hinduism
 capital = "Siquijor"
-trade_goods = pearls #Pearls
+trade_goods = seafood
 hre = no
 base_tax = 4  
 base_production = 4

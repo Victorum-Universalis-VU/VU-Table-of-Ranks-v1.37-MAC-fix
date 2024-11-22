@@ -490,7 +490,7 @@ country_event = {
 			spawn_rebels = {
 				type = pretender_rebels
 				size = 2
-				leader = general_coup
+				leader = "General Coup"
 			}
 		}
 	}
@@ -506,7 +506,7 @@ country_event = {
 		
 		hidden_effect = {
 			define_general = {
-				name = general_coup
+				name = "General Coup"
 				shock = 4
 				fire = 2
 				manuever = 4
@@ -517,9 +517,9 @@ country_event = {
 		add_republican_tradition = -15
 		add_government_reform = presidential_despot_reform
 		define_ruler = {
-			name = general_coup
+			name = "General Coup"
 			change_MIL = 3
-			attach_leader = general_coup
+			attach_leader = "General Coup"
 		}
 		hidden_effect = { add_ruler_personality = bold_fighter_personality }
 	}
@@ -573,7 +573,7 @@ country_event = {
 			90 = {
 				hidden_effect = {
 					define_general = {
-						name = general_coup
+						name = "General Coup"
 						shock = 4
 						fire = 2
 						manuever = 4
@@ -584,9 +584,9 @@ country_event = {
 				add_republican_tradition = -15
 				add_government_reform = presidential_despot_reform
 				define_ruler = {
-					name = general_coup
+					name = "General Coup"
 					change_MIL = 3
-					attach_leader = general_coup
+					attach_leader = "General Coup"
 				}
 				hidden_effect = { add_ruler_personality = bold_fighter_personality }
 			}

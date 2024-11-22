@@ -3,7 +3,7 @@
 owner = OKA			#appears to actually be a Lithuanian-founded vassal principality, but I've given Lithuania enough vassals for now.
 controller = OKA
 add_core = OKA
-culture = russian
+culture = ryazanian
 religion = orthodox
 capital = "Mtsensk"
 trade_goods = grain

@@ -16,9 +16,45 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			is_subject_of_type = daimyo_vassal
+	        is_subject_of_type = daimyo_vassal
 		}
 		localisation_key = "[daimyo_vassal]"
+	}
+	text = {
+		trigger = {
+	        is_subject_of_type = daimyo_barony_vassal
+		}
+		localisation_key = "[daimyo_barony_vassal]"
+	}
+	text = {
+		trigger = {
+	        is_subject_of_type = daimyo_viscounty_vassal
+		}
+		localisation_key = "[daimyo_viscounty_vassal]"
+	}
+	text = {
+		trigger = {
+	        is_subject_of_type = daimyo_county_vassal
+		}
+		localisation_key = "[daimyo_county_vassal]"
+	}
+	text = {
+		trigger = {
+	        is_subject_of_type = daimyo_marquisate_vassal
+		}
+		localisation_key = "[daimyo_marquisate_vassal]"
+	}
+	text = {
+		trigger = {
+	        is_subject_of_type = daimyo_duchy_vassal
+		}
+		localisation_key = "[daimyo_duchy_vassal]"
+	}
+	text = {
+		trigger = {
+	        is_subject_of_type = daimyo_principality_vassal
+		}
+		localisation_key = "[daimyo_principality_vassal]"
 	}
 	text = {
 		trigger = {
@@ -351,6 +387,138 @@ defined_text = {
 			always = yes
 		}
 		localisation_key = daimyo_vassal_long_desc
+	}
+}
+
+defined_text = {
+	name = daimyo_barony_vassal
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = daimyo_barony_vassal_title
+	}
+}
+
+defined_text = {
+	name = daimyo_barony_vassal_desc
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = daimyo_barony_vassal_long_desc
+	}
+}
+
+defined_text = {
+	name = daimyo_viscounty_vassal
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = daimyo_viscounty_vassal_title
+	}
+}
+
+defined_text = {
+	name = daimyo_viscounty_vassal_desc
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = daimyo_viscounty_vassal_long_desc
+	}
+}
+
+defined_text = {
+	name = daimyo_county_vassal
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = daimyo_county_vassal_title
+	}
+}
+
+defined_text = {
+	name = daimyo_county_vassal_desc
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = daimyo_county_vassal_long_desc
+	}
+}
+
+defined_text = {
+	name = daimyo_marquisate_vassal
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = daimyo_marquisate_vassal_title
+	}
+}
+
+defined_text = {
+	name = daimyo_marquisate_vassal_desc
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = daimyo_marquisate_vassal_long_desc
+	}
+}
+
+defined_text = {
+	name = daimyo_duchy_vassal
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = daimyo_duchy_vassal_title
+	}
+}
+
+defined_text = {
+	name = daimyo_duchy_vassal_desc
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = daimyo_duchy_vassal_long_desc
+	}
+}
+
+defined_text = {
+	name = daimyo_principality_vassal
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = daimyo_principality_vassal_title
+	}
+}
+
+defined_text = {
+	name = daimyo_principality_vassal_desc
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = daimyo_principality_vassal_long_desc
 	}
 }
 

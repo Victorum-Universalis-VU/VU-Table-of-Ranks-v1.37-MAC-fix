@@ -1,11 +1,12 @@
 government = monarchy
 add_government_reform = principality
-government_rank = 1
+government_rank = 7 #Principality
 #technology_group = eastern
 technology_group = russian_tech_group
 unit_type = eastern
 religion = orthodox
-primary_culture = russian
+primary_culture = novgorodian
+add_accepted_culture = muscovite
 capital = 314
 fixed_capital = 314
 
@@ -34,7 +35,7 @@ fixed_capital = 314
 	heir = {
 		name = "Ivan Veliky"
 		monarch_name = "Ivan Veliky"
-		dynasty = Rurikovich
+		dynasty = "Rurikovich"
 		birth_date = 1440.1.22
 		death_date = 1505.10.27
 		claim = 95

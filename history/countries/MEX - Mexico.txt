@@ -15,6 +15,7 @@ capital = 852	# Mexico
 		mil = 3
 	}
 	set_legacy_government = constitutional_republic
+	government_rank = 9 #Empire
 }
 
 1811.7.30 = {

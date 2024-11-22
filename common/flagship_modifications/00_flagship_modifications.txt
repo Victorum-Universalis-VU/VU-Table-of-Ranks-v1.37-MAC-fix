@@ -200,7 +200,7 @@ portuguese_bombardier = {
 		ME_create_flagship_can_have = { which = portuguese_bombardier }
     }
 	modifier = {
-        barrage_cost_in_fleet_modifier = -0.4
+        #barrage_cost_in_fleet_modifier = -0.4
         naval_maintenance_flagship_modifier = 0.5
 	}
     ai_trade_score = {
@@ -417,7 +417,7 @@ scandinavian_flag_officers = {
 		ME_create_flagship_can_have = { which = scandinavian_flag_officers }
     }
     modifier = {
-        admiral_skill_gain_modifier = 0.03
+        #admiral_skill_gain_modifier = 0.03
         naval_maintenance_flagship_modifier = 0.5
     }
     ai_trade_score = {
@@ -459,7 +459,7 @@ flag_officers = {
 		ME_create_flagship_can_have = { which = flag_officers }
     }
     modifier = {
-        admiral_skill_gain_modifier = 0.01
+        #admiral_skill_gain_modifier = 0.01
         naval_maintenance_flagship_modifier = 0.5
     }
     ai_trade_score = {

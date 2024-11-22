@@ -1,6 +1,6 @@
 government = monarchy
 add_government_reform = rajput_kingdom
-government_rank = 1
+government_rank = 6 #Ranate
 primary_culture = rajput
 religion = sunni
 technology_group = indian
@@ -136,7 +136,7 @@ religious_school = shafii_school
 	}
 	religion = hinduism
 	government = monarchy
-add_government_reform = feudalism_reform
+	add_government_reform = feudalism_reform
 }
 
 1660.1.1 = {

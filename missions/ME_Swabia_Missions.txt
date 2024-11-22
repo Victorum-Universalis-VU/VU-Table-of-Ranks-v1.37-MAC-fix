@@ -17,6 +17,7 @@ SWA_missions_2 = {
 		provinces_to_highlight = {
 			OR = {
 				area = hesse_area
+				area = frankfurt_area
 				area = lower_rhineland_area
 				area = north_rhine_area
 				area = palatinate_area
@@ -25,6 +26,10 @@ SWA_missions_2 = {
 		}
 		trigger = {
 			hesse_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			frankfurt_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -191,6 +196,13 @@ SWA_missions_3 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			liechtenstein_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 			#Rhineland
 			lower_rhineland_area = {
 				limit = {
@@ -220,6 +232,13 @@ SWA_missions_3 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			frankfurt_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 	}
 
@@ -229,7 +248,7 @@ SWA_missions_3 = {
 		position = 3
 		provinces_to_highlight = {
 			OR = {
-				area = switzerland_area
+				area = switzerland_area	
 				area = romandie_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -245,6 +264,13 @@ SWA_missions_3 = {
 			}
 		}
 		effect = {
+			liechtenstein_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 			166 = {
 				add_trade_modifier = {
 					who = ROOT
@@ -389,6 +415,13 @@ SWA_missions_4 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			frankfurt_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 			mittelmark_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
@@ -416,6 +449,7 @@ SWA_missions_4 = {
 				area = altmark_area
 				area = anhalt_area
 				area = hesse_area
+				area = frankfurt_area
 				area = mittelmark_area
 				area = saxony_area
 			}
@@ -435,6 +469,10 @@ SWA_missions_4 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			hesse_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			frankfurt_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -855,6 +893,7 @@ SWA_BRB_missions_3 = {
 						area = calabria_area
 						area = apulia_area
 						area = central_italy_area
+						area = san_marino_area
 					}
 				}
 				has_opinion = {
@@ -874,6 +913,7 @@ SWA_BRB_missions_3 = {
 							area = calabria_area
 							area = apulia_area
 							area = central_italy_area
+							area = san_marino_area
 						}
 					}
 				}
@@ -890,6 +930,7 @@ SWA_BRB_missions_3 = {
 								area = calabria_area
 								area = apulia_area
 								area = central_italy_area
+								area = san_marino_area
 							}
 						}
 					}
@@ -918,6 +959,10 @@ SWA_BRB_missions_3 = {
 							owned_by = PREV
 							is_part_of_hre = no
 						}
+						san_marino_area = {
+							owned_by = PREV
+							is_part_of_hre = no
+						}
 					}
 				}
 				country_event = { id = ME_Swabia_Events.5 }
@@ -938,6 +983,7 @@ SWA_BRB_missions_3 = {
 				area = calabria_area
 				area = apulia_area
 				area = central_italy_area
+				area = san_marino_area
 			}
 			is_part_of_hre = no
 		}
@@ -963,6 +1009,10 @@ SWA_BRB_missions_3 = {
 				is_part_of_hre = yes
 			}
 			central_italy_area = {
+				type = all
+				is_part_of_hre = yes
+			}
+			san_marino_area = {
 				type = all
 				is_part_of_hre = yes
 			}

@@ -21,7 +21,7 @@
 128 = "Celovac"
 129 = "Kranjska"
 130 = "Istra"
-132 = "shtajerska"
+132 = { "Judenburg" "Judenburg" }
 134 = "Bec"
 135 = "Shopron"
 137 = "Dubrovnik"

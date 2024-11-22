@@ -2,6 +2,7 @@
 
 owner = DRZ
 controller = DRZ
+add_core = DRZ
 culture = kumyk
 religion = sunni	
 capital = "Hunzah"	#Uncertain
@@ -11,7 +12,9 @@ base_tax = 1
 base_production = 2
 base_manpower = 2 
 is_city = yes
-add_core = DRZ
+
+#Claimants
+add_core = DAG
 add_core = TRR
 
 1444.1.1 = { add_local_autonomy = 60 } #Semi-independent tribes

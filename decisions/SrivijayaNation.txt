@@ -73,8 +73,8 @@ country_decisions = {
 			change_tag = SVJ
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = { #This is an Empire according to the wiki. Changing to reflect this.
-				limit = { NOT = { government_rank = 3 } }
-				set_government_rank = 3
+				limit = { NOT = { government_rank = 9 } }
+				set_government_rank = 9
 			}
 			malaya_region = {
 				limit = {

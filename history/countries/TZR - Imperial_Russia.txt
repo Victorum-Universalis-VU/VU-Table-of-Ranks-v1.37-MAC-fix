@@ -1,12 +1,12 @@
 government = monarchy
 add_government_reform = tsardom
+government_rank = 9
 primary_culture = russian
 religion = orthodox
 #technology_group = eastern
 technology_group = russian_tech_group
 unit_type = eastern
 capital = 33 # St.Petersburg
-government_rank = 3
 
 1462.1.1 = {
 	monarch = {

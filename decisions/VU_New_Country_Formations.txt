@@ -54,7 +54,7 @@ country_decisions = {
 				}
 			}
 			set_in_empire = no
-			set_government_rank = 3
+			set_government_rank = 9
 			emperor = {
 				country_event = { id = hre_event.5 }
 			}			
@@ -66,10 +66,8 @@ country_decisions = {
 			set_country_flag = formed_austrian_empire_flag
 			hidden_effect = {
 				every_province = {
-					OR = {
-						remove_core = HAB
-						remove_core = AUT #VU - SF addition
-					}
+					remove_core = HAB
+					remove_core = AUT #VU - SF addition
 				}
 			}
 		}
@@ -121,7 +119,7 @@ country_decisions = {
 		}
 
 		effect = {
-			change_tag = AHE
+			change_tag = AUH
 			add_government_reform = parliamentary_reform
 			if = {
 				limit = { NOT = { accepted_culture = hungarian } }
@@ -250,8 +248,8 @@ country_decisions = {
 			change_tag = BEL
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
-				limit = { NOT = { government_rank = 2 } }
-				set_government_rank = 2
+				limit = { NOT = { government_rank = 8 } }
+				set_government_rank = 8
 			}
 			add_country_modifier = {
 				name = "centralization_modifier"
@@ -425,8 +423,8 @@ country_decisions = {
 			swap_non_generic_missions = yes
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
-				limit = { NOT = { government_rank = 2 } }
-				set_government_rank = 2
+				limit = { NOT = { government_rank = 8 } }
+				set_government_rank = 8
 			}
 			add_country_modifier = {
 				name = centralization_modifier
@@ -474,39 +472,31 @@ country_decisions = {
 			vu_generic_can_form_potential_check = yes
 			was_never_end_game_tag_trigger = yes
 			NOT = { has_country_flag = formed_germany_flag }
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
+			}
 			NOT = { exists = GER }
 			NOT = { tag = PAP }
 			NOT = { tag = HLR }
 			NOT = { tag = ROM }
+			NOT = { tag = AUH }
 			OR = {
 				ai = no
 				AND = {
 					ai = yes
-					num_of_cities = 15
-					adm_tech = 42
-				}
-			}
-			OR = {
-				is_former_colonial_nation = no
-				AND = {
-					is_former_colonial_nation = yes
-					ai = no
-				}
-			}
-			OR = {
-				has_country_flag = teu_can_form_germany
-				NOT = { has_mission = teu_pru_an_empire_of_blood_and_iron }	#Mission already makes you to Germany
-			}
-			OR = {
-				ai = no
-				AND = {
-					ai = yes
-					NOT = { government = theocracy }
+					num_of_cities = 40
+					adm_tech = 35
 				}
 			}
 			culture_group = germanic
 			NOT = {
 				OR = {  
+					primary_culture = austrian
 					primary_culture = ger_dutch
 					primary_culture = ger_brabantian
 					primary_culture = ger_zeelandic
@@ -517,6 +507,18 @@ country_decisions = {
 					primary_culture = ger_east_frisian
 					primary_culture = ger_north_frisian
 				}
+			}
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+			OR = {
+				has_country_flag = teu_can_form_germany
+				NOT = { has_mission = teu_pru_an_empire_of_blood_and_iron }	#Mission already makes you to Germany
 			}
 		}
 		provinces_to_highlight = {
@@ -550,14 +552,18 @@ country_decisions = {
 		}
 		allow = {
 			OR = {
-				adm_tech = 42
+				adm_tech = 35
 				custom_trigger_tooltip = {
 					tooltip = me_completed_faster_german_formation_mission
-					has_country_flag = me_hab_easier_german_formation
+					OR = {
+						has_country_flag = remove_germany_tech_requirement_flag
+						has_country_flag = me_hab_easier_german_formation
+					}
 				}
 			}
 			NOT = { exists = GER }
 			is_free_or_tributary_trigger = yes
+			
 			is_nomad = no
 			is_at_war = no
 			is_emperor = no
@@ -578,6 +584,14 @@ country_decisions = {
 				owns_core_province = 41	# Königsberg
 				owns_core_province = 75	# Strassburg
 			}
+			num_of_owned_provinces_with = {
+				is_core = ROOT
+				OR = {
+					region = north_german_region
+					region = south_german_region
+				}
+				value = 350
+			}
 		}
 		effect = {
 			change_tag = GER
@@ -597,20 +611,26 @@ country_decisions = {
 					remove_country_modifier = me_hab_german_ambitions
 				}
 			}
-			else = {
-				swap_non_generic_missions = yes
+			else_if = {
+				limit = {
+					is_emperor = yes
+				}
+				dismantle_hre = yes
 			}
-			emperor = {
-				add_opinion = {
-					who = root
-					modifier = opinion_left_empire
+			else = {
+				emperor = {
+					add_opinion = {
+						who = root
+						modifier = opinion_left_empire
+					}
+				}
+				set_in_empire = no
+				emperor = {
+					country_event = { id = hre_event.5 }
 				}
 			}
-			set_in_empire = no
-			emperor = {
-				country_event = { id = hre_event.5 }
-			}
-			set_government_rank = 3
+			custom_tooltip = become_an_empire_tt
+			hidden_effect = { set_government_rank = 9 }
 			north_german_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
@@ -635,6 +655,16 @@ country_decisions = {
 				}
 				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
+			swap_non_generic_missions = yes
+			if = {
+				limit = { has_dlc = "Winds of Change" }
+				set_country_flag = GER_stuck_disunited
+				add_government_reform = german_cultural_disunity_reform
+				freeze_government_power = {
+					mechanic_type = cultural_unity_mechanic
+					power_type = cultural_unity
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 1
@@ -644,7 +674,7 @@ country_decisions = {
 					tag = HAB
 					tag = AUT #VU - SF addition
 				}
-				NOT = { has_country_flag = me_hab_easier_german_formation } #PDX, you will not stop me
+				NOT = { has_country_flag = me_hab_easier_german_formation }
 			}
 		}
 	}
@@ -819,8 +849,8 @@ country_decisions = {
 			#swap_non_generic_missions = yes
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
-				limit = { NOT = { government_rank = 3 } }
-				set_government_rank = 3
+				limit = { NOT = { government_rank = 9 } }
+				set_government_rank = 9
 			}
 			add_country_modifier = {
 				name = centralization_modifier
@@ -913,8 +943,8 @@ country_decisions = {
 			change_tag = ILY
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
-				limit = { NOT = { government_rank = 3 } }
-				set_government_rank = 3
+				limit = { NOT = { government_rank = 9 } }
+				set_government_rank = 9
 			}
 			every_province = {
 				limit = {
@@ -1149,8 +1179,8 @@ country_decisions = {
 			change_tag = LVN
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
-				limit = { NOT = { government_rank = 2 } }
-				set_government_rank = 2
+				limit = { NOT = { government_rank = 8 } }
+				set_government_rank = 8
 			}
 			add_country_modifier = {
 				name = "centralization_modifier"
@@ -1177,7 +1207,7 @@ country_decisions = {
 		potential = {
 			vu_generic_can_form_potential_check = yes
 			NOT = { has_country_flag = formed_moravia_flag_vu }
-			NOT = { tag = GMV }
+			NOT = { tag = GMA }
 			NOT = { tag = PLC }
 			culture_group = west_slavic
 		}
@@ -1200,7 +1230,7 @@ country_decisions = {
 			}
 		}
 		allow = {
-			NOT = { exists = GMV }
+			NOT = { exists = GMA }
 			is_at_war = no
 			is_emperor = no
 			is_free_or_tributary_trigger = yes
@@ -1219,7 +1249,7 @@ country_decisions = {
 			prestige = 40			#Normal requirement for rank 3 is 75 prestige.
 		}
 		effect = {
-			change_tag = GMV
+			change_tag = GMA
 			#remove_non_electors_emperors_from_empire_effect = yes
 			emperor = {
 				add_opinion = {
@@ -1231,40 +1261,40 @@ country_decisions = {
 			emperor = {
 				country_event = { id = hre_event.5 }
 			}
-			set_government_rank = 3
+			set_government_rank = 9
 			# if = {
-				# limit = { NOT = { government_rank = 3 } }
-				# set_government_rank = 3
+				# limit = { NOT = { government_rank = 9 } }
+				# set_government_rank = 9
 			# }
 			bohemia_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_permanent_claim = GMV
+				add_permanent_claim = GMA
 			}
 			erzgebirge_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_permanent_claim = GMV
+				add_permanent_claim = GMA
 			}
 			moravia_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_permanent_claim = GMV
+				add_permanent_claim = GMA
 			}
 			slovakia_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_permanent_claim = GMV
+				add_permanent_claim = GMA
 			}
 			poland_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_permanent_claim = GMV
+				add_permanent_claim = GMA
 			}
 			add_country_modifier = {
 				name = "centralization_modifier"
@@ -1337,8 +1367,8 @@ country_decisions = {
 				add_permanent_claim = NAJ
 			}
 			if = {
-				limit = { NOT = { government_rank = 2 } }
-				set_government_rank = 2
+				limit = { NOT = { government_rank = 8 } }
+				set_government_rank = 8
 			}
 			add_country_modifier = {
 				name = centralization_modifier
@@ -1429,8 +1459,8 @@ country_decisions = {
 				add_claim = NUB
 			}
 			if = {
-				limit = { NOT = { government_rank = 2 } }
-				set_government_rank = 2
+				limit = { NOT = { government_rank = 8 } }
+				set_government_rank = 8
 			}
 			add_country_modifier = {
 				name = centralization_modifier
@@ -1517,8 +1547,8 @@ country_decisions = {
 			change_tag = DWA
 			
 			if = {
-				limit = { NOT = { government_rank = 1 } }
-				set_government_rank = 1
+				limit = { NOT = { government_rank = 6 } }
+				set_government_rank = 6
 			}
 			add_country_modifier = {
 				name = centralization_modifier
@@ -1663,8 +1693,8 @@ country_decisions = {
 			change_tag = DNR
 			
 			if = {
-				limit = { NOT = { government_rank = 3 } }
-				set_government_rank = 2
+				limit = { NOT = { government_rank = 9 } }
+				set_government_rank = 8
 			}
 			add_country_modifier = {
 				name = centralization_modifier
@@ -1833,8 +1863,8 @@ country_decisions = {
 			
 			add_government_reform = improved_veche_republic
 			if = {
-				limit = { NOT = { government_rank = 3 } }
-				set_government_rank = 3
+				limit = { NOT = { government_rank = 9 } }
+				set_government_rank = 9
 			}
 			add_country_modifier = {
 				name = centralization_modifier
@@ -1937,7 +1967,10 @@ country_decisions = {
 			government = monarchy
 			OR = {
 				culture_group = mesopotamian_group
-				NOT = { religion_group = muslim }
+				OR = { 
+					religion = ashurist
+					religion = cult_of_marduk
+				}
 			}
 			NOT = { exists = ASY }
 			is_at_war = no
@@ -1988,8 +2021,8 @@ country_decisions = {
 			
 			add_government_reform = autocracy_reform
 			if = {
-				limit = { NOT = { government_rank = 2 } }
-				set_government_rank = 2
+				limit = { NOT = { government_rank = 8 } }
+				set_government_rank = 8
 			}
 			add_country_modifier = {
 				name = centralization_modifier
@@ -2172,8 +2205,8 @@ country_decisions = {
 			
 			add_government_reform = autocracy_reform
 			if = {
-				limit = { NOT = { government_rank = 2 } }
-				set_government_rank = 2
+				limit = { NOT = { government_rank = 8 } }
+				set_government_rank = 8
 			}
 			add_country_modifier = {
 				name = centralization_modifier

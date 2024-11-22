@@ -2017,6 +2017,26 @@ type={
 		name="Seagulls_english_channel"
 		hidden_on_start=no
 		position={
+			1006.000 0.100 1512.000 
+		}
+		rotation={
+			0.000 50.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
+			896.000 0.100 1582.000 
+		}
+		rotation={
+			0.000 50.000 0.000 
+		}
+	}
+	object={
+		name="Seagulls_english_channel"
+		hidden_on_start=no
+		position={
 			1582.000 0.100 415.000 
 		}
 		rotation={

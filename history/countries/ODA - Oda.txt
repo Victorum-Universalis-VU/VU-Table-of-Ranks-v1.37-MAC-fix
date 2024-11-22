@@ -1,7 +1,12 @@
 government = monarchy
 add_government_reform = daimyo
-government_rank = 1
-primary_culture = togoku
+government_rank = 1 #Daimyo_Lordship
+primary_culture = tokai 
+add_accepted_culture = kanto 
+add_accepted_culture = togoku
+add_accepted_culture = hokkaido 
+add_accepted_culture = hokuriku 
+add_accepted_culture = kinki 
 religion = shinto
 technology_group = japanese
 capital = 1030	# Owari
@@ -199,7 +204,7 @@ capital = 1030	# Owari
 	capital = 1020 # for gov requirement
 	government = monarchy
 	add_government_reform = shogunate
-	government_rank = 2
+	government_rank = 8
 }
 
 # Oda Nobunaga was assasinated and Toyotomi Hideyoshi rised as Oda successor
@@ -265,6 +270,6 @@ capital = 1030	# Owari
 1600.10.21 = {
 	capital = 1021 # Hideyoshi moved the capital to Osaka in Settsu
 	government = monarchy
-	add_government_reform = daimyo
-	government_rank = 1
+	add_government_reform = daimyo_principality_reform
+	government_rank = 7 #Daimyo_Principality
 }

@@ -1,5 +1,6 @@
 government = monarchy
 add_government_reform = autocracy_reform
+government_rank = 6 #Petty Kingdom
 primary_culture = sidamo
 religion = coptic
 technology_group = east_african
@@ -19,7 +20,7 @@ capital = 2758		# Eneara
 
 1530.1.1 = {
 	monarch = {
-		name = "La’Asohni"
+		name = "La'Asohni"
 		dynasty = "Hinnare"
 		adm = 3
 		dip = 1

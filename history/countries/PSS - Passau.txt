@@ -1,6 +1,6 @@
 government = theocracy
-add_government_reform = leading_clergy_reform
-government_rank = 1
+add_government_reform = church_of_germany_bishopric_reform
+government_rank = 3 #Bishopric
 primary_culture = bavarian
 religion = catholic
 #technology_group = western
@@ -8,6 +8,22 @@ technology_group = german_tech_group
 unit_type = western
 capital = 4709 #Passau
 fixed_capital = 4709 # Cannot move capital away from this province & no power cost to move to it
+
+#Austrian tags
+historical_rival = AUE
+historical_rival = AUH
+historical_rival = AUT
+historical_rival = BRX
+historical_rival = BSN
+historical_rival = CR1
+historical_rival = GRZ
+historical_rival = HAB
+historical_rival = HLR
+historical_rival = SH1
+historical_rival = STY
+historical_rival = TIR
+historical_rival = TNT
+historical_rival = VOR
 
 1423.7.1 = {
 	monarch = {
@@ -20,7 +36,7 @@ fixed_capital = 4709 # Cannot move capital away from this province & no power co
 }
 1451.6.25 = {
 	monarch = {
-		name = "Ulrich von NuÃŸdorf"
+		name = "Ulrich von Nußdorf"
 		birth_date = 1415.1.1
 		adm = 3
 		dip = 2
@@ -47,7 +63,7 @@ fixed_capital = 4709 # Cannot move capital away from this province & no power co
 }
 1485.11.23 = {
 	monarch = {
-		name = "Friedrich von Ã–ttingen" 
+		name = "Friedrich von Öttingen" 
 		birth_date = 1459.1.1
 		adm = 1
 		dip = 0
@@ -65,7 +81,7 @@ fixed_capital = 4709 # Cannot move capital away from this province & no power co
 }
 1500.1.4 = {
 	monarch = {
-		name = "Wiguleus FrÃ¶schl von Marzoll" 
+		name = "Wiguleus Fröschl von Marzoll" 
 		birth_date = 1445.4.4
 		adm = 2
 		dip = 2
@@ -146,7 +162,7 @@ fixed_capital = 4709 # Cannot move capital away from this province & no power co
 }
 1673.1.7 = {
 	monarch = {
-		name = "Sebastian von PÃ¶tting" 
+		name = "Sebastian von Pötting" 
 		birth_date = 1628.1.1
 		adm = 2
 		dip = 3

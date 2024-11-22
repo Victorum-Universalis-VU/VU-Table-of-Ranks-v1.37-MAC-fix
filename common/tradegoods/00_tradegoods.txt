@@ -20,14 +20,17 @@ grain = {
 		}
 		modifier = {
 			factor = 0
-			OR = {
-				has_terrain = desert
-				has_terrain = glacier
-				has_terrain = coastline
-				has_climate = arctic
-			}
-			NOT = {
-				province_id = 5304	#North African Oasis with famous dates
+			AND = { 
+				OR = {
+					has_terrain = desert
+					has_terrain = salt_flats
+					has_terrain = glacier
+					has_terrain = coastline
+					has_climate = arctic
+				}
+				NOT = {
+					province_id = 5304	#North African Oasis with famous dates
+				}
 			}
 		}
 		modifier = {
@@ -186,7 +189,6 @@ grain = {
 				#No grain in the north too cold
 				area = james_bay_area
 				area = upper_ontario_area
-				area = huronia_area
 				area = grand_river_area
 				area = laurentian_area
 				area = inner_ontario_area
@@ -200,8 +202,10 @@ grain = {
 					}
 				}
 				#No grain in NWT outside athabaska and peace river
-				region = northwest_territories_region
-				NOT = {	area = peace_river_area	}
+				AND = { 
+					region = northwest_territories_region
+					NOT = {	area = peace_river_area	}
+				}
 			}
 		}
 		modifier = { #Acadia actually has some decent farming   -x8 bonus because other factors cause penaltes
@@ -209,6 +213,16 @@ grain = {
 			OR = {
 				area = lower_acadia_area
 				area = upper_acadia_area
+			}
+		}
+		modifier = { #The western Canadian prairies produce large amounts of grain
+			factor = 12.0
+			OR = {
+				area = prairies_area
+				area = saskatchewan_area
+				area = assiniboia_area
+				area = red_river_area
+				province_id = 5894 # Great Prairie
 			}
 		}
 		modifier = { #The richer parts of Canada had some excellent maize and other grainy type foods production   -x8 bonus because other factors cause penaltes
@@ -231,7 +245,7 @@ wine = {
 		local_unrest = -1
 	}
 	chance = {
-		factor = 5
+		factor = 6
 		modifier = {
 			factor = 0
 			area = newfoundland_area
@@ -256,8 +270,7 @@ wine = {
 		}
 		modifier = {
 		#Added various areas known for producing wine in North America -NK.
-			factor = 0
-			normal_or_historical_nations = yes
+			factor = 0.25
 			NOT = { continent = south_america }
 			NOT = { region = south_africa_region }
 			NOT = { area = cuyo_area }
@@ -382,8 +395,6 @@ wool = {
 				has_terrain = forest
 				has_terrain = woods
 				region = central_africa_region
-				NOT = { region = cascadia_region }
-				NOT = { region = new_zealand_region }
 				AND = {
 					has_climate = tropical
 					NOT = { area = paraguay_area }
@@ -404,14 +415,16 @@ wool = {
 		}
 		modifier = {
 			factor = 0
-			OR = {
-				region = carribeans_region
-				region = brazil_region
-				region = colombia_region
-				region = southeast_america_region
-				region = mississippi_region
+			AND = { 
+				OR = {
+					region = carribeans_region
+					region = brazil_region
+					region = colombia_region
+					region = southeast_america_region
+					region = mississippi_region
+				}
+				NOT = { has_terrain = mountain }
 			}
-			NOT = { has_terrain = mountain }
 		}
 		modifier = {
 			factor = 0.15
@@ -513,11 +526,11 @@ cloth = {
 		}
 		modifier = {
 			factor = 0
-			NOT = { development_discounting_tribal = 18 }
+			NOT = { development_discounting_tribal = 9 }
 		}
 		modifier = {
 			factor = 2.0
-			development_discounting_tribal = 22
+			development_discounting_tribal = 16
 		}
 	}
 }
@@ -669,7 +682,7 @@ fur = {
 	}
 
 	chance = {
-		factor = 15
+		factor = 10
 		modifier = {
 			factor = 0
 			OR = {
@@ -811,8 +824,10 @@ fur = {
 				province_id = 980			#E Newfoundland
 				province_id = 981			#N Newfoundland
 				province_id = 2573			#S Newfoundland
-				province_id = 982			#Cape Breton
+				province_id = 982			#CapeBreton
 				province_id = 983			#PEI
+				province_id = 8910
+				province_id = 8764
 			}
 		}
 		modifier = { #Really want Avalon to have fish
@@ -867,10 +882,6 @@ salt = {
 			NOT = { has_terrain = marsh }
 			NOT = { has_terrain = mountain }
 			NOT = { has_terrain = highlands }
-			NOT = { area = lucayan_area }
-			NOT = { any_neighbor_province = { province_id = 1649 } } #Lake Victoria
-			NOT = { any_neighbor_province = { province_id = 1650 } } #Lake Tangyanika
-			NOT = { any_neighbor_province = { province_id = 1651 } } #Lake Malawi
 		}
 		modifier = {
 			factor = 2
@@ -923,7 +934,7 @@ salt = {
 			}
 		}
 		modifier = { #Salt very common in California
-			factor = 2.0
+			factor = 1.5
 			region = california_region
 		}
 		modifier = { #Salt very very abundant in the Great Basin Desert
@@ -1030,7 +1041,7 @@ naval_supplies = {
 			}
 		}
 		modifier = { #Logging capital of the world
-			factor = 8.0
+			factor = 4.0
 			OR = {
 				area = salish_sea_area
 				area = oregon_area
@@ -1329,6 +1340,7 @@ gold = {
 			NOT = { region = rio_grande_do_sul_region }
 			NOT = { area = espirito_santo_area }
 			NOT = { area = rio_de_janeiro_area }
+			NOT = { province_id = 8764  }
 		}
 		modifier = {
 			factor = 0
@@ -1375,15 +1387,17 @@ gold = {
 		modifier = {
 			factor = 0.5
 			#too much gold in Glacial areas due to few other options
-			has_terrain = glacier
-			#A few terrain modifers
-			has_terrain = steppe
-			has_terrain = drylands
-			has_terrain = grasslands
-			has_terrain = savannah
-			has_terrain = coastline
-			has_terrain = farmlands
-			has_terrain = marsh
+			OR = {
+				has_terrain = glacier
+				#A few terrain modifers
+				has_terrain = steppe
+				has_terrain = drylands
+				has_terrain = grasslands
+				has_terrain = savannah
+				has_terrain = coastline
+				has_terrain = farmlands
+				has_terrain = marsh
+			}
 		}
 		modifier = { #A few terrain modifers
 			factor = 1.2
@@ -1447,15 +1461,12 @@ gold = {
 
 		modifier = {	#Gold is a bit more common here
 			factor = 1.5
-			OR = {
-				region = alaska_region
-			}
+			region = alaska_region
 		}
 		modifier = {	#Gold is a bit rarer here
-			factor = 0.5
+			factor = 0.85
 			OR = {
-				region = northwest_territories_region			#Chance was a bit too high in the NWT because of lack of other options
-				area = california_area			#Gold rarer in coastal California
+				region = northwest_territories_region			#Chance was a bit too high in the NWT because of lack of other option
 				area = baja_california_area
 				area = mojave_area
 				area = sao_paolo_area
@@ -1529,6 +1540,8 @@ gold = {
 				province_id = 4967		# Nevada (east)
 				province_id = 5597		# Tahuna (Central Otago NZ)
 				province_id = 5608		# Cormorandel Peninsula (NZ)
+				province_id = 8764 		# The Black Hills (SD, USA)
+				province_id = 5815		# Elko (NV, USA)
 			}
 		}
 		modifier = {	#Specific province bonuses
@@ -1543,6 +1556,8 @@ gold = {
 				province_id = 5079		# NWT
 				province_id = 5601		# Westland (NZ)
 				province_id = 5603		# Westland (NZ)
+				province_id = 5069		# Reno (NV, USA)
+				province_id = 8764 		# Carson City (NV, USA)
 			}
 		}
 		modifier = {	#Specific province bonuses
@@ -1577,7 +1592,7 @@ iron = {
 			factor = 0
 			area = newfoundland_area
 		}
-		modifier = { #VictorumUniversalis added copper terrain criteria if not in Africa iron producing areas Siberian Steppe border loses iron otherwise no change
+		modifier = {
 			factor = 0
 			OR = {
 				has_terrain = steppe
@@ -1592,34 +1607,9 @@ iron = {
 				has_terrain = farmlands
 				has_terrain = woods
 			}
-			NOT = { region = central_africa_region }
 		}
 		modifier = {
-			factor = 0
-			normal_or_historical_nations = yes
-			NOT = { region = west_siberia_region }
-			NOT = { region = east_siberia_region }
-			NOT = { region = central_africa_region }
-			NOT = { province_id = 990 }
-			NOT = { area = great_valley_area }
-			NOT = { area = susquehanna_area }
-			NOT = { area = hudson_valley_area }
-			NOT = { area = lake_superior_area }
-			NOT = { area = south_iroquoisia_area }
-			NOT = { area = upper_ontario_area }
-			NOT = { area = laurentian_area }
-			NOT = { area = inner_ontario_area }
-			NOT = { area = chesapeake_area }
-			NOT = { area = upper_american_georgia_area }
-			NOT = { region = australia_region }
-			NOT = { region = brazil_region }
-			NOT = { continent = north_america }
-			NOT = { continent = south_america }
-			NOT = { province_id = 18 }
-			is_random_new_world = no
-		}
-		modifier = {
-			factor = 1.2
+			factor = 2
 			normal_or_historical_nations = no
 			OR = {
 				has_terrain = mountain
@@ -1629,11 +1619,28 @@ iron = {
 			}
 		}
 		modifier = {
-			factor = 20
-			province_id = 990
+			factor = 12
+			OR = { 
+				province_id = 4898
+				province_id = 4899
+				province_id = 910 
+				province_id = 4902
+				province_id = 5622
+				province_id = 2517
+				province_id = 5011
+				province_id = 5010
+				province_id = 5833
+				province_id = 4967
+				province_id = 5774
+				province_id = 2518
+			}
 		}
 		modifier = {
-			factor = 1.5
+			factor = 2.5
+			area = susquehanna_area
+		}
+		modifier = {
+			factor = 2.5
 			is_random_new_world = yes
 			has_terrain = mountain
 			continent = new_world #Always in RNW
@@ -1656,13 +1663,13 @@ iron = {
 				has_country_flag = iron_chance_flag_high
 			}
 		}
-		modifier = { #Iron is present but mildly rare in NA
-			factor = 0.65
-			continent = north_america
-			NOT = { has_terrain = forest }
-		}
+		#modifier = { #Iron is present but mildly rare in NA - What the fuck is this talking about, NA is very iron rich wat - Q
+		#	factor = 0.65
+		#	continent = north_america
+		#	NOT = { has_terrain = forest }
+		#}
 		modifier = { #Vast forests in NA give too much iron
-			factor = 0.25
+			factor = 0.65
 			continent = north_america
 			has_terrain = forest
 		}
@@ -2562,7 +2569,6 @@ tobacco = {
 			NOT = { region = carribeans_region }
 			NOT = { region = australia_region }
 			NOT = { area = appalachia_area }
-			NOT = { area = huronia_area }			    #VU New
 			NOT = { area = upper_canada_area }			#VU New
 			NOT = { area = lower_canada_area }			#VU New
 		}
@@ -2879,17 +2885,14 @@ tropical_wood = {
 		factor = 25
 		modifier = {
 			factor = 0
-			area = newfoundland_area
-		}
-		modifier = {
-			factor = 0
-			NOT = { has_terrain = jungle }
-			NOT = { has_climate = tropical }
-			NOT = { province_id = 1240 }
-			OR = {
-				region = rio_grande_do_sul_region
-				region = maranhao_region
+			AND = {
+				NOT = { has_climate = tropical }
+				NOT = { province_id = 1240 }
 			}
+		}	
+		modifier = {
+			factor = 0.4
+			NOT = { has_terrain = jungle }
 		}
 		modifier = {
 			factor = 1.5
@@ -3225,13 +3228,13 @@ gems = {
 		local_tax_modifier = 0.15
 	}
 	chance = {
-		factor = 3			#reduced from 5, gems were a bit too common
+		factor = 4			#reduced from 5, gems were a bit too common
 		modifier = {
 			factor = 0
 			area = newfoundland_area
 		}
 		modifier = {
-			factor = 0
+			factor = 0.3
 			is_random_new_world = no
 			NOT = { region = west_siberia_region }
 			NOT = { region = east_siberia_region }
@@ -3311,12 +3314,6 @@ gems = {
 				has_terrain = coastal_desert
 				has_terrain = marsh
 			}
-		}
-		modifier = {
-			factor = 0
-			NOT = { has_terrain = coastline }
-			NOT = { region = australia_region }
-			continent = oceania #Pearls
 		}
 		modifier = {
 			factor = 1.2
@@ -3593,10 +3590,7 @@ beer = {
 			}
 		}
 		
-		modifier = {
-			factor = 0
-			NOT = { has_global_flag = tradegood_marcin }
-		}
+
 		
 		modifier = {
 			factor = 0
@@ -3605,11 +3599,6 @@ beer = {
 					capital_scope = { continent = europe }
 				}
 			}
-		}
-		
-		modifier = {
-			factor = 0
-			has_global_flag = No_Beer
 		}
 		modifier = {
 			factor = 1.2
@@ -3733,12 +3722,6 @@ apiculture = {
 		modifier = {
 			factor = 0
 			area = newfoundland_area
-			NOT = { has_global_flag = tradegood_marcin }
-		}
-		
-		modifier = {
-			factor = 0
-			has_global_flag = No_Apiculture
 		}
 		modifier = {
 			factor = 1.2
@@ -3771,11 +3754,13 @@ whaling = {
 		local_production_efficiency = 0.1
 	}
 	chance = {
-		factor = 8
+		factor = 10
 		modifier = {
 			factor = 0
-			AND = {
-				NOT = { has_port = yes }
+			NOT = { has_port = yes }
+		}
+		modifier = {
+			factor = 0
 			    OR = {
 			    	NOT = { 
 			    		region = canada_region
@@ -3792,6 +3777,14 @@ whaling = {
 			    		region = oceanea_region
 			    		region = australia_region
 			    		region = philippines_region
+			    		region = new_zealand_region
+			    		region = peru_region
+			    		region = upper_peru_region
+			    		region = maranhao_region
+			    		region = brazil_region
+			    		region = rio_grande_do_sul_region
+			    		region = angola_region
+			    		region = namibia_region
 			    	}
 			    	area = northeast_mexico_area
 			    	area = upper_kongo_area
@@ -3813,10 +3806,19 @@ whaling = {
 			    	area = colombian_amazonas_area
 			    	area = buenos_aires_area
 			    	area = grao_para_area
+			    	area = upper_ontario_area
+			    	area = lower_canada_area
+			    	area = upper_canada_area
+			    	area = moxos_area
+			    	area = paraguay_area
+				area = chaco_area
+			    	area = ucayali_area
+				area = iquitos_area
+				area = appalachia_area
+				area = susquehanna_area
 			    	province_id = 6126
 			    	region = amazon_region
 			    }
-			}
 		}
 		modifier = {
 			factor = 0
@@ -3829,7 +3831,18 @@ whaling = {
 				region = canada_region
 				region = cascadia_region
 				region = east_siberia_region
+			    	region = northeast_america_region
 			}
+		}
+
+		modifier = {
+			factor = 3
+			region = cascadia_region
+		}
+
+		modifier = {
+			factor = 2
+		    	region = northeast_america_region
 		}
 
 		modifier = {
@@ -3847,21 +3860,11 @@ whaling = {
 			OR = {
 				region = oceanea_region
 				region = carribeans_region
-				region = northeast_america_region
 				region = southeast_america_region
 			}
 		}
 		
-		modifier = {
-			factor = 0
-			NOT = { has_global_flag = tradegood_marcin }
-		}
-		
-		modifier = {
-			factor = 0
-			has_global_flag = No_Whaling
-		}
-		
+
 		modifier = {
 			factor = 1.2
 			FROM = {
@@ -3893,7 +3896,7 @@ lumber = {
 		local_build_cost = -0.20
 	}
 	chance = {
-		factor = 20
+		factor = 25
 		modifier = {
 			factor = 0
 			NOT = { has_terrain = forest }
@@ -3902,16 +3905,7 @@ lumber = {
 			NOT = { has_terrain = hills }
 		}
 		
-		modifier = {
-			factor = 0
-			NOT = { has_global_flag = tradegood_marcin }
-		}
-		
-		modifier = {
-			factor = 0
-			has_global_flag = No_Lumber
-		}
-		
+
 		modifier = {
 			factor = 1.2
 			FROM = {
@@ -3964,21 +3958,51 @@ palm_oil = {
 			factor = 0
 			NOT = {
 				AND = {
-					region = guinea_region
+					OR = {
+						region = guinea_region
+						region = niger_region
+						region = cameroon_region
+						region = lower_guinea_region
+						region = kongo_region
+						region = angola_region
+						region = colombia_region
+						region = papua_region
+						region = central_america_region
+						AND = {
+							superregion = east_indies_superregion
+							NOT = { region = burma_region }
+							NOT = { region = indo_china_region }
+						}
+					}
 					has_climate = tropical
 				}
 			}
 		}
+
 		modifier = {
-			factor = 0
-			NOT = { has_global_flag = tradegood_marcin }
+			factor = 0.4
+			OR = { 
+				area = eastern_llanos
+				area = colombian_amazonas_area
+				area = western_llanos
+				area = upper_guyana_area
+				area = guyana_area
+				area = suriname_area
+				area = central_llanos_area
+				area = cayanne_area
+			}
 		}
-		
+
 		modifier = {
-			factor = 0
-			has_global_flag = No_Palm_oil
+			factor = 0.4
+			AND = { 
+				region = central_america_region
+				NOT = { 
+					area = honduras_area
+				}
+			}
 		}
-		
+
 		modifier = {
 			factor = 1.2
 			FROM = {
@@ -4028,21 +4052,11 @@ saffron = {
 		factor = 5
 		modifier = {
 			factor = 0
-				NOT = { has_global_flag = tradegood_marcin }
-		}
-		modifier = {
-			factor = 0
 			NOT = { superregion = india_superregion }
 			NOT = { region = east_africa_region }
 			NOT = { superregion = east_indies_superregion }
 			NOT = { superregion = china_superregion }
 		}
-		
-		modifier = {
-			factor = 0
-			has_global_flag = No_Saffron
-		}
-		
 		modifier = {
 			factor = 1.2
 			FROM = {
@@ -4075,23 +4089,6 @@ rice = {
 	}
 	chance = {
 		factor = 10
-		modifier = {
-			factor = 0
-				NOT = { has_global_flag = tradegood_marcin }
-		}
-		modifier = {
-			factor = 0
-			is_random_new_world = no
-			NOT = { continent = asia }
-			NOT = { area = banda_oriental_area }
-			NOT = { area = rio_grande_do_sol_area }
-			NOT = { area = buenos_aires_area }
-			NOT = { area = beni_area }
-			NOT = { area = paraguay_area }
-			NOT = { area = sao_paolo_area }
-			NOT = { area = mississippi_area }
-			NOT = { area = lower_louisiana_area }
-		}
 		modifier = {
 			factor = 0
 			is_random_new_world = yes
@@ -4175,15 +4172,10 @@ rice = {
 		}
 		modifier = {
 			factor = 1.6
-			FROM = {
+		FROM = {
 				has_country_flag = rice_chance_flag_high
 			}
 		}
-		modifier = {
-			factor = 0
-			has_global_flag = No_Rice
-		}
-
 	}
 }
 
@@ -4200,12 +4192,6 @@ opium = {
 		factor = 15
 		modifier = {
 			factor = 0
-			NOT = { 
-				has_global_flag = tradegood_marcin
-			}
-		}
-		modifier = {
-			factor = 0
 			NOT = {
 				OR = {
 					superregion = india_superregion
@@ -4218,12 +4204,6 @@ opium = {
 				}
 			}
 		} 
-		
-		modifier = {
-			factor = 0
-			has_global_flag = No_Opium
-		}
-		
 		modifier = {
 			factor = 1.2
 			FROM = {
@@ -4256,12 +4236,6 @@ rum = {
 	}
 	chance = {
 		factor = 15 
-		modifier = {
-			factor = 0
-				NOT = { 
-					has_global_flag = tradegood_marcin 
-				}
-		}
 		modifier = {
 			factor = 0
 			NOT = {
@@ -4314,12 +4288,6 @@ rum = {
 			factor = 3
 			region = carribeans_region
 		}
-		
-		modifier = {
-			factor = 0
-			has_global_flag = No_Rum 
-		}
-		
 		modifier = {
 			factor = 1.2
 			FROM = {
@@ -4352,14 +4320,7 @@ horses = {
 	}
 	chance = {
 		factor = 2 
-		modifier = {
-			factor = 0
-			NOT = { has_global_flag = tradegood_marcin }
-		}
-		modifier = {
-			factor = 0
-			has_global_flag = No_Horses 
-		}
+
 		modifier = {
 			factor = 0
 			OR = {
@@ -4383,30 +4344,7 @@ horses = {
 				}
 				continent = oceania
 			}
-			FROM = {
-				OR = {
-					capital_scope = { continent = north_america }
-					capital_scope = { continent = south_america }
-					capital_scope = { continent = oceania }
-					capital_scope = { continent = new_world }
-				}
-				NOT = {
-					OR = {
-						is_colonial_nation = yes
-						technology_group = western
-				        technology_group = english_tech_group
-				        technology_group = french_tech_group
-				        technology_group = dutch_tech_group
-				        technology_group = german_tech_group
-				        technology_group = italian_tech_group
-					    technology_group = portuguese_tech_group
-				        technology_group = roman_tech_group
-						technology_group = scandinavian_tech_group
-				        technology_group = spanish_tech_group
-					    technology_group = swiss_tech_group
-					}
-				}
-			}
+			NOT = { is_year = 1520 }
 		}
 		modifier = {
 			factor = 0.25
@@ -4530,14 +4468,6 @@ jade = {
 	chance = {
 		factor = 1
 		modifier = {
-			factor = 0
-				NOT = { has_global_flag = tradegood_marcin }
-		}
-		modifier = {
-			factor = 0
-				 has_global_flag = No_Jade 
-		}
-		modifier = {
 			factor = 25
 			OR = {
 				area = te_waipounamu_area
@@ -4620,14 +4550,6 @@ lead = {
 	}
 	chance = {
 		factor = 10
-		modifier = {
-			factor = 0
-				NOT = { has_global_flag = tradegood_marcin }
-		}
-		modifier = {
-			factor = 0
-				 has_global_flag = No_Lead 
-		}
 		modifier = {
 			factor = 0
 			area = newfoundland_area
@@ -4724,14 +4646,6 @@ cloves = {
 		factor = 50 
 		modifier = {
 			factor = 0
-				NOT = { has_global_flag = tradegood_marcin }
-		}
-		modifier = {
-			factor = 0
-				 has_global_flag = No_Cloves 
-		}
-		modifier = {
-			factor = 0
 			NOT = { superregion = india_superregion }
 			NOT = { region = east_africa_region }
 			NOT = { superregion = east_indies_superregion }
@@ -4788,14 +4702,6 @@ mercury = {
 	}
 	chance = {
 		factor = 5
-		modifier = {
-			factor = 0
-				NOT = { has_global_flag = tradegood_marcin }
-		}
-		modifier = {
-			factor = 0
-				NOT = { has_global_flag = No_Mercury }
-		}
 		modifier = {
 			factor = 0
 			OR = {
@@ -4927,14 +4833,6 @@ camel = {
 		factor = 10
 		modifier = {
 			factor = 0
-				NOT = { has_global_flag = tradegood_marcin }
-		}
-		modifier = {
-			factor = 0
-				has_global_flag = No_Camel
-		}
-		modifier = {
-			factor = 0
 			OR = {
 				continent = new_world
 				continent = north_america
@@ -4981,7 +4879,7 @@ gunpowder = {
 		local_hostile_attrition = 1
 	}
 	chance = { 
-		factor = 10 
+		factor = 10
 		modifier = {
 			factor = 0
 			OR = {
@@ -5038,13 +4936,6 @@ tin = {
 
 	chance = {
 		factor = 15
-		modifier = {
-			factor = 0
-				OR = {
-					NOT = { has_global_flag = tradegood_marcin }
-					has_global_flag = No_Tin 
-				}
-		}
 		modifier = {
 			factor = 0
 			area = newfoundland_area
@@ -5161,13 +5052,6 @@ cheese = {
 	}
 	chance = {
 		factor = 13
-		modifier = {
-			factor = 0
-				OR = {
-					NOT = { has_global_flag = tradegood_marcin }
-					has_global_flag = No_Cheese 
-				}
-		}
 		modifier = { 
 			factor = 0
 			OR = {
@@ -5267,7 +5151,6 @@ citrus = {
 		factor = 10
 		modifier = {
 			factor = 0
-			NOT = { has_global_flag = tradegood_marcin }
 			is_random_new_world = yes
 			continent = new_world #Always in RNW
 			OR = {
@@ -5289,30 +5172,18 @@ citrus = {
 				has_terrain = steppe
 			}
 		}
-		modifier = {
-			factor = 0
-			has_global_flag = No_Citrus
-		}
-		modifier = {
-			factor = 0
-			is_random_new_world = yes
-			continent = new_world #Always in RNW
+		modifier = { #Less likely in arid and artic climates
+			factor = 0.25
 			OR = {
 				has_climate = arid
 				has_climate = arctic
 				has_terrain = glacier
 				has_terrain = tundra_terrain
-				has_terrain = forest
-				has_terrain = woods
 				has_terrain = cold_mountains
-				has_terrain = mountain
-				has_terrain = highlands
-				has_terrain = dry_highlands
 				has_terrain = desert
 				has_terrain = coastal_desert
 				has_terrain = desert_ranges
 				has_terrain = salt_flats
-				has_terrain = steppe
 			}
 		}
 		modifier = {
@@ -5375,11 +5246,30 @@ citrus = {
 		}
 
 		modifier = {
-			factor = 30.5
+			factor = 30.0
 			is_random_new_world = no
 			OR = {
 				area = california_area
 				area = florida_area
+			}
+			NOT = {
+				OR = {
+					has_climate = arid
+					has_climate = arctic
+					has_terrain = glacier
+					has_terrain = tundra_terrain
+					has_terrain = forest
+					has_terrain = woods
+					has_terrain = cold_mountains
+					has_terrain = mountain
+					has_terrain = highlands
+					has_terrain = dry_highlands
+					has_terrain = desert
+					has_terrain = coastal_desert
+					has_terrain = desert_ranges
+					has_terrain = salt_flats
+					has_terrain = steppe
+				}
 			}
 		}
 		modifier = {
@@ -5432,19 +5322,50 @@ seafood = {
 		local_sailors_modifier = 0.20
 	}
 	chance = {
-		factor = 10
+		factor = 14
 		modifier = {
 			factor = 0
 			NOT = { has_port = yes }
 		}
+
 		modifier = {
 			factor = 0
-				NOT = { has_global_flag = tradegood_marcin }
+			OR = { 
+				area = upper_ontario_area
+			    	area = lower_canada_area
+			    	area = upper_canada_area
+			    	area = moxos_area
+			    	area = paraguay_area
+				area = chaco_area
+			    	area = ucayali_area
+				area = iquitos_area
+				area = appalachia_area
+				area = susquehanna_area
+				area = manitoba_area
+				area = buenos_aires_area
+				area = misiones_area
+			    	province_id = 6126
+			    	province_id = 3022
+			    	province_id = 2816
+			    	province_id = 4617
+			    	province_id = 8742
+			    	province_id = 1161
+			    	region = amazon_region
+				region = great_lakes_region
+				region = great_plains_region
+				AND = { 
+					region = mississippi_region
+					NOT = { province_id = 922 }
+					NOT = { province_id = 2530 }
+					NOT = { province_id = 912 } 
+					NOT = { province_id = 893 }
+					NOT = { province_id = 5993 }
+					NOT = { province_id = 2516 }
+					NOT = { province_id = 8863 }
+				}
+			}
 		}
-		modifier = {
-			factor = 0
-				 has_global_flag = No_Seafood 
-		}
+
 		modifier = {
 			factor = 1.2
 			OR = {
@@ -5464,11 +5385,24 @@ seafood = {
 			}
 		}
 		modifier = {
-			factor = 1.2
-			has_terrain = glacier
-			area = maine_area
-			area = west_florida_area
-			area = chesapeake_area
+			factor = 2.5
+			OR = { 
+				has_terrain = glacier
+				area = west_florida_area
+				area = chesapeake_area
+			}
+		}
+		modifier = {
+			factor = 6.0
+			region = cascadia_region
+		}
+		modifier = {
+			factor = 12.0
+			OR = { 
+				area = maine_area
+				area = upper_acadia_area
+				area = lower_acadia_area
+			}
 		}
 		modifier = {
 			factor = 1.2
@@ -5503,14 +5437,6 @@ carpet = {
 	}
 	chance = {
 		factor = 15
-		modifier = {
-		factor = 0
-				NOT = { has_global_flag = tradegood_marcin }
-		}
-		modifier = {
-			factor = 0
-				 has_global_flag = No_Carpet 
-		}
 		modifier = {
 			factor = 0
 			is_random_new_world = no
@@ -5571,7 +5497,6 @@ nutmeg = {
 		factor = 50
 		modifier = {
 			factor = 0
-			NOT = { has_global_flag = tradegood_marcin }
 			NOT = { superregion = india_superregion }
 			NOT = { region = east_africa_region }
 			NOT = { superregion = east_indies_superregion }
@@ -5579,7 +5504,6 @@ nutmeg = {
 		}
 		modifier = {
 			factor = 0
-			has_global_flag = No_Nutmeg 
 			OR = {
 				has_terrain = mountain
 				has_terrain = highlands
@@ -5634,14 +5558,7 @@ maize = {
 	}
 	chance = {
 		factor = 25
-		modifier = {
-			factor = 0
-			NOT = { has_global_flag = tradegood_marcin }
-		}
-		modifier = {
-			factor = 0
-			has_global_flag = No_Maize 
-		}
+
 		modifier = {
 			factor = 0
 			OR = {
@@ -5772,15 +5689,55 @@ pearls = {
 
 		modifier = {
 			factor = 0
-			NOT = {
-				OR = {
-					region = moluccas_region
-					region = indonesia_region
-					continent = oceania
-					region = riau_islands_region
-					region = nusa_tenggara_region
-					has_port = yes
+			NOT = { has_port = yes }
+		}
+
+		modifier = {
+			factor = 0
+			OR = { 
+				area = upper_ontario_area
+			    	area = lower_canada_area
+			    	area = upper_canada_area
+			    	area = moxos_area
+			    	area = paraguay_area
+				area = chaco_area
+			    	area = ucayali_area
+				area = iquitos_area
+				area = appalachia_area
+				area = susquehanna_area
+				area = manitoba_area
+				area = buenos_aires_area
+				area = misiones_area
+			    	province_id = 6126
+			    	province_id = 3022
+			    	province_id = 2816
+			    	province_id = 4617
+			    	province_id = 8742
+			    	province_id = 1161
+			    	region = amazon_region
+				region = great_lakes_region
+				region = great_plains_region
+				AND = { 
+					region = mississippi_region
+					NOT = { province_id = 922 }
+					NOT = { province_id = 2530 }
+					NOT = { province_id = 912 } 
+					NOT = { province_id = 893 }
+					NOT = { province_id = 5993 }
+					NOT = { province_id = 2516 }
+					NOT = { province_id = 8863 }
 				}
+			}
+		}
+
+		modifier = {
+			factor = 2
+			OR = {
+				region = moluccas_region
+				region = indonesia_region
+				continent = oceania
+				region = riau_islands_region
+				region = nusa_tenggara_region
 			}
 
 		}
@@ -5853,14 +5810,7 @@ silver = {
 	}
 	chance = {
 		factor = 20
-		modifier = {
-			factor = 0
-			NOT = { has_global_flag = tradegood_marcin }
-		}
-		modifier = {
-			factor = 0
-			has_global_flag = No_Silver 
-		}
+
 		modifier = {
 			factor = 0
 			NOT = { region = central_asia_region }
@@ -5965,14 +5915,6 @@ exotic_animals = {
 	}
 	chance = {
 		factor = 10
-		modifier = {
-			factor = 0
-			NOT = { has_global_flag = tradegood_marcin }
-		}
-		modifier = {
-			factor = 0
-			has_global_flag = No_Exotic_animals 
-		}
 
 		modifier = {
 			factor = 0
@@ -6030,7 +5972,6 @@ vanilla = {
 		modifier = {
 			#Added more places that vanilla plants simply don't grow in -NK.
 			factor = 0
-			NOT = { has_global_flag = tradegood_marcin }
 			OR = {
 				has_climate = arid
 				has_climate = arctic
@@ -6062,10 +6003,6 @@ vanilla = {
 					}
 				}
 			}
-		}
-		modifier = {
-			factor = 0
-			has_global_flag = No_Vanilla 
 		}
 		modifier = {
 			factor = 0
@@ -6148,15 +6085,6 @@ ebony = {
 	}
 	chance = {
 		factor = 15
-		
-		modifier = {
-			factor = 0
-			OR = {
-				NOT = { has_global_flag = tradegood_marcin }
-				has_global_flag = No_Ebony 
-			}
-		}
-		
 		modifier = {
 			factor = 2.5
 			OR = {
@@ -6229,16 +6157,7 @@ tar = {
 	}
 	chance = {
 		factor = 15
-		modifier = {
-			factor = 0
-			NOT = { has_global_flag = tradegood_marcin }
-		}
-		
-		modifier = {
-			factor = 0
-			has_global_flag = No_Tar 
-		}
-							
+					
 		modifier = {
 			factor = 0
 			NOT = {
@@ -6276,7 +6195,7 @@ tar = {
 			}
 		}
 		modifier = {
-			factor = 0.3
+			factor = 0.75
 			NOT = { region = canada_region }
 			NOT = { region = northeast_america_region }
 			NOT = { region = great_lakes_region }
@@ -6382,25 +6301,45 @@ sulfur = {
 					province_id = 2722
 					province_id = 2723
 					province_id = 2724
+					province_id = 8812
+					province_id = 8832
+					province_id = 8830
+					province_id = 2525
+					province_id = 2551
+					province_id = 948
+					province_id = 8820
+					province_id = 8819
+					province_id = 2557
+					province_id = 951
+					province_id = 2531
+					province_id = 2544
+					province_id = 4878
 				}
 			}
 		}
 		
 		modifier = {
-			factor = 0
-			NOT = { has_global_flag = tradegood_marcin }
+			factor = 0.8
+			OR = {
+				province_id = 8812
+				province_id = 8832
+				province_id = 2525
+				province_id = 8819
+				province_id = 2557
+				province_id = 951
+				province_id = 2531
+				province_id = 2544
+				province_id = 4878
+			}
 		}
-		modifier = {
-			factor = 0
-			has_global_flag = No_Sulfur 
-		}
-		
+
 		modifier = {
 			factor = 1.2
 			FROM = {
 				has_country_flag = sulfur_chance_flag_low
 			}
 		}
+		
 		
 		modifier = {
 			factor = 1.4
@@ -6504,15 +6443,20 @@ maple_syrup = { #73
 			has_terrain = forest
 			has_terrain = woods
 		}
+
 		modifier = {
-			factor = 0
-			NOT = { has_global_flag = tradegood_marcin }
+			factor = 1.5
+			area = grand_river_area
+			area = laurentian_area
+			area = notre_dame_mountains_area
 		}
+
+
 		modifier = {
-			factor = 0
-			has_global_flag = No_Maple_syrup 
+			factor = 8.0
+			area = lower_canada_area
 		}
-		
+
 		modifier = {
 			factor = 1.2
 			FROM = {
@@ -6556,14 +6500,7 @@ potato = { #74
 			}
             NOT = { is_year = 1589 }
         }
-		modifier = {
-			factor = 0
-			NOT = { has_global_flag = tradegood_marcin }
-		}
-		modifier = {
-			factor = 0
-			has_global_flag = No_Potato 
-		}
+
 		modifier = {
 		#Added more terrain in which potato plants do not grow, and terrain in which it can grow -NK.
 			factor = 0
@@ -6859,14 +6796,7 @@ tomato = { #81
 	}
 	chance = {
 		factor = 20
-		modifier = {
-			factor = 0
-			NOT = { has_global_flag = tradegood_marcin }
-		}
-		modifier = {
-			factor = 0
-			has_global_flag = No_Tomato
-		}
+
 		modifier = {
 		#Added common terrain for growing tomatoes -NK.
 			factor = 1.5
@@ -6951,7 +6881,7 @@ tomato = { #81
 	}
 }
 
-champagne = { #82
+champagne_bottle = { #82
 	is_valuable = yes
 	color = { 0.66 0.12 0.29 }
 	modifier = { 
@@ -6990,34 +6920,18 @@ alpaca_wool = { #83
 				has_terrain = farmlands
 				has_terrain = forest
 				has_terrain = woods
-				has_terrain = impassable_mountains
 				has_climate = tropical
 				has_climate = arctic
-				has_winter = severe_winter
 			}
-			NOT = { region = peru_region }
-			NOT = { region = upper_peru_region }
 		}
 		modifier = {
 			factor = 0
-			OR = {
-				region = brazil_region
-				region = colombia_region
-				region = la_plata_region
-				continent = north_america
-				continent = africa
-				continent = europe
-				continent = asia
-				continent = oceania
-			}
-			NOT = { has_terrain = mountain }
-		}
-		modifier = {
-			factor = 0
-			OR = {
-				continent = africa
-				continent = europe
-				continent = asia
+			AND = {
+				NOT = { region = peru_region }
+				NOT = { region = upper_peru_region }
+				NOT = { area = cuyo_area }
+				NOT = { area = nehuenken_area }
+				NOT = { area = central_chile_area }
 			}
 		}
 		modifier = {
@@ -7379,11 +7293,7 @@ sweet_confectioneries = { #94
 		local_culture_conversion_cost = -0.15
 	}
 	chance = {
-		factor = 15
-		modifier = {
-			factor = 0
-			NOT = { development = 20 }
-		}
+		factor = 0
 	}
 }
 
@@ -7415,6 +7325,12 @@ bison_hides = { #95
 				has_terrain = marsh
 				has_terrain = jungle
 				has_terrain = tropical_highlands_terrain
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				has_terrain = drylands
 				continent = south_america
 				continent = africa
 				continent = europe
@@ -7519,41 +7435,16 @@ llama = { #96
 				has_terrain = woods
 				has_climate = tropical
 				has_climate = arctic
-				has_winter = severe_winter
-			}
-			NOT = { region = peru_region }
-			NOT = { region = upper_peru_region }
-		}
-		modifier = {
-			factor = 0
-			OR = {
-				region = colombia_region
-				region = la_plata_region
-				continent = north_america
-				continent = africa
-				continent = europe
-				continent = asia
-				continent = oceania
-			}
-			NOT = { has_terrain = mountain }
-		}
-		modifier = {
-			factor = 0
-			OR = {
-				continent = africa
-				continent = europe
-				continent = asia
-				continent = oceania
 			}
 		}
 		modifier = {
 			factor = 0
-			OR = {
-				region = brazil_region
-				region = amazon_region
-				region = mato_grosso_region
-				region = maranhao_region
-				region = rio_grande_do_sul_region
+			AND = {
+				NOT = { region = peru_region }
+				NOT = { region = upper_peru_region }
+				NOT = { area = cuyo_area }
+				NOT = { area = nehuenken_area }
+				NOT = { area = central_chile_area }
 			}
 		}
 		modifier = {
@@ -7761,6 +7652,8 @@ copra = { #99
 				area = buenos_aires_area
 				area = grao_para_area
 				area = lower_louisiana_area
+				continent = south_america
+				continent = north_america
 				NOT = {
 					OR = {
 						has_climate = tropical
@@ -8372,19 +8265,11 @@ cider = { #112
 			}
 		}
 		
-		modifier = {
-			factor = 0
-			NOT = { has_global_flag = tradegood_marcin }
-		}
+
 		
 		modifier = {
 			factor = 0
 			NOT = { continent = europe }
-		}
-		
-		modifier = {
-			factor = 0
-			has_global_flag = No_Cider
 		}
 		modifier = {
 			factor = 1.2
@@ -8718,7 +8603,7 @@ english_tea = { #122
 	}
 }
 
-expresso = { #123
+espresso = { #123
 	is_valuable = yes
 	color = { 0.8 0.25 0.85 }
 	is_latent = yes

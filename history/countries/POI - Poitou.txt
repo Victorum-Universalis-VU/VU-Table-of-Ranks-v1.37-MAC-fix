@@ -1,10 +1,10 @@
 government = monarchy
-add_government_reform = appanage_reform
-government_rank = 1
+add_government_reform = eue_county_reform #appanage_reform
+government_rank = 4 #County
 #technology_group = western
 technology_group = french_tech_group
 unit_type = western
-primary_culture = poitevin_UKS
+primary_culture = poitevin_culture
 add_accepted_culture = cosmopolitan_french
 religion = catholic
 capital = 180	# Poitiers
@@ -13,7 +13,7 @@ fixed_capital = 180 # Cannot move capital away from this province & no power cos
 
 1444.1.1 = {
 	monarch = {
-		name = "InterrÃ¨gne"
+		name = "Interrègne"
 		adm = 3
 		dip = 3
 		mil = 3
@@ -21,12 +21,16 @@ fixed_capital = 180 # Cannot move capital away from this province & no power cos
 	}
 }
 		
-1515.1.1 = { government = monarchy
-add_government_reform = autocracy_reform }
+1515.1.1 = { 
+	government = monarchy
+	add_government_reform = autocracy_reform 
+}
 
 1560.1.1 = { religion = reformed }
 
 1589.8.3 = { set_legacy_government = administrative_monarchy }
 
-1661.3.9 = { government = monarchy
-add_government_reform = autocracy_reform }
+1661.3.9 = { 
+	government = monarchy
+	add_government_reform = autocracy_reform 
+}

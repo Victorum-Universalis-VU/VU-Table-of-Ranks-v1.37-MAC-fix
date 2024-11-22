@@ -4,6 +4,45 @@ fra_improved_halls_modifier = {
 	local_unrest = -1 
 }
 
+#VU Minorities addition by SF
+
+african_minorities = { #Added in VU 1.37 by SF
+	local_manpower = 0.05
+	rural_goods_produced_modifier = 0.1
+	picture = "african_minorities_icon"
+}
+
+arab_minorities = { #Added in VU 1.37 by SF
+	trade_value = 0.05
+	local_missionary_strength = 0.025
+	picture = "arab_minorities_icon"
+}
+
+chinese_minorities = { #Added in VU 1.37 by SF
+	local_tax_modifier = 0.1
+	local_centralize_state_cost = 0.05
+	picture = "chinese_minorities_icon"
+}
+
+european_minorities = { #Added in VU 1.37 by SF
+	trade_value = 0.05
+	local_culture_conversion_cost = 0.1
+	local_institution_spread = 0.25
+	picture = "european_minorities_icon"
+}
+
+indian_minorities = { #Added in VU 1.37 by SF
+    local_tolerance_of_heathens = 0.1
+	local_monthly_devastation = 0.05
+	picture = "indian_minorities_icon"
+}
+
+japanese_minorities = { #Added in VU 1.37 by SF
+    local_center_of_trade_upgrade_cost = 0.1
+	local_culture_conversion_time = 0.05
+	picture = "japanese_minorities_icon"
+}
+
 #Quonton
 vu_got_mit_uns = {
 	local_tax_modifier = 0.5
@@ -512,4 +551,53 @@ vu_potential_archaeological_dig = {
 
 vu_book_of_grudges_modifier = {
 	cb_on_religious_enemies = yes
+}
+
+vu_fancifur_novels = {	
+	heir_chance = -0.50
+	prestige = -1
+	global_unrest = 1
+	discipline = -0.05
+	global_tax_income = -24
+	great_project_upgrade_cost = 1
+	defensiveness = -1
+	ship_durability = -0.5
+	diplomatic_reputation = -2 #It makes so much sense! xD
+}
+
+vu_wandering_wenches_of_stettin = {
+    heir_chance = 0.25
+    legitimacy = -0.5
+    prestige = 0.5
+    local_unrest = -2
+    local_prosperity_growth = 0.25
+    tax_income = -1
+    trade_value = 5
+    local_sailors = 500
+    local_regiment_cost = -0.10
+}
+
+vu_wandering_gamblers = {
+    legitimacy = -0.5
+    interest = 0.5
+    inflation_reduction = -0.05
+    local_unrest = 1
+    yearly_corruption = 0.05
+    local_monthly_devastation = 0.01
+}
+
+vu_wandering_musicians = {
+    monthly_splendor = 1
+    prestige = 0.5
+    monarch_diplomatic_power = 1
+    local_unrest = -1
+    local_prosperity_growth = 0.25
+}
+
+vu_wandering_artists = {
+    monthly_splendor = 1
+    prestige = 0.5
+    monarch_diplomatic_power = 1
+    improve_relation_modifier = 0.15
+    local_prosperity_growth = 0.25
 }

@@ -115,3 +115,11 @@ swi_bastion_catholicism_modifier = {
 swi_canton_administration_modifier = {
 	country_admin_power = 1 
 }
+
+#Autonomous Canton
+swi_autonomous_canton_republican_ties_modifier = {
+	republican_tradition = 0.05
+}
+swi_autonomous_canton_administration_modifier = {
+	country_admin_power = 1 
+}

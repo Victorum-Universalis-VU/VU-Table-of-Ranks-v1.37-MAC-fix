@@ -40,7 +40,7 @@
  
  RUM_gain_claims: "§Y[Root.GetName]§! gains a §Ypermanent claim§! on every area bordering us."
  RUM_until_age_of_reformation: "until the end of the §YAge of Discovery§!"
- RUM_until_rum_is_formed: "until §Y[RMM.GetName] is formed§!"
+ RUM_until_rum_is_formed: "until §Y[RUM.GetName] is formed§!"
  RUM_gain_claims_on_ottos: "§Y[Root.GetName]§! gains a §Yregular claim§! on every §Ycore§! province of §Y[TUR.GetName]§!."
  BEY_every_province_of_turkish_culture: "Every §Yowned§! province of §YTurkish§! culture gains §G-10§! §YYears of Separatism§!."
  RUM_otto_pwsc: "For as long as we are at war with §Y[TUR.GetName]§!, we will get the following:\nProvince Warscore Cost: §G-10.0%§!"
@@ -225,7 +225,7 @@
  
  RUM_anatolia_control: "Anatolian Eyalet Revolt"
  
- RUM_may_form_rum: "May form @RMM §YRûm§! irrespective of §YState Religion§!."
+ RUM_may_form_rum: "May form @RUM §YRûm§! irrespective of §YState Religion§!."
  ME_RUM_losing_against_a_beylik: "We are losing a §Ywar§! against a §YTurkish§! Beylik with less than §R-10.0%§! Warscore."
  ME_RUM_powerful_beylik: "There is a §YTurkish§! Beylik with at least §Y300§! Total §YDevelopment§! that is not at §Ywar§! with us."
  RUM_control_of_anatolia_is_lost: "Control of §YAnatolia§! Region is lost to §Y[Rum_beneficiary_1.GetName]§!. Furthermore, various conquered Beyliks will seek to rebel against us when the war is over."
@@ -558,7 +558,7 @@
  RUM_balkans_desc: ""
  RUM_path_rome_title: "@BYZ Legacy of Byzantion @BYZ"
  RUM_path_rome_desc: ""
- RUM_path_seljuks_title: "@RMM Legacy of Seljuks @RMM"
+ RUM_path_seljuks_title: "@RUM Legacy of Seljuks @RUM"
  RUM_path_seljuks_desc: ""
  RUM_path_caliphate_title: "@ARB Legacy of Crusades @ARB"
  RUM_path_caliphate_desc: ""
@@ -673,9 +673,9 @@
  RUM_roman_decision_destiny_desc: ""
  RUM_caliphate_decision_title: "@ARB Legacy of Crusades"
  RUM_caliphate_decision_desc: ""
- RUM_seljuks_decision_title: "@RMM Legacy of Seljuks"
+ RUM_seljuks_decision_title: "@RUM Legacy of Seljuks"
  RUM_seljuks_decision_desc: ""
- RUM_end_preview_decision_title: "@RMM Change the §MPreview Status§!"
+ RUM_end_preview_decision_title: "@RUM Change the §MPreview Status§!"
  RUM_end_preview_decision_desc: ""
  RUM_silk_worm_mastery_title: "@[Root.Country.GetTag] Silk Worm Mastery"
  RUM_silk_worm_mastery_desc: ""

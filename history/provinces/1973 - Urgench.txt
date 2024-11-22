@@ -2,6 +2,7 @@
 
 owner = TIM
 controller = TIM
+add_core = TIM
 culture = uzbehk
 religion = sunni
 capital = "Urgench"
@@ -11,20 +12,10 @@ base_tax = 8
 base_production = 8
 base_manpower = 8
 is_city = yes
-add_core = TIM
+
+#Claimants
+add_core = K4W
 add_core = KHI
-
-
-
-
-
-
-
-
-
-
-
-
 
 1409.5.13 = { #Ulugh Beg is made Governor of Samarkand
 	owner = TRS

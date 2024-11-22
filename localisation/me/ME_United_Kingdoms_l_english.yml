@@ -323,18 +323,9 @@
  industrialization_pioneers: "Industrialization Pioneers"
  industrialization_pioneers_desc: "The English and French were the first nations to truly industrialization, the former quite a bit more than the latter. The combination of the two worldwide centers of industrialization will no doubt have magnificent consequences."
  
- # # Estate:
- # estate_french: "French Subjects"
- # estate_french_desc: "French Subjects represent the French Estates that are based in our possessions in France or in our subject."
- # ENG_not_loyal_France: "Disloyal Subject"
- # ENG_Patronize: "Patronize the Estates"
- # eng_recruit_minister: "Recruit French Scientist"
- # eng_demand_french_troops: "Draft French Men"
- # ENG_drafting: "Gain §G250§! Manpower for each province owned by [FRA.GetName] in French Region at their expense"
- # eng_demand_trade_support: "Demand Trade Support"
+ #Estate:
  UKS_trade_support: "Trade Support"
  desc_UKS_trade_support: ""
- # ENG_need_support: "Request Support"
  
  # Events:
  ME_United_Kingdoms_Events.1.t: "Discontent in Terra Gallica"

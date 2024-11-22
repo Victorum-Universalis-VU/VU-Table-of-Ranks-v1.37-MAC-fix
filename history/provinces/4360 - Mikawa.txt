@@ -2,7 +2,7 @@
 
 owner = TKG
 controller = TKG
-culture = togoku
+culture = tokai 
 religion = shinto
 capital = "Okazaki"
 trade_goods = rice

@@ -3,9 +3,6 @@
 owner = ORM
 controller = ORM
 add_core = ORM
-add_core = ALH
-add_core = OMA
-add_core = SHR
 capital = "Al  Fugaira"
 culture = gulf_arabic
 religion = shiite
@@ -16,24 +13,13 @@ base_production = 1
 base_manpower = 1 
 is_city = yes
 
+#Claimants
+add_core = ALH
+add_core = OMA
+add_core = R4S
+add_core = SHR
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#Histories by SF
 1622.5.3 = {
 	owner = PER
 	controller = PER

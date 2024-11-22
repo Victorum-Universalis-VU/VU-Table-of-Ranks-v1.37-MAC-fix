@@ -2,6 +2,7 @@
 
 owner = TIM
 controller = TIM
+add_core = TIM
 culture = luri
 religion = sunni
 capital = "Kangavar"
@@ -11,19 +12,10 @@ base_tax = 4
 base_production = 3
 base_manpower = 2 
 is_city = yes
+
+#Claimants
 add_core = LRI
-add_core = TIM
-
-
-
-
-
-
-
-
-
-
-
+add_core = M3D
 
 1442.1.1 = { #Death of Yusuf Khwaja, governor of Rayy. Appointment of Sultan Muhammad b. Baysunghur as governor of northern Iran.
 	owner = QOM

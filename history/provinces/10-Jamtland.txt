@@ -3,9 +3,9 @@
 #Area - Norrland
 
 #Default
-owner = JEM
-controller = JEM
-add_core = JEM
+owner = JMT
+controller = JMT
+add_core = JMT
 culture = norwegian # They were actually Jämts - the unique blend of Swedish, Norwegian and local tendencies
 religion = catholic
 hre = no
@@ -19,15 +19,13 @@ is_city = yes
 
 #Claimants
 add_core = NOR
+add_core = TRD
 
 #Buildings
 
 #Special Modifiers
 
 #Known by Technology groups
-
-
-
 
 #Histories by SF
 1440.1.1 = { owner = NOR controller = NOR add_core = NOR } # Norwegian territorial lands - By San Felipe

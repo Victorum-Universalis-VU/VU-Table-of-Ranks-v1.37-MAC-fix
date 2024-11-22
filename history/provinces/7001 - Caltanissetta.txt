@@ -13,12 +13,6 @@ trade_goods = sulfur	# Sicily rich is sulfur, had to place it somewhere
 is_city = yes
 hre = no
 
-
-
-
-
-
-
 #1291.6.18 = {
 #	owner = ARA
 #	controller = ARA
@@ -43,6 +37,7 @@ hre = no
 	controller = NAP
 	add_core = NAP
 } # Alfonso V of Aragon conquers Naples and temporarily unites Sicily & Naples again into the Kingdom of Naples. Going with Paradox's 3-3 date instead of 6-2 in order to avoid changes to the diplomacy files
+1444.1.1 = { add_core = SIC owner = SIC controller = SIC } 
 1444.11.13 = { #VictorumUniversalis batch edit shortcut the second shattering begins
 	owner = SIC
 	controller = SIC

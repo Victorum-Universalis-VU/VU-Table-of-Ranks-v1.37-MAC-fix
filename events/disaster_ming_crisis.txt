@@ -280,7 +280,10 @@ country_event = {
 				if = {
 					limit = {
 						any_neighbor_country = {
-							has_reform = steppe_horde
+							OR = {
+				            	has_reform = steppe_horde
+				            	has_reform = scythian_horde_reform
+				            }
 							total_own_and_non_tributary_subject_development = 500 #VU Dev Doubling
 							is_subject = no
 							#NOT = { truce_with = ROOT }
@@ -290,7 +293,10 @@ country_event = {
 					}
 					random_neighbor_country = {
 						limit = {
-							has_reform = steppe_horde
+							OR = {
+				            	has_reform = steppe_horde
+				            	has_reform = scythian_horde_reform
+				            }
 							total_own_and_non_tributary_subject_development = 500 #VU Dev Doubling
 							is_subject = no
 							#NOT = { truce_with = ROOT }

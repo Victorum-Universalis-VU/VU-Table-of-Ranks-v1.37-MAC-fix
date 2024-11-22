@@ -87,8 +87,8 @@ country_decisions = {
 			change_tag = ALG
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
-				limit = { NOT = { government_rank = 2 } }
-				set_government_rank = 2
+				limit = { NOT = { government_rank = 8 } }
+				set_government_rank = 8
 			}
 			add_country_modifier = {
 				name = centralization_modifier
@@ -242,8 +242,8 @@ country_decisions = {
 			swap_non_generic_missions = yes
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
-				limit = { NOT = { government_rank = 2 } }
-				set_government_rank = 2
+				limit = { NOT = { government_rank = 8 } }
+				set_government_rank = 8
 			}
 			add_prestige = 25
 			add_country_modifier = {
@@ -444,8 +444,8 @@ country_decisions = {
 			change_tag = ARB
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
-				limit = { NOT = { government_rank = 2 } }
-				set_government_rank = 2
+				limit = { NOT = { government_rank = 8 } }
+				set_government_rank = 8
 			}
 			add_country_modifier = {
 				name = "centralization_modifier"
@@ -565,8 +565,8 @@ country_decisions = {
 			change_tag = ARM
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
-				limit = { NOT = { government_rank = 2 } }
-				set_government_rank = 2
+				limit = { NOT = { government_rank = 8 } }
+				set_government_rank = 8
 			}
 			add_country_modifier = {
 				name = "centralization_modifier"
@@ -858,8 +858,8 @@ country_decisions = {
 			swap_non_generic_missions = yes
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
-				limit = { NOT = { government_rank = 2 } }
-				set_government_rank = 2
+				limit = { NOT = { government_rank = 8 } }
+				set_government_rank = 8
 			}
 			british_isles_region = {
 				limit = {
@@ -882,7 +882,9 @@ country_decisions = {
 					mission_completed = ENG_conquer_scotland
 					has_dlc = "Rule Britannia"
 				}
-				give_permaclaims_for_mission = { mission=eng_take_shetland_and_faro_isles }
+				#give_permaclaims_for_mission = { mission=eng_take_shetland_and_faro_isles }
+				give_claims = { province = 369 }
+				give_claims = { province = 1978 }
 				iceland_area = {
 					limit = {
 						NOT = { is_core = ROOT }
@@ -896,7 +898,11 @@ country_decisions = {
 					mission_completed = ENG_chart_india
 					has_dlc = "Rule Britannia"
 				}
-				give_permaclaims_for_mission = { mission=eng_rb_british_india }
+				give_claims = { region = bengal_region }
+				give_claims = { region = coromandel_region }
+				give_claims = { region = deccan_region }
+				give_claims = { region = west_india_region }
+				#give_permaclaims_for_mission = { mission=eng_rb_british_india }
 			}
 		}
 		ai_will_do = {
@@ -994,8 +1000,8 @@ country_decisions = {
 #			swap_non_generic_missions = yes
 #			remove_non_electors_emperors_from_empire_effect = yes
 #			if = {
-#				limit = { NOT = { government_rank = 2 } }
-#				set_government_rank = 2
+#				limit = { NOT = { government_rank = 8 } }
+#				set_government_rank = 8
 #			}
 #			british_isles_region = {
 #				limit = {
@@ -1149,9 +1155,9 @@ country_decisions = {
 				province_id = 237		# Oxfordshire
 				province_id = 234		# Wessex
 				province_id = 236		# London
-				province_id = 177		# Maine
-				province_id = 183		# Paris
-				province_id = 178		# Anjou
+				#province_id = 177		# Maine
+				#province_id = 183		# Paris
+				#province_id = 178		# Anjou
 			}
 			OR = {
 				NOT = { owned_by = ROOT }
@@ -1172,25 +1178,25 @@ country_decisions = {
 					owns_core_province = 237		# Oxfordshire
 					owns_core_province = 234		# Wessex
 					owns_core_province = 236		# London
-					owns_core_province = 177		# Maine
-					owns_core_province = 183		# Paris
-					owns_core_province = 178		# Anjou
-					178 = {							# Anjou
-						is_state = yes
-					}
+					#owns_core_province = 177		# Maine
+					#owns_core_province = 183		# Paris
+					#owns_core_province = 178		# Anjou
+					#178 = {							# Anjou
+					#	is_state = yes
+					#}
 				}
 				AND = {
 					OR = {
 						FRA = {	junior_union_with = ROOT }
 						FRA = {	is_subject_of = ROOT }
 					}
-					FRA = { NOT = { num_of_cities = 80 } }
+					FRA = { NOT = { num_of_cities = 400 } } #Was 80 but changed by SF in VU v1.37 was arbitrary and stupid.
 				}
 			}
-			num_of_owned_provinces_with = {
-				region = france_region
-				value = 25
-			}
+			#num_of_owned_provinces_with = {
+			#	region = france_region
+			#	value = 25
+			#}
 		}
 		effect = {
 			start_debate = english_french_act_of_union
@@ -1202,7 +1208,7 @@ country_decisions = {
 							exists = yes
 							ai = yes
 							is_subject_of = ROOT
-							NOT = { num_of_cities = 80 }
+							NOT = { num_of_cities = 400 } #Was 80 but changed by SF in VU v1.37 was arbitrary and stupid.
 						}
 					}
 					inherit = FRA
@@ -1239,6 +1245,7 @@ country_decisions = {
 				area = croatia_area #7
 				area = east_adriatic_coast_area #8
 				area = slavonia_area #6
+				area = ragusa_area
 			}
 			OR = {
 				NOT = { owned_by = ROOT }
@@ -1259,6 +1266,7 @@ country_decisions = {
 					area = croatia_area #7
 					area = east_adriatic_coast_area #8
 					area = slavonia_area #6
+					area = ragusa_area
 				}
 				value = 14			#At least 2/3 of Croatia's 21 provinces (approximate)
 			}
@@ -1270,8 +1278,8 @@ country_decisions = {
 			swap_non_generic_missions = yes
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
-				limit = { NOT = { government_rank = 2 } }
-				set_government_rank = 2
+				limit = { NOT = { government_rank = 8 } }
+				set_government_rank = 8
 			}
 			croatia_area = {
 				limit = {
@@ -1288,6 +1296,13 @@ country_decisions = {
 				add_permanent_claim = CRO
 			}
 			slavonia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = CRO
+			}
+			ragusa_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT }
 					NOT = { is_core = ROOT }
@@ -1375,8 +1390,8 @@ country_decisions = {
 			change_tag = ENG
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
-				limit = { NOT = { government_rank = 2 } }
-				set_government_rank = 2
+				limit = { NOT = { government_rank = 8 } }
+				set_government_rank = 8
 			}
 			northern_england_area = {
 				limit = {
@@ -1504,8 +1519,8 @@ country_decisions = {
 			swap_non_generic_missions = yes
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
-				limit = { NOT = { government_rank = 2 } }
-				set_government_rank = 2
+				limit = { NOT = { government_rank = 8 } }
+				set_government_rank = 8
 			}
 			add_country_modifier = {
 				name = centralization_modifier
@@ -1684,7 +1699,7 @@ country_decisions = {
 						is_part_of_hre = no
 					}
 				}
-				set_government_rank = 2
+				set_government_rank = 8
 			}
 
 			swap_non_generic_missions = yes
@@ -1744,8 +1759,8 @@ country_decisions = {
 			#swap_non_generic_missions = yes #Greece no missions yet has.
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
-				limit = { NOT = { government_rank = 2 } }
-				set_government_rank = 2
+				limit = { NOT = { government_rank = 8 } }
+				set_government_rank = 8
 			}
 			add_country_modifier = {
 				name = centralization_modifier
@@ -1969,13 +1984,13 @@ country_decisions = {
 			}
 			if = {
 				limit = {
-					NOT = { government_rank = 2 }
+					NOT = { government_rank = 8 }
 					OR = {
 						is_elector = yes
 						is_part_of_hre = no
 					}
 				}
-				set_government_rank = 2
+				set_government_rank = 8
 			}
 			swap_non_generic_missions = yes
 			swap_ideas = yes
@@ -2171,8 +2186,8 @@ country_decisions = {
 				add_permanent_claim = IRE
 			}
 			if = {
-				limit = { NOT = { government_rank = 2 } }
-				set_government_rank = 2
+				limit = { NOT = { government_rank = 8 } }
+				set_government_rank = 8
 			}
 			if = {
 				limit = {
@@ -2245,8 +2260,8 @@ country_decisions = {
 			remove_non_electors_emperors_from_empire_effect = yes
 			swap_non_generic_missions = yes #Moved down so that it removes HRE missions properly.
 			if = {
-				limit = { NOT = { government_rank = 2 } }
-				set_government_rank = 2
+				limit = { NOT = { government_rank = 8 } }
+				set_government_rank = 8
 			}
 			add_country_modifier = {
 				name = centralization_modifier
@@ -2358,8 +2373,8 @@ country_decisions = {
 				duration = -1
 			}
 			if = {
-				limit = { NOT = { government_rank = 2 } }
-				set_government_rank = 2
+				limit = { NOT = { government_rank = 8 } }
+				set_government_rank = 8
 			}
 			country_event  = { id = catholic_flavor.2 }
             every_province = {
@@ -2522,9 +2537,9 @@ country_decisions = {
 				}
 				if = {
 					limit = {
-						NOT = { government_rank = 2 }
+						NOT = { government_rank = 8 }
 					}
-					set_government_rank = 2
+					set_government_rank = 8
 				}
 				swap_non_generic_missions = yes
 				set_country_flag = formed_jerusalem
@@ -2614,8 +2629,8 @@ country_decisions = {
 			swap_non_generic_missions = yes
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
-				limit = { NOT = { government_rank = 2 } }
-				set_government_rank = 2
+				limit = { NOT = { government_rank = 8 } }
+				set_government_rank = 8
 			}
 			add_country_modifier = {
 				name = centralization_modifier
@@ -2815,8 +2830,8 @@ country_decisions = {
 			swap_non_generic_missions = yes
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
-				limit = { NOT = { government_rank = 2 } }
-				set_government_rank = 2
+				limit = { NOT = { government_rank = 8 } }
+				set_government_rank = 8
 			}
 			low_countries_region = {
 				limit = {
@@ -2865,7 +2880,7 @@ country_decisions = {
 			NOT = { has_country_flag = formed_poland_flag }
 			NOT = { tag = PLC }
 			NOT = { tag = POL }
-			NOT = { tag = GMV  }
+			NOT = { tag = GMA }
 			NOT = { tag = TUS } #Tuscany...?
 			NOT = { tag = EMR } #Emilia-Romagna?!
 			NOT = { tag = LVN } #FUCKING LOMBARDY-VENETIA?! Draiocht, stop smoking, please.
@@ -2905,8 +2920,8 @@ country_decisions = {
 			swap_non_generic_missions = yes
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
-				limit = { NOT = { government_rank = 2 } }
-				set_government_rank = 2
+				limit = { NOT = { government_rank = 8 } }
+				set_government_rank = 8
 			}
 			poland_region = {
 				limit = {
@@ -2959,7 +2974,7 @@ country_decisions = {
 						primary_culture = polabian_culture
 						primary_culture = kashubian_culture
 					}
-					NOT = { government_rank = 2 }
+					NOT = { government_rank = 8 }
 				}	#Some contingencies for odd situations. So long as the tag is a reasonable culture, it isn't too large, and has a capital in Pomerania, then why not? Note the num of city check should ensure no quirks with giant tags switching who shouldn't
 			}
 		}
@@ -3230,9 +3245,9 @@ country_decisions = {
 						NOT = { has_dlc = "Emperor" }
 						NOT = { hre_size = 1 }
 					}
-					NOT = { government_rank = 2 }
+					NOT = { government_rank = 8 }
 				}
-				set_government_rank = 2
+				set_government_rank = 8
 			}
 			if = {
 				limit = {
@@ -3415,8 +3430,8 @@ country_decisions = {
 				remove_government_reform = states_general_reform
 			}
 			# if = {
-				# limit = { NOT = { government_rank = 2 } }
-				# set_government_rank = 2
+				# limit = { NOT = { government_rank = 8 } }
+				# set_government_rank = 8
 			# }
 			add_country_modifier = {
 				name = centralization_modifier
@@ -3567,9 +3582,9 @@ country_decisions = {
 						NOT = { has_dlc = "Emperor" }
 						NOT = { hre_size = 1 }
 					}
-					NOT = { government_rank = 2 }
+					NOT = { government_rank = 8 }
 				}
-				set_government_rank = 2
+				set_government_rank = 8
 			}
 			east_prussia_area = {
 				limit = {
@@ -3766,8 +3781,8 @@ country_decisions = {
 			remove_non_electors_emperors_from_empire_effect = yes
 			swap_non_generic_missions = yes
 			if = {
-				limit = { NOT = { government_rank = 2 } }
-				set_government_rank = 2
+				limit = { NOT = { government_rank = 8 } }
+				set_government_rank = 8
 			}
 			add_country_modifier = {
 				name = centralization_modifier
@@ -3916,8 +3931,8 @@ country_decisions = {
 			change_tag = SPI
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
-				limit = { NOT = { government_rank = 2 } }
-				set_government_rank = 2
+				limit = { NOT = { government_rank = 8 } }
+				set_government_rank = 8
 			}
 			add_country_modifier = {
 				name = centralization_modifier
@@ -4031,8 +4046,8 @@ country_decisions = {
 			change_tag = SPI
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
-				limit = { NOT = { government_rank = 2 } }
-				set_government_rank = 2
+				limit = { NOT = { government_rank = 8 } }
+				set_government_rank = 8
 			}
 			add_prestige = 25
 			if = {
@@ -4274,7 +4289,7 @@ country_decisions = {
 							has_dlc = "Golden Century"
 							OR = {
 								tag = ARA
-								tag = CTT
+								tag = CAT #Changed from CTT
 								tag = VAL
 							}
 						}
@@ -4284,8 +4299,8 @@ country_decisions = {
 			}
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
-				limit = { NOT = { government_rank = 2 } }
-				set_government_rank = 2
+				limit = { NOT = { government_rank = 8 } }
+				set_government_rank = 8
 			}
 			add_country_modifier = {
 				name = centralization_modifier
@@ -4413,8 +4428,8 @@ country_decisions = {
 			}
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
-				limit = { NOT = { government_rank = 2 } }
-				set_government_rank = 2
+				limit = { NOT = { government_rank = 8 } }
+				set_government_rank = 8
 			}
 			add_country_modifier = {
 				name = centralization_modifier
@@ -4446,7 +4461,7 @@ country_decisions = {
 		do_not_integrate = ARA
 		do_not_integrate = LON
 		do_not_integrate = GAL
-		do_not_integrate = CTT
+		do_not_integrate = CAT #Changed from CTT
 		do_not_integrate = NAV
 		do_not_integrate = MJO
 		do_not_integrate = VAL
@@ -4542,8 +4557,8 @@ country_decisions = {
 				set_legacy_government = feudal_monarchy
 			}
 			if = {
-				limit = { NOT = { government_rank = 2 } }
-				set_government_rank = 2
+				limit = { NOT = { government_rank = 8 } }
+				set_government_rank = 8
 			}
 			lowlands_area = {
 				limit = {
@@ -4691,6 +4706,13 @@ country_decisions = {
 				}
 				add_permanent_claim = root
 			}
+			liechtenstein_area = {
+				limit = {
+					NOT = { owned_by = root }
+					NOT = { is_permanent_claim = root }
+				}
+				add_permanent_claim = root
+			}
 			romandie_area = {
 				limit = {
 					NOT = { owned_by = root }
@@ -4722,7 +4744,7 @@ country_decisions = {
 						is_part_of_hre = no
 					}
 				}
-				set_government_rank = 2
+				set_government_rank = 8
 			}
 
 			swap_non_generic_missions = yes
@@ -4814,8 +4836,8 @@ country_decisions = {
 			change_tag = TRP
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
-				limit = { NOT = { government_rank = 2 } }
-				set_government_rank = 2
+				limit = { NOT = { government_rank = 8 } }
+				set_government_rank = 8
 			}
 			add_country_modifier = {
 				name = centralization_modifier
@@ -4919,8 +4941,8 @@ country_decisions = {
 			change_tag = OTN
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
-				limit = { NOT = { government_rank = 2 } }
-				set_government_rank = 2
+				limit = { NOT = { government_rank = 8 } }
+				set_government_rank = 8
 			}
 			add_country_modifier = {
 				name = centralization_modifier
@@ -5165,13 +5187,13 @@ country_decisions = {
 			restore_country_name_effect = yes
 			if = {
 				limit = {
-					NOT = { government_rank = 2 }
+					NOT = { government_rank = 8 }
 					OR = {
 						is_elector = yes
 						is_part_of_hre = no
 					}
 				}
-				set_government_rank = 2
+				set_government_rank = 8
 			}
 			capital_scope = {
 				add_base_tax = 1
@@ -5203,6 +5225,10 @@ country_decisions = {
 				add_permanent_claim = WES
 			}
 			hesse_area = {
+				limit = { NOT = { owned_by = ROOT } }
+				add_permanent_claim = WES
+			}
+			frankfurt_area = {
 				limit = { NOT = { owned_by = ROOT } }
 				add_permanent_claim = WES
 			}

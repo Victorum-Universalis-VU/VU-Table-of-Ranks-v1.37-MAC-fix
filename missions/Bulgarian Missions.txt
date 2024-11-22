@@ -87,10 +87,10 @@ bul_1 = {
 			if = {
 				limit = {
 					NOT = {
-						government_rank = 3
+						government_rank = 9
 					}
 				}
-				set_government_rank = 3
+				set_government_rank = 9
 			}
 			wallachia_area = {
 				limit = {

@@ -2,6 +2,7 @@
 
 owner = GAZ
 controller = GAZ
+add_core = GAZ
 culture = lak
 religion = sunni	
 capital = "Kumukh"
@@ -11,34 +12,11 @@ base_tax = 6
 base_production = 4
 base_manpower = 4
 is_city = yes
-add_core = GAZ
+
+#Claimants
+add_core = DAG
 
 extra_cost = 8
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 1801.1.18 = {
 	owner = RUS

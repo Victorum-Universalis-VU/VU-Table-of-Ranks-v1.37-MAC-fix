@@ -1,4 +1,5 @@
 ﻿l_english:
+ #Missions:
  PAL_humiliate_margraves_title: "Humiliate the Margraves"
  PAL_humiliate_margraves_desc: "During the years 1461-1462, in the wake of the Mainz Diocesan Feud, the forces of the Margraves of Baden and Württemberg fought in a bloody war against the Palatinate. To think of, that the Margraves have the audacity to oppose us is baffling. We shall curb their bravery!"
  PAL_wine_industry_title: "Pfälzer Wein"
@@ -24,21 +25,34 @@
  PAL_bavarian_wittelbachs_title: "Bavarian Wittelsbachs"
  PAL_bavarian_wittelbachs_desc: "A branch of the Wittelsbachs resides in Bavaria, south of Upper Palatinate. We need to bring their branch so close to us, so close in fact, that they will fully submit to our rule."
  
+ #Modifiers:
  PAL_bibliotheca_palatina_modifier: "Center of Religious Books"
  desc_PAL_bibliotheca_palatina_modifier: "Center of Religious Books"
  PAL_palatina: "The Treasure Trove of Books"
+ desc_PAL_palatina: ""
  PAL_bibliotheca_palatina_triggered: "Bibliotheca Palatina"
  PAL_center_of_books: "Center of Learning"
+ desc_PAL_center_of_books: ""
  PAL_university_of_heidelberg: "University of Heidelberg"
+ desc_PAL_university_of_heidelberg: ""
  PAL_wine: "Finest Wine of Germany"
+ desc_PAL_wine: ""
  PAL_mine: "Staple of Palatine Economy"
+ desc_PAL_mine: ""
  PAL_territories_reconnected: "Territories Reconnected"
+ desc_PAL_territories_reconnected: ""
  PAL_unifying_the_lines_of_palatinate: "Unifying the Wittelsbachs of Palatinate"
+ desc_PAL_unifying_the_lines_of_palatinate: ""
  PAL_electoral_palatinate: "The Palatine Elector"
+ desc_PAL_electoral_palatinate: ""
  PAL_victor_for_the_true_faith: "Victor for the True Faith"
+ desc_PAL_victor_for_the_true_faith: ""
  PAL_heidelberg_catechism: "Heidelberg Catechism"
+ desc_PAL_heidelberg_catechism: ""
  PAL_united_the_house_of_wittelsbachs: "United the House of Wittelsbach"
+ desc_PAL_united_the_house_of_wittelsbachs: ""
  
+ #Events:
  ME_Palatinate_Events.1.t: "Bibliotheca Palatina"
  ME_Palatinate_Events.1.d: "Bibliotheca Palatina was the most important library of the German Humanism and Renaissance. Having acquired a collection of over 5 thousand books and over 3 thousand manuscripts, it was a center of learning and would influence many other facilities in the Holy Roman Empire and around."
  ME_Palatinate_Events.1.a: "Wonderful!"

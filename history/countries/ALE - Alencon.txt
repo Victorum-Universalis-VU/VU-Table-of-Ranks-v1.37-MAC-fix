@@ -1,6 +1,6 @@
 government = monarchy
-add_government_reform = feudalism_reform
-government_rank = 1
+add_government_reform = eue_duchy_reform
+government_rank = 6 #Duchy
 primary_culture = cosmopolitan_french
 religion = catholic
 #technology_group = western
@@ -60,8 +60,10 @@ fixed_capital = 1879 # Cannot move capital away from this province & no power co
 }
 
 
-1515.1.2 = { government = monarchy
-add_government_reform = autocracy_reform }
+1515.1.2 = { 
+	government = monarchy
+	add_government_reform = autocracy_reform 
+}
 
 # 1525 To Armagnac
 
@@ -69,5 +71,7 @@ add_government_reform = autocracy_reform }
 
 1589.8.3 = { set_legacy_government = administrative_monarchy }
 
-1661.3.9 = { government = monarchy
-add_government_reform = autocracy_reform }
+1661.3.9 = { 
+	government = monarchy
+	add_government_reform = autocracy_reform 
+}

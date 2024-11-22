@@ -1,16 +1,48 @@
 government = theocracy
-add_government_reform = leading_clergy_reform
-government_rank = 1
+add_government_reform = church_of_germany_bishopric_reform
+government_rank = 4 #Prince-Bishopric
 #technology_group = western
 technology_group = german_tech_group
 unit_type = western
 religion = catholic
 primary_culture = austrian
+add_accepted_culture = venetian
 capital = 110	# Trent
 fixed_capital = 110 # Cannot move capital away from this province & no power cost to move to it
 
-add_accepted_culture = venetian
+#Bavarian Tags
+historical_rival = BAV
+historical_rival = BET
+historical_rival = EGR
+historical_rival = FRG
+historical_rival = HLF
+historical_rival = ING
+historical_rival = KMP
+historical_rival = KRH
+historical_rival = LBV
+historical_rival = LMP
+historical_rival = OET
+historical_rival = PSS
+historical_rival = REG
+historical_rival = TRU
+historical_rival = UBV
+historical_rival = WLB
 
+#Austrian tags
+historical_friend = AUE
+historical_friend = AUH
+historical_friend = AUT
+historical_friend = BRX
+historical_friend = BSN
+historical_friend = CR1
+historical_friend = GRZ
+historical_friend = HAB
+historical_friend = HLR
+historical_friend = SH1
+historical_rival = SLZ
+historical_friend = STY
+historical_friend = TIR
+historical_friend = VOR
 
 1444.6.3 = {
 	monarch = {

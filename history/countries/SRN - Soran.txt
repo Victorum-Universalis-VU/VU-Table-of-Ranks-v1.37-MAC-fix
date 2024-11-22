@@ -1,6 +1,6 @@
 government = monarchy
 add_government_reform = feudalism_reform
-government_rank = 1
+government_rank = 6
 technology_group = eastern
 religion = nestorian
 primary_culture = assyrian

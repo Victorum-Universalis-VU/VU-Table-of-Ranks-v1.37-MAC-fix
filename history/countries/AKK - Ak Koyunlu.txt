@@ -1,6 +1,7 @@
 government = tribal
-add_government_reform = tribal_federation
-primary_culture = turkish
+add_government_reform = persianate_tribal_confederation
+government_rank = 6 #Confederation
+primary_culture = turkmeni
 add_accepted_culture = kurdish
 add_accepted_culture = armenian
 religion = sunni
@@ -106,7 +107,14 @@ historical_rival = QAR
 		adm = 4
 		dip = 5
 		mil = 6
-		leader = {	name = "Uzun Hasan"            	type = general	fire = 4	shock = 5	manuever = 5	siege = 0 }
+		leader = {	
+			name = "Uzun Hasan"            	
+			type = general	
+			fire = 4	
+			shock = 5	
+			manuever = 5	
+			siege = 0 
+		}
 	}
 	add_ruler_personality = bold_fighter_personality
 	clear_scripted_personalities = yes

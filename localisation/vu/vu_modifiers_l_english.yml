@@ -1,5 +1,175 @@
 ﻿l_english:
- ##VU Quonton additions
+ #VU San Felipe additions
+ african_minorities: "Indian Minorities"
+ desc_african_minorities: "This province has African minorities living within its villages, townships and cities."
+
+ arab_minorities: "Indian Minorities"
+ desc_arab_minorities: "This province has Arab minorities living within its villages, townships and cities."
+
+ european_minorities: "European Minorities"
+ desc_european_minorities: "This province has European minorities living within its villages, townships and cities."
+
+ chinese_minorities: "Chinese Minorities"
+ desc_chinese_minorities: "This province has Chinese minorities living within its villages, townships and cities."
+
+ indian_minorities: "Indian Minorities"
+ desc_indian_minorities: "This province has Indian minorities living within its villages, townships and cities."
+
+ japanese_minorities: "Japanese Minorities"
+ desc_japanese_minorities: "This province has Japanese minorities living within its villages, townships and cities."
+
+ #VU Quonton additions
+
+ vu_hard_to_colonize_4: "Hard to Colonize (4)"
+ desc_vu_hard_to_colonize_4: "This province is difficult to colonize, being either far away from established ports, having difficult or expansive terrain, having a harsh climate, or deadly diseases. This modifier will be reduced each age until it is removed §YFour Ages From Now§!."
+
+ vu_hard_to_colonize_3: "Hard to Colonize (3)"
+ desc_vu_hard_to_colonize_3: "This province is difficult to colonize, being either far away from established ports, having difficult or expansive terrain, having a harsh climate, or deadly diseases. This modifier will be reduced each age until it is removed §YThree Ages From Now§!"
+
+ vu_hard_to_colonize_2: "Hard to Colonize (2)"
+ desc_vu_hard_to_colonize_2: "This province is difficult to colonize, being either far away from established ports, having difficult or expansive terrain, having a harsh climate, or deadly diseases. This modifier will be reduced each age until it is removed §YTwo Ages From Now§!"
+
+ vu_hard_to_colonize_1: "Hard to Colonize (1)"
+ desc_vu_hard_to_colonize_1: "This province is difficult to colonize, being either far away from established ports, having difficult or expansive terrain, having a harsh climate, or deadly diseases. This modifier will be reduced each age until it is removed §YOne Age From Now§!"
+
+ vu_tex_high_plains: "Texan High Plains"
+ desc_vu_tex_high_plains: "The Texan High Plains is an area of steppe with slightly higher than average rainfall and soil quality, with large numbers of small rivers and streams. Defined by its high elevation, this area of land is more useful farmland than other nearby land."
+ 
+ vu_everglades: "The Everglades"
+ desc_vu_michigan_dunes: "The Everglades is a natural region of flooded grasslands in the southern portion of Florida, comprising the southern half of a large drainage basin within the Neotropical realm. The system begins near Orlando with the Kissimmee River, which discharges into the vast but shallow Lake Okeechobee. Water leaving the lake in the wet season forms a slow-moving river 60 miles (97 km) wide and over 100 miles (160 km) long, flowing southward across a limestone shelf to Florida Bay at the southern end of the state. The Everglades experiences a wide range of weather patterns, from frequent flooding in the wet season to drought in the dry season. The geology of South Florida, together with a warm, wet, subtropical/tropical climate, provides conditions well-suited for a large marshland ecosystem."
+
+ vu_michigan_dunes: "Michigan Dunes"
+ desc_vu_michigan_dunes: "The Michigan Dunes are a band of sand dunes located along the eastern shore of Lake Michigan. The area's large dunes and lakeshore beaches are eye-catching, and one of a kind along the great lakes. Among the area's dunes are Mt. Fuller,  Pikes Peak, and Mt. Edwards, with the most significant being Tower Hill, the highest point in the dunes, which stands 240 feet (73 meters) above Lake Michigan. The lake levels of the upper Great Lakes have fluctuated sharply over the past 4,000 years, with a temporary high-water mark, the Nipissing stage, achieved about 3,500 years before the present.  During the Nipissing stage, Lake Huron and Lake Michigan were interconnected as they are today, but the two lakes brimmed over with fresh water 605 feet (184 m) above sea level.   As the lakes fell back toward their current level of 580 feet (177 m)  above sea level, large quantities of sand were exposed. Subsequent work by lake-effect winds shaped this exposed sand into dunes. The dunes make the area harder to settle and colonize, with ports and lakeside settlements much harder to build and maintain."
+
+ vu_illinois_basin: "The Shawnee Hills"
+ desc_vu_illinois_basin: "The Shawnee Hills are a region within the larger Interior Low Plateaus physiographic province located in southern Illinois, southern Indiana, and western Kentucky. In Illinois, it rests mainly in an east-west arc roughly following the outline of the southern end of the Illinois Basin. Whereas Mississippian and Pennsylvania Age rock layers are deep beneath the soil surface in central Illinois,  these strata pierce the surface in southern Illinois. The Shawnee Hills are surface expressions of the more weather-resistant limestone and sandstone layers.  This formation is due in part to the last glaciation of the  Ice Age (which tended to grind down hills and bury them under soil) not reaching this far south. The Illinois Basin is a Paleozoic depositional and structural basin in eastern North America, northwest of the Appalachian mountains. The basin is elongated, extending approximately 400 miles (640 km)  northwest-southeast, and 200 miles (320 km) southwest-northeast. The Illinois basin is home to large deposits of coal, lead, and zinc which if mined would be very profitable."
+
+ vu_hopewell_rocks: "The Hopewell Rocks"
+ desc_vu_hopewell_rocks: "The Hopewell Rocks, also called the Flowerpot Rocks or simply the Rocks, are rock formations known as sea stacks caused by tidal erosion. They stand 12–21 meters (40–70 ft) tall. The rocks are located on the shores of the upper reaches of the Bay of Fundy at Hopewell Cape. Due to the extreme tidal range of the Bay of Fundy, the base of the formations is covered in water twice a day. It is possible to view the formations from ground level at low tide. The formations consist of red-brown sedimentary conglomerate, sandstone, and minor mudstone rock from the Carboniferous Hopewell Cape Formation, part of the Mabou Group. The large volume of water flowing into and out of the Bay of Fundy modifies the landscape surrounding it. After the retreat of the glaciers in the region following the last ice age, surface water filtering through cracks in the cliff has eroded and separated the formations from the rest of the cliff face. Meanwhile, advancing and retreating tides and the associated waves have eroded the base of the rocks at a faster rate than the tops, resulting in their unusual shapes. The vast sediment planes in the basin in Fundy supports a variety of biological productivity. Various shorebirds are often seen flocking to nest and feed in the area."
+
+ vu_cathedral_goves: "MacMillan Forest"
+ desc_vu_cathedral_goves: "MacMillan Forest is a large forest located along the eastern coast of Vancouver Island. It is nestled on the western shore of Cameron Lake and protects the delta of the Cameron River. The park is home to a famous, 157-hectare (390-acre) stand of ancient Douglas fir, known as Cathedral Grove, which draws visitors from all over the world. The forests in the park are transitional between the drier Coastal Douglas-fir zone, which characterizes the east coast of Vancouver Island, and the wetter Coastal Western Hemlock Zone, found along the island's west coast. Some of the trees are more than 800 years old and 9 meters (30 ft) in circumference. The wood, if used for lumber, would both be incredibly profitable because of the strength and resilience of the wood and for the vast amounts of it available."
+
+ vu_spoted_lake: "Spotted Lake"
+ desc_vu_spoted_lake: "Spotted Lake also known as Lake Khiluk is a saline endorheic alkali lake located northwest of Osoyoos in the eastern Similkameen Valley. Spotted Lake is richly concentrated with various minerals. It contains dense deposits of magnesium sulfate, calcium, and sodium sulfates. It also contains high concentrations of eight other minerals and lower amounts of silver and titanium. Most of the water in the lake evaporates over the summer,  revealing colorful mineral deposits. Large 'spots' on the lake appear and are colored according to the mineral composition and seasonal amount of precipitation. Magnesium sulfate, which crystallizes in the summer, is a major contributor to spot color. In the summer, the remaining minerals in the lake harden to form natural “walkways” around and between the spots."
+
+ vu_the_ozarks: "The Interior Highlands"
+ desc_vu_the_ozarks: "The Interior Highlands is a mountainous region of central North America. The name is designated to refer to the combined subregions of the Ouachita Mountains and the Ozark Plateaus. The Interior Highlands is one of the few mountainous regions between the Appalachians and the Rockies. The Ozarks, also known as the Ozark Mountains, Ozark Highlands, or Ozark Plateau, is a physiographic region north of the Arkansas River. There are two mountain ranges in the Ozarks: the Boston Mountains, as well as the St. Francois Mountains. Buffalo Lookout is the highest point in the Ozarks at 2,561 feet (781 m) and is located in the Boston Mountains. Geologically, the area is a broad dome with an exposed core in the ancient St. Francois Mountains. The Ozarks cover nearly 47,000 square miles (120,000 km2), making it the most extensive highland region between the Appalachians and the Rockies. The Ouachita Mountains, simply referred to as the Ouachitas, are the mountain range south of the Arkansas River. They are formed by a thick succession of highly deformed Paleozoic strata constituting the Ouachita Fold and Thrust Belt, one of the important orogenic belts of North America. The Ouachitas continue in the subsurface to the northeast, where they make a poorly understood connection with the Appalachians, and to the southwest, where they join with the Marathon uplift area of West Texas. The highest natural point is Mount Magazine at 2,753 feet (839m)."
+
+ vu_edwards_plateau: "Edwards Plateau"
+ desc_vu_edwards_plateau: "The Edwards Plateau is a geographic region forming the crossroads of Central, South and West Texas.  It is bounded by the Balcones Fault to the south and east; the Llano Uplift and the Llano Estacado to the north; and the Pecos River and the Chihuahuan Desert to the west. The plateau, especially its southeast portion, is also known as the Texas Hill Country. The landscape of the plateau is mostly savanna scattered with trees. It mostly lacks deep soil suitable for farming, though the soil type is fertile chernozem, so some cotton, grain sorghum, and oats are grown."
+
+ vu_redwood_forests: "Redwood Forests"
+ desc_vu_redwood_forests: "The Redwood Forests are a complex of large redwood trees along the coast of western California. The forests contain the tallest, among the oldest, and one of the most massive tree species on  Earth—which thrives in the humid temperate rainforests of western California. The region is highly seismically active and prone to tsunamis.  Redwood forests cover more than two million acres (8,100 km2) of the California coast. The forests are known for their truly one-of-a-kind trees, rising into the sky like towers of wood. The wood, if used for lumber, would be incredibly profitable because of the strength and resilience of the wood, its unique color, and the vast amounts of it available."
+
+ vu_sequoia_forest: "The Sequoia Forest"
+ desc_vu_sequoia_forest: "The Sequoia Forest is located in the southern Sierra Nevada mountains of California. The forest is named for the majestic Giant Sequoia trees which populate 38 distinct groves within the boundaries of the forest. Other notable features include glacier-carved landscapes and impressive granite monoliths. The wood, if used for lumber, would both be incredibly profitable because of the strength and resilience of the wood and for the vast amounts of it available."
+
+ vu_superior_forest: "The Superior Forest"
+ desc_vu_superior_forest: "The Superior Forest is located in the Arrowhead Region of Minnesota inland from the north shore of Lake Superior. The area is part of the greater Boundary Waters region. The Superior Forest comprises over 3,900,000 acres (6,100 mi2 or 16,000 km2) of woods and waters. The Forest is full of massive, straight, and old White Pine trees, famed for their size, strength, and value."
+
+ vu_wisconsin_dells: "The Wisconsin Dells"
+ desc_vu_wisconsin_dells: "The Dells of the Wisconsin River, also called the Wisconsin Dells is a 5-mile (8-km) gorge on the Wisconsin River in south-central Wisconsin. It is noted for its scenery, in particular for its Cambrian sandstone rock formations and tributary canyons. The cliffs, some over 100 feet (30 m) high, and side canyons are beautiful sights. The Dells were formed during the Last Glacial Period approximately 15,000 years ago, although the rock itself is much older, dating from the Cambrian Period approximately 510–520 million years ago when the area of Wisconsin was at the bottom of a shallow sea. Approximately 19,000 years ago, the Dells were at the extreme western margin of the continental glacier.  However, the Dells itself was never covered by glacial ice sheets – it was part of the large Driftless Area that was bypassed by the ice. The melting of the glacier-formed Glacial Lake Wisconsin, a lake about the size of the Great Salt Lake in Utah and as deep as 150 feet (45 m).  The lake was held back by an ice dam of the remaining glacier. The eventual bursting of the ice dam unleashed a catastrophic flood, dropping the lake's depth to 50 feet  (15 m) and cutting deep, narrow gorges and unusual rock formations into the sandstone seen today."
+
+ vu_black_hills_sd: "The Black Hills"
+ desc_vu_black_hills_sd: "The Black Hills is an isolated mountain range rising from the Great Plains of North America in western South Dakota and extending into Wyoming. Black Elk Peak, which rises to 7,242 feet (2,207 m), is the range's highest summit. The name of the range in Lakota is Pahá Sápa. It formed as a result of an upwarping of ancient rock, after which the removal of the higher portions of the mountain mass by stream erosion produced the present-day topography. The hills are so called because of their dark appearance from a distance, as they are covered in dark green evergreen trees. The Black Hills' impressive granite mountains and cliffs are covered with trees, and filled with gold making them both an extremely valuable piece of land and a beautiful one."
+
+ vu_american_prarie: "American Prairies"
+ desc_vu_american_prarie: "Prairies are ecosystems considered part of the temperate grasslands, savannas, and shrublands biome, based on similar temperate climates, moderate rainfall,  and a composition of grasses, herbs, and shrubs, rather than trees, as the dominant vegetation type. Prairie ecosystems in North America are divided into the easternmost tallgrass prairie, the westernmost shortgrass prairie, and the central mixed-grass prairie.  Tallgrass prairies receive over 30 inches of rainfall per year, whereas shortgrass prairies are much more arid, receiving only 12 inches or so,  and mixed-grass prairies receive intermediate rainfall. Wet, mesic, and dry prairie ecosystems can also form more locally due to soil and terrain characteristics. Wet prairies may form in low-lying areas with poor drainage; dry prairies can be found on uplands or slopes. Dry prairie is the dominant habitat type in the Southern Canadian agricultural and climatic region which is known as Palliser's Triangle. The North American prairies are known for their vast expanses of extremely fertile and productive soil."
+
+ vu_mojave_desert: "The Mojave Desert"
+ desc_vu_mojave_desert: "The Mojave Desert is in the rain shadow of the southern Sierra Nevada mountains and Transverse Ranges in southwestern North America. The Mojave Desert, together with the Sonoran, Chihuahuan, Columbian, Colorado, Snake River, Wyoming, and Great Basin deserts, form a larger North American Desert. Of these, the Mojave is the smallest and driest. It displays typical basin and range topography, generally having a pattern of a series of parallel mountain ranges and valleys. It is also the site of Death Valley, which is the lowest elevation in North America. The Mojave Desert is often colloquially called the 'high desert', as most of it lies between  2,000 and 4,000 feet (610 and 1,220 m). It supports a diversity of flora and fauna."
+
+ vu_columbian_platau: "The Columbia Plateau"
+ desc_vu_columbian_platau: "The Columbia Plateau is a geologic and geographic region across northwestern North America. It is a wide flood basalt plateau between the Cascade Range and the Rocky Mountains, cut through by the Columbia River. Formed over millions of years of volcanic eruptions, the flood basalt plateau formed in this region which now gives this region its unique environment. Even with the relative lack of rainfall, the Columbian Plateau is a fertile area, gaining its fertility from the layers of ancient volcanic ashfall and deposition from the surrounding mountains."
+
+ vu_great_basin: "The Great Basin"
+ desc_vu_great_basin: "The Great Basin Desert is part of the Great Basin between the Sierra Nevada and the Wasatch Range. It is a temperate desert with hot, dry summers and snowy winters. The desert is one of the eight deserts in North America, in addition to the Mojave, Sonoran, Chihuahuan, Columbian, Colorado, Snake River, and Wyoming deserts which form the larger North American Desert. Basin and range topography characterizes the desert. There are more than 33 peaks within the desert with summits higher than 9,800 feet (3,000 m), but valleys in the region are also high, with elevations above 3,900  feet (1,200 m). The biological communities of the Great Basin Desert vary according to altitude: from low salty dry lakes, up through rolling sagebrush valleys, to pinyon-juniper forests. The significant variation between valleys and peaks has created a variety of habitat niches which has in turn led to many small, isolated populations of genetically unique plant and animal species throughout the region. The ecology of the desert varies across geography. The desert is formed by the rain shadow of the Sierra Nevada that blocks moisture from the Pacific Ocean, while the Rocky Mountains create a barrier effect that restricts moisture from the Gulf of Mexico. Different locations in the desert have different amounts of precipitation depending on the strength of these rain shadows."
+
+ vu_sonoran: "The Sonoran Desert"
+ desc_vu_sonoran: "The Sonoran Desert is a hot desert in North America and ecoregion that covers large areas of southwestern North America. It is the hottest desert in North America. The Sonoran Desert, together with the Mojave, Chihuahuan, Columbian, Colorado, Snake River, Wyoming, and Great Basin deserts, form the larger North American Desert. The Sonoran has an area of 260,000 square kilometers (100,000 sq mi). The desert contains a variety of unique endemic plants and animals, notably, the saguaro and organ pipe cactus. The Sonoran Desert is distinct from nearby deserts (e.g., the Great Basin, Mojave, and Chihuahuan deserts) because it provides subtropical warmth in winter and two seasons of rainfall (in contrast, for example, to the Mojave's dry summers and cold winters). This creates an extreme contrast between aridity and moisture."
+
+ vu_chihuahuan: "The Chihuahuan Desert"
+ desc_vu_chihuahuan: "The Chihuahuan Desert is a desert ecoregion designation covering parts of central North America. It occupies much of the lower Rio Grande Valley and the lower Pecos Valley as well as the central and northern portions of the Mexican Plateau. It is bordered on the west by the Sonoran Desert, the Colorado Plateau, and the extensive Sierra Madre Occidental range, along with the northwestern lowlands of the Sierra Madre Oriental range. With an area of about 501,896 km 2 (193,783 sq mi), it is the largest hot desert in North America. The desert is fairly young, existing for only 8000 years. The desert is mainly a rain shadow desert because the two main mountain ranges that bound the desert, the Sierra Madre Occidental to the west and the Sierra Madre Oriental to the east, block most moisture from the Pacific Ocean and the Gulf of Mexico, respectively. Climatically, the desert mostly has an arid, mesothermal climate with one rainy season in the late summer and smaller amounts of precipitation in early winter, the mean daily temperature of the coldest month warmer than 0°C (32°F). The majority of rain falls between late June and early October during the North American Monsoon when moist air from the Gulf of Mexico and the Sea of Cortez penetrates the region, or much less frequently, when a tropical cyclone moves inland and stalls."
+
+ vu_colorado_plateau: "The Colorado Plateau"
+ desc_vu_colorado_plateau: "The Colorado Plateau is a physiographic and desert region of the Intermontane Plateaus. This plateau covers an area of 336,700 km 2 (130,000 mi 2) between the Rocky Mountains, the Uinta Mountains, and the Wasatch Mountains. About 90% of the area is drained by the Colorado River and its main tributaries: the Green, San Juan, and Little Colorado. Most of the remainder of the plateau is drained by the Rio Grande and its tributaries. The Colorado Plateau is largely made up of high desert, with scattered areas of forests. In the southwest corner of the Colorado Plateau lies the Grand Canyon of the Colorado River. Much of the Plateau's landscape is related to the Grand Canyon in both appearance and geologic history. The nickname 'Red Rock Country' suggests the brightly colored rock left bare to the view by dryness and erosion. Domes, hoodoos, fins, reefs, river narrows, natural bridges, and slot canyons are only some of the additional features typical of the Plateau."
+
+ vu_snake_river: "The Snake River Plain"
+ desc_vu_snake_river: "The Snake River Plain is a geologic feature located primarily south of the Sawtooth Mountains. It stretches about 400 miles (640km) westward from northwestern Yellowstone until reaching the Blue Mountains. The plain is a wide, flat bow-shaped depression and covers about a quarter of Idaho. Three major volcanic buttes dot the plain east of Arco, the largest being Big Southern Butte. The plain, while getting much more rain than the nearby Columbia Plateau and Great Basin Desert, still only gets on average between 10-15 inches of rainfall a year. The soil within the plain is very fertile, able to support grasslands and even vast amounts of cultivated crops."
+
+ vu_wyoming_basin: "The Wyoming Basin"
+ desc_vu_wyoming_basin: "The Wyoming Basin is a high-altitude desert and sagebrush steppe located within the Rocky Mountains, comprising approximately 9,320 square miles (24,100 square kilometers). Among the natural features in the Wyoming Basin region are the Great Divide Basin, a unique endorheic drainage basin formed by a division in the Continental Divide, and the Killpecker Sand Dunes, the largest living dune system in North America. The Wyoming Basin supports an abundance of wildlife, despite its scarcity of water and vegetation. Some of the largest migratory herds of pronghorn and the rare desert elk, said to be the world's largest, live in the desert. Ponds fed by summer snowmelt attract a wide range of migratory birds such as ducks, trumpeter swans, and white pelicans."
+
+ vu_madrean_archipelago: "The Madrean Archipelago"
+ desc_vu_madrean_archipelago: "The Madrean Sky Islands are enclaves of Madrean pine-oak woodlands, found at higher elevations in a complex of small mountain ranges in the eastern Sonoran Desert and western Chihuahuan Desert. The northern west–east perimeter of the Sky Island region merges into the higher elevation eastern Mogollon Rim and the White Mountains. The sky islands are the northernmost of the Madrean pine-oak woodlands and are classified as part of the Sierra Madre Occidental pine-oak forests ecoregion, of the tropical and subtropical coniferous forests biome. The sky islands were isolated from one another and from the pine-oak woodlands of the Sierra Madre Occidental to the south by the warming and drying of the climate since the ice ages. There are approximately 42 sky islands. The sky islands are pockets of cooler weather and abundant wood, promoting settlement on or near them."
+
+ vu_badlands: "The Badlands"
+ desc_vu_badlands: "The Badlands is a North American geologic feature that is 242,756 acres(379.3 sq mi; 982.4 km2) large and is full of sharply eroded buttes and pinnacles. Characterized by a lack of water, little vegetation, and extreme cliffs and hills, the area is extremely torturous to traverse. Located within the White River drainage, Red Shirt Table is the area's highest point at 3,340 feet (1,020 m)."
+
+ vu_mississippi_river: "The Mississippi River"
+ desc_vu_mississippi_river: "The Mississippi River is the primary and second-longest river in the largest drainage basin in North America. From its traditional source of Lake Itasca in northern Minnesota, it flows generally south for 2,340 miles (3,766km) to the Mississippi River Delta in the Gulf of Mexico. With its many tributaries, the Mississippi's watershed drains much of the land between the Rocky and Appalachian mountains. The total drainage basin is 1,151,000sqmi (2,980,000km2). The Mississippi ranks as the thirteenth-largest river by discharge in the world. The Mississippi River promotes trade, settlement, and development along its banks, with much of the land within the Mississippi River Valley being some of the world's most fertile."
+
+ vu_st_lawrence_river: "The St. Lawrence River"
+ desc_vu_st_lawrence_river: "The St. Lawrence River is a large river connecting the Great Lakes to the Northern Atlantic Ocean. Its waters flow in a northeasterly direction from Lake Ontario to the Gulf of St. Lawrence. The St. Lawrence is extremely treacherous, with countless ships swallowed by its fast-moving, rapid waters. Even with this, however, the banks of the St. Lawrence River are the perfect location for settlement, having fertile soil and plenty of water, and promoting trade."
+
+ minnesota_estuary_modifier: "Minnesotan River Estuary"
+ desc_minnesota_estuary_modifier: "Controlling the important river estuary of the Minnesota strengthens our hold of the trade in the region."
+
+ churchill_estuary_modifier: "Churchill Estuary"
+ desc_churchill_estuary_modifier: "Controlling the important river estuary of the Churchill strengthens our hold of the trade in the region."
+
+ thames_con_estuary_modifier: "Connecticut Estuary"
+ desc_thames_con_estuary_modifier: "Controlling the important river estuary of the Connecticut strengthens our hold of the trade in the region."
+
+ ohio_estuary_modifier: "Ohio Estuary"
+ desc_ohio_estuary_modifier: "Controlling the important river estuary of the Ohio strengthens our hold of the trade in the region."
+
+ missouri_estuary_modifier: "Missouri Estuary"
+ desc_missouri_estuary_modifier: "Controlling the important river estuary of the Missouri strengthens our hold of the trade in the region."
+
+ illinois_estuary_modifier: "Illinois Estuary"
+ desc_illinois_estuary_modifier: "Controlling the important river estuary of the Illinois strengthens our hold of the trade in the region."
+
+ tennessee_estuary_modifier: "Tennessee Estuary"
+ desc_tennessee_estuary_modifier: "Controlling the important river estuary of the Tennessee strengthens our hold of the trade in the region."
+
+ wabash_estuary_modifier: "Wabash Estuary"
+ desc_wabash_estuary_modifier: "Controlling the important river estuary of the Wabash strengthens our hold of the trade in the region."
+
+ north_platte_estuary_modifier: "North Palatte Estuary"
+ desc_north_platte_estuary_modifier: "Controlling the important river estuary of the North Palatte strengthens our hold of the trade in the region."
+
+ texan_colorado_estuary_modifier: "Colorado Estuary"
+ desc_texan_colorado_estuary_modifier: "Controlling the important river estuary of the Texan Colorado strengthens our hold of the trade in the region."
+
+ arkansas_estuary_modifier: "Arkansas Estuary"
+ desc_arkansas_estuary_modifier: "Controlling the important river estuary of the Arkansas strengthens our hold of the trade in the region."
+
+ red_river_estuary_modifier: "Red River Estuary"
+ desc_red_river_estuary_modifier: "Controlling the important river estuary of the Red River strengthens our hold of the trade in the region."
+
+ sabine_estuary_modifier: "Sabine Estuary"
+ desc_sabine_estuary_modifier: "Controlling the important river estuary of the Sabine strengthens our hold of the trade in the region."
+
+ maumee_estuary_modifier: "Maumee Estuary"
+ desc_maumee_estuary_modifier: "Controlling the important river estuary of the Maumee strengthens our hold of the trade in the region."
+ 
+ tampa_bay_modifier: "Tampa Bay"
+ desc_tampa_bay_modifier: "The Tampa Bay is the largest bay located along the Floridian Coast. This premier natural harbour boasts a deep, stable, and very well protected waterway that can manage even the largest of vessels. A natural center of trade, this Bay holds limitless potential as a commercial center or as a strategic port."
+
+ cook_inlet_bay_modifier: "Cook Inlet"
+ desc_cook_inlet_bay_modifier: "The Cook Inlet is the largest bay located along the North American Coast. The Cook Inlet and both its arms are bodies of brackish water, containing a turbid mix of ocean salt-water and freshwater runoff from various rivers and streams. The narrow channel of the inlet funnels the tides creating very fast-moving currents, rip tides, and occasional bore tides. This premier natural harbour boasts a deep, stable, and very well protected waterway that can manage even the largest of vessels. A natural center of trade, this Bay holds limitless potential as a commercial center or as a strategic port."
+
+ galveston_bay_modifier: "Galveston Bay"
+ desc_galveston_bay_modifier: "The Galveston Bay is the largest natural harbour located along the Texan Coast. This premier natural harbour boasts a deep, stable, and very well protected waterway that can manage even the largest of vessels. A natural center of trade, this Bay holds limitless potential as a commercial center or as a strategic port. The water in the bay is a complex mixture of sea water and fresh water, which supports a wide variety of marine life."
+
+ ekron_bay_modifier: "Humboldt Bay"
+ desc_ekron_bay_modifier: "The Humboldt Bay is the second largest natural harbour located along the Californian Coast. This premier natural harbour boasts a deep, stable, and very well protected waterway that can manage even the largest of vessels. A natural center of trade, this Bay holds limitless potential as a commercial center or as a strategic port."
+
+ san_diego_bay_modifier: "San Diego Bay"
+ desc_san_diego_bay_modifier: "The San Diego Bay is the third largest natural harbour located along the Californian Coast. This premier natural harbour boasts a deep, stable, and very well protected waterway that can manage even the largest of vessels. A natural center of trade, this Bay holds limitless potential as a commercial center or as a strategic port."
+
  vu_develop_ruthenia: "Develop Ruthenia"
  desc_vu_develop_ruthenia: "Develop Ruthenia"
  vu_increased_production: "Increased Production"
@@ -67,11 +237,17 @@
 
  #Romania
  rmn_sound_of_latin: "The Sound of Latin"
+ desc_rmn_sound_of_latin: ""
  rmn_romanian_dev: "Romanian Population Boom"
+ desc_rmn_romanian_dev: ""
  rmn_latin_brothers: "Latin Brethren"
+ desc_rmn_latin_brothers: ""
  rmn_hispania_tercio: "Hispania Tercio"
+ desc_rmn_hispania_tercio: ""
  rmn_is_latin: "Latin Linguistic Unity"
+ desc_rmn_is_latin: ""
  rom_great_mod2: "Rome Reunited"
+ desc_rom_great_mod2: ""
  
  #Wallachia
  VU_dragon_knights: "Dragon Knights" 
@@ -334,33 +510,33 @@
  #
  #Natural Wonders
  banaue_rice_terraces_modifier: "Banaue Rice Terraces"
- desc_banaue_rice_terraces_modifier: "Controlling the natural wonder of Banaue Rice Terraces increases both our national prestige."
+ desc_banaue_rice_terraces_modifier: "Controlling the natural wonder of Banaue Rice Terraces increases our national prestige."
  chocolate_hills_modifier: "Chocolate Hills"
- desc_chocolate_hills_modifier: "Controlling the natural wonder of Chocolate Hills increases both our national prestige."
+ desc_chocolate_hills_modifier: "Controlling the natural wonder of Chocolate Hills increases our national prestige."
  niagara_falls_modifier: "Niagara Falls"
- desc_niagara_falls_modifier: "Controlling the natural wonder of Niagara Falls natural wonder increases both our national prestige."
+ desc_niagara_falls_modifier: "Controlling the natural wonder of Niagara Falls natural wonder increases our national prestige."
  victoria_falls_modifier: "Victoria Falls"
- desc_victoria_falls_modifier: "Controlling the natural wonder of Victoria Falls increases both our national prestige."
+ desc_victoria_falls_modifier: "Controlling the natural wonder of Victoria Falls increases our national prestige."
  yosemite_modifier: "Yosemite"
- desc_yosemite_modifier: "Controlling the natural wonder of Yosemite increases both our national prestige."
+ desc_yosemite_modifier: "Yosemite is a unique natural feature in California. The site covers 759,620 acres (1,187 sq mi; 3,074 km2) of the Sierra Nevada Mountain Range. Yosemite's granite cliffs, waterfalls, clear streams, groves of giant sequoia, lakes, mountains, meadows, glaciers, and biological diversity make the area one of the most beautiful in the world. Yosemite is one of the largest and least fragmented habitat blocks in the Sierra Nevada. Its geology is characterized by granite and remnants of older rock. About 10 million years ago, the Sierra Nevada was uplifted and tilted to form its unique slopes, which increased the steepness of stream and river beds, forming deep, narrow canyons. About one million years ago glaciers formed at higher elevations. They moved downslope, cutting and sculpting the U-shaped Yosemite Valley."
  grand_canyon_modifier: "Grand Canyon"
- desc_grand_canyon_modifier: "Controlling the natural wonder of the Grand Canyon increases both our national prestige."
+ desc_grand_canyon_modifier: "The Grand Canyon is a steep-sided canyon carved by the Colorado River. The Grand Canyon is 277 miles (446 km) long, up to 18  miles (29 km) wide, and attains a depth of over a mile (6,093 feet or  1,857 meters). Nearly two billion years of Earth's geological history have been exposed as the Colorado River and its tributaries cut their channels through layer after layer of rock. The Colorado River established its course through the area about 5 to 6 million years ago. Since then, the Colorado River has driven the down-cutting of the tributaries and retreat of the cliffs, simultaneously deepening and widening the canyon."
  mt_fuji_modifier: "Mt Fuji"
- desc_mt_fuji_modifier: "Controlling the natural wonder of Mt Fuji increases both our national prestige."
+ desc_mt_fuji_modifier: "Controlling the natural wonder of Mt Fuji increases our national prestige."
  mt_kilimanjaro_modifier: "Mt Kilimanjaro"
- desc_mt_kilimanjaro_modifier: "Controlling the natural wonder of Mt Kilimanjaro increases both our national prestige."
+ desc_mt_kilimanjaro_modifier: "Controlling the natural wonder of Mt Kilimanjaro increases our national prestige."
  mt_uluru_modifier: "Mt Uluru"
- desc_mt_uluru_modifier: "Controlling the natural wonder of Mt Uluru increases both our national prestige."
+ desc_mt_uluru_modifier: "Controlling the natural wonder of Mt Uluru increases our national prestige."
  guilin_mts_modifier: "Guilin Mountains"
- desc_guilin_mts_modifier: "Controlling the natural wonder of the Guilin Mountains increases both our national prestige."
+ desc_guilin_mts_modifier: "Controlling the natural wonder of the Guilin Mountains increases our national prestige."
  yuanyang_rice_terraces_modifier: "Yuanyang Rice Terraces"
- desc_yuanyang_rice_terraces_modifier: "Controlling the natural wonder of the Yuanyang Rice Terraces increases both our national prestige."
+ desc_yuanyang_rice_terraces_modifier: "Controlling the natural wonder of the Yuanyang Rice Terraces increases our national prestige."
  phuket_islands_modifier: "Phuket Islands"
- desc_phuket_islands_modifier: "Controlling the natural wonder of Phuket Islands increases both our national prestige."
+ desc_phuket_islands_modifier: "Controlling the natural wonder of Phuket Islands increases our national prestige."
  deans_blue_hole_modifier: "Dean's Blue Hole"
- desc_deans_blue_hole_modifier: "Controlling the natural wonder of  Dean's Blue Hole increases both our national prestige."
+ desc_deans_blue_hole_modifier: "Controlling the natural wonder of  Dean's Blue Hole increases our national prestige."
  northern_lights_modifier: "Northern Lights"
- desc_northern_lights_modifier: "Controlling the area where the natural phenomenon of the Northern Lights occurs increases both our national prestige."
+ desc_northern_lights_modifier: "Controlling the area where the natural phenomenon of the Northern Lights occurs increases our national prestige."
  #
  #Man-Made Wonders
  #giza_pyramids_modifier: "Giza Pyramids"
@@ -656,7 +832,7 @@
  massachusetts_bay_modifier: "Massachusetts Bay"
  desc_massachusetts_bay_modifier: "The Massachusetts Bay is located in the Mid-Atlantic region and is situated within close proximity to Cape Cod. Massachusetts Bay is a very important feature for the ecology and economy of those two states, as well as others surrounding within its watershed."
  burwell_bay_modifier: "Burwell Bay"
- desc_burwell_bay_modifier: "The Burwell Bay is located in the Mid-Atlantic region and is situated within close proximity to Cape Cod. Massachusetts Bay is a very important feature for the ecology and economy of those two states, as well as others surrounding within its watershed."
+  desc_burwell_bay_modifier: "The Burwell Bay is located in the Mid-Atlantic region and is situated within close proximity to the Chesapeake Bay. Burwell Bay is a very important feature for the ecology and economy of Virginia."
  straits_of_northumberland_estuary_modifier: "Northumberland Strait"
  desc_straits_of_northumberland_estuary_modifier: "Controlling the important straits of Northumberland strengthens our hold of the trade in the region."
  straits_of_cabot_estuary_modifier: "Cabot Strait"
@@ -998,10 +1174,6 @@
  desc_vu_hegemony_of_burgundy: "."
  vu_investing_in_mediterranean_trading_enclaves: "Investing in Mediterranean Trade"
  desc_vu_investing_in_mediterranean_trading_enclaves: "."
- vu_triggered_modifier_a_big_family: "Decentralisation"
- desc_vu_triggered_modifier_a_big_family: "This polity is somewhat decentralized and rules over multiple autonomous subjects. This decentralized rule has both advantages and disadvantages, but our experience has made it easier to hold these disparate states together."
- vu_triggered_modifier_hegemoniacle: "Hegemoniacle"
- desc_vu_triggered_modifier_hegemoniacle: "This polity is very decentralized and rules over a large number of autonomous subjects. This decentralized rule has both advantages and disadvantages, but our experience has made it much easier to hold these disparate states together."
  vu_triggered_modifier_complex_administration: "Complex Administration"
  desc_vu_triggered_modifier_complex_administration: "We govern a particularly complex region and our bureaucracy is rising to the challenge, proving itself capable of integrating and linking together our sprawling lands with unexpected efficiency."
  vu_iberian_crowns: "Crown of Aragon"
@@ -1263,10 +1435,6 @@
  vu_military_success: "Successfull Military"
  desc_vu_military_success: "We have proven our army's worth by winning battles and conflicts. We have shown that our country is formidable opponent capable of surpassing its rivals."
  #
- ability_timurid_militarization: "Timurid Militarization"
- timurid_stratocracy_power_gain_modifier: "Timurid Stratocracy Power Gain"
- monthly_timurid_stratocracy_power: "Timurid Stratocracy"
- belgian_revolt_disaster_tt: "Belgian Revolt"
 
  #Modifiers
  conquest_frenzy_power_gain_modifier: "Conquest Frenzy"
@@ -1284,14 +1452,30 @@
  #New VU additions in v1.36.2.*. By San Felipe
  vu_book_of_grudges_modifier: "Book of Grudges"
  desc_vu_book_of_grudges_modifier: ""
- ME_reform_chaghatai_literature: "Reform Chagathatai Literature"
- ME_reform_chaghatai_literature_desc: ""
+
+ vu_fancifur_novels: "Fancy Novels"
+ desc_vu_fancifur_novels: ""
+
+ vu_wandering_wenches_of_stettin: "Wondering Wenches of Stettin"
+ desc_vu_wandering_wenches_of_stettin: ""
+
+ vu_wandering_gamblers: "Wondering Gamblers"
+ desc_vu_wandering_gamblers: ""
+
+ vu_wandering_musicians: "Wandering Musicians"
+ desc_vu_wandering_musicians: ""
+
+ vu_wandering_artists: "Wandering Artists"
+ desc_vu_wandering_artists: ""
 
  ME_revolt_happened: "Revolt Happened"
  desc_ME_revolt_happened: ""
 
  ME_age_handler: ""
  desc_ME_age_handler: ""
+
+ hsn_turkoman_mercenaries: ""
+ desc_hsn_turkoman_mercenaries: ""
 
  ME_experimental.1.t: ""
  ME_experimental.1.d: ""

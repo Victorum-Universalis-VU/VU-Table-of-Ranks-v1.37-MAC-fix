@@ -1,6 +1,6 @@
 government = monarchy
 add_government_reform = greek_lordship_reform
-government_rank = 1
+government_rank = 1 #Lordship
 #technology_group = eastern
 technology_group = byzantine_tech_group
 unit_type = eastern

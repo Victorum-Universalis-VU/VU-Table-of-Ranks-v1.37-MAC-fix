@@ -4,7 +4,7 @@
 owner = KIR
 controller = KIR
 add_core = KIR
-culture = ruthenian
+culture = volhynian
 religion = orthodox
 capital = "Zvyahel"
 base_tax = 2

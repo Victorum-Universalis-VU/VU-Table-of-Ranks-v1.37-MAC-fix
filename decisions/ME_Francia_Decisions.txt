@@ -89,7 +89,7 @@ country_decisions = {
 				limit = {
 					is_part_of_hre = no
 				}
-				set_government_rank = 3
+				set_government_rank = 9
 			}
 			183 = {
 				move_capital_effect = yes
@@ -139,6 +139,13 @@ country_decisions = {
 				add_permanent_claim = FRX
 			}
 			hesse_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = FRX
+			}
+			frankfurt_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }

@@ -31,7 +31,15 @@ country_event = { #Ashikaga Succession Crisis - For Ashikaga
 			every_subject_country = {
 				limit = {
 					ai = yes
-					is_subject_of_type = daimyo_vassal
+					OR = {
+				    	is_subject_of_type = daimyo_vassal
+				    	is_subject_of_type = daimyo_barony_vassal
+				    	is_subject_of_type = daimyo_viscounty_vassal
+				    	is_subject_of_type = daimyo_county_vassal
+				    	is_subject_of_type = daimyo_marquisate_vassal
+				    	is_subject_of_type = daimyo_duchy_vassal
+				    	is_subject_of_type = daimyo_principality_vassal
+				    }
 					NOT = { tag = HSK }
 					NOT = { tag = YMN }
 				}

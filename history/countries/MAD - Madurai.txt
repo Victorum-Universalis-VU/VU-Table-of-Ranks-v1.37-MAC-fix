@@ -1,5 +1,6 @@
 government = monarchy
 add_government_reform = nayankara_reform
+government_rank = 6 #Petty_Kingdom
 technology_group = indian
 religion = hinduism
 primary_culture = tamil

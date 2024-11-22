@@ -619,7 +619,7 @@ BRBR_missions_5 = {
 					}
 				}
 				custom_trigger_tooltip = {
-					tooltip = TLC_provinces_raided
+					tooltip = TLC_provinces_raided_tt
 					check_variable = {
 						which = NumOfRaidedCoasts
 						value = 60

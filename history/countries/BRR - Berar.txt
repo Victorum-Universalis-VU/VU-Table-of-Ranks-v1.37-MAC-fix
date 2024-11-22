@@ -1,5 +1,6 @@
 government = monarchy
 add_government_reform = indian_sultanate_reform
+government_rank = 6 #Sultanate
 technology_group = indian
 religion = shiite
 primary_culture = marathi

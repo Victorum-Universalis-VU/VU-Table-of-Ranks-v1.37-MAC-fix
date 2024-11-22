@@ -1,5 +1,6 @@
 government = theocracy
-add_government_reform = leading_clergy_reform
+add_government_reform = church_of_germany_bishopric_reform
+government_rank = 4 #Prince-Bishopric
 primary_culture = hessian
 religion = catholic
 #technology_group = western

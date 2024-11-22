@@ -7,13 +7,6 @@ revolutionary_colors = { 8 1 0 }
 
 historical_idea_groups = {
 	trade_ideas
-	defensive_ideas
-	religious_ideas
-	economic_ideas
-	innovativeness_ideas
-	offensive_ideas
-	spy_ideas
-	administrative_ideas
 }
 
 historical_units = {
@@ -74,7 +67,7 @@ leader_names = {
 	"Schappeler"
 	"Zangmeister"
 	"Schenck"
-	"Vöhlin"
+	"Vï¿½hlin"
 	"Schulthaiss"
 	"Imhoff"
 }
@@ -85,7 +78,7 @@ army_names = {
 
 ship_names = {
 	"St. Sebaldus" Memmingen  "St. Kilian" "Tassilo III"
-	"König Arnulf" "Graf von Bogen" "Graf von Andechs"
+	"Kï¿½nig Arnulf" "Graf von Bogen" "Graf von Andechs"
 	"Graf von Sulzbach" Wittelsbach "Graf von Diepolding"
 	Otto
 	Augsburg Andechs Burgau Diessen Friedberg Kempten Lindau

@@ -1,4 +1,4 @@
-#VU updated by San Felipe for 1.36
+#Updated to v1.37 - SF
 # Flavour events for Teutonic Order - The Prussian Confederation
 # By Daniel Tolman
 
@@ -497,7 +497,6 @@ country_event = {
 		name = flavor_teu.5.a
 		end_disaster = prussian_confederation_disaster
 		change_tag = DNZ
-		on_change_tag_effect = yes
 		if = {
 			limit = {
 				owns = 43
@@ -513,6 +512,7 @@ country_event = {
 			}
 			swap_non_generic_missions = yes
 		}
+		on_change_tag_effect = yes
 		add_stability = -1
 		add_prestige = -25
 		if = {
@@ -1559,8 +1559,8 @@ country_event = {
 		}
 		add_government_reform = prussian_monarchy_base
 		if = {
-			limit = { NOT = { government_rank = 2 } }
-			set_government_rank = 2
+			limit = { NOT = { government_rank = 8 } }
+			set_government_rank = 8
 		}
 		add_prestige = 25
 		ai_chance = {
@@ -2027,7 +2027,6 @@ country_event = {
 	option = {
 		name = flavor_teu.35.a
 		change_tag = GER
-		on_change_tag_effect = yes
 		restore_country_name_effect = yes
 		if = {
 			limit = {
@@ -2054,11 +2053,11 @@ country_event = {
 		}
 		else = {
 			tooltip = {
-				set_government_rank = 3
+				set_government_rank = 9
 			}
 		}
 		hidden_effect = {
-			GER = { set_government_rank = 3 }
+			GER = { set_government_rank = 9 }
 		}
 		north_german_region = {
 			limit = {
@@ -2085,6 +2084,7 @@ country_event = {
 			country_event = { id = ideagroups.1 } #Swap Ideas
 		}
 		swap_non_generic_missions = yes
+		on_change_tag_effect = yes
 		ai_chance = {
 			factor = 100
 		}

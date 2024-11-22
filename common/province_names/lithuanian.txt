@@ -7,6 +7,7 @@
 41 = "Karaliaucius"
 42 = "Varmé"
 43 = "Gdanskas"
+132 = { "Judenburg" "Judenburg" }
 269 = "Palenké"
 271 = "Zemaitija"
 272 = "Vilnius"

@@ -29,9 +29,9 @@
  ME_Mahra_Events.5.a: "Bad news!"
  ME_Mahra_Events.5.b: "A pirate's life for me!"
  
- SUQ_ideas: "Socotran Ideas"
- SUQ_ideas_start: "Socotran Traditions"
- SUQ_ideas_bonus: "Socotran Ambitions"
+ #SUQ_ideas: "Socotran Ideas"
+ #SUQ_ideas_start: "Socotran Traditions"
+ #SUQ_ideas_bonus: "Socotran Ambitions"
  SUQ_idea_1: "A Christian Stronghold"
  SUQ_idea_1_desc: "Surrounded by heathens on all sides, we must keep the faith that was brought to us by Saint Thomas himself when he shipwrecked here."
  SUQ_idea_2: "The Spice Must Flow"

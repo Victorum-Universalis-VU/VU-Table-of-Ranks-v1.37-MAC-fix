@@ -1,6 +1,6 @@
 government = republic
 add_government_reform = oligarchy_reform
-government_rank = 1
+government_rank = 7 #Grand Duchy
 mercantilism = 25
 primary_culture = tuscan
 religion = catholic
@@ -143,8 +143,10 @@ capital = 116 # Firenze
 	}
 }
 
-1532.1.1 = { government = monarchy
-add_government_reform = autocracy_reform }
+1532.1.1 = { 
+	government = monarchy
+	add_government_reform = autocracy_reform 
+}
 
 1537.1.6 = {
 	monarch = {
@@ -318,11 +320,14 @@ add_government_reform = autocracy_reform }
 	}
 }
 
-1737.7.10 = { government = monarchy
-add_government_reform = autocracy_reform }
+1737.7.10 = { 
+	government = monarchy
+	add_government_reform = autocracy_reform 
+}
 
-1740.1.1 = { government = monarchy
-# add_government_reform = letat_cest_moi_reform 
+1740.1.1 = { 
+	government = monarchy
+	#add_government_reform = letat_cest_moi_reform 
 }
 
 

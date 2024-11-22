@@ -40,7 +40,7 @@ can_select_estate_agenda_estate_maya_teach_ruler = {
 
 can_select_estate_agenda_estate_maya_advisor_employed = {
 	NOT = { has_country_modifier = estate_maya_advisor_employed_modifier }
-	NOT = { advisor = mayan_scribe }
+	NOT = { advisor = researcher }
 	num_of_owned_provinces_with = {
 		value = 1
 		has_building = university

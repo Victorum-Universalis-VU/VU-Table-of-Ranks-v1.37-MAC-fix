@@ -1,4 +1,4 @@
-#8264 - Calau
+#8792 - Calau
 #Area - Lusatia
 #Region - North Germany
 
@@ -19,20 +19,12 @@ hre = yes
 #Claimants
 
 #Buildings
-fort_15th = yes
 
 #Special Modifiers
 
 #Known by Technology groups
 
-
-
-
-
-
 #Histories by docRobert & SF
 1444.1.1 = {
-	owner = BOH
-	controller = BOH
 	add_core = BOH
 }

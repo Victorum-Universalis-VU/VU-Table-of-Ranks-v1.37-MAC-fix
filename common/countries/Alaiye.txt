@@ -1,21 +1,14 @@
-#Country Name: Please see filename.
+#ALI - Alaiye
 
 graphical_culture = turkishgfx #muslimgfx
 
 color = { 44  124  88 }				#Deep blue-green, for no reason in particular
 
-historical_idea_groups = {					#Copied from Karaman
+historical_idea_groups = {
 	defensive_ideas
-	offensive_ideas
-	spy_ideas
-	trade_ideas
-	religious_ideas
-	diplomatic_ideas
-	quality_ideas
-	administrative_ideas
 }
 
-historical_units = {					#Copied from Karaman for now
+historical_units = {
 	persian_footsoldier
 	persian_cavalry_charge
 	persian_shamshir
@@ -29,7 +22,7 @@ historical_units = {					#Copied from Karaman for now
 	persian_rifle
 }
 
-monarch_names = {					#Copied from Karaman for now
+monarch_names = {
 	"Muhammed #0" = 20
 	"Izzeddin #0" = 20
 	"Taceddin #0" = 20
@@ -53,7 +46,7 @@ monarch_names = {					#Copied from Karaman for now
 	"Zübeyde #0" = -1
 }
 
-leader_names = {					#Copied from Karaman for now
+leader_names = {
 	Alemdar Amasyali Ayas
 	Bali Barbaros Bayram
 	Cezzar Çandarli Çelebi Cerrah Çerkes Civan Çuhadar
@@ -74,16 +67,16 @@ leader_names = {					#Copied from Karaman for now
 	Yemisçi
 }
 
-ship_names = {					#Copied from Karaman for now
+ship_names = {
 	"Nure Sufi" Sadaddin "Karaman Bey" Ermenek
 	Mut Gülnar Mer Silifke Cilicia Larande
 	Bunsuz "Zeynül-Hac" "Semseddin Mehmet" Göksu
 }
 
-army_names = {					#Copied from Karaman for now
+army_names = {
 	"$PROVINCE$ Ordusu"
 }
 
-fleet_names = {					#Copied from Karaman for now
+fleet_names = {
 	"$PROVINCE$ Donanmasî"
 }

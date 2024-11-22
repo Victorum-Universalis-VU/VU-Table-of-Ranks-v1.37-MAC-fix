@@ -227,13 +227,13 @@ fin_missions_1 = {
 				add_base_manpower = 1 
 			} 
 			if = { 
-				limit = { government_rank = 2 } 
+				limit = { government_rank = 8 } 
 				add_power_projection = {
 					type = mission_rewards_power_projection
 					amount = 25
 				}
 			}
-			else = { set_government_rank = 2 } 
+			else = { set_government_rank = 8 } 
 			define_advisor = { 
 				type = trader
 				skill = 2
@@ -396,9 +396,9 @@ fin_missions_2 = {
 		effect = { 
 			if = { 
 				limit = { 
-					NOT = { government_rank = 3 } 
+					NOT = { government_rank = 9 } 
 				}
-				set_government_rank = 3 
+				set_government_rank = 9 
 			}
 			else = { add_prestige = 50 }
 			custom_tooltip = fin_baltic_empire_tt

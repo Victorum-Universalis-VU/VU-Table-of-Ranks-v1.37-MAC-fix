@@ -176,7 +176,7 @@ country_event = { #Fall of Constantinople
 			center_of_trade = 1
 		}
 		add_stability_or_adm_power = yes
-		set_government_rank = 3
+		set_government_rank = 9
 		set_country_flag = tur_disables_move_capital_to_constantinople_flag
 		custom_tooltip = tur_disables_move_capital_to_constantinople
 	}
@@ -2189,7 +2189,7 @@ country_event = { #empowering the native estates
 				# }
 				# change_government = monarchy
 			# }
-			# set_government_rank = 2
+			# set_government_rank = 8
 			# add_government_reform = mamluk_government
 			# add_country_modifier = {
 				# name = "centralization_modifier"
@@ -3007,7 +3007,7 @@ country_event = { #Serafeddin Sabuncuoglu
 	}
 
 	option = { #
-		name = ME_Ottoman_Events.47.b
+		name = ME_Ottoman_Events.47.c
 		ai_chance = { factor = 50 }
 		trigger = { has_dlc = "Cradle of Civilization" }
 		add_country_modifier = {

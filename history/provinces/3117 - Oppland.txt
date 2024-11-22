@@ -17,6 +17,7 @@ capital = "Lillehammer"
 is_city = yes
 
 #Claimants
+add_core = AKE
 add_core = NOR
 
 #Buildings
@@ -24,11 +25,6 @@ add_core = NOR
 #Special Modifiers
 
 #Known by Technology groups
-
-
-
-
-
 
 #Histories by SF
 1440.1.1 = { owner = NOR controller = NOR add_core = NOR } # Norwegian territorial lands - By San Felipe

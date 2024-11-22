@@ -1,10 +1,10 @@
 government = monarchy
-add_government_reform = iqta
+add_government_reform = islamic_emirate_reform
+government_rank = 5 #Emirate
 primary_culture = yemeni_culture
 religion = sunni
 technology_group = muslim
 capital = 388	# Aden
-government_rank = 1
 religious_school = shafii_school
 historical_rival = RAS
 historical_rival = RSL
@@ -105,6 +105,8 @@ historical_rival = RSL
 		dip = 4
 		mil = 4
 	}
+	add_government_reform = islamic_sultanate_reform
+	government_rank = 6 #Sultanate
 }
 
 1742.1.1 = {

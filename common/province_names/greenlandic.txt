@@ -63,6 +63,7 @@
 116 = { "Florons" "Florons" } #Firenze 
 117 = { "Langasyn" "Langasyn" } #Siena 
 118 = { "Róma" "Rómaborg" } #Roma 
+132 = { "Judenburg" "Judenburg" }
 134 = "Vínarborg"  #Wien
 142 = "Maríuhofn"  #Corfu
 146 = "Aþena"  #Athens

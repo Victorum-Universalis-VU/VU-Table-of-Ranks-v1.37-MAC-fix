@@ -8,6 +8,7 @@
 32 = "Kexholm"
 33 = "Nöteborg"
 37 = "Livland"
+132 = { "Judenburg" "Judenburg" }
 
 956 = "Nya Götheborg"
 957 = "Fort Kristina"

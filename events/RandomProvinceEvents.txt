@@ -1183,7 +1183,10 @@ province_event = {
 		modifier = {
 			factor = 0.9
 			owner = {
-				NOT = { has_reform = steppe_horde }
+				NOT = { 
+					has_reform = steppe_horde
+					has_reform = scythian_horde_reform
+				}
 				legitimacy = 100
 			}
 		}
@@ -1211,11 +1214,28 @@ province_event = {
 	trigger = {
 		always = no
 		NOT = { controlled_by = owner }
-		NOT = { owner = { has_reform = steppe_horde } }
-		controller = { has_reform = steppe_horde }
+		NOT = { 
+			owner = { 
+				OR = {
+					has_reform = steppe_horde
+					has_reform = scythian_horde_reform
+				}
+			} 
+		}
+		controller = { 
+			OR = {
+				has_reform = steppe_horde
+				has_reform = scythian_horde_reform
+			}
+		}
 		any_neighbor_province = {
 			controlled_by = owner
-			owner = { has_reform = steppe_horde }
+			owner = { 
+				OR = {
+					has_reform = steppe_horde
+					has_reform = scythian_horde_reform
+				}
+			}
 		}
 		owner = { war_exhaustion = 5 }
 		garrison = 1000

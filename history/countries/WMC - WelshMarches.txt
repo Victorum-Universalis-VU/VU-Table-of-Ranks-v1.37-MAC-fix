@@ -1,7 +1,7 @@
 #WMC - WelshMarches
 government = monarchy
-add_government_reform = english_lordship_reform #Should be Marcher lordship as they were a collection of English lordships. By SF
-government_rank = 1
+add_government_reform = eue_marquisate_reform
+government_rank = 5 #Marquisate_Reform
 #technology_group = western
 technology_group = english_tech_group
 unit_type = western

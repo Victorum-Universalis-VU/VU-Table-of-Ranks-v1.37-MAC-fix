@@ -1,8 +1,8 @@
 #7564 - Reutlingen
 
-owner = WUR
-controller = WUR
-add_core = WUR
+owner = REU
+controller = REU
+add_core = REU
 culture = swabian
 capital = "Reutlingen"
 religion = catholic
@@ -13,11 +13,8 @@ base_manpower = 3
 is_city = yes
 hre = yes
 
-
-
-
-
-
+#Claimants
+add_core = WUR
 
 #Documented 1127 AD
 1519.1.1 = { 

@@ -1,6 +1,6 @@
 government = monarchy
-add_government_reform = daimyo
-government_rank = 1
+add_government_reform = daimyo_viscounty_reform
+government_rank = 3 #Daimyo_Viscounty
 primary_culture = japanese
 religion = shinto
 technology_group = chinese

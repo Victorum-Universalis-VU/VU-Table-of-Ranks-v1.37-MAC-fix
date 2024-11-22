@@ -4,7 +4,7 @@
 
 owner = GOL
 controller = GOL
-culture = russian
+culture = ryazanian
 religion = orthodox
 hre = no
 base_tax = 2

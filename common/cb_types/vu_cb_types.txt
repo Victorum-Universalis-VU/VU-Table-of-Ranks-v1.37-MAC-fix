@@ -1,36 +1,5 @@
 #VU_cb_types
 #New Additions by San Felipe
-#unify_british_isles = {
-#	valid_for_subject = no
-#
-#	prerequisites = {
-#		is_free_or_tributary_trigger = yes
-#		mission_completed = eng_irish_conquest
-#		culture_group = british
-#		OR = {
-#			tag = ENG
-#			tag = SCO
-#		}
-#		has_government_attribute = has_unify_british_isles_cb
-#		
-#		FROM = { #Applies against other powers on British Isles
-#			NOT = { is_subject_of = ROOT }
-#			culture_group = british
-#			any_owned_province = {
-#			    region = british_isles_region
-#			}
-#		}
-#		is_neighbor_of = FROM
-#	}
-#
-#	attacker_disabled_po = {
-#		po_become_tributary_state
-#		po_subjugate_tributary_state
-#	}
-#
-#	war_goal = unify_british_isles_wargoal
-#}
-
 unify_germany = {
 	valid_for_subject = no
 
@@ -319,56 +288,6 @@ cb_margrave_war = {
 	
 	war_goal = margrave_war
 }
-
-#arabia_missions_cb_types
-# cb_jihad = {
-	# valid_for_subject = no
-
-	# prerequisites = {
-		# has_country_flag = arb_allow_jihad_cb
-		# NOT = { had_country_flag = { flag = arb_allow_jihad_cb days = 36500 } }
-		# religion_group = muslim
-		# is_neighbor_of = FROM
-		# NOT = { religion = FROM }
-		# NOT = {	has_matching_religion = FROM }
-		# is_revolution_target = no
-	# }
-
-	# war_goal = superiority_jihad
-# }
-
-# cb_arabia_islamization = {
-	# valid_for_subject = no
-
-	# prerequisites = {
-		# has_country_flag = ARB_islamization_of_europe_cb
-		# religion_group = muslim
-		# is_neighbor_of = FROM
-		# NOT = { religion = FROM }
-		# technology_group = western
-	# }
-
-	# war_goal = superiority_jihad
-# }
-
-
-# cb_take_caliphate_arabia = {
-	# valid_for_subject = no
-
-	# is_triggered_only = yes
-	# months = 60
-	
-	# prerequisites = {
-		# is_subject = no
-		# religion = sunni
-		# NOT = { has_reform = caliphate_reform_sunni } #VU - ET entry used by PDX that they've not given any credit to ET for. 
-		# FROM = {
-			# has_reform = caliphate_reform #VU - ET entry used by PDX that they've not given any credit to ET for. 
-		# }
-	# }
-	
-	# war_goal = take_capital_take_caliphate_arabia
-# }
 
 cb_abbasid_jihad = {
 	valid_for_subject = no
@@ -711,10 +630,7 @@ cb_inca_expulse_europeans = {
 	valid_for_subject = no
 
 	prerequisites = {
-		OR = {
-			mission_completed = inca_expel_the_foreigners
-			#mission_completed = maya_expel_the_foreigners
-		}
+		mission_completed = SUN_punish_colonialism #Was inca_expel_the_foreigners but changed by SF
 		OR = {
 			AND = {
 				has_dlc = "El Dorado"
@@ -1087,148 +1003,7 @@ cb_tunis_capture_islands = {
 	war_goal = tunis_capture_islands_wargoal
 }
 
-#ME_Mughals_cb_types
-cb_conquest_of_india = {
-	valid_for_subject = no
-
-#	is_triggered_only = no
-
-	prerequisites = {
-		has_country_flag = me_mug_conquest_of_hindustan
-		NOT = {
-			OR = {
-				has_country_flag = me_mug_india_less_ae
-				has_country_flag = me_mug_india_less_prov
-			}
-		}
-		tag = MUG
-		FROM = {
-			any_owned_province = {
-				OR = {
-					region = hindusthan_region
-					region = bengal_region
-					region = west_india_region
-					region = deccan_region
-					region = coromandel_region
-				}
-			}
-		}
-	}
-
-	war_goal = MUG_conquer_hindustan
-}
-
-cb_conquest_of_india_less_ae = {
-	valid_for_subject = no
-
-#	is_triggered_only = no
-
-	prerequisites = {
-		has_country_flag = me_mug_india_less_ae
-		tag = MUG
-		FROM = {
-			any_owned_province = {
-				OR = {
-					region = hindusthan_region
-					region = bengal_region
-					region = west_india_region
-					region = deccan_region
-					region = coromandel_region
-				}
-			}
-		}
-	}
-
-	war_goal = MUG_conquer_india_ae
-}
-
-cb_conquest_of_india_less_province = {
-	valid_for_subject = no
-
-#	is_triggered_only = no
-
-	prerequisites = {
-		has_country_flag = me_mug_india_less_prov
-		tag = MUG
-		FROM = {
-			any_owned_province = {
-				OR = {
-					region = hindusthan_region
-					region = bengal_region
-					region = west_india_region
-					region = deccan_region
-					region = coromandel_region
-				}
-			}
-		}
-	}
-
-	war_goal = MUG_conquer_india_cost
-}
-
 #ME_Timurid_cb_types
-cb_take_timurid_empire = {
-	valid_for_subject = no
-
-	is_triggered_only = yes
-
-	war_goal = take_capital_claim_timur_empire
-}
-
-cb_take_conquest_of_delhi = {
-	valid_for_subject = no
-
-	is_triggered_only = yes
-
-	war_goal = take_capital_conquest_of_delhi
-}
-
-# Temporary claim CB (mostly used by missions)
-#cb_conquest_tim = {
-#
-#	prerequisites = {
-#		claim = FROM
-#		has_country_flag = me_tim_less_ae_claims
-#	}
-#
-#	war_goal = take_claim_less_ae
-#}
-
-#cb_conquest_of_europe = {
-#	valid_for_subject = no
-#
-##	is_triggered_only = no
-#
-#	prerequisites = {
-#		has_country_flag = me_tim_conquest_of_europe
-#		tag = MUG
-#		FROM = {
-#			any_owned_province = {
-#				continent = europe
-#			}
-#		}
-#	}
-#
-#	war_goal = TIM_conquer_europe
-#}
-
-
-# Timurid Conquests
-cb_timurids_conquests = {
-	valid_for_subject = no
-
-	prerequisites = {
-		OR = {
-			is_neighbor_of = FROM
-			has_country_modifier = ME_tim_horsemen_of_apocalypse_modifier
-		}
-		tag = TIM
-		has_country_flag = me_tim_timurid_conquest
-	}
-
-	war_goal = me_tim_timurid_conquest_type
-}
-
 #najd_missions_cb_types
 cb_najd_war = {
 	valid_for_subject = no
@@ -1623,6 +1398,10 @@ cb_swabia_add_provinces_back_to_hre = {
 						owned_by = FROM
 						is_part_of_hre = no
 					}
+					san_marino_area = {
+						owned_by = FROM
+						is_part_of_hre = no
+					}
 				}
 			}
 		}
@@ -1694,7 +1473,7 @@ cb_take_caliphate = {
 				religion = sunni
 				FROM = {
 					OR = {
-						has_reform = ME_caliphate_reform_sunni 
+						has_reform = caliphate_reform 
 						has_reform = ME_caliphate_reform_sunni_andalusia 
 						has_reform = ME_caliphate_reform_sunni_arabian
 					}
@@ -1715,24 +1494,3 @@ cb_take_caliphate = {
 
 	war_goal = take_capital_take_caliphate
 }
-
-#cb_salic_reunification = {
-#	valid_for_subject = no
-#
-#	is_triggered_only = yes
-#	months = 600
-#	
-#	prerequisites_self = {
-#		has_reform = salic_reform
-#		is_subject = no
-#	}
-#
-#	prerequisites = {
-#		FROM = {
-#			has_reform = salic_reform
-#			is_subject = no
-#		}
-#	}
-#
-#	war_goal = take_capital_salic
-#}

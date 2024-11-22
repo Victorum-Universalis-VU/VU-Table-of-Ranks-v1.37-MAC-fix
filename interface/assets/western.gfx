@@ -308,7 +308,7 @@ objectTypes = {
 	#### TYPE 6 ######################################
 	#
 	# Eu4 original, with breastplate (no leg armor), support 2 colors
-	# Like Castille
+	# Like Castile
 
 	pdxmesh = {
 		name = "western_generic_01_type5"

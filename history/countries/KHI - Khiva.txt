@@ -1,5 +1,6 @@
 government = monarchy
-add_government_reform = iqta
+add_government_reform = caliphate_reform
+government_rank = 9 #Emprie
 technology_group = muslim
 religion = sunni
 primary_culture = turkmeni
@@ -241,7 +242,7 @@ religious_school = hanafi_school
 		adm = 0
 		mil = 0
 	}
-	government_rank = 1
+	government_rank = 6
 }
 
 1745.1.1 = {
@@ -265,7 +266,7 @@ religious_school = hanafi_school
 }
 
 1747.6.19 = {
-	government_rank = 2
+	government_rank = 8
 }
 
 1757.1.1 = {

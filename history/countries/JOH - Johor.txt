@@ -197,8 +197,6 @@ religious_school = shafii_school
 	}
 }
 
-# Bendahara Dynasty
-
 1699.1.1 = {
 	monarch = {
 		name = "Abd al-Jalîl Shâh IV"

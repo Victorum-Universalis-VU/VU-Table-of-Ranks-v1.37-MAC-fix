@@ -141,7 +141,11 @@ country_event = {
 			}
 			modifier = {
 				factor = 5
-				has_reform = steppe_horde
+				OR = {
+					has_reform = steppe_horde
+					has_reform = scythian_horde_reform
+				}
+				
 			}
 		}
 		add_army_professionalism = -0.05

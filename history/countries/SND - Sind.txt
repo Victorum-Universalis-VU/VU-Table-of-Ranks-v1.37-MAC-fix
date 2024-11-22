@@ -1,5 +1,6 @@
 government = monarchy
 add_government_reform = indian_sultanate_reform
+government_rank = 6 #Sultanate
 technology_group = indian
 primary_culture = sindhi
 religion = sunni
@@ -367,7 +368,7 @@ change_jains_or_burghers_land_share_effect = {
 }
 
 1739.1.1 = {
-	government_rank = 1
+	government_rank = 6
 }
 
 1755.1.1 = {

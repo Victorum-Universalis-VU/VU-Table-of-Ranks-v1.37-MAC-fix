@@ -1,5 +1,6 @@
 government = monarchy
 add_government_reform = rajput_kingdom
+government_rank = 6 #Ranate
 primary_culture = rajput
 religion = hinduism
 technology_group = indian
@@ -285,7 +286,7 @@ capital = 518	# Chittogarh
 }
 
 1544.1.1 = {
-	government_rank = 1
+	government_rank = 6
 }
 
 1572.3.3 = {
@@ -296,7 +297,7 @@ capital = 518	# Chittogarh
 		MIL = 4
 		ADM = 3
 	}
-	government_rank = 2
+	government_rank = 8
 }
 
 
@@ -347,7 +348,7 @@ capital = 518	# Chittogarh
 }
 
 1616.1.1 = {
-	government_rank = 1
+	government_rank = 6
 }
 
 1620.1.26 = {
@@ -434,7 +435,7 @@ capital = 518	# Chittogarh
 }
 
 1679.8.1 = {
-	government_rank = 2
+	government_rank = 8
 }
 
 1680.10.22 = {
@@ -473,7 +474,7 @@ capital = 518	# Chittogarh
 }
 
 1681.1.1 = {
-	government_rank = 1
+	government_rank = 6
 }
 
 1698.9.23 = {
@@ -501,7 +502,7 @@ capital = 518	# Chittogarh
 }
 
 1707.3.15 = {
-	government_rank = 2
+	government_rank = 8
 }
 
 1710.12.10 = {
@@ -564,7 +565,7 @@ capital = 518	# Chittogarh
 }
 
 1738.1.1 = {
-	government_rank = 1
+	government_rank = 6
 }
 
 1751.6.5 = {
@@ -707,5 +708,5 @@ capital = 518	# Chittogarh
 }
 
 1818.1.1 = {
-	government_rank = 2
+	government_rank = 8
 }

@@ -1,4 +1,5 @@
 namespace = FU_Switzerland_Events
+namespace = VU_Switzerland_Events
 
 country_event = { #Manufacturing and Trading of Swiss Textiles
 	id = FU_Switzerland_Events.1 
@@ -193,6 +194,36 @@ country_event = {
 		name = FU_Switzerland_Events.6.a 
 		
 		remove_country_modifier = swi_period_of_stability_modifier
+	}
+}
+
+#Autonomous Canton
+country_event = { #The Swiss Confederation
+	id = VU_Switzerland_Events.7
+	title = VU_Switzerland_Events.7.t 
+	desc = VU_Switzerland_Events.7.d 
+	picture = vu_swiss_cantons_eventPicture
+	
+	fire_only_once = yes 
+	
+	trigger = {
+		tag = SWI 
+		is_at_war = no 
+		current_age = age_of_discovery
+	}
+	
+	mean_time_to_happen = {
+		months = 1 
+	}
+	
+	option = {
+		name = VU_Switzerland_Events.7.a 
+		
+		custom_tooltip = swi_enable_autonomous_cantons_tt 
+		hidden_effect = { 
+			set_country_flag = can_make_autonomous_canton 
+			set_country_flag = swi_had_autonomous_canton_event_flag
+		}
 	}
 }
 

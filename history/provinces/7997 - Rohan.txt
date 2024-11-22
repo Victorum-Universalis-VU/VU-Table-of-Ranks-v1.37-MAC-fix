@@ -13,6 +13,9 @@ trade_goods = tin
 is_city = yes
 hre = no
 
+#Claims
+add_core = ROH
+
 
 
 

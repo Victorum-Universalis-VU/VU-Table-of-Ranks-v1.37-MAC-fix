@@ -7,13 +7,6 @@ revolutionary_colors = { 10 0 8 }
 
 historical_idea_groups = {
 	religious_ideas
-	trade_ideas
-	quantity_ideas
-	expansion_ideas
-	offensive_ideas
-	economic_ideas
-	defensive_ideas
-	administrative_ideas
 }
 
 historical_units = {
@@ -72,7 +65,7 @@ monarch_names = {
 
 	"Aaliyah #0" = -1	
 	"Ikram #0" = -1	
-	"Söyembikä #0" = -10
+	"Sï¿½yembikï¿½ #0" = -10
 	"Aylin #0" = -1
 	"Beyza #0" = -1
 	"Dilara #0" = -1
@@ -91,8 +84,8 @@ leader_names = {
 }
 
 ship_names = {
-	"Kara Nojaj" Edigü Saraycik Yayik
+	"Kara Nojaj" Edigï¿½ Saraycik Yayik
 	"Chinggis Khan" "Batu Khan" "Tartar Khan"
-	"Möngke Timur" "Waqqas Bej" Chaka Buri
+	"Mï¿½ngke Timur" "Waqqas Bej" Chaka Buri
 	"Qara Quchuq" Mangyt
 }

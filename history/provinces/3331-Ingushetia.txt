@@ -3,7 +3,6 @@
 owner = GOL
 controller = GOL
 add_core = GOL
-add_core = IGS
 culture = ingush
 religion = orthodox
 capital = "Angush"	#Uncertain
@@ -13,32 +12,11 @@ base_tax = 2
 base_production = 3
 base_manpower = 4 
 is_city = yes
+
+#Claimants
 add_core = AST
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+add_core = DAG
+add_core = IGS
 
 1444.1.1 = { add_local_autonomy = 60 } #Semi-independent tribes
 1555.1.1 = { 

@@ -2,7 +2,7 @@
 
 owner = HTK
 controller = HTK
-culture = togoku
+culture = hokuriku 
 religion = shinto
 capital = "Kanazawa"
 trade_goods = lacquerware #VU - Was rice but changed by San Felipe in v1.36.2.* because Kanazawa has long been a long been a center of lacquerware production of Japan's Wajima's producers, Taya Shikkiten.

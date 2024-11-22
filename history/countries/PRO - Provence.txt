@@ -1,6 +1,6 @@
 government = monarchy
-add_government_reform = feudalism_reform
-government_rank = 1
+add_government_reform = eue_duchy_reform
+government_rank = 6 #Duchy
 primary_culture = angevin_culture
 add_accepted_culture = aquitaine
 add_accepted_culture = lorraine_culture
@@ -13,8 +13,8 @@ unit_type = western
 capital = 7893 # Aix-en-Provence
 
 1215.6.15 = {
-    add_government_reform = marquisiate_reform
-	government_rank = 2
+    add_government_reform = eue_marquisate_reform
+	government_rank = 5 #Marquisate_Reform
 }
 
 1399.8.1 = {
@@ -111,8 +111,8 @@ capital = 7893 # Aix-en-Provence
 }
 
 1444.11.11 = {
-    add_government_reform = feudalism_reform
-	government_rank = 1
+    add_government_reform = eue_duchy_reform
+	government_rank = 6 #Duchy
 }
 
 1454.9.10 = {
@@ -157,12 +157,14 @@ capital = 7893 # Aix-en-Provence
 
 1515.1.1 = {
 	government = monarchy
-add_government_reform = autocracy_reform
+	add_government_reform = autocracy_reform
 }
 
 1560.1.1 = { religion = reformed }
 
 1589.8.3 = { set_legacy_government = administrative_monarchy }
 
-1661.3.9 = { government = monarchy
-add_government_reform = autocracy_reform }
+1661.3.9 = { 
+	government = monarchy
+	add_government_reform = autocracy_reform 
+}

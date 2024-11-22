@@ -1,4 +1,4 @@
-#VU updated to 1.35 by San Felipe 
+#VU updated to v1.37 by San Felipe 
 country_decisions = {
 
 	florida_nation = {
@@ -104,9 +104,9 @@ country_decisions = {
 			}
 			if = {
 				limit = {
-					NOT = { government_rank = 2 }
+					NOT = { government_rank = 8 }
 				}
-				set_government_rank = 2
+				set_government_rank = 8
 			}
 			if = {
 				limit = {
@@ -153,10 +153,7 @@ country_decisions = {
 			#can't have more than one elective monarchy in the game
 			if = {
 				limit = {
-					OR = {
-						has_reform = elective_monarchy
-						has_reform = phoenician_elective_monarchical_republic
-					}
+					has_reform = elective_monarchy
 				}
 				change_government = monarchy
 				add_government_reform = feudalism_reform

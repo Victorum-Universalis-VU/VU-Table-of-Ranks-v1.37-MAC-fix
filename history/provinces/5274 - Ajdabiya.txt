@@ -12,15 +12,11 @@ base_tax = 1
 base_production = 1 
 base_manpower = 1 
 is_city = yes
-add_core = TRP
 add_local_autonomy = 25
 
-
-
-
-
-
-
+#Claimants
+add_core = R4S
+add_core = TRP
 
 1444.11.16 = { #VictorumUniversalis batch edit shortcut no vassal start date begin
 	owner = ---

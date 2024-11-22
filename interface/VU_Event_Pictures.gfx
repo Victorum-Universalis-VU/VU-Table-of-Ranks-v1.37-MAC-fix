@@ -554,4 +554,56 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/vu_jack1_eventPicture.dds"
 		allwaystransparent = yes
 	}
+
+	#NEW Wandering Events 1.37
+	spriteType = {
+		name = "vu_wandering_wenches_eventPicture" 
+		texturefile = "gfx/event_pictures/vu_wandering_wenches_eventPicture.dds"
+		allwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "vu_wandering_gamblers_eventPicture" 
+		texturefile = "gfx/event_pictures/vu_wandering_gamblers_eventPicture.dds"
+		allwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "vu_wandering_musicians_eventPicture" 
+		texturefile = "gfx/event_pictures/vu_wandering_musicians_eventPicture.dds"
+		allwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "vu_wandering_artists_eventPicture" 
+		texturefile = "gfx/event_pictures/vu_wandering_artists_eventPicture.dds"
+		allwaystransparent = yes
+	}
+
+	#VU 1.37 Universities
+	spriteType = {
+		name = "vu_constantinople_to_istanbul_eventPicture" 
+		texturefile = "gfx/event_pictures/vu_constantinople_to_istanbul_eventPicture.dds"
+		allwaystransparent = yes
+	}
+
+	#VU 1.37 International Cooperation
+	spriteType = {
+		name = "vu_centralised_bureaucrats_eventPicture" 
+		texturefile = "gfx/event_pictures/vu_centralised_bureaucrats_eventPicture.dds"
+		allwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "vu_centralised_diplomats_eventPicture" 
+		texturefile = "gfx/event_pictures/vu_centralised_diplomats_eventPicture.dds"
+		allwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "vu_centralised_military_attaches_eventPicture" 
+		texturefile = "gfx/event_pictures/vu_centralised_military_attaches_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	
 }

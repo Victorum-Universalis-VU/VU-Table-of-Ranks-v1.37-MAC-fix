@@ -343,7 +343,7 @@ BYZ_BASE_ideas = {
 #	}
 #
 #	trigger = {
-#		tag = RMM
+#		tag = RUM
 #		has_country_flag = rum_vassalized_mam
 #	}
 #	free = yes

@@ -16,15 +16,11 @@ hre = no
 
 #Claimants
 add_core = PRO
+add_core = ENG
 
 #Special Modifiers
 
 #Known by Technology groups
-
-
-
-
-
 
 #Histories
 1215.6.15 = { owner = FRA controller = FRA add_core = FRA } # Part of French Royal Domain - By San Felipe

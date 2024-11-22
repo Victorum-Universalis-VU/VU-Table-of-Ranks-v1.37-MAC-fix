@@ -235,7 +235,7 @@
 128 = "Basse-Carinthie"
 129 = "Carniole"
 130 = "Istrie"
-132 = "Styrie"
+132 = { "Judenburg" "Judenburg" }
 134 = "Vienne"
 137 = "Raguse"
 146 = "Athènes"
@@ -259,7 +259,7 @@
 212 = "Gironne"
 213 = "Barcelone"
 214 = "Aragon"
-215 = "Castille"
+215 = "Castile"
 216 = "Salamanque"
 219 = "Tolède"
 220 = "Valence"
@@ -383,7 +383,7 @@
 4349 = { "Lagune" "Calamba" }
 4350 = { "Ouest de Mindoro" "Caminawit" }
 4351 = { "Nègres Occidentaux" "Ville de Bacolod" }
-4352 = { "Île de Cebu" "Ville de Cebu" }
+4352 = { "Cebu" "Ville de Cebu" }
 4353 = { "Leyte" "Carigara" }
 4354 = { "Zamboanga" "Ville de Zamboanga" }
 7166 = { "Nord d'Agusan" "Butuan" }

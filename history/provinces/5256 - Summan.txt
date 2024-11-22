@@ -13,19 +13,10 @@ base_production = 1
 base_manpower = 1 
 is_city = yes
 
+#Claimants
+add_core = R4S
 
-
-
-
-
-
-
-
-
-
-
-
-
+#Histories by SF
 1549.1.1 = {
 	owner = TUR
 	controller = TUR

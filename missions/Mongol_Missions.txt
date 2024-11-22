@@ -1,4 +1,4 @@
-#VU - Updated by San Felipe for 1.36.*
+#VU - Updated by San Felipe for 1.37.*
 # These missions should require X provinces in [region] rather than entire regions
 
 oir_missions_1 = {
@@ -8,6 +8,7 @@ oir_missions_1 = {
 	potential = {
 		tag = OIR
 		NOT = { map_setup = map_setup_random }
+		NOT = { has_dlc = "Winds of Change" }
 	}
 	has_country_shield = yes
 	oir_tumu_crisis = {
@@ -28,7 +29,10 @@ oir_missions_1 = {
 		effect = {
 			if = {
 				limit = {
-					has_reform = steppe_horde
+					OR = {
+				    	has_reform = steppe_horde
+				    	has_reform = scythian_horde_reform
+				    }
 				}
 				add_horde_unity = 25
 			}
@@ -51,13 +55,14 @@ mongol_missions_1 = {
 		}
 		NOT = { can_preview_missions = yes }
 		NOT = { map_setup = map_setup_random }
+		NOT = { has_dlc = "Winds of Change" }
 		OR = {
 			AND = {
 				NOT = { tag = KHA }
 				NOT = { tag = YUA }
 				NOT = { tag = ILK }
 			}
-			has_country_flag = use_paradox_missions
+			#has_country_flag = use_paradox_missions
 		}
 	}
 	has_country_shield = yes
@@ -89,7 +94,10 @@ mongol_missions_1 = {
 		effect = {
 			if = {
 				limit = {
-					has_reform = steppe_horde
+					OR = {
+				    	has_reform = steppe_horde
+				    	has_reform = scythian_horde_reform
+				    }
 				}
 				add_horde_unity = 25
 			}
@@ -230,8 +238,9 @@ mongol_missions_2 = {
 		}
 		NOT = { can_preview_missions = yes }
 		NOT = { map_setup = map_setup_random }
+		NOT = { has_dlc = "Winds of Change" }
 
-		has_country_flag = use_paradox_missions
+		#has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 	
@@ -255,10 +264,10 @@ mongol_missions_2 = {
 			if = {
 				limit = {
 					NOT = {
-						government_rank = 2
+						government_rank = 8
 					}
 				}
-				set_government_rank = 2
+				set_government_rank = 8
 			}
 			add_horde_unity = 20
 			mongolia_region = {
@@ -476,8 +485,9 @@ mongol_missions_3 = {
 		}
 		NOT = { can_preview_missions = yes }
 		NOT = { map_setup = map_setup_random }
+		NOT = { has_dlc = "Winds of Change" }
 
-		has_country_flag = use_paradox_missions
+		#has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 	
@@ -648,7 +658,8 @@ mongol_missions_4 = {
 		}
 		NOT = { can_preview_missions = yes }
 		NOT = { map_setup = map_setup_random }
-		has_country_flag = use_paradox_missions
+		NOT = { has_dlc = "Winds of Change" }
+		#has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 	

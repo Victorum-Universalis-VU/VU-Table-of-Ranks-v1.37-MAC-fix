@@ -2,7 +2,7 @@
 
 owner = MOS 
 controller = MOS 
-culture = russian
+culture = muscovite
 religion = orthodox
 hre = no
 base_tax = 4 
@@ -12,7 +12,7 @@ base_manpower = 4
 capital = "Kolomna"
 is_city = yes
 add_core = MOS
-
+center_of_trade = 1
 
 
 

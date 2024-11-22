@@ -6,7 +6,7 @@ latent_trade_goods = {
 
 culture = shawnee
 religion = totemism
-capital = "Kanawha"
+capital = "Mingo"
 trade_goods = unknown
 hre = no
 base_tax = 1 

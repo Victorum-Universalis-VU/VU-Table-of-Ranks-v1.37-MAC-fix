@@ -2,6 +2,7 @@
 
 owner = MAM
 controller = MAM
+add_core = MAM
 culture = palastinian_arabic
 religion = sunni
 capital = "Jaffa"
@@ -11,11 +12,15 @@ base_tax = 4 		#in the 14th century, the city was completely destroyed for fear 
 base_production = 4			#According to the traveller Cotwyk, Jaffa was a heap of ruins at the end of the 16th century.
 base_manpower = 2 			#Still giving 5 dev, because it became important later and was important before
 is_city = yes
-add_core = MAM
-add_core = PLE
 
 center_of_trade = 2
 extra_cost = 30
+
+#Claimants
+add_core = ISR
+add_core = PLE
+add_core = PT0
+add_core = R4S
 
 add_permanent_province_modifier = {
     name = navalbase_modifier

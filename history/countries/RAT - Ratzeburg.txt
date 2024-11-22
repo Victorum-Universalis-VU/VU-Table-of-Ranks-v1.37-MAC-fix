@@ -1,6 +1,6 @@
 government = theocracy
-add_government_reform = theocratic_government
-government_rank = 1
+add_government_reform = church_of_germany_bishopric_reform
+government_rank = 4 #Prince-Bishopric
 primary_culture = pommeranian
 religion = catholic
 #technology_group = western
@@ -8,12 +8,12 @@ technology_group = german_tech_group
 unit_type = western
 capital = 7617 #Ratzeburg
 
-1431.1.1 = {
+1444.1.1 = {
 	monarch = {
-		name = "Anton von Rotenhan"
-		birth_date = 1390.1.1
-		adm = 3
-		dip = 3
-		mil = 2
+		name = "Außerhalb des Büros"
+		adm = 1
+		dip = 1
+		mil = 1
+		regent = yes
 	}
 }

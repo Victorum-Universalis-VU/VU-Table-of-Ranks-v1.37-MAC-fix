@@ -45,7 +45,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/ages/age_indicator_4.dds"
 	}
 		
-    #Ages
 	spriteType = {
 		name = "GFX_age_of_absolutism"
 		texturefile = "gfx/interface/ages/age_of_absolutism.dds"
@@ -164,6 +163,12 @@ spriteTypes = {
 		texturefile = "gfx/interface/icon_religious.dds"
 	}
 
+
+
+
+
+
+
 	spriteType = {
 		name = "GFX_topbar_liberty_overlay_golden"
 		texturefile = "gfx/interface/ages/topbar_liberty_overlay_golden.dds"
@@ -192,7 +197,6 @@ spriteTypes = {
 	}
 
 	# Age of Discovery Objectives
-	#Objectives
 	spriteType = {
 		name = "GFX_obj_discover_america"
 		texturefile = "gfx/interface/ages/obj_discover_america.dds"
@@ -238,8 +242,9 @@ spriteTypes = {
 		texturefile = "gfx/interface/ages/obj_many_vassals.dds"
 	}
 
+
+
 	# Age of Reformation Objectives
-	#Objectives
 	spriteType = {
 		name = "GFX_obj_christian_convert"
 		texturefile = "gfx/interface/ages/obj_christian_convert.dds"
@@ -275,8 +280,9 @@ spriteTypes = {
 		texturefile = "gfx/interface/ages/obj_unify_culture.dds"
 	}
 
+
+
 	# Age of Absolutism Objectives
-	#Objectives
 	spriteType = {
 		name = "GFX_obj_3_trade_companies"
 		texturefile = "gfx/interface/ages/obj_3_trade_companies.dds"
@@ -312,8 +318,9 @@ spriteTypes = {
 		texturefile = "gfx/interface/ages/obj_win_religious_war.dds"
 	}
 
+
+
 	# Age of Revolutions Objectives
-	#Objectives
 	spriteType = {
 		name = "GFX_obj_parliament"
 		texturefile = "gfx/interface/ages/obj_parliament.dds"
@@ -349,6 +356,9 @@ spriteTypes = {
 		texturefile = "gfx/interface/ages/obj_two_institutions.dds"
 	}
 
+
+
+
 	# NEW Abilities	
 	spriteType = {
 		name = "GFX_ab_cavalry_armies"
@@ -375,8 +385,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/ages/ab_warscore_vs_religion.dds"
 	}
 
+
+
+
 	# Age of Discovery Abilities
-    #Abilities
 	spriteType = {
 		name = "GFX_ab_allow_feudal_de_jure_law"
 		texturefile = "gfx/interface/ages/ab_allow_feudal_de_jure_law.dds"
@@ -437,8 +449,9 @@ spriteTypes = {
 		texturefile = "gfx/interface/ages/ab_justified_wars.dds"
 	}
 
+
+
 	# Age of Reformation Abilities
-	#Abilities
 	spriteType = {
 		name = "GFX_ab_allow_religion_enforced"
 		texturefile = "gfx/interface/ages/ab_allow_religion_enforced.dds"
@@ -494,8 +507,9 @@ spriteTypes = {
 		texturefile = "gfx/interface/ages/ab_persia_reinforce.dds"
 	}
 
+
+
 	# Age of Absolutism Abilities
-	#Abilities
 	spriteType = {
 		name = "GFX_ab_allow_edict_of_absolutism"
 		texturefile = "gfx/interface/ages/ab_allow_edict_of_absolutism.dds"
@@ -556,8 +570,9 @@ spriteTypes = {
 		texturefile = "gfx/interface/ages/ab_manchu_banner.dds"
 	}
 
+
+
 	# Age of Revolutions Abilities
-	#Abilities
 	spriteType = {
 		name = "GFX_ab_allow_anti_revolutionary_zeal"
 		texturefile = "gfx/interface/ages/ab_allow_anti_revolutionary_zeal.dds"

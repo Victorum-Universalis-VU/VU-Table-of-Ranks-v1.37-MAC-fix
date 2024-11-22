@@ -1,6 +1,6 @@
 government = monarchy
-add_government_reform = timurid_governor
-government_rank = 1
+add_government_reform = islamic_governate_reform
+government_rank = 5 #Governate
 primary_culture = persian
 religion = shiite
 #technology_group = muslim
@@ -8,8 +8,6 @@ technology_group = persian_tech_group
 unit_type = muslim
 capital = 2218 # Shiraz
 
-set_country_flag = ME_can_use_timurid_legitimacy
-save_global_event_target_as = ME_succession_crisis_FRS
 #set_variable = {
 #	which = timurid_legitimacy_value
 #	value = 0

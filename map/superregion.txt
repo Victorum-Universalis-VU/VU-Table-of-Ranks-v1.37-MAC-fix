@@ -100,6 +100,7 @@ africa_superregion = {
 	uganda_region
 	zambia_region
     zimbabwe_region
+	st_helena_region
 }
 
 southern_africa_superregion = { #New in vanilla, deprecated in VU because I don't know if it's worth splitting. //Dub
@@ -381,7 +382,12 @@ st_lawrence_river_superregion = {
 mississippi_river_superregion = {
 	mississippi_river_region
 }
-
+ohio_river_region_superregion = {
+	ohio_river_region
+}
+missouri_river_superregion = {
+	missouri_river_region
+}
 #South America
 amazon_river_superregion = {
 	amazon_river_region

@@ -1,3 +1,4 @@
+#Updated to v1.37 - SF
 country_decisions = {
 
 	cuba_nation = {
@@ -84,9 +85,9 @@ country_decisions = {
 			}
 			if = {
 				limit = {
-					NOT = { government_rank = 2 }
+					NOT = { government_rank = 8 }
 				}
-				set_government_rank = 2
+				set_government_rank = 8
 			}
 			cuba_area = {
 				limit = {
@@ -101,10 +102,7 @@ country_decisions = {
 			#can't have more than one elective monarchy in the game
 			if = {
 				limit = {
-					OR = {
-						has_reform = elective_monarchy
-						has_reform = phoenician_elective_monarchical_republic
-					}
+					has_reform = elective_monarchy
 				}
 				change_government = monarchy
 				add_government_reform = feudalism_reform

@@ -578,7 +578,7 @@ NAJ_missions_4 = {
 			custom_tooltip = " "
 			
 			define_advisor = {
-				type = ME_wahhabi_scholar
+				type = researcher
 				name = "Muhammad ibn Abd al-Wahhab"
 				skill = 3
 				culture = ROOT

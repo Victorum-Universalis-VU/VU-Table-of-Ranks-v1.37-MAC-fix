@@ -2,6 +2,7 @@
 
 owner = MAM
 controller = MAM
+add_core = MAM
 culture = druze_culture
 religion = druze_new
 capital = "As-Suwayda"
@@ -11,32 +12,16 @@ base_tax = 1
 base_production = 2
 base_manpower = 1
 is_city = yes
-add_core = MAM
-add_core = SYR
+
+#Buildings
 fort_15th = yes
 
+#Claimants
+add_core = D4M
+add_core = R4S
+add_core = SYR
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#extra_cost = 10
-
-#			#Added in 1.20 and I can live with that
-
+#Histories by SF
 1516.8.24 = {	owner = TUR
 	controller = TUR
 	add_core = TUR

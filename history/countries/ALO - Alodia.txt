@@ -1,5 +1,6 @@
 government = tribal
 add_government_reform = matrilineal_system
+government_rank = 2 #Great_Tribe
 primary_culture = nubian
 add_accepted_culture = berta_culture
 religion = coptic

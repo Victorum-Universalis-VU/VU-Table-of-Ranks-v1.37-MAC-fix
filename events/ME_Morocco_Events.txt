@@ -392,7 +392,7 @@ country_event = {
 		ai_chance = { factor = 33 }
 		
 		define_advisor = {
-			type = sufi_scholar_advisor
+			type = researcher
 			skill = 2
 			culture = moroccan
 			religion = ROOT
@@ -704,7 +704,7 @@ country_event = {
 		add_piety = -0.25
 		
 		define_advisor = {
-			type = sufi_scholar_advisor
+			type = researcher
 			skill = 2
 			culture = ROOT
 			religion = ROOT
@@ -821,58 +821,6 @@ country_event = {
 
 	}
 }
-
-# country_event = {
-	# id = estate_berbers_events.2
-	# title = estate_berbers_events.2.t
-	# desc = estate_berbers_events.2.d
-	# picture = GOOD_WITH_MONARCH_eventPicture
-	
-	# mean_time_to_happen = {
-		# months = 12
-	# }
-
-	# trigger = {
-		# has_estate = estate_berbers
-		# OR = {
-			# NOT = { has_country_flag = estate_berbers_agenda_flag }
-			# had_country_flag = {
-				# flag = estate_berbers_agenda_flag
-				# days = 1925
-			# }
-		# }
-		# ai = no
-		# NOT = { has_any_active_estate_agenda = yes }
-	# }
-
-	# immediate = {
-		# hidden_effect = {
-			# clear_estate_agenda_cache = ROOT
-			# generate_estate_agenda = estate_berbers
-		# }
-	# }
-
-	# option = {
-		# name = "estate_berbers_events.2.a" #me wanna
-
-		# ai_chance = { factor = 33 }
-
-		# start_estate_agenda = estate_berbers
-	# }
-
-	# option = {
-		# name = "estate_berbers_events.2.b" #I don't wanna
-
-		# ai_chance = { factor = 33 }
-
-	# }
-
-	# after = {
-		# clr_country_flag = estate_berbers_agenda_flag
-		# set_country_flag = estate_berbers_agenda_flag
-		# clear_estate_agenda_cache = ROOT
-	# }
-# }
 
 country_event = {
 	id = estate_berbers_events.3

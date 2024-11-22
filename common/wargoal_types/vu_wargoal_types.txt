@@ -65,49 +65,6 @@ civil_war_wargoal = {
 }
 
 #Additions by San Felipe
-#unify_british_isles_wargoal = {
-#	type = superiority
-#	
-#	attacker = {
-#		badboy_factor = 0.25
-#		prestige_factor = 1.5
-#		peace_cost_factor = 0.5
-#		
-#		allowed_provinces = {
-#			superregion = europe_superregion
-#		}
-#		
-#		peace_options = {
-#			vu_engsco_full_annex
-#		}
-#		
-#		country_desc = ALL_CGROUP_COUNTRIES
-#		prov_desc = ALL_BRITISH_PROVS
-#	}
-#	
-#	defender = {
-#		badboy_factor = 0.25
-#		prestige_factor = 1.5
-#		peace_cost_factor = 0.5
-#		
-#		allowed_provinces = {
-#			OR = {
-#				region = british_isles_region
-#				culture_group = FROM
-#			}
-#		}
-#		
-#		peace_options = {
-#			vu_engsco_full_annex
-#		}
-#		
-#		country_desc = ALL_CGROUP_COUNTRIES
-#		prov_desc = ALL_BRITISH_PROVS
-#	}
-#	
-#	war_name = BRITISH_UNIFICATION_WAR_NAME	
-#}
-
 unify_germany_war_goal = {
 	type = superiority
 	

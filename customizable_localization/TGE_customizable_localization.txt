@@ -831,13 +831,13 @@ defined_text = {
     name = GetChampagneTGE
 
     text = {
-        localisation_key = string_GOODS_Marcin_Champagne
+        localisation_key = string_GOODS_Marcin_Champagne_Bottle
         trigger = {
             NOT = { has_global_flag = No_Champagne }
         }
     }
     text = {
-        localisation_key = string_GOODS_Marcin_Champagne_NO
+        localisation_key = string_GOODS_Marcin_Champagne_Bottle_NO
         trigger = {
             has_global_flag = No_Champagne 
         }

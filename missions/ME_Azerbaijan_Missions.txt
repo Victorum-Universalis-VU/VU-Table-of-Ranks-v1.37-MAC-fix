@@ -877,9 +877,9 @@ AZE_Missions_3 = {
 		effect = {
 			if = {
 				limit = {
-					NOT = { government_rank = 3 }
+					NOT = { government_rank = 9 }
 				}
-				set_government_rank = 3
+				set_government_rank = 9
 			}
 			else = {
 				add_adm_power = 50

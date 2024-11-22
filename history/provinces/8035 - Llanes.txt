@@ -1,9 +1,9 @@
 #8035 - Llanes
 
 #Default
-owner = CAS
-controller = CAS
-add_core = CAS
+owner = ASU
+controller = ASU
+add_core = ASU
 culture = leonese
 religion = catholic
 capital = "Gigia"
@@ -15,7 +15,7 @@ is_city = yes
 hre = no
 
 #Claimants
-add_core = ASU
+add_core = CAS
 add_core = LON
 
 #Buildings
@@ -24,16 +24,11 @@ add_core = LON
 
 #Known by Technology groups
 
-
-
-
-
-
 #Histories
 #924.1.1 = { owner = ASU controller = ASU add_core = ASU capital = "Gigia" } # Asturian territorial lands - By San Felipe
 
 1215.6.15 = { owner = LON controller = LON add_core = LON capital = "Xixón" } # Leonese territorial lands - By San Felipe
 
-1444.11.11 = { owner = CAS controller = CAS add_core = CAS capital = "Gijón" } # Castilian territorial lands - By San Felipe
+1444.11.11 = { owner = ASU controller = ASU add_core = ASU capital = "Gijón" } # Castilian territorial lands - By San Felipe
 
 1600.1.1 = { capital = "Xixón" }	#Gijon rises again

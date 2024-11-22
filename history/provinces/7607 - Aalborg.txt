@@ -15,14 +15,8 @@ base_manpower = 4
 capital = "Aalborg"
 is_city = yes
 
-
-
-
-
-
-
-
-
+#Claims
+add_core = JUT
 
 #History completed by docRobert
 

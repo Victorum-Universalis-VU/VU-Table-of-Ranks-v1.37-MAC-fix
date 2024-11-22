@@ -362,35 +362,32 @@ calumet_and_hecla = {
 	time = {
 		months = 0
 	}
-	build_cost = 0
+	build_cost = 360
 	can_be_moved = no	
 	move_days_per_unit_distance = 10	
 	starting_tier = 0	
 	type = monument
 	build_trigger = {
-		is_year = 1864
-        culture = american
-		OR = {
-			has_owner_culture = yes
-			has_owner_accepted_culture = yes
+		owner = {
+			adm_tech = 30
 		}
+		NOT = { religion_group = pagan }
 	}
 	on_built = { }
 	on_destroyed = { }
 	can_use_modifiers_trigger = {
-        culture = american
-		OR = {
-			has_owner_culture = yes
-			has_owner_accepted_culture = yes
+		owner = { adm_tech = 30 }
+		4898 = {
+			trade_goods = copper
 		}
+		NOT = { religion_group = pagan }
 	}
 	can_upgrade_trigger = {
-	    is_year = 1871
-        culture = american
-		OR = {
-			has_owner_culture = yes
-			has_owner_accepted_culture = yes
+		owner = { adm_tech = 32 }
+		4898 = {
+			trade_goods = copper
 		}
+		NOT = { religion_group = pagan }
 	}
 	keep_trigger = {
 	}
@@ -428,7 +425,6 @@ calumet_and_hecla = {
 		country_modifiers = {
 		}
 		on_upgraded = {			
-			change_trade_goods = copper
 			add_base_production = 2
 		}
 	}
@@ -440,7 +436,7 @@ calumet_and_hecla = {
 			factor = 2500
 		}
 		province_modifiers = {
-			trade_goods_size = 1.5
+			trade_goods_size = 2
 			local_development_cost = -0.1
 		}
 		area_modifier = {
@@ -462,7 +458,7 @@ calumet_and_hecla = {
 			factor = 5000
 		}
 		province_modifiers = {
-			trade_goods_size = 3
+			trade_goods_size = 4
 			local_development_cost = -0.2
 		}
 		area_modifier = {

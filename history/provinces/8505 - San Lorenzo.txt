@@ -1,6 +1,6 @@
 #8505 - San Lorenzo
 #Region - Iberia
-#Area - Castille
+#Area - Castile
 
 owner = CAS
 controller = CAS
@@ -17,14 +17,12 @@ capital = "San Lorenzo de El Escorial"
 is_city = yes # Includes the population of Alcalá  de Henares and Guadalajara, that at times were bigger than Madrid itself 
 center_of_trade = 1
 
-
-
 1492.1.1 = { base_tax = 5 base_production = 5 base_manpower = 3 } # Town grows quickly in the 15th century. Creating this dev ex nihilo
 1516.1.23 = {
 	controller = SPA
 	owner = SPA
 	add_core = SPA
-} # King Fernando dies, Carlos inherits Aragon and becames co-regent of Castille
+} # King Fernando dies, Carlos inherits Aragon and becames co-regent of Castile
 1520.6.1 = { revolt = { type = revolutionary_rebels size = 1 } controller = REB } # The revolt of the comuneros, started in Toledo, reaches Madrid, new fortifications are built to defend the city but ultimately the royalists are defeated.
 1521.4.1 = { revolt = {} controller = SPA } # The Comuneros are defeated
 1699.1.1 = { unrest = 3 } # Restlessness due to prolonged famines

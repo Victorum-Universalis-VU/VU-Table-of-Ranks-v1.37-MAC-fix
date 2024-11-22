@@ -557,7 +557,7 @@ goods_save = {
 		set_variable = { which = goods_num value = 69}
 	}
 	else_if = {
-		limit = { trade_goods = champagne}
+		limit = { trade_goods = champagne_bottle }
 		set_variable = { which = goods_num value = 70}
 	}
 	else_if = {
@@ -888,7 +888,7 @@ goods_back = {
 	}
 	else_if = {
 		limit = { is_variable_equal = { which = goods_num value = 70} }
-		change_trade_goods = champagne	
+		change_trade_goods = champagne_bottle	
 	}
 	else_if = {
 		limit = { is_variable_equal = { which = goods_num value = 71} }

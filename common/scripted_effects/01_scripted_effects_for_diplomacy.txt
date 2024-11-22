@@ -35,7 +35,7 @@ eyalet_effect = {
 	}
 	else_if = {
 		limit = {
-			ROOT = { tag = RMM }
+			ROOT = { tag = RUM } 
 		}
 		change_country_color = { color = { 75 190 228 } }
 	}

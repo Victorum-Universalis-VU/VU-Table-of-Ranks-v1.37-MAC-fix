@@ -549,6 +549,7 @@ liv_fortify_mission_slot = {
 			OR = {
 				area = curonia_area
 				area = livonia_area
+				area = riga_area
 				area = estonia_ingria_area
 			}
 			OR = {
@@ -561,6 +562,7 @@ liv_fortify_mission_slot = {
 				OR = {
 					area = curonia_area
 					area = livonia_area
+					area = riga_area
 					area = estonia_ingria_area
 				}
 				province_has_current_tech_fort_trigger = yes
@@ -576,6 +578,7 @@ liv_fortify_mission_slot = {
 						OR = {
 							area = curonia_area
 							area = livonia_area
+							area = riga_area
 							area = estonia_ingria_area
 						}
 						NOT = { has_province_modifier = teu_pru_fortified_border }
@@ -591,6 +594,7 @@ liv_fortify_mission_slot = {
 						OR = {
 							area = curonia_area
 							area = livonia_area
+							area = riga_area
 							area = estonia_ingria_area
 						}
 						NOT = { has_province_modifier = teu_pru_fortified_border }
@@ -606,6 +610,7 @@ liv_fortify_mission_slot = {
 						OR = {
 							area = curonia_area
 							area = livonia_area
+							area = riga_area
 							area = estonia_ingria_area
 						}
 						NOT = { has_province_modifier = teu_pru_fortified_border }
@@ -621,6 +626,7 @@ liv_fortify_mission_slot = {
 						OR = {
 							area = curonia_area
 							area = livonia_area
+							area = riga_area
 							area = estonia_ingria_area
 						}
 						NOT = { has_province_modifier = teu_pru_fortified_border }
@@ -1337,6 +1343,7 @@ liv_lva_trade_mission_slot = {
 			OR = {
 				area = curonia_area
 				area = livonia_area
+				area = riga_area
 				area = estonia_ingria_area
 				province_id = 1 #Stockholm
 			}
@@ -1362,6 +1369,7 @@ liv_lva_trade_mission_slot = {
 				OR = {
 					area = curonia_area
 					area = livonia_area
+					area = riga_area
 					area = estonia_ingria_area
 				}
 				has_trade_building_trigger = yes
@@ -1816,8 +1824,8 @@ liv_baltic_mission_slot = {
 		}
 		effect = {
 			if = {
-				limit = { NOT = { government_rank = 2 } }
-				set_government_rank = 2
+				limit = { NOT = { government_rank = 8 } }
+				set_government_rank = 8
 			}
 			add_adm_power = 100
 			add_dip_power = 100
@@ -1857,6 +1865,7 @@ liv_lva_handle_the_threats_mission_slot = {
 				area = estonia_ingria_area
 				area = curonia_area
 				area = livonia_area
+				area = riga_area
 			}
 			owned_by = ROOT
 			NOT = { development = 10 }
@@ -1877,6 +1886,11 @@ liv_lva_handle_the_threats_mission_slot = {
 					type = all
 				}
 				livonia_area = {
+					owned_by = ROOT
+					development = 10
+					type = all
+				}
+				riga_area = {
 					OR = {
 						province_id = 38
 						AND = {
@@ -1898,6 +1912,7 @@ liv_lva_handle_the_threats_mission_slot = {
 							area = estonia_ingria_area
 							area = curonia_area
 							area = livonia_area
+							area = riga_area
 						}
 						development = 10
 					}
@@ -4071,6 +4086,7 @@ liv_dummy_mission_slot_3 = {
 						OR = {
 							area = curonia_area
 							area = livonia_area
+							area = riga_area
 							area = estonia_ingria_area
 						}
 						has_trade_building_trigger = yes
@@ -4621,6 +4637,11 @@ liv_dummy_mission_slot_5 = {
 							type = all
 						}
 						livonia_area = {
+							owned_by = ROOT
+							development = 10
+							type = all
+						}
+						riga_area = {
 							OR = {
 								province_id = 38
 								AND = {
@@ -4684,6 +4705,7 @@ liv_dummy_mission_slot_5 = {
 							area = estonia_ingria_area
 							area = curonia_area
 							area = livonia_area
+							area = riga_area
 						}
 						development = 10
 					}

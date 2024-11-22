@@ -1,9 +1,11 @@
 government = monarchy
-add_government_reform = plutocratic_reform
+add_government_reform = islamic_sultanate_reform
+government_rank = 6 #Sultanate
 technology_group = chinese
 primary_culture = zamboangueno
 capital = 4354 #Zamboanga
 religion = sunni
+religious_school = maliki_school
 
 1444.1.1 = {
 	monarch = {

@@ -367,6 +367,13 @@ consolidate_expand_russia_missions = {
 				}
 				add_permanent_claim = ROOT
 			}
+			riga_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 		ai_weight = {
 			factor = 500
@@ -436,6 +443,7 @@ russia_conquer_baltic_mission_slot = {
 				area = curonia_area
 				area = estonia_ingria_area
 				area = livonia_area
+				area = riga_area
 			}
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
@@ -451,6 +459,10 @@ russia_conquer_baltic_mission_slot = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			livonia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			riga_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}

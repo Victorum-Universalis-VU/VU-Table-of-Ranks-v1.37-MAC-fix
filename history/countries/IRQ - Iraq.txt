@@ -1,5 +1,6 @@
 government = monarchy
-add_government_reform = iqta
+add_government_reform = islamic_malikate_reform
+government_rank = 8 #Malikate
 primary_culture = al_iraqiya_arabic
 religion = shiite
 technology_group = muslim

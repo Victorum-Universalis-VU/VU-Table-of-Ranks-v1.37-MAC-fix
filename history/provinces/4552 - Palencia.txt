@@ -1,9 +1,8 @@
 #4552 - Palencia
 
-owner = CAS
-controller = CAS
+owner = LON
+controller = LON
 add_core = CAS
-add_core = LON
 culture = leonese
 religion = catholic
 capital = "Palencia"
@@ -14,10 +13,6 @@ trade_goods = apiculture
 is_city = yes
 hre = no
 
-
-
-
-
-
+add_core = LON
 
 1350.1.1 = { culture = castillian }

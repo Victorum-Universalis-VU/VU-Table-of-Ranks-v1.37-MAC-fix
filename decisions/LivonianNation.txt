@@ -55,13 +55,6 @@ country_decisions = {
 				move_capital_effect = yes
 			}
 			change_tag = LVA
-			on_change_tag_effect = yes
-			if = {
-				limit = {
-					NOT = { primary_culture = livonian }
-				}
-				change_primary_culture = livonian
-			}
 			if = {
 				limit = {
 					NOT = { accepted_culture = latvian }
@@ -74,8 +67,8 @@ country_decisions = {
 				}
 				add_accepted_culture = estonian
 			}
-			restore_country_name_effect = yes
 			swap_non_generic_missions = yes
+			on_change_tag_effect = yes
 			add_prestige = 10	
 			if = {
 				limit = { has_custom_ideas = no }
@@ -177,7 +170,6 @@ country_decisions = {
 				set_country_flag = liv_livonian_path
 			}
 			change_tag = LVA
-			on_change_tag_effect = yes
 			if = {
 				limit = {
 					NOT = { accepted_culture = latvian }
@@ -190,18 +182,13 @@ country_decisions = {
 				}
 				add_accepted_culture = estonian
 			}
-			if = {
-				limit = {
-					NOT = { accepted_culture = livonian }
-				}
-				add_accepted_culture = livonian
-			}
 			restore_country_name_effect = yes
 			if = {
 				limit = { has_dlc = "Lions of the North" }
 				swap_non_generic_missions = yes
 			}
-			add_prestige = 10	
+			on_change_tag_effect = yes
+			add_prestige = 10
 			if = {
 				limit = { has_custom_ideas = no }
 				country_event = { id = ideagroups.1 } #Swap Ideas

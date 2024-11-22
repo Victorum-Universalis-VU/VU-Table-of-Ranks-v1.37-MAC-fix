@@ -16,8 +16,6 @@
 
  is_dominion: "Dominion"
 
- is_autonomous_dominion: "Autonomous Dominion"
-
  is_roman_client_kingdom: "Roman Client Kingdom"
  roman_client_kingdom_forced: "Forced Roman Client Kingdom"
  roman_client_kingdom_rejected_heir: "Did not acknowledge the legitimacy of our heir"

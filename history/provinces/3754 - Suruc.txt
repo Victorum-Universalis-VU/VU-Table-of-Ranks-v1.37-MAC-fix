@@ -2,6 +2,7 @@
 
 owner = MAM
 controller = MAM
+add_core = MAM
 culture = aramaic			#Syriac was still dominant around Edessa
 religion = nestorian		#following the aramaic culture
 capital = "Suruc"
@@ -11,27 +12,9 @@ base_tax = 2				#After the Mongol invasion, whole region was "lying in ruins" un
 base_production = 1
 base_manpower = 1
 is_city = yes
-add_core = MAM
+
+#Claimants
 add_core = SYR
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 1402.1.1 = { owner = AKK controller = AKK add_core = AKK remove_core = MAM } # The Ak Koyunlu
 1507.1.1 = { owner = PER controller = PER add_core = PER remove_core = AKK } # The Safavids took over

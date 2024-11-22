@@ -1,10 +1,11 @@
 government = monarchy
-add_government_reform = plutocratic_reform
-government_rank = 1
+add_government_reform = islamic_sultanate_reform
+government_rank = 6 #Sultanate
 primary_culture = sulawesi
-religion = animism
+religion = sunni
 technology_group = chinese
 capital = 641	# Makassar
+religious_school = maliki_school
 
 # Kings of Gowa
 

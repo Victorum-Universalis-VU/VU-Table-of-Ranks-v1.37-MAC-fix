@@ -23,10 +23,3 @@ hre = no
 #Special Modifiers
 
 #Known by Technology groups
-
-
-
-
-
-
-1400.1.1 = { culture = gallo_culture }

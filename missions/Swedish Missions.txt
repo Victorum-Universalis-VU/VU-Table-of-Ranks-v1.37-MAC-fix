@@ -34,6 +34,13 @@ swedish_missions_scandinavia = {
 				}
 				add_permanent_claim = ROOT
 			}
+			gotland_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 			skaneland_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -50,6 +57,7 @@ swedish_missions_scandinavia = {
 			OR = {
 				area = vastra_gotaland_area
 				area = gotaland_area
+				area = gotland_area
 				area = skaneland_area
 			}
 			NOT = {
@@ -62,6 +70,10 @@ swedish_missions_scandinavia = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			gotaland_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			gotland_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -151,6 +163,20 @@ swedish_missions_scandinavia = {
 				add_claim = ROOT
 			}
 			holstein_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_claim = ROOT }
+				}
+				add_claim = ROOT
+			}
+			hamburg_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_claim = ROOT }
+				}
+				add_claim = ROOT
+			}
+			lauenburg_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_claim = ROOT }

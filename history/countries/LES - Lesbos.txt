@@ -1,6 +1,6 @@
 government = monarchy
 add_government_reform = crusader_state_vu_reform
-government_rank = 1
+government_rank = 6 #Crusader_State
 mercantilism = 25
 primary_culture = ligurian
 add_accepted_culture = greek

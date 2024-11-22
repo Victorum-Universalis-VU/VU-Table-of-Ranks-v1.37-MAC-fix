@@ -146,9 +146,9 @@ emp_burgundy_1 = {
 		effect = {
 			if = {
 				limit = {
-					NOT = { government_rank = 2 }
+					NOT = { government_rank = 8 }
 				}
-				set_government_rank = 2
+				set_government_rank = 8
 				else = {
 					add_adm_power = 100
 				}
@@ -2066,6 +2066,13 @@ emp_burgundy_5 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			frankfurt_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 			westphalia_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -2129,6 +2136,7 @@ emp_lotharingia_5 = {
 				area = alsace_area
 				area = palatinate_area
 				area = hesse_area
+				area = frankfurt_area
 				area = lower_rhineland_area
 				area = north_rhine_area
 				area = westphalia_area
@@ -2148,6 +2156,7 @@ emp_lotharingia_5 = {
 							area = alsace_area
 							area = palatinate_area
 							area = hesse_area
+							area = frankfurt_area
 							area = lower_rhineland_area
 							area = north_rhine_area
 							area = westphalia_area
@@ -2170,6 +2179,7 @@ emp_lotharingia_5 = {
 					area = alsace_area
 					area = palatinate_area
 					area = hesse_area
+					area = frankfurt_area
 					area = lower_rhineland_area
 					area = north_rhine_area
 					area = westphalia_area
@@ -2243,11 +2253,11 @@ emp_lotharingia_5 = {
 		effect = {
 			if = {
 				limit = {
-					NOT = { government_rank = 3 }
+					NOT = { government_rank = 9 }
 				}
 				custom_tooltip = emp_bur_carolingian_empire_effect_tooltip
 				hidden_effect = {
-					set_government_rank = 3
+					set_government_rank = 9
 				}
 			}
 			add_country_modifier = {

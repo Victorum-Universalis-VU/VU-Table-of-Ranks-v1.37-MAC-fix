@@ -82,6 +82,13 @@ franconia_conquest_group_1 = {
 				}
 				add_permanent_claim = root
 			}
+			frankfurt_area = {
+				limit = {
+					NOT = { owned_by = root }
+					NOT = { is_permanent_claim = root }
+				}
+				add_permanent_claim = root
+			}
 			palatinate_area = {
 				limit = {
 					NOT = { owned_by = root }
@@ -116,6 +123,7 @@ franconia_conquest_group_1 = {
 				AND = {
 					OR = {
 						area = hesse_area
+						area = frankfurt_area
 						area = palatinate_area
 						province_id = 83
 					}
@@ -126,6 +134,7 @@ franconia_conquest_group_1 = {
 								value = 8 #of 9
 								OR = {
 									area = hesse_area
+									area = frankfurt_area
 									area = palatinate_area
 									province_id = 83
 								}
@@ -136,6 +145,7 @@ franconia_conquest_group_1 = {
 			}
 			OR = {
 				area = hesse_area
+				area = frankfurt_area
 				area = palatinate_area
 				province_id = 83
 			}
@@ -148,6 +158,7 @@ franconia_conquest_group_1 = {
 				value = 8 #of 9
 				OR = {
 					area = hesse_area
+					area = frankfurt_area
 					area = palatinate_area
 					province_id = 83
 				}
@@ -332,13 +343,13 @@ franconia_conquest_group_2 = {
 		effect = {
 			if = {
 				limit = {
-					NOT = { government_rank = 2 }
+					NOT = { government_rank = 8 }
 					OR = {
 						is_part_of_hre = no
 						is_elector = yes
 					}
 				}
-				set_government_rank = 2
+				set_government_rank = 8
 			}
 			add_country_modifier = {
 				name = fkn_kingdom_of_the_franks_mod

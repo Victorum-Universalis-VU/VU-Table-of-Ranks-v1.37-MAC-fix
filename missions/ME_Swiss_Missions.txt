@@ -1065,7 +1065,7 @@ FU_swiss_missions_5 = {
 			}
 			else = {
 				grown_by_development = 25 
-				government_rank = 2 
+				government_rank = 8 
 			}
 		}
 		effect = {

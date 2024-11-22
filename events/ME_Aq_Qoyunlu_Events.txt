@@ -451,7 +451,7 @@ country_event = {
 		
 		custom_tooltip = " "
 		
-		set_government_rank = 3
+		set_government_rank = 9
 		
 		custom_tooltip = " "
 		
@@ -481,7 +481,7 @@ country_event = {
 		ai_chance = { factor = 50 }
 		
 		define_advisor = {
-			type = ME_historian
+			type = researcher
 			name = "Abu Bakr Tihrani"
 			skill = 2
 			culture = persian
@@ -506,7 +506,7 @@ country_event = {
 		ai_chance = { factor = 50 }
 		
 		define_advisor = {
-			type = ME_historian
+			type = researcher
 			name = "Abu Bakr Tihrani"
 			skill = 2
 			culture = persian
@@ -544,7 +544,7 @@ country_event = {
 		ai_chance = { factor = 50 }
 		
 		define_advisor = {
-			type = ME_historian
+			type = researcher
 			name = "Fazlallah Khunji Isfahani"
 			skill = 2
 			culture = persian
@@ -579,7 +579,7 @@ country_event = {
 		ai_chance = { factor = 50 }
 		
 		define_advisor = {
-			type = sufi_scholar_advisor
+			type = researcher
 			name = "Hosam al-Din Ali Bitlisi"
 			skill = 2
 			culture = kurdish

@@ -1,4 +1,4 @@
-#VU updated by San Felipe for 1.35
+#Updated to v1.37 - SF
 namespace = dai_disaster
 
 # Start event - Pick a side
@@ -65,6 +65,7 @@ country_event = {
 					area = sukothai_area
 					area = south_laos_area
 					area = khorat_area
+					#area = vientiane_area
 					superregion = china_superregion
 					region = burma_region
 				}
@@ -125,6 +126,7 @@ country_event = {
 							area = sukothai_area
 							area = south_laos_area
 							area = khorat_area
+							#area = vientiane_area
 							superregion = china_superregion
 							region = burma_region
 						}

@@ -14,7 +14,7 @@ country_event = {
     }
 
     mean_time_to_happen = {
-        months = 360
+        months = 240
 	    modifier = {
 	    	factor = 0.8
 			910 = {
@@ -106,6 +106,58 @@ country_event = {
     }
 }
 
+country_event = {
+    id = 16490
+    title = "EVTNAME16428"
+    desc = "EVTDESC16428"
+    picture = TRADE_GOODS_METALS_AND_MINING_EQUIPENT_eventPicture
+    fire_only_once = yes
+
+    trigger = {
+        adm_tech = 26
+		owns_core_province = 2556
+        NOT = { religion_group = pagan }
+    }
+
+    mean_time_to_happen = {
+        months = 380
+	    modifier = {
+	    	factor = 0.8
+			2556 = {
+				has_building = workshop
+			}
+	    }
+	    modifier = {
+	    	factor = 0.6
+			2556 = {
+				has_building = counting_house
+			}
+	    }
+	    modifier = {
+	    	factor = 0.4
+			2556 = {
+				has_building = treasury
+			}
+	    }
+	    modifier = {
+	    	factor = 0.2
+			2556 = {
+				has_building = factory
+			}
+	    }
+    }
+	#Gain New Good
+    option = {
+        name = "EVTOPTA16430a"
+        2556 = {
+		change_trade_goods = iron
+		}
+    }
+	#Keep Old Good
+    option = {
+        name = "EVTOPTA16430b"
+    }
+}
 
 #Copper Deposits
 country_event = {
@@ -122,7 +174,7 @@ country_event = {
     }
 
     mean_time_to_happen = {
-        months = 380
+        months = 120
 	    modifier = {
 	    	factor = 0.8
 			4898 = {

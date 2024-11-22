@@ -261,9 +261,9 @@ mysore_column_2 = {
 			add_prestige = 15
 			if = {
 				limit = {
-					NOT = { government_rank = 2 }
+					NOT = { government_rank = 8 }
 				}
-				set_government_rank = 2
+				set_government_rank = 8
 			}
 			add_country_modifier = {
 				name = "mysore_vijayangar_overthrown"
@@ -339,9 +339,9 @@ mysore_column_2 = {
 			add_prestige = 20
 			if = {
 				limit = {
-					NOT = { government_rank = 3 }
+					NOT = { government_rank = 9 }
 				}
-				set_government_rank = 3
+				set_government_rank = 9
 			}
 			deccan_region = {
 				limit = {
@@ -761,7 +761,7 @@ mysore_column_3 = {
 			}
 		}
 		trigger = {
-			government_rank = 3
+			government_rank = 9
 			stability = 3
 			NOT = { corruption = 0.02 }
 			NOT = { average_unrest = 2 }

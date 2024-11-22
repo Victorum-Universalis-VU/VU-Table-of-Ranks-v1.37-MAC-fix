@@ -2,7 +2,7 @@
 
 culture = suriganonon
 religion = animism
-capital = "	Surigao City"
+capital = "Surigao City"
 trade_goods = unknown
 hre = no
 base_tax = 2  

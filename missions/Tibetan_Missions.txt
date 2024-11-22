@@ -61,7 +61,10 @@ tib_slot_2 = {
 		trigger = {
 			is_at_war = no
 			OR = {
-				has_reform = steppe_horde
+				OR = {
+					has_reform = steppe_horde
+					has_reform = scythian_horde_reform
+				}
 				custom_trigger_tooltip = {
 					tooltip = tib_steppe_alliance_tooltip_1
 					any_ally = {
@@ -444,10 +447,10 @@ tib_slot_3 = {
 			if = {
 				limit = {
 					NOT = {
-						government_rank = 3
+						government_rank = 9
 					}
 				}
-				set_government_rank = 3
+				set_government_rank = 9
 			}
 			add_adm_power = 100
 			add_dip_power = 100

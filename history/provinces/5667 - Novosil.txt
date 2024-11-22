@@ -3,7 +3,7 @@
 owner = OKA
 controller = OKA
 add_core = OKA
-culture = russian
+culture = ryazanian
 religion = orthodox
 capital = "Novosil"
 trade_goods = beer

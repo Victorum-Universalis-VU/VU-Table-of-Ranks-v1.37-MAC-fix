@@ -1,6 +1,7 @@
 #Arabic andalucian
 124 = "Massina"
 125 = "Balarm"
+132 = { "Judenburg" "Judenburg" }
 196 = "Tolosha"
 197 = { "Rusilu" "Rusilu" }
 206 = "Shant Yakub"

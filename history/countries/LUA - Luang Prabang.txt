@@ -175,15 +175,15 @@ capital = 615	# Luang Prabang
 }
 
 1771.1.1 = {
-	government_rank = 1
+	government_rank = 6
 }
 
 1778.1.1 = {
-	government_rank = 2
+	government_rank = 8
 }
 
 1779.1.1 = {
-	government_rank = 1
+	government_rank = 6
 }
 
 1792.2.3 = {

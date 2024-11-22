@@ -37,6 +37,7 @@
 86 = "Monastyr"
 110 = "Trydent"
 128 = "Dolna Karyntia"
+132 = { "Judenburg" "Judenburg" }
 4759 = "Górna Karyntia"
 129 = "Kraina"
 133 = "Linec"

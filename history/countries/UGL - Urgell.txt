@@ -1,6 +1,6 @@
 government = monarchy
-add_government_reform = feudalism_reform
-government_rank = 1
+add_government_reform = eue_county_reform
+government_rank = 4 #County
 primary_culture = aragonese
 add_accepted_culture = catalan
 religion = catholic
@@ -10,11 +10,11 @@ unit_type = western
 capital = 2987 	# Urgell
 
 1215.6.15 = {
-    add_government_reform = marquisiate_reform
-	government_rank = 2
+    add_government_reform = eue_marquisate_reform
+	government_rank = 5 #Marquisate_Reform
 }
 
 1444.11.11 = {
     add_government_reform = feudalism_reform
-	government_rank = 1
+	government_rank = 4 #County
 }

@@ -13,16 +13,6 @@ base_production = 2
 base_manpower = 2 
 is_city = yes
 
-
-
-
-
-
-
-
-
-
-
 #copied from Bitlis for the moment
 1469.2.4 = {
 	owner = AKK

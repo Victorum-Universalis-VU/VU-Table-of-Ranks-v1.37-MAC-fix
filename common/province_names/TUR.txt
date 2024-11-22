@@ -1,6 +1,7 @@
 #XXX = { "Province Name" "City Name" } - New addition to EUIV
 
 131 = { "Zagreb" "Zagreb" }
+132 = { "Judenburg" "Judenburg" }
 134 = { "Viyana" "Beç" }
 135 = { "Shubruna" "Shubruna" }
 136 = { "Ispelet" "Ispelet" }

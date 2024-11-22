@@ -49,7 +49,15 @@ country_decisions = {
 		major = yes
 		potential = {
 			has_global_flag = JAP_crisis
-			has_reform = daimyo
+			OR = {
+				has_reform = daimyo
+			    has_reform = daimyo_barony_reform
+			    has_reform = daimyo_viscounty_reform
+			    has_reform = daimyo_county_reform
+			    has_reform = daimyo_marquisate_reform
+			    has_reform = daimyo_duchy_reform
+			    has_reform = daimyo_principality_reform
+			}
 			NOT = { tag = YMN }
 			NOT = { tag = HSK }
 			NOT = { has_country_flag = choosing_side_in_onin_war_support }

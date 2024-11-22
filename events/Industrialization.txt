@@ -1,4 +1,4 @@
-#VU updated by San Felipe for 1.35
+#Updated to v1.37 - SF
 ########################################
 # Events for Industrializing countries #
 #                                      #
@@ -321,6 +321,8 @@ country_event = {
 			}
 		}
 	}
+
+	goto = invention_province
 	
 	immediate = {
 		hidden_effect = {
@@ -2260,7 +2262,7 @@ country_event = {
 	title = "industrialization_events.17.t"
 	desc = "industrialization_events.17.d"
 	picture = RIOTING_workers_eventPicture
-	
+	goto = luddite_province	
 	is_triggered_only = yes
 	
 	trigger = {

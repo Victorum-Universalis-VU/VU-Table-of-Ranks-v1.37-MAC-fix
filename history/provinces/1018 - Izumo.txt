@@ -2,7 +2,7 @@
 
 owner = AMA
 controller = AMA
-culture = japanese
+culture = unpaku 
 religion = shinto
 capital = "Matsue"
 trade_goods = lead

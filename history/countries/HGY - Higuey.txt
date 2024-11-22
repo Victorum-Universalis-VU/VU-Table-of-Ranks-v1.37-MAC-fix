@@ -1,7 +1,7 @@
 #Higuey
 government = native
 add_government_reform = native_clan_council_reform
-government_rank = 1
+government_rank = 1 #Lordship
 primary_culture = arawak
 add_accepted_culture = west_taino
 religion = animism

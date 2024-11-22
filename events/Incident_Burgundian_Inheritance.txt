@@ -116,13 +116,19 @@ country_event = {
 			random_country = { #largest Nation with a marriage with Burgundy
 				limit = {
 					is_emperor = no
-					marriage_with = ROOT
-					government = monarchy
+					NOT = { tag = FRA }
+					OR = {
+						has_country_flag = received_burgundian_marriage
+						marriage_with = ROOT
+					}
 					is_free_or_tributary_trigger = yes
 					NOT = {
 						any_country = {
 							is_emperor = no
-							marriage_with = ROOT
+							OR = {
+								has_country_flag = received_burgundian_marriage
+								marriage_with = ROOT
+							}
 							is_free_or_tributary_trigger = yes
 							num_of_cities = prev
 							NOT = { prev = { num_of_cities = prev } }
@@ -326,7 +332,10 @@ country_event = {
 			}
 			modifier = {
 				factor = 2
-				marriage_with = emperor
+				OR = {
+					emperor = { has_country_flag = received_burgundian_marriage }
+					marriage_with = emperor
+				}
 			}
 			modifier = {
 				factor = 2
@@ -365,8 +374,8 @@ country_event = {
 						culture_group = french
 						culture = dutch
 						culture = flemish
-						culture = ger_dutch
-						culture = ger_flemish
+						culture = ger_dutch #VU additions by Quonton
+						culture = ger_flemish #VU additions by Quonton
 						is_part_of_hre = yes
 					}
 				}
@@ -409,13 +418,17 @@ country_event = {
 	option = { #strong ally
 		name = "incidents_bur_inheritance.1.d"
 		trigger = {
+			has_saved_event_target = bur_strongest_ally
 			any_country = {
 				is_free_or_tributary_trigger = yes
 				government = monarchy
 				is_emperor = no
 				NOT = { tag = FRA }
-				NOT = { tag = ENG }
-				marriage_with = ROOT
+				NOT = { tag = ENG } #VU decided to leave this in for now - By Quonton and SF
+				OR = {
+					has_country_flag = received_burgundian_marriage
+					marriage_with = ROOT
+				}
 			}
 		}
 		ai_chance = {
@@ -452,6 +465,12 @@ country_event = {
 					FRA = { is_rival = ROOT }
 				}
 			}
+			modifier = {
+				factor = 0.1
+				event_target:bur_strongest_ally = {
+					NOT = { government = monarchy }
+				}
+			}
 		}
 		custom_tooltip = marry_strong_ally_tt
 		#Absorb subjects
@@ -474,8 +493,8 @@ country_event = {
 						culture_group = french
 						culture = dutch
 						culture = flemish
-						culture = ger_dutch
-						culture = ger_flemish
+						culture = ger_dutch #VU addition by Quonton
+						culture = ger_flemish #VU addition by Quonton
 						is_part_of_hre = yes
 					}
 				}
@@ -580,9 +599,9 @@ country_event = {
 						culture = dutch
 						culture = flemish
 						culture = frisian
-						culture = ger_dutch
-						culture = ger_flemish
-						culture = ger_frisian
+						culture = ger_dutch #VU addition by Quonton
+						culture = ger_flemish #VU addition by Quonton
+						culture = ger_frisian #VU addition by Quonton
 						is_part_of_hre = yes
 					}
 				}
@@ -798,7 +817,6 @@ country_event = {
 }
 
 # France can DoW Burgundy
-
 country_event = {
 	id = incidents_bur_inheritance.101
 	title = "incidents_bur_inheritance.101.t"
@@ -910,7 +928,6 @@ country_event = {
 }
 
 # Emperor demands the Lowlands
-
 country_event = {
 	id = incidents_bur_inheritance.102
 	title = "incidents_bur_inheritance.102.t"
@@ -932,9 +949,9 @@ country_event = {
 					primary_culture = dutch
 					primary_culture = flemish
 					primary_culture = frisian
-					primary_culture = ger_dutch
-					primary_culture = ger_flemish
-					primary_culture = ger_frisian
+					primary_culture = ger_dutch #VU addition by Quonton
+					primary_culture = ger_flemish #VU addition by Quonton
+					primary_culture = ger_frisian #VU addition by Quonton
 					is_part_of_hre = yes
 				}
 			}
@@ -1028,9 +1045,9 @@ country_event = {
 							culture = dutch
 							culture = flemish
 							culture = frisian
-						    culture = ger_dutch
-						    culture = ger_flemish
-						    culture = ger_frisian
+						    culture = ger_dutch #VU addition by Quonton
+						    culture = ger_flemish #VU addition by Quonton
+						    culture = ger_frisian #VU addition by Quonton
 							is_part_of_hre = yes
 						}
 					}
@@ -1054,7 +1071,6 @@ country_event = {
 }
 
 # Country is notified they inherited Burgundy
-
 country_event = {
 	id = incidents_bur_inheritance.103
 	title = "incidents_bur_inheritance.103.t"
@@ -1477,6 +1493,7 @@ country_event = {
 				casus_belli = cb_restore_personal_union
 			}
 		}
+		custom_tooltip = incidents_bur_inheritance.3.b.tt
 	}
 	option = { #Let it go
 		name = "incidents_bur_inheritance.3.c"
@@ -1520,9 +1537,9 @@ country_event = {
 							culture = dutch
 							culture = flemish
 							culture = frisian
-						    culture = ger_dutch
-						    culture = ger_flemish
-						    culture = ger_frisian
+						    culture = ger_dutch #VU addition by Quonton
+						    culture = ger_flemish #VU addition by Quonton
+						    culture = ger_frisian #VU addition by Quonton
 							is_part_of_hre = yes
 						}
 					}
@@ -1557,9 +1574,7 @@ country_event = {
 				}
 				set_in_empire = yes
 				if = {
-					limit = {
-						any_core_country = { exists = no }
-					}
+					limit = { any_core_country = { exists = no } }
 					random_core_country = {
 						limit = {
 							NOT = { tag = BUR }
@@ -1576,6 +1591,11 @@ country_event = {
 						}
 						add_government_reform = feudalism_reform
 						#set_legacy_government = feudal_monarchy
+						every_owned_province = {
+							limit = { NOT = { has_province_flag = lowland_demanded_province } }
+							add_core = BUR
+							cede_province = BUR
+						}
 					}
 				}
 				else_if = {
@@ -1733,9 +1753,9 @@ country_event = {
 						culture = dutch
 						culture = flemish
 						culture = frisian
-						culture = ger_dutch
-						culture = ger_flemish
-						culture = ger_frisian
+						culture = ger_dutch #VU addition by Quonton
+						culture = ger_flemish #VU addition by Quonton
+						culture = ger_frisian #VU addition by Quonton
 						is_part_of_hre = yes
 					}
 				}
@@ -1953,5 +1973,99 @@ country_event = {
 		name = "incidents_bur_inheritance.6.b"
 		add_stability_or_adm_power = yes
 		add_ruler_modifier = { name = mary_reputation }
+	}
+}
+
+# Delay event, checks if Burgundy is eligible to trigger the Succession Crisis or if they just fell into a PU naturally
+country_event = {
+	id = incidents_bur_inheritance.1000
+	title = none
+	desc = none
+	picture = none
+	hidden = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = BUR
+		has_country_modifier = burgundian_succession_crisis
+		NOT = { has_country_flag = burgundian_succession_has_already_fired }
+		is_subject = no
+		is_lesser_in_union = no
+	}
+	immediate = {
+		set_country_flag = burgundian_succession_has_already_fired
+		remove_country_modifier = burgundian_succession_crisis
+		set_country_flag = charles_died
+		if = {
+			limit = {
+				is_emperor = no
+				OR = {
+					AND = { #succession should not fire if Burgundy has a suitable male heir
+						has_regency = yes
+						OR = {
+							has_heir = no
+							NOT = { heir_age = 15 }
+							NOT = { heir_claim = 51 }
+						}
+					}
+					NOT = { legitimacy = 40 } #medium to weak claimants should not be good enough
+					has_ruler_flag = mary_is_heir
+					has_heir_flag = mary_is_heir
+				}
+			}
+			if = { #if Mary was defined as heir proper, she gains some legitimacy
+				limit = {
+					OR = {
+						has_ruler_flag = mary_is_heir
+						has_heir_flag = mary_is_heir
+					}
+				}
+				add_legitimacy = 10
+			}
+			else = { #if she was not named heir, she becomes ruler here
+				define_ruler = {
+					name = "Marie"
+					dynasty = "de Bourgogne"
+					age = 21
+					adm = 4
+					dip = 5
+					mil = 3
+					claim = 50
+					female = yes
+				}
+				set_ruler_flag = mary_is_heir
+			}
+			country_event = {
+				id = incidents_bur_inheritance.1
+			}
+		}
+	}
+	option = {
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+# Burgundian Marriage Cleaner
+country_event = {
+	id = incidents_bur_inheritance.1001
+	title = none
+	desc = none
+	picture = none
+	hidden = yes
+	is_triggered_only = yes
+	immediate = {
+		every_known_country = {
+			limit = {
+				has_country_flag = received_burgundian_marriage
+				NOT = { marriage_with = root }
+			}
+			clr_country_flag = received_burgundian_marriage
+		}
+	}
+	option = {
+		ai_chance = {
+			factor = 1
+		}
 	}
 }

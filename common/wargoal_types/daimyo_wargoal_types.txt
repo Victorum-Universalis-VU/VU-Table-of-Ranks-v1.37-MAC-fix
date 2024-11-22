@@ -10,6 +10,12 @@ onin_war_war_goal = {
 			# owner = {
 				# OR = {
 					# has_reform = daimyo
+			        # has_reform = daimyo_barony_reform
+			        # has_reform = daimyo_viscounty_reform
+			        # has_reform = daimyo_county_reform
+			        # has_reform = daimyo_marquisate_reform
+			        # has_reform = daimyo_duchy_reform
+			        # has_reform = daimyo_principality_reform
 					# has_reform = indep_daimyo
 					# has_reform = shogunate
 				# }
@@ -32,6 +38,12 @@ onin_war_war_goal = {
 			# owner = {
 				# OR = {
 					# has_reform = daimyo
+			        # has_reform = daimyo_barony_reform
+			        # has_reform = daimyo_viscounty_reform
+			        # has_reform = daimyo_county_reform
+			        # has_reform = daimyo_marquisate_reform
+			        # has_reform = daimyo_duchy_reform
+			        # has_reform = daimyo_principality_reform
 					# has_reform = indep_daimyo
 					# has_reform = shogunate
 				# }

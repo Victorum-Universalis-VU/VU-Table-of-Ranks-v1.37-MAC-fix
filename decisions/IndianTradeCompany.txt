@@ -2,23 +2,6 @@ country_decisions = {
 	indian_trade_company = {
 
 		potential = {
-			# to prevent overfeeding of provinces into conquer
-			OR = {
-				ai = no
-				AND = {
-					has_institution = global_trade
-					any_owned_province = {
-						OR = {
-							superregion = india_superregion
-							superregion = china_superregion
-							superregion = east_indies_superregion
-							region = japan_region
-						}
-						has_port = yes
-					}
-				}
-			}
-			num_of_ports = 2
 			NOT = { tag = NED }
 			NOT = { has_country_modifier = hab_ostende_company }
 			NOT = { has_country_flag = trade_company }
@@ -58,6 +41,23 @@ country_decisions = {
 					has_discovered = ROOT
 				}
 			}
+			# to prevent overfeeding of provinces into conquer
+			OR = {
+				ai = no
+				AND = {
+					has_institution = global_trade
+					any_owned_province = {
+						OR = {
+							superregion = india_superregion
+							superregion = china_superregion
+							superregion = east_indies_superregion
+							region = japan_region
+						}
+						has_port = yes
+					}
+				}
+			}
+			num_of_ports = 2
 			NOT = {
 				has_country_modifier = portuguese_india_trade_co
 			}

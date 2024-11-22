@@ -248,6 +248,28 @@ vu_diplomats_of_the_reformation_aspect = { #this one is actually pretty good as 
 	}
 }
 
+icons_of_the_church_aspect = {
+	sprite = "GFX_icons_of_the_church_icon"
+	cost = 200
+	trigger = {}
+	effect = {
+		custom_tooltip = icons_of_the_church_aspect_tt
+		hidden_effect = {
+			add_country_modifier = {
+				name = anglican_militarized_church_aspect
+				duration = 5475
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 3
+		modifier = {
+			factor = 0
+			is_at_war = no
+		}
+	}
+}
+
 vu_spread_the_book_of_common_prayer = { #added a missionary and some more stuff to it, also removed the requirements to make it more usable early in the game
 	sprite = "GFX_spread_the_book_of_common_prayer"
 	cost = 50

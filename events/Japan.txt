@@ -62,6 +62,12 @@ province_event = {
 					limit = {
 						OR = {
 							has_reform = daimyo
+							has_reform = daimyo_barony_reform
+		                    has_reform = daimyo_viscounty_reform
+		                    has_reform = daimyo_county_reform
+		                    has_reform = daimyo_marquisate_reform
+		                    has_reform = daimyo_duchy_reform
+		                    has_reform = daimyo_principality_reform
 							has_reform = indep_daimyo
 						}
 					}
@@ -85,20 +91,104 @@ province_event = {
 					FROM = { has_reform = shogunate }
 				}
 				#Degrade the previous shogun to daimyo level
+			    FROM = {
+			    	every_subject_country = {
+			    		limit = {
+			    			is_subject_of_type = daimyo_vassal
+			    		}
+			    		set_country_flag = tobe_daimyo_of_new_shogun
+			    		grant_independence = yes
+			    	}
+			    	event_target:new_shogunate = {
+			    		vassalize = FROM
+			    	}
+			    	set_government_rank = 1
+		            add_government_reform = daimyo
+			    }
 				FROM = {
-					every_subject_country = {
-						limit = {
-							is_subject_of_type = daimyo_vassal
-						}
-						set_country_flag = tobe_daimyo_of_new_shogun
-						grant_independence = yes
-					}
-					event_target:new_shogunate = {
-						vassalize = FROM
-					}
-					set_government_rank = 1
-					add_government_reform = daimyo
-				}
+			    	every_subject_country = {
+			    		limit = {
+			    			is_subject_of_type = daimyo_barony_vassal
+			    		}
+			    		set_country_flag = tobe_daimyo_of_new_shogun
+			    		grant_independence = yes
+			    	}
+			    	event_target:new_shogunate = {
+			    		vassalize = FROM
+			    	}
+			    	set_government_rank = 1
+		            add_government_reform = daimyo_barony_reform
+			    }
+				FROM = {
+			    	every_subject_country = {
+			    		limit = {
+			    			is_subject_of_type = daimyo_viscounty_vassal
+			    		}
+			    		set_country_flag = tobe_daimyo_of_new_shogun
+			    		grant_independence = yes
+			    	}
+			    	event_target:new_shogunate = {
+			    		vassalize = FROM
+			    	}
+			    	set_government_rank = 1
+		            add_government_reform = daimyo_viscounty_reform
+			    }
+				FROM = {
+			    	every_subject_country = {
+			    		limit = {
+			    			is_subject_of_type = daimyo_county_vassal
+			    		}
+			    		set_country_flag = tobe_daimyo_of_new_shogun
+			    		grant_independence = yes
+			    	}
+			    	event_target:new_shogunate = {
+			    		vassalize = FROM
+			    	}
+			    	set_government_rank = 1
+		            add_government_reform = daimyo_county_reform
+			    }
+				FROM = {
+			    	every_subject_country = {
+			    		limit = {
+			    			is_subject_of_type = daimyo_marquisate_vassal
+			    		}
+			    		set_country_flag = tobe_daimyo_of_new_shogun
+			    		grant_independence = yes
+			    	}
+			    	event_target:new_shogunate = {
+			    		vassalize = FROM
+			    	}
+			    	set_government_rank = 1
+		            add_government_reform = daimyo_marquisate_reform
+			    }
+				FROM = {
+			    	every_subject_country = {
+			    		limit = {
+			    			is_subject_of_type = daimyo_duchy_vassal
+			    		}
+			    		set_country_flag = tobe_daimyo_of_new_shogun
+			    		grant_independence = yes
+			    	}
+			    	event_target:new_shogunate = {
+			    		vassalize = FROM
+			    	}
+			    	set_government_rank = 1
+		            add_government_reform = daimyo_duchy_reform
+			    }
+				FROM = {
+			    	every_subject_country = {
+			    		limit = {
+			    			is_subject_of_type = daimyo_principality_vassal
+			    		}
+			    		set_country_flag = tobe_daimyo_of_new_shogun
+			    		grant_independence = yes
+			    	}
+			    	event_target:new_shogunate = {
+			    		vassalize = FROM
+			    	}
+			    	set_government_rank = 1
+		            add_government_reform = daimyo_principality_reform
+			    }
 				#Vassalize all of the former daimyos
 				#NOTE: originally, it was intended that daimyos, who are at war with the shogun, should not be vassalized
 				every_country = {
@@ -131,7 +221,15 @@ province_event = {
 						grant_independence = yes
 						if = {
 							limit = {
-								has_reform = daimyo
+								OR = {
+		                        	has_reform = daimyo
+		                            has_reform = daimyo_barony_reform
+		                            has_reform = daimyo_viscounty_reform
+		                            has_reform = daimyo_county_reform
+		                            has_reform = daimyo_marquisate_reform
+		                            has_reform = daimyo_duchy_reform
+		                            has_reform = daimyo_principality_reform
+		                        }
 							}
 							add_government_reform = indep_daimyo
 						}
@@ -149,7 +247,15 @@ province_event = {
 				}
 				every_country = {
 					limit = {
-						has_reform = daimyo
+						OR = {
+		                	has_reform = daimyo
+		                    has_reform = daimyo_barony_reform
+		                    has_reform = daimyo_viscounty_reform
+		                    has_reform = daimyo_county_reform
+		                    has_reform = daimyo_marquisate_reform
+		                    has_reform = daimyo_duchy_reform
+		                    has_reform = daimyo_principality_reform
+		                }
 						NOT = { war_with = event_target:new_shogunate }
 					}
 					event_target:new_shogunate = {
@@ -158,7 +264,15 @@ province_event = {
 				}
 				every_country = {
 					limit = {
-						has_reform = daimyo
+						OR = {
+		                	has_reform = daimyo
+		                    has_reform = daimyo_barony_reform
+		                    has_reform = daimyo_viscounty_reform
+		                    has_reform = daimyo_county_reform
+		                    has_reform = daimyo_marquisate_reform
+		                    has_reform = daimyo_duchy_reform
+		                    has_reform = daimyo_principality_reform
+		                }
 						war_with = event_target:new_shogunate
 					}
 					add_government_reform = indep_daimyo
@@ -184,7 +298,17 @@ province_event = {
 					}
 				}
 				every_country = {
-					limit = { has_reform = daimyo }
+					limit = { 
+						OR = {
+		                	has_reform = daimyo
+		                    has_reform = daimyo_barony_reform
+		                    has_reform = daimyo_viscounty_reform
+		                    has_reform = daimyo_county_reform
+		                    has_reform = daimyo_marquisate_reform
+		                    has_reform = daimyo_duchy_reform
+		                    has_reform = daimyo_principality_reform
+		                }
+					}
 					overlord = {
 						free_vassal = PREV
 					}
@@ -211,9 +335,51 @@ province_event = {
 					}
 					if = {
 						limit = {
-							has_reform = daimyo
+		                    has_reform = daimyo
 						}
-						remove_government_reform = daimyo
+		                remove_government_reform = daimyo
+						add_government_reform = indep_daimyo
+					}
+					else_if = {
+						limit = {
+		                    has_reform = daimyo_barony_reform
+						}
+		                remove_government_reform = daimyo_barony_reform
+						add_government_reform = indep_daimyo
+					}
+					else_if = {
+						limit = {
+		                    has_reform = daimyo_viscounty_reform
+						}
+		                remove_government_reform = daimyo_viscounty_reform
+						add_government_reform = indep_daimyo
+					}
+					else_if = {
+						limit = {
+		                    has_reform = daimyo_county_reform
+						}
+		                remove_government_reform = daimyo_county_reform
+						add_government_reform = indep_daimyo
+					}
+					else_if = {
+						limit = {
+		                    has_reform = daimyo_marquisate_reform
+						}
+		                remove_government_reform = daimyo_marquisate_reform
+						add_government_reform = indep_daimyo
+					}
+					else_if = {
+						limit = {
+		                    has_reform = daimyo_duchy_reform
+						}
+		                remove_government_reform = daimyo_duchy_reform
+						add_government_reform = indep_daimyo
+					}
+					else_if = {
+						limit = {
+		                    has_reform = daimyo_principality_reform
+						}
+		                remove_government_reform = daimyo_principality_reform
 						add_government_reform = indep_daimyo
 					}
 				}
@@ -339,7 +505,15 @@ country_event = {
 				grant_independence = yes
 				if = {
 					limit = {
-						has_reform = daimyo
+						OR = {
+		                	has_reform = daimyo
+		                    has_reform = daimyo_barony_reform
+		                    has_reform = daimyo_viscounty_reform
+		                    has_reform = daimyo_county_reform
+		                    has_reform = daimyo_marquisate_reform
+		                    has_reform = daimyo_duchy_reform
+		                    has_reform = daimyo_principality_reform
+		                }
 					}
 					add_government_reform = indep_daimyo
 				}

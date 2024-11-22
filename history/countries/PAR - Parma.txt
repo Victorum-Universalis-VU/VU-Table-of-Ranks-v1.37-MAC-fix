@@ -1,6 +1,6 @@
 government = monarchy
-add_government_reform = feudalism_reform
-government_rank = 1
+add_government_reform = eue_duchy_reform
+government_rank = 6 #Duchy
 primary_culture = romagnan
 religion = catholic
 #technology_group = western
@@ -34,8 +34,10 @@ fixed_capital = 105 # Cannot move capital away from this province & no power cos
 	}
 }
 
-1545.10.20 = { government = monarchy
-add_government_reform = autocracy_reform }
+1545.10.20 = { 
+	government = monarchy
+	add_government_reform = autocracy_reform 
+}
 
 1547.9.11 = {
 	monarch = {
@@ -119,8 +121,10 @@ add_government_reform = autocracy_reform }
 	}
 }
 
-1622.3.6 = { government = monarchy
-add_government_reform = autocracy_reform }
+1622.3.6 = { 
+	government = monarchy
+	add_government_reform = autocracy_reform 
+}
 
 1630.9.17 = {
 	heir = {
@@ -194,8 +198,9 @@ add_government_reform = autocracy_reform }
 	}
 }
 
-1731.1.21 = { government = monarchy
-# add_government_reform = letat_cest_moi_reform 
+1731.1.21 = { 
+	government = monarchy
+	#add_government_reform = letat_cest_moi_reform 
 }
 
 1731.1.21 = {

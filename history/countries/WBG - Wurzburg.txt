@@ -1,6 +1,6 @@
 government = theocracy
-add_government_reform = leading_clergy_reform
-government_rank = 1
+add_government_reform = church_of_germany_bishopric_reform
+government_rank = 4 #Prince-Bishopric
 #technology_group = western
 technology_group = german_tech_group
 unit_type = western

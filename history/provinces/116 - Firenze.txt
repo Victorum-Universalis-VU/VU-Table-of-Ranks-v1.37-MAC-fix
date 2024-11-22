@@ -22,6 +22,11 @@ add_permanent_province_modifier = {
 	duration = -1
 }
 
+add_province_modifier = {
+	name = vu_wandering_artists
+	duration = -1
+}
+
 1495.1.1 = { hre = no }
 1527.1.1 = { controller = SPA } # War of the League of Cognac
 1529.8.3 = { controller = LAN } # Treaty of Cambrai

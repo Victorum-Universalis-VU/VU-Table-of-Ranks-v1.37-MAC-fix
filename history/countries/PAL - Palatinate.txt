@@ -1,6 +1,6 @@
 government = monarchy
-add_government_reform = feudalism_reform
-government_rank = 1
+add_government_reform = eue_county_reform
+government_rank = 4 #County
 primary_culture = franconian
 add_accepted_culture = bavarian
 add_accepted_culture = hessian
@@ -10,6 +10,26 @@ elector = yes
 technology_group = german_tech_group
 unit_type = western
 capital = 77	# Pfalz
+historical_rival = BAV
+historical_rival = ING
+historical_rival = LBV
+historical_rival = UBV
+
+#Austrian tags
+historical_rival = AUE
+historical_rival = AUH
+historical_rival = AUT
+historical_rival = BRX
+historical_rival = BSN
+historical_rival = CR1
+historical_rival = GRZ
+historical_rival = HAB
+historical_rival = HLR
+historical_rival = SH1
+historical_rival = STY
+historical_rival = TIR
+historical_rival = TNT
+historical_rival = VOR
 
 1398.1.6 = {
 	monarch = {

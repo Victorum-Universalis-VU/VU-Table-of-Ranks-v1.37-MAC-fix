@@ -4,7 +4,7 @@ me_ulugh_beg_observatory = {
 	time = {
 		months = 60
 	}
-	build_cost = 500
+	build_cost = 1500
 	can_be_moved = no
 	starting_tier = 1
 	type = canal
@@ -48,7 +48,7 @@ me_ulugh_beg_observatory = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 2500
 		}
 		province_modifiers = {
 		
@@ -71,7 +71,7 @@ me_ulugh_beg_observatory = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 3500
 		}
 		province_modifiers = {
 		}
@@ -86,7 +86,7 @@ me_ulugh_beg_observatory = {
 				change_innovativeness = 3
 			}
 			custom_tooltip = " "
-			custom_tooltip = me_tim_grant_1_innovativeness_to_subjects_and_allies
+			custom_tooltip = me_tim_grant_1_innovativeness_to_subjects_and_allies_tt
 			hidden_effect = {
 				owner = {
 					every_subject_country = {
@@ -105,7 +105,7 @@ me_ulugh_beg_observatory = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 4500
 		}
 		province_modifiers = {
 		}
@@ -137,9 +137,9 @@ me_ulugh_beg_observatory = {
 			owner = {
 				change_innovativeness = 5
 			}
-			custom_tooltip = me_tim_observatory_conditional_modifier
+			custom_tooltip = me_tim_observatory_conditional_modifier_tt
 			custom_tooltip = " "
-			custom_tooltip = me_tim_grant_3_innovativeness_to_subjects_and_allies
+			custom_tooltip = me_tim_grant_3_innovativeness_to_subjects_and_allies_tt
 			hidden_effect = {
 				owner = {
 					every_subject_country = {
@@ -160,7 +160,7 @@ me_grand_palace = {
 	time = {
 		months = 60
 	}
-	build_cost = 500
+	build_cost = 2500
 	can_be_moved = no
 	starting_tier = 1
 	type = canal
@@ -204,7 +204,7 @@ me_grand_palace = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 500
+			factor = 4500
 		}
 		province_modifiers = {
 		
@@ -229,7 +229,7 @@ me_grand_palace = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 6500
 		}
 		province_modifiers = {
 		}
@@ -253,7 +253,7 @@ me_grand_palace = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 8500
 		}
 		province_modifiers = {
 		}
@@ -274,7 +274,7 @@ me_grand_palace = {
 				}
 			}
 			custom_tooltip = " "
-			custom_tooltip = me_tim_grant_mana_per_subject
+			custom_tooltip = me_tim_grant_mana_per_subject_tt
 			hidden_effect = {
 				owner = {
 					every_subject_country = {
@@ -364,7 +364,7 @@ me_skull_pyramid = {
 			months = 0
 		}
 		cost_to_upgrade = {
-			factor = 0
+			factor = 1500
 		}
 		province_modifiers = {
 		
@@ -385,7 +385,7 @@ me_skull_pyramid = {
 			months = 0
 		}
 		cost_to_upgrade = {
-			factor = 0
+			factor = 2500
 		}
 		province_modifiers = {
 		}
@@ -406,7 +406,7 @@ me_skull_pyramid = {
 			months = 0
 		}
 		cost_to_upgrade = {
-			factor = 0
+			factor = 3500
 		}
 		province_modifiers = {
 		}

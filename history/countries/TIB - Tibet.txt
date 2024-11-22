@@ -1,5 +1,6 @@
 government = republic
 add_government_reform = life_on_the_plateau_reform
+government_rank = 9 #Empire
 primary_culture = tibetan
 religion = vajrayana
 technology_group = chinese

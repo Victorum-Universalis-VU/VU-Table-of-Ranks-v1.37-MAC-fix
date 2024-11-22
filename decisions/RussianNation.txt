@@ -2,12 +2,14 @@ country_decisions = {
 
 	russian_nation = {
 		major = yes
+		color = { 139 21 190 }
 		potential = {
 			vu_generic_can_form_potential_check = yes
 			was_never_end_game_tag_trigger = yes
 			NOT = { has_country_flag = formed_russia_flag }
 			NOT = { tag = POL }
 			NOT = { tag = RUS }
+			NOT = { tag = NOV }
 			OR = {
 				NOT = { exists = RUS }
 				ai = no
@@ -16,9 +18,11 @@ country_decisions = {
 			NOT = { tag = HLR }
 			OR = {
 				primary_culture = russian
+				primary_culture = muscovite
 				primary_culture = novgorodian
 				primary_culture = ryazanian
 				primary_culture = russian_new
+				primary_culture = muscovite_new
 				primary_culture = novgorodian_new
 				primary_culture = ryazanian_new
 				has_country_flag = vu_WRH_can_form_russia
@@ -73,7 +77,7 @@ country_decisions = {
 			is_nomad = no
 			is_at_war = no
 			custom_trigger_tooltip = {
-				tooltip = russian_nation_requirements_vu
+				tooltip = russian_nation_requirements_1_vu
 				owns_core_province = 295			# Moskva
 				owns_core_province = 310			# Novgorod
 				OR = {
@@ -89,6 +93,11 @@ country_decisions = {
 					owns_core_province = 307		# Vladimir	
 				}
 				NOT = { exists = NOV }	# A bunch of Russian minors may not exist
+				#NOT = { exists = VYA }
+				#NOT = { exists = BLV }
+			}
+			custom_trigger_tooltip = {
+				tooltip = russian_nation_requirements_2_vu
 				OR = {
 					tag = TVE
 					NOT = { exists = TVE }	# Russia needs to conquer/integrate them first
@@ -102,19 +111,32 @@ country_decisions = {
 					NOT = { exists = ZBT }
 				}
 				OR = {
-					tag = MOZ
-					MOZ = { exists = no }
-					MOZ = { is_subject_of = ROOT }
-				}
-				#NOT = { exists = VYA }
-				#NOT = { exists = BLV }
-				OR = {
 					tag = PRS
 					NOT = { exists = PRS }
 				}
 				OR = {
 					tag = RYA
 					NOT = { exists = RYA }
+				}
+				OR = {
+					tag = YAR
+					NOT = { exists = YAR }
+				}
+				OR = {
+					tag = PLT
+					NOT = { exists = PLT }
+				}
+				OR = {
+					tag = RSO
+					NOT = { exists = RSO }
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = russian_nation_requirements_3_vu
+				OR = {
+					tag = MOZ
+					MOZ = { exists = no }
+					MOZ = { is_subject_of = ROOT }
 				}
 				OR = {
 					tag = SPK
@@ -136,18 +158,6 @@ country_decisions = {
 					BLO = { exists = no }
 					BLO = { is_subject_of = ROOT }
 				}
-				OR = {
-					NOT = { exists = YAR }
-					tag = YAR
-				}
-				OR = {
-					tag = PLT
-					NOT = { exists = PLT }
-				}
-				OR = {
-					tag = RSO
-					NOT = { exists = RSO }
-				}
 			}
 		}
 		effect = {
@@ -164,6 +174,93 @@ country_decisions = {
 				}
 				ROOT = { inherit = PREV }
 			}
+			if = {
+				limit = {
+					OR = {
+						primary_culture = muscovite
+						primary_culture = ryazanian
+						primary_culture = novgorodian
+					}
+				}
+				change_primary_culture = russian
+			}
+			if = {
+				limit = {
+					OR = {
+						primary_culture = muscovite_new
+						primary_culture = ryazanian_new
+						primary_culture = novgorodian_new
+					}
+				}
+				change_primary_culture = russian_new
+			}
+			#
+			if = {
+				limit = {
+					OR = {
+						ruler_culture = muscovite
+						ruler_culture = ryazanian
+						ruler_culture = novgorodian
+					}
+				}
+				set_ruler_culture = russian
+			}
+			if = {
+				limit = {
+					OR = {
+						ruler_culture = muscovite_new
+						ruler_culture = ryazanian_new
+						ruler_culture = novgorodian_new
+					}
+				}
+				set_ruler_culture = russian_new
+			}
+			#
+			if = {
+				limit = {
+					has_heir = yes
+					OR = {
+						heir_culture = muscovite
+						heir_culture = ryazanian
+						heir_culture = novgorodian
+					}
+				}
+				set_heir_culture = russian
+			}
+			if = {
+				limit = {
+					has_heir = yes
+					OR = {
+						heir_culture = muscovite_new
+						heir_culture = ryazanian_new
+						heir_culture = novgorodian_new
+					}
+				}
+				set_heir_culture = russian_new
+			}
+			#
+			if = {
+				limit = {
+					has_consort = yes
+					OR = {
+						consort_culture = muscovite
+						consort_culture = ryazanian
+						consort_culture = novgorodian
+					}
+				}
+				set_consort_culture = russian
+			}
+			if = {
+				limit = {
+					has_consort = yes
+					OR = {
+						consort_culture = muscovite_new
+						consort_culture = ryazanian_new
+						consort_culture = novgorodian_new
+					}
+				}
+				set_consort_culture = russian_new
+			}
 			hidden_effect = {
 				if = {
 					limit = {
@@ -172,8 +269,85 @@ country_decisions = {
 					complete_mission = tr_invade_novgorod_mission
 					complete_mission = tr_subjugate_novgorod
 				}
+				every_province = {
+					limit = {
+						OR = {
+							culture = muscovite
+							culture = ryazanian
+							culture = novgorodian
+						}
+					}
+					change_culture = russian
+				}
+				every_province = {
+					limit = {
+						OR = {
+							culture = muscovite_new
+							culture = ryazanian_new
+							culture = novgorodian_new
+						}
+					}
+					change_culture = russian_new
+				}
+				every_country = {
+					limit = {
+						OR = {
+							primary_culture = muscovite
+							primary_culture = ryazanian
+							primary_culture = novgorodian
+						}
+					}
+					change_primary_culture = russian
+					set_ruler_culture = russian
+					if = {
+						limit = {
+							has_heir = yes
+						}
+						set_heir_culture = russian
+					}
+					if = {
+						limit = {
+							has_consort = yes
+							OR = {
+								consort_culture = muscovite
+								consort_culture = ryazanian
+								consort_culture = novgorodian
+							}
+						}
+						set_consort_culture = russian
+					}
+				}
+				every_country = {
+					limit = {
+						OR = {
+							primary_culture = muscovite_new
+							primary_culture = ryazanian_new
+							primary_culture = novgorodian_new
+						}
+					}
+					change_primary_culture = russian_new
+					set_ruler_culture = russian_new
+					if = {
+						limit = {
+							has_heir = yes
+						}
+						set_heir_culture = russian_new
+					}
+					if = {
+						limit = {
+							has_consort = yes
+							OR = {
+								consort_culture = muscovite_new
+								consort_culture = ryazanian_new
+								consort_culture = novgorodian_new
+							}
+						}
+						set_consort_culture = russian_new
+					}
+				}
 			}
 			change_tag = RUS
+			custom_tooltip = russian_culture_tt
 			on_change_tag_effect = yes
 			restore_country_name = yes
 			swap_non_generic_missions = yes
@@ -192,25 +366,10 @@ country_decisions = {
 					add_government_reform = tsardom
 				}
 			}
-			RUS = { set_government_rank = 3 }
+			RUS = { set_government_rank = 9 }
 			russia_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = RUS
-			}
-			crimea_region = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = RUS
-			}
-			ural_region = {
-				limit = {
-					NOT = {
-						owned_by = ROOT
-					}
-					is_empty = no
 				}
 				add_permanent_claim = RUS
 			}

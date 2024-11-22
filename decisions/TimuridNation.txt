@@ -1,3 +1,4 @@
+#Updated to v1.37 - Sf 
 country_decisions = {
 	
 	enthrone_timurid_prince = {
@@ -73,7 +74,7 @@ country_decisions = {
 			define_ruler = {
 				dynasty = "Timurid"
 			}
-			add_legitimacy_equivalent = { amount = 20 republican_tradition = 10 }
+			add_legitimacy = 20
 			if = {
 				limit = {
 					has_heir = yes
@@ -83,6 +84,7 @@ country_decisions = {
 			define_heir = {
 				dynasty = "Timurid"
 			}
+			set_country_flag = enthroned_a_timurid_prince
 		}
 		ai_will_do = {
 			factor = 10
@@ -159,38 +161,41 @@ country_decisions = {
 			454 = {						# Samarkand
 				is_state = yes
 			}
-			
-			if = {
-				limit = {
-					NOT = {
-						has_country_flag = me_prince_faster_timurid_formation
-					}
+			OR = {
+				AND = {
+					owns_core_province = 429	# Isfahan
+					owns_core_province = 2213	# Qom
+					owns_core_province = 2218	# Shiraz
 				}
-				owns_core_province = 429
-				owns_core_province = 2213
-				owns_core_province = 2218
-				owns_core_province = 451
-				owns_core_province = 445
-				owns_core_province = 428
+				AND = {
+					owns_core_province = 451	# Kabul
+					owns_core_province = 445	# Merv
+					owns_core_province = 428	# Teheran/Rayy
+				}
 			}
-			
-			TIM_can_form_timurids = yes
 		}
 		effect = {
 			454 = {
 				move_capital_effect = yes
 			}
 			change_tag = TIM
-			on_change_tag_effect = yes
 			swap_non_generic_missions = yes
+			on_change_tag_effect = yes
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
 				limit = {
-					NOT = { government_rank = 3 }
+					NOT = { government_rank = 9 }
 				}
-				set_government_rank = 3
+				set_government_rank = 9
 			}
-			add_prestige_or_monarch_power = { amount = 25 }
+			if = {
+				limit = {
+					NOT = { government = monarchy }
+				}
+				change_government = monarchy
+				add_government_reform = iqta
+			}
+			add_prestige = 25
 			add_country_modifier = {
 				name = centralization_modifier
 				duration = 3650
@@ -310,12 +315,10 @@ country_decisions = {
 			modifier = {
 				factor = 0
 				NOT = { exists = MUG }	#Mughals should appear instead first
-				#NOT = { mission_completed = Timurid_prince_claim_the_empire }
 			}
 			modifier = {
 				factor = 0
 				NOT = { exists = PER }	#Same goes for Persia
-				#NOT = { mission_completed = Timurid_prince_claim_the_empire }
 			}
 		}
 		ai_importance = 600

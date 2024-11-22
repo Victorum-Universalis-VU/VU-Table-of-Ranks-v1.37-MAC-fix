@@ -10,13 +10,6 @@ preferred_religion = protestant
 
 historical_idea_groups = {
 	quantity_ideas
-	economic_ideas
-	aristocracy_ideas
-	religious_ideas
-	trade_ideas
-	offensive_ideas
-	quality_ideas
-	spy_ideas	
 }
 
 historical_units = {

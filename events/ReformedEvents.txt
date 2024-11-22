@@ -1,4 +1,4 @@
-#VU updated by San Felipe for 1.36
+#Updated to v1.37 - SF
 namespace = reformed_events
 
 # Reformed Refugees
@@ -7,6 +7,7 @@ province_event = {
 	title = "reformed_events.EVTNAME1"
 	desc = "reformed_events.EVTDESC1"
 	picture = RELIGIOUS_TURMOIL_eventPicture
+
 	trigger = {
 		religion = reformed
 		owner = {
@@ -28,9 +29,11 @@ province_event = {
 			}
 		}
 	}
+
 	mean_time_to_happen = {
 		months = 2000
 	}
+
 	immediate = {
 		hidden_effect = {
 			random_neighbor_province = {
@@ -103,6 +106,7 @@ province_event = {
 	picture = RELIGIOUS_TURMOIL_eventPicture
 	
 	is_triggered_only = yes
+
 	option = {
 		name = "reformed_events.EVTOPTA2" # How dare they!
 		add_province_modifier = {
@@ -124,6 +128,7 @@ country_event = {
 	title = "reformed_events.EVTNAME3"
 	desc = "reformed_events.EVTDESC3"
 	picture = STREET_SPEECH_eventPicture
+
 	trigger = {
 		religion = reformed
 		dominant_religion = reformed
@@ -140,6 +145,7 @@ country_event = {
 			}
 		}
 	}
+
 	mean_time_to_happen = {
 		months = 2000
 	}
@@ -302,11 +308,13 @@ country_event = {
 	title = "reformed_events.EVTNAME5"
 	desc = "reformed_events.EVTDESC5"
 	picture = HARBOUR_eventPicture
+
 	trigger = {
 		religion = reformed
 		uses_fervor = yes
 		NOT = { has_country_flag = reformed_work_ethic }
 	}
+
 	mean_time_to_happen = {
 		months = 2000
 	}
@@ -335,11 +343,13 @@ country_event = {
 	title = "reformed_events.EVTNAME6"
 	desc = "reformed_events.EVTDESC6"
 	picture = RELIGION_eventPicture
+
 	trigger = {
 		religion = reformed
 		uses_fervor = yes
 		NOT = { has_country_flag = banned_musical_instruments_in_church }
 	}
+
  	mean_time_to_happen = {
 		months = 2000
 	}
@@ -397,6 +407,7 @@ province_event = {
 	title = "reformed_events.EVTNAME7"
 	desc = "reformed_events.EVTDESC7"
 	picture = RELIGIOUS_TURMOIL_eventPicture
+
 	trigger = {
 		owner = {
 			religion = reformed
@@ -410,6 +421,7 @@ province_event = {
 		NOT = { has_province_flag = iconoclastic_fury }
 		NOT = { has_province_flag = stopped_iconoclastic_fury }
 	}
+	
 	mean_time_to_happen = {
 		months = 2000
 		modifier = {

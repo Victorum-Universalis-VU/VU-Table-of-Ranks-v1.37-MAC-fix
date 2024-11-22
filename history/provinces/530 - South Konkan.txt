@@ -11,25 +11,15 @@ base_tax = 8
 base_production = 8
 base_manpower = 8
 is_city = yes
-add_core = BIJ
-add_core = VIJ
+
 add_local_autonomy = 75
 
+#Claimants
+add_core = BIJ
+add_core = MAR
+add_core = VIJ
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#Histories by SF
 1380.1.1 = {
 	controller = VIJ
 	owner = VIJ

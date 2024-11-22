@@ -219,7 +219,7 @@ gazikumukh_missions_3 = {
 						AND = {
 							culture_group = ROOT
 							ROOT = {
-								government_rank = 3
+								government_rank = 9
 							}
 						}
 					}

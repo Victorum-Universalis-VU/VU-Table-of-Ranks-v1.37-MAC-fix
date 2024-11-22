@@ -28,15 +28,8 @@ add_core = SOR
 
 #Known by Technology groups
 
-
-
-
-
-
 #Histories by docRobert & SF
 1400.1.1 = {
-	owner = BOH
-	controller = BOH
 	remove_core = SIL
 	remove_core = POL
 	add_core = BOH

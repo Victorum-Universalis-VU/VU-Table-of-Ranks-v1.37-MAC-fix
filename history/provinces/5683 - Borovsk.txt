@@ -3,7 +3,7 @@
 owner = SPK
 controller = SPK
 add_core = SPK
-culture = russian
+culture = muscovite
 religion = orthodox
 capital = "Borovsk"
 trade_goods = livestock

@@ -14,23 +14,8 @@ native_ferocity = 10
 native_hostileness = 10
 
 #Claimants
-
-#Buildings
-
-#Special Modifiers
-
-#Known by Technology groups
-
-
-
-
-
-
-
-
-
-
-
+add_core = NAB
+add_core = R4S
 
 #Histories by SF
 1215.6.15 = {
@@ -50,6 +35,7 @@ native_hostileness = 10
 	
 	#Buildings
 	fort_15th = yes
+
 } #Mamluk territorial lands - By San Felipe
 1482.6.1 = { #Mamluks place all Hejaz under Mecca
 	owner = HED

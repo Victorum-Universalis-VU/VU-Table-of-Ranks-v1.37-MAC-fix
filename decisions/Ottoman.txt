@@ -1,10 +1,10 @@
-#VU updated to 1.35 by San Felipe 
+#Updated to v1.37 - SF 
 country_decisions = {
 	make_constantinople_capital = {
 		potential = {
 			OR = {
 				tag = TUR
-				tag = RMM
+				tag = RUM
 			}
 			owns = 151
 			NOT = { capital = 151 }
@@ -104,7 +104,7 @@ country_decisions = {
 					add_base_manpower = 2
 				}
 			}
-			set_government_rank = 3
+			set_government_rank = 9
 			anatolia_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
@@ -146,46 +146,6 @@ country_decisions = {
 	#		modifier = {
 	#			factor = 0
 	#			NOT = { mil_power = 100 }
-	#		}
-	#	}
-	#}
-
-	#devshirme_system = { #Decision doesn't work, in fact it doesn't exist in vanilla anymore. Devshirme system seems to have migrated to the janissary estate
-	#	potential = {
-	#		has_reform = ottoman_government
-	#		NOT = { has_disaster = janissary_decadence }
-	#		NOT = { has_country_modifier = the_devshirme_system }
-	#		NOT = { has_country_flag = lapse_of_devshirme }
-	#		normal_or_historical_nations = yes
-	#		OR = {
-	#			ai = no
-	#			is_playing_custom_nation = no
-	#		}
-	#	}
-	#	allow = {
-	#		mil_power = 100
-	#	}
-	#	effect = {
-	#		add_mil_power = -100
-	#		add_country_modifier = {
-	#			name = "the_devshirme_system"
-	#			duration = -1
-	#		}
-	#		if = {
-	#			limit = {
-	#				NOT = { has_dlc = "Cradle of Civilization" }
-	#			}
-	#			custom_tooltip = janissary_event_tooltip_devs
-	#			hidden_effect = {
-	#				country_event = { id = flavor_tur.100 days = 4380 }
-	#			}
-	#		}
-	#	}
-	#	ai_will_do = {
-	#		factor = 1
-	#		modifier = {
-	#			factor = 0
-	#			NOT = { mil_power = 200 }
 	#		}
 	#	}
 	#}

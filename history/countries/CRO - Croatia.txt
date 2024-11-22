@@ -1,5 +1,6 @@
 government = monarchy
-add_government_reform = feudalism_reform
+add_government_reform = croatian_monarchy_reform
+government_rank = 8 #Kingdom
 primary_culture = croatian
 religion = catholic
 add_accepted_culture = dalmatian

@@ -1,5 +1,6 @@
 government = monarchy
 add_government_reform = indian_sultanate_reform
+government_rank = 6 #Sultanate
 primary_culture = rajput
 religion = sunni
 technology_group = indian
@@ -86,7 +87,7 @@ religious_school = hanafi_school
 }
 
 1465.1.1 = {
-	government_rank = 1
+	government_rank = 6
 }
 
 1500.1.1 = {

@@ -908,6 +908,7 @@ ROM_missions_3 = {
 				area = altmark_area
 				area = anhalt_area
 				area = hesse_area
+				area = frankfurt_area
 				area = thuringia_area
 				province_id = 84
 				province_id = 97
@@ -993,9 +994,27 @@ ROM_missions_3 = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
+			frankfurt_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
 		}
 		effect = {
 			holstein_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			hamburg_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			lauenburg_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -1116,6 +1135,8 @@ ROM_missions_3 = {
 		provinces_to_highlight = {
 			OR = {
 				area = holstein_area
+				area = hamburg_area
+				area = lauenburg_area
 				area = erzgebirge_area
 				area = saxony_area
 				area = mittelmark_area
@@ -1131,6 +1152,14 @@ ROM_missions_3 = {
 		}
 		trigger = {
 			holstein_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			hamburg_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			lauenburg_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -1817,6 +1846,7 @@ ROM_missions_4 = {
 			OR = {
 				area = croatia_area
 				area = east_adriatic_coast_area
+				area = ragusa_area
 				area = bosnia_area
 				area = serbia_area
 				area = rascia_area
@@ -1838,6 +1868,10 @@ ROM_missions_4 = {
 				culture = roman
 			}
 			east_adriatic_coast_area = {
+				type = all
+				culture = roman
+			}
+			ragusa_area = {
 				type = all
 				culture = roman
 			}
@@ -1952,6 +1986,13 @@ ROM_missions_5 = {
 				add_permanent_claim = ROOT
 			}
 			hesse_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			frankfurt_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }

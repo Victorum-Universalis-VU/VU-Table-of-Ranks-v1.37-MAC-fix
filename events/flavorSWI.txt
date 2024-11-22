@@ -1,4 +1,4 @@
-#VU updated by San Felipe for 1.36
+#Updated to v1.37
 ########################################
 # Event for Switzerland
 #
@@ -717,10 +717,8 @@ country_event = {
 		}
 		trigger = {
 			NOT = {
-				OR = {
-					tag = GNV
-					tag = PAP
-				}
+				tag = GNV
+				tag = PAP
 			}
 		}
 		if = {

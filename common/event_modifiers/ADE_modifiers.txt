@@ -1,6 +1,6 @@
-ADE_extra_advisors_modifier = {
-	advisor_pool = 3	
-}
+#ADE_extra_advisors_modifier = {
+#	advisor_pool = 3	
+#}
 
 ADE_administrator_event_modifier = {
 	administrative_efficiency = 0.05

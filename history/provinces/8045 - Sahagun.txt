@@ -1,9 +1,8 @@
 #8045 - Sahagun
 
-owner = CAS
-controller = CAS
+owner = LON
+controller = LON
 add_core = CAS
-add_core = LON
 culture = leonese
 religion = catholic
 capital = "Sahagún"
@@ -14,7 +13,7 @@ trade_goods = wool
 is_city = yes
 hre = no
 
-
+add_core = LON
 
 
 

@@ -43,6 +43,9 @@ MAI_Missions_1 = {
 			}
 			custom_tooltip = MAI_reward_if_conquest
 			tooltip = {
+				frankfurt_area = {
+					add_permanent_claim = ROOT
+				}
 				hesse_area = {
 					add_permanent_claim = ROOT
 				}

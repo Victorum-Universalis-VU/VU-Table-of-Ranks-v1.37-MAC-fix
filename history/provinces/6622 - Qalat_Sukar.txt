@@ -12,32 +12,10 @@ base_tax = 2
 base_production = 3
 base_manpower = 3
 is_city = yes
-add_core = BSR
+
+#Claimants
+add_core = JAL
 add_core = MSY
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 1440.1.1 = {
 	revolt = {
@@ -66,15 +44,12 @@ add_core = MSY
 	remove_core = PER
 } # Surrendered to the Ottomans
 1560.1.1 = { #Revolt against Ottoman Governor of Basra
-	owner = BSR
 	controller = TUR
 }
 1568.1.1 = { #Campaign against Marsh Arabs over.
 	owner = TUR
 }
 1596.1.1 = {
-	owner = BSR
-	controller = BSR
 	remove_core = TUR
 }
 #Independent 1624 - 1668

@@ -2,6 +2,7 @@
 
 owner = TIM
 controller = TIM
+add_core = TIM
 culture = aimaq		#While city was garrisoned by Arabs and Uzbekhs, the villages and surroundings were dominated by Amaiq Iranians
 religion = sunni
 capital = "Maymana"
@@ -11,18 +12,10 @@ base_tax = 6
 base_production = 6
 base_manpower = 4
 is_city = yes
-add_core = TIM
+
+#Claimants
 add_core = AFG
-
-
-
-
-
-
-
-
-
-
+add_core = DAG
 
 1449.2.1 = { #Conquered by Babur bin Baysunkur
 	owner = KHO

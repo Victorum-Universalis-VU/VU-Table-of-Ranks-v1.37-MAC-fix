@@ -1,6 +1,6 @@
 government = monarchy
-add_government_reform = marquisiate_reform
-government_rank = 2
+add_government_reform = eue_marquisate_reform
+government_rank = 5 #Marquisate_Reform
 primary_culture = cosmopolitan_french
 religion = catholic
 #technology_group = western

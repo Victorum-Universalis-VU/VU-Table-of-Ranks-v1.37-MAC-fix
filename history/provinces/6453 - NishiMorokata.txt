@@ -13,14 +13,8 @@ base_production = 3
 base_manpower = 3
 is_city = yes
 
-
-
-
-
-
- 
-
-
+#Claimants
+add_core = EGY
 
 1569.10.10 = {
     add_core = SMZ

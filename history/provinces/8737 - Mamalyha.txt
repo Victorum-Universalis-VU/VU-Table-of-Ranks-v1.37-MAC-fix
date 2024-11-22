@@ -10,7 +10,7 @@ controller = MOL
 add_core = VOL
 
 #Demographics
-culture = ruthenian
+culture = volhynian
 religion = orthodox
 
 #Development and Trade

@@ -1,6 +1,6 @@
 government = theocracy
-
 add_government_reform = mandala_reform
+government_rank = 4 #Far_Eastern_County
 primary_culture = central_thai
 religion = buddhism
 technology_group = chinese

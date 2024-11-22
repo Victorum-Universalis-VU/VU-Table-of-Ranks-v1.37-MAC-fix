@@ -1,6 +1,6 @@
 government = native
 add_government_reform = native_chiefdom_reform
-government_rank = 1
+government_rank = 2 #Native_Clan
 primary_culture = iroquois
 religion = totemism
 technology_group = north_american

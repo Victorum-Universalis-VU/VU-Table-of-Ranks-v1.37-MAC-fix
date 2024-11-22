@@ -7,13 +7,6 @@ revolutionary_colors = { 5 0 5 }
 
 historical_idea_groups = {
 	religious_ideas
-	trade_ideas
-	defensive_ideas
-	economic_ideas
-	diplomatic_ideas
-	innovativeness_ideas
-	spy_ideas
-	offensive_ideas
 }
 
 historical_units = {
@@ -50,7 +43,7 @@ monarch_names = {
 	"Friedrich #0" = 0
 	"Georg #0" = 0
 	"Gerhard #0" = 0
-	"Günther #0" = 0
+	"Gï¿½nther #0" = 0
     "Heinrich #0" = 0
 	"Ignatz #0" = 0
 	"Isidor #0" = 0
@@ -82,16 +75,16 @@ monarch_names = {
 
 leader_names = { 
 	Alfter Allendorf Assmann Barth Becker Betz
-	Bopp Bornschlegel Dörrenbecher Dude Fust Eins
-	Göhler Grob Haas Heidelberger Ickstadt Lawall
+	Bopp Bornschlegel Dï¿½rrenbecher Dude Fust Eins
+	Gï¿½hler Grob Haas Heidelberger Ickstadt Lawall
 	Pittschaft Schmitt Schoeneberger Storck Volz
 }
 
 ship_names = {
 	"St. Theonest" "St. Georg" "St. Peter"
-	Udenmünster "St. Christoph" "St. Lambert"
+	Udenmï¿½nster "St. Christoph" "St. Lambert"
 	"St. Quintin" "St. Maria" "St. Johannes"
-	"St. Emmeran" "St. Ignaz" Hagenmünster
+	"St. Emmeran" "St. Ignaz" Hagenmï¿½nster
 	"St. Aureus" "St. Nicomedes" "St. Alban"
 }
 

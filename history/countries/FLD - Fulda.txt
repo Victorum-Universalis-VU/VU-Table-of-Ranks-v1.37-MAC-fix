@@ -1,6 +1,7 @@
+#FLD - Fulda
 government = theocracy
-add_government_reform = leading_clergy_reform
-government_rank = 1
+add_government_reform = church_of_germany_abbacy_reform
+government_rank = 2 #Prince_Abbacy
 primary_culture = franconian
 add_accepted_culture = saxon
 religion = catholic

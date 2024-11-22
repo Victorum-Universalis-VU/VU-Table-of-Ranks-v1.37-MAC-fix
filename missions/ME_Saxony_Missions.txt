@@ -624,10 +624,7 @@ saxony_missions_slot_2 = {
 										NOT = { legitimacy = 66 }
 									}
 									AND = {
-										OR = {
-											has_reform = elective_monarchy
-											has_reform = phoenician_elective_monarchical_republic
-										}
+										has_reform = elective_monarchy
 										NOT = { legitimacy = 33 }
 										OR = {
 											has_heir = no
@@ -675,10 +672,7 @@ saxony_missions_slot_2 = {
 										NOT = { legitimacy = 66 }
 									}
 									AND = {
-										OR = {
-											has_reform = elective_monarchy
-											has_reform = phoenician_elective_monarchical_republic
-										}
+										has_reform = elective_monarchy
 										NOT = { legitimacy = 33 }
 										OR = {
 											has_heir = no
@@ -1331,6 +1325,20 @@ saxony_missions_slot_3 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			hamburg_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			lauenburg_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 	}
 
@@ -1396,11 +1404,18 @@ saxony_missions_slot_3 = {
 		position = 10
 		required_missions = { saxony_reunite_saxony_and_thuringia }
 		provinces_to_highlight = {
-			area = hesse_area
+			OR = {
+				area = hesse_area
+				area = frankfurt_area
+			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
 			hesse_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			frankfurt_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -1562,7 +1577,7 @@ saxony_missions_slot_3 = {
 				set_country_flag = sax_unlock_new_advisor_type_reformist
 				define_advisor = {
 					name = "Martin Luther"
-					type = me_reformist
+					type = reformist
 					skill = 3
 					religion = protestant
 					culture = ROOT
@@ -2000,6 +2015,8 @@ saxony_missions_slot_4 = {
 				area = braunschweig_area
 				area = lower_saxony_area
 				area = holstein_area
+				area = hamburg_area
+				area = lauenburg_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
@@ -2013,6 +2030,14 @@ saxony_missions_slot_4 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			holstein_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			hamburg_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			lauenburg_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -2062,6 +2087,13 @@ saxony_missions_slot_4 = {
 				add_permanent_claim = ROOT
 			}
 			hesse_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			frankfurt_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 					NOT = { is_core = ROOT }
@@ -2160,11 +2192,11 @@ saxony_missions_slot_4 = {
 				limit = {
 					has_dlc = "Common Sense"
 				}
-				government_rank = 2
+				government_rank = 8
 			}
 			else = {
 				OR = {
-					government_rank = 2
+					government_rank = 8
 					total_development = 300
 				}
 			}
@@ -2551,7 +2583,7 @@ saxony_missions_slot_5 = {
 			set_country_flag = sax_unlock_new_advisor_type_lyricist
 			define_advisor = {
 				name = "Johann Wolfgang Goethe"
-				type = me_lyricist
+				type = bard
 				skill = 3
 				culture = ROOT
 				religion = ROOT

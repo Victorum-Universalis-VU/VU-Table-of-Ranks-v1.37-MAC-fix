@@ -1,6 +1,6 @@
 government = monarchy
-add_government_reform = feudalism_reform
-government_rank = 1
+add_government_reform = eue_duchy_reform
+government_rank = 6 #Duchy
 #technology_group = western
 technology_group = italian_tech_group
 unit_type = western
@@ -110,8 +110,10 @@ fixed_capital = 106 # Cannot move capital away from this province & no power cos
 }
 
 
-1662.7.6 = { government = monarchy
-add_government_reform = autocracy_reform }
+1662.7.6 = { 
+	government = monarchy
+	add_government_reform = autocracy_reform 
+}
 
 1662.7.6 = {
 	monarch = {
@@ -163,8 +165,9 @@ add_government_reform = autocracy_reform }
 	}
 }
 
-1737.10.27 = { government = monarchy
-# add_government_reform = letat_cest_moi_reform 
+1737.10.27 = { 
+	government = monarchy
+	#add_government_reform = letat_cest_moi_reform 
 }
 
 1737.10.27 = {
@@ -215,8 +218,9 @@ add_government_reform = autocracy_reform }
 	}
 }
 
-1806.12.25 = { government = monarchy
-# add_government_reform = letat_cest_moi_reform 
+1806.12.25 = { 
+	government = monarchy
+	#add_government_reform = letat_cest_moi_reform 
 }
 
 1806.12.25 = {

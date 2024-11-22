@@ -3,7 +3,7 @@
 #Area - Leon
 
 #Default
-owner = CAS		#Enrique III of Castille
+owner = CAS		#Enrique III of Castile
 controller = CAS
 add_core = CAS
 culture = leonese
@@ -17,7 +17,6 @@ capital = "Plasencia"
 is_city = yes
 
 #Claimants
-add_core = LON
 
 #Buildings
 
@@ -25,15 +24,14 @@ add_core = LON
 
 #Known by Technology groups
 
-
-
-
-
-
 #Histories
+1215.6.15 = { owner = LON controller = LON add_core = LON } # Leonese territorial lands - By San Felipe
+
+1444.11.11 = { owner = BDH controller = BDH add_core = BDH } # Castilian territorial lands - By San Felipe
+
 1350.1.1 = { culture = castillian }
 1464.5.1 = { unrest = 3 } #Nobiliary uprising against King Enrique, Castilla goes into anarchy
-1468.9.18 = { unrest = 0 } #Pactos de los Toros de Guisando. Isabel of Castille becomes heir to the throne and a temporary peace is achieved
+1468.9.18 = { unrest = 0 } #Pactos de los Toros de Guisando. Isabel of Castile becomes heir to the throne and a temporary peace is achieved
 1470.1.1 = { unrest = 3 } #Isabel marries with Fernando of Aragon, breaking the Pacts of Guisando. King Enrique choses his daughter Juana ("La Beltraneja") as new heiress and a succession War erupts.
 1475.6.2 = { controller = POR }
 1479.2.25 = { controller = CAS }
@@ -42,7 +40,7 @@ add_core = LON
 	controller = SPA
 	owner = SPA
 	add_core = SPA
-} # King Fernando dies, Carlos inherits Aragon and becames co-regent of Castille
+} # King Fernando dies, Carlos inherits Aragon and becames co-regent of Castile
 1713.4.11 = { remove_core = CAS }
 1808.6.6 = { revolt = { type = pretender_rebels size = 0 } controller = REB }
 1809.1.1 = { revolt = {} controller = SPA }

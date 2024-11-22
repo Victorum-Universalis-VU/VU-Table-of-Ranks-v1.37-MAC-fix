@@ -14,6 +14,7 @@ native_size = 3
 native_ferocity = 2
 
 #Claimants
+add_core = NRB
 add_core = SMI
 add_core = FIN
 
@@ -23,10 +24,6 @@ add_core = FIN
 add_local_autonomy = 55 #This stacks with culture and religious starting autonomy, it seems. Reducing from 90.
 
 #Known by Technology groups
-
-
-
-
 
 add_province_triggered_modifier = vu_birkarls
 

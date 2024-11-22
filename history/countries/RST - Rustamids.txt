@@ -1,6 +1,6 @@
 government = monarchy
 add_government_reform = feudal_theocracy
-government_rank = 2
+government_rank = 4 #Grand_Imamate 
 primary_culture = moroccan #was berber
 religion = ibadi
 technology_group = muslim

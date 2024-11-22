@@ -1,7 +1,6 @@
 ﻿l_english:
- #Missing Vanilla localisation
- mechanic_is_merchant_republic:0 "Is Merchant Republic"
- #
+ mechanic_is_merchant_republic: "Is Merchant Republic"
+ 
  #Trade Goods Mechanic
  GOODS_Marcin_Beer: "§YBeer§! will be introduced into the game = §GYES§!"
  GOODS_Marcin_Beer_NO: "§YBeer§! will be introduced into the game = §RNO§!"
@@ -103,8 +102,8 @@
  GOODS_Marcin_Cannon_NO: "§YCannons§! will be introduced into the game = §RNO§!"
  GOODS_Marcin_Tomato: "§YTomatos§! will be introduced into the game = §GYES§!"
  GOODS_Marcin_Tomato_NO: "§YTomatos§! will be introduced into the game = §RNO§!"
- GOODS_Marcin_Champagne: "§YChampagne§! will be introduced into the game = §GYES§!"
- GOODS_Marcin_Champagne_NO: "§YChampagne§! will be introduced into the game = §RNO§!"
+ GOODS_Marcin_Champagne_Bottle: "§YChampagne§! will be introduced into the game = §GYES§!"
+ GOODS_Marcin_Champagne_Bottle_NO: "§YChampagne§! will be introduced into the game = §RNO§!"
  GOODS_Marcin_Llama: "§YLlama§! will be introduced into the game = §GYES§!"
  GOODS_Marcin_Llama_NO: "§YLlama§! will be introduced into the game = §RNO§!"
  GOODS_Marcin_Indigo: "§YIndigo§! will be introduced into the game = §GYES§!"
@@ -199,7 +198,6 @@
  marcin_events.65.t: "Sweet Confectioneries"
  marcin_events.66.t: "Canned Goods"
  marcin_events.67.t: "Cider"
- 
  
  marcin_events.1.a: "Beer = §GYES§!"
  marcin_events.1.b: "Beer = §RNO§!"
@@ -330,14 +328,6 @@
  Debug_event.2.d: ""
  Debug_event.3.d: ""
  
- #confederacy_mechanic:0 "REPLACE_ME"
- #confederacy_mechanic_desc:0 "REPLACE_ME"
- #centralization_reform:0 "REPLACE_ME"
- #centralization_reform_desc:0 "REPLACE_ME"
- #Liberation_Time_TT:0 "REPLACE_ME"
- #decentralization_reform:0 "REPLACE_ME"
- #decentralization_reform_desc:0 "REPLACE_ME"
- #slap_bitches_reform:0 "REPLACE_ME"
- #slap_bitches_reform_desc:0 "REPLACE_ME"
- #mamma_mia_reform:0 "REPLACE_ME"
- #mamma_mia_reform_desc:0 "REPLACE_ME"
+ mechanic_GE_minority_exploitation_yes: ""
+ mechanic_reinforce_the_gwangmu_reform_yes: ""
+ mechanic_reinforce_the_gwangmu_reform_2_yes: ""

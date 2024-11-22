@@ -1,6 +1,6 @@
-government = monarchy
-add_government_reform = sharifate_reform
-government_rank = 1
+government = theocracy
+add_government_reform = islamic_sharifate_reform
+government_rank = 4 #Sharifate
 technology_group = muslim
 religion = sunni
 primary_culture = hejazi_culture

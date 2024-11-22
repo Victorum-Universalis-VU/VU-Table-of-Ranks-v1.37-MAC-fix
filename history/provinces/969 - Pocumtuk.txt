@@ -19,8 +19,6 @@ native_hostileness = 4
 
 
 
-
-
 1724.1.1 = {
 	
 	owner = GBR

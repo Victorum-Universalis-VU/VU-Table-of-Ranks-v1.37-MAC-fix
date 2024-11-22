@@ -2,6 +2,7 @@
 
 owner = QAR
 controller = QAR
+add_core = QAR
 culture = al_iraqiya_arabic
 religion = sunni
 capital = "Wasit"
@@ -11,40 +12,19 @@ base_tax = 6
 base_production = 6
 base_manpower = 4
 is_city = yes
-add_core = BSR
-add_core = QAR
-add_core = MSY
 center_of_trade = 2
 
+#Claimants
+add_core = JAL
+add_core = MSY
+
+#Special Modifiers
 add_permanent_province_modifier = {
     name = navalbase_modifier_2
     duration = -1
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#Histories by SF
 1440.1.1 = {
 	revolt = {
 		type = noble_rebels
@@ -72,15 +52,12 @@ add_permanent_province_modifier = {
 	remove_core = PER
 } # Surrendered to the Ottomans
 1560.1.1 = { #Revolt against Ottoman Governor of Basra
-	owner = BSR
 	controller = TUR
 }
 1568.1.1 = { #Campaign against Marsh Arabs over.
 	owner = TUR
 }
 1596.1.1 = {
-	owner = BSR
-	controller = BSR
 	remove_core = TUR
 }
 #Independent 1624 - 1668

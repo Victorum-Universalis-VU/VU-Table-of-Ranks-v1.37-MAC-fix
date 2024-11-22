@@ -6,14 +6,12 @@ add_core = MNA
 culture = filipino
 religion = animism
 capital = "Antipolo"
-trade_goods = rice
+trade_goods = fruit
 hre = no
 base_tax = 10
 base_production = 10
 base_manpower = 10
 is_city = yes
-
-
 
 add_permanent_province_modifier = {
 	name = laguna_lagoon_modifier

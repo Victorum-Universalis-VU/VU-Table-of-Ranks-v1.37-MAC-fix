@@ -14,13 +14,8 @@ base_manpower = 2
 capital = "Åhus"			#Gladsax in vanilla. Could also be Vä
 is_city = yes
 
-
-
-
-
-
-
-
+#Claims
+add_core = SKN
 
 1525.1.1 = { revolt = { type = revolutionary_rebels size = 1 } controller = REB } # Prelude to 'Grevefejden'(Sören Norrby)
 1525.5.10 = { revolt = {} controller = DAN } # Sören Norrby is defeated

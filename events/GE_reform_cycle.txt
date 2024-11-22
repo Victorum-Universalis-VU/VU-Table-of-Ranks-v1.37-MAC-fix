@@ -257,11 +257,11 @@ country_event = {
 		name = diplomatic_positions.6.a
 		
 		if = {
-			limit = { government_rank = 3 }
+			limit = { government_rank = 9 }
 			add_prestige = -20
 		}
 		else_if = {
-			limit = { government_rank = 2 }
+			limit = { government_rank = 8 }
 			add_prestige = -15
 		}
 		else = {
@@ -3570,7 +3570,10 @@ country_event = {
 	picture = CORRUPTION_eventPicture
 	
 	trigger = {
-		has_reform = monastic_order_reform
+		OR = {
+			has_reform = monastic_order_reform
+			has_reform = asian_monastic_order_reform
+		}
 	}
 
 	is_triggered_only = yes #Pulse
@@ -3602,7 +3605,10 @@ country_event = {
 	picture = STREET_SPEECH_eventPicture
 	
 	trigger = {
-		has_reform = monastic_order_reform
+		OR = {
+			has_reform = monastic_order_reform
+			has_reform = asian_monastic_order_reform
+		}
 	}
 
 	is_triggered_only = yes #Pulse
@@ -3625,7 +3631,10 @@ country_event = {
 	picture = SPY_eventPicture
 	
 	trigger = {
-		has_reform = monastic_order_reform
+		OR = {
+			has_reform = monastic_order_reform
+			has_reform = asian_monastic_order_reform
+		}
 	}
 
 	is_triggered_only = yes #Pulse
@@ -3671,7 +3680,10 @@ country_event = {
 	picture = WOUNDED_SOLDIERS_eventPicture
 	
 	trigger = {
-		has_reform = monastic_order_reform
+		OR = {
+			has_reform = monastic_order_reform
+			has_reform = asian_monastic_order_reform
+		}
 	}
 
 	is_triggered_only = yes #Pulse
@@ -3711,7 +3723,10 @@ country_event = {
 	picture = FORT_eventPicture
 	
 	trigger = {
-		has_reform = monastic_order_reform
+		OR = {
+			has_reform = monastic_order_reform
+			has_reform = asian_monastic_order_reform
+		}
 		NOT = { has_country_modifier = Militarized_Order } 
 	}
 

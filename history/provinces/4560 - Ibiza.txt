@@ -17,7 +17,6 @@ capital = "Eivissa"			#Problem, FR wiki says town not founded until 16th century
 is_city = yes
 
 #Claimants
-add_core = MJO
 
 #Buildings
 
@@ -25,21 +24,16 @@ add_core = MJO
 
 #Known by Technology groups
 
-
-
 #Histories
 1215.6.15 = { owner = AMD controller = AMD add_core = AMD } # Alhomad territorial lands - By San Felipe
-
-1444.11.11 = { owner = ARA controller = ARA add_core = ARA } # Aragonese territorial lands - By San Felipe
-
-
+1444.11.11 = { owner = MJO controller = MJO add_core = MJO } # Aragonese territorial lands - By San Felipe
 1462.1.1 = { unrest = 2 } # Remença peasant revolt, in parallel with the Catalan civil war.
 1472.1.1 = { unrest = 0 } # End of the First Remença revolt
 1516.1.23 = {
 	controller = SPA
 	owner = SPA
 	add_core = SPA
-} # King Fernando dies, Carlos inherits Aragon and becomes co-regent of Castille
+} # King Fernando dies, Carlos inherits Aragon and becomes co-regent of Castile
 1521.3.16 = { revolt = { type = revolutionary_rebels size = 0 } controller = REB } # The Germanies movement reaches the archipelago, the viceroy is deposed by the revolters
 1523.3.8 = { revolt = {} controller = SPA } # The royal army retakes the city of Palma
 1705.10.9 = { controller = HAB } # Balearic isles side with the Austrian cause

@@ -1,3 +1,4 @@
+#Updated to v1.37 - SF
 country_decisions = {
 
 	tatar_nation = {
@@ -21,14 +22,11 @@ country_decisions = {
 			NOT = { tag = TUR }
 			NOT = { tag = BYZ }
 			NOT = { exists = GLH }
+			culture_group = tartar
 			OR = {
-				culture_group = tartar
-				AND = {
-					has_country_flag = kha_can_form_golden_horde_with_altaic_culture
-					culture_group = altaic
-				}
+				has_reform = steppe_horde
+				has_reform = scythian_horde_reform
 			}
-			has_reform = steppe_horde
 			is_colonial_nation = no
 			OR = {
 				is_former_colonial_nation = no
@@ -80,16 +78,16 @@ country_decisions = {
 		allow = {
 			NOT = { exists = GLH }
 			has_reform = steppe_horde
-			owns_core_province = 284 #Crimea
-			owns_core_province = 302 #Tambov
-			owns_core_province = 464 #Astrakhan
-			owns_core_province = 465 #Nogai
-			owns_core_province = 466 #Sarai
-			owns_core_province = 476 #Kypchak
-			owns_core_province = 1075 #Chimgi-Tura
-			owns_core_province = 1082 #Kazan
-			owns_core_province = 1778 #Qasim
-			owns_core_province = 2411 #Mansur
+			owns_or_non_sovereign_subject_of = 284 #Crimea
+			owns_or_non_sovereign_subject_of = 302 #Tambov
+			owns_or_non_sovereign_subject_of = 464 #Astrakhan
+			owns_or_non_sovereign_subject_of = 465 #Nogai
+			owns_or_non_sovereign_subject_of = 466 #Sarai
+			owns_or_non_sovereign_subject_of = 476 #Kypchak
+			owns_or_non_sovereign_subject_of = 1075 #Chimgi-Tura
+			owns_or_non_sovereign_subject_of = 1082 #Kazan
+			owns_or_non_sovereign_subject_of = 1778 #Qasim
+			owns_or_non_sovereign_subject_of = 2411 #Mansur
 			294 = { #Tver
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -114,12 +112,27 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = GLH
+			if = {
+				limit = {
+					OR = {
+						AND = {
+							has_dlc = "Winds of Change"
+							NOT = {
+								was_tatar_nation = yes
+								was_mongol_nation = yes
+								was_moghulistan_nation = yes
+							}
+						}
+						NOT = { has_dlc = "Winds of Change" }
+					}
+				}
+				swap_non_generic_missions = yes
+			}
 			on_change_tag_effect = yes
-			swap_non_generic_missions = yes
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
-				limit = { NOT = { government_rank = 3 } }
-				set_government_rank = 3
+				limit = { NOT = { government_rank = 9 } }
+				set_government_rank = 9
 			}
 			if = {
 				limit = {
@@ -165,7 +178,7 @@ country_decisions = {
 				name = "centralization_modifier"
 				duration = 7300
 			}
-			add_prestige_or_monarch_power = { amount = 25 }
+			add_prestige = 25
 		}
 		ai_will_do = {
 			factor = 1

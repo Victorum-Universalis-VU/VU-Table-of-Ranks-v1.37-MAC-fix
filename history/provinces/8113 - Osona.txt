@@ -3,7 +3,6 @@
 owner = ARA
 controller = ARA
 add_core = ARA
-add_core = CTT
 culture = catalan
 religion = catholic
 capital = "Vic"
@@ -14,8 +13,5 @@ trade_goods = livestock			#Warby suggested livestock based on sausage production
 is_city = yes
 hre = no
 
-
-
-
-
-
+#Histories
+1444.11.11 = { owner = CAT controller = CAT add_core = CAT } # Portuguese territorial lands - By San Felipe

@@ -852,7 +852,7 @@ vijayanagara_mission_4 = {
 				country_event = { id = flavor_vij.21 }
 			}
 			else = {
-				set_government_rank = 3
+				set_government_rank = 9
 				capital_scope = {
 					add_province_modifier = {
 						name = "city_of_victory_modifier"

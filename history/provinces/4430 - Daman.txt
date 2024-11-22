@@ -2,6 +2,7 @@
 
 owner = GUJ
 controller = GUJ
+add_core = GUJ
 culture = marathi
 religion = hinduism
 capital = "Daman"
@@ -12,24 +13,11 @@ base_production = 8
 base_manpower = 8
 is_city = yes
 add_jains_or_burghers_effect = yes
-add_core = GUJ
 
+#Claimants
+add_core = MAR
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#Histories by SF
 1531.12.23 = {
 	owner = POR
 	controller = POR

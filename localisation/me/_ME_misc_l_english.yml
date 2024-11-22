@@ -1,7 +1,7 @@
 ﻿#Used for anything that was forgotten, non-country-related locs, etc. Use sparingly.
 
 l_english:
- # Tooltips:
+ #Tooltips:
  HAS_NOT_USED_ALL_12_BUILDING_SLOTS: "Has at least §Y1§! unused building slot"
  THIS_CAPITAL_IS_IN_EUROPE: "Has its capital on the continent §YEurope§!"
  COUNTRY_IS_PRODUCTION_LEADER_OF_ANY_TRADE_GOOD: "§Y[This.GetName]§! is production leader of any trade good"
@@ -12,25 +12,22 @@ l_english:
  CHANNEL_music_zzz_EE_music: "Europa Expanded Music"
  thevoyage: "The Voyage - EUIV Main Theme"
  
- ME_historian: "Historian"
- ME_historian_desc: "Historian"
- 
- # loc for decision to update missions
+ #loc for decision to update missions
  the_fix_title: "§YUpdate Missions§!"
- the_fix_desc: "Click to reset your mission tree and to choose again between ME or VU/PDX missions. You can only click this once."
- the_fix_only_once: "You caan only click this once"
+ the_fix_desc: "Click to reset your mission tree and to choose again between ME or VU/PDX missions. You can only click this twice."
+ the_fix_only_twice: "You can only click this twice"
  me_rename_title: "Restore Original Name"
  me_rename_desc: "If you wish to restore the original name of the country you are playing, click this button."
+
+ the_fix2_title: "§YUpdate Missions§!"
+ the_fix2_desc: "Click to reset your mission tree and to choose again between ME or VU/PDX missions. You can only click this once."
+ the_fix_only_once: "You can only click this once"
 
  # ME custom loc:
  string_me_get_country_flag: "@[This.GetTag]"
  ME_yes: "£yes£"
  ME_no: "£no£"
  ME_nothing: ""
- sufi_scholar_advisor: "Sufi Scholar"
- sufi_scholar_advisor_desc: "Sufi Scholar"
- ME_mercenary_commander: "Mercenary Commander"
- ME_mercenary_commander_desc: "Mercenary Commander"
 
  ME_cb_20: "This §YCasus Belli§! lasts for §G20§! years."
  ME_cb_15: "This §YCasus Belli§! lasts for §G15§! years."
@@ -87,21 +84,17 @@ l_english:
  ME_Muslim_Events.1.a: "Support the Ulema, denounce those practices."
  ME_Muslim_Events.1.b: "Benign Neglect."
  
- ME_talented_qadi: "Talented Qadi"
- ME_good_sufi_modifier: "Sufi Sheik-ul-Islam"
- ME_ok_sufi_modifier: "Sufi Sheik-ul-Islam"
- ME_bad_sufi_modifier: "Sufi Sheik-ul-Islam"
  ME_ruler_favoring_sufis: "Favoring Sufis"
  
- ME_muslim_school_events.4.a: "More would flock to my banner naturally."
- ME_muslim_school_events.7.a: "Let them join our court!"
- ME_muslim_school_events.13.a: "Protests? Send in the military!"
- ME_muslim_school_events.13.b: "Let us negotiate."
- ME_muslim_school_events.14.a: "This seems more like an investment."
- ME_muslim_school_events.14.b: "I couldn't care less. Tax them all, including the poor!"
- ME_muslim_school_events.15.a: "Force the city dwellers to pay for it!"
- ME_muslim_school_events.19.a: "Crack down on the corruption!"
- ME_muslim_school_events.19.b: "Little do they know, my agents are on their way."
+ ME_muslim_school_events.5.b: "More would flock to my banner naturally."
+ ME_muslim_school_events.7.c: "Let them join our court!"
+ ME_muslim_school_events.13.c: "Protests? Send in the military!"
+ ME_muslim_school_events.13.d: "Let us negotiate."
+ ME_muslim_school_events.14.c: "This seems more like an investment."
+ ME_muslim_school_events.14.d: "I couldn't care less. Tax them all, including the poor!"
+ ME_muslim_school_events.15.c: "Force the city dwellers to pay for it!"
+ ME_muslim_school_events.19.c: "Crack down on the corruption!"
+ ME_muslim_school_events.19.d: "Little do they know, my agents are on their way."
  
  ME_distribute_development_muslim_schools_5: "Distribute §G5§! Base Production among our provinces."
  ME_distribute_development_muslim_schools_4: "Distribute §G4§! Base Production among our provinces."
@@ -111,8 +104,8 @@ l_english:
  EST_turned_a_blind_eye: "Turned a Blind Way"
  ME_EST_crackdown: "Crackdown on Corruption"
  
- ME_every_muslim_country: "Every country of §YMuslim§! Religious Group:"
- ME_promote_dhimmi_privilege: "Every country of §YMuslim§! Religious Group will see the '§YPromote Dhimmi Nobles§!' privilege §YLoyalty Equilibrium§! §RPenalty§! double."
+ #ME_every_muslim_country: "Every country of §YMuslim§! Religious Group:"
+ #ME_promote_dhimmi_privilege: "Every country of §YMuslim§! Religious Group will see the '§YPromote Dhimmi Nobles§!' privilege §YLoyalty Equilibrium§! §RPenalty§! double."
  me_piety_pious_personality: "Pious"
  ME_gain_less_corruption_if_we_have_2_stability_or_ruler_has_incorruptible_trait: "If we have at least §Y2§! Stability, we will gain §G-2.00§! Corruption instead."
  ME_gain_less_corruption_if_we_have_2_stability_or_ruler_has_incorruptible_trait_2: "If we have at least §G2§! Stability, we will gain §G-4.00§! Corruption instead."
@@ -145,10 +138,9 @@ l_english:
  
  ME_HAS_RAZED_AT_LEAST_TT_PROVINCES: "[Root.num_of_provinces_razed_var.GetValue]"
  ME_HAS_WON_AT_LEAST_TT_BATTLES: "[Root.num_of_battles_won_var.GetValue]"
- ME_HAS_DEVELOPED_AT_LEAST_TT_PROVINCES: "[Root.num_of_times_developed.GetValue]"
  ME_DEVELOPED_TAX_AT_LEAST_TT_PROVINCES: "[Root.num_of_adm_clicks.GetValue]"
  ME_HAS_CONVERTED_AT_LEAST_TT_PROVINCES: "[Root.num_of_times_converted.GetValue]"
- me_tim_defeated_tt_european_nations: "[Root.me_tim_europe_victory.GetValue]"
- ME_tim_conquered_tt_provinces: "[Root.METimConquestHorde.GetValue]"
- ME_tim_razed_tt_arabian_provinces: "[Root.METimArabianProvincesRazed.GetValue]"
+ #me_tim_defeated_tt_european_nations: "[Root.me_tim_europe_victory.GetValue]"
+ #ME_tim_conquered_tt_provinces: "[Root.METimConquestHorde.GetValue]"
+ #ME_tim_razed_tt_arabian_provinces: "[Root.METimArabianProvincesRazed.GetValue]"
  ME_has_developed_at_least_TT_provinces: "[Root.num_of_times_developed.GetValue]"

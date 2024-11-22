@@ -12,6 +12,9 @@ base_tax = 2
 base_production = 2 
 base_manpower = 2 
 is_city = yes
+
+#Claimants
+add_core = AC8
 add_core = TIM
 
 extra_cost = 8

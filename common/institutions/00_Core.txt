@@ -164,8 +164,11 @@ feudalism = {
 			AND = {
 				is_year = 1600
 				owner = {
-					NOT = { has_reform = siberian_tribe }
-					NOT = { has_reform = steppe_horde }
+					NOT = { 
+						has_reform = siberian_tribe
+						has_reform = steppe_horde
+						has_reform = scythian_horde_reform	
+					}
 				}
 			}
 			is_year = 1700
@@ -1053,7 +1056,10 @@ gunpowder_warfare = {
 						development = 12
 						NOT = { has_empty_adjacent_province = yes }
 						owner = {
-							has_reform = steppe_horde
+							OR = {
+								has_reform = steppe_horde
+								has_reform = scythian_horde_reform
+							}
 						}
 					}
 				}
@@ -1141,7 +1147,10 @@ gunpowder_warfare = {
 						region = crimea_region
 						has_terrain = steppe
 						owner = {
-							has_reform = steppe_horde
+							OR = {
+								has_reform = steppe_horde
+								has_reform = scythian_horde_reform
+							}
 						}
 					}
 					province_id = 358
@@ -1523,7 +1532,10 @@ gunpowder_warfare = {
 			potential = {
 				owner = {
 					has_institution = gunpowder_warfare
-					has_reform = steppe_horde
+					OR = {
+						has_reform = steppe_horde
+						has_reform = scythian_horde_reform
+					}
 				}
 			}
 			custom_trigger_tooltip = {
@@ -1531,7 +1543,10 @@ gunpowder_warfare = {
 				
 				owner = {
 					has_institution = gunpowder_warfare
-					has_reform = steppe_horde
+					OR = {
+						has_reform = steppe_horde
+						has_reform = scythian_horde_reform
+					}
 				}
 			}
 		}
@@ -2359,12 +2374,14 @@ civil_service = {
 					has_institution = feudalism
 					OR = {
 						has_reform = austrian_dual_monarchy
+						has_reform = austrian_duchy_reform
 						has_reform = austrian_archduchy_reform
 						has_reform = appanage_reform
 						has_reform = lowland_clan_reform
 						has_reform = highland_clan_reform
 						has_reform = byzantine_autocracy_reform
 						has_reform = macedonian_monarchy_reform
+						has_reform = ptolemaic_monarchy_reform
 						#has_reform = byzantine_transitional_gov_reform
 						has_reform = margraviate_reform
 						has_reform = roman_empire_reform
@@ -2374,17 +2391,25 @@ civil_service = {
 						has_reform = sisterhood_of_jeanne_darc_reform
 						has_reform = norman_lordship_reform
 						has_reform = norman_duchy_reform
-						has_reform = english_lordship_reform
-						has_reform = english_duchy_reform
+						has_reform = eue_lordship_reform
+						has_reform = eue_barony_reform
+						has_reform = eue_viscounty_reform
+						has_reform = eue_county_reform
+						has_reform = eng_earldom_reform
+						has_reform = eue_marquisate_reform
+						has_reform = eue_duchy_reform
+						has_reform = eue_principality_reform
+						has_reform = eue_kingdom_reform
 						has_reform = kingdom_of_portugal_and_azures
 						has_reform = portuguese_empire_reform
 						has_reform = crown_of_aragon
-						has_reform = kingdom_of_castille_and_leon
-						has_reform = crown_of_castille
+						has_reform = kingdom_of_castile_and_leon
+						has_reform = crown_of_castile
 						has_reform = hispanic_kingdom
-						has_reform = austrian_empire_reform
+						has_reform = austrian_absolute_monarchy
 						has_reform = hessian_militarized_monarchy_reform
 						has_reform = monastic_order_reform
+						has_reform = asian_monastic_order_reform
 						has_reform = crusading_kingdom_reform
 					}
 				}
@@ -2402,6 +2427,12 @@ civil_service = {
 						owner = {
 							OR = {
 								has_reform = daimyo
+								has_reform = daimyo_barony_reform
+								has_reform = daimyo_viscounty_reform
+								has_reform = daimyo_county_reform
+								has_reform = daimyo_marquisate_reform
+								has_reform = daimyo_duchy_reform
+								has_reform = daimyo_principality_reform
 								has_reform = indep_daimyo
 								has_reform = shogunate
 							}
@@ -3096,6 +3127,9 @@ market_production = {
 				}
 				OR = {
 					province_has_center_of_trade_of_level = 2
+					owner = {
+						tag = TIM
+					}
 					development = 30
 				}
 			}
@@ -6913,7 +6947,7 @@ global_trade = {
 					province_id = 174	#Bordeaux
 					province_id = 172	#Nantes
 					province_id = 167	#Rouen
-					province_id = 217	#Madrid
+					province_id = 8505	#San Lorenzo
 					province_id = 224	#Sevilla
 					province_id = 121	#Naples
 					province_id = 220	#Valencia
@@ -8808,7 +8842,7 @@ manufactories = {
 		            trade_goods = potato
 		            trade_goods = maize
 		            trade_goods = tomato
-		            trade_goods = champagne
+		            trade_goods = champagne_bottle
 		            trade_goods = llama
 		            trade_goods = millet
 				}
@@ -9002,7 +9036,7 @@ manufactories = {
 		            trade_goods = potato
 		            trade_goods = maize
 		            trade_goods = tomato
-		            trade_goods = champagne
+		            trade_goods = champagne_bottle
 		            trade_goods = llama
 		            trade_goods = millet
 				}
@@ -11558,7 +11592,7 @@ industrialization = { #Unmodified, pending Darth Modus rebalance.
 		            trade_goods = potato
 		            trade_goods = maize
 		            trade_goods = tomato
-		            trade_goods = champagne
+		            trade_goods = champagne_bottle
 		            trade_goods = llama
 		            trade_goods = millet
 				}
@@ -11753,7 +11787,7 @@ industrialization = { #Unmodified, pending Darth Modus rebalance.
 		            trade_goods = potato
 		            trade_goods = maize
 		            trade_goods = tomato
-		            trade_goods = champagne
+		            trade_goods = champagne_bottle
 		            trade_goods = llama
 		            trade_goods = millet
 				}
@@ -12212,9 +12246,9 @@ imperialism = {
 			factor = 0.05
 			scale = yes
 			custom_trigger_tooltip = {
-				tooltip = tooltip_governement_rank_3
+				tooltip = tooltip_governement_rank_7
 				owner = {
-					government_rank = 3
+					government_rank = 9
 				}
 			}
 		}

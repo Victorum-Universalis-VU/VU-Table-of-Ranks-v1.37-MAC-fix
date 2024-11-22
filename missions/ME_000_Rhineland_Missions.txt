@@ -114,6 +114,7 @@ generic_rhenish_missions_2 = {
 				area = palatinate_area
 				area = north_rhine_area
 				area = hesse_area
+				area = frankfurt_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
@@ -124,6 +125,7 @@ generic_rhenish_missions_2 = {
 					area = palatinate_area
 					area = north_rhine_area
 					area = hesse_area
+					area = frankfurt_area
 				}
 				value = 12
 			}
@@ -386,7 +388,7 @@ generic_rhenish_missions_4 = {
 				4730 = {
 					ROOT = {
 						define_advisor = {
-							type = muscovy_architect
+							type = civil_engineer
 							name = "Alessandro Pasqualini"
 							skill = 1
 							culture = romagnan
@@ -403,7 +405,7 @@ generic_rhenish_missions_4 = {
 					4730 = {
 						ROOT = {
 							define_advisor = {
-								type = muscovy_architect
+								type = civil_engineer
 								name = "Alessandro Pasqualini"
 								skill = 1
 								culture = romagnan

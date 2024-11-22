@@ -1,10 +1,10 @@
 government = tribal
 add_government_reform = siberian_tribe
+government_rank = 6 #Chiefdom
 technology_group = nomad_group
 primary_culture = evenk
 religion = tengri_pagan_reformed
 capital = 2102
-government_rank = 1
 
 1444.11.11 = {
 	monarch = {

@@ -1,3 +1,4 @@
+#Updated to v1.37 - SF
 country_decisions = {
 
 	usa_nation = {
@@ -83,8 +84,8 @@ country_decisions = {
 				}
 			}
 			change_tag = USA
-			on_change_tag_effect = yes
 			swap_non_generic_missions = yes
+			on_change_tag_effect = yes
 			if = {
 				limit = {
 					NOT = { is_former_colonial_nation = yes }
@@ -94,9 +95,9 @@ country_decisions = {
 			}
 			if = {
 				limit = {
-					NOT = { government_rank = 2 }
+					NOT = { government_rank = 8 }
 				}
-				set_government_rank = 2
+				set_government_rank = 8
 			}
 			if = {
 				limit = {
@@ -126,15 +127,12 @@ country_decisions = {
 			#can't have more than one elective monarchy in the game
 			if = {
 				limit = {
-					OR = {
-						has_reform = elective_monarchy
-						has_reform = phoenician_elective_monarchical_republic
-					}
+					has_reform = elective_monarchy
 				}
 				change_government = monarchy
 				add_government_reform = feudalism_reform
 			}
-			add_prestige_or_monarch_power = { amount = 25 }
+			add_prestige = 25
 			set_country_flag = usa_formed
 			set_country_flag = changed_from_colonial_nation
 			country_event = { id = ME_USA_Events.1 }

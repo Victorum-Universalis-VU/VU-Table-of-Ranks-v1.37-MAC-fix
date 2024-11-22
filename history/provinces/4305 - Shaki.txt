@@ -2,6 +2,7 @@
 
 owner = SHE
 controller = SHE
+add_core = SHE
 culture = azerbaijani
 religion = shiite
 capital = "Sheki"
@@ -11,20 +12,15 @@ base_tax = 6
 base_production = 6
 base_manpower = 4
 is_city = yes
-add_core = SHE
+
 center_of_trade = 2
+extra_cost = 8
 
+#Claimants
 
-
-
-
-
-
-
-
-
-
-1551.1.1 = {	owner = PER
+#Histories by SF
+1551.1.1 = {	
+	owner = PER
 	controller = PER
 	add_core = PER
 } # Kingdom of Kartli under full Persian control

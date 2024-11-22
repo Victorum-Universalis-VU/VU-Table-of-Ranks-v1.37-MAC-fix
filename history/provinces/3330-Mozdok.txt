@@ -3,7 +3,6 @@
 owner = GOL
 controller = GOL
 add_core = GOL
-add_core = AST
 culture = astrakhani
 religion = sunni
 capital = "Gerben"	#Uncertain
@@ -14,30 +13,9 @@ base_production = 1
 base_manpower = 3 
 is_city = yes
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#Claimants
+add_core = AST
+add_core = DAG
 
 1444.1.1 = { add_local_autonomy = 60 } #Semi-independent tribes
 1555.1.1 = { 

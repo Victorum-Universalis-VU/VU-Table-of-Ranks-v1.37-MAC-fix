@@ -2,6 +2,7 @@
 
 owner = BGA
 controller = BGA
+add_core = BGA
 culture = marathi
 religion = hinduism
 capital = "Mayuragiri"
@@ -11,23 +12,11 @@ base_tax = 8
 base_production = 8
 base_manpower = 8
 is_city = yes
-add_core = BGA
 
+#Claimants
+add_core = MAR
 
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
+#Histories by SF
 1573.6.1 = {
 	owner = MUG
 	controller = MUG

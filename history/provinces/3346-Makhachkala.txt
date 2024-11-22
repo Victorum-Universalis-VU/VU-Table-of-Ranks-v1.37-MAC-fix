@@ -12,6 +12,9 @@ base_tax = 2
 base_production = 4
 base_manpower = 4 
 is_city = yes
+
+#Claimants
+add_core = DAG
 add_core = TRR
 
 1444.1.1 = { add_local_autonomy = 60 } #Semi-independent tribes

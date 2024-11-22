@@ -1870,6 +1870,7 @@
  rename_to_iran_non_rev_desc:0 "Iran has always been the name of our state to our people. Yet, many uneducated outsiders still cling to the Greek name of our glorious nation: "Persia". We should enforce the use of our true name on the world maps."
  ###MISC FLAVOR###
  SHAHBANU:0 "Shahbanu"
+ SHAHBANU_fem:0 "Shahbanu"
  ###SCRIPTED EFFECTS###
  remove_sick_heir_events_tt:0 "The health of our §YHeirs§! are now of official scientific concern, making the event '§YHeir falls ill§!' no longer possible to fire."
  remove_hunting_accident_events_tt:0 "Our heirs are now trained in the art of the hunt, making the event '§YHunting Accident§!' no longer possible to fire."

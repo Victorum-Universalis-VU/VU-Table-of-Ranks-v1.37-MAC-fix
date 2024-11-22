@@ -2,6 +2,7 @@
 
 owner = LRI
 controller = LRI
+add_core = LRI
 culture = luri
 religion = shiite
 capital = "Khorramabad"
@@ -11,22 +12,17 @@ base_tax = 6
 base_production = 6
 base_manpower = 4
 is_city = yes
-add_core = MSY
-add_core = TIM
-add_core = LRI
 
-
-
-
-
-
-
-
-
-
-
+#Buildings
 fort_15th = yes #Falak-ol-Aflak
 
+#Claimants
+add_core = M3D
+add_core = MSY
+add_core = R4S
+add_core = TIM
+
+#Histories by SF
 1446.1.1 = {
 	owner = MSY
 	controller = MSY

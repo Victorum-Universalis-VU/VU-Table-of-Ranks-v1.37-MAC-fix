@@ -1,6 +1,6 @@
 government = monarchy
-add_government_reform = feudalism_reform
-government_rank = 1
+add_government_reform = eue_county_reform
+government_rank = 4 #County
 primary_culture = franconian
 religion = catholic
 #technology_group = western
@@ -8,11 +8,13 @@ technology_group = german_tech_group
 unit_type = western
 capital = 7555 #Lowenstein
 
-1431.1.1 = {
+1410.1.1 = {
 	monarch = {
-		name = "Anton von Rotenhan"
-		birth_date = 1390.1.1
-		adm = 3
+		name = "Eberard II" 
+		dynasty = "von Wertheim"
+		birth_date = 1410.1.1
+		death_date = 1447.1.1
+		adm = 2
 		dip = 3
 		mil = 2
 	}

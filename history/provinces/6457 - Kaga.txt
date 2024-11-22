@@ -2,7 +2,7 @@
 
 owner = TGS
 controller = TGS
-culture = togoku
+culture = hokuriku 
 religion = shinto
 capital = "Kuradagake"
 trade_goods = naval_supplies

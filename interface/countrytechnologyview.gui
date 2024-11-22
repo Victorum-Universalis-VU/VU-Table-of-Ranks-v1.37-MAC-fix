@@ -13,8 +13,7 @@ guiTypes = {
 		Orientation = "UPPER_LEFT"
 		upsound = tab_technology
 		
-		iconType =
-		{
+		iconType = {
 			name ="countrytechnologyview_bg"
 			spriteType = "GFX_technology_view_bg"
 			position = { x= -12 y = -10 }
@@ -56,8 +55,7 @@ guiTypes = {
 		}
 		
 
-		guiButtonType =
-		{
+		guiButtonType = {
 			name ="show_institutions"
 			spriteType = "GFX_institutions_large_icon"
 			position = { x= 14 y = 104 }
@@ -66,8 +64,7 @@ guiTypes = {
 			shortcut = "n"
 		}
 
-		iconType =
-		{
+		iconType = {
 			name = "innovativeness_icon"
 			spriteType = "GFX_innovativeness_icon"
 			position = { x= 495 y = 115 }
@@ -166,8 +163,7 @@ guiTypes = {
 				text = "Embracement Cost: -20%"
 			}
 			
-			guiButtonType =
-			{
+			guiButtonType = {
 				name ="embrace_button"
 				quadTextureSprite= "GFX_standard_button_105"
 				position = { x = 378 y = 308 }
@@ -247,8 +243,7 @@ guiTypes = {
 				fixedsize = yes
 			}
 			
-			guiButtonType =
-			{
+			guiButtonType = {
 				name ="goto_origin"
 				quadTextureSprite= "GFX_standard_button_105"
 				position = { x = 400 y = 185 }
@@ -275,8 +270,7 @@ guiTypes = {
 				text = "4322 ¤"
 			}
 			
-			guiButtonType =
-			{
+			guiButtonType = {
 				name ="back_button"
 				quadTextureSprite= "GFX_standard_button_105"
 				position = { x = 214 y = 370 }
@@ -308,8 +302,7 @@ guiTypes = {
 			format = left
 		}	
 		
-		iconType =
-		{
+		iconType = {
 			name ="current_techlevel_bg"
 			spriteType = "GFX_prov_modifier_bg"
 			position = { x = 55 y = 27 }
@@ -328,8 +321,7 @@ guiTypes = {
 			format = centre
 		}
 		
-		guiButtonType =
-		{
+		guiButtonType = {
 			name ="tech_research"
 			quadTextureSprite= "GFX_technology_view_research"
 			position = { x= 25 y = 53 }
@@ -337,8 +329,7 @@ guiTypes = {
 			buttonFont = "vic_18"	
 		}
 
-		iconType =
-		{
+		iconType = {
 			name ="tech_icon"
 			spriteType = "GFX_icon_powers_administrative_tech"
 			position = { x= 28 y = 29 }
@@ -371,8 +362,7 @@ guiTypes = {
 		
 		
 		
-		iconType =
-		{
+		iconType = {
 			name ="power_progress"
 			spriteType = "GFX_technologyView_progressbar"
 			position = { x= 41 y = 146 }
@@ -380,16 +370,14 @@ guiTypes = {
 			hint_tag = "hint_adm"
 		}
 
-		iconType =
-		{
+		iconType = {
 			name ="power_progress_frame"
 			spriteType = "GFX_technologyView_progress_frame_long"
 			position = { x= 33 y = 142 }
 			Orientation = "UPPER_LEFT"
 		}
 		
-		OverlappingElementsBoxType =
-		{
+		OverlappingElementsBoxType = {
 			name = "required_institutions_box"
 			position = { x = 290 y = 35 }
 			size = { x = 140 y = 26 }
@@ -398,8 +386,7 @@ guiTypes = {
 			spacing = -15
 		}
 		
-		iconType =
-		{
+		iconType = {
 			name ="time_icon"
 			spriteType = "GFX_icon_time"
 			position = { x = 402 y = 28 }
@@ -423,8 +410,7 @@ guiTypes = {
 		
 		
 		
-		iconType =
-		{
+		iconType = {
 			name ="tech_gov_monarchy_unlock"
 			spriteType = "GFX_technology_view_unitnextunlock_big"
 			position = { x= 203 y = 56 }
@@ -433,8 +419,7 @@ guiTypes = {
 			
 		}
 		
-		iconType =
-		{
+		iconType = {
 			name ="tech_gov_monarchy"
 			spriteType = "GFX_government_type_icon"
 			position = { x= 207 y = 61 }
@@ -455,8 +440,7 @@ guiTypes = {
 		}
 		
 
-		iconType =
-		{
+		iconType = {
 			name ="tech_gov_republic_unlock"
 			spriteType = "GFX_technology_view_unitnextunlock_big"
 			position = { x= 203 y = 87 }
@@ -465,8 +449,7 @@ guiTypes = {
 		
 		}
 		
-		iconType =
-		{
+		iconType = {
 			name ="tech_gov_republic"
 			spriteType = "GFX_government_type_icon"
 			position = { x= 206 y = 92 }
@@ -487,8 +470,7 @@ guiTypes = {
 		}
 		
 
-		iconType =
-		{
+		iconType = {
 			name ="tech_gov_tribal_unlock"
 			spriteType = "GFX_technology_view_unitnextunlock_big"
 			position = { x= 203 y = 118 }
@@ -497,8 +479,7 @@ guiTypes = {
 
 		}
 		
-		iconType =
-		{
+		iconType = {
 			name ="tech_gov_tribal"
 			spriteType = "GFX_government_type_icon"
 			position = { x= 207 y = 125 }
@@ -518,8 +499,7 @@ guiTypes = {
 			format = left
 		}	
 		
-		iconType =
-		{
+		iconType = {
 			name ="tech_allowed_idea_groups"
 			spriteType = "GFX_icon_number_of_allowed_idea_groups"
 			position = { x= 478 y = 67 }
@@ -540,8 +520,7 @@ guiTypes = {
 			
 		}
 
-		iconType =
-		{
+		iconType = {
 			name ="tech_production_efficiency"
 			spriteType = "GFX_icon_production_efficiency"
 			position = { x= 480 y = 97 }
@@ -560,8 +539,7 @@ guiTypes = {
 			format = right
 		}	
 		
-		iconType =
-		{
+		iconType = {
 			name ="tech_administrative_efficiency"
 			spriteType = "GFX_icon_administrative_efficiency"
 			position = { x= 408 y = 65 }
@@ -582,8 +560,7 @@ guiTypes = {
 			format = right
 		}			
 
-		iconType =
-		{
+		iconType = {
 			name ="tech_development_cost_modifier"
 			spriteType = "GFX_development_icon"
 			position = { x= 408 y = 97 }
@@ -602,8 +579,7 @@ guiTypes = {
 			maxHeight = 32
 			format = right
 		}			
-		iconType =
-		{
+		iconType = {
 			name = "buildings"
 			spriteType = "GFX_technologyView_show_buildings"
 			position = { x= 408 y = 124 }
@@ -611,8 +587,7 @@ guiTypes = {
 			scale = 0.9
 		}	
 		
-		iconType =
-		{
+		iconType = {
 			name ="tech_enable"
 			spriteType = "GFX_unitpanel_forced_march"
 			position = { x= 440 y = 130 }			
@@ -620,8 +595,7 @@ guiTypes = {
 		}					
 		
 		
-		iconType =
-		{
+		iconType = {
 			name ="tech_governing_capacity"
 			spriteType = "GFX_icon_states"
 			position = { x= 478 y = 125 }
@@ -666,8 +640,7 @@ guiTypes = {
 			format = left
 		}
 		
-		iconType =
-		{
+		iconType = {
 			name ="current_techlevel_bg"
 			spriteType = "GFX_prov_modifier_bg"
 			position = { x = 55 y = 8 }
@@ -686,8 +659,7 @@ guiTypes = {
 			format = centre
 		}		
 		
-		guiButtonType =
-		{
+		guiButtonType = {
 			name ="tech_research"
 			quadTextureSprite= "GFX_technology_view_research"
 			position = { x= 25 y = 42 }
@@ -695,8 +667,7 @@ guiTypes = {
 			buttonFont = "vic_18"	
 		}
 
-		iconType =
-		{
+		iconType = {
 			name ="diplo_tech_icon"
 			spriteType = "GFX_icon_powers_diplomatic_tech"
 			position = { x= 28 y = 13 }
@@ -727,8 +698,7 @@ guiTypes = {
 			spacing = 0
 		}
 
-		iconType =
-		{
+		iconType = {
 			name ="power_progress"
 			spriteType = "GFX_technologyView_progressbar"
 			position = { x= 41 y = 138 }
@@ -736,16 +706,14 @@ guiTypes = {
 			hint_tag = "hint_dip"
 		}
 
-		iconType =
-		{
+		iconType = {
 			name ="power_progress_frame"
 			spriteType = "GFX_technologyView_progress_frame_long"
 			position = { x= 33 y = 134 }
 			Orientation = "UPPER_LEFT"
 		}
 
-		OverlappingElementsBoxType =
-		{
+		OverlappingElementsBoxType = {
 			name = "required_institutions_box"
 			position = { x = 290 y = 16 }
 			size = { x = 140 y = 26 }
@@ -754,8 +722,7 @@ guiTypes = {
 			spacing = -15
 		}
 		
-		iconType =
-		{
+		iconType = {
 			name ="time_icon"
 			spriteType = "GFX_icon_time"
 			position = { x = 402 y = 9 }
@@ -776,8 +743,7 @@ guiTypes = {
 		
 		### ------- Military Tech Units/Morale -------	
 		
-		iconType =
-		{
+		iconType = {
 			name ="tech_nav_heavy_ship_unlock"
 			spriteType = "GFX_technology_view_unitnextunlock"
 			position = { x= 203 y = 34 }
@@ -787,8 +753,7 @@ guiTypes = {
 
 		}
 		
-		iconType =
-		{
+		iconType = {
 			name ="tech_nav_heavy_ship"
 			spriteType = "GFX_unit_types_strip_mil_view"
 			position = { x= 206 y = 39 }
@@ -813,8 +778,7 @@ guiTypes = {
 		
 		
 		
-		iconType =
-		{
+		iconType = {
 			name ="tech_nav_light_ship_unlock"
 			spriteType = "GFX_technology_view_unitnextunlock"
 			position = { x= 203 y = 64 }
@@ -824,8 +788,7 @@ guiTypes = {
 			
 		}
 
-		iconType =
-		{
+		iconType = {
 			name ="tech_nav_light_ship"
 			spriteType = "GFX_unit_types_strip_mil_view"
 			position = { x= 205 y = 68 }
@@ -851,8 +814,7 @@ guiTypes = {
 		
 		
 		
-		iconType =
-		{
+		iconType = {
 			name ="tech_nav_galley_unlock"
 			spriteType = "GFX_technology_view_unitnextunlock"
 			position = { x= 203 y = 93 }
@@ -861,8 +823,7 @@ guiTypes = {
 			
 		}
 		
-		iconType =
-		{
+		iconType = {
 			name ="tech_nav_galley"
 			spriteType = "GFX_unit_types_strip_mil_view"
 			position = { x= 205 y = 95 }
@@ -887,8 +848,7 @@ guiTypes = {
 		
 		
 		
-		iconType =
-		{
+		iconType = {
 			name ="tech_nav_transport_unlock"
 			spriteType = "GFX_technology_view_unitnextunlock"
 			position = { x= 203 y = 122 }
@@ -897,8 +857,7 @@ guiTypes = {
 		
 		}
 
-		iconType =
-		{
+		iconType = {
 			name ="tech_nav_transport"
 			spriteType = "GFX_unit_types_strip_mil_view"
 			position = { x= 205 y = 124 }
@@ -920,8 +879,7 @@ guiTypes = {
 			format = left
 		}		
 		
-		iconType =
-		{
+		iconType = {
 			name ="tech_enable"
 			spriteType = "GFX_spy_actions_icon"
 			position = { x= 440 y = 130 }
@@ -929,8 +887,7 @@ guiTypes = {
 		}
 
 
-		iconType =
-		{
+		iconType = {
 			name ="tech_accepted_cultures"
 			spriteType = "GFX_accepted_cultures"
 			position = { x= 478 y = 130 }
@@ -949,8 +906,7 @@ guiTypes = {
 			format = right
 		}			
 
-		iconType =
-		{
+		iconType = {
 			name = "tech_engagement"
 			spriteType = "GFX_engagement_width_icon"
 			position = { x= 330 y = 130 } 
@@ -971,8 +927,7 @@ guiTypes = {
 		}			
 
 		
-		iconType =
-		{
+		iconType = {
 			name ="tech_naval_morale"
 			spriteType = "GFX_icon_naval_moral"
 			position = {  x= 407 y = 98 } 
@@ -992,8 +947,7 @@ guiTypes = {
 			format = right
 		}	
 		
-		iconType =
-		{
+		iconType = {
 			name ="tech_maintenance"
 			spriteType = "GFX_icon_maintenance"
 			position = { x= 411 y = 72 } 
@@ -1012,8 +966,7 @@ guiTypes = {
 			format = right
 		}
 
-		iconType =
-		{
+		iconType = {
 			name ="tech_trade_efficiency"
 			spriteType = "GFX_icon_trade_efficiency"
 			position = { x= 410 y = 44 }
@@ -1032,8 +985,7 @@ guiTypes = {
 			format = right
 		}
 
-		iconType =
-		{
+		iconType = {
 			name ="tech_trade_range"
 			spriteType = "GFX_icon_trade_range"
 			position = { x= 478 y = 44 }
@@ -1052,8 +1004,7 @@ guiTypes = {
 			format = right
 		}
 
-		iconType =
-		{
+		iconType = {
 			name = "tech_range"
 			spriteType = "GFX_icon_tech_range"
 			position = { x= 478 y = 74}
@@ -1073,8 +1024,7 @@ guiTypes = {
 			format = right
 		}
 		
-		iconType =
-		{
+		iconType = {
 			name = "tech_colonial_growth"
 			spriteType = "GFX_colonial_growth"
 			position = { x= 474 y = 98 }
@@ -1095,8 +1045,7 @@ guiTypes = {
 			format = right
 		}			
 		
-		iconType =
-		{
+		iconType = {
 			name = "buildings"
 			spriteType = "GFX_technologyView_show_buildings"
 			position = { x= 408 y = 128 }
@@ -1126,8 +1075,7 @@ guiTypes = {
 			format = left
 		}
 		
-		iconType =
-		{
+		iconType = {
 			name ="current_techlevel_bg"
 			spriteType = "GFX_prov_modifier_bg"
 			position = { x = 55 y = 7 }
@@ -1146,8 +1094,7 @@ guiTypes = {
 			format = centre
 		}
 		
-		guiButtonType =
-		{
+		guiButtonType = {
 			name ="tech_research"
 			quadTextureSprite= "GFX_technology_view_research"
 			position = { x= 25 y = 41 }
@@ -1155,8 +1102,7 @@ guiTypes = {
 			buttonFont = "vic_18"	
 		}
 		
-		iconType =
-		{
+		iconType = {
 			name ="tech_icon"
 			spriteType = "GFX_icon_powers_military_tech"
 			position = { x= 28 y = 9 }
@@ -1187,8 +1133,7 @@ guiTypes = {
 			spacing = 0
 		}	
 		
-		iconType =
-		{
+		iconType = {
 			name ="power_progress"
 			spriteType = "GFX_technologyView_progressbar"
 			position = { x= 41 y = 136 }
@@ -1196,16 +1141,14 @@ guiTypes = {
 			hint_tag = "hint_mil"
 		}
 
-		iconType =
-		{
+		iconType = {
 			name ="power_progress_frame"
 			spriteType = "GFX_technologyView_progress_frame_long"
 			position = { x= 33 y = 132 }
 			Orientation = "UPPER_LEFT"
 		}
 
-		OverlappingElementsBoxType =
-		{
+		OverlappingElementsBoxType = {
 			name = "required_institutions_box"
 			position = { x = 290 y = 15 }
 			size = { x = 140 y = 26 }
@@ -1214,8 +1157,7 @@ guiTypes = {
 			spacing = -15
 		}
 		
-		iconType =
-		{
+		iconType = {
 			name ="time_icon"
 			spriteType = "GFX_icon_time"
 			position = { x = 402 y = 8 }
@@ -1238,8 +1180,7 @@ guiTypes = {
 		
 		
 		
-		iconType =
-		{
+		iconType = {
 			name ="tech_unit_infantry_unlock"
 			spriteType = "GFX_technology_view_unitnextunlock_big"
 			position = { x= 203 y = 33}
@@ -1248,8 +1189,7 @@ guiTypes = {
 
 		}
 		
-		iconType =
-		{
+		iconType = {
 			name ="tech_unit_infantry"
 			spriteType = "GFX_unit_types_strip_mil_view"
 			position = { x= 206 y = 38 }
@@ -1312,8 +1252,7 @@ guiTypes = {
 			format = left
 		}
 		
-		iconType =
-		{
+		iconType = {
 			name ="tech_unit_cavalry_unlock"
 			spriteType = "GFX_technology_view_unitnextunlock_big"
 			position = { x= 203 y = 72 }
@@ -1322,8 +1261,7 @@ guiTypes = {
 		
 		}
 
-		iconType =
-		{
+		iconType = {
 			name ="tech_unit_cavalry"
 			spriteType = "GFX_unit_types_strip_mil_view"
 			position = { x= 206 y = 77 }
@@ -1387,8 +1325,7 @@ guiTypes = {
 		}				
 		
 		
-		iconType =
-		{
+		iconType = {
 			name ="tech_unit_artillery_unlock"
 			spriteType = "GFX_technology_view_unitnextunlock_big"
 			position = { x= 203 y = 111 }
@@ -1397,8 +1334,7 @@ guiTypes = {
 		
 		}
 		
-		iconType =
-		{
+		iconType = {
 			name ="tech_unit_artillery"
 			spriteType = "GFX_unit_types_strip_mil_view"
 			position = { x= 206 y = 114 }
@@ -1462,8 +1398,7 @@ guiTypes = {
 		}				
 				
 		
-		iconType =
-		{
+		iconType = {
 			name ="tech_land_morale"
 			spriteType = "GFX_icon_land_moral"
 			#position = { x= 400 y = 118 }
@@ -1486,8 +1421,7 @@ guiTypes = {
 
 		}
 
-		iconType =
-		{
+		iconType = {
 			name = "tech_supply_limit"
 			spriteType = "GFX_icon_supply_limit"
 			#position = { x= 402 y = 81 }
@@ -1508,8 +1442,7 @@ guiTypes = {
 			format = right
 		}			
 		
-		iconType =
-		{
+		iconType = {
 			name = "tech_military_tactics"
 			spriteType = "GFX_icon_military_tactics"
 			#position = { x= 402 y = 47 } 
@@ -1531,8 +1464,7 @@ guiTypes = {
 			format = right
 		}			
 		
-		iconType =
-		{
+		iconType = {
 			name = "tech_combatwidth"
 			spriteType = "GFX_icon_combat_width"
 			position = { x= 476 y = 84 } 
@@ -1552,8 +1484,7 @@ guiTypes = {
 			format = right
 		}			
 	
-		iconType =
-		{
+		iconType = {
 			name = "tech_maneuver"
 			spriteType = "GFX_icon_maneuver"
 			#position = { x= 469 y = 48 } 
@@ -1575,8 +1506,7 @@ guiTypes = {
 			format = right
 		}	
 
-		iconType =
-		{
+		iconType = {
 			name = "buildings"
 			spriteType = "GFX_technologyView_show_buildings"
 			position = { x= 472 y = 112 }
@@ -1598,8 +1528,7 @@ guiTypes = {
 		dontRender = ""
 		horizontalBorder = ""
 
-		iconType =
-		{
+		iconType = {
 			name ="item_icon"
 			spriteType = "GFX_unit_types_strip_mil_center_view"
 			position = { x= 0 y = 0 }
@@ -1617,8 +1546,7 @@ guiTypes = {
 		dontRender = ""
 		horizontalBorder = ""
 
-		iconType =
-		{
+		iconType = {
 			name ="item_icon"
 			spriteType = "GFX_building_default"
 			position = { x= 0 y = 0 }
@@ -1636,8 +1564,7 @@ guiTypes = {
 		dontRender = ""
 		horizontalBorder = ""
 
-		iconType =
-		{
+		iconType = {
 			name ="item_icon"
 			spriteType = "GFX_icon_military_tactics"
 			position = { x= 0 y = 0 }
@@ -1655,8 +1582,7 @@ guiTypes = {
 		dontRender = ""
 		horizontalBorder = ""
 
-		iconType =
-		{
+		iconType = {
 			name ="item_icon"
 			spriteType = "GFX_icon_land_moral"
 			position = { x= 0 y = 0 }
@@ -1674,8 +1600,7 @@ guiTypes = {
 		dontRender = ""
 		horizontalBorder = ""
 
-		iconType =
-		{
+		iconType = {
 			name ="item_icon"
 			spriteType = "GFX_icon_supply_limit"
 			position = { x= 0 y = 0 }
@@ -1692,8 +1617,7 @@ guiTypes = {
 		dontRender = ""
 		horizontalBorder = ""
 
-		iconType =
-		{
+		iconType = {
 			name ="item_icon"
 			spriteType = "GFX_icon_naval_moral"
 			position = { x= 0 y = 0 }
@@ -1711,8 +1635,7 @@ guiTypes = {
 		dontRender = ""
 		horizontalBorder = ""
 
-		iconType =
-		{
+		iconType = {
 			name ="item_icon"
 			spriteType = "GFX_icon_maintenance"
 			position = { x= 0 y = 0 }
@@ -1729,8 +1652,7 @@ guiTypes = {
 		dontRender = ""
 		horizontalBorder = ""
 
-		iconType =
-		{
+		iconType = {
 			name ="item_icon"
 			spriteType = "GFX_icon_trade_efficiency"
 			position = { x= 0 y = 0 }
@@ -1747,8 +1669,7 @@ guiTypes = {
 		dontRender = ""
 		horizontalBorder = ""
 
-		iconType =
-		{
+		iconType = {
 			name ="item_icon"
 			spriteType = "GFX_icon_trade_range"
 			position = { x= 0 y = 0 }
@@ -1765,8 +1686,7 @@ guiTypes = {
 		dontRender = ""
 		horizontalBorder = ""
 
-		iconType =
-		{
+		iconType = {
 			name ="item_icon"
 			spriteType = "GFX_icon_tech_range"
 			position = { x= 0 y = 0 }
@@ -1783,8 +1703,7 @@ guiTypes = {
 		dontRender = ""
 		horizontalBorder = ""
 
-		iconType =
-		{
+		iconType = {
 			name ="item_icon"
 			spriteType = "GFX_colonial_growth"
 			position = { x= 0 y = 0 }
@@ -1802,8 +1721,7 @@ guiTypes = {
 		dontRender = ""
 		horizontalBorder = ""
 
-		iconType =
-		{
+		iconType = {
 			name ="item_icon"
 			spriteType = "GFX_diplomacy_spy_icon"
 			position = { x= 0 y = 0 }
@@ -1821,8 +1739,7 @@ guiTypes = {
 		dontRender = ""
 		horizontalBorder = ""
 
-		iconType =
-		{
+		iconType = {
 			name ="item_icon"
 			spriteType = "GFX_icon_tech_may_study_technology"
 			position = { x= 0 y = 0 }
@@ -1841,8 +1758,7 @@ guiTypes = {
 		dontRender = ""
 		horizontalBorder = ""
 
-		iconType =
-		{
+		iconType = {
 			name ="item_icon"
 			spriteType = "GFX_government_type_icon"
 			position = { x= 0 y = 0 }
@@ -1861,8 +1777,7 @@ guiTypes = {
 
 
 
-		iconType =
-		{
+		iconType = {
 			name ="item_icon"
 			spriteType = "GFX_icon_tech_idea_unlocked"
 			position = { x= 0 y = 0 }
@@ -1881,8 +1796,7 @@ guiTypes = {
 
 
 
-		iconType =
-		{
+		iconType = {
 			name ="item_icon"
 			spriteType = "GFX_icon_states"
 			position = { x= 0 y = 0 }
@@ -1899,8 +1813,7 @@ guiTypes = {
 		dontRender = ""
 		horizontalBorder = ""
 
-		iconType =
-		{
+		iconType = {
 			name ="item_icon"
 			spriteType = "GFX_icon_production_efficiency"
 			position = { x= 0 y = 0 }
@@ -1917,8 +1830,7 @@ guiTypes = {
 		dontRender = ""
 		horizontalBorder = ""
 
-		iconType =
-		{
+		iconType = {
 			name ="item_icon"
 			spriteType = "GFX_icon_administrative_efficiency"
 			position = { x= 0 y = 0 }
@@ -1937,8 +1849,7 @@ guiTypes = {
 		dontRender = ""
 		horizontalBorder = ""
 
-		iconType =
-		{
+		iconType = {
 			name ="item_icon"
 			spriteType = "GFX_icon_development_cost_modifier"
 			position = { x= 0 y = 0 }
@@ -1955,8 +1866,7 @@ guiTypes = {
 		dontRender = ""
 		horizontalBorder = ""
 
-		iconType =
-		{
+		iconType = {
 			name ="item_icon"
 			spriteType = "GFX_icon_accepted_cultures"
 			position = { x= 0 y = 0 }
@@ -1975,8 +1885,7 @@ guiTypes = {
 		dontRender = ""
 		horizontalBorder = ""
 
-		iconType =
-		{
+		iconType = {
 			name ="item_icon"
 			spriteType = "GFX_icon_combat_width"
 			position = { x= 0 y = 0 }
@@ -1993,8 +1902,7 @@ guiTypes = {
 		dontRender = ""
 		horizontalBorder = ""
 
-		iconType =
-		{
+		iconType = {
 			name ="item_icon"
 			spriteType = "GFX_engagement_width_icon"
 			position = { x= 0 y = 0 }
@@ -2012,8 +1920,7 @@ guiTypes = {
 		dontRender = ""
 		horizontalBorder = ""
 
-		iconType =
-		{
+		iconType = {
 			name ="item_icon"
 			spriteType = "GFX_icon_fire"
 			position = { x= 0 y = 0 }
@@ -2030,8 +1937,7 @@ guiTypes = {
 		dontRender = ""
 		horizontalBorder = ""
 
-		iconType =
-		{
+		iconType = {
 			name ="item_icon"
 			spriteType = "GFX_icon_shock"
 			position = { x= 0 y = 0 }
@@ -2048,8 +1954,7 @@ guiTypes = {
 		dontRender = ""
 		horizontalBorder = ""
 
-		iconType =
-		{
+		iconType = {
 			name ="item_icon"
 			spriteType = "GFX_icon_maneuver"
 			position = { x= 0 y = 0 }
@@ -2066,8 +1971,7 @@ guiTypes = {
 		dontRender = ""
 		horizontalBorder = ""
 
-		guiButtonType =
-		{
+		guiButtonType =	{
 			name ="item_button"
 			spriteType = "GFX_icon_maneuver"
 			position = { x= -14 y = 0 }
@@ -2084,8 +1988,7 @@ guiTypes = {
 		dontRender = ""
 		horizontalBorder = ""
 
-		iconType =
-		{
+		iconType = {
 			name ="item_icon"
 			spriteType = "GFX_tech_institution_feudalism"
 			position = { x= 0 y = -4 }

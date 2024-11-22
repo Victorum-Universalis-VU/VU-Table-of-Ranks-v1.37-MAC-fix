@@ -64,6 +64,7 @@ country_decisions = {
 		provinces_to_highlight = {
 			OR = {
 				area = east_adriatic_coast_area
+				area = ragusa_area
 				area = rascia_area
 				area = albania_area
 				area = macedonia_area
@@ -78,6 +79,10 @@ country_decisions = {
 		}
 		allow = {
 			east_adriatic_coast_area = {
+				type = all
+				owned_by = ROOT
+			}
+			ragusa_area = {
 				type = all
 				owned_by = ROOT
 			}

@@ -185,7 +185,7 @@ nizam_i_jedid_reform = {
 	potential = {
 		OR = {
 			tag = TUR
-			tag = RMM
+			tag = RUM
 			primary_culture = turkish
 			has_reform = nizam_i_jedid_reform
 		}
@@ -193,7 +193,7 @@ nizam_i_jedid_reform = {
 	trigger = {
 		OR = {
 			tag = TUR
-			tag = RMM
+			tag = RUM
 			primary_culture = turkish
 			has_reform = nizam_i_jedid_reform
 		}

@@ -1,5 +1,6 @@
 government = tribal
 add_government_reform = tribal_kingdom
+government_rank = 6 #Petty_Kingdom
 primary_culture = ganda
 add_accepted_culture = acholi
 religion = shamanism #Fetishism

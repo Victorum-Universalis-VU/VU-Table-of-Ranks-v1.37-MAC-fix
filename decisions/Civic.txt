@@ -1,3 +1,4 @@
+#Updated to v1.37 - SF
 country_decisions = {
 	#Major Decisions:	color = { 146 174 114 }
 	#Minor Decisions:	color = { 60 117 165 }
@@ -69,7 +70,10 @@ country_decisions = {
 		potential = {
 			NOT = { has_country_modifier = the_abolish_slavery_act }
 			slaves = 1
-			current_age = age_of_revolutions
+			OR = {
+				current_age = age_of_revolutions
+				has_country_flag = ned_abolish_slavery_flag
+			}
 			adm_tech = 32
 		}
 		allow = {

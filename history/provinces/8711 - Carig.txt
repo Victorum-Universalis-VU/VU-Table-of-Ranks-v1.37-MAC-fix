@@ -1,23 +1,18 @@
-#Carig
-
+#8711 - Carig
+owner = KSG
+controller = KSG
+add_core = KSG
 culture = filipino
 religion = animism
 capital = "Carig"
 trade_goods = sea_turtle
 hre = no
-base_tax = 1
+base_tax = 2
 base_production = 1
 base_manpower = 1
 is_city = yes
-owner = PGS
-controller = PGS
-add_core = PGS
 
-
-
-
-
- # Ferdinand Magellan 
+# Ferdinand Magellan 
 1576.1.1 = {
 	owner = SPA
 	controller = SPA

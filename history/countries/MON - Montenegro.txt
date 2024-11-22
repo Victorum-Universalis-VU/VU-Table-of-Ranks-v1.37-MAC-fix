@@ -1,6 +1,6 @@
 government = monarchy
-add_government_reform = feudalism_reform
-government_rank = 1
+add_government_reform = eue_principality_reform
+government_rank = 7 #Grand Duchy
 #technology_group = eastern
 technology_group = bulgarian_tech_group
 primary_culture = serbian
@@ -122,7 +122,8 @@ fixed_capital = 138 # Cannot move capital away from this province & no power cos
 #Prince-Bishops of Montenegro
 1516.1.1 = {
 	government = theocracy
-	add_government_reform = leading_clergy_reform
+	add_government_reform = church_of_balkans_bishopric_reform
+	government_rank = 4 #Prince-Bishopric
 }
 
 1516.1.1 = {

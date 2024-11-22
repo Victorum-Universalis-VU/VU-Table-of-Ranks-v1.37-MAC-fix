@@ -30,16 +30,8 @@ spriteTypes = {
 		texturefile = "gfx//interface//government_reform_icons//dutch_guilds.dds"
 	}
 	spriteType = {
-		name = "government_reform_kingdom_of_portugal"
-		texturefile = "gfx//interface//government_reform_icons//kingdom_of_portugal.dds"
-	}
-	spriteType = {
 		name = "government_reform_portuguese_thassalocracy"
 		texturefile = "gfx//interface//government_reform_icons//portuguese_thassalocracy.dds"
-	}
-	spriteType = {
-		name = "government_reform_beylik"
-		texturefile = "gfx//interface//government_reform_icons//beylik.dds"
 	}
 	spriteType = {
 		name = "government_reform_manrent"
@@ -575,12 +567,12 @@ spriteTypes = {
 		texturefile = "gfx//interface//government_reform_icons//italy_ghibbelline.dds"
 	}
 	spriteType = {
-		name = "government_reform_castille_leon"
-		texturefile = "gfx//interface//government_reform_icons//castille_leon.dds"
+		name = "government_reform_castile_leon"
+		texturefile = "gfx//interface//government_reform_icons//castile_leon.dds"
 	}
 	spriteType = {
-		name = "government_reform_castille_isabelle"
-		texturefile = "gfx//interface//government_reform_icons//castille_isabelle.dds"
+		name = "government_reform_castile_isabelle"
+		texturefile = "gfx//interface//government_reform_icons//castile_isabelle.dds"
 	}
 	spriteType = {
 		name = "government_reform_spain_charles"
@@ -729,10 +721,6 @@ spriteTypes = {
 	spriteType = {
 		name = "government_reform_clans_of_ireland"
 		texturefile = "gfx//interface//government_reform_icons//clans_of_ireland.dds"
-	}
-	spriteType = {
-		name = "government_reform_high_king_of_ireland_reform"
-		texturefile = "gfx//interface//government_reform_icons//high_king_of_ireland_reform.dds"
 	}
 	spriteType = {
 		name = "government_reform_serbian_despotate"
@@ -912,5 +900,11 @@ spriteTypes = {
 	spriteType = {
 		name = "government_reform_purple_phoenix"
 		texturefile = "gfx//interface//government_reform_icons//purple_phoenix.dds"
+	}
+
+	#VU v1.37 additions - SF
+	spriteType = {
+		name = "government_reform_confederacy"
+		texturefile = "gfx//interface//government_reform_icons//america//confederacy.dds"
 	}
 }

@@ -1,13 +1,12 @@
 government = monarchy
-add_government_reform = feudalism_reform
-government_rank = 1
+add_government_reform = principality
+government_rank = 7 #Principality
 primary_culture = vu_komi
 religion = orthodox
 #technology_group = eastern
 technology_group = russian_tech_group
 unit_type = eastern
 capital = 1963	# Cherdyn
-
 
 1444.1.1 = {
 	monarch = {

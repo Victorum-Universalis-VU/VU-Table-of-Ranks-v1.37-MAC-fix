@@ -735,5 +735,6 @@ spriteTypes = {
 	spriteType = {
 		name = "mission_traverse_the_sahara"
 		texturefile = "gfx//interface//missions//dlc_missions//gc//tunis//mission_traverse_the_sahara.dds"
-	}		
+	}
+
 }	

@@ -1,6 +1,6 @@
 #4193 - Oshima
 
-culture = togoku
+culture = hokkaido 
 religion = shinto
 capital = "Katsuyama"
 trade_goods = fish

@@ -316,6 +316,12 @@ country_event = {
 			}
 			add_core = GER
 		}
+		frankfurt_area = {
+			limit = {
+				owned_by = ROOT
+			}
+			add_core = GER
+		}
 		baden_area = {
 			limit = {
 				owned_by = ROOT
@@ -336,7 +342,7 @@ country_event = {
 		GER = {
 			override_country_name = Rhine_Confederation
 			change_government = republic
-			set_government_rank_force = 2
+			set_government_rank_force = 8
 			hidden_effect = {
 				capital_scope = {
 					build_to_forcelimit = {
@@ -532,7 +538,7 @@ country_event = {
 		POL = {
 			override_country_name = DUCHY_WARSAW
 			change_government = republic
-			set_government_rank_force = 2
+			set_government_rank_force = 8
 			hidden_effect = {
 				capital_scope = {
 					build_to_forcelimit = {
@@ -895,7 +901,7 @@ country_event = {
 		LON = {
 			override_country_name = andorra_spain
 			change_government = republic
-			set_government_rank_force = 2
+			set_government_rank_force = 8
 			hidden_effect = {
 				capital_scope = {
 					build_to_forcelimit = {
@@ -1025,7 +1031,7 @@ country_event = {
 		add_prestige_or_monarch_power = { amount = 5 }
 		define_advisor = {
 			name = "Pierre Lescot"
-			type = muscovy_architect
+			type = civil_engineer
 			skill = 3
 			culture = ROOT
 			religion = catholic
@@ -1063,7 +1069,7 @@ country_event = {
 
 		define_advisor = {
 			name = "Clement Janequin"
-			type = me_lyricist
+			type = bard
 			skill = 3
 			culture = ROOT
 			religion = catholic
@@ -2199,7 +2205,7 @@ country_event = {
 		}
 		NOV = {
 			change_government = republic
-			set_government_rank_force = 2
+			set_government_rank_force = 8
 			hidden_effect = {
 				capital_scope = {
 					build_to_forcelimit = {
@@ -2275,7 +2281,7 @@ country_event = {
 		HSC = {
 			override_country_name = connacht
 			change_government = republic
-			set_government_rank_force = 2
+			set_government_rank_force = 8
 			hidden_effect = {
 				capital_scope = {
 					build_to_forcelimit = {

@@ -9,13 +9,6 @@ revolutionary_colors = { 16 13 16 }
 
 historical_idea_groups = {
 	defensive_ideas
-	offensive_ideas
-	spy_ideas
-	trade_ideas
-	economic_ideas
-	religious_ideas
-	administrative_ideas
-	quantity_ideas
 }
 
 historical_units = {
@@ -94,6 +87,6 @@ ship_names = {
 	Chairacha Yotfa Worawongsa Chakkraphat Mahin
 	Sanpet Naresuan Ekathotsarot "Si Saowaphak"
 	Songtham Chehha "Somdet Phra" "Prasat Thong" Chai
-	Suthammaracha Narai Petratcha Süa Phumintharacha
+	Suthammaracha Narai Petratcha Sï¿½a Phumintharacha
 	Uthumpon Ekkathat
 }

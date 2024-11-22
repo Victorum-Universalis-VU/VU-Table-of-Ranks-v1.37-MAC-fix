@@ -839,11 +839,11 @@ emp_sav_missions_conquest_west = {
 
 			if = {
 				limit = {
-					NOT = { government_rank = 2 }
+					NOT = { government_rank = 8 }
 				}
 				custom_tooltip = emp_sav_claim_france_effect_tooltip
 				hidden_effect = {
-					set_government_rank = 2
+					set_government_rank = 8
 				}
 			}
 			if = {

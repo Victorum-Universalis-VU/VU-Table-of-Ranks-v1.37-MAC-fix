@@ -1,109 +1,129 @@
-#VU updated by San Felipe for 1.35
+#VU updated by San Felipe for 1.37
 # For specific government types
 # Will pick the first valid one it finds in list
 
 gov_steppe_horde = {
 	rank = {
-		1 = HORDE
-		2 = KHANATE
-		3 = KHAGANATE
+		1 = CHIEFDOM
+		2 = CHIEFDOM
+		3 = CHIEFDOM
+		4 = CHIEFDOM
+		5 = CHIEFDOM
+		6 = HORDE
+		7 = GREAT_HORDE
+		8 = KHANATE
+		9 = KHAGANATE
 	}
 	
 	ruler_male = {
-		1 = JINONG
-		2 = KHAN
-		3 = KHAGAN
-	}
-	
-	ruler_female = {
-		1 = JINONG
-		2 = KHATUN
-		3 = GREAT_KHATUN
-	}
-	
-	consort_male = {
-		1 = BEILE
-		2 = KHAN
-		3 = KHAGAN
+		1 = CHIEF
+		2 = CHIEF
+		3 = CHIEF
+		4 = CHIEF
+		5 = CHIEF
+		6 = JINONG
+		7 = GREAT_JINONG
+		8 = KHAN
+		9 = KHAGAN
 	}
 
 	consort_female = {
-		1 = GEGE
-		2 = KHANUM
-		3 = KHANUM
+		1 = GEGE_CONSORT_fem
+		2 = GEGE_CONSORT_fem
+		3 = GEGE_CONSORT_fem
+		4 = GEGE_CONSORT_fem
+		5 = GEGE_CONSORT_fem
+		6 = GEGE_CONSORT_fem
+		7 = GEGE_CONSORT_fem
+		8 = KHANUM_CONSORT_fem
+		9 = KHANUM_CONSORT_fem
 	}
 	
 	heir_male = {
-		1 = HEIR
+		1 = KHANZADEH
 		2 = KHANZADEH
 		3 = KHANZADEH
-	}
-
-	heir_female = {
-		1 = KHANUM
-		2 = KHANUM
-		3 = KHANUM
+		4 = KHANZADEH
+		5 = KHANZADEH
+		6 = KHANZADEH
+		7 = KHANZADEH
+		8 = KHANZADEH
+		9 = KHANZADEH
 	}
 	
 	trigger = {
-		has_reform = steppe_horde
+		OR = {
+			has_reform = steppe_horde
+			has_reform = scythian_horde_reform
+		}
 		OR = { 
-			culture_group = altaic 
+			culture_group = altaic
 			culture_group = tartar
 			primary_culture = altaic_new
 		}
+		NOT = { religion_group = muslim }
 	}
 }
 
 gov_native_council = {
 	rank = {
-		1 = TRIBE
-		2 = TRIBE
-		3 = TRIBE
+		1 = CHIEFDOM
+		2 = CHIEFDOM
+		3 = CHIEFDOM
+		4 = CHIEFDOM
+		5 = CHIEFDOM
+		6 = CHIEFDOM
+		7 = HIGH_CHIEFDOM
+		8 = GREAT_CHIEFDOM
+		9 = GRAND_CHIEFDOM
 	}
 	
 	ruler_male = {
 		1 = CHIEF
-		2 = HIGH_CHIEF
-		3 = PARAMOUNT_CHIEF
+		2 = CHIEF
+		3 = CHIEF
+		4 = CHIEF
+		5 = CHIEF
+		6 = CHIEF
+		7 = HIGH_CHIEF
+		8 = GREAT_CHIEF
+		9 = GRAND_CHIEF
 	}
 	
-	ruler_female = {
-		1 = CHIEFTESS
-		2 = HIGH_CHIEFTESS
-		3 = PARAMOUNT_CHIEFTESS
-	}
-	consort_male = {
-		1 = CONSORT
-		2 = CONSORT
-		3 = CONSORT
-	}
-
 	consort_female = {
-		1 = CONSORT
-		2 = CONSORT
-		3 = CONSORT
+		1 = LADY_CONSORT_fem
+		2 = LADY_CONSORT_fem
+		3 = LADY_CONSORT_fem
+		4 = LADY_CONSORT_fem
+		5 = LADY_CONSORT_fem
+		6 = LADY_CONSORT_fem
+		7 = LADY_CONSORT_fem
+		8 = LADY_CONSORT_fem
+		9 = LADY_CONSORT_fem
 	}
 
 	heir_male = {
-		1 = HEIR
-		2 = HEIR
-		3 = HEIR
+		1 = LORD
+		2 = LORD
+		3 = LORD
+		4 = LORD
+		5 = LORD
+		6 = LORD
+		7 = LORD
+		8 = LORD
+		9 = LORD
 	}
 
-	heir_female = {
-		1 = HEIR_fem
-		2 = HEIR_fem
-		3 = HEIR_fem
-	}
-	
 	trigger = {
 		OR = {
 			government = native
 			has_reform = siberian_tribe
 			has_reform = native_basic_reform
 			AND = {
-				has_reform = steppe_horde
+				OR = {
+					has_reform = steppe_horde
+					has_reform = scythian_horde_reform
+				}
 				NOT = {
 					OR = { 
 						culture_group = altaic 
@@ -113,20 +133,25 @@ gov_native_council = {
 				}
 			}
 		}
+		NOT = { tag = BAL }
 	}
 }
 
 gov_colonial_government = {
 	rank = {
-		1 = COLONY
+		6 = COLONY
 	}
 	
 	ruler_male = {
-		1 = GOVERNOR
+		6 = GOVERNOR
 	}
 	
-	ruler_female = {
-		1 = GOVERNESS
+	consort_female = {
+		6 = CONSORT
+	}
+
+	heir_male = {
+		6 = LORD
 	}
 	
 	trigger = {
@@ -141,21 +166,24 @@ gov_colonial_government = {
 
 federal_monarchy_statists = {
 	rank = {
-		1 = UNITED_PROVINCES
-		2 = FEDERAL_KINGDOM
-		3 = FEDERAL_EMPIRE
+		6 = ZEVEN_VERENIGDE_NEDERLANDEN
+		7 = VERENIGDE_NEDERLANDEN
+		8 = FEDERAL_KINGDOM_VU
+		9 = FEDERAL_EMPIRE_VU
 	}
 
 	ruler_male = {
-		1 = SPEAKER
-		2 = CHANCELOR
-		3 = PRESIDENT
+		6 = STADTHOLDER
+		7 = SPREKER
+		8 = KANSELIER
+		9 = VOORZITTER
 	}
 
-	ruler_female = {
-		1 = SPEAKER_fem
-		2 = CHANCELOR_fem
-		3 = PRESIDENT_fem
+	heir_male = {
+		6 = HOL_COUNT_1
+		7 = HOL_DUKE_CONSORT_1
+		8 = HOL_PRINCE_CONSORT_1
+		9 = HOL_KING_1
 	}
 
 	trigger = {
@@ -171,21 +199,31 @@ federal_monarchy_statists = {
 
 federal_monarchy_monarchists = {
 	rank = {
-		1 = UNITED_PROVINCES
-		2 = FEDERAL_KINGDOM
-		3 = FEDERAL_EMPIRE
+		6 = ZEVEN_VERENIGDE_NEDERLANDEN
+		7 = VERENIGDE_NEDERLANDEN
+		8 = FEDERAL_KINGDOM_VU
+		9 = FEDERAL_EMPIRE_VU
 	}
 
 	ruler_male = {
-		1 = DUKE
-		2 = KING
-		3 = EMPEROR
+		6 = STADTHOLDER
+		7 = HOL_PRINCE_1
+		8 = HOL_KING_1
+		9 = HOL_EMPEROR_1
 	}
 
-	ruler_female = {
-		1 = DUCHESS
-		2 = QUEEN
-		3 = EMPRESS
+	consort_female = {
+		6 = HOL_DUCHESS_CONSORT_fem_1
+		7 = HOL_PRINCESS_CONSORT_fem_1
+		8 = HOL_QUEEN_fem_1
+		9 = HOL_EMPRESS_fem_1
+	}
+
+	heir_male = {
+		6 = HOL_COUNT_1
+		7 = HOL_DUKE_CONSORT_1
+		8 = HOL_PRINCE_CONSORT_1
+		9 = HOL_KING_1
 	}
 
 	trigger = {
@@ -201,21 +239,24 @@ federal_monarchy_monarchists = {
 
 noble_republic = {
 	rank = {
-		1 = PRINCEDOM
-		2 = GRAND_PRINCEDOM
-		3 = GREAT_PRINCEDOM
+		6 = PRINCE_REPUBLIC
+		7 = HIGH_PRINCE_REPUBLIC
+		8 = GREAT_PRINCE_REPUBLIC
+		9 = GRAND_PRINCE_REPUBLIC
 	}
 	
 	ruler_male = {
-		1 = LORD
-		2 = PRINCE
-		3 = GREAT_PRINCE
+		6 = LORD
+		7 = HIGH_PRINCE
+		8 = GREAT_PRINCE
+		9 = GRAND_PRINCE
 	}
 	
-	ruler_female = {
-		1 = LADY
-		2 = PRINCESS
-		3 = GREAT_PRINCESS
+	heir_male = {
+		6 = LORD
+		7 = PRINCE
+		8 = PRINCE
+		9 = PRINCE
 	}
 	
 	trigger = {
@@ -228,21 +269,31 @@ noble_republic = {
 
 gov_republican_dictatorship = {
 	rank = {
-		1 = DESPOTISM
-		2 = DICTATORSHIP
-		3 = PRESIDENTIAL_DICTATORSHIP
+		6 = DESPOTISM
+		7 = HIGH_DESPOTISM
+		8 = GREAT_DICTATORSHIP
+		9 = GRAND_DICTATORSHIP
 	}
 	
 	ruler_male = {
-		1 = PROTECTOR
-		2 = LORD_PROTECTOR
-		3 = PRESIDENT
+		6 = DESPOT
+		7 = HIGH_DESPOT
+		8 = GREAT_DESPOT
+		9 = GRAND_DESPOT
 	}
 	
-	ruler_female = {
-		1 = PROTECTOR_fem
-		2 = LADY_PROTECTOR
-		3 = PRESIDENT_fem
+	consort_female = {
+		6 = CONSORT_fem
+		7 = CONSORT_fem
+		8 = CONSORT_fem
+		9 = CONSORT_fem
+	}
+
+	heir_male = {
+		6 = LORD
+		7 = LORD
+		8 = LORD
+		9 = LORD
 	}
 	
 	trigger = {
@@ -252,21 +303,24 @@ gov_republican_dictatorship = {
 
 gov_bureaucratic_despotism = {
 	rank = {
-		1 = REPUBLIC
-		2 = GRAND_REPUBLIC
-		3 = GREAT_REPUBLIC
+		6 = REPUBLIC
+		7 = HIGH_REPUBLIC
+		8 = GREAT_REPUBLIC
+		9 = GRAND_REPUBLIC
 	}
 	
 	ruler_male = {
-		1 = COUNCILOR
-		2 = GRAND_COUNCILOR
-		3 = HIGH_COUNCILOR
+		6 = COUNCILOR
+		7 = HIGH_COUNCILOR
+		8 = GREAT_COUNCILOR
+		9 = GRAND_COUNCILOR
 	}
-	
-	ruler_female = {
-		1 = COUNCILOR_fem
-		2 = GRAND_COUNCILOR_fem
-		3 = HIGH_COUNCILOR_fem
+
+	heir_male = {
+		6 = LEGISLATOR
+		7 = LEGISLATOR
+		8 = LEGISLATOR
+		9 = LEGISLATOR
 	}
 	
 	trigger = {
@@ -276,34 +330,17 @@ gov_bureaucratic_despotism = {
 
 gov_papal_government = {
 	rank = {
-		1 = PAPACY
-		2 = PAPACY
-		3 = PAPACY
+		8 = PAPACY
 	}
 	
 	ruler_male = {
-		1 = POPE
-		2 = POPE
-		3 = POPE
+		8 = POPE
 	}
 	
-	ruler_female  ={
-		1 = POPETTE
-		2 = POPETTE
-		3 = POPETTE
-	}
 	heir_male = {
-		1 = HEIR
-		2 = HEIR
-		3 = HEIR
+		8 = PREFERATI_VU
 	}
 
-	heir_female = {
-		1 = HEIR_fem
-		2 = HEIR_fem
-		3 = HEIR_fem
-	}
-	
 	trigger = {
 		has_reform = papacy_reform
 	}
@@ -312,112 +349,130 @@ gov_papal_government = {
 gov_daimyo = {
 	rank = {
 		1 = DAIMYO
+		2 = DAIMYO_BARONY_VU
+		3 = DAIMYO_VISCOUNTY_VU
+		4 = DAIMYO_COUNTY_VU
+		5 = DAIMYO_MARQUISATE_VU
+		6 = DAIMYO_DUCHY_VU
+		7 = DAIMYO_PRINCIPALITY_VU
 	}
 	
 	ruler_male = {
 		1 = LORD
+		2 = LORD
+		3 = LORD
+		4 = LORD
+		5 = LORD
+		6 = LORD
+		7 = LORD
 	}
-	
-	ruler_female = {
-		1 = LADY
+
+	consort_female = {
+		1 = LADY_fem
+		2 = LADY_fem
+		3 = LADY_fem
+		4 = LADY_fem
+		5 = LADY_fem
+		6 = LADY_fem
+		7 = LADY_fem
 	}
-	
-	consort_male = {
+
+	heir_male = {
 		1 = LORD
-	}
-
-	consort_female = {
-		1 = LADY
-	}
-
-	heir_male = {
-		1 = HEIR
-	}
-
-	heir_female = {
-		1 = HEIR_fem
+		2 = LORD
+		3 = LORD
+		4 = LORD
+		5 = LORD
+		6 = LORD
+		7 = LORD
 	}
 	
 	trigger = {
-		has_reform = daimyo
+		OR = {
+			has_reform = daimyo
+			has_reform = daimyo_barony_reform
+			has_reform = daimyo_viscounty_reform
+			has_reform = daimyo_county_reform
+			has_reform = daimyo_marquisate_reform
+			has_reform = daimyo_duchy_reform
+			has_reform = daimyo_principality_reform
+		}
 	}
 }
 
-gov_appanage = {
-	rank = {
-		1 = APPANAGE
-	}
-	
-	ruler_male = {
-		1 = DUKE
-	}
-	
-	ruler_female = {
-		1 = DUCHESS
-	}
-	
-	consort_male = {
-		1 = DUKE
-	}
-
-	consort_female = {
-		1 = DUCHESS
-	}
-
-	heir_male = {
-		1 = HEIR
-	}
-
-	heir_female = {
-		1 = HEIR_fem
-	}
-	
-	trigger = {
-		has_reform = appanage_reform
-	}
-}
+#gov_appanage = {
+#	rank = {
+#		6 = APPANAGE
+#	}
+#	
+#	ruler_male = {
+#		6 = DUC
+#	}
+#	
+#	ruler_female = {
+#		6 = DUCHESSE_fem
+#	}
+#	
+#	consort_male = {
+#		6 = DUCHE_EPOUSE
+#	}
+#
+#	consort_female = {
+#		6 = DUCHESSE_EPOUSE_fem
+#	}
+#
+#	heir_male = {
+#		6 = SEIGNEUR
+#	}
+#
+#	heir_female = {
+#		6 = DAME_fem
+#	}
+#	
+#	trigger = {
+#		has_reform = appanage_reform
+#		culture_group = french
+#		NOT = { 
+#			primary_culture = angevin_culture
+#			primary_culture = burgundian 
+#		}
+#	}
+#}
 
 gov_indep_daimyo = {
 	rank = {
-		1 = INDEP_DAIMYO
-		2 = GRAND_INDEP_DAIMYO
-		3 = GREAT_INDEP_DAIMYO
+		6 = INDEP_DAIMYO
+		7 = INDEP_DAIMYO
+		8 = INDEP_DAIMYO
+		9 = GREAT_INDEP_DAIMYO
 	}
 	
 	ruler_male = {
-		1 = LORD
-		2 = LORD
-		3 = LORD
+		6 = LORD
+		7 = LORD
+		8 = LORD
+		9 = LORD
 	}
 	
-	ruler_female = {
-		1 = LADY
-		2 = LADY
-		3 = LADY
-	}
-	
-	consort_male = {
-		1 = LORD
-		2 = LORD
-		3 = LORD
-	}
-
 	consort_female = {
-		1 = LADY
-		2 = LADY
-		3 = LADY
+		6 = LADY_fem
+		7 = LADY_fem
+		8 = LADY_fem
+		9 = LADY_fem
 	}
 
 	heir_male = {
-		1 = HEIR
-		2 = HEIR
-		3 = HEIR
+		6 = LORD
+		7 = LORD
+		8 = LORD
+		9 = LORD
 	}
 
 	heir_female = {
-		1 = HEIR_fem
-		2 = HEIR_fem
-		3 = HEIR_fem
+		6 = LADY_fem
+		7 = LADY_fem
+		8 = LADY_fem
+		9 = LADY_fem
 	}
 	
 	trigger = {
@@ -427,32 +482,21 @@ gov_indep_daimyo = {
 
 gov_shogunate = {
 	rank = {
-		2 = SHOGUNATE
+		8 = SHOGUNATE
 	}
 
 	ruler_male = {
-		2 = SHOGUN
+		8 = SHOGUN
 	}
 	
-	ruler_female = {
-		2 = SHOGUNESS
-	}
-	consort_male = {
-		2 = LORD
-	}
-
 	consort_female = {
-		2 = LADY
+		8 = LADY_fem
 	}
 
 	heir_male = {
-		2 = HEIR
+		8 = LORD
 	}
 
-	heir_female = {
-		2 = HEIR_fem
-	}
-	
 	trigger = {
 		has_reform = shogunate
 	}
@@ -460,92 +504,209 @@ gov_shogunate = {
 
 gov_tribal_kingdom = {
 	rank = {
-		1 = CHIEFDOM
-		2 = TRIBAL_KINGDOM
-		3 = TRIBAL_EMPIRE
+		1 = LORDSHIP
+		2 = CHIEFDOM
+		3 = CHIEFDOM
+		4 = CHIEFDOM
+		5 = BORDER_CHIEFDOM
+		6 = GREAT_CHIEFDOM
+		7 = HIGH_CHIEFDOM
+		8 = TRIBAL_KINGDOM
+		9 = GRAND_TRIBAL_KINGDOM
 	}
 	
 	ruler_male = {
-		1 = CHIEF
-		2 = KING
-		3 = EMPEROR
+		1 = LORD
+		2 = CHIEF
+		3 = CHIEF
+		4 = CHIEF
+		5 = BORDER_CHIEF
+		6 = GREAT_CHIEF
+		7 = HIGH_CHIEF
+		8 = TRIBAL_KING
+		9 = GRAND_TRIBAL_KING
 	}
 	
 	ruler_female = {
-		1 = CHIEFTESS
-		2 = QUEEN
-		3 = EMPRESS
+		1 = LADY_fem
+		2 = CHIEFTESS_fem
+		3 = CHIEFTESS_fem
+		4 = CHIEFTESS_fem
+		5 = BORDER_CHIEFTESS_fem
+		6 = GREAT_CHIEFTESS_fem
+		7 = HIGH_CHIEFTESS_fem
+		8 = TRIBAL_QUEEN_fem
+		9 = GRAND_TRIBAL_QUEEN_fem
 	}
 	
 	consort_male = {
-		1 = CONSORT
-		2 = KING_CONSORT
-		3 = EMPEROR_CONSORT
+		1 = LORD_CONSORT_VU
+		2 = LORD_CONSORT_VU
+		3 = LORD_CONSORT_VU
+		4 = LORD_CONSORT_VU
+		5 = LORD_CONSORT_VU
+		6 = LORD_CONSORT_VU
+		7 = LORD_CONSORT_VU
+		8 = LORD_CONSORT_VU
+		9 = LORD_CONSORT_VU
 	}
 
 	consort_female = {
-		1 = CONSORT
-		2 = QUEEN
-		3 = EMPRESS
+		1 = LADY_CONSORT_fem
+		2 = LADY_CONSORT_fem
+		3 = LADY_CONSORT_fem
+		4 = LADY_CONSORT_fem
+		5 = LADY_CONSORT_fem
+		6 = LADY_CONSORT_fem
+		7 = LADY_CONSORT_fem
+		8 = LADY_CONSORT_fem
+		9 = LADY_CONSORT_fem
 	}
 
 	heir_male = {
-		1 = HEIR
-		2 = HEIR
-		3 = HEIR
+		1 = LORD
+		2 = LORD
+		3 = LORD
+		4 = LORD
+		5 = LORD
+		6 = LORD
+		7 = LORD
+		8 = LORD
+		9 = LORD
 	}
 
 	heir_female = {
-		1 = HEIR_fem
-		2 = HEIR_fem
-		3 = HEIR_fem
+		1 = LADY_fem
+		2 = LADY_fem
+		3 = LADY_fem
+		4 = LADY_fem
+		5 = LADY_fem
+		6 = LADY_fem
+		7 = LADY_fem
+		8 = LADY_fem
+		9 = LADY_fem
 	}
 	
 	trigger = {
 		has_reform = tribal_kingdom
+		NOT = { 
+			tag = BAL
+			has_reform = burmese_monarchy_reform
+			have_had_reform = burmese_monarchy_reform
+			culture_group = andean_group
+		}
 	}
 }
 
-gov_tribal = {
+qara_qoyunlu_tribal_federation = {
 	rank = {
-		1 = CHIEFDOM
-		2 = TRIBAL_KINGDOM
-		3 = TRIBAL_EMPIRE
+		6 = QARATE
 	}
 	
 	ruler_male = {
-		1 = CHIEF
-		2 = HIGH_CHIEF
-		3 = PARAMOUNT_CHIEF
-	}
-	
-	ruler_female = {
-		1 = CHIEFTESS
-		2 = HIGH_CHIEFTESS
-		3 = PARAMOUNT_CHIEFTESS
-	}
-	consort_male = {
-		1 = CONSORT
-		2 = CONSORT
-		3 = CONSORT
+		6 = QARA
 	}
 
 	consort_female = {
-		1 = CONSORT
-		2 = CONSORT
-		3 = CONSORT
+		6 = KHANUM_CONSORT_fem
 	}
 
 	heir_male = {
-		1 = HEIR
-		2 = HEIR
-		3 = HEIR
+		6 = ARBAB
+	}
+	
+	trigger = {
+		has_reform = persianate_tribal_confederation
+		religion = shiite
+		tag = QAR
+		NOT = {
+			tag = AKK
+			tag = BAL
+			tag = EGI
+			tag = HAK
+		}
+	}
+}
+
+aq_qoyunlu_confederate_sultanate = {
+	rank = {
+		6 = AQ_SULTANATE
+	}
+	
+	ruler_male = {
+		6 = AQ_SULTAN
 	}
 
-	heir_female = {
-		1 = HEIR_fem
-		2 = HEIR_fem
-		3 = HEIR_fem
+	consort_female = {
+		6 = KHANUM_CONSORT_fem
+	}
+
+	heir_male = {
+		6 = ARBAB
+	}
+	
+	trigger = {
+		has_reform = persianate_tribal_confederation
+		religion = sunni
+		OR = {
+			tag = AKK
+			tag = EGI
+			tag = HAK
+		}
+		NOT = { 
+			tag = BAL 
+			tag = QAR
+		}
+	}
+}
+
+gov_tribal = { #
+	rank = {
+		1 = LORDSHIP
+		2 = CHIEFDOM
+		3 = CHIEFDOM
+		4 = CHIEFDOM
+		5 = CHIEFDOM
+		6 = CHIEFDOM
+		7 = HIGH_CHIEFDOM
+		8 = GREAT_CHIEFDOM
+		9 = GRAND_CHIEFDOM
+	}
+	
+	ruler_male = {
+		1 = LORD
+		2 = CHIEF
+		3 = CHIEF
+		4 = CHIEF
+		5 = CHIEF
+		6 = CHIEF
+		7 = HIGH_CHIEF
+		8 = GREAT_CHIEF
+		9 = GRAND_CHIEF
+	}
+
+	consort_female = {
+		1 = LADY_CONSORT_fem
+		2 = LADY_CONSORT_fem
+		3 = LADY_CONSORT_fem
+		4 = LADY_CONSORT_fem
+		5 = LADY_CONSORT_fem
+		6 = LADY_CONSORT_fem
+		7 = LADY_CONSORT_fem
+		8 = LADY_CONSORT_fem
+		9 = LADY_CONSORT_fem
+	}
+
+	heir_male = {
+		1 = LORD
+		2 = LORD
+		3 = LORD
+		4 = LORD
+		5 = LORD
+		6 = LORD
+		7 = LORD
+		8 = LORD
+		9 = LORD
 	}
 	
 	trigger = {
@@ -553,26 +714,67 @@ gov_tribal = {
 			has_reform = tribal_despotism
 			has_reform = tribal_federation
 		}
+		NOT = {
+			tag = AKK 
+			tag = BAL
+			tag = EGI
+			tag = HAK 
+			tag = QAR
+			has_reform = burmese_monarchy_reform
+			have_had_reform = burmese_monarchy_reform
+			culture_group = andean_group 
+		}
 	}
 }
 
 gov_tribal_democracy = {
 	rank = {
-		1 = CHIEFDOM
-		2 = GRAND_CHIEFDOM
-		3 = GREAT_CHIEFDOM
+		6 = ELDERSHIP
+		7 = HIGH_ELDERSHIP
+		8 = GREAT_ELDERSHIP
+		9 = GRAND_ELDERSHIP
 	}
 	
 	ruler_male = {
-		1 = ELDER
-		2 = HIGH_ELDER
-		3 = PARAMOUNT_ELDER
+		6 = ELDER
+		7 = HIGH_ELDER
+		8 = GREAT_ELDER
+		9 = GRAND_ELDER
 	}
 	
 	ruler_female = {
-		1 = ELDER_fem
-		2 = HIGH_ELDER_fem
-		3 = PARAMOUNT_ELDER_fem
+		6 = ELDER_fem
+		7 = ELDER_fem
+		8 = HIGH_ELDER_fem
+		9 = PARAMOUNT_ELDER_fem
+	}
+	
+	consort_male = {
+		6 = CONSORT
+		7 = CONSORT
+		8 = CONSORT
+		9 = CONSORT
+	}
+
+	consort_female = {
+		6 = CONSORT_fem
+		7 = CONSORT_fem
+		8 = CONSORT_fem
+		9 = CONSORT_fem
+	}
+
+	heir_male = {
+		6 = LORD
+		7 = LORD
+		8 = LORD
+		9 = LORD
+	}
+
+	heir_female = {
+		6 = LADY_fem
+		7 = LADY_fem
+		8 = LADY_fem
+		9 = LADY_fem
 	}
 	
 	trigger = {
@@ -582,21 +784,24 @@ gov_tribal_democracy = {
 
 gov_constitutional_republic = {
 	rank = {
-		1 = REPUBLIC
-		2 = GRAND_REPUBLIC
-		3 = FEDERAL_REPUBLIC
+		6 = CONSTITUTIONAL_REPUBLIC
+		7 = HIGH_CONSTITUTIONAL_REPUBLIC
+		8 = GRAND_CONSTITUTIONAL_REPUBLIC
+		9 = FEDERAL_REPUBLIC
 	}
 	
 	ruler_male = {
-		1 = CHANCELOR
-		2 = PRESIDENT
-		3 = PRESIDENT
+		6 = PRESIDENT
+		7 = PRESIDENT
+		8 = PRESIDENT
+		9 = PRESIDENT
 	}
 	
-	ruler_female = {
-		1 = CHANCELOR_fem
-		2 = PRESIDENT_fem
-		3 = PRESIDENT_fem
+	consort_female = {
+		6 = FIRST_LADY_fem
+		7 = FIRST_LADY_fem
+		8 = FIRST_LADY_fem
+		9 = FIRST_LADY_fem
 	}
 	
 	trigger = {
@@ -604,6 +809,7 @@ gov_constitutional_republic = {
 		OR = {
 		    tag = USA
 			has_reform = constitutional_republic
+			has_reform = federal_republic
 			has_reform = presidential_reform
 			has_reform = parliamentary_reform
 		}
@@ -611,79 +817,115 @@ gov_constitutional_republic = {
 	}
 }
 
-hre_county = {
+#hre_county = {
+#	rank = {
+#		5 = COUNTY
+#	}
+#
+#	ruler_male = {
+#		5 = COUNT
+#	}
+#
+#	ruler_female = {
+#		5 = COUNTESS_fem
+#	}
+#
+#	consort_male = {
+#		5 = PRINCE_CONSORT
+#	}
+#
+#	consort_female = {
+#		5 = COUNTESS_fem
+#	}
+#
+#	heir_male = {
+#		5 = LORD
+#	}
+#
+#	heir_female = {
+#		5 = DAME_fem
+#	}
+#
+#	government_reform = monarchy_mechanic
+#
+#	trigger = {
+#        has_reform = monarchy_mechanic
+#        is_part_of_hre = yes
+#		NOT = { tag = AUT }
+#        NOT = {
+#            #OR = {
+#                has_reform = margraviate_reform
+#                #add any other gov reforms in HRE that have their own naming convention
+#            #}
+#        }
+#        NOT = {
+#            num_of_provinces_in_states = 4
+#        }
+#    }
+#}
+
+ger_marquisate_reform = {
 	rank = {
-		1 = COUNTY
-		2 = KINGDOM
-		3 = EMPIRE
+		5 = GER_MARQUISATE_1
 	}
-
+	
 	ruler_male = {
-		1 = COUNT
-		2 = KING
-		3 = EMPEROR
+		5 = GER_MARQUIS_1
 	}
-
+	
 	ruler_female = {
-		1 = COUNTESS
-		2 = QUEEN
-		3 = EMPRESS
+		5 = GER_MARCHIONESS_fem_1
 	}
-
-	consort_male  = {
-		1 = PRINCE_CONSORT
-		2 = PRINCE_CONSORT
-		3 = PRINCE_CONSORT
+	
+	consort_male = {
+		5 = GER_MARQUIS_1
 	}
 
 	consort_female = {
-		1 = COUNTESS
-		2 = QUEEN_CONSORT
-		3 = EMPRESS_CONSORT
+		5 = GER_MARCHIONESS_fem_1
 	}
-
+	
 	heir_male = {
-		1 = HEIR
-		2 = HEIR
-		3 = HEIR
+		5 = GER_LORD_1
 	}
 
 	heir_female = {
-		1 = HEIR_fem
-		2 = HEIR_fem
-		3 = HEIR_fem
+		5 = GER_LADY_fem_1
 	}
-
-	#This is a gov reform and not a mechanic! Thanks PDX for confusing a whole bunch of us. 
-	government_reform = monarchy_mechanic
-
+	
 	trigger = {
-		has_reform = monarchy_mechanic
-		is_part_of_hre = yes
-		NOT = { total_development = 50 }
+		has_reform = eue_marquisate_reform
+		culture_group = germanic
+		NOT = {
+			culture = ger_dutch        #Dutch
+            culture = ger_brabantian   #Belgian
+            culture = ger_dutch_saxon  #Dutch
+            culture = ger_zeelandic    #Dutch
+            culture = ger_limburgish   #Dutch
+            culture = ger_guelders     #Dutch
+            culture = ger_flemish      #Belgian
+			culture_group = low_franconian #Low Countries
+		}
 	}
 }
-
 
 #Ikko-Ikki Peasants
 
 ikko_ikki_peasants = {
 	rank = {
-		1 = IKKO_IKKI_COMMUNE
-		2 = IKKO_IKKI_SHOGUN
-		3 = IKKO_IKKI_EMPIRE
+		6 = IKKO_IKKI_COMMUNE
 	}
 
 	ruler_male = {
-		1 = MONSHU
-		2 = HIGH_MONSHU
-		3 = SHINRAN
+		6 = MONSHU
 	}
 
-	ruler_female = {
-		1 = MONSHU
-		2 = HIGH_MONSHUESS
-		3 = SHINRAN
+	consort_female = {
+		6 = CONSORT_fem
+	}
+
+	heir_male = {
+		6 = MONK
 	}
 
 	trigger = {
@@ -702,33 +944,19 @@ ikko_ikki_peasants = {
 
 ikko_ikki_temple = {
 	rank = {
-		1 = IKKO_IKKI_ORDER
-		2 = IKKO_IKKI_SHOGUN
-		3 = IKKO_IKKI_EMPIRE
+		5 = IKKO_IKKI_ORDER
 	}
 
 	ruler_male = {
-		1 = MONSHU
-		2 = HIGH_MONSHU
-		3 = SHINRAN
+		5 = MONSHU
 	}
 
-	ruler_female = {
-		1 = MONSHU
-		2 = HIGH_MONSHUESS
-		3 = SHINRAN
+	consort_female = {
+		5 = HAIGUSHA_fem
 	}
 	
 	heir_male = {
-		1 = HEIR
-		2 = HEIR
-		3 = HEIR
-	}
-
-	heir_female = {
-		1 = HEIR_fem
-		2 = HEIR_fem
-		3 = HEIR_fem
+		5 = MONK
 	}
 
 	trigger = {
@@ -745,37 +973,23 @@ ikko_ikki_temple = {
 
 asian_monastic_order = {
 	rank = {
-		1 = WARRIOR_MONK_ORDER
-		2 = WARRIOR_MONK_HIGH_ORDER
-		3 = DIVINE_PROTECTORS
+		5 = WARRIOR_MONK_ORDER
 	}
 
 	ruler_male = {
-		1 = MONSHU
-		2 = HIGH_MONSHU
-		3 = SHINRAN
+		5 = MONSHU
 	}
 
-	ruler_female = {
-		1 = MONSHU
-		2 = HIGH_MONSHUESS
-		3 = SHINRAN
+	consort_female = {
+		5 = HAIGUSHA_fem
 	}
 	
 	heir_male = {
-		1 = HEIR
-		2 = HEIR
-		3 = HEIR
-	}
-
-	heir_female = {
-		1 = HEIR_fem
-		2 = HEIR_fem
-		3 = HEIR_fem
+		5 = MONK
 	}
 
 	trigger = {
-		has_reform = monastic_order_reform
+		has_reform = asian_monastic_order_reform
 		OR = {
 			religion_group = eastern
 			culture_group = japanese_g
@@ -788,33 +1002,19 @@ asian_monastic_order = {
 
 northerner_king_monastic_order = {
 	rank = {
-		1 = BLACK_KNIGHTS
-		2 = BLACK_LONG_KNIGHTS
-		3 = BLACK_LONG_KNIGHTS
+		5 = BLACK_KNIGHTS
 	}
 
 	ruler_male = {
-		1 = FIRST_RANGER
-		2 = KNIGHT_KING
-		3 = KNIGHT_KING
+		5 = FIRST_RANGER
 	}
 
-	ruler_female = {
-		1 = FIRST_RANGER_fem
-		2 = KNIGHT_QUEEN
-		3 = KNIGHT_QUEEN
+	consort_female = {
+		5 = CONSORT_fem
 	}
 
 	heir_male = {
-		1 = HEIR
-		2 = HEIR
-		3 = HEIR
-	}
-
-	heir_female = {
-		1 = HEIR_fem
-		2 = HEIR_fem
-		3 = HEIR_fem
+		5 = RANGER
 	}
 
 	trigger = {
@@ -834,33 +1034,19 @@ northerner_king_monastic_order = {
 
 northerner_monastic_order = {
 	rank = {
-		1 = BLACK_KNIGHTS
-		2 = BLACK_WATCH
-		3 = BLACK_WATCH
+		5 = BLACK_WATCH
 	}
 
 	ruler_male = {
-		1 = FIRST_RANGER
-		2 = LORD_COMMANDER
-		3 = LORD_COMMANDER
+		5 = LORD_COMMANDER
 	}
-	
-	ruler_female = {
-		1 = FIRST_RANGER_fem
-		2 = LADY_COMMANDER
-		3 = LADY_COMMANDER
+
+	consort_female = {
+		5 = CONSORT_fem
 	}
 
 	heir_male = {
-		1 = HEIR
-		2 = HEIR
-		3 = HEIR
-	}
-
-	heir_female = {
-		1 = HEIR_fem
-		2 = HEIR_fem
-		3 = HEIR_fem
+		5 = SIR
 	}
 
 	trigger = {
@@ -879,33 +1065,15 @@ northerner_monastic_order = {
 
 teutonic_monastic_order = {
 	rank = {
-		1 = MONASTIC_ORDER
-		2 = MONASTIC_STATE
-		3 = MONASTIC_EMPIRE
+		5 = TEU_MONASTIC_ORDER
 	}
 
 	ruler_male = {
-		1 = HOCHMEISTER
-		2 = MAGISTER_HOCHMEISTER
-		3 = DEUTSCHMEISTER
-	}
-
-	ruler_female = {
-		1 = HOCHMEISTER_fem
-		2 = MAGISTER_HOCHMEISTER_fem
-		3 = DEUTSCHMEISTER_fem
+		5 = TEU_HIGH_CHAMPION
 	}
 
 	heir_male = {
-		1 = HEIR
-		2 = HEIR
-		3 = HEIR
-	}
-
-	heir_female = {
-		1 = HEIR_fem
-		2 = HEIR_fem
-		3 = HEIR_fem
+		5 = TEU_WARRIOR_MONK
 	}
 
 	trigger = {
@@ -917,33 +1085,15 @@ teutonic_monastic_order = {
 #Theocracies - Specified Religion / Culture
 livonian_monastic_order = {
 	rank = {
-		1 = MONASTIC_ORDER
-		2 = MONASTIC_STATE
-		3 = MONASTIC_EMPIRE
+		5 = LIV_MONASTIC_ORDER
 	}
 
 	ruler_male = {
-		1 = LANDMEISTER
-		2 = LANDMEISTER
-		3 = LANDMEISTER
-	}
-
-	ruler_female = {
-		1 = LANDMEISTER_fem
-		2 = LANDMEISTER_fem
-		3 = LANDMEISTER_fem
+		5 = LIV_COUNTRY_MASTER
 	}
 
 	heir_male = {
-		1 = HEIR
-		2 = HEIR
-		3 = HEIR
-	}
-
-	heir_female = {
-		1 = HEIR_fem
-		2 = HEIR_fem
-		3 = HEIR_fem
+		5 = LIV_MONK
 	}
 
 	trigger = {
@@ -952,35 +1102,36 @@ livonian_monastic_order = {
 	}
 }
 
-germanic_monastic_order = {
+knights_monastic_order = {
 	rank = {
-		1 = MONASTIC_ORDER
-		2 = SOVREIGN_MONASTIC_ORDER
-		3 = SOVREIGN_MONASTIC_CONFEDERATION
+		5 = KNI_MONASTIC_ORDER
 	}
 
 	ruler_male = {
-		1 = GROSSMEISTER
-		2 = GROSSMEISTER
-		3 = GROSSMEISTER
-	}
-
-	ruler_female = {
-		1 = GROSSMEISTER_fem
-		2 = GROSSMEISTER_fem
-		3 = GROSSMEISTER_fem
+		5 = KNI_GRAND_MASTER
 	}
 
 	heir_male = {
-		1 = HEIR
-		2 = HEIR
-		3 = HEIR
+		5 = KNI_COMMANDER
 	}
 
-	heir_female = {
-		1 = HEIR_fem
-		2 = HEIR_fem
-		3 = HEIR_fem
+	trigger = {
+		has_reform = monastic_order_reform
+		tag = KNI
+	}
+}
+
+germanic_monastic_order = {
+	rank = {
+		5 = GER_MONASTIC_ORDER
+	}
+
+	ruler_male = {
+		5 = GER_GRAND_MASTER
+	}
+
+	heir_male = {
+		5 = GER_MONK
 	}
 
 	trigger = {
@@ -997,33 +1148,15 @@ germanic_monastic_order = {
 
 brewing_order = {
 	rank = {
-		1 = TRAPPIST_STATE
-		2 = MONASTIC_STATE
-		3 = BREWING_EMPIRE
+		5 = TRAPPIST_STATE
 	}
 
 	ruler_male = {
-		1 = TRAPPIST
-		2 = ARCH_TRAPPIST
-		3 = BREWMASTER
+		5 = TRAPPIST
 	}
 
-	ruler_female = {
-		1 = TRAPPISTINE
-		2 = ARCH_TRAPPISTINE
-		3 = BREWMISTRESS
-	}
-	
 	heir_male = {
-		1 = HEIR
-		2 = HEIR
-		3 = HEIR
-	}
-
-	heir_female = {
-		1 = HEIR_fem
-		2 = HEIR_fem
-		3 = HEIR_fem
+		5 = LORD
 	}
 
 	trigger = {
@@ -1034,33 +1167,31 @@ brewing_order = {
 
 jewish_theocracy = {
 	rank = {
-		1 = HOLY_PRINCIPALITY
-		2 = HOLY_STATE
-		3 = HOLY_EMPIRE
+		6 = MEDINAT_KODSH
+		7 = MEDINAT_KODSH
+		8 = MEDINAT_KODSH
+		9 = MEDINAT_KODSH
 	}
 
 	ruler_male = {
-		1 = RABBI
-		2 = GRAND_RABBI
-		3 = KOHEN_GADOL
+		6 = SANHEDRIN
+		7 = SANHEDRIN
+		8 = SANHEDRIN
+		9 = SANHEDRIN
 	}
 
-	ruler_female = {
-		1 = RABBI
-		2 = GRAND_RABBI
-		3 = KOHEN_GADOL
+	consort_female = {
+		6 = GVERET_fem
+		7 = GVERET_fem
+		8 = GVERET_fem
+		9 = GVERET_fem
 	}
 	
 	heir_male = {
-		1 = HEIR
-		2 = HEIR
-		3 = HEIR
-	}
-
-	heir_female = {
-		1 = HEIR_fem
-		2 = HEIR_fem
-		3 = HEIR_fem
+		6 = ADON
+		7 = ADON
+		8 = ADON
+		9 = ADON
 	}
 
 	trigger = {
@@ -1071,33 +1202,31 @@ jewish_theocracy = {
 
 zoroastrian_theocracy = {
 	rank = {
-		1 = HOLY_PRINCIPALITY
-		2 = HOLY_STATE
-		3 = HOLY_EMPIRE
+		6 = HERBADOM
+		7 = MOBEDOM
+		8 = ZARATHUSTRADOM
+		9 = EAZAM_ZARATHUSTRADOM
 	}
 
 	ruler_male = {
-		1 = HERBAD
-		2 = MOBED
-		3 = MOABADAN_MOABAD
+		6 = HERBAD
+		7 = MOBED
+		8 = MOABADAN_MOABAD
+		9 = GRAND_MOABADAN_MOABAD
 	}
 
-	ruler_female = {
-		1 = HERBAD
-		2 = MOBEDYAR
-		3 = MOABADAN_MOABAD
+	consort_female = {
+		6 = KHANUM_CONSORT_fem
+		7 = KHANUM_CONSORT_fem
+		8 = KHANUM_CONSORT_fem
+		9 = KHANUM_CONSORT_fem
 	}
 	
 	heir_male = {
-		1 = HEIR
-		2 = HEIR
-		3 = HEIR
-	}
-
-	heir_female = {
-		1 = HEIR_fem
-		2 = HEIR_fem
-		3 = HEIR_fem
+		6 = PRORDEGAR
+		7 = PRORDEGAR
+		8 = PRORDEGAR
+		9 = PRORDEGAR
 	}
 
 	trigger = {
@@ -1108,33 +1237,31 @@ zoroastrian_theocracy = {
 
 sikh_theocracy = {
 	rank = {
-		1 = HOLY_STATE
-		2 = MISL
-		3 = CONFEDERATION
+		6 = JATHEDARI
+		7 = UCA_JATHEDARI
+		8 = MISALADARADAMA
+		9 = GRAINDA_MISALADARADAMA
 	}
 
 	ruler_male = {
-		1 = JATHEDAR
-		2 = MISLDAR
-		3 = GREAT_MISLDAR
+		6 = JATHEDARA
+		7 = UCA_JATHEDARA
+		8 = MISALADARA
+		9 = GRAINDA_MISALADARA
 	}
-
-	ruler_female = {
-		1 = JATHEDAR
-		2 = MISLDAR
-		3 = GREAT_MISLDAR
+	
+	consort_female = {
+		6 = LEDI_fem
+		7 = LEDI_fem
+		8 = LEDI_fem
+		9 = LEDI_fem
 	}
 	
 	heir_male = {
-		1 = HEIR
-		2 = HEIR
-		3 = HEIR
-	}
-
-	heir_female = {
-		1 = HEIR_fem
-		2 = HEIR_fem
-		3 = HEIR_fem
+		6 = PRABHU
+		7 = PRABHU
+		8 = PRABHU
+		9 = PRABHU
 	}
 
 	trigger = {
@@ -1145,33 +1272,19 @@ sikh_theocracy = {
 
 hindu_theocracy = {
 	rank = {
-		1 = HOLY_PRINCIPALITY
-		2 = HOLY_STATE
-		3 = HOLY_EMPIRE
+		7 = PANDITDOM
 	}
 
 	ruler_male = {
-		1 = PANDIT
-		2 = PANDITRAO
-		3 = HIGH_GURU
+		7 = PANDIT
 	}
 
-	ruler_female = {
-		1 = PANDIT
-		2 = PANDITRAO
-		3 = HIGH_GURU
+	consort_female = {
+		7 = CONSORT_fem
 	}
 	
 	heir_male = {
-		1 = HEIR
-		2 = HEIR
-		3 = HEIR
-	}
-
-	heir_female = {
-		1 = HEIR_fem
-		2 = HEIR_fem
-		3 = HEIR_fem
+		7 = BHAGAVAAN
 	}
 
 	trigger = {
@@ -1182,33 +1295,19 @@ hindu_theocracy = {
 
 shinto_theocracy = {
 	rank = {
-		1 = HOLY_PRINCIPALITY
-		2 = HOLY_STATE
-		3 = HOLY_EMPIRE
+		7 = KANNUSHIYO
 	}
 
 	ruler_male = {
-		1 = O_KANNUSHI
-		2 = O_KANNUSHI
-		3 = O_KANNUSHI
+		7 = O_KANNUSHI
 	}
 
-	ruler_female = {
-		1 = O_KANNUSHI
-		2 = O_KANNUSHI
-		3 = O_KANNUSHI
+	consort_female = {
+		7 = CONSORT_fem
 	}
 
 	heir_male = {
-		1 = HEIR
-		2 = HEIR
-		3 = HEIR
-	}
-
-	heir_female = {
-		1 = HEIR_fem
-		2 = HEIR_fem
-		3 = HEIR_fem
+		7 = OMO
 	}
 
 	trigger = {
@@ -1219,33 +1318,24 @@ shinto_theocracy = {
 
 buddhist_theocracy = {
 	rank = {
-		1 = HOLY_PRINCIPALITY
-		2 = HOLY_STATE
-		3 = HOLY_EMPIRE
+		6 = GANDEN_PHODRANG
+		7 = GANDEN_PHODRANG
+		8 = GANDEN_PHODRANG
+		9 = GANDEN_PHODRANG
 	}
 
 	ruler_male = {
-		1 = LAMA
-		2 = TULKU
-		3 = GREAT_TULKU
+		6 = DALAI_LAMA
+		7 = DALAI_LAMA
+		8 = DALAI_LAMA
+		9 = DALAI_LAMA
 	}
 
-	ruler_female = {
-		1 = LAMA
-		2 = TULKU
-		3 = GREAT_TULKU
-	}
-	
 	heir_male = {
-		1 = HEIR
-		2 = HEIR
-		3 = HEIR
-	}
-
-	heir_female = {
-		1 = HEIR_fem
-		2 = HEIR_fem
-		3 = HEIR_fem
+		6 = MGON
+		7 = MGON
+		8 = MGON
+		9 = MGON
 	}
 
 	trigger = {
@@ -1260,33 +1350,19 @@ buddhist_theocracy = {
 
 confucian_theocracy = {
 	rank = {
-		1 = HOLY_PRINCIPALITY
-		2 = HOLY_STATE
-		3 = HOLY_EMPIRE
+		7 = ELDERDOM
 	}
 
 	ruler_male = {
-		1 = ELDER
-		2 = HIGH_ELDER
-		3 = SON_OF_HEAVEN
+		7 = ELDER
 	}
 
-	ruler_female = {
-		1 = ELDER_fem
-		2 = HIGH_ELDER_fem
-		3 = DAUGHTER_OF_HEAVEN
+	consort_female = {
+		7 = CONSORT_fem
 	}
 	
 	heir_male = {
-		1 = HEIR
-		2 = HEIR
-		3 = HEIR
-	}
-
-	heir_female = {
-		1 = HEIR_fem
-		2 = HEIR_fem
-		3 = HEIR_fem
+		7 = MONK
 	}
 
 	trigger = {
@@ -1295,99 +1371,68 @@ confucian_theocracy = {
 	}
 }
 
-ibadi_theocracy = {
+ibadi_theocracy_imamate_reform = {
 	rank = {
 		1 = IMAMATE
-		2 = GREAT_IMAMATE
-		3 = EMPIRE
+		2 = HIGH_IMAMATE
+		3 = GREAT_IMAMATE
+		4 = GRAND_IMAMATE
 	}
 
 	ruler_male = {
 		1 = IMAM
-		2 = GREAT_IMAM
-		3 = HIGH_IMAM
-	}
-
-	ruler_female = {
-		1 = IMAM_fem
-		2 = GREAT_IMAM_fem
-		3 = HIGH_IMAM_fem
-	}
-
-	consort_male = {
-		1 = CONSORT
-		2 = CONSORT
-		3 = CONSORT
+		2 = HIGH_IMAM
+		3 = GREAT_IMAM
+		4 = GRAND_IMAM
 	}
 
 	consort_female = {
-		1 = CONSORT
-		2 = CONSORT
-		3 = CONSORT
+		1 = SAYIDA_CONSORT_fem
+		2 = SAYIDA_CONSORT_fem
+		3 = SAYIDA_CONSORT_fem
+		4 = SAYIDA_CONSORT_fem
 	}
 
 	heir_male = {
-		1 = HEIR
-		2 = HEIR
-		3 = HEIR
-	}
-
-	heir_female = {
-		1 = HEIR_fem
-		2 = HEIR_fem
-		3 = HEIR_fem
+		1 = ISLAMIC_SCHOLAR
+		2 = IMAM
+		3 = HIGH_IMAM
+		4 = GREAT_IMAM
 	}
 
 	trigger = {
 		religion = ibadi
-		OR = {
-			government = theocracy
-			has_reform = feudal_theocracy
-		}
+		has_reform = ME_ibadi_community
 	}
 }
 
 yemenite_theocracy = {
 	rank = {
-		1 = IMAMATE
-		2 = GREAT_IMAMATE
-		3 = HIGH_IMAMATE
+		1 = MULLAHATE
+		2 = HIGH_MULLAHATE
+		3 = GREAT_MULLAHATE
+		4 = GRAND_MULLAHATE
 	}
 
 	ruler_male = {
-		1 = IMAM
-		2 = GREAT_IMAM
-		3 = HIGH_IMAM
-	}
-
-	ruler_female = {
-		1 = IMAM_fem
-		2 = GREAT_IMAM_fem
-		3 = HIGH_IMAM_fem
-	}
-
-	consort_male = {
-		1 = CONSORT
-		2 = CONSORT
-		3 = CONSORT
+		1 = MULLAH
+		2 = HIGH_MULLAHATE
+		3 = GREAT_MULLAHATE
+		4 = GRAND_MULLAHATE
 	}
 
 	consort_female = {
-		1 = CONSORT
-		2 = CONSORT
-		3 = CONSORT
+		1 = KHANUM_CONSORT_fem
+		2 = KHANUM_CONSORT_fem
+		3 = KHANUM_CONSORT_fem
+		4 = KHANUM_CONSORT_fem
 	}
 
 	heir_male = {
-		1 = HEIR
-		2 = HEIR
-		3 = HEIR
-	}
-
-	heir_female = {
-		1 = HEIR_fem
-		2 = HEIR_fem
-		3 = HEIR_fem
+		1 = ARBAB
+		2 = ARBAB
+		3 = ARBAB
+		4 = ARBAB
 	}
 
 	trigger = {
@@ -1402,33 +1447,31 @@ yemenite_theocracy = {
 
 shiite_theocracy = {
 	rank = {
-		1 = SHEIKHDOM
-		2 = HOLY_STATE
-		3 = HIGH_IMAMATE
+		6 = AYATOLLATE
+		7 = HIGH_AYATOLLATE
+		8 = GREAT_AYATOLLATE
+		9 = GRAND_AYATOLLATE
 	}
 
 	ruler_male = {
-		1 = SHEIKH
-		2 = AYATOLLAH
-		3 = IMAM
+		6 = AYATOLLAH
+		7 = HIGH_AYATOLLAH
+		8 = GREAT_AYATOLLAH
+		9 = GRAND_AYATOLLAH
 	}
 
-	ruler_female = {
-		1 = SHEIKHA
-		2 = AYATOLLAH
-		3 = IMAM_fem
+	consort_female = {
+		6 = KHANUM_CONSORT_fem
+		7 = KHANUM_CONSORT_fem
+		8 = KHANUM_CONSORT_fem
+		9 = KHANUM_CONSORT_fem
 	}
 
 	heir_male = {
-		1 = HEIR
-		2 = HEIR
-		3 = HEIR
-	}
-
-	heir_female = {
-		1 = HEIR_fem
-		2 = HEIR_fem
-		3 = HEIR_fem
+		6 = ARBAB
+		7 = ARBAB
+		8 = ARBAB
+		9 = ARBAB
 	}
 
 	trigger = {
@@ -1438,38 +1481,41 @@ shiite_theocracy = {
 			has_reform = feudal_theocracy
 		}
 		NOT = { primary_culture = yemeni_culture }
+		NOT = {
+			tag = AKK
+			tag = EGI
+			tag = HAK
+		}
 	}
 }
 
 uyghur_theocracy = {
 	rank = {
-		1 = SHEIKHDOM
-		2 = HOLY_STATE
-		3 = HOLY_EMPIRE
+		6 = KHOJAHATE
+		7 = HIGH_KHOJAHATE
+		8 = GREAT_KHOJAHATE
+		9 = GRAND_KHOJAHATE
 	}
 
 	ruler_male = {
-		1 = SHEIKH
-		2 = KHOJA
-		3 = GREAT_KHOJA
+		6 = KHOJA
+		7 = HIGH_KHOJA
+		8 = GREAT_KHOJA
+		9 = GRAND_KHOJA
 	}
 
-	ruler_female = {
-		1 = SHEIKHA
-		2 = KHOJA
-		3 = GREAT_KHOJA_fem
+	consort_female = {
+		6 = KANIM_CONSORT_fem
+		7 = KANIM_CONSORT_fem
+		8 = KANIM_CONSORT_fem
+		9 = KANIM_CONSORT_fem
 	}
 
 	heir_male = {
-		1 = HEIR
-		2 = HEIR
-		3 = HEIR
-	}
-
-	heir_female = {
-		1 = HEIR_fem
-		2 = HEIR_fem
-		3 = HEIR_fem
+		6 = REBBIM
+		7 = REBBIM
+		8 = REBBIM
+		9 = REBBIM
 	}
 
 	trigger = {
@@ -1484,45 +1530,43 @@ uyghur_theocracy = {
 
 sunni_theocracy = {
 	rank = {
-		1 = SHEIKHDOM
-		2 = IMAMATE
-		3 = HIGH_IMAMATE
+		3 = SHEIKHDOM
+		4 = SHARIFATE
+		5 = EMIRATE
+		6 = SULTANATE
+		7 = HIGH_SULTANATE
+		8 = GREAT_SULTANATE
+		9 = CALIPHATE
 	}
 
 	ruler_male = {
-		1 = SHEIKH
-		2 = IMAM
-		3 = HIGH_IMAM
-	}
-
-	ruler_female = {
-		1 = SHEIKHA
-		2 = IMAM_fem
-		3 = HIGH_IMAM_fem
-	}
-
-	consort_male = {
-		1 = CONSORT
-		2 = CONSORT
-		3 = CONSORT
+		3 = SHEIKH
+		4 = SHARIF
+		5 = EMIR
+		6 = SULTAN
+		7 = HIGH_SULTAN
+		8 = GREAT_SULTAN
+		9 = CALIPH
 	}
 
 	consort_female = {
-		1 = CONSORT
-		2 = CONSORT
-		3 = CONSORT
+		3 = SAYIDA_CONSORT_fem
+		4 = SAYIDA_CONSORT_fem
+		5 = SAYIDA_CONSORT_fem
+		6 = SAYIDA_CONSORT_fem
+		7 = SAYIDA_CONSORT_fem
+		8 = SAYIDA_CONSORT_fem
+		9 = SAYIDA_CONSORT_fem
 	}
 
 	heir_male = {
-		1 = HEIR
-		2 = HEIR
-		3 = HEIR
-	}
-
-	heir_female = {
-		1 = HEIR_fem
-		2 = HEIR_fem
-		3 = HEIR_fem
+		3 = RABA
+		4 = RABA
+		5 = RABA
+		6 = RABA
+		7 = RABA
+		8 = RABA
+		9 = RABA
 	}
 
 	trigger = {
@@ -1531,40 +1575,32 @@ sunni_theocracy = {
 			has_reform = feudal_theocracy
 			government = theocracy
 		}
+		NOT = { 
+			tag = AKK
+			tag = EGI
+			tag = HAK
+			tag = QAR 
+		}
 	}
 }
 
 orthodox_theocracy = {
 	rank = {
-		1 = METROPOLIS
-		2 = GREAT_METROPOLIS
-		3 = PATRIARCHATE
+		7 = METROPOLIS
 	}
 
 	ruler_male = {
-		1 = BISHOP
-		2 = ARCHBISHOP
-		3 = PATRIARCH
+		7 = PATRIARCH
 	}
 
-	ruler_female = {
-		1 = BISHOP_fem
-		2 = ARCHBISHOP_fem
-		3 = MATRIARCH
+	consort_female = {
+		7 = CONSORT_fem
+	}
+
+	heir_male = {
+		7 = BISHOP
 	}
 	
-	heir_male = {
-		1 = HEIR
-		2 = HEIR
-		3 = HEIR
-	}
-
-	heir_female = {
-		1 = HEIR_fem
-		2 = HEIR_fem
-		3 = HEIR_fem
-	}
-
 	trigger = {
 		OR = {
 			religion = orthodox
@@ -1576,33 +1612,19 @@ orthodox_theocracy = {
 
 inti_theocracy = {
 	rank = {
-		1 = HOLY_PRINCIPALITY
-		2 = HOLY_STATE
-		3 = HOLY_EMPIRE
+		7 = MICHOQDOM
 	}
 
 	ruler_male = {
-		1 = MICHOQ
-		2 = HIGH_PRIEST
-		3 = WILLAQ_UMU
+		7 = MICHOQ
 	}
 
-	ruler_female = {
-		1 = MICHOQ
-		2 = HIGH_PRIESTESS
-		3 = SARPAY
+	consort_female = {
+		7 = CONSORT
 	}
 	
 	heir_male = {
-		1 = HEIR
-		2 = HEIR
-		3 = HEIR
-	}
-
-	heir_female = {
-		1 = HEIR_fem
-		2 = HEIR_fem
-		3 = HEIR_fem
+		7 = HIGH_PRIEST
 	}
 
 	trigger = {
@@ -1613,33 +1635,31 @@ inti_theocracy = {
 
 pagan_theocracy = {
 	rank = {
-		1 = HOLY_PRINCIPALITY
-		2 = HOLY_STATE
-		3 = HOLY_EMPIRE
+		6 = PRIESTDOM
+		7 = PRIESTDOM
+		8 = PRIESTDOM
+		9 = PRIESTDOM
 	}
 
 	ruler_male = {
-		1 = PRIEST
-		2 = HIGH_PRIEST
-		3 = PARAMOUNT_PRIEST
+		6 = PRIEST
+		7 = PRIEST
+		8 = HIGH_PRIEST
+		9 = PARAMOUNT_PRIEST
 	}
 
-	ruler_female = {
-		1 = PRIESTESS
-		2 = HIGH_PRIESTESS
-		3 = PARAMOUNT_PRIESTESS
+	consort_female = {
+		6 = CONSORT_fem
+		7 = CONSORT_fem
+		8 = CONSORT_fem
+		9 = CONSORT_fem
 	}
 	
 	heir_male = {
-		1 = HEIR
-		2 = HEIR
-		3 = HEIR
-	}
-
-	heir_female = {
-		1 = HEIR_fem
-		2 = HEIR_fem
-		3 = HEIR_fem
+		6 = LORD
+		7 = LORD
+		8 = LORD
+		9 = LORD
 	}
 
 	trigger = {
@@ -1650,35 +1670,17 @@ pagan_theocracy = {
 
 gov_religious_order = {
 	rank = {
-		1 = MONASTIC_ORDER
-		2 = MONASTIC_STATE
-		3 = MONASTIC_EMPIRE
+		5 = MONASTIC_ORDER
 	}
 	
 	ruler_male = {
-		1 = GRAND_MASTER
-		2 = GRAND_MASTER
-		3 = COMMANDER_EMPEROR
-	}
-	
-	ruler_female = {
-		1 = GRAND_MISTRESS
-		2 = GRAND_MISTRESS
-		3 = COMMANDER_EMPRESS
+		5 = GRAND_MASTER
 	}
 	
 	heir_male = {
-		1 = HEIR
-		2 = HEIR
-		3 = HEIR
+		5 = MONK
 	}
 
-	heir_female = {
-		1 = HEIR_fem
-		2 = HEIR_fem
-		3 = HEIR_fem
-	}
-	
 	trigger = {
 		OR = {
 			has_reform = monastic_order_reform
@@ -1692,33 +1694,15 @@ gov_religious_order = {
 
 sisters_crusader_state = {
 	rank = {
-		1 = SISTERHOOD
-		2 = SISTERHOOD
-		3 = GRAND_SISTERHOOD
-	}
-
-	ruler_male = {
-		1 = GRAND_MASTER
-		2 = GRAND_MASTER
-		3 = COMMANDER_EMPEROR
+		5 = SISTERHOOD
 	}
 
 	ruler_female = {
-		1 = ABBESS
-		2 = MOTHER_SUPERIOR
-		3 = GRAND_MISTRESS
+		5 = ABBESS_fem
 	}
 	
-	heir_male = {
-		1 = HEIR
-		2 = HEIR
-		3 = HEIR
-	}
-
 	heir_female = {
-		1 = HEIR_fem
-		2 = HEIR_fem
-		3 = HEIR_fem
+		5 = SISTER_fem
 	}
 
 	trigger = {
@@ -1734,44 +1718,19 @@ sisters_crusader_state = {
 
 gov_jarldom = {
 	rank = {
-		1 = JARLDOM
-		2 = KINGDOM
-		3 = EMPIRE
+		4 = JARLDOM
 	}
 
 	ruler_male = {
-		1 = JARL
-		2 = KING
-		3 = EMPEROR
+		4 = JARL
 	}
 
-	ruler_female = {
-		1 = JARL
-		2 = QUEEN
-		3 = EMPRESS
-	}
-	
-	heir_male = {
-		1 = HEIR
-		2 = HEIR
-		3 = HEIR
-	}
-
-	heir_female = {
-		1 = HEIR_fem
-		2 = HEIR_fem
-		3 = HEIR_fem
-	}
-
-	consort_male = {
-		1 = CONSORT
-		2 = KING
-		3 = EMPEROR
-	}
 	consort_female = {
-		1 = CONSORT
-		2 = QUEEN
-		3 = EMPRESS
+		4 = CONSORT
+	}
+
+	heir_male = {
+		4 = LORD
 	}
 
 	trigger = {

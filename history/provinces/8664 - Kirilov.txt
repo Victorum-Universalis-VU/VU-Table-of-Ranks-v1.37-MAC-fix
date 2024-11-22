@@ -1,11 +1,11 @@
-#8664 - Kirilov
+#8664 - Kirillov
 
 owner = BLO
 controller = BLO
 add_core = BLO
 culture = novgorodian
 religion = orthodox
-capital = "Kirilov"
+capital = "Kirillov"
 trade_goods = glass
 hre = no
 base_tax = 3

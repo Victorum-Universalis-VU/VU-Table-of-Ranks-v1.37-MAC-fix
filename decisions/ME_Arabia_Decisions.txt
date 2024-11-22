@@ -32,7 +32,7 @@ country_decisions = {
 					move_capital_effect = yes
 				}
 			}
-			set_government_rank = 2
+			set_government_rank = 8
 			
 			ME_override_country_name = { string = NAJ_riyadh }
 		}

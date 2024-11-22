@@ -107,19 +107,6 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_icon_autonomous_dominion"
-		texturefile = "gfx/interface/icon_autonomous_dominion.dds"
-	}
-	spriteType = {
-		name = "GFX_diplomacy_leadautonomous_dominion"
-		texturefile = "gfx//interface//icon_diplomacy_leadautonomous_dominion.dds"
-	}
-	spriteType = {
-		name = "GFX_diplomacy_amautonomous_dominion"
-		texturefile = "gfx//interface//icon_diplomacy_amautonomous_dominion.dds"
-	}
-
-	spriteType = {
 		name = "GFX_icon_roman_client_kingdom"
 		texturefile = "gfx/interface/icon_roman_client_kingdom.dds"
 	}

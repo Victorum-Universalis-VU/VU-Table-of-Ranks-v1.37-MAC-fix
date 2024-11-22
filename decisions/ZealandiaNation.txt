@@ -1,3 +1,4 @@
+#Updated to v1.37 - SF
 country_decisions = {
 
 	zealandia_nation = {
@@ -81,6 +82,7 @@ country_decisions = {
 				}
 			}
 			change_tag = NZL
+			on_change_tag_effect = yes
 			if = {
 				limit = {
 					NOT = { is_former_colonial_nation = yes }
@@ -90,9 +92,9 @@ country_decisions = {
 			}
 			if = {
 				limit = {
-					NOT = { government_rank = 2 }
+					NOT = { government_rank = 8 }
 				}
-				set_government_rank = 2
+				set_government_rank = 8
 			}
 			te_ika_a_maui_area = {
 				limit = {
@@ -125,10 +127,7 @@ country_decisions = {
 			#can't have more than one elective monarchy in the game
 			if = {
 				limit = {
-					OR = {
-						has_reform = elective_monarchy
-						has_reform = phoenician_elective_monarchical_republic
-					}
+					has_reform = elective_monarchy
 				}
 				change_government = monarchy
 				add_government_reform = feudalism_reform
@@ -199,11 +198,12 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = AOT
+			on_change_tag_effect = yes
 			if = {
 				limit = {
-					NOT = { government_rank = 2 }
+					NOT = { government_rank = 8 }
 				}
-				set_government_rank = 2
+				set_government_rank = 8
 			}
 			if = {
 				limit = {

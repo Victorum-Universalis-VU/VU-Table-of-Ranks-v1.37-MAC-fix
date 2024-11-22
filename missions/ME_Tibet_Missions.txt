@@ -611,9 +611,9 @@ me_tibet_missions_3 = {
 		effect = {
 			if = {
 				limit = {
-					NOT = { government_rank = 2 }
+					NOT = { government_rank = 8 }
 				}
-				set_government_rank = 2
+				set_government_rank = 8
 			}
 			add_stability_or_adm_power = yes
 			add_prestige_or_monarch_power = { amount = 25 }
@@ -1459,7 +1459,10 @@ me_tibet_missions_5 = {
         position = 4
         provinces_to_highlight = {
             owner = {
-                has_reform = steppe_horde
+                OR = {
+					has_reform = steppe_horde
+					has_reform = scythian_horde_reform
+				}
                 army_size = ROOT
                 total_development = ROOT
                 is_neighbor_of = ROOT
@@ -1471,7 +1474,10 @@ me_tibet_missions_5 = {
 				tooltip = TIBET_REMNANTS_MONGOLS_TT
 				NOT = {
 					any_neighbor_country = {
-						has_reform = steppe_horde
+						OR = {
+				        	has_reform = steppe_horde
+				        	has_reform = scythian_horde_reform
+				        }
 						OR = {
 							army_size = ROOT
 							total_development = ROOT
@@ -1626,7 +1632,10 @@ me_tibet_missions_5 = {
             owner = {
                 OR = {
                     AND = {
-                        has_reform = steppe_horde
+                        OR = {
+				        	has_reform = steppe_horde
+				        	has_reform = scythian_horde_reform
+				        }
                         total_development = ROOT
                         army_size = ROOT
                     }
@@ -1649,7 +1658,10 @@ me_tibet_missions_5 = {
 				tooltip = TIBET_END_EVERY_EMPIRE_HORDE_TT
 				NOT = {
 					any_country = {
-						has_reform = steppe_horde
+						OR = {
+				        	has_reform = steppe_horde
+				        	has_reform = scythian_horde_reform
+				        }
 						total_development = ROOT
 						army_size = ROOT
 					}

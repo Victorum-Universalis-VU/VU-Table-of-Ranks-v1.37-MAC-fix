@@ -1,11 +1,10 @@
-#3048 - Sudtirol
+#3048 - Bolzano
 #Region - Germany
 #Area - Tirol
 
 owner = TIR
 controller = TIR
 add_core = TIR
-add_core = HAB
 culture = austrian
 religion = catholic
 hre = yes
@@ -16,15 +15,10 @@ base_manpower = 3
 capital = "Bozen"
 is_city = yes
 
+#Claimants
+add_core = HAB
 
-
-
-
-
-
-
-
-
+#History files by SF
 1452.1.1 = {
 	owner = STY
 	controller = STY

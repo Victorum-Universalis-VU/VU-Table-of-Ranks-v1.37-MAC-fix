@@ -521,6 +521,12 @@ albania_missions_3 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			ragusa_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 			
 			add_prestige = 10
 			add_mil_power = 50
@@ -665,11 +671,18 @@ albania_missions_4 = {
 		position = 7
 		required_missions = { alb_conquest_serbia }
 		provinces_to_highlight = {
-			area = east_adriatic_coast_area
+			OR = {
+				area = east_adriatic_coast_area
+				area = ragusa_area
+			}
 			NOT = { owned_by = ROOT }
 		}
 		trigger = {
 			east_adriatic_coast_area = {
+				type = all
+				owned_by = ROOT
+			}
+			ragusa_area = {
 				type = all
 				owned_by = ROOT
 			}
@@ -897,14 +910,14 @@ albania_missions_5 = {
 			if = {
 				limit = {
 					OR = {
-						government_rank = 2
+						government_rank = 8
 						is_part_of_hre = yes
 					}
 				}
 				add_legitimacy_equivalent = { amount = 20 republican_tradition = 10 }
 				every_owned_province = { add_local_autonomy = -5 }
 			}
-			else = { set_government_rank = 2 }
+			else = { set_government_rank = 8 }
 			
 			add_country_modifier = {
 				name = alb_albanian_expansion

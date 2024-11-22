@@ -1,6 +1,6 @@
 government = theocracy
-add_government_reform = theocratic_government
-government_rank = 1
+add_government_reform = church_of_germany_bishopric_reform
+government_rank = 3 #Bishopric
 primary_culture = pommeranian
 religion = catholic
 #technology_group = western
@@ -8,12 +8,13 @@ technology_group = german_tech_group
 unit_type = western
 capital = 7618 #Schwerin
 
-1431.1.1 = {
+1457.1.1 = {
 	monarch = {
-		name = "Anton von Rotenhan"
-		birth_date = 1390.1.1
-		adm = 3
-		dip = 3
+		name = "Nicholas I"
+		dynasty = "von Bödeker"
+		birth_date = 1444.1.1
+		adm = 2
+		dip = 2
 		mil = 2
 	}
 }

@@ -1898,3 +1898,89 @@
  flavor_fra.9524.t:0 "The Surrender of Calais"
  flavor_fra.9524.d:0 "The victory of Louis XI of France over Charles the Bold in 1477 and the annexation of Picardy to the French royal domain marked the end of a status quo over the possession of Calais. In practice, however, this has taken quite some time to materialize. The arrival of [Root.Monarch.GetName] [Root.Monarch.GetHerselfHimself] together with their armies on the scene seems to have made remied any delays resulting in the return of Calais to our Kingdom."
  flavor_fra.9524.a:0 "This is a great and joyous day to be remembered."
+
+ #NEW VU events for France by San Felipe
+ vu_wandering_wenches_title:0 "Wandering Wenches"
+ vu_wandering_wenches_desc:0 "Fancy a quick one?"
+ vu_wandering_wenches.1a:0 "They can go!"
+ vu_wandering_wenches.1a.tt:0 "They will leave and go elsewhere."
+ vu_wandering_wenches.1b:0 "They can stay."
+ vu_wandering_wenches.1b.tt:0 "They will stay and set up a brothel."
+ 
+ vu_wandering_gamblers_title:0 "Wandering Gamblers"
+ vu_wandering_gamblers_desc:0 "They are passionately fond of play."
+ vu_wandering_gamblers.1a:0 "Force them to move out!"
+ vu_wandering_gamblers.1a.tt:0 "They will leave and go elsewhere."
+ vu_wandering_gamblers.1b:0 "Destroy them once for all!"
+ vu_wandering_gamblers.1b.tt:0 "They will rise up and fight for their lives."
+
+ vu_wandering_musicians_title:0 "Wandering Musicians"
+ vu_wandering_musicians_desc:0 "An troupe of musicians has recently entered our lands, now they prepare to leave. Their leader now asks you: 'We have come from far away lands, and we've preformed for you and your people, now before we leave, for payment we ask."
+ vu_wandering_musicians.1a:0 "Thank you for your stay!"
+ vu_wandering_musicians.1a.tt:0 "They will stay and entertain us with their music." 
+ vu_wandering_musicians.1b:0 "Leave and never come back here again!"
+ vu_wandering_musicians.1b.tt:0 "They will leave and go elsewhere."
+ vu_wandering_musicians.1c:0 "You shall not leave."
+ vu_wandering_musicians.1c.tt:0 "They will be prevented from leaving and instead are forced into our services."
+ vu_wandering_musicians.1d:0 "Money you say? Why, we have plenty of that here."
+ vu_wandering_musicians.1d.tt:0 "They will be bribed to stay."
+
+ vu_wandering_artists_1_title:0 "Wandering Artists"
+ vu_wandering_artists_1_desc:0 "I saw the angel in the marble and carved until I set him free."
+ vu_wandering_artists.1a:0 "Let them leave."
+ vu_wandering_artists.1a.tt:0 "They will leave and go elsewhere."
+ vu_wandering_artists.1b:0 "Go away and never come back again!"
+ vu_wandering_artists.1b.tt:0 "They will leave and go elsewhere but never come back again."
+ vu_wandering_artists.1c:0 "Force them to stay."
+ vu_wandering_artists.1c.tt:0 "They will be prevented from leaving and instead are forced into our services."
+
+ vu_wandering_artists_2_title:0 "Artistic Rivalry"
+ vu_wandering_artists_2_desc:0 "From now on, we are enemies - You and I. I will hinder and harm You as far as I am able. I will ruin Your incarnation."
+ vu_wandering_artists.2a:0 "Fire the advisor."
+ vu_wandering_artists.2a.tt:0 "A present artist advisor will be fired."
+ vu_wandering_artists.2b:0 "Go away and never come back again!"
+ vu_wandering_artists.2b.tt:0 "They will leave and go elsewhere."
+
+ #New Plantagenet option for Rise of the Tudors event by SF.
+ flavor_eng.9237.c:0 "We must restore the Plantagenets to their rightful positions as our monarchs by fogiving all and joining our houses together in marriage."
+
+ #VU CV Events - SF
+ vu_remove_ai_allies_title: ""
+ vu_remove_ai_allies_desc: ""
+ vu_remove_ai_allies.1a: ""
+ vu_remove_ai_allies.1b: ""
+ vu_remove_ai_allies.1c: ""
+ vu_remove_ai_allies.1d: ""
+ vu_remove_ai_allies.1e: ""
+ vu_remove_ai_allies.1f: ""
+ vu_remove_ai_allies.1g: ""
+ vu_remove_ai_allies.1h: ""
+ vu_remove_ai_allies.1i: ""
+
+ #VU Germany Events VU v1.37 - SF
+ vu_Germany_Events.EVTNAME1: ""
+ vu_Germany_Events.EVTDESC1: ""
+ vu_Germany_Events1.EVTOPT1: ""
+ vu_Germany_Events1.EVTOPT2: ""
+ vu_Germany_Events1.EVTOPT3: ""
+
+ vu_Germany_Events.EVTNAME2: ""
+ vu_Germany_Events.EVTDESC2: ""
+ vu_Germany_Events2.EVTOPT1: ""
+
+ #VU Romania Events VU v1.37 - SF
+ vu_romanian_events.2.t: ""
+ vu_romanian_events.2.d: ""
+ vu_romanian_events.2.a: ""
+ 
+ #VU Romania Events VU v1.37 - SF
+ vu_romanian_events.3.t: ""
+ vu_romanian_events.3.desc: ""
+ vu_romanian_events.3.a: ""
+ vu_romanian_events.3.b: ""
+
+ #VU Romania Events VU v1.37 - SF
+ vu_romanian_events.4.t: ""
+ vu_romanian_events.4.d: ""
+ vu_romanian_events.4.a: ""
+

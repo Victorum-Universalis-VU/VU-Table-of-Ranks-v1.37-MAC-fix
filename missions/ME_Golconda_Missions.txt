@@ -643,11 +643,11 @@ golconda_column_5 = {
 				limit = {
 					has_dlc = "Common Sense"
 				}
-				government_rank = 3
+				government_rank = 9
 			}
 			else = {
 				OR = {
-					government_rank = 3
+					government_rank = 9
 					total_development = 1000
 				}
 			}

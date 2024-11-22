@@ -292,9 +292,6 @@
  ARB_legacy_of_andalusia: "The Western Islamic Golden Age"
  desc_ARB_legacy_of_andalusia: ""
  
- cb_arabia_islamization: "The Jihad Continues"
- cb_arabia_islamization_desc: "The gates of Europe lie open!"
- 
  ARB_islamization_of_europe: "Islamization of Europe"
  
  ARB_unlock_muhtasib_privilege_and_add_tax: "Unlock the '§YStrengthen the Hisbah§!' Estate Privilege, usually unique to the @MAM §Y[MAM.GetName]§!, and make it grant §G+5.0%§! or §G+10.0%§! National Tax Modifier at §Y2§! and §Y3§! Stability respectively."
@@ -599,9 +596,6 @@
  ARB_MECCA_CAPITAL_TT: "As long as §Y[385.GetName]§! is our capital, we receive the following bonuses: \n   Tolerance of the True Faith: §G+1.00§! \n   Missionary Strength: §G+2.0%§!"
  
  # CB Type & War Goal Type:
- cb_jihad: "Jihad"
- cb_jihad_desc: "We must defeat the infidels!"
- 
  cb_take_caliphate_arabia: "Claim the Caliphate"
  cb_take_caliphate_arabia_desc: "We have proven our right to the title. Now we must take it."
  

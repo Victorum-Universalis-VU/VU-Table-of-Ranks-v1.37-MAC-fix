@@ -253,17 +253,17 @@ country_event = { #The Heated Debate on Peasant Dietary Preferences
 	}
 	
 	option = {
-		name = VU_Dith_Events.5.a 
+		name = VU_Dith_Events.5.a
 		add_prestige = 5 
 	}
 	
 	option = {
-		name = VU_Dith_Events.5.b 
+		name = VU_Dith_Events.5.b
 		add_prestige = 5 
 	}
 	
 	option = {
-		name = VU_Dith_Events.5.c 
+		name = VU_Dith_Events.5.c
 		highlight = yes
 		trigger = {
 			OR = {

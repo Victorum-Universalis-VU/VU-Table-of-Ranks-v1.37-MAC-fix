@@ -3,7 +3,7 @@
 #########
 
 l_english:
- #missions
+ #Missions
  TUR_build_to_fl_title: "Recover from the Crusade"
  TUR_build_to_fl_desc: "The Crusade at Varna was disastrous defeat for the Christian coalition, and a great victory for ourselves! Despite that, we have not escaped unscathed and must take some time to recover as well."
  
@@ -182,8 +182,7 @@ l_english:
  TUR_eyalets_desc: "The Ottoman Empire has grown by bounds more than our predecesors could have ever predicted. Perhaps it is time to take a look at the old Beylerbeys, and reorganize their administration again?"
  unlocks_eyalets_reform_tooltip: "Unlocks Government Reform §YEyalets§!"
  TUR_empowered_native_estates: "Empowered Native Estates"
- 
- 
+ desc_TUR_empowered_native_estates: ""
  
  TUR_india_expedition_title: "Chart the Indian Sea"
  TUR_india_expedition_desc: "Our newfound conquest of Basra and subsequently our first ports into the, has ignited an exploratory fervor to chart the orient and beyond!"
@@ -221,7 +220,7 @@ l_english:
  TUR_medrasas_title: "Fund the Medaris"
  TUR_medrasas_desc: "Education of the people is a cornerestone of Islam. We will follow in the steps of the great Muslim empires before us and construct our own madrasa."
  
- #incident misisons
+ #Incident Misisons:
  TUR_revoke_genoa_hegemon_title: "Revoke Genoa Hegemon"
  TUR_revoke_genoa_hegemon_desc: "The Western Mediterranean has historically been dominated by the Genoese and other Italian Traders. We must wrest control from their hands if we are to succeed even after this war has ended."
  
@@ -271,7 +270,7 @@ l_english:
  TUR_christian_incident_5_title: "The Christian Faith"
  TUR_christian_incident_5_desc: ""
  
- #events
+ #Events:
  ME_Ottoman_Events.1.t: "Return of the Ghazi Sultan"
  ME_Ottoman_Events.1.d: "The Sultan Murad II, famed for the conquest of the Beyliks in Anatolia and the Kingdoms in the Balkans, led the Ottoman army to victory against the Christian Coalition at the Battle of Varna not long ago. It is said that he dismounted and fell to his knees and prayed mid-battle, something a legendary Caliph had done. The battle immediately turned in their favor. Murad II styled himself like this - a Ghazi King - strongly, as one meant to embody the virtues of an honest warrior. Despite that, he had grown tired of his nearly two decades of constant warfare, for he did not enjoy ruling from the throne or the responsibilities that went with it. He decided to abdicate the throne to his son, Mehmed II following the victory at Varna. Despite that he was only given short reprieve until a Janissary riot against Mehmed II had forced him to once again take the reins and lead again."
  ME_Ottoman_Events.1.a: "He shall lead."
@@ -510,18 +509,18 @@ l_english:
  ME_Ottoman_Events.47.d: "Sabuncuoglu began his medical pursuits at the young age of 17. He studied at the Amasaya Hosptial, honing his knowledge for the rest of his life. During this fruitful dedication, he authored 'Cerrahiyyetu'l-Haniyye,' or 'Imperial Surgery' and 'Mücerrebname,' or  'On Attemption,' the former of being the first illustrated surgical atlas and last medical encyclopedia of the Islamic World. 'Imperial Surgery' compiled techniques and practices - mostly from Al-Zahrawi - though Sabuncuoglu invented and wrote down his own techniques."
  ME_Ottoman_Events.47.a: "This knowledge can be used to serve the army."
  ME_Ottoman_Events.47.b: "This knowledge can be used to serve the people."
- ME_Ottoman_Events.47.b: "This knowledge can be used to serve the janissaries."
+ ME_Ottoman_Events.47.c: "This knowledge can be used to serve the janissaries."
  
  ME_Ottoman_Events.48.t: "Expedition to Aceh"
  ME_Ottoman_Events.48.d: "To secure the Indian Ocean against the Portuguese, Suleiman the Magnificent ordered an expedition to secure the Achenese Sultanate. With a grasp on the Spice Islands in the Far East, we can stifle the growth of the encroaching Portuguese threat to our trade routes. The envoy has now returned with great news; the sultan of Aceh has pleged their allegiance to us in return of protection from Imperialists and neighbors."
  ME_Ottoman_Events.48.a: "Excellent."
  ME_Ottoman_Events.48.b: "Flattering, but we will refuse."
  
- ME_Ottoman_Events.4001.t: "Conflict between the Umera and Mamluks"
- ME_Ottoman_Events.4001.d: "Some of our own nobles have found themselves in a minor disagreement with the Mamluk nobles of [mamluk_umera_conflict.GetName]. They claim that they are not subject to the same laws as the rest of the subjects, but the Mamluks clearly disagree."
- ME_Ottoman_Events.4001.a: "Rein in our umera."
- ME_Ottoman_Events.4001.b: "Punish the Mamluks."
- ME_Ottoman_Events.4001.c: "Let them sort it out."
+ #ME_Ottoman_Events.4001.t: "Conflict between the Umera and Mamluks"
+ #ME_Ottoman_Events.4001.d: "Some of our own nobles have found themselves in a minor disagreement with the Mamluk nobles of [mamluk_umera_conflict.#GetName]. They claim that they are not subject to the same laws as the rest of the subjects, but the Mamluks clearly disagree."
+ #ME_Ottoman_Events.4001.a: "Rein in our Umera."
+ #ME_Ottoman_Events.4001.b: "Punish the Mamluks."
+ #ME_Ottoman_Events.4001.c: "Let them sort it out."
  
  ME_Ottoman_Events.4002.t: "War Support from the Mamluks"
  ME_Ottoman_Events.4002.d: "Our current war has spurred on the support of the Mamluk nobles in Egypt. They are willing to offer up their services, in exchange for some political leeway."
@@ -539,9 +538,9 @@ l_english:
  ME_Ottoman_Events.49.f: "The pen is mightier than the sword, but the voice mightier than the pen."
  ME_Ottoman_Events.49.g: "Educate the people!"
  
- ME_Ottoman_Events.49.t: "Dissolution of the Mamluk Class"
- ME_Ottoman_Events.49.d: "The Mamluks have been reigned in enough such that their rule extends no further than any other nobles we have within our country."
- ME_Ottoman_Events.49.a: "Good riddance!"
+ ME_Ottoman_Events.50.t: "Dissolution of the Mamluk Class"
+ ME_Ottoman_Events.50.d: "The Mamluks have been reigned in enough such that their rule extends no further than any other nobles we have within our country."
+ ME_Ottoman_Events.50.a: "Good riddance!"
  mamluk_estate_disabled: "Mamluk Estate is now Disabled"
  
  ME_Ottoman_Events.51.t: "Death of the Ghazi Sultan"
@@ -601,7 +600,7 @@ l_english:
  desc_tur_conversion_of_bosnia: "The Bogolomist Christians of Bosnia are not so different from the Muslims of our own faith. Perhaps they can be swayed."
  
  tur_honored_skanderbeg: "Skanderbeg Honored"
- desc_tur_honored_skanderbeg_desc: "We have allowed the locals to pay their respects to Skanderbeg at his grave."
+ desc_tur_honored_skanderbeg: "We have allowed the locals to pay their respects to Skanderbeg at his grave."
 
  tur_condemened_skanderbeg: "Skanderbeg Condemned"
  desc_tur_condemened_skanderbeg: "We have destroyed Skanderbegs body and desecrated his grave. No quarter for traitors."
@@ -675,8 +674,10 @@ l_english:
  desc_TUR_persian_defense: "The Ottoman threat is on our doorstep! Push them back!"
  
  TUR_peace_of_constantinople: "The Peace of Constantinople"
+ desc_TUR_ottoman_winning_tunis: ""
  
  TUR_fortified_fortress_of_akkerman: "Fortified Fortress of Akkerman"
+ desc_TUR_fortified_fortress_of_akkerman: ""
  
  TUR_persia_march: "Persian March"
  desc_TUR_persia_march: "These forts should keep the Persians away!"
@@ -706,7 +707,7 @@ l_english:
  desc_TUR_hun_subject: "The Kingdom of Hungary, now ruled by the Ottoman Sultan serves as a helpful hinterland against German aggression."
  
  TUR_hun_subject_provinces: "Ottoman March"
- desc_TUR_hun_subject_provinces: "The Kingdom of Hungary, now ruled by the Ottoman Sultan serves as a helpful hinterland against German aggression.""
+ desc_TUR_hun_subject_provinces: "The Kingdom of Hungary, now ruled by the Ottoman Sultan serves as a helpful hinterland against German aggression."
  
  TUR_slo_subject: "Loyal to the Sultan"
  desc_TUR_slo_subject: "The Sultan has generously established a state for our people!"
@@ -835,3 +836,4 @@ l_english:
  desc_TUR_expand_janissaries_no_coc: "More Jannissaries, more fun!"
  
  TUR_failed_tunis_expedition: "Failed Tunisian Expedition"
+ desc_TUR_failed_tunis_expedition: ""

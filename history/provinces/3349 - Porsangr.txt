@@ -16,6 +16,8 @@ capital = "Porsangr"
 add_local_autonomy = 55 #This stacks with culture and religious starting autonomy, it seems. Reducing from 90.
 is_city = yes
 
+#Claimants
+add_core = NRR
 add_core = SMI
 
 add_permanent_province_modifier = {

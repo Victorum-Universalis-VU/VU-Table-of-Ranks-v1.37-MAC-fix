@@ -204,7 +204,7 @@ national_focus = MIL
 
 1560.1.1 = { leader = { name = "Bernardino de Mendoza"	type = general	fire = 3	shock = 2	manuever = 3	siege = 0	death_date = 1578.1.1 } }
 
-1561.6.1 = { capital = 217 } #Madrid
+1561.6.1 = { capital = 8505 } #Madrid
 
 1564.1.1 = { leader = {	name = "Alvaro de Bazán"       	type = admiral	fire = 5	shock = 5	manuever = 5	siege = 0	death_date = 1588.2.9 } }
 
@@ -321,8 +321,6 @@ national_focus = MIL
 }
 
 1605.12.21 = { leader = { name = "Pedro Fernández de Quirós" type = explorer 	fire = 2 	shock = 3	manuever = 5 	siege = 0	death_date = 1607.1.1 } }
-
-1606.1.1 = { capital = 217 } # Madrid
 
 1609.7.15 = { leader = { name = "Antonio de Oquendo"	type = admiral	fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1640.6.7 } }
 
@@ -460,7 +458,7 @@ national_focus = MIL
 		dip = 1
 		mil = 3
 	}
-
+	capital = 217 #Madrid
 }
 
 1701.11.2 = {
@@ -692,7 +690,7 @@ add_government_reform = autocracy_reform }
 	}
 }
 
-1808.6.6 = { set_legacy_government = constitutional_monarchy government_rank = 1 }
+1808.6.6 = { set_legacy_government = constitutional_monarchy government_rank = 6 }
 
 1808.6.6 = {
 	monarch = {
@@ -718,7 +716,7 @@ add_government_reform = autocracy_reform }
 
 1813.12.11 = { government = monarchy
 # add_government_reform = letat_cest_moi_reform
-government_rank = 2 }
+government_rank = 8 }
 
 1813.12.11 = { leader = { name = "F.J. Castaños"			type = general	fire = 3	shock = 4	manuever = 4	siege = 1	death_date = 1852.9.24 } }
 

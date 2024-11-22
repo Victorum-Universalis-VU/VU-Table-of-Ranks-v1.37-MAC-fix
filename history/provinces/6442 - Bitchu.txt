@@ -3,7 +3,7 @@
 owner = HSK
 controller = HSK
 add_core = HSK
-culture = japanese
+culture = chugoku 
 religion = shinto
 capital = "Bitchu"
 trade_goods = iron

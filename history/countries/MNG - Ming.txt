@@ -1,6 +1,6 @@
 government = monarchy
 add_government_reform = celestial_empire
-government_rank = 3
+government_rank = 9 #Empire
 technology_group = chinese
 religion = confucianism
 add_harmonized_religion = mahayana
@@ -86,7 +86,14 @@ if = {
 		adm = 5
 		dip = 6
 		mil = 6
-		leader = { name = "Di Zhu"	type = general	fire = 4	shock = 4	manuever = 4	siege = 0 }
+		leader = { 
+			name = "Di Zhu"	
+			type = general	
+			fire = 4	
+			shock = 4	
+			manuever = 4	
+			siege = 0 
+		}
 	}
 }
 
@@ -97,7 +104,14 @@ if = {
 		adm = 5
 		dip = 6
 		mil = 6
-		leader = { name = "Di Zhu"	type = general	fire = 4	shock = 4	manuever = 4	siege = 0 }
+		leader = { 
+			name = "Di Zhu"	
+			type = general	
+			fire = 4	
+			shock = 4	
+			manuever = 4	
+			siege = 0 
+		}
 	}
 }
 
@@ -115,9 +129,21 @@ if = {
 	}
 }
 
-1405.1.1 = { leader = {	name = "Zheng He"	type = explorer	fire = 1	shock = 1	manuever = 6	siege = 0	death_date = 1433.1.1 } }
+1405.1.1 = { 
+	leader = {	
+		name = "Zheng He"	
+		type = explorer	
+		fire = 1	
+		shock = 1	
+		manuever = 6	
+		siege = 0	
+		death_date = 1433.1.1 
+	} 
+}
 
-1421.1.1 = { capital = 1816 } # Beijing
+1421.1.1 = { 
+	capital = 1816 
+} # Beijing
 
 1424.8.12 = {
 	monarch = {
@@ -343,7 +369,17 @@ if = {
 	}
 }
 
-1522.1.1 = { leader = {	name = "Qi Jiguang"	type = general	fire = 2	shock = 4	manuever = 3	siege = 1	death_date = 1585.1.1 } }
+1522.1.1 = { 
+	leader = {	
+		name = "Qi Jiguang"	
+		type = general	
+		fire = 2	
+		shock = 4	
+		manuever = 3	
+		siege = 1	
+		death_date = 1585.1.1 
+	} 
+}
 
 1537.3.4 = {
 	heir = {
@@ -407,11 +443,34 @@ if = {
 	}
 }
 
-1593.1.1 = { leader = {	name = "Li Rusong"		type = general	fire = 3	shock = 2	manuever = 1	siege = 0	death_date = 1598.4.3 } }
+1593.1.1 = { 
+	leader = {	
+		name = "Li Rusong"		
+		type = general	
+		fire = 3	
+		shock = 2	
+		manuever = 1	
+		siege = 0	
+		death_date = 1598.4.3 
+	} 
+}
 
-1600.1.1 = { set_country_flag = total_war_series set_country_flag = total_war }
+1600.1.1 = { 
+	set_country_flag = total_war_series 
+	set_country_flag = total_war 
+}
 
-1619.1.1 = { leader = {	name = "Yuan Chonghuan"		type = general	fire = 4	shock = 5	manuever = 6	siege = 0	death_date = 1630.1.12 } }
+1619.1.1 = { 
+	leader = {	
+		name = "Yuan Chonghuan"		
+		type = general	
+		fire = 4	
+		shock = 5	
+		manuever = 6	
+		siege = 0	
+		death_date = 1630.1.12 
+	} 
+}
 
 1620.8.27 = {
 	monarch = {
@@ -511,7 +570,7 @@ if = {
 
 1644.10.30 = {
 	government = monarchy
-add_government_reform = feudalism_reform
+	add_government_reform = feudalism_reform
 }
 
 1645.8.1 = {
@@ -548,7 +607,17 @@ add_government_reform = feudalism_reform
 	}
 }
 
-1650.1.1 = { leader = {	name = "Chenggong Zheng"	type = admiral	fire = 5	shock = 5	manuever = 5	siege = 0	death_date = 1662.6.23 } }
+1650.1.1 = { 
+	leader = {	
+		name = "Chenggong Zheng"	
+		type = admiral	
+		fire = 5	
+		shock = 5	
+		manuever = 5	
+		siege = 0	
+		death_date = 1662.6.23 
+	} 
+}
 
 1662.2.1 = {
 	monarch = {

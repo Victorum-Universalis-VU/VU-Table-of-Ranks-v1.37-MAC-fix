@@ -2,7 +2,7 @@
 
 owner = TKI
 controller = TKI
-culture = togoku
+culture = tokai 
 religion = shinto
 capital = "Takayama"
 trade_goods = iron

@@ -1,6 +1,6 @@
 government = monarchy
-add_government_reform = iqta
-government_rank = 2
+add_government_reform = islamic_malikate_reform
+government_rank = 8 #Malikate
 primary_culture = talysh
 religion = sunni
 #technology_group = muslim

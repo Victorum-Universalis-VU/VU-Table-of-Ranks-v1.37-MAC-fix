@@ -1,6 +1,6 @@
 government = monarchy
 add_government_reform = issi_akdom_reform
-government_rank = 3
+government_rank = 9 #Issiakdom
 technology_group = muslim
 religion = ashurist
 primary_culture = assyrian

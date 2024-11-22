@@ -13,26 +13,30 @@ base_tax = 7
 base_production = 7
 base_manpower = 6
 is_city = yes
-center_of_trade = 2
 
-#Claimants
+center_of_trade = 2
+extra_cost = 8
 
 #Buildings
 fort_15th = yes
 
-#Special Modifiers
-
-#Known by Technology groups
-
-
-
-#Histories
-1215.6.15 = { owner = AMD controller = AMD add_core = AMD } # Alhomad territorial lands - By San Felipe
-
-1444.11.11 = { owner = MRK controller = MRK add_core = MRK } # Marrakesh territorial lands - By San Felipe
-
+#Histories by SF
+1215.6.15 = { 
+	owner = AMD 
+	controller = AMD 
+	add_core = AMD 
+} # Alhomad territorial lands - By San Felipe
+1444.11.11 = { 
+	owner = MRK 
+	controller = MRK 
+	add_core = MRK 
+} # Marrakesh territorial lands - By San Felipe
 1465.1.1 = { unrest = 5 } #Marinid Sultan killed by mob. Mohammed ibn Ali Amrani-Joutey (Idrisid) proclaims himself Sultan. Unrest in the entire country. 
-1472.1.1 = { owner = SOS controller = SOS unrest = 0 } #Wattasids take control over Fez, nominal ruler over much of Morocco.
+1472.1.1 = { 
+	owner = SOS 
+	controller = SOS 
+	unrest = 0 
+} #Wattasids take control over Fez, nominal ruler over much of Morocco.
 1510.1.1 = {
 	owner = TFL
 	controller = TFL

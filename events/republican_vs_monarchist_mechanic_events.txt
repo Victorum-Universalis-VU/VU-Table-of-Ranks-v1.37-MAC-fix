@@ -75,6 +75,7 @@ country_event = {
 				corsica_sardinia_area = { owned_by = ROOT }
 				tuscany_area = { owned_by = ROOT }
 				central_italy_area = { owned_by = ROOT }
+				san_marino_area = { owned_by = ROOT }
 				lazio_area = { owned_by = ROOT }
 			}
 		}
@@ -106,6 +107,13 @@ country_event = {
 			}
 		}
 		central_italy_area = {
+			limit = { owned_by = ROOT }
+			add_province_modifier = {
+				name = republican_vs_monarchist_culla_rinascimento_focus_modifier_province
+				duration = 5475
+			}
+		}
+		san_marino_area = {
 			limit = { owned_by = ROOT }
 			add_province_modifier = {
 				name = republican_vs_monarchist_culla_rinascimento_focus_modifier_province

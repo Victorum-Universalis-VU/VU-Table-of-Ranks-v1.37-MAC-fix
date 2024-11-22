@@ -13,24 +13,26 @@ base_tax = 8
 base_production = 8			#Peaked at around 40k people in the early 1300s. 
 base_manpower = 6
 is_city = yes
-center_of_trade = 2
 
-#Claimants
+center_of_trade = 2
+extra_cost = 8
 
 #Buildings
 fort_15th = yes #Tlemcen Fortifications, site of many long sieges - Controls this area.
 
-#Special Modifiers
+#Claimants
 
-#Known by Technology groups
-
-
-
-#Histories
-1215.6.15 = { owner = AMD controller = AMD add_core = AMD } # Alhomad territorial lands - By San Felipe
-
-1444.11.11 = { owner = TLC controller = TLC add_core = TLC } # Tlemcen territorial lands - By San Felipe
-
+#Histories by SF
+1215.6.15 = { 
+	owner = AMD 
+	controller = AMD 
+	add_core = AMD 
+} # Alhomad territorial lands - By San Felipe
+1444.11.11 = { 
+	owner = TLC 
+	controller = TLC 
+	add_core = TLC 
+} # Tlemcen territorial lands - By San Felipe
 1491.1.1 = {
 	base_tax = 10
 	base_production = 10

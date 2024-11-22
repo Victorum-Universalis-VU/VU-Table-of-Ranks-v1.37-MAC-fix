@@ -2,7 +2,7 @@
 
 owner = YMN
 controller = YMN
-culture = japanese
+culture = kinki 
 religion = shinto
 capital = "Himeji"
 trade_goods = beer

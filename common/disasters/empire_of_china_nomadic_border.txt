@@ -14,6 +14,7 @@ empire_of_china_nomadic_border = {
 				tooltip = empire_of_china_nomadic_border_tt
 				OR = {
 					has_reform = steppe_horde
+					has_reform = scythian_horde_reform
 					has_reform = great_mongol_state_reform
 				}
 				total_own_and_non_tributary_subject_development = 400
@@ -34,6 +35,7 @@ empire_of_china_nomadic_border = {
 						tooltip = empire_of_china_nomadic_border_tt
 						OR = {
 							has_reform = steppe_horde
+							has_reform = scythian_horde_reform
 							has_reform = great_mongol_state_reform
 							hidden_trigger = {
 								has_global_flag = is_forming_the_mongol_empire
@@ -58,6 +60,7 @@ empire_of_china_nomadic_border = {
 					tooltip = empire_of_china_nomadic_border_tt
 					OR = {
 						has_reform = steppe_horde
+						has_reform = scythian_horde_reform
 						has_reform = great_mongol_state_reform
 					}
 					total_own_and_non_tributary_subject_development = 300
@@ -75,6 +78,7 @@ empire_of_china_nomadic_border = {
 					tooltip = empire_of_china_nomadic_border_tt
 					OR = {
 						has_reform = steppe_horde
+						has_reform = scythian_horde_reform						
 						has_reform = great_mongol_state_reform
 					}
 					total_own_and_non_tributary_subject_development = 300
@@ -93,6 +97,7 @@ empire_of_china_nomadic_border = {
 					tooltip = empire_of_china_nomadic_border_tt
 					OR = {
 						has_reform = steppe_horde
+						has_reform = scythian_horde_reform	
 						has_reform = great_mongol_state_reform
 					}
 					total_own_and_non_tributary_subject_development = 300
@@ -111,6 +116,7 @@ empire_of_china_nomadic_border = {
 					tooltip = empire_of_china_nomadic_border_tt
 					OR = {
 						has_reform = steppe_horde
+						has_reform = scythian_horde_reform	
 						has_reform = great_mongol_state_reform
 					}
 					total_own_and_non_tributary_subject_development = 300
@@ -141,6 +147,7 @@ empire_of_china_nomadic_border = {
 						tooltip = empire_of_china_nomadic_border_tt
 						OR = {
 							has_reform = steppe_horde
+							has_reform = scythian_horde_reform	
 							has_reform = great_mongol_state_reform
 							hidden_trigger = {
 								has_global_flag = is_forming_the_mongol_empire
@@ -208,6 +215,7 @@ empire_of_china_nomadic_border = {
 				limit = {
 					OR = {
 						has_reform = steppe_horde
+						has_reform = scythian_horde_reform	
 						has_reform = great_mongol_state_reform
 					}
 					total_own_and_non_tributary_subject_development = 500
@@ -231,6 +239,7 @@ empire_of_china_nomadic_border = {
 				limit = {
 					OR = {
 						has_reform = steppe_horde
+						has_reform = scythian_horde_reform	
 						has_reform = great_mongol_state_reform
 					}
 					total_own_and_non_tributary_subject_development = 500

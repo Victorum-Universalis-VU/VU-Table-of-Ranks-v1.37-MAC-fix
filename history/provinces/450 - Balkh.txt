@@ -2,7 +2,7 @@
 
 owner = TIM
 controller = TIM
-culture = khorasani			#northern pashto
+culture = afghani			#northern pashto
 religion = sunni
 capital = "Balkh"
 trade_goods = carpet		#was opium, add opium somewhere nearby if this place recieves more provinces
@@ -12,15 +12,13 @@ base_production = 6
 base_manpower = 6
 is_city = yes
 add_core = TIM
+
+#Claimants
 add_core = AFG
+add_core = BAK
 
 center_of_trade = 1
 extra_cost = 8
-
-
-
-
-
 
 
 1449.2.1 = { #Conquered by Babur bin Baysunkur

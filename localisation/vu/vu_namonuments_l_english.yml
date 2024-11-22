@@ -28,12 +28,12 @@
  construct_vu_at_turaif_title: "Construct At-Turaif."
  construct_vu_at_turaif_desc: "The At-Turaif is a Great Landmark"
 
-
- great_project_vu_bahla_fort: "Qal'at Bahla"
- vu_bahla_fort: "Qal'at Bahla"
- vu_bahla_fort_title: "Construct Qal'at Bahla."
- construct_vu_bahla_fort_title: "Construct Qal'at Bahla."
- construct_vu_bahla_fort_desc: "The Qal'at Bahla is a Great Landmark"
+ #Removed by SF in 1.37
+ #great_project_vu_bahla_fort: "Qal'at Bahla"
+ #vu_bahla_fort: "Qal'at Bahla"
+ #vu_bahla_fort_title: "Construct Qal'at Bahla."
+ #construct_vu_bahla_fort_title: "Construct Qal'at Bahla."
+ #construct_vu_bahla_fort_desc: "The Qal'at Bahla is a Great Landmark"
 
 
  great_project_vu_qalhat: "Qalhat"
@@ -322,14 +322,6 @@
 
 
 
- great_project_vu_saint_sophia_cathedral: "Saint Sophia Cathedral"
- vu_saint_sophia_cathedral: "Saint Sophia Cathedral"
- vu_saint_sophia_cathedral_title: "Construct Saint Sophia Cathedral."
- construct_vu_saint_sophia_cathedral_title: "Construct Saint Sophia Cathedral."
- construct_vu_saint_sophia_cathedral_desc: "The Saint Sophia Cathedral is a Great Landmark"
-
-
-
  great_project_vu_kamianets_podilskyi_castle: "Kamianets-Podilskyi Castle"
  vu_kamianets_podilskyi_castle: "Kamianets-Podilskyi Castle"
  vu_kamianets_podilskyi_castle_title: "Construct Kamianets-Podilskyi Castle."
@@ -370,35 +362,11 @@
 
 
 
- great_project_vu_zaraysk_kremlin: "Zaraysk Kremlin"
- vu_zaraysk_kremlin: "Zaraysk Kremlin"
- vu_zaraysk_kremlin_title: "Construct Zaraysk Kremlin."
- construct_vu_zaraysk_kremlin_title: "Construct Zaraysk Kremlin."
- construct_vu_zaraysk_kremlin_desc: "The Zaraysk Kremlin is a Great Landmark"
-
-
-
- great_project_vu_suzdal_kremlin: "Suzdal Kremlin"
- vu_suzdal_kremlin: "Suzdal Kremlin"
- vu_suzdal_kremlin_title: "Construct Suzdal Kremlin."
- construct_vu_suzdal_kremlin_title: "Construct Suzdal Kremlin."
- construct_vu_suzdal_kremlin_desc: "The Suzdal Kremlin is a Great Landmark"
-
-
-
  great_project_vu_chersonesus: "Chersonesus"
  vu_chersonesus: "Chersonesus"
  vu_chersonesus_title: "Construct Chersonesus."
  construct_vu_chersonesus_title: "Construct Chersonesus."
  construct_vu_chersonesus_desc: "The Chersonesus is a Great Landmark"
-
-
-
- great_project_vu_suzdal_kremlin: "Suzdal Kremlin"
- vu_suzdal_kremlin: "Suzdal Kremlin"
- vu_suzdal_kremlin_title: "Construct Suzdal Kremlin."
- construct_vu_suzdal_kremlin_title: "Construct Suzdal Kremlin."
- construct_vu_suzdal_kremlin_desc: "The Suzdal Kremlin is a Great Landmark"
 
 
 
@@ -408,11 +376,7 @@
  construct_vu_piatnytska_church_title: "Construct Piatnytska Church."
  construct_vu_piatnytska_church_desc: "The Piatnytska Church is a Great Landmark"
 
- great_project_vu_ferapontov_monastery: "Ferapontov Monastery"
- vu_ferapontov_monastery: "Ferapontov Monastery"
- vu_ferapontov_monastery_title: "Construct Ferapontov Monastery."
- construct_vu_ferapontov_monastery_title: "Construct Ferapontov Monastery."
- construct_vu_ferapontov_monastery_desc: "The Ferapontov Monastery is a Great Landmark"
+
 
  great_project_vu_solovetsky_monastery: "Solovetsky Monastery"
  vu_solovetsky_monastery: "Solovetsky Monastery"

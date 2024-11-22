@@ -662,7 +662,7 @@ gc_tunis_4 = {
 		}
 		effect = {
 			add_country_modifier = {
-				name = "tun_morocco"
+				name = "tun_morocco_1"
 				duration = 7300
 			}
 		}

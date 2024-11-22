@@ -1,5 +1,6 @@
 government = monarchy
-add_government_reform = iqta
+add_government_reform = khaganate
+government_rank = 9 #Khaganate
 primary_culture = uyghur
 religion = sunni
 technology_group = chinese
@@ -404,8 +405,6 @@ religious_school = hanafi_school
 		dip = 2
 		mil = 1
 	}
-	government = monarchy
-add_government_reform = iqta
 }
 
 1695.8.1 = {

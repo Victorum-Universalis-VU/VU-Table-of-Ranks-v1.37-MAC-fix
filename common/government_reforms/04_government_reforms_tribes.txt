@@ -14,13 +14,14 @@ steppe_horde = {
 	icon = "horde_riding"
 	allow_normal_conversion = no
 	potential = {
-		OR = {
-			has_reform = steppe_horde
-			culture_group = altaic
-			culture_group = tartar
-			primary_culture = altaic_new 
-		}
 		has_reform = steppe_horde
+		#OR = {
+		#	has_reform = steppe_horde
+		#	culture_group = altaic
+		#	culture_group = tartar
+		#	culture_group = nakh_daghestani
+		#	primary_culture = altaic_new 
+		#}
 		NOT = { has_reform = great_mongol_state_reform }
 	}
 	legacy_equivalent = steppe_horde_legacy
@@ -31,11 +32,9 @@ steppe_horde = {
 	nation_designer_trigger = {
 		technology_group = nomad_group
 	}
-
+	queen = no
 	lock_level_when_selected = yes
-
 	start_territory_to_estates = 0.5
-
 	modifiers = {
 		loot_amount = 0.50
 		global_institution_spread = -0.15
@@ -67,7 +66,7 @@ great_mongol_state_reform = {
 		}
 	}
 	legacy_equivalent = great_mongol_state_legacy
-	fixed_rank = 3
+	fixed_rank = 9
 	valid_for_nation_designer = no
 	nomad = yes
 	raze_province = yes
@@ -80,14 +79,49 @@ great_mongol_state_reform = {
 		cav_to_inf_ratio = 0.25
 		movement_speed = 0.2
 		years_of_nationalism = -5
+		may_establish_frontier = yes
 	}
 	conditional = {
 		allow = { has_dlc = "Mandate of Heaven" }
 		allow_banners = yes
+		custom_attributes = {
+			can_recruit_banners_from_primary_culture_provinces = yes
+		}
 	}
 	custom_attributes = {
 		enables_horde_idea_group = yes
 		enables_aristocratic_idea_group = no
+	}
+	effect = {
+		hidden_effect = {
+			if = {
+				limit = { has_dlc = "Mandate of Heaven" }
+				capital_scope = {
+					add_province_modifier = {
+						name = allow_banners_capital_modifier
+						duration = -1
+						hidden = yes
+					}
+				}
+				every_owned_province = {
+					limit = { culture = root }
+					add_province_modifier = {
+						name = mongol_banners_location
+						duration = -1
+						hidden = yes
+					}
+				}
+			}
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			capital_scope = { remove_province_modifier = allow_banners_capital_modifier }
+			every_owned_province = {
+				limit = { has_province_modifier = mongol_banners_location }
+				remove_province_modifier = mongol_banners_location
+			}
+		}
 	}
 	ai = {
 		factor = 1000
@@ -106,6 +140,40 @@ tribal_federation = {
 	legacy_equivalent = tribal_federation_legacy
 
 	lock_level_when_selected = yes
+
+	modifiers = {
+		years_of_nationalism = -5
+	}
+
+	conditional = {
+		allow = { has_dlc = "Cradle of Civilization" }
+		government_abilities = {
+			tribal_federation_mechanic
+		}
+	}
+	ai = {
+		factor = 0
+	}
+}
+
+persianate_tribal_confederation = {
+	icon = "persianate"
+	allow_normal_conversion = yes
+	potential = {
+		has_reform = persianate_tribal_confederation
+		OR = {
+			religion = shiite
+			religion = sunni
+		}
+	}
+
+	valid_for_nation_designer = yes
+	nation_designer_cost = 20
+	legacy_equivalent = tribal_federation_legacy
+
+	lock_level_when_selected = yes
+
+	fixed_rank = 6
 
 	modifiers = {
 		years_of_nationalism = -5
@@ -202,7 +270,6 @@ polynesian_tribe = {
 	nation_designer_cost = -10
 	native_mechanic = no
 	allow_migration = yes
-	fixed_rank = 1
 	lock_level_when_selected = yes
 	modifiers = {
 		global_manpower_modifier = 0.2
@@ -245,6 +312,7 @@ siberian_tribe = {
 	native_mechanic = no
 	allow_migration = yes
 	fixed_rank = 1
+	queen = no
 	lock_level_when_selected = yes
 	modifiers = {
 		stability_cost_modifier = -0.33
@@ -260,6 +328,9 @@ stateless_society = {
 	valid_for_nation_designer = yes
 	lock_level_when_selected = yes
 	nation_designer_cost = 0
+	potential = {
+		government_rank = 4
+	}
 	modifiers = {
 		governing_capacity_modifier = -0.99
 		defensiveness = 0.75
@@ -278,15 +349,54 @@ gond_kingdom = {
 	icon = "chieftain"
 	allow_normal_conversion = yes
 	potential = {
-		has_dlc = "Dharma"
-		technology_group = indian
-		primary_culture = gondi
+		government = tribal
+		religion = hinduism
+		government_rank = 6 
+		OR = {
+			primary_culture = garjati
+			primary_culture = gondi
+		}
+		has_reform = gond_kingdom
 	}
+	#fixed_rank = 6
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
 	nation_designer_trigger = {
-		technology_group = indian
-		primary_culture = gondi
+		government = tribal
+		religion = hinduism
+		OR = {
+			primary_culture = garjati
+			primary_culture = gondi
+		}
+		has_reform = gond_kingdom
+	}
+	legacy_equivalent = tribal_kingdom_legacy
+	modifiers = {
+		defensiveness = 0.2
+	}
+}
+
+jamdom_kingdom = {
+	icon = "chieftain"
+	allow_normal_conversion = yes
+	potential = {
+		government_rank = 6
+		OR = {
+			primary_culture = saurashtri
+			primary_culture = sindhi
+		}
+		has_reform = jamdom_kingdom
+	}
+	#fixed_rank = 6
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	nation_designer_trigger = {
+		government_rank = 6
+		OR = {
+			primary_culture = saurashtri
+			primary_culture = sindhi
+		}
+		has_reform = jamdom_kingdom
 	}
 	legacy_equivalent = tribal_kingdom_legacy
 	modifiers = {
@@ -672,6 +782,10 @@ tribe_becomes_monarchy_reform = {
 		NOT = { has_government_attribute_short_desc = locked_government_type }
 	}
 	effect = {
+		if = {
+			limit = { has_reform = steppe_horde }
+			hidden_effect = { set_country_flag = was_horde_flag }
+		}
 		set_country_flag = populists_in_government
 		lose_reforms = 4
 		if = {
@@ -782,6 +896,10 @@ tribe_becomes_republic_reform = {
 		NOT = { has_government_attribute_short_desc = locked_government_type }
 	}
 	effect = {
+		if = {
+			limit = { has_reform = steppe_horde }
+			hidden_effect = { set_country_flag = was_horde_flag }
+		}
 		set_country_flag = populists_in_government
 		lose_reforms = 4
 		if = {
@@ -918,6 +1036,10 @@ tribe_becomes_theocracy_reform = {
 		NOT = { has_government_attribute_short_desc = locked_government_type }
 	}
 	effect = {
+		if = {
+			limit = { has_reform = steppe_horde }
+			hidden_effect = { set_country_flag = was_horde_flag }
+		}
 		set_country_flag = populists_in_government
 		lose_reforms = 4
 		if = {

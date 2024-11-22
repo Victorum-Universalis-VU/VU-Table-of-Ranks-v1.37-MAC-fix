@@ -1,6 +1,6 @@
 government = theocracy
-add_government_reform = leading_clergy_reform
-government_rank = 1
+add_government_reform = church_of_france_archbishopric_reform
+government_rank = 5 #Archbishopric
 #technology_group = western
 technology_group = french_tech_group
 unit_type = western

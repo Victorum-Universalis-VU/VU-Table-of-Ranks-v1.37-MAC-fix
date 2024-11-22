@@ -2,6 +2,7 @@
 
 owner = QAR
 controller = QAR
+add_core = QAR
 culture = armenian
 religion = miaphysite	#Actually not fully miaphysite in reality. Should be a mix of Nestorian and other Oriental Orthodoxy. Going for miaphysite for now.
 capital = "Khoy"
@@ -11,19 +12,11 @@ base_tax = 4
 base_production = 4
 base_manpower = 2 
 is_city = yes
-add_core = QAR
-#add_core = PER
 
+#Claimants
+add_core = ILK
 
-
-
-
-
-
-
-
-
-#Holy crap is this history old. revolt_risk?! Was fucking removed in 1.8.
+#Histories by SF
 1458.9.1 = { revolt = { type = pretender_rebels size = 0 name = "Hasan Ali's Faction" leader = "Hasan Ali" } controller = REB } # Civil war in Qara Quyunlu
 1458.12.1 = { revolt = {} controller = QAR }
 1468.1.1 = {

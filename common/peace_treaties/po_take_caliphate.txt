@@ -39,9 +39,9 @@ po_take_caliphate = {
 		FROM = {
 			if = {
 				limit = {
-					has_reform = ME_caliphate_reform_sunni
+					has_reform = caliphate_reform
 				}
-				remove_government_reform = ME_caliphate_reform_sunni
+				remove_government_reform = caliphate_reform
 			}
 			else_if = {
 				limit = {
@@ -71,7 +71,7 @@ po_take_caliphate = {
 			value = 100
 		}
 		limit = {
-			government_rank = 3
+			government_rank = 9
 		}
 	}
 }

@@ -4,7 +4,7 @@
 
 owner = GLC
 controller = GLC  
-culture = russian
+culture = muscovite
 religion = orthodox
 hre = no
 base_tax = 6
@@ -15,7 +15,6 @@ capital = "Uglich"
 is_city = yes
 add_core = GLC
 fort_15th = yes			#Giving a bonus for without historical justification just to screw with Moscovy during the Great Feudal War =D
-center_of_trade = 2
 
 
 

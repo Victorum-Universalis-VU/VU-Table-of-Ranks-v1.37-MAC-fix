@@ -144,6 +144,13 @@ THU_missions_1 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			frankfurt_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 	}
 	
@@ -156,6 +163,7 @@ THU_missions_1 = {
 			    area = altmark_area
 				area = anhalt_area
 				area = hesse_area
+				area = frankfurt_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
@@ -169,6 +177,10 @@ THU_missions_1 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			hesse_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			frankfurt_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -261,6 +273,13 @@ THU_missions_2 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			frankfurt_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 	}
 	
@@ -269,11 +288,18 @@ THU_missions_2 = {
 		position = 9
 		required_missions = { thuringia_conquer_franconia }
 		provinces_to_highlight = {
-			area = hesse_area
+			OR = {
+				area = hesse_area
+				area = frankfurt_area
+			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
 			hesse_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			frankfurt_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}

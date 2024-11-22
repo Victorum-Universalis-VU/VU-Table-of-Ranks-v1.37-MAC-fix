@@ -5,8 +5,8 @@
  #Dub adjusted some strings.
  western_norway:1 "West Norway"
  swe_control_baltic_trade_title:1 "Control Baltic Trade"
- swe_control_baltic_trade_tooltip:1 "Controls at least §Y3§! Centers of Trade of at least level §Y2§! in §YBergslagen§! and at least §Y2§! Centers of Trade of at least level §Y2§! in §YDanzig§!"
- swe_control_baltic_trade_tooltip_no_dharma:0 "Controls at least §Y3§! Centers of Trade of at least §Y20§! Development in §YBergslagen§! and at least §Y2§! Centers of Trade of at least §Y20§! Development in §YDanzig§!"
+ swe_control_baltic_trade_tooltip:1 "Controls at least §Y3§! Centers of Trade of at least level §Y2§! in §YUppland§! and at least §Y2§! Centers of Trade of at least level §Y2§! in §YDanzig§!"
+ swe_control_baltic_trade_tooltip_no_dharma:0 "Controls at least §Y3§! Centers of Trade of at least §Y20§! Development in §YUppland§! and at least §Y2§! Centers of Trade of at least §Y20§! Development in §YDanzig§!"
  northern_epirus_area:1 "Ionian Islands"
  nor_conquer_scotland_desc:1 "With the Isles under our control, we can now move to wrestle control of the Highlands from the Scottish."
  desc_vu_kornhaus_der_hansa:1 "Grain is not particularly abundant around the Baltic Sea. Temperatures are generally too cold and the ground too sandy or rocky to sustain more than modest crops of rye in many places, so any fertile soil producing reliably large yields of grain becomes particularly important. The countryside around Danzig is unusually fertile, and its position near the mouth of the Vistula places it ideally to import grain from further upstream, as well. This combination slowly tranformed Danzig into a major grain port in the late Middle Ages, and eventually it came to be known as 'der Kornhaus der Hansa' (the granary of the Hanseatic League). A large share of Northern Europe's staple grain was either grown here, or at least passed through."
@@ -15,9 +15,9 @@
  miss_colonize_caribbean:0 "§Y[Root.GetName]§! or their subjects own at least §Y5§! fully colonized provinces in the §YLesser Antilles§! colonial region."
  BHT_ADJ:2 "Bohtan"
  spanish_unification_effect.tooltip:2 "§YSpain§! will get a permanent claim on the entire §YIberia§! region except for the §YDouro-e-Minho§!, §YBeiras§!, §YEstremadura§!, §YAlentejo§!, §YAlgarve§! and §YMacaronesia§! areas."
- celtic_nation_required_provinces_tooltip_e:1 "Own 6 of Brittany's 15 traditional provinces as cores"
+ #celtic_nation_required_provinces_tooltip_e:1 "Own 6 of Brittany's 15 traditional provinces as cores"
  #Fixing Darth Modus's botching of my beer localisation.
- PriceChanges_VictorumUniversalis.EVTDESC2:1 "Normally, most beers produced before the 19th century would be produced and brewed at room temperature, as possibilities of refrigeration were limited. If the temperature was too high such as in the summer, the beer would spoil. Bavarians would then attempt to use the colder caves around the Alps to brew the ale. At some point in the 15th-16th centuries when Bavarians stored beer in these caverns during the winter, they accidentally discovered that the brew tasted differently - instead the flavour was more mellow and smooth. This developed into a new brewing process, during which they also discovered that the wort of the beer behaved differently, sinking to the bottom instead of rising to the top, thus coining the terms top- and bottom-fermentation. As this process took weeks instead of days and thus required a prolonged storage period, the beer was nicknamed \"lager\"."
+ PriceChanges_VictorumUniversalis.EVTDESC2:1 "Normally, most beers produced before the 19th century would be produced and brewed at room temperature, as possibilities of refrigeration were limited. If the temperature was too high such as in the summer, the beer would spoil. Bavarians would then attempt to use the colder caves around the Alps to brew the ale. At some point in the 15th-16th centuries when Bavarians stored beer in these caverns during the winter, they accidentally discovered that the brew tasted differently - instead the flavour was more mellow and smooth. This developed into a new brewing process, during which they also discovered that the wort of the beer behaved differently, sinking to the bottom instead of rising to the top, thus coining the terms top- and bottom-fermentation. As this process took weeks instead of days and thus required a prolonged storage period, the beer was nicknamed "lager\"."
  CEL:1 "Celtica"
  TNA:1 "Gaelica"
  #Changing Iberia to Lusitania since it's Portugal-unique anyway:

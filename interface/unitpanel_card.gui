@@ -189,7 +189,7 @@ guiTypes = {
 		    		textureFile = ""
 		    		font = "vic_18"
 		    		borderSize = {x = 0 y = 0}
-		    		text = "123"	
+		    		text = "" #Used to be 123 but taken out by SF	
 		    		maxWidth = 50
 		    		maxHeight = 17	
 		    		format = left

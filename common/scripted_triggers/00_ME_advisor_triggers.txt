@@ -3,7 +3,7 @@ has_mil_advisor = {
 		tooltip = has_mil_advisor_tooltip
 		OR = {
 			VAN_has_mil_advisor = yes
-			ME_has_mil_advisor = yes
+			#VU_has_mil_advisor = yes
 			advisor_mod_has_mil_advisor = yes #contact Stiopa to get your advisor mod added!
 		}
 	}
@@ -14,7 +14,7 @@ has_mil_advisor_2 = {
 		tooltip = has_mil_advisor_2_tooltip
 		OR = {
 			VAN_has_mil_advisor_2 = yes
-			ME_has_mil_advisor_2 = yes
+			#VU_has_mil_advisor_2 = yes
 			advisor_mod_has_mil_advisor_2 = yes #contact Stiopa to get your advisor mod added!
 		}
 	}
@@ -25,7 +25,7 @@ has_mil_advisor_3 = {
 		tooltip = has_mil_advisor_3_tooltip
 		OR = {
 			VAN_has_mil_advisor_3 = yes
-			ME_has_mil_advisor_3 = yes
+			#VU_has_mil_advisor_3 = yes
 			advisor_mod_has_mil_advisor_3 = yes #contact Stiopa to get your advisor mod added!
 		}
 	}
@@ -36,7 +36,7 @@ has_adm_advisor = {
 		tooltip = has_adm_advisor_tooltip
 		OR = {
 			VAN_has_adm_advisor = yes
-			ME_has_adm_advisor = yes
+			#VU_has_adm_advisor = yes
 			advisor_mod_has_adm_advisor = yes #contact Stiopa to get your advisor mod added!
 		}
 	}
@@ -47,7 +47,7 @@ has_adm_advisor_2 = {
 		tooltip = has_adm_advisor_2_tooltip
 		OR = {
 			VAN_has_adm_advisor_2 = yes
-			ME_has_adm_advisor_2 = yes
+			#VU_has_adm_advisor_2 = yes
 			advisor_mod_has_adm_advisor_2 = yes #contact Stiopa to get your advisor mod added!
 		}
 	}
@@ -58,7 +58,7 @@ has_adm_advisor_3 = {
 		tooltip = has_adm_advisor_3_tooltip
 		OR = {
 			VAN_has_adm_advisor_3 = yes
-			ME_has_adm_advisor_3 = yes
+			#VU_has_adm_advisor_3 = yes
 			advisor_mod_has_adm_advisor_3 = yes #contact Stiopa to get your advisor mod added!
 		}
 	}
@@ -70,7 +70,7 @@ has_dip_advisor = {
 		tooltip = has_dip_advisor_tooltip
 		OR = {
 			VAN_has_dip_advisor = yes
-			ME_has_dip_advisor = yes
+			#VU_has_dip_advisor = yes
 			advisor_mod_has_dip_advisor = yes #contact Stiopa to get your advisor mod added!
 		}
 	}
@@ -81,7 +81,7 @@ has_dip_advisor_2 = {
 		tooltip = has_dip_advisor_2_tooltip
 		OR = {
 			VAN_has_dip_advisor_2 = yes
-			ME_has_dip_advisor_2 = yes
+			#VU_has_dip_advisor_2 = yes
 			advisor_mod_has_dip_advisor_2 = yes #contact Stiopa to get your advisor mod added!
 		}
 	}
@@ -92,7 +92,7 @@ has_dip_advisor_3 = {
 		tooltip = has_dip_advisor_3_tooltip
 		OR = {
 			VAN_has_dip_advisor_3 = yes
-			ME_has_dip_advisor_3 = yes
+			#VU_has_dip_advisor_3 = yes
 			advisor_mod_has_dip_advisor_3 = yes #contact Stiopa to get your advisor mod added!
 		}
 	}

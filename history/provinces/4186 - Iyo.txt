@@ -2,7 +2,7 @@
 
 owner = KNO
 controller = KNO
-culture = japanese
+culture = shikoku
 religion = shinto
 capital = "Yuzuki"
 trade_goods = copper

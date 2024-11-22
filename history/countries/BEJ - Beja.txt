@@ -7,7 +7,7 @@ unit_type = sub_saharan
 religion = sunni
 primary_culture = beja
 capital = 5282
-government_rank = 1
+government_rank = 6
 religious_school = maliki_school
 
 1444.1.1 = {

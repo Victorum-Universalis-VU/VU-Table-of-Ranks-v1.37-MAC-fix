@@ -1,28 +1,4 @@
-#VU - Updated by San Felipe for v1.36.2.*
-#hermit_kingdom_reform = {
-#	icon = "celestial_empire"
-#	allow_normal_conversion = no
-#	valid_for_nation_designer = yes
-#	nation_designer_cost = 30
-#	potential = {
-#		OR = {
-#			primary_culture = korean 
-#			has_reform = hermit_kingdom_reform
-#		}
-#	}
-#	trigger = {
-#		OR = {
-#			has_reform = hermit_kingdom_reform
-#			primary_culture = korean
-#		}
-#	}
-#	modifiers = {
-#		defensiveness = 0.2
-#	}
-#	custom_attributes = {
-#		enables_peace_development_reduction = yes
-#	}
-#}
+#Updated to VU v1.37 - SF
 nobi_jongbubub_reform= {
 	icon = "people_walking"
 	allow_normal_conversion = yes

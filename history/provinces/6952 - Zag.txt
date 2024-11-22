@@ -22,17 +22,6 @@ is_city = yes
 
 #Known by Technology groups
 
-
-
-
-
-
-
-
-
-
-
-
 #Histories
 1215.6.15 = { owner = AMD controller = AMD add_core = AMD } # Alhomad territorial lands - By San Felipe
 
@@ -59,7 +48,7 @@ is_city = yes
 	controller = SPA
 	add_core = SPA
 	remove_core = CAS
-} # Ferdinand the Catholic dies, Charles inherits Aragon and becomes regent of Castille
+} # Ferdinand the Catholic dies, Charles inherits Aragon and becomes regent of Castile
 
 1524.1.1 = {
 	owner = TFL

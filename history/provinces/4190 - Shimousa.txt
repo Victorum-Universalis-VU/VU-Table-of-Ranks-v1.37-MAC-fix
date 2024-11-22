@@ -2,7 +2,7 @@
 
 owner = CBA
 controller = CBA
-culture = togoku
+culture = kanto 
 religion = shinto
 capital = "Sakura"
 trade_goods = seafood	# General seafood more suitable for town this large

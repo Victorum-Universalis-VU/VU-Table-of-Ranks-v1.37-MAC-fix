@@ -9,6 +9,7 @@ country_event = {
 	
 	trigger = {
 		FROM = { is_colonial_nation = yes }
+		FROM = { ai = yes }
 		any_owned_province = {
 			NOT = { colonial_region = capital }
 	
@@ -205,7 +206,7 @@ country_event = {
 						NOT = { primary_culture = brazilian }
 					}
 				}
-				FROM = { change_primary_culture = brazilian }
+				FROM = { change_primary_culture = brazilian  }
 			}
 			
 			# Iberian La Plata, Chile
@@ -433,7 +434,7 @@ country_event = {
 						NOT = { primary_culture = american }
 					}
 				}
-				FROM = { change_primary_culture = american }
+				FROM = { change_primary_culture = american add_accepted_culture = dixie }
 			}
 			
 			# British Eastern America - Dixie
@@ -453,7 +454,7 @@ country_event = {
 						NOT = { primary_culture = dixie }
 					}
 				}
-				FROM = { change_primary_culture = dixie }
+				FROM = { change_primary_culture = dixie add_accepted_culture = american }
 			}
 
 			# British Mississippi - American
@@ -474,7 +475,7 @@ country_event = {
 						NOT = { primary_culture = american }
 					}
 				}
-				FROM = { change_primary_culture = american }
+				FROM = { change_primary_culture = american add_accepted_culture = dixie }
 			}
 			
 			# British Mississippi - Dixie
@@ -493,7 +494,7 @@ country_event = {
 						NOT = { primary_culture = dixie }
 					}
 				}
-				FROM = { change_primary_culture = dixie }
+				FROM = { change_primary_culture = dixie add_accepted_culture = american }
 			}
 			
 			# British Great Lakes
@@ -521,14 +522,17 @@ country_event = {
 								OR = {
 									area = lower_plains_area #Oklahoma
 									area = ozarks_area #Arkansas
-									area = lower_louisiana_area #Louisiana
+									AND = {
+										area = lower_louisiana_area #Louisiana
+										NOT = { province_id = 893 }
+									}
 								}
 							}
 						}
 						NOT = { primary_culture = american }
 					}
 				}
-				FROM = { change_primary_culture = american }
+				FROM = { change_primary_culture = american add_accepted_culture = dixie }
 			}
 			
 			# British Louisiana - Dixie
@@ -541,13 +545,16 @@ country_event = {
 							OR = {
 								area = lower_plains_area #Oklahoma
 								area = ozarks_area #Arkansas
-								area = lower_louisiana_area #Louisiana
+								AND = { 
+									area = lower_louisiana_area #Louisiana
+									NOT = { province_id = 893 }
+								}
 							}
 						}
 						NOT = { primary_culture = dixie }
 					}
 				}
-				FROM = { change_primary_culture = dixie }
+				FROM = { change_primary_culture = dixie add_accepted_culture = american }
 			}
 			
 			# British Florida
@@ -639,6 +646,34 @@ country_event = {
 					}
 				}
 				FROM = { change_primary_culture = canadian }
+			}
+
+			# British Alaska
+			if = {
+				limit = {
+					FROM = {
+						culture_group = british
+						capital_scope = {
+							colonial_region = colonial_alaska
+						}
+						NOT = { primary_culture = american  }
+					}
+				}
+				FROM = { change_primary_culture = american  }
+			}
+
+			# British Mexico
+			if = {
+				limit = {
+					FROM = {
+						culture_group = british
+						capital_scope = {
+							colonial_region = colonial_mexico
+						}
+						NOT = { primary_culture = dixie }
+					}
+				}
+				FROM = { change_primary_culture = dixie }
 			}
 
 			# British South Africa
@@ -1560,7 +1595,7 @@ country_event = {
 					is_colony = no
 					NOT = { culture = american }
 				}
-				change_culture = american
+				change_culture = american 
 			}
 
 			# British Eastern America - Dixie
@@ -1690,6 +1725,28 @@ country_event = {
 					NOT = { culture = american }
 				}
 				change_culture = american
+			}
+
+			# British Alaska
+			every_owned_province = {
+				limit = {
+					culture_group = british
+					colonial_region = colonial_alaska
+					is_colony = no
+					NOT = { culture = american }
+				}
+				change_culture = american
+			}
+
+			# British Mexico
+			every_owned_province = {
+				limit = {
+					culture_group = british
+					colonial_region = colonial_mexico
+					is_colony = no
+					NOT = { culture = dixie }
+				}
+				change_culture = dixie 
 			}
 
 			# British Canada

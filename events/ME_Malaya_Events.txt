@@ -2276,35 +2276,35 @@ country_event = {
 			factor = 1
 		}
 
-		event_target:Malaya_Target_1 = {
+		event_target:Malaya_target_1 = {
 			change_trade_goods = spices
 			add_province_modifier = {
 				name = MSA_spice_introduction
 				duration = 14600
 			}
 		}
-		event_target:Malaya_Target_2 = {
+		event_target:Malaya_target_2 = {
 			change_trade_goods = spices
 			add_province_modifier = {
 				name = MSA_spice_introduction
 				duration = 14600
 			}
 		}
-		event_target:Malaya_Target_3 = {
+		event_target:Malaya_target_3 = {
 			change_trade_goods = spices
 			add_province_modifier = {
 				name = MSA_spice_introduction
 				duration = 14600
 			}
 		}
-		event_target:Malaya_Target_4 = {
+		event_target:Malaya_target_4 = {
 			change_trade_goods = spices
 			add_province_modifier = {
 				name = MSA_spice_introduction
 				duration = 14600
 			}
 		}
-		event_target:Malaya_Target_5 = {
+		event_target:Malaya_target_5 = {
 			change_trade_goods = spices
 			add_province_modifier = {
 				name = MSA_spice_introduction
@@ -2705,7 +2705,10 @@ country_event = {
 	trigger = {
 		tag = MSA
 		NOT = { has_country_flag = MSA_chose_religious_tree }
-		religion = hinduism
+		OR = {
+			religion = hinduism
+			religion = surya_majapahit
+		}
 	}
 
 	mean_time_to_happen = {
@@ -2745,10 +2748,8 @@ country_event = {
 		tag = MSA
 		NOT = { has_country_flag = MSA_chose_religious_tree }
 		NOT = {
-			OR = {
-				religion = hinduism
-				religion_group = muslim
-			}
+			religion = hinduism
+			religion_group = muslim
 		}
 	}
 

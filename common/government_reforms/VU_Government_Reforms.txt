@@ -498,7 +498,7 @@ vu_republican_tsardom_reform = {
 			has_reform = vu_republican_tsardom_reform
 		}
 	}
-	fixed_rank = 3
+	fixed_rank = 9
 	legacy_equivalent = tsardom_legacy
 	valid_for_nation_designer = yes
 	nation_designer_cost = 40
@@ -550,7 +550,7 @@ aju_hydraulic_empire = {
 			#mission_completed = aju_jubba_and_shebelle
 		}
 	}
-	fixed_rank = 3
+	fixed_rank = 9
 	royal_marriage = yes
 	government_abilities = { feudal_theocracy_mechanic }
 	modifiers = {
@@ -574,7 +574,7 @@ ada_adalan_empire = {
 			#mission_completed = adal_end_abyssinian_hegemony
 		}
 	}
-	fixed_rank = 3
+	fixed_rank = 9
 	government_abilities = { iqta_mechanic }
 	modifiers = {
 		drill_decay_modifier = -0.3
@@ -582,23 +582,3 @@ ada_adalan_empire = {
 		discipline = 0.05
 	}
 }
-
-#salic_reform = {
-#	icon = "castle"
-#	allow_normal_conversion = no
-#	potential = {
-#		has_reform = salic_reform
-#	}
-#	valid_for_nation_designer = yes
-#	nation_designer_cost = 0
-#	lock_level_when_selected = yes
-#	modifiers = {
-#		global_manpower_modifier = 0.1	
-#		vassal_income = 0.25
-#		vassal_forcelimit_bonus = 0.33
-#		global_autonomy = -0.02
-#	}
-#	ai = {
-#		factor = 0.5 #generic
-#	}
-#}

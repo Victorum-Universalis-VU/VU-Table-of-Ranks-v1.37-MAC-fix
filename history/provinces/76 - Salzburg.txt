@@ -1,18 +1,21 @@
 #76 - Salzburg
 
 owner = SLZ
-controller = SLZ 
+controller = SLZ
+add_core = SLZ
 culture = bavarian #Bugfixes changed from Austrian. It was Bavarian in every possible sense in this time period. Though the difference between Austrian & Bavarian is literally the division of the Imperial Circles, it was even part of the Bavarian Imperial circle. Hence, it becomes Bavarian.
 religion = catholic
 capital = "Salzburg"
-trade_goods = livestock
+trade_goods = salt #Was livestock but changed in VU v1.37 - SF
 hre = yes
 base_tax = 12 
 base_production = 12
 base_manpower = 8
 is_city = yes
-add_core = SLZ
 center_of_trade = 3
+
+#Claimants
+add_core = HAB
 
 add_permanent_province_modifier = {
     name = jewish_population 

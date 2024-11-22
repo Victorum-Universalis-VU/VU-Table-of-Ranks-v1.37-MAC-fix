@@ -1,3 +1,4 @@
+#Updated to v1.37 - SF
 country_decisions = {
 
 	incan_nation = {
@@ -94,6 +95,52 @@ country_decisions = {
 				set_country_flag = INC_used_to_be_CHM
 			}
 			remove_non_electors_emperors_from_empire_effect = yes
+			
+			if = {
+				limit = {
+					NOT = { tag = CSU }
+					NOT = { was_tag = CSU }
+				}
+				add_country_modifier = {
+					name = INC_non_inca_modifier
+					duration = -1
+				}
+			}
+			
+			if = {
+				limit = {
+					has_country_flag = CSU_if_we_form_inca_before_1480_machu_picchu_flag
+					807 = {
+						owned_by = ROOT
+						NOT = {
+							has_great_project = {
+								type = machu_picchu
+								tier = 2
+							}
+						}
+					}
+				}
+				807 = {
+					if = {
+						limit = {
+							has_great_project = {
+								type = machu_picchu
+								tier = 1
+							}
+						}
+						add_great_project_tier = {
+							type = machu_picchu
+							tier = 1
+						}
+					}
+					else = {
+						add_great_project_tier = {
+							type = machu_picchu
+							tier = 2
+						}
+					}
+				}
+			}
 
 			if = {
 				limit = {
@@ -103,11 +150,11 @@ country_decisions = {
 				#set_legacy_government = despotic_monarchy
 				custom_tooltip = incan_nation_empire_custom_tooltip
 				hidden_effect = {
-					set_government_rank = 3
+					set_government_rank = 9
 				}
 			}
 			else = {
-				set_government_rank = 3
+				set_government_rank = 9
 				if = {
 					limit = {
 						is_tribal = yes
@@ -117,12 +164,7 @@ country_decisions = {
 				}
 			}
 			change_tag = INC
-			on_change_tag_effect = yes
 			change_religion = inti
-			swap_non_generic_missions = yes
-			hidden_effect = {
-				country_event = { id = paradox_or_mod_missions_events.2 }
-			}
 			peru_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
@@ -184,6 +226,8 @@ country_decisions = {
 				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
 			set_country_flag = formed_inca_flag
+			swap_non_generic_missions = yes
+			on_change_tag_effect = yes
 		}
 		ai_will_do = {
 			factor = 1

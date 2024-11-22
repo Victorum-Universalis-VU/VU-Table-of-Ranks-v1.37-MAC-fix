@@ -1,6 +1,6 @@
 government = theocracy
-add_government_reform = leading_clergy_reform
-government_rank = 1
+add_government_reform = church_of_baltics_bishopric_reform
+government_rank = 3 #Bishopric
 primary_culture = baltic_german
 add_accepted_culture = estonian
 religion = catholic

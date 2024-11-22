@@ -4,8 +4,8 @@ ME_ottoman_government = {
 	icon = "ottoman_government"
 	potential = {
 		OR = {
-			tag = RMM
-			was_tag = RMM
+			tag = RUM
+			was_tag = RUM
 		}
 		OR = {
 			have_had_reform = ME_ottoman_government
@@ -20,7 +20,7 @@ ME_ottoman_government = {
 		max_absolutism = 5
 		governing_capacity = 150
 	}
-
+	queen = no
 	custom_attributes = {
 		locked_government_type = yes
 	}

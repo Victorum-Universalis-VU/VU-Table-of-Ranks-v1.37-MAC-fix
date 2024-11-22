@@ -259,6 +259,20 @@ swe_scandinavian_colonialism_mission_slot = {
 				}
 				add_permanent_claim = ROOT
 			}
+			hamburg_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			lauenburg_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 	}
 	
@@ -980,6 +994,20 @@ swe_diplomacy_mission_slot = {
 					}
 					add_claim = ROOT
 				}
+				hamburg_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_claim = ROOT }
+					}
+					add_claim = ROOT
+				}
+				lauenburg_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_claim = ROOT }
+					}
+					add_claim = ROOT
+				}
 				lower_saxony_area = {
 					limit = {
 						NOT = { is_core = ROOT }
@@ -1517,6 +1545,7 @@ swe_kalmar_union_mission_slot = {
 			OR = {
 				area = estonia_ingria_area
 				area = livonia_area
+				area = riga_area
 				area = curonia_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -1530,6 +1559,7 @@ swe_kalmar_union_mission_slot = {
 					OR = {
 						area = estonia_ingria_area
 						area = livonia_area
+						area = riga_area
 						area = curonia_area
 						area = north_livonia_area
 						area = latgallia_area
@@ -1546,6 +1576,7 @@ swe_kalmar_union_mission_slot = {
 							OR = {
 								area = estonia_ingria_area
 								area = livonia_area
+								area = riga_area
 								area = curonia_area
 								area = north_livonia_area
 								area = latgallia_area
@@ -1567,6 +1598,7 @@ swe_kalmar_union_mission_slot = {
 									OR = {
 										area = estonia_ingria_area
 										area = livonia_area
+										area = riga_area
 										area = curonia_area
 										area = north_livonia_area
 										area = latgallia_area
@@ -1596,6 +1628,7 @@ swe_kalmar_union_mission_slot = {
 									OR = {
 										area = estonia_ingria_area
 										area = livonia_area
+										area = riga_area
 										area = curonia_area
 										area = north_livonia_area
 										area = latgallia_area
@@ -1899,10 +1932,13 @@ swe_kalmar_union_mission_slot = {
 				area = norrland_area
 				area = bothnia_area
 				area = gotaland_area
+				area = gotland_area
 				area = skaneland_area
 				area = denmark_area
 				area = jutland_area
 				area = holstein_area
+				area = hamburg_area
+				area = lauenburg_area
 				area = mecklenburg_area
 				area = vorpommern_area
 				area = hinter_pommern_area
@@ -1926,10 +1962,13 @@ swe_kalmar_union_mission_slot = {
 				norrland_area = { OR = { owner = { OR = { tag = ROOT is_subject_of = ROOT alliance_with = ROOT } } has_port = no } type = all }
 				bothnia_area = { OR = { owner = { OR = { tag = ROOT is_subject_of = ROOT alliance_with = ROOT } } has_port = no } type = all }
 				gotaland_area = { OR = { owner = { OR = { tag = ROOT is_subject_of = ROOT alliance_with = ROOT } } has_port = no } type = all }
+				gotland_area = { OR = { owner = { OR = { tag = ROOT is_subject_of = ROOT alliance_with = ROOT } } has_port = no } type = all }
 				skaneland_area = { OR = { owner = { OR = { tag = ROOT is_subject_of = ROOT alliance_with = ROOT } } has_port = no } type = all }
 				denmark_area = { OR = { owner = { OR = { tag = ROOT is_subject_of = ROOT alliance_with = ROOT } } has_port = no } type = all }
 				jutland_area = { OR = { owner = { OR = { tag = ROOT is_subject_of = ROOT alliance_with = ROOT } } has_port = no } type = all }
 				holstein_area = { OR = { owner = { OR = { tag = ROOT is_subject_of = ROOT alliance_with = ROOT } } has_port = no } type = all }
+				hamburg_area = { OR = { owner = { OR = { tag = ROOT is_subject_of = ROOT alliance_with = ROOT } } has_port = no } type = all }
+				lauenburg_area = { OR = { owner = { OR = { tag = ROOT is_subject_of = ROOT alliance_with = ROOT } } has_port = no } type = all }
 				mecklenburg_area = { OR = { owner = { OR = { tag = ROOT is_subject_of = ROOT alliance_with = ROOT } } has_port = no } type = all }
 				vorpommern_area = { OR = { owner = { OR = { tag = ROOT is_subject_of = ROOT alliance_with = ROOT } } has_port = no } type = all }
 				hinter_pommern_area = { OR = { owner = { OR = { tag = ROOT is_subject_of = ROOT alliance_with = ROOT } } has_port = no } type = all }
@@ -1946,10 +1985,13 @@ swe_kalmar_union_mission_slot = {
 					norrland_area = { OR = { country_or_non_sovereign_subject_holds = ROOT has_port = no } type = all }
 					bothnia_area = { OR = { country_or_non_sovereign_subject_holds = ROOT has_port = no } type = all }
 					gotaland_area = { OR = { country_or_non_sovereign_subject_holds = ROOT has_port = no } type = all }
+					gotland_area = { OR = { country_or_non_sovereign_subject_holds = ROOT has_port = no } type = all }
 					skaneland_area = { OR = { country_or_non_sovereign_subject_holds = ROOT has_port = no } type = all }
 					denmark_area = { OR = { country_or_non_sovereign_subject_holds = ROOT has_port = no } type = all }
 					jutland_area = { OR = { country_or_non_sovereign_subject_holds = ROOT has_port = no } type = all }
 					holstein_area = { OR = { country_or_non_sovereign_subject_holds = ROOT has_port = no } type = all }
+					hamburg_area = { OR = { country_or_non_sovereign_subject_holds = ROOT has_port = no } type = all }
+					lauenburg_area = { OR = { country_or_non_sovereign_subject_holds = ROOT has_port = no } type = all }
 					mecklenburg_area = { OR = { country_or_non_sovereign_subject_holds = ROOT has_port = no } type = all }
 					vorpommern_area = { OR = { country_or_non_sovereign_subject_holds = ROOT has_port = no } type = all }
 					hinter_pommern_area = { OR = { country_or_non_sovereign_subject_holds = ROOT has_port = no } type = all }
@@ -1969,10 +2011,13 @@ swe_kalmar_union_mission_slot = {
 					norrland_area = { OR = { owner = { OR = { tag = ROOT is_subject_of = ROOT alliance_with = ROOT } } has_port = no } type = all }
 					bothnia_area = { OR = { owner = { OR = { tag = ROOT is_subject_of = ROOT alliance_with = ROOT } } has_port = no } type = all }
 					gotaland_area = { OR = { owner = { OR = { tag = ROOT is_subject_of = ROOT alliance_with = ROOT } } has_port = no } type = all }
+					gotland_area = { OR = { owner = { OR = { tag = ROOT is_subject_of = ROOT alliance_with = ROOT } } has_port = no } type = all }
 					skaneland_area = { OR = { owner = { OR = { tag = ROOT is_subject_of = ROOT alliance_with = ROOT } } has_port = no } type = all }
 					denmark_area = { OR = { owner = { OR = { tag = ROOT is_subject_of = ROOT alliance_with = ROOT } } has_port = no } type = all }
 					jutland_area = { OR = { owner = { OR = { tag = ROOT is_subject_of = ROOT alliance_with = ROOT } } has_port = no } type = all }
 					holstein_area = { OR = { owner = { OR = { tag = ROOT is_subject_of = ROOT alliance_with = ROOT } } has_port = no } type = all }
+					hamburg_area = { OR = { owner = { OR = { tag = ROOT is_subject_of = ROOT alliance_with = ROOT } } has_port = no } type = all }
+					lauenburg_area = { OR = { owner = { OR = { tag = ROOT is_subject_of = ROOT alliance_with = ROOT } } has_port = no } type = all }
 					mecklenburg_area = { OR = { owner = { OR = { tag = ROOT is_subject_of = ROOT alliance_with = ROOT } } has_port = no } type = all }
 					vorpommern_area = { OR = { owner = { OR = { tag = ROOT is_subject_of = ROOT alliance_with = ROOT } } has_port = no } type = all }
 					hinter_pommern_area = { OR = { owner = { OR = { tag = ROOT is_subject_of = ROOT alliance_with = ROOT } } has_port = no } type = all }
@@ -4644,7 +4689,7 @@ swe_norse_mission_slot = {
 		trigger = {
 			not_in_mission_preview_mode = { key = SWE }
 			religion = norse_pagan_reformed
-			government_rank = 3
+			government_rank = 9
 			religious_unity = 1
 			land_forcelimit = 80
 			army_size = 80
@@ -4790,6 +4835,13 @@ swe_sca_hre_slot = {
 					}
 					add_permanent_claim = ROOT
 				}
+				frankfurt_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
 				saxony_area = {
 					limit = {
 						NOT = { is_core = ROOT }
@@ -4798,6 +4850,20 @@ swe_sca_hre_slot = {
 					add_permanent_claim = ROOT
 				}
 				holstein_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				hamburg_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				lauenburg_area = {
 					limit = {
 						NOT = { is_core = ROOT }
 						NOT = { is_permanent_claim = ROOT }
@@ -5076,15 +5142,18 @@ swe_sca_caroliner_slot = {
 				area = altmark_area
 				area = anhalt_area
 				area = hesse_area
+				area = frankfurt_area
 				area = saxony_area
 				area = lower_saxony_area
 				area = holstein_area
+				area = hamburg_area
+				area = lauenburg_area
 				area = weser_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			government_rank = 3
+			government_rank = 9
 			OR = {
 				is_emperor = yes
 				AND = {
@@ -5096,9 +5165,12 @@ swe_sca_caroliner_slot = {
 				            area = altmark_area
 				            area = anhalt_area
 				            area = hesse_area
+							area = frankfurt_area
 				            area = saxony_area
 				            area = lower_saxony_area
 				            area = holstein_area
+							area = hamburg_area
+							area = lauenburg_area
 				            area = weser_area
 						}
 						value = 15
@@ -5127,9 +5199,12 @@ swe_sca_caroliner_slot = {
 				            area = altmark_area
 				            area = anhalt_area
 				            area = hesse_area
+							area = frankfurt_area
 				            area = saxony_area
 				            area = lower_saxony_area
 				            area = holstein_area
+							area = hamburg_area
+							area = lauenburg_area
 				            area = weser_area
 						}
 						value = 15
@@ -5157,6 +5232,13 @@ swe_sca_caroliner_slot = {
 					add_permanent_claim = ROOT
 				}
 				hesse_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				frankfurt_area = {
 					limit = {
 						NOT = { is_core = ROOT }
 						NOT = { is_permanent_claim = ROOT }
@@ -5217,6 +5299,13 @@ swe_sca_caroliner_slot = {
 						add_permanent_claim = ROOT
 					}
 					hesse_area = {
+						limit = {
+							NOT = { is_core = ROOT }
+							NOT = { is_permanent_claim = ROOT }
+						}
+						add_permanent_claim = ROOT
+					}
+					frankfurt_area = {
 						limit = {
 							NOT = { is_core = ROOT }
 							NOT = { is_permanent_claim = ROOT }

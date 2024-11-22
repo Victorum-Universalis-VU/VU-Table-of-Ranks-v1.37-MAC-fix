@@ -1,9 +1,9 @@
 #6388 - Pfullendorf
 
 #Default
-owner = VOR
-controller = VOR
-add_core = VOR
+owner = PFU
+controller = PFU
+add_core = PFU
 culture = swabian
 capital = "Pfullendorf"
 religion = catholic
@@ -21,11 +21,6 @@ hre = yes
 #Special Modifiers
 
 #Known by Technology groups
-
-
-
-
-
 
 #Documented 1067 AD
 1525.1.1 = { religion = protestant }

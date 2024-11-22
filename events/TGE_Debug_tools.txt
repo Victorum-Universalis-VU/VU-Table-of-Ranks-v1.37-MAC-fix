@@ -279,7 +279,7 @@ province_event = {
 
 	option = {
 		name = marcin_events.52.t
-		change_trade_goods = champagne
+		change_trade_goods = champagne_bottle
 	}
 	
 

@@ -1701,7 +1701,7 @@ country_event = {
 			factor = 1
 		}
 
-		ABA_pick_advisor = { type = GRA_muslim_scholar }
+		ABA_pick_advisor = { type = researcher }
 	}
 
 	option = {
@@ -1711,7 +1711,7 @@ country_event = {
 			factor = 1
 		}
 
-		ABA_pick_advisor = { type = GRA_translator }
+		ABA_pick_advisor = { type = negotiator }
 	}
 
 	option = {
@@ -1721,7 +1721,7 @@ country_event = {
 			factor = 1
 		}
 
-		ABA_pick_advisor = { type = GRA_military_writer }
+		ABA_pick_advisor = { type = reformist }
 	}
 
 	option = {

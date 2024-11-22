@@ -1,7 +1,7 @@
 government = monarchy
-add_government_reform = daimyo
-government_rank = 1
-primary_culture = kyushuan
+add_government_reform = daimyo_county_reform
+government_rank = 4 #Daimyo_County
+primary_culture = honichi 
 religion = shinto
 technology_group = japanese
 capital = 1014	# Bungo

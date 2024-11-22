@@ -204,7 +204,7 @@
 #dependency = {
 #	subject_type = "fief_subject"
 #	first = FRW
-#	second = CAT
+#	second = CAT #Changed from CTT
 #	start_date = 840.6.21
 #	end_date = 890.1.1
 #}
@@ -381,7 +381,7 @@
 #dependency = {
 #	subject_type = "fief_subject"
 #	first = FRK
-#	second = CAT
+#	second = CAT #Changed from CTT
 #	start_date = 801.1.1
 #	end_date = 840.6.21
 #}

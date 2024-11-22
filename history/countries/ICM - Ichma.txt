@@ -1,5 +1,6 @@
 government = theocracy
 add_government_reform = leading_clergy_reform
+government_rank = 4 #Bishopric
 primary_culture = aimara
 religion = inti
 technology_group = andean

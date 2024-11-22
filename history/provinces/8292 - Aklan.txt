@@ -3,13 +3,11 @@
 culture = akeanon
 religion = animism
 capital = "Kalibo"
-trade_goods = rice
+trade_goods = copra
 hre = no
 base_tax = 6 
 base_production = 8
 base_manpower = 4
-add_core = MAS
-owner = MAS
-controller = MAS
-is_city = yes
-
+native_size = 50
+native_ferocity = 3
+native_hostileness = 9

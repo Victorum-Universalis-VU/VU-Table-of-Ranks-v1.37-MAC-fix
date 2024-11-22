@@ -53,6 +53,7 @@
  PROV261:0 "Halych"
  #PROV265:0 "Brno"
  PROV283:0 "Lower Dnipr"
+ PROV302:0 "Tomba"
  PROV313:0 "Arkhangelsk"
  PROV316:0 "Nicomedia"
  PROV317:0 "Prusa"
@@ -138,9 +139,11 @@
  PROV_ADJ438:0 "Gokdepeni"
  PROV452:0 "Jauz Gun"       #was Badakhashan
  PROV_ADJ452:0 "Jauz Guni"
- PROV463:0 "Krasnadar"
  PROV467:0 "Uryupin"
- PROV473:0 "Uryupin"
+ PROV464:0 "Hajji Tarkhan"
+ PROV_ADJ464:0 "Hajji Tarkhanian"
+ PROV473:0 "Samarkha"
+ PROV_ADJ473:0 "Samarkhanian"
  PROV482:0 "Bahama"
  PROV483:0 "Caya Hico"       #Turks & Caicos
  PROV484:0 "Habaguanex"
@@ -227,6 +230,8 @@
  PROV908:0 "Sisíthunwan"
  PROV909:0 "Numakaki"
  PROV910:0 "Tsétsêhéstâhese"            #Ojibwe name Onigamiinsing (Duluth)
+ PROV951:0 "Mingo"
+ PROV_ADJ951:0 "Mingo"
  PROV953:0 "Moyaons"
  PROV959:0 "Cayuga"
  PROV960:0 "Onondaga"
@@ -271,6 +276,7 @@
  PROV1011:0 "Wiinibigosis"          #Little Muddy Waters, I'd prefer to find a better native etymolgy and spelling for this, but for now this will have to do
  PROV1012:0 "Kagoshima"
  PROV1079:0 "Kotel'nich"
+ PROV1081:0 "Sember"
  PROV1099:0 "Socotra"
  PROV1104:0 "Qaqortoq"
  PROV1105:0 "Sisimiut"
@@ -293,6 +299,8 @@
  PROV1180:0 "Mthatha"
  PROV1181:0 "Umgungundlovu"
  PROV1182:0 "Maputo"
+ PROV1193:0 "Menabe"
+ PROV_ADJ1193:0 "Menabe"
  PROV1216:0 "Nuba"          #or Teqali
  PROV1217:0 "Latjoor"
  PROV1219:0 "Daju"          #or Marrah
@@ -415,6 +423,8 @@
  PROV1923:0 "Great Bear Lake"
  PROV1929:0 "Western Norwegian Coast"
  PROV1954:0 "Pancevo"
+ PROV1966:0 "Iske Sibai"
+ PROV_ADJ1966:0 "Sibaian"
  PROV1972:0 "Malmyzh"
  PROV1984:0 "Aalborg"
  PROV2003:0 "'aq'amni'k"
@@ -494,6 +504,8 @@
  PROV2411:0 "Zaporizhzhia"
  PROV2412:0 "Kutur-Ogly"
  PROV2425:0 "Yugra"
+ PROV2441:0 "Chelyaba"
+ PROV_ADJ2441:0 "Chelyabian"
  PROV2448:0 "Sabha"
  #PROV2449:0 "Jufra"            #Actually the same as vanilla, but adding here anyway to prevent changes with vanilla
  PROV2450:0 "Jebil"
@@ -596,7 +608,7 @@
  PROV2658:0 "Azua"
  PROV2659:0 "Cibao"
  PROV2683:0 "Siberut"
- PROV2700:0 "Pan-ay" #Formerly Panay
+ PROV2700:0 "Oton" #Formerly Pan-ay
  PROV2701:0 "Babak" #Formerly Davao del Norte
  PROV2702:0 "Bukidon" #Formerly Butuan
  PROV2710:0 "Tandjungredeb"
@@ -706,6 +718,8 @@
  PROV3044:0 "Dahlak"
  PROV3047:0 "Ndar"
  PROV_ADJ3047:0 "Ndaran"
+ PROV3048:0 "Bolzano"
+ PROV_ADJ3048:0 "Bolzano"
  PROV3049:0 "Brig"
  PROV_ADJ3049:0 "Brigan"
  PROV3052:0 "South Raetian Mountains"
@@ -805,6 +819,10 @@
  PROV_ADJ3274:0 "Bute"
  PROV3275:0 "Jura"
  PROV_ADJ3275:0 "Jura"
+ PROV7257:0 "Khlynov"
+ PROV_ADJ7257:0 "Khlynovian"
+ PROV3281:0 "Khlynov"
+ PROV_ADJ3281:0 "Khlynov"
  PROV3283:0 "Islay"
  PROV_ADJ3283:0 "Islay"
  PROV3286:0 "Skye"
@@ -815,6 +833,12 @@
  PROV_ADJ3298:0 "Dingwall"
  PROV3299:0 "Torhout"
  PROV_ADJ3299:0 "Torhouter"
+ PROV3562:0 "Bulle"
+ PROV_ADJ3562:0 "Bulle"
+ PROV3563:0 "Vevey"
+ PROV_ADJ3563:0 "Vevey"
+ PROV3564:0 "Freibourg"
+ PROV_ADJ3564:0 "Freibourg"
  PROV3759:0 "Boroughbridge"
  PROV_ADJ3759:0 "Boroughbridger" 
  PROV3760:0 "South Sepik"
@@ -1234,9 +1258,12 @@
  PROV4251:0 "Mozhaysk"
  PROV4250:0 "Rybnaya"
  PROV4253:0 "Volochok"
- PROV4256:0 "Usolsk"
+ PROV4256:0 "Solvychegodsk"
+ PROV_ADJ4256:0 "Solvychegodskian"
  PROV4263:0 "Unzha"
  PROV4264:0 "Kurmysh"
+ PROV4265:0 "Angasyak"
+ PROV_ADJ4265:0 "Angasyakian"
  #1.23 changes
  PROV4268:0 "Ayla"          #Formerly 5202
  PROV4269:0 "Duba"          #Formerly 383
@@ -1293,6 +1320,7 @@
  PROV_ADJ4347:0 "Leuvener"
  PROV4349:0 "Tabuco"
  PROV4350:0 "Mangya"          #Formerly Mindoro
+ PROV4352:0 "Sugbu"
  PROV4351:0 "Buglas"
  PROV4354:0 "Sanmanlan"          #Formerly Zamboanga
  PROV4355:0 "Kalag"          #Formerly Agusan del Sur
@@ -1457,6 +1485,8 @@
  PROV8483:0 "Simmern"
  PROV8484:0 "Bopard"
  PROV8493:0 "Düren"
+ PROV8664:0 "Kirillov"
+ PROV_ADJ8664:0 "Kirillovian"
  
  PROV_ADJ2251:0 "Bagoe"
 

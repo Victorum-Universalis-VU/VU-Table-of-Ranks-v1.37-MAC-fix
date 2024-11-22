@@ -1,1 +1,2 @@
+132 = { "Judenburg" "Judenburg" }
 280 = { "Kyiv" "Kyiv" }

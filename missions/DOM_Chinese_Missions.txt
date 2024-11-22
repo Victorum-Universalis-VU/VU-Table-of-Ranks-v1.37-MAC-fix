@@ -2723,6 +2723,7 @@ ming_missions_3 = {
 				}
 				OR = {
 					has_reform = steppe_horde
+					has_reform = scythian_horde_reform
 					has_reform = great_mongol_state_reform
 				}
 			}

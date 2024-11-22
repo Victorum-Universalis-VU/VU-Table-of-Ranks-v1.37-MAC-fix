@@ -64,6 +64,7 @@
 174 = "Gwasgwyn" #Gascogne
 112 = "Fenis" #Venezia
 118 = "Rhufain" #Rome
+132 = { "Judenburg" "Judenburg" }
 379 = "Caersalem" #Jerusalem
 2327 = { "Magna" "Magna" }
 1987 = { "New Llanfairpwllgwyngyllgogerychwyrndrobwllllantysiliogogogoch" "New Llanfairpwllgwyngyllgogerychwyrndrobwllllantysiliogogogoch" } #Society Islands

@@ -115,6 +115,7 @@ guiTypes = {
 				position = { x= 487 y = 121 }
 				frame = 4
 			}
+			
 			iconType = {
 				name ="icon_age_of_change"
 				spriteType = "GFX_icon_age_s"
@@ -286,6 +287,8 @@ guiTypes = {
 			spriteType = "GFX_icon_splendor_tiny"
 			position = { x= 20 y = 174 }
 		}
+
+
 		
 		instantTextBoxType = {
 			name = "splendor"
@@ -362,8 +365,7 @@ guiTypes = {
 			shortcut = "ESCAPE"
 		}
 		
-		listboxType = 
-		{
+		listboxType = {
 			name ="objectives"
 			position = { x = 10 y = 280 }
 			backGround=""
@@ -375,8 +377,7 @@ guiTypes = {
 		}
 
 
-		listboxType = 
-		{
+		listboxType = {
 			name ="abilities"
 			position = { x = 4 y = 244 }
 			backGround=""
@@ -410,16 +411,14 @@ guiTypes = {
 		fullScreen = no
 		
 		#remove
-#		iconType =
-#		{
+#		iconType = {
 #			name ="_entry_bg"
 #			spriteType = "GFX_achievement_entry_bg"
 #			position = { x=-2 y = -4 }
 #			Orientation = "UPPER_LEFT"
 #		}
 		
-		iconType =
-		{
+		iconType = {
 			name ="icon"
 			spriteType = "GFX_idea_unknown"
 			position = { x= 8ยง y = 4 }
@@ -450,8 +449,7 @@ guiTypes = {
 		}
 		## stuff to the right
 		
-		iconType =
-		{
+		iconType = {
 			name ="progress"
 			spriteType = "achievement_progress"
 			position = { x= 469 y = 34 }
@@ -459,8 +457,7 @@ guiTypes = {
 			
 		}
 		
-		iconType =
-		{
+		iconType = {
 			name ="progress_overlay"
 			spriteType = "GFX_achievement_progress_frame"
 			position = { x= 454 y = 29 }
@@ -498,32 +495,28 @@ guiTypes = {
 		
 		
 		
-		iconType =
-		{
+		iconType = {
 			name ="icon"
 			spriteType = "GFX_idea_empty"
 			position = { x= 16 y = -7 }
 			Orientation = "UPPER_LEFT"
 		}
 		
-		iconType =
-		{
+		iconType = {
 			name ="can_unlock"
 			spriteType = "GFX_age_can_unlock"
 			position = { x= 16 y = -7 }
 			Orientation = "UPPER_LEFT"
 		}
 
-		iconType =
-		{
+		iconType = {
 			name ="cannot_unlock"
 			spriteType = "GFX_age_cannot_unlock"
 			position = { x= 16 y = -7 }
 			Orientation = "UPPER_LEFT"
 		}
 		
-		guiButtonType =
-		{
+		guiButtonType = {
 			name ="button"
 			quadTextureSprite= "GFX_idea_empty"
 			position = { x= 16 y = -7 }

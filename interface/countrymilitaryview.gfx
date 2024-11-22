@@ -126,6 +126,16 @@ spriteTypes = {
 		name = "GFX_naval_doctrine_kriegsmarine"
 		texturefile = "gfx//interface//naval_doctrine_kriegsmarine.dds"
 	}
+
+	#spriteType = {
+	#	name = "GFX_naval_doctrine_kaiserliche_marine"
+	#	texturefile = "gfx//interface//naval_doctrine_kriegsmarine.dds"
+	#}
+
+	#spriteType = {
+	#	name = "GFX_naval_doctrine_regia_marina"
+	#	texturefile = "gfx//interface//naval_doctrine_regia_marina.dds"
+	#}
 	
 	spriteType = {
 		name = "GFX_naval_doctrine_imperial_navy"

@@ -11,38 +11,39 @@ capital = 4482	# Sikkim
 1444.1.1 = {
 	monarch = {
 		name = "Tur Ve Pa No"
-		ADM = 2
-		DIP = 0
-		MIL = 2
+		adm = 2
+		dip = 0
+		mil = 2
 	}
 	government = tribal
 	add_government_reform = tribal_kingdom
+	government_rank = 6 #Petty_Kingdom
 }
 
 1484.1.1 = {
 	monarch = {
 		name = "Tur Song Pa No"
-		ADM = 1
-		DIP = 3
-		MIL = 0
+		adm = 1
+		dip = 3
+		mil = 0
 	}
 }
 
 1524.1.1 = {
 	monarch = {
 		name = "Tur Aeng Pa No"
-		ADM = 0
-		DIP = 2
-		MIL = 0
+		adm = 0
+		dip = 2
+		mil = 0
 	}
 }
 
 1564.1.1 = {
 	monarch = {
 		name = "Tur Alu Pa No"
-		ADM = 1
-		DIP = 3
-		MIL = 2
+		adm = 1
+		dip = 3
+		mil = 2
 	}
 }
 

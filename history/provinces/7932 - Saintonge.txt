@@ -15,6 +15,7 @@ is_city = yes
 hre = no
 
 #Claimants
+add_core = POI
 add_core = GUY
 
 #Buildings
@@ -22,11 +23,6 @@ add_core = GUY
 #Special Modifiers
 
 #Known by Technology groups
-
-
-
-
-
 
 #Histories
 1215.6.15 = { owner = ENG controller = ENG add_core = ENG } # Part of English Duchy of Aquitaine - By San Felipe

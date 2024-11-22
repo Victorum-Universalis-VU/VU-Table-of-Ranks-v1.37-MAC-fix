@@ -107,9 +107,9 @@
 #			remove_non_electors_emperors_from_empire_effect = yes
 #			if = {
 #				limit = {
-#					NOT = { government_rank = 3 }
+#					NOT = { government_rank = 9 }
 #				}
-#				set_government_rank = 3
+#				set_government_rank = 9
 #			}
 #			mashriq_region = {
 #				limit = {

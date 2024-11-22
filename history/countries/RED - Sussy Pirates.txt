@@ -1,11 +1,11 @@
 government = republic
 add_government_reform = pirate_republic_reform
+government_rank = 4 #Pirate_County
 technology_group = muslim
 religion = sunni
 primary_culture = shilha
 add_accepted_culture = west_taino
 capital = 487 # Jamaica
-government_rank = 1
 religious_school = maliki_school
 historical_friend = SOS
 national_focus = DIP

@@ -88,7 +88,7 @@ ARA = {
 	NOT = { exists = SPA }
 }
 
-# Castille
+# Castile
 CAS = {
 	NOT = { is_core = SPA }
 	NOT = { exists = SPA }
@@ -420,6 +420,22 @@ MGE = {
 }
 
 # Sultanate of Rum
-RMM = {
+RUM = {
 	always = no
+}
+
+#Austria-Hungary
+AUH = {
+    OR = {
+        is_core = AUH
+        exists = AUH
+    }
+}
+
+HAB = {
+	NOT = { exists = AUH }
+}
+
+HUN = {
+	NOT = { exists = AUH }
 }

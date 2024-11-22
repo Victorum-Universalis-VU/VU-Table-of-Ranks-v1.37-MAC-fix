@@ -1,5 +1,6 @@
 government = monarchy
 add_government_reform = indep_daimyo
+government_rank = 6 #Petty_Kingdom
 technology_group = japanese
 religion = animism
 primary_culture = vu_ryukyuan
@@ -323,7 +324,7 @@ capital = 1015	# Shuri
 }
 
 1609.4.5 = {
-	government_rank = 1
+	government_rank = 6
 }
 
 1620.10.14 = {

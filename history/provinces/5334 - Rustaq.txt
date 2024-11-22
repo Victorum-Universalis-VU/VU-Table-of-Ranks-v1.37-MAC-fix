@@ -1,7 +1,8 @@
 #400 - Muscat
 
-owner = OMA
-controller = OMA
+owner = MUS
+controller = MUS
+add_core = MUS
 culture = omani_culture
 religion = ibadi
 capital = "Rustaq"
@@ -11,25 +12,12 @@ base_tax = 3
 base_production = 3
 base_manpower = 2 
 is_city = yes
+
+#Claimants
 add_core = OMA
+add_core = R4S
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#Histories by SF
 1515.1.1 = {
 	owner = POR
 	controller = POR

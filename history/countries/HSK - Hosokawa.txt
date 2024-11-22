@@ -1,7 +1,9 @@
 government = monarchy
-add_government_reform = daimyo
-government_rank = 1
-primary_culture = japanese
+add_government_reform = daimyo_principality_reform
+government_rank = 7 #Great_Daimyo
+primary_culture = kinki 
+add_accepted_culture = shikoku 
+add_accepted_culture = chugoku 
 religion = shinto
 technology_group = japanese
 capital = 1021	# Settsu

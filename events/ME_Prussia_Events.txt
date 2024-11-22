@@ -635,7 +635,6 @@ country_event = {
 			name = PRU_promoting_art
 			duration = 7300
 		}
-		#https://en.wikipedia.org/wiki/Friedrich_Wilhelm_Weidemann
 		define_advisor = {
 			type = artist
 			name = "Friedrich Wilhelm Weidemann"

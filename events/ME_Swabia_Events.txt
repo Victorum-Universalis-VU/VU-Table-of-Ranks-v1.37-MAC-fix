@@ -504,6 +504,7 @@ country_event = {
 					area = calabria_area
 					area = apulia_area
 					area = central_italy_area
+					area = san_marino_area
 				}
 			}
 			set_in_empire = yes

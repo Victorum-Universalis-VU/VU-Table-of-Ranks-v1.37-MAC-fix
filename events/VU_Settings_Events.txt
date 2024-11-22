@@ -1861,38 +1861,38 @@ country_event = {
 	
 	after = {
 		country_event = {
-			id = VU_SET_Events.05
+			id = VU_SET_Events.06 # Changed to bypass the event I removed - Quonton
 		}
 	}
 }
 
-#Age Restrictions for Colonization
-country_event = {
-	id = VU_SET_Events.05
-	title = VU_SET_Events.05.t
-	desc = VU_SET_Events.05.d
-	picture = COURT_eventPicture
-	
-	is_triggered_only = yes
-
-	#Enabled
-	option = {
-		name = VU_SET_Events.05.a
-	}
-	
-	#Disabled
-	option = {
-		name = VU_SET_Events.05.b
-		
-		hidden_effect = { set_global_flag = vu_no_age_restrictions }
-	}
-	
-	after = {
-		country_event = {
-			id = VU_SET_Events.06
-		}
-	}
-}
+#Age Restrictions for Colonization # Removed as i removed the mechanic this turns off - Quonton
+#country_event = {
+#	id = VU_SET_Events.05
+#	title = VU_SET_Events.05.t
+#	desc = VU_SET_Events.05.d
+#	picture = COURT_eventPicture
+#	
+#	is_triggered_only = yes
+#
+#	#Enabled
+#	option = {
+#		name = VU_SET_Events.05.a
+#	}
+#	
+#	#Disabled
+#	option = {
+#		name = VU_SET_Events.05.b
+#		
+#		hidden_effect = { set_global_flag = vu_no_age_restrictions }
+#	}
+#	
+#	after = {
+#		country_event = {
+#			id = VU_SET_Events.06
+#		}
+#	}
+#}
 
 #Restricted Africa Colonisation
 country_event = {

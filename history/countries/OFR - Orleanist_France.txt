@@ -44,7 +44,6 @@ add_country_modifier = {
 	leader = {
 		name = "Jean Le Meingre"
 		type = general
-
 		fire = 2
 		shock = 2
 		manuever = 3
@@ -57,7 +56,6 @@ add_country_modifier = {
 	leader = {
 		name = "Charles d'Albret"
 		type = general
-
 		fire = 2
 		shock = 2
 		manuever = 3
@@ -575,8 +573,10 @@ add_government_reform = autocracy_reform }
 
 1589.8.3 = { leader = { name = "François de Bonne"	type = general	fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1626.9.21 } }
 
-1589.8.8 = { government = monarchy
-add_government_reform = autocracy_reform }
+1589.8.8 = { 
+	government = monarchy
+	add_government_reform = autocracy_reform 
+}
 
 1598.4.13 = { clr_country_flag = religious_turmoil clr_country_flag = religious_intolerance  decision = enact_edict_de_nantes } # Edict of Nantes
 
@@ -1000,7 +1000,7 @@ add_government_reform = autocracy_reform }
 	government = republic
 	add_government_reform = revolutionary_republic_reform
 	revolution_target = yes
-	government_rank = 3
+	government_rank = 9
 	monarch = {
 		name = "La Convention nationale"
 		adm = 3
@@ -1114,7 +1114,7 @@ add_government_reform = autocracy_reform }
 }
 
 1814.4.11 = {
-	government_rank = 2
+	government_rank = 8
 	add_government_reform = feudalism_reform
 	monarch = {
 		name = "Louis XVIII"

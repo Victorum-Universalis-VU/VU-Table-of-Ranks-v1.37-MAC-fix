@@ -453,7 +453,7 @@ country_event = { #Hanseatic Fish Route
 			6 = {
 				remove_province_modifier = skanemarket 
 				add_permanent_province_modifier = {
-					name = HNS_skane_market
+					name = HNS_skane_market_1
 					duration = -1
 				}
 			}

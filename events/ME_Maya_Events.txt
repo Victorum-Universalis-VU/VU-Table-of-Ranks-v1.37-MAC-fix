@@ -332,7 +332,7 @@ country_event = {
 					is_variable_equal = { which = mayan_discovery value = 4 }
 				}
 				define_advisor = {
-					type = mayan_scribe
+					type = researcher
 					skill = 5
 					location = 846
 					culture = ROOT

@@ -25,7 +25,7 @@ country_decisions = {
 		allow = {
 			ai = no
 			tag = BYZ
-			government_rank = 3
+			government_rank = 9
 			culture_group = byzantine
 			owns_core_province = 151
 		}

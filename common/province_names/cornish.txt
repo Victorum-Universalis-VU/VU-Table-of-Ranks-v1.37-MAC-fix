@@ -1,3 +1,4 @@
+132 = { "Judenburg" "Judenburg" }
 233 = "Kernow" #Cornwall
 4373 = "Dewnens" #Devon
 4130 = "Stradneth" #Somerset

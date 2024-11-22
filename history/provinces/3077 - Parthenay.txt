@@ -16,17 +16,13 @@ base_manpower = 2
 add_local_autonomy = 10
 
 #Claimants
+add_core = POI
 add_core = PRO
 add_core = FRA
 
 #Special Modifiers
 
 #Known by Technology groups
-
-
-
-
-
 
 #Histories
 1215.6.15 = { owner = FRA controller = FRA add_core = FRA } # Part of French Royal Domain - By San Felipe

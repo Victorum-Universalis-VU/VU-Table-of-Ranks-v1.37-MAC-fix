@@ -18,7 +18,10 @@ native_hostileness = 9			#Probably one of the 5 most aggressive native tribes to
 
 
 
-
+add_permanent_province_modifier = {
+    name = vu_sonoran 
+    duration = -1
+}
 
 
 1769.1.1 = {

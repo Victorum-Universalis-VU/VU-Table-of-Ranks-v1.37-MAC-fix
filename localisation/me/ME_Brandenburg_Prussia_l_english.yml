@@ -82,7 +82,7 @@
  ME_Prussia_Events.6.b: "They will eventually go away."
  
  ME_Prussia_Events.7.t: "Treaty of Prenzlau"
- ME_Prussia_Events.7.d: "The centuries of warfare with Pomerania have come to an end. With the ratification of the Treaty of Prenzlau, Emperor [Emperor.GetName] has affirmed our de jure right to the conquest of the fertile lands of Pommern. As such, the integration of Uckermark, as well as the rest of the Duchy, shall begin." #https://en.wikipedia.org/wiki/Treaty_of_Prenzlau
+ ME_Prussia_Events.7.d: "The centuries of warfare with Pomerania have come to an end. With the ratification of the Treaty of Prenzlau, Emperor [Emperor.GetName] has affirmed our de jure right to the conquest of the fertile lands of Pommern. As such, the integration of Uckermark, as well as the rest of the Duchy, shall begin."
  ME_Prussia_Events.7.a: "The duchy of Pomerania is ours!"
  ME_Prussia_Events.7.b: "Perhaps a later draft will do us better."
  
@@ -98,12 +98,12 @@
  ME_Prussia_Events.9.c: "Indebting ourselves to them would be silly."
  
  ME_Prussia_Events.10.t: "Berliner Religiongesprach"
- ME_Prussia_Events.10.d: "Numerous theologians and scholars have all gathered in Berlin for a once in a lifetime event. The topic is simple: reconciling the differences of Lutheran and Calvinist theology. We have long since been a bastion of religious freedom in the Empire, providing refuge to those targeted by the Inquisition. Despite this, tensions continue to rise as the people take sides in what has become a Protestant Schism, akin to the splitting of the Roman Church. Hopefully, with this conference there will be peace." #https://de.wikipedia.org/wiki/Berliner_Religionsgespr%C3%A4ch
+ ME_Prussia_Events.10.d: "Numerous theologians and scholars have all gathered in Berlin for a once in a lifetime event. The topic is simple: reconciling the differences of Lutheran and Calvinist theology. We have long since been a bastion of religious freedom in the Empire, providing refuge to those targeted by the Inquisition. Despite this, tensions continue to rise as the people take sides in what has become a Protestant Schism, akin to the splitting of the Roman Church. Hopefully, with this conference there will be peace."
  ME_Prussia_Events.10.a: "A Great Development!"
  ME_Prussia_Events.10.b: "The churches can't be united. Waste of time!"
  
  ME_Prussia_Events.11.t: "Der Toleranzedikt"
- ME_Prussia_Events.11.d: "As religious tensions grow, it is Brandenburg's job to stifle the ever-growing flame and weather the storm ahead. The Edict of Tolerance, issued by Elector Friedrich Wilhelm I, stated that the Lutheran and Reformed Churches are to be treated as equals and the relations between them are to be regulated by law." #https://de.wikipedia.org/wiki/Toleranzedikt_(Brandenburg)
+ ME_Prussia_Events.11.d: "As religious tensions grow, it is Brandenburg's job to stifle the ever-growing flame and weather the storm ahead. The Edict of Tolerance, issued by Elector Friedrich Wilhelm I, stated that the Lutheran and Reformed Churches are to be treated as equals and the relations between them are to be regulated by law."
  ME_Prussia_Events.11.a: "Force the Edict!"
  ME_Prussia_Events.11.b: "This will only create more discontent."
  
@@ -180,7 +180,7 @@
  ME_Prussia_Events.30.a: "A gruesome institution must meet a gruesome fate"
  ME_Prussia_Events.30.b: "Reform the Kreditwerk and make it governmental"
  
- ME_Prussia_Events.31.t: "Treaty of Wehlau" #https://de.wikipedia.org/wiki/Vertrag_von_Wehlau 
+ ME_Prussia_Events.31.t: "Treaty of Wehlau"
  ME_Prussia_Events.31.d: "Long have the Prussians suffered under foreign rule, stamped down beneath a tyrant's iron fist. First the Teutons, now the Polish, but with finality we might yet proclaim them free. Free from the centuries of oppression the Prussian people have faced. Benevolence is synonymous with our governance, thus we shall take the duchy under our wing if given the opportunity. Signed in 1657 between Brandenburg and Prussia, the Treaty of Wehlau achieved just this: liberation of the Duchy of Prussia from the Polish-Lithuanian Commonwealth and its firm placement under the control of Brandenburg." #Try to add some historical context, but also fit it into the eu4 perspective of a duchy of prussia subject, and trying to free it from polish influence
  ME_Prussia_Events.31.a: "Separate the Duchy from the Polish!"
  ME_Prussia_Events.31.b: "Let us negotiate."
@@ -191,7 +191,7 @@
  ME_Prussia_Events.32.a: "Welcome, brothers and sisters!"
  
  ME_Prussia_Events.33.t: "Humboldt Brothers" 
- ME_Prussia_Events.33.d: "The Humboldt brothers were Prussian philosophers, linguists, government functionaries, diplomats, and the founders of the Humboldt University of Berlin. Wilhelm von Humboldt, the older brother, focused his studies on the philisophical pursuits of life, presenting himself as an intellectual through and through. Meanwhile, his younger brother Alexander von Humboldt focused his studies on incurring one revolutionary discovery after another. Launching several expeditions into Spanish America, Russia, and the United States, the Humboldt brothers were truly a pair of geniuses." #https://en.wikipedia.org/wiki/Wilhelm_von_Humboldt
+ ME_Prussia_Events.33.d: "The Humboldt brothers were Prussian philosophers, linguists, government functionaries, diplomats, and the founders of the Humboldt University of Berlin. Wilhelm von Humboldt, the older brother, focused his studies on the philisophical pursuits of life, presenting himself as an intellectual through and through. Meanwhile, his younger brother Alexander von Humboldt focused his studies on incurring one revolutionary discovery after another. Launching several expeditions into Spanish America, Russia, and the United States, the Humboldt brothers were truly a pair of geniuses."
  ME_Prussia_Events.33.a: "The everlasting philosophy of Wilhelm shall guide us."
  ME_Prussia_Events.33.b: "The revolutionary discoveries of Alexander will shape the state."
  
@@ -216,14 +216,22 @@
  ME_Prussia_Events.44.t: "Growth of Trade"
  ME_Prussia_Events.44.d: "Our nation's income has historically been dominated from taxes levied from the nobles, either in the form of grain or men. We lack any grand trade cities to facilitate the purchase and sale of goods on any large scale, thus we have sidelined such concepts. Despite this, Prussian trade expansion has seen recent upticks. We would do well to continue this trend."
  ME_Prussia_Events.44.a: "Wunderbar!"
+ 
  #Modifiers:
  BRA_geheimer_rat: "Geheimer Rat fur die Kurmark"
+ desc_BRA_geheimer_rat: ""
  BRA_tamed_the_nobility: "Tamed the Nobility"
+ desc_BRA_tamed_the_nobility: ""
  BRA_schwanenorden: "Order of the Swan"
+ desc_BRA_schwanenorden: ""
  BRA_kirchenordnung: "Kirchenordnung"
+ desc_BRA_kirchenordnung: ""
  BRA_hohenzollern_hegemony: "Hohenzollern Hegemony"
+ desc_BRA_hohenzollern_hegemony: ""
  BRA_neumark_province: "Integrating the Eastern March"
+ desc_BRA_neumark_province: ""
  BRA_hohenzollern_bonds: "Hohenzollern Bonds"
+ desc_BRA_hohenzollern_bonds: ""
  BRA_the_pearl_of_hohenzollerns: "The Crown Jewel of Hohenzollerns"
  BRA_new_lords_of_brandenburg: "The New Lords of the Mark"
  BRA_universita_viadrina_modifier: "Universita Viadrina"
@@ -239,6 +247,7 @@
  BRA_bierziese: "Bierziese"
  BRA_controlling_the_circle: "Controlling the Circle"
  BRA_prussian_unity: "Harmony with the Prussians"
+ desc_BRA_prussian_unity: ""
  PRU_habsburgs_defeated: "Habsburgs Defeated"
  BRA_abolished_kreditwerk: "Abolished Kreditwerk"
  BRA_reformed_kreditwerk: "Reformed Kreditwerk"

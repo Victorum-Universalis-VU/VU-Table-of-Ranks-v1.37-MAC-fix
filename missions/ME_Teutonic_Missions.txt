@@ -508,6 +508,7 @@ TEU_Missions_3 = {
 					OR = {
 						area = curonia_area
 						area = livonia_area
+						area = riga_area
 						is_core = LIV
 					}
 					value = 3
@@ -567,6 +568,7 @@ TEU_Missions_3 = {
 						OR = {
 							area = curonia_area
 							area = livonia_area
+							area = riga_area
 							is_core = LIV
 						}
 						value = 3
@@ -586,6 +588,13 @@ TEU_Missions_3 = {
 						add_permanent_claim = ROOT
 					}
 					livonia_area = {
+						limit = {
+							NOT = { owned_by = ROOT }
+							NOT = { is_core = ROOT }
+						}
+						add_permanent_claim = ROOT
+					}
+					riga_area = {
 						limit = {
 							NOT = { owned_by = ROOT }
 							NOT = { is_core = ROOT }
@@ -614,6 +623,13 @@ TEU_Missions_3 = {
 					add_permanent_claim = ROOT
 				}
 				livonia_area = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				riga_area = {
 					limit = {
 						NOT = { owned_by = ROOT }
 						NOT = { is_core = ROOT }
@@ -1003,7 +1019,7 @@ TEU_Missions_4 = {
 					name = TEU_loyal_to_the_pope
 					duration = 9125
 				}
-				#custom_tooltip = TEU_disable_prussia_formation_make_LO_subject
+				custom_tooltip = TEU_disable_prussia_formation_make_LO_subject
 			}
 		}
 	}
@@ -1119,15 +1135,9 @@ TEU_Missions_5 = {
 				NOT = { exists = PAP }
 			}
 			OR = {
-				custom_trigger_tooltip = {
-					tooltip = TEU_devotion_tooltip
-					has_global_modifier_value = {
-						which = devotion
-						value = 0.5
-					}
-				}
-				NOT = { government = theocracy }
-			}
+                devotion = 80
+                NOT = { government = theocracy }
+            }
 		}
 		effect = {
 			add_country_modifier = {

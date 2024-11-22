@@ -1,4 +1,5 @@
 118 = "Rim"
+132 = { "Judenburg" "Judenburg" }
 137 = "Dubrovnik"
 140 = "Bosna"
 142 = "Krf"

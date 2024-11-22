@@ -4,7 +4,7 @@ owner = TDO
 controller = TDO
 add_core = TDO
 culture = filipino
-religion = animism
+religion = hinduism
 capital = "Balanga"
 trade_goods = cloves
 hre = no
@@ -13,10 +13,10 @@ base_production = 4
 base_manpower = 4
 is_city = yes
 
+#Claimants
+add_core = MA1
 
-
-
- # Ferdinand Magellan 
+#Ferdinand Magellan 
 1570.5.1 = {
 	owner = SPA
 	controller = SPA

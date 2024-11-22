@@ -5,19 +5,19 @@ sicilian_kingdom_mechanic = {
 	
 	powers = {
 		sicilian_kingdom_adm_power = {
-			max = 150
+			max = 250
 			monarch_power = ADM
-			base_monthly_growth = 0.75
+			base_monthly_growth = 0.5
 		}
 		sicilian_kingdom_dip_power = {
-			max = 150
+			max = 250
 			monarch_power = DIP
-			base_monthly_growth = 0.75
+			base_monthly_growth = 0.5
 		}
 		sicilian_kingdom_mil_power = {
-			max = 150
+			max = 250
 			monarch_power = MIL
-			base_monthly_growth = 0.75
+			base_monthly_growth = 0.5
 		}
 	}
 	
@@ -25,7 +25,7 @@ sicilian_kingdom_mechanic = {
 		sicilian_kingdom_encouraged_city_living = {
 			icon = GFX_sicilian_kingdom_encouraged_city_living
 			cost_type = sicilian_kingdom_adm_power
-			cost = 100
+			cost = 200
 			trigger = {
 				capital_scope = {
 					area_for_scope_province = {
@@ -49,19 +49,19 @@ sicilian_kingdom_mechanic = {
 						limit = { owned_by = ROOT }
 						if = {
 							limit = {
-								owner = { ADM = 3 }
+								owner = { ADM = 4 }
 							}
 							add_base_tax = 1
 						}
 						if = {
 							limit = {
-								owner = { DIP = 3 }
+								owner = { DIP = 4 }
 							}
 							add_base_production = 1
 						}
 						if = {
 							limit = {
-								owner = { MIL = 3 }
+								owner = { MIL = 4 }
 							}
 							add_base_manpower = 1
 						}
@@ -76,7 +76,7 @@ sicilian_kingdom_mechanic = {
 		sicilian_kingdom_sicilian_defence = {
 			icon = GFX_sicilian_kingdom_sicilian_defence
 			cost_type = sicilian_kingdom_dip_power
-			cost = 100
+			cost = 200
 			trigger = {
 				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 					value = 10
@@ -118,14 +118,14 @@ sicilian_kingdom_mechanic = {
 		sicilian_kingdom_centralization = {
 			icon = GFX_sicilian_kingdom_centralization
 			cost_type = sicilian_kingdom_mil_power
-			cost = 100
+			cost = 200
 			trigger = { }
 			effect = {
 				add_legitimacy_equivalent = { amount = 5 republican_tradition = 3 }
-				add_reform_progress_medium_effect = yes
+				add_reform_progress_small_effect = yes
 				change_estate_land_share = {
 					estate = all
-					share = -2.50
+					share = -2.0
 				}
 			}
 			cooldown_years = 5

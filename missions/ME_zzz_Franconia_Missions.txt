@@ -15,7 +15,7 @@
 		}
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 	} 
-	has_country_shield  = yes
+	has_country_shield = yes
 	
 	FKN_conquer_nuremburg = {
 		icon = sources_of_trade
@@ -350,6 +350,13 @@ FKN_Gen_Missions_3 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			frankfurt_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 			palatinate_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
@@ -539,7 +546,7 @@ FKN_Missions_1 = {
 		tag = FKN
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 	} 
-	has_country_shield  = yes
+	has_country_shield = yes
 	
 	FKN_trade_center = {
 		icon = return_visby_to_the_league
@@ -773,7 +780,7 @@ FKN_Missions_2 = {
 		tag = FKN
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 	} 
-	has_country_shield  = yes
+	has_country_shield = yes
 	
 	FKN_bavaria = {
 		icon = establish_a_standing_army
@@ -1066,7 +1073,7 @@ FKN_Missions_3 = {
 		tag = FKN
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 	} 
-	has_country_shield  = yes
+	has_country_shield = yes
 	
 	FKN_west_franconia = {
 		icon = all_bases_covered
@@ -1075,6 +1082,7 @@ FKN_Missions_3 = {
 		provinces_to_highlight = {
 			OR = {
 				area = hesse_area
+				area = frankfurt_area
 				area = palatinate_area
 				province_id = 83
 				province_id = 80
@@ -1086,6 +1094,7 @@ FKN_Missions_3 = {
 			num_of_owned_provinces_with = {
 				OR = {
 					area = hesse_area
+					area = frankfurt_area
 					area = palatinate_area
 					province_id = 83
 					province_id = 80
@@ -1111,6 +1120,20 @@ FKN_Missions_3 = {
 				add_permanent_claim = ROOT
 			}
 			holstein_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			hamburg_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			lauenburg_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 					NOT = { is_core = ROOT }
@@ -1362,7 +1385,7 @@ FKN_Missions_4 = {
 		tag = FKN
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 	} 
-	has_country_shield  = yes
+	has_country_shield = yes
 	
 	
 	FKN_saxony = {
@@ -1424,6 +1447,13 @@ FKN_Missions_4 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			frankfurt_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 	}
 	
@@ -1436,6 +1466,8 @@ FKN_Missions_4 = {
 				area = braunschweig_area
 				area = weser_area
 				area = holstein_area
+				area = hamburg_area
+				area = lauenburg_area
 				area = lower_rhineland_area
 				area = north_rhine_area
 				area = westphalia_area
@@ -1449,6 +1481,8 @@ FKN_Missions_4 = {
 					area = braunschweig_area
 					area = weser_area
 					area = holstein_area
+					area = hamburg_area
+					area = lauenburg_area
 					area = lower_rhineland_area
 					area = north_rhine_area
 					area = westphalia_area
@@ -1660,7 +1694,7 @@ FKN_Missions_5 = {
 		tag = FKN
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 	} 
-	has_country_shield  = yes
+	has_country_shield = yes
 	
 	FKN_capture_berlin = {
 		icon = develop_konigsberg

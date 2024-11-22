@@ -3,7 +3,7 @@
 capital = "Heidelberg"
 culture = franconian
 religion = catholic
-trade_goods = champagne
+trade_goods = champagne_bottle
 owner = PAL
 base_tax = 10
 base_production = 10

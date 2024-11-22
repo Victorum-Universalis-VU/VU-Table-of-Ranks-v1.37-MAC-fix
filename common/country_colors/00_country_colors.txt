@@ -747,10 +747,16 @@ BRA = {
 
 
 # Germany
-GER = {
+NGC = { #VU v1.37 addition - SF
     color1= { 255 255 255  }
     color2= { 80 79 88  }
     color3= { 17 16 203  }
+}
+
+GER = {
+    color1= { 255 255 255  }
+    color2= { 56 56 48  }
+    color3= { 121 2 1  }
 }
 
 
@@ -970,7 +976,7 @@ TIR = {
 #}
 
 
-# Castille
+# Castile
 CAS = {
     color1= { 193 26 14  }
     color2= { 247 206 12  }
@@ -979,7 +985,7 @@ CAS = {
 
 
 # Catalunya
-CTT = {
+CAT = {
     color1= { 213 132 76  }
     color2= { 183 176 194  }
     color3= { 137 183 124  }

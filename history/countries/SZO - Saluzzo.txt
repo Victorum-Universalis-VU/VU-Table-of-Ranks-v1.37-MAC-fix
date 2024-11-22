@@ -1,6 +1,6 @@
 government = monarchy
-add_government_reform = feudalism_reform
-government_rank = 1
+add_government_reform = eue_marquisate_reform
+government_rank = 5 #Marquisate_Reform
 primary_culture = piedmontese
 religion = catholic
 #technology_group = western

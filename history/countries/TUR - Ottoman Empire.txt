@@ -1,5 +1,6 @@
 government = monarchy
 add_government_reform = ottoman_government
+government_rank = 8 #Sublime Sultanate
 primary_culture = turkish
 add_accepted_culture = bulgarian
 add_accepted_culture = greek
@@ -134,7 +135,7 @@ add_country_modifier = {
 
 1459.1.1 = { 
 		decision = make_constantinople_capital
-		government_rank = 3
+		government_rank = 9
 		capital = 151
 		set_global_flag = hagia_sophia_now_mosque
 		show_ambient_object = hagia_sophia_minarets

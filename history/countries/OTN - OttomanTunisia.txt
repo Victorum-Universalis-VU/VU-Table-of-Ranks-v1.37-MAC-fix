@@ -1,6 +1,6 @@
-government_rank = 1
 government = monarchy
-add_government_reform = iqta
+add_government_reform = barbary_eyalet_government
+government_rank = 5 #Eyalet
 primary_culture = tunisian
 add_accepted_culture = turkish
 religion = sunni

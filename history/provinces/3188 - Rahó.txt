@@ -1,7 +1,8 @@
 #3188 - Rahó
 
 owner = HUN
-controller = HUN 
+controller = HUN
+add_core = HUN
 culture = rusyn
 religion = orthodox
 capital = "Rahó"
@@ -11,17 +12,6 @@ base_tax = 1
 base_production = 1 
 base_manpower = 1 
 is_city = yes
-add_core = HUN
-
-
-
-
-
-
-
-
-
-
 
 1444.1.1 = { add_core = TRA }
 1526.8.30 = {

@@ -284,7 +284,7 @@ RMN_missions_3 = {
 					set_in_empire = no
 				}
 			}
-			set_government_rank = 3
+			set_government_rank = 9
 			add_prestige_or_monarch_power = { amount = 50 }
 			if = {
 				limit = {
@@ -666,7 +666,7 @@ RMN_missions_5 = {
 				AND = {
 					OR = { 	accepted_culture = ladin_culture accepted_culture = corsican_culture accepted_culture = friulian_culture accepted_culture = romanch_culture accepted_culture = lombard accepted_culture = tuscan accepted_culture = sardinian accepted_culture = romagnan accepted_culture = ligurian accepted_culture = venetian accepted_culture = dalmatian accepted_culture = neapolitan accepted_culture = piedmontese accepted_culture = sicilian accepted_culture = umbrian accepted_culture = maltese}
 					OR = { accepted_culture = mozarabic accepted_culture = sephardic accepted_culture = castillian accepted_culture = portugese accepted_culture = katsila accepted_culture = leonese accepted_culture = galician accepted_culture = aragonese accepted_culture = catalan accepted_culture = andalucian }
-					OR = { accepted_culture = anglois accepted_culture = lorraine_culture accepted_culture = auvergnat_culture accepted_culture = arpitan accepted_culture = angevin_culture accepted_culture = poitevin_culture accepted_culture = burgundian accepted_culture = gallo_culture accepted_culture = wallonian accepted_culture = picard_culture accepted_culture = occitain accepted_culture = cosmopolitan_french accepted_culture = aquitaine accepted_culture = gascon accepted_culture = normand }
+					OR = { accepted_culture = anglois accepted_culture = lorraine_culture accepted_culture = auvergnat_culture accepted_culture = arpitan accepted_culture = angevin_culture accepted_culture = poitevin_culture accepted_culture = burgundian accepted_culture = wallonian accepted_culture = picard_culture accepted_culture = occitain accepted_culture = cosmopolitan_french accepted_culture = aquitaine accepted_culture = gascon accepted_culture = normand }
 					num_accepted_cultures = 3
 				}
 			}

@@ -3,6 +3,7 @@
 #Default
 owner = HDR
 controller = HDR
+add_core = HDR
 culture = yemeni_culture
 religion = sunni
 capital = "Thamud"
@@ -12,26 +13,9 @@ base_tax = 1
 base_production = 1
 base_manpower = 1
 is_city = yes
-add_core = HDR
 
 #Claimants
-
-#Buildings
-
-#Special Modifiers
-
-#Known by Technology groups
-
-
-
-
-
-
-
-
-
-
-
+add_core = R4S
 
 #Histories by SF
 1215.6.15 = { owner = MHR controller = MHR add_core = MHR } # Mahra territorial lands - By San Felipe

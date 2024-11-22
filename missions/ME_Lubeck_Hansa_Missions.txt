@@ -1426,7 +1426,7 @@ HNS_missions_3 = {
 		}
 		effect = {
 			define_advisor = {
-				type = travelling_merchant
+				type = trader
 				skill = 2
 				cost_multiplier = 0.5
 				religion = ROOT
@@ -1895,6 +1895,20 @@ HNS_missions_5 = {
 				add_permanent_claim = ROOT
 			}
 			holstein_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			hamburg_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			lauenburg_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT }
 					NOT = { is_core = ROOT }

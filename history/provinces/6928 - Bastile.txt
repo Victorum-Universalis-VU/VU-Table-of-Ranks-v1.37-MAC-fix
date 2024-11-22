@@ -13,16 +13,12 @@ base_tax = 7
 base_production = 6
 trade_goods = gunpowder	#was naval_supplies
 base_manpower = 5
+
+#Claimants
 add_core = FRA
+add_core = PRI
 
-
-
-
-
-
-
-
-
+#Buildings
 fort_15th = yes
 
 extra_cost = 15

@@ -1,9 +1,8 @@
 #8064 - Alcaraz
 
-owner = CAS
-controller = CAS
+owner = TLD
+controller = TLD
 add_core = CAS
-add_core = TLD #BTB added: Castilian revolter tag.
 culture = castillian
 religion = catholic
 capital = "Alcaraz"
@@ -13,6 +12,8 @@ base_manpower = 1
 trade_goods = wine
 is_city = yes
 hre = no
+
+add_core = TLD
 
 
 

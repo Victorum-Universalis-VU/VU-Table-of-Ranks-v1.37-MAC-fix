@@ -1,6 +1,6 @@
 namespace = vu_Germany_Events
 
-country_event = {
+country_event = { #
 	id = vu_Germany_Events.1
 	title = vu_Germany_Events.EVTNAME1
 	desc = vu_Germany_Events.EVTDESC1
@@ -25,7 +25,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = vu_Germany_Events1.EVTOPT1
+		name = vu_Germany_Events1.EVTOPT2
 		
 		trigger = {
  			overlord = { government = republic }
@@ -38,7 +38,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = vu_Germany_Events1.EVTOPT1
+		name = vu_Germany_Events1.EVTOPT3
 		
 		trigger = {
  			overlord = { NOT = { OR = { government = republic government = monarchy } } }
@@ -63,7 +63,7 @@ country_event = {
 	}
 	
 	option = {
-		name = vu_Germany_Events1.EVTOPT1
+		name = vu_Germany_Events2.EVTOPT1
 		
 		remove_country_modifier = vu_ger_kaiserreich_pupets_puppet
 	}

@@ -62,7 +62,7 @@
 123 = "Calàbria"
 125 = "Palerm"
 127 = "Sàsser"
-132 = "Estíria"
+132 = { "Judenburg" "Judenburg" }
 134 = "Viena"
 142 = "Corfú"
 146 = "Cetines"

@@ -12,7 +12,7 @@ POL_Missions_1 = {
 			}
 		}
 	}  
-	has_country_shield  = yes
+	has_country_shield = yes
 	
 	POL_mission_to_pope = {
 		icon = catholic_confraternity
@@ -708,7 +708,7 @@ POL_Missions_2 = {
 			}
 		}
 	} 
-	has_country_shield  = yes
+	has_country_shield = yes
 	
 	POL_ruthenia = {
 		icon = mission_conquer_novgorod
@@ -972,6 +972,7 @@ POL_Missions_2 = {
 				area = estonia_ingria_area
 				area = curonia_area
 				area = livonia_area
+				area = riga_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
@@ -981,6 +982,7 @@ POL_Missions_2 = {
 					area = estonia_ingria_area
 					area = curonia_area
 					area = livonia_area
+					area = riga_area
 				}
 				value = 6
 			}
@@ -1331,7 +1333,7 @@ POL_Missions_3_1 = {
 			}
 		}
 	}  
-	has_country_shield  = yes
+	has_country_shield = yes
 	
 	POL_sejm_mission = {
 		icon = subiaco_press
@@ -1340,11 +1342,8 @@ POL_Missions_3_1 = {
 		provinces_to_highlight = {
 		}
 		trigger = {
-			OR = {
-				has_reform = elective_monarchy
-				has_reform = phoenician_elective_monarchical_republic
-				has_regency = no
-			}
+			has_reform = elective_monarchy
+			has_regency = no
 		}
 		effect = {
 			custom_tooltip = POL_reward_if_jagiellon
@@ -1379,7 +1378,6 @@ POL_Missions_3_1 = {
 					limit = {
 						OR = {
 							has_reform = elective_monarchy
-							has_reform = phoenician_elective_monarchical_republic
 							dynasty = "Jagiellon"
 							senior_union_with = LIT
 						}
@@ -1470,7 +1468,7 @@ POL_Missions_3_Piast = {
 			}
 		}
 	}  
-	has_country_shield  = yes
+	has_country_shield = yes
 	
 	POL_nitra = {
 		icon = fight_bosnian_heresies
@@ -1541,7 +1539,7 @@ POL_Missions_3_2 = {
 			}
 		}
 	}  
-	has_country_shield  = yes
+	has_country_shield = yes
 	
 	POL_end_knights = {
 		icon = mission_teutonic_knights
@@ -1579,6 +1577,13 @@ POL_Missions_3_2 = {
 				add_permanent_claim = ROOT
 			}
 			livonia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			riga_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT }
 					NOT = { is_core = ROOT }
@@ -1842,7 +1847,7 @@ POL_Missions_4_Jagiellon = {
 			}
 		}
 	}  
-	has_country_shield  = yes
+	has_country_shield = yes
 	
 	POL_reinforce_jagiellons = {
 		icon = polish_diplomacy
@@ -1886,7 +1891,7 @@ POL_Missions_4_Piast = {
 			}
 		}
 	}  
-	has_country_shield  = yes
+	has_country_shield = yes
 	
 	POL_reconquer_silesia = {
 		icon = take_silesia
@@ -1927,7 +1932,7 @@ POL_Missions_4_1 = {
 			}
 		}
 	}  
-	has_country_shield  = yes
+	has_country_shield = yes
 	
 	POL_zwiazek_pruski = {
 		icon = return_visby_to_the_league
@@ -2020,7 +2025,7 @@ POL_Missions_4_Jagiellon_2 = {
 			}
 		}
 	}  
-	has_country_shield  = yes
+	has_country_shield = yes
 	
 	POL_bohemian_PU = {
 		icon = hussite_regency
@@ -2128,7 +2133,7 @@ POL_Missions_4_Piast_2 = {
 			}
 		}
 	}  
-	has_country_shield  = yes
+	has_country_shield = yes
 	
 	POL_beyond_the_oder = {
 		icon = mission_advance_to_the_dnieper
@@ -2178,7 +2183,7 @@ POL_Missions_4_2 = {
 			}
 		}
 	}  
-	has_country_shield  = yes
+	has_country_shield = yes
 	
 	POL_curonia = {
 		icon = overseas_empire
@@ -2674,7 +2679,7 @@ POL_Missions_4_2 = {
 			}
 			
 			define_foreign_advisor = {
-				type = muscovy_architect
+				type = civil_engineer
 				name = "Giovanni Battista Gisleni"
 				skill = 3
 				culture = 118
@@ -2699,7 +2704,7 @@ POL_Missions_5_1 = {
 			}
 		}
 	} 
-	has_country_shield  = yes
+	has_country_shield = yes
 	
 	POL_rada_krolewska = {
 		icon = mission_noble_council
@@ -2833,7 +2838,7 @@ POL_Missions_5_Jagiellon = {
 			}
 		}
 	} 
-	has_country_shield  = yes
+	has_country_shield = yes
 	
 	POL_bohemian_diplomacy = {
 		icon = hungarian_union
@@ -3234,7 +3239,7 @@ POL_Missions_5_Piast = {
 			}
 		}
 	} 
-	has_country_shield  = yes
+	has_country_shield = yes
 	
 	POL_morze = {
 		icon = mission_look_west
@@ -3372,7 +3377,7 @@ POL_Missions_5_2 = {
 			}
 		}
 	} 
-	has_country_shield  = yes
+	has_country_shield = yes
 	
 	POL_muscovy = {
 		icon = me_mission_poland_bathory
@@ -3572,7 +3577,17 @@ POL_Missions_5_2 = {
 					name = POL_kremlin
 					duration = 9125
 				}
-				add_accepted_culture_or_dip_power = { culture = russian }
+				if = {
+					limit = { has_global_flag = united_russian_cultures }
+					add_accepted_culture_or_dip_power = {
+						culture = russian
+					}
+				}
+				else = {
+					add_accepted_culture_or_dip_power = {
+						culture = muscovite
+					}
+				}
 			}
 			hidden_effect = {
 				if = {
@@ -3589,7 +3604,17 @@ POL_Missions_5_2 = {
 						name = POL_kremlin
 						duration = 9125
 					}
-					add_accepted_culture_or_dip_power = { culture = russian }
+					if = {
+						limit = { has_global_flag = united_russian_cultures }
+						add_accepted_culture_or_dip_power = {
+							culture = russian
+						}
+					}
+					else = {
+						add_accepted_culture_or_dip_power = {
+							culture = muscovite
+						}
+					}
 				}
 			}
 		}

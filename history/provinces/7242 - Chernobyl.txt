@@ -4,7 +4,7 @@
 owner = KIR
 controller = KIR
 add_core = KIR
-culture = ruthenian
+culture = polesian
 religion = orthodox
 capital = "Chernobyl"
 base_tax = 2

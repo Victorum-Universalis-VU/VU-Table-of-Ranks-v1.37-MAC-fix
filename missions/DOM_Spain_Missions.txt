@@ -41,9 +41,28 @@ dom_cas_missions_1 = {
 				name = "spa_rb_morale"
 				duration = 5475
 			}
+			3749 = {
+	            add_permanent_claim = ROOT
+            }
+			3753 = {
+	            add_permanent_claim = ROOT
+            }
+			8079 = {
+	            add_permanent_claim = ROOT
+            }
 			8080 = {
 	            add_permanent_claim = ROOT
             }
+			8081 = {
+	            add_permanent_claim = ROOT
+            }
+			gibraltar_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 			upper_andalucia_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -722,6 +741,13 @@ dom_cas_missions_1_b = {
 				}
 				add_permanent_claim = ROOT
 			}
+			ragusa_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
 			croatia_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT }
@@ -1292,6 +1318,79 @@ dom_cas_missions_2 = {
 			add_prestige_or_monarch_power = { amount = 10 }
 		}
 	}
+
+	spa_bourbonic_renovations = {
+		icon = spa_palacio_de_madrid
+		required_missions = { gc_spa_hre2 }
+		position = 9
+		provinces_to_highlight = {
+			OR = {
+				province_id = 217
+				AND = {
+					owned_by = ROOT 
+					is_capital = yes
+				}
+			}
+		}
+		trigger = {
+			OR = { 
+				custom_trigger_tooltip = {
+					tooltip = spa_recent_change_madrid_tt
+					217 = { has_province_modifier = solo_madrid_es_corte } 
+				}
+				if = {
+					limit = { ai = no } 
+					capital_scope = { num_of_times_improved = 12 }
+				}
+				else = {
+					capital_scope = { num_of_times_improved = 4 }
+				}
+			}
+			if = { 
+				limit = { 
+					has_dlc = "Leviathan" 
+					ai = no  
+				} 
+				capital_scope = { num_of_times_expanded_infrastructure = 1 }
+			}
+			capital_scope = { 
+				OR = {
+					has_building = state_house 
+					num_of_buildings_in_province = 5
+				}
+			}
+			if = { 
+				limit = { 
+					217 = { is_capital_of = ROOT } 
+					ai = no 
+				} 
+				217 = { 
+					has_great_project = {
+						type = palacio_de_madrid
+						tier = 1 
+					}
+				}
+			}
+		}
+		effect = { 
+			capital_scope = { 
+				change_trade_goods = paper
+			}
+			if = { 
+				limit = { 
+					217 = { is_capital_of = ROOT }
+				}
+				country_event = { id = flavor_spa.111 }
+			}
+			else = { 
+				capital_scope = {
+					add_base_tax = 2 
+					add_base_production = 2 
+					add_base_manpower = 2 
+				}
+			}
+		}
+	}
 }
 
 dom_cas_missions_2_b = {
@@ -1479,7 +1578,7 @@ dom_cas_missions_2_b = {
 			total_development = 600
 		}
 		effect = {
-			set_government_rank = 3 
+			set_government_rank = 9 
 			
 			if = {
 				limit = { has_dlc = "Golden Century" }
@@ -4023,7 +4122,7 @@ dom_cas_missions_5 = {
 		position = 6
 		provinces_to_highlight = {
 			OR = {
-				province_id = 217
+				province_id = 8505
 				AND = {
 					owned_by = ROOT 
 					is_capital = yes
@@ -4033,8 +4132,8 @@ dom_cas_missions_5 = {
 		trigger = {
 			OR = { 
 				custom_trigger_tooltip = {
-					tooltip = spa_recent_change_tt
-					217 = { has_province_modifier = solo_madrid_es_corte } 
+					tooltip = spa_recent_change_san_lorenzo_tt
+					8505 = { has_province_modifier = san_lorenzo_es_corte } 
 				}
 				if = {
 					limit = { ai = no } 
@@ -4056,11 +4155,11 @@ dom_cas_missions_5 = {
 			}
 			if = { 
 				limit = { 
-					217 = { is_capital_of = ROOT } 
+					8505 = { is_capital_of = ROOT } 
 					has_dlc = "Leviathan"
 					ai = no 
 				} 
-				217 = { 
+				8505 = { 
 					has_great_project = {
 						type = el_escorial
 						tier = 1 
@@ -4074,7 +4173,7 @@ dom_cas_missions_5 = {
 			}
 			if = { 
 				limit = { 
-					217 = { is_capital_of = ROOT }
+					8505 = { is_capital_of = ROOT }
 				}
 				country_event = { id = flavor_spa.23 }
 			}

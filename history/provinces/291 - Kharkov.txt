@@ -2,10 +2,6 @@
 #Region - Ruthenia
 #Area - Sloboda Ukraine
 
-latent_trade_goods = {
-	coal
-}
-
 #Default
 owner = KIR
 controller = KIR

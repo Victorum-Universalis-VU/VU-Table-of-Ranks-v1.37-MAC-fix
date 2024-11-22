@@ -11,6 +11,7 @@ the_dacke_feud = {
 				area = norrland_area
 				area = svealand_area
 				area = gotaland_area
+				area = gotland_area
 				area = vastra_gotaland_area
 				area = skaneland_area
 			}

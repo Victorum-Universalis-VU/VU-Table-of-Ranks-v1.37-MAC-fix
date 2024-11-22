@@ -10,7 +10,7 @@ qara_qoyunlu_first = {
 		OR = {
 			tag = QAR
 			AND = {
-				tag = RMM
+				tag = RUM
 				was_tag = QAR
 			}
 		}
@@ -454,7 +454,7 @@ qara_qoyunlu_second = {
 		OR = {
 			tag = QAR
 			AND = {
-				tag = RMM
+				tag = RUM
 				was_tag = QAR
 			}
 		}
@@ -912,7 +912,7 @@ qara_qoyunlu_third = {
 		OR = {
 			tag = QAR
 			AND = {
-				tag = RMM
+				tag = RUM
 				was_tag = QAR
 			}
 		}
@@ -1316,7 +1316,7 @@ qara_qoyunlu_fourth = {
 		OR = {
 			tag = QAR
 			AND = {
-				tag = RMM
+				tag = RUM
 				was_tag = QAR
 			}
 		}
@@ -1897,7 +1897,7 @@ qara_qoyunlu_fifth = {
 		OR = {
 			tag = QAR
 			AND = {
-				tag = RMM
+				tag = RUM
 				was_tag = QAR
 			}
 		}

@@ -1,5 +1,5 @@
 ﻿l_english:
- # Missions:
+ #Missions:
  Sca_stronk_title: "Scandinavian Army"
  Sca_stronk_desc: "We have proclaimed ourselves as the kings of Scandinavia, let our armies prove that to our neighbours."
  Sca_control_scandinavia_title: "Control Scandinavia"
@@ -59,28 +59,44 @@
  Sca_control_Iceland_title: "From Iceland ..."
  Sca_control_Iceland_desc: ""
  
- # Modifiers:
+ #Modifiers:
  sca_Scandinavia_United: "Scandinavia United"
+ desc_sca_Scandinavia_United: ""
  sca_lubeck_conquered: "Lubeck Conquered"
+ desc_sca_lubeck_conquered: ""
  sca_mecklenburg_conquered: "Mecklenburg Conquered"
+ desc_sca_mecklenburg_conquered: ""
  sca_german_mercenaries: "German Mercenaries"
+ desc_sca_german_mercenaries: ""
  sca_finnish_march: "Finnish March"
+ desc_sca_finnish_march: ""
  sca_pillage: "Storm the Winter Shores of England!"
+ desc_sca_pillage: ""
  sca_pillage_2: "Loot and Pillage with your Warband!"
+ desc_sca_pillage_2: ""
  sca_pillage_3: "Celebrate the Glorious Battle"
+ desc_sca_pillage_3: ""
  sca_viking_haven: "Viking Haven"
+ desc_sca_viking_haven: ""
  sca_ireland_exploitation: "Exploitation of Ireland"
+ desc_sca_ireland_exploitation: ""
  sca_colonial_rush: "Colonial Rush"
+ desc_sca_colonial_rush: ""
  sca_land_of_prosperity: "Land of Prosperity"
+ desc_sca_land_of_prosperity: ""
  sca_vinland_timber: "Timber"
+ desc_sca_vinland_timber: ""
  sca_colonist_rush: "Colonist Rush"
+ desc_sca_colonist_rush: ""
  sca_viking_invasion: "Viking Invasion"
+ desc_sca_viking_invasion: ""
  sca_mercenaries_paying_themselves: "Self Sustaining Mercenaries"
+ desc_sca_mercenaries_paying_themselves: ""
  
- # Trade Modifiers:
+ #Keys:
  Scandinavia_Neva: "Conquest of Neva"
  
- # Events:
+ #Events:
  ME_Scandinavia_Events.1.t: "Sack [295.GetName]?"
  ME_Scandinavia_Events.1.d: "Sack [295.GetName]?"
  ME_Scandinavia_Events.1.a: "Sack it."

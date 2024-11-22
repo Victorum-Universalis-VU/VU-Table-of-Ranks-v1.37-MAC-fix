@@ -894,7 +894,7 @@ me_bavaria_missions_2 = {
 				is_subject = no
 			}
 			OR = {
-				government_rank = 2
+				government_rank = 8
 				total_development = 300
 			}
 		}
@@ -903,7 +903,7 @@ me_bavaria_missions_2 = {
 			if = {
 				limit = {
 					OR = {
-						NOT = { government_rank = 2 }
+						NOT = { government_rank = 8 }
 						is_emperor = yes
 					}
 				}
@@ -921,16 +921,16 @@ me_bavaria_missions_2 = {
 						limit = {
 							is_emperor = no
 						}
-						set_government_rank_force = 2
+						set_government_rank_force = 8
 					}
 					else = {
 						tooltip = {
-							set_government_rank_force = 2
+							set_government_rank_force = 8
 						}
 					}
 				}
 				else = {
-					set_government_rank = 2
+					set_government_rank = 8
 				}
 			}
 			add_country_modifier = {
@@ -971,11 +971,11 @@ me_bavaria_missions_2 = {
 					limit = {
 						has_dlc = "Common Sense"
 					}
-					government_rank = 3
+					government_rank = 9
 				}
 				else = {
 					OR = {
-						government_rank = 3
+						government_rank = 9
 						total_development = 1000
 					}
 				}
@@ -3884,6 +3884,13 @@ me_bavaria_missions_wittelsbach_5 = {
 					}
 					add_permanent_claim = ROOT
 				}
+				gotland_area = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
 				vastra_gotaland_area = {
 					limit = {
 						NOT = { owned_by = ROOT }
@@ -4033,6 +4040,20 @@ me_bavaria_missions_welf_1 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			hamburg_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			lauenburg_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 			altmark_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
@@ -4048,6 +4069,13 @@ me_bavaria_missions_welf_1 = {
 				add_permanent_claim = ROOT
 			}
 			hesse_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			frankfurt_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 					NOT = { is_core = ROOT }
@@ -4209,9 +4237,12 @@ me_bavaria_missions_welf_2 = {
 			OR = {
 				area = braunschweig_area
 				area = holstein_area
+				area = hamburg_area
+				area = lauenburg_area
 				area = altmark_area
 				area = anhalt_area
 				area = hesse_area
+				area = frankfurt_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
@@ -4224,6 +4255,14 @@ me_bavaria_missions_welf_2 = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
+			hamburg_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			lauenburg_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
 			altmark_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -4233,6 +4272,10 @@ me_bavaria_missions_welf_2 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			hesse_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			frankfurt_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}

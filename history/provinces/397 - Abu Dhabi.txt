@@ -2,6 +2,7 @@
 
 owner = ORM
 controller = ORM
+add_core = ORM
 culture = gulf_arabic
 religion = shiite
 capital = "Abu Zabi"
@@ -11,10 +12,7 @@ base_tax = 1
 base_production = 1 
 base_manpower = 1 
 is_city = yes
-add_core = ORM
-add_core = ALH
-add_core = OMA
-add_core = SHR
+
 center_of_trade = 1
 
 add_permanent_province_modifier = {
@@ -27,22 +25,12 @@ add_permanent_province_modifier = {
     duration = -1
 }
 
+#Claimants
+add_core = ALH
+add_core = OMA
+add_core = SHR
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#Histories by SF
 1622.5.3 = {
 	owner = PER
 	controller = PER

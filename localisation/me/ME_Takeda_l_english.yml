@@ -1,5 +1,5 @@
 ﻿l_english:
- # Missions:
+ #Missions:
  takeda_eastern_kanto_province_title: "Eastern Kanto Province"
  takeda_eastern_kanto_province_desc: "Kanto serves as a great area for economic prosperity. Being near the coast, and the terrain being natural for city construction, it shall serve that purspose."
  takeda_rivals_of_uesugi_title: "Rivals of [UES.GetName]"
@@ -28,29 +28,41 @@
  takeda_kai_a_daimyos_pride_desc: "[1029.GetName] is one of the more renowned provinces in Japan, famous for its horses, as well as a region of culture. It now shall be known for the greatness [Root.Monarch.GetName] gave it in the world."
  takeda_at_the_gates_of_kyoto_title: "At the Gates of [1020.GetName]"
  takeda_at_the_gates_of_kyoto_desc: "The clans between us and [1020.GetName] are numberous. Great castles such as the Inabayama one stand in our way, posing a great resistance. We shall force out way into the Shogun's capital, even if we have to slash our way in it."
- 
+
+ #Custom Tooltip:
  TKD_WON_AT_LEAST_12_BATTLES: "Has won at least §Y12§! battles (currently §Y[This.num_of_won_battles.GetValue]§!) after the '§YRise of Takeda Shingen§!' mission was completed"
- 
- # Modifiers:
+
+ #Modifiers:
  takeda_tiger_of_kai_modifier: "The Ambitious Tiger"
+ desc_takeda_tiger_of_kai_modifier: ""
  takeda_wind_fire_forest_mountain_modifier: "Furinkazan"
+ desc_takeda_wind_fire_forest_mountain_modifier: ""
  takeda_rivals_of_uesugi_modifier: "The Triumphant Daimyo"
+ desc_takeda_rivals_of_uesugi_modifier: ""
  takeda_conquest_of_tohoku_modifier: "Warriors of Tohoku Curtailed"
+ desc_takeda_conquest_of_tohoku_modifier: ""
  takeda_the_ainu_province_province_modifier: "The Ainu Province"
+ desc_takeda_the_ainu_province_province_modifier: ""
  takeda_eastern_kanto_province_modifier: "The Riches of Kanto"
+ desc_takeda_eastern_kanto_province_modifier: ""
  takeda_acquiring_a_coastline_modifier: "The Riches of the Sea"
+ desc_takeda_acquiring_a_coastline_modifier: ""
  takeda_a_new_shogun_modifier: "A New Shogun"
+ desc_takeda_a_new_shogun_modifier: ""
  takeda_at_the_gates_of_kyoto_modifier: "Kyoto Shall Fall"
+ desc_takeda_at_the_gates_of_kyoto_modifier: ""
  takeda_takeda_cavalry_modifier: "Renowned Takeda Riders"
+ desc_takeda_takeda_cavalry_modifier: ""
  takeda_kai_a_daimyos_pride_province_modifier: "Takeda's Pride"
+ desc_takeda_kai_a_daimyos_pride_province_modifier: ""
  takeda_koshu_hatto_no_shidai_modifier: "The Laws of the Kai Province"
+ desc_takeda_koshu_hatto_no_shidai_modifier: ""
  
- # Events:
+ #Events:
  ME_Takeda_Events.EVTNAME1: "Rise of Takeda Shingen"
  ME_Takeda_Events.EVTDESC1: "In times such as these, the weak vanquish, and the strong triumph. Our current Daimyo, as much knowledge as he has, is not enough to guarantee our survival and sovereignty in the area. A new men has arrived however, Takeda Shingen. Filled with ambition, he claims that his ways will revolutionize Japanese warfare, and bring glory to our meager clan. He promises much, perhaps a little too much?"
  ME_Takeda_Events1.EVTOPT1: "We shall make him our great Daimyo."
  ME_Takeda_Events1.EVTOPT2: "We shall not abandon our old Daimyo."
  ME_Takeda_Events1.EVTOPT3: "He is gonna be a great heir of our clan."
- 
  TKD_TAKEDA_SHINGEN_WILL_GET_CONQUEROR_PERSONALITY: "§YShingen Takeda§! gains the §YConqueror§! personality."
  

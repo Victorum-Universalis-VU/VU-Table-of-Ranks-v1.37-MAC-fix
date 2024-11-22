@@ -53,7 +53,13 @@
  vu_mosteiro_de_alcobaca: "Mosteiro de Alcobaça"
  vu_mosteiro_de_alcobaca_title: "Construct Mosteiro de Alcobaça."
  construct_vu_mosteiro_de_alcobaca_title: "Construct Mosteiro de Alcobaça."
- construct_vu_mosteiro_de_alcobaca_desc: "With construction work initiated in 1178 by Cistercian Monks and finally opened in 1252, the Mosteiro de Alcobaça or "Royal Monastery of Santa Maria de Alcobaça" is a semi-Gothic Baroque style monastery situated in the town of Alcobaça in the district of Leiria; Costs 4000."
+ construct_vu_mosteiro_de_alcobaca_desc: "With construction work initiated in 1178 by Cistercian Monks and finally opened in 1252, the Mosteiro de Alcobaça or 'Royal Monastery of Santa Maria de Alcobaça' is a semi-Gothic Baroque style monastery situated in the town of Alcobaça in the district of Leiria; Costs 4000."
+ #
+ great_project_vu_se_de_evora: "Sé de Évora"
+ vu_se_de_evora: "Sé de Évora"
+ vu_se_de_evora_title: "Construct Sé de Évora."
+ construct_vu_se_de_evora_title: "Construct Sé de Évora."
+ construct_vu_se_de_evora_desc: "Built between 1186 and 1204, the Cathedral of Évora was enlarged circa 1280-1340, this time in early Gothic style. The cathedral also received several valuable additions through time, such as the Gothic cloisters added in the 14th century, the Manueline chapel of the Esporão during the early 16th century, and a new magnificent main chapel in baroque style later in the first half of the 18th century. The Cathedral of Évora is the largest of the mediaeval cathedrals in Portugal and one of best preserved in the Gothic style."
  #
  #VU - Natural_Monuments
  #
@@ -410,12 +416,6 @@
  vu_louisville_ky_title: "Establish Louisville."
  construct_vu_louisville_ky_title: "Establish Louisville."
  construct_vu_louisville_ky_desc: "Louisville is an established, thriving and bustling New World city; Costs 4000."
- #
- #great_project_vu_detroit_mi: "Settlement"
- #vu_detroit_mi: "Settlement"
- #vu_detroit_mi_title: "Establish Settlement."
- #construct_vu_detroit_mi_title: "Establish Settlement."
- #construct_vu_detroit_mi_desc: "This settlement is an established, thriving and bustling New World city; Costs 4000."
  #
  great_project_vu_milwaukee_wi: "Milwaukee"
  vu_milwaukee_wi: "Milwaukee"
@@ -1129,12 +1129,6 @@
  vu_brasilia_brz_title: "Establish a Brasilia."
  construct_vu_brasilia_brz_title: "Establish a Brasilia."
  construct_vu_brasilia_brz_desc: "This Brasilia is an established, thriving and bustling New World city; Costs 4000."
- #
- #great_project_vu_salvador_brz: "Settlement"
- #vu_salvador_brz: "Settlement"
- #vu_salvador_brz_title: "Establish a settlement."
- #construct_vu_salvador_brz_title: "Establish a settlement."
- #construct_vu_salvador_brz_desc: "This settlement is an established, thriving and bustling New World city; Costs 4000."
  #
  great_project_vu_recife_brz: "Recife"
  vu_recife_brz: "Recife"

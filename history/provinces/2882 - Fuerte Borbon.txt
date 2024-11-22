@@ -2,13 +2,6 @@
 
 culture = chacoan
 
-
-
-
-
-
-
-
 religion = animism
 capital = "Fuerte Borbon"
 trade_goods = unknown

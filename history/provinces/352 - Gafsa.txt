@@ -1,7 +1,8 @@
 #352 - Gafsa
 
 owner = TUN
-controller = TUN 
+controller = TUN
+add_core = TUN
 culture = afro_roman	#Represents last settlements of African-Roman people that were still present (Voltaire's Mod also chooses this province, so going for Gafsa)
 religion = ibadi
 capital = "Gafsa"
@@ -11,16 +12,11 @@ base_tax = 2
 base_production = 2
 base_manpower = 1 
 is_city = yes
-add_core = TUN
+
+#Claimants
 add_core = GHD
 
-
-
-
-
-
-
-
+#Histories by SF
 1450.1.1 = { 
 	culture = libyan_berber_culture 
 	religion = sunni

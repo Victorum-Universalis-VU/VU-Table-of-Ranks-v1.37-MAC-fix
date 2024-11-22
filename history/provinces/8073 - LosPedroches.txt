@@ -1,9 +1,9 @@
 #8073 - LosPedroches
 
 #Default
-owner = CAS
-controller = CAS
-add_core = CAS
+owner = CDB
+controller = CDB
+add_core = CDB
 culture = andalucian
 religion = catholic
 capital = "Pozoblanco"			#Not technically around at first start date, it would appear, but meh.... worry about it later.
@@ -15,7 +15,7 @@ is_city = yes
 hre = no
 
 #Claimants
-add_core = CDB
+add_core = CAS
 
 #Buildings
 
@@ -23,12 +23,7 @@ add_core = CDB
 
 #Known by Technology groups
 
-
-
-
-
-
 #Histories
 1215.6.15 = { owner = AMD controller = AMD add_core = AMD } # Alhomad territorial lands - By San Felipe
 
-1444.11.11 = { owner = CAS controller = CAS add_core = CAS } # Castilian territorial lands - By San Felipe
+1444.11.11 = { owner = CDB controller = CDB add_core = CDB } # Castilian territorial lands - By San Felipe

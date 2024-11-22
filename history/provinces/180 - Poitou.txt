@@ -28,11 +28,6 @@ add_core = POI
 
 #Known by Technology groups
 
-
-
-
-
-
 #Histories
 1215.6.15 = { owner = ENG controller = ENG add_core = ENG } # Part of English Duchy of Aquitaine - By San Felipe
 

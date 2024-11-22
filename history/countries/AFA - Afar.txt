@@ -1,8 +1,9 @@
 government = monarchy
 add_government_reform = iqta
+government_rank = 3 #Viscounty
 technology_group = east_african
 unit_type = sub_saharan
-religion = sunni
+religion = sunni #Coptic
 primary_culture = afar
 capital = 2764	#Aussa
 religious_school = shafii_school

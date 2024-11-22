@@ -1,5 +1,6 @@
 government = republic
 add_government_reform = cossacks_reform
+government_rank = 6 #Republic
 #technology_group = eastern
 technology_group = russian_tech_group
 religion = orthodox
@@ -7,7 +8,7 @@ primary_culture = cossack
 add_accepted_culture = ruthenian
 add_accepted_culture = romanian
 unit_type = eastern
-capital = 2411	# Zaporozhia
+capital = 3243	# Nikitin Rog
 
 
 1506.1.1 = {	
@@ -38,7 +39,7 @@ capital = 2411	# Zaporozhia
 }
 
 1555.1.1 = {
-	government_rank = 1
+	government_rank = 6
 }
 
 1563.1.1 = {	
@@ -401,11 +402,11 @@ capital = 2411	# Zaporozhia
 		dip = 6
 		mil = 5
 	}
-	government_rank = 2
+	government_rank = 8
 }
 
 1654.1.8 = {
-	government_rank = 1
+	government_rank = 6
 }
 
 1657.1.1 = {
@@ -483,5 +484,5 @@ capital = 2411	# Zaporozhia
 }
 
 1775.8.3 = {
-	government_rank = 2
+	government_rank = 8
 }

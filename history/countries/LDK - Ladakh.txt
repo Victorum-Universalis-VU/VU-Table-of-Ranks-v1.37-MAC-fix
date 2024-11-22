@@ -1,5 +1,6 @@
 government = tribal
 add_government_reform = tribal_kingdom
+government_rank = 6 #Petty_Kingdom
 primary_culture = tibetan
 add_accepted_culture = kashmiri
 religion = vajrayana
@@ -248,7 +249,7 @@ fixed_capital = 2074 # Cannot move capital away from this province & no power co
 }
 
 1752.1.1 = {
-	government_rank = 1
+	government_rank = 6
 }
 
 1770.1.1 = {
@@ -324,7 +325,7 @@ fixed_capital = 2074 # Cannot move capital away from this province & no power co
 }
 
 1809.1.1 = {
-	government_rank = 2
+	government_rank = 8
 }
 
 1810.1.1 = {

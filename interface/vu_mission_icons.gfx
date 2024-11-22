@@ -677,4 +677,8 @@ spriteTypes = {
 		name = "vu_cigar_factory"
 		texturefile = "gfx//interface//missions//victorum_universalis//Pirate//vu_cigar_factory.dds"
 	}
+	spriteType = {  
+		name = "spa_palacio_de_madrid"
+		texturefile = "gfx//interface//missions//victorum_universalis//Spain//spa_palacio_de_madrid.dds"
+	}
 }

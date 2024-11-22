@@ -1,5 +1,6 @@
 government = monarchy
-add_government_reform = iqta
+add_government_reform = islamic_sultanate_reform
+government_rank = 6 #Sultanate
 primary_culture = tunisian
 religion = sunni
 technology_group = muslim
@@ -220,7 +221,7 @@ change_estate_land_share = {
 		dip = 2
 		mil = 2
 	}
-	government_rank = 1
+	government_rank = 6
 }
 
 #Deys of Tunis
@@ -234,8 +235,8 @@ change_estate_land_share = {
 		mil = 3
 	}
 	government = republic
-add_government_reform = noble_elite_reform
-set_legacy_government = noble_republic
+	add_government_reform = noble_elite_reform
+	set_legacy_government = noble_republic
 }
 
 1592.1.1 = {
@@ -278,7 +279,7 @@ set_legacy_government = noble_republic
 		mil = 3
 	}
 	government = monarchy
-add_government_reform = autocracy_reform
+	add_government_reform = autocracy_reform
 }
 
 1628.1.1 = {

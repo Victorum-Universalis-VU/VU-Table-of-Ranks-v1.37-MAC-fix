@@ -1,7 +1,6 @@
 government = tribal
 add_government_reform = tribal_federation
-primary_culture = azerbaijani
-add_accepted_culture = al_iraqiya_arabic 
+primary_culture = al_iraqiya_arabic
 religion = shiite
 technology_group = muslim
 capital = 410 # Baghdad

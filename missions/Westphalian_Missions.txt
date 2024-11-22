@@ -168,6 +168,7 @@ westfalian_group_1 = {
 				area = westphalia_area
 				area = north_westphalia_area
 				area = hesse_area
+				area = frankfurt_area
 				area = palatinate_area
 				area = north_rhine_area
 				area = lower_rhineland_area
@@ -186,6 +187,9 @@ westfalian_group_1 = {
 				owned_by = ROOT
 			}
 			hesse_area = {
+				owned_by = ROOT
+			}
+			frankfurt_area = {
 				owned_by = ROOT
 			}
 			palatinate_area = {

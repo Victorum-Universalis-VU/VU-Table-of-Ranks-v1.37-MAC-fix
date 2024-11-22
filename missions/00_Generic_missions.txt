@@ -389,6 +389,9 @@ vu_extra_slot_missions = {
 	   NOT = { tag = ENG }
 	   NOT = { tag = GBR }
 	   NOT = { tag = UNK }
+	   NOT = { tag = MOS }
+	   NOT = { tag = RUS }
+	   NOT = { tag = TZR }
 	}
 	build_roads_mission = {
 		icon = mission_colonial
@@ -642,6 +645,9 @@ vu_extra_slot_missions_2 = {
 	   NOT = { tag = ENG }
 	   NOT = { tag = GBR }
 	   NOT = { tag = UNK }
+	   NOT = { tag = MOS }
+	   NOT = { tag = RUS }
+	   NOT = { tag = TZR }
 	   #NOT = { tag = CAS }
 	   #NOT = { tag = SPA }
 	   #NOT = { tag = BBS }

@@ -262,13 +262,19 @@ Circassia_Missions_5 = {
 		position = 4
 		provinces_to_highlight = {
 			owner = {
-				has_reform = steppe_horde
+				OR = {
+					has_reform = steppe_horde
+					has_reform = scythian_horde_reform
+				}
 				NOT = { alliance_with = ROOT }
 			}
 		}
 		trigger = {
 			any_country = {
-				has_reform = steppe_horde 
+				OR = {
+					has_reform = steppe_horde
+					has_reform = scythian_horde_reform
+				}
 				alliance_with = ROOT
 			}
 		}

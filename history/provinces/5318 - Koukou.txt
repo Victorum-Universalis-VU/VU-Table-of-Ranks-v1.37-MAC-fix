@@ -24,14 +24,6 @@ add_local_autonomy = 75			#Kabylians highly autonomous under Hafsids
 
 #Known by Technology groups
 
-
-
-
-
-
-
-
-
 #Histories
 1215.6.15 = { owner = AMD controller = AMD add_core = AMD } # Alhomad territorial lands - By San Felipe
 
@@ -61,7 +53,7 @@ add_local_autonomy = 75			#Kabylians highly autonomous under Hafsids
 #	owner = SPA
 #	add_core = SPA
 #	remove_core = ARA
-#} # King Fernando dies, Carlos inherits Aragon and becames co-regent of Castille
+#} # King Fernando dies, Carlos inherits Aragon and becames co-regent of Castile
 #1518.1.1 = {
 #	owner = ALG
 #	controller = ALG

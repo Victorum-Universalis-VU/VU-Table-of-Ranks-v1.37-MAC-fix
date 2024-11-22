@@ -1,5 +1,7 @@
+#MAM - Mameluks
 government = monarchy
 add_government_reform = mamluk_government
+government_rank = 6 #Sultanate
 primary_culture = al_misr_arabic
 add_accepted_culture = al_suryah_arabic
 religion = sunni
@@ -175,7 +177,14 @@ add_country_modifier = {
 		adm = 1
 		dip = 1
 		mil = 3
-		leader = {	name = "Al Kansur"             	type = general	fire = 1	shock = 4	manuever = 5	siege = 0 }
+		leader = {	
+			name = "Al Kansur"             	
+			type = general	
+			fire = 1	
+			shock = 4	
+			manuever = 5	
+			siege = 0 
+		}
 	}
 }
 
@@ -186,7 +195,14 @@ add_country_modifier = {
 		adm = 0
 		dip = 0
 		mil = 2
-		leader = {	name = "Tûmân Bay II"		type = general	fire = 3	shock = 3	manuever = 3	siege = 1 }
+		leader = {	
+			name = "Tûmân Bay II"		
+			type = general	
+			fire = 3	
+			shock = 3	
+			manuever = 3	
+			siege = 1 
+		}
 	}
 }
 
@@ -220,9 +236,29 @@ add_country_modifier = {
 	}
 }
 
-1792.1.1 = { leader = {	name = "Ibrahim Bey"           	type = general	fire = 2	shock = 2	manuever = 4	siege = 0	death_date = 1804.3.14 } }
+1792.1.1 = { 
+	leader = {	
+		name = "Ibrahim Bey"           	
+		type = general	
+		fire = 2	
+		shock = 2	
+		manuever = 4	
+		siege = 0	
+		death_date = 1804.3.14 
+	} 
+}
 
-1792.1.1 = { leader = {	name = "Murad Bey"             	type = general	fire = 1	shock = 3	manuever = 4	siege = 0	death_date = 1801.4.22 } }
+1792.1.1 = { 
+	leader = {	
+		name = "Murad Bey"             	
+		type = general	
+		fire = 1	
+		shock = 3	
+		manuever = 4	
+		siege = 0	
+		death_date = 1801.4.22 
+	} 
+}
 
 1801.4.23 = {
 	monarch = {
@@ -241,6 +277,13 @@ add_country_modifier = {
 		adm = 6
 		dip = 4
 		mil = 6
-		leader = { name = "Mehmet Ali"		type = general	fire = 1	shock = 4	manuever = 5	siege = 0 }
+		leader = { 
+			name = "Mehmet Ali"		
+			type = general	
+			fire = 1	
+			shock = 4	
+			manuever = 5	
+			siege = 0 
+		}
 	}
 }

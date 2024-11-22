@@ -1,10 +1,10 @@
-technology_group = persian_tech_group
+government = monarchy
+add_government_reform = islamic_emirate_reform
+government_rank = 5 #Emirate
 primary_culture = pamiri
 add_accepted_culture = tajik
 religion = sunni
-government = monarchy
-add_government_reform = iqta
-government_rank = 1
+technology_group = persian_tech_group
 capital = 452
 religious_school = hanafi_school
 

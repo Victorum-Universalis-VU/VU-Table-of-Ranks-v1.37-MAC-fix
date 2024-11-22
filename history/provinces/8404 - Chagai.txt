@@ -13,8 +13,8 @@ base_manpower = 1
 is_city = yes
 add_core = BAL
 
-
-
+#Claimants
+add_core = SFF
 
 
 

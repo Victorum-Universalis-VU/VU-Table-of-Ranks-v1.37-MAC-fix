@@ -1,4 +1,4 @@
-#VU updated by San Felipe for 1.35
+#Updated to v1.37 - SF
 namespace = colonial
 
 province_event = {
@@ -796,10 +796,16 @@ province_event = {
 		NOT = {
 			any_neighbor_province = {
 				owner = {
-					has_reform = steppe_horde
+					OR = {
+				    	has_reform = steppe_horde
+				    	has_reform = scythian_horde_reform
+				    }
 				}
 				controller = {
-					has_reform = steppe_horde
+					OR = {
+				    	has_reform = steppe_horde
+				    	has_reform = scythian_horde_reform
+				    }
 				}
 			}
 		}
@@ -1093,8 +1099,10 @@ province_event = {
 			region = central_america_region
 			region = mexico_region
 			region = colombia_region
+			#area = amapa_area
 			area = amazon_area
 			area = grao_para_area
+			#area = sao_francisco_area
 			area = bahia_area
 			area = pernambuco_area
 			area = ceara_area

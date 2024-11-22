@@ -78,6 +78,13 @@ danish_missions_kalmar = {
 					}
 					add_claim = ROOT
 				}
+				gotland_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_claim = ROOT
+				}
 				vastra_gotaland_area = {
 					limit = {
 						NOT = { is_core = ROOT }
@@ -102,6 +109,7 @@ danish_missions_kalmar = {
 				area = svealand_area
 				area = norrland_area
 				area = gotaland_area
+				area = gotland_area
 				area = vastra_gotaland_area
 			}
 			NOT = {
@@ -118,6 +126,10 @@ danish_missions_kalmar = {
 				owned_by = ROOT
 			}
 			gotaland_area = {
+				type = all
+				owned_by = ROOT
+			}
+			gotland_area = {
 				type = all
 				owned_by = ROOT
 			}

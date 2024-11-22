@@ -70,9 +70,9 @@ add_core = POL
 1750.1.1 = { base_tax = 5 base_production = 5 base_manpower = 5 }
 1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved
 1867.3.30 = {
-	owner = AHE
-	controller = AHE
-	add_core = AHE
+	owner = AUH
+	controller = AUH
+	add_core = AUH
 	remove_core = HAB
 } # Austria-Hungary is formed
 1880.1.1 = {
@@ -87,5 +87,5 @@ add_core = POL
 } # Bohemia declares independence
 1918.11.11 = {
 	add_core = POL
-	remove_core = AHE
+	remove_core = AUH
 } # Polish declares independence and claims parts of Teschen, end of WWI

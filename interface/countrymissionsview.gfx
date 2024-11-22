@@ -1026,4 +1026,101 @@ spriteTypes = {
 		name = "mission_recover_southern_greece"
 		texturefile = "gfx//interface//missions//mission_recover_southern_greece.dds"
 	}
+
+	#New icons for VU v1.37 by SF for DonBrom's generic Austrian missions.
+	#spriteType = { #Has the generic image
+	#	name = "mission_vu_austrian_generic_1"
+	#	texturefile = "gfx//interface//missions//vu_austrian_generic_1.dds"
+	#}
+
+	spriteType = { #Chin Dynasty
+		name = "vu_chin_dynasty"
+		texturefile = "gfx//interface//missions//victorum_universalis//Austria//vu_chin_dynasty.dds"
+	}
+
+	spriteType = { #Austria United
+		name = "vu_austria_united"
+		texturefile = "gfx//interface//missions//victorum_universalis//Austria//vu_austria_united.dds"
+	}
+
+	spriteType = { #Protected Mountain Pass
+		name = "vu_you_shall_not_pass"
+		texturefile = "gfx//interface//missions//victorum_universalis//Austria//vu_you_shall_not_pass.dds"
+	}
+
+	spriteType = { #Reunited at last!
+		name = "vu_reunited_at_last"
+		texturefile = "gfx//interface//missions//victorum_universalis//Austria//vu_reunited_at_last.dds"
+	}
+
+	spriteType = { #Port of Trieste
+		name = "vu_port_of_trieste"
+		texturefile = "gfx//interface//missions//victorum_universalis//Austria//vu_port_of_trieste.dds"
+	}
+
+	spriteType = { #Black Silver
+		name = "vu_black_silver"
+		texturefile = "gfx//interface//missions//victorum_universalis//Austria//vu_black_silver.dds"
+	}
+
+	spriteType = { #Graz Castle
+		name = "vu_graz_castle"
+		texturefile = "gfx//interface//missions//victorum_universalis//Austria//vu_graz_castle.dds"
+	}
+
+	spriteType = { #Danubian Soil
+		name = "vu_danubian_soil"
+		texturefile = "gfx//interface//missions//victorum_universalis//Austria//vu_danubian_soil.dds"
+	}
+
+	spriteType = { #City of Dreams
+		name = "vu_city_of_dreams"
+		texturefile = "gfx//interface//missions//victorum_universalis//Austria//vu_city_of_dreams.dds"
+	}
+
+	spriteType = { #Carinthian Steel
+		name = "vu_carinthian_steel"
+		texturefile = "gfx//interface//missions//victorum_universalis//Austria//vu_carinthian_steel.dds"
+	}
+
+	spriteType = { #Cilli Duchies
+		name = "vu_cilli_duchies"
+		texturefile = "gfx//interface//missions//victorum_universalis//Austria//vu_cilli_duchies.dds"
+	}
+
+	spriteType = { #Imperial Crownlands
+		name = "vu_imperial_crownlands"
+		texturefile = "gfx//interface//missions//victorum_universalis//Austria//vu_imperial_crownlands.dds"
+	}
+	
+	###Komandor missions###
+	
+	spriteType = { #Crown Russia
+		name = "mission_rus_derzhava"
+		texturefile = "gfx//interface//missions//victorum_universalis//Russia//mission_rus_derzhava.dds"
+	}
+
+	spriteType = { #Cilli Duchies
+		name = "mission_rus_crown"
+		texturefile = "gfx//interface//missions//victorum_universalis//Russia//mission_rus_crown.dds"
+	}
+
+	spriteType = { #Imperial Crownlands
+		name = "mission_rus_scepter"
+		texturefile = "gfx//interface//missions//victorum_universalis//Russia//mission_rus_scepter.dds"
+	}
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }

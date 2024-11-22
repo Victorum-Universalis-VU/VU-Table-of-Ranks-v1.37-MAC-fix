@@ -92,20 +92,20 @@ center_of_trade = 1
 	base_manpower = 3
 }
 1867.3.30 = {
-	owner = AHE
-	controller = AHE
-	add_core = AHE
-	remove_core = AHE
+	owner = AUH
+	controller = AUH
+	add_core = AUH
+	remove_core = AUH
 } # Austria-Hungary is formed
 1914.8.15 = {
 	controller = RUS
 } # WWI
 1915.6.1 = {
-	controller = AHE
+	controller = AUH
 }
 1918.11.7 = {
 	owner = POL
 	controller = POL
 	add_core = POL
-	remove_core = AHE
+	remove_core = AUH
 } # Poland declares independence, end of WWI

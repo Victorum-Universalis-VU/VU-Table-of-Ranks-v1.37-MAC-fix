@@ -27,13 +27,13 @@ country_event = {
 				who = ROOT
 				modifier = signed_treaty
 			}
-                }
+        }
 		ROOT = {
 			add_opinion = {
 				who = POR
 				modifier = signed_treaty
 			}
-                }
+        }
 		add_country_modifier = {
 			name = ayu_portuguese_treaty
 			duration = -1
@@ -175,7 +175,7 @@ country_event = {
 			}
 			india_superregion = {
 				owned_by = ROOT
-                        }
+            }
 		}
 		MLC = {
 			ai = yes
@@ -189,13 +189,14 @@ country_event = {
 		months = 20
 	}
 	
-
 	option = {
 		name = "VULegacyCRsSEAFlavour.4.a" #Sack the city!
 		ai_chance = {
 			factor = 0.5
 		}
-                596 = { cede_province = ROOT }
+        596 = { 
+			cede_province = ROOT 
+		}
 		add_years_of_income = 0.05	
 	}
 
@@ -241,22 +242,26 @@ country_event = {
 		add_prestige = -100
 		set_capital = 597
 		change_tag = JOH
-                release = PRK
+        release = PRK
 		hidden_effect = {
-		        PRK = { change_government = monarchy add_government_reform = plutocratic_reform }
+		    PRK = { 
+				change_government = monarchy
+				add_government_reform = plutocratic_reform 
+			}
 		}
-        }
+    }
 	option = {
 		name = "VULegacyCRsSEAFlavour.5.b" #We will hold onto our empire!
 		add_prestige = -100
-                add_legitimacy = -100
+        add_legitimacy = -100
 		add_stability = -1
-                set_capital = 597
+        set_capital = 597
 		random_owned_province = {
 			limit = {
-			OR = { is_core = PRK
-				religion_group = muslim
-				}	
+			    OR = { 
+			    	is_core = PRK
+			    	religion_group = muslim
+			    }	
 			}
 			spawn_rebels = {
 				type = 	nationalist_rebels
@@ -265,9 +270,10 @@ country_event = {
 		}
 		random_owned_province = {
 			limit = {
-			OR = { is_core = JOH
-				religion_group = muslim
-				}	
+			    OR = { 
+					is_core = JOH
+			    	religion_group = muslim
+			    }	
 			}
 			spawn_rebels = {
 				type = 	nationalist_rebels
@@ -350,11 +356,22 @@ country_event = {
 
 	option = {
 		name = "VULegacyCRsSEAFlavour.7.a" #We stand triumphant!
-		MMA = { release = MKA release = MYA }
-        2166 = { cede_province = ROOT }
+		MMA = { 
+			release = MKA 
+			release = MYA 
+		}
+        2166 = { 
+			cede_province = ROOT 
+		}
 		hidden_effect = {
-		        MYA = { change_government = monarchy add_government_reform = mandala_reform }
-                MKA = { change_government = monarchy add_government_reform = mandala_reform }
+		    MYA = { 
+				change_government = monarchy 
+				add_government_reform = mandala_reform 
+			}
+            MKA = { 
+				change_government = monarchy 
+				add_government_reform = mandala_reform 
+			}
 		}		
 	}
 

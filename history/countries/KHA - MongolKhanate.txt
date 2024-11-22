@@ -1,6 +1,6 @@
 government = tribal
 add_government_reform = steppe_horde
-government_rank = 1
+government_rank = 8 #Khanate
 technology_group = nomad_group
 religion = tengri_pagan_reformed
 secondary_religion = vajrayana

@@ -24,12 +24,10 @@ add_core = SOR
 
 #Known by Technology groups
 
-
-
-
-
-
-#Histories by docRobert & SF
+#Histories by DonBrom & SF
+1300.1.1 = {
+	culture = schlesian #Added by SF in VU v1.37 on advice of Don Brom since according to his sources, Kashubian Slavs had already been fully assimilated by the Germans.
+}
 1444.1.1 = {
 	culture = silesian_german
 	owner = BOH

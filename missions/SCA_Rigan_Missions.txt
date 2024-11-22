@@ -1165,6 +1165,10 @@ rig_develop_and_teuton_mission_slot = {
 						limit = { is_core = LIV }
 						add_core = ROOT
 					}
+					riga_area = {
+						limit = { is_core = LIV }
+						add_core = ROOT
+					}
 					curonia_area = {
 						limit = { is_core = LIV }
 						add_core = ROOT
@@ -1174,6 +1178,17 @@ rig_develop_and_teuton_mission_slot = {
 						add_core = ROOT
 					}
 					livonia_area = {
+						limit = {
+							NOT = { is_core = ROOT }
+							NOT = { is_permanent_claim = ROOT }
+						}
+						if = {
+							limit = { NOT = { is_core = LIV } }
+							add_core = LIV
+						}
+						add_permanent_claim = ROOT
+					}
+					riga_area = {
 						limit = {
 							NOT = { is_core = ROOT }
 							NOT = { is_permanent_claim = ROOT }

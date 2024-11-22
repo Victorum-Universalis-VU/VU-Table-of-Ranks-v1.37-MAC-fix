@@ -72,27 +72,6 @@ ARB_is_in_arabia = {
 	}
 }
 
-##### Pilgrim routes
-# 385 #mecca
-# 384 #medina
-# 2331 #jeddah
-# 4278 #qunfundah
-# 2329 #yanbu al bahr
-# 2328 #al ula
-# 383 #tabuk 
-# 4268 #aqabah
-##### Extended
-# 379 #Al Quds
-# 1854 #Jaffa
-# 1855 #Sayda
-# 382 #Dimashq
-# 364 #Ghazzah
-# 4316 #Sharqiya
-# 361 #Cairo
-# 2316 #Al Gharbia
-# 362 #Rashid
-# 358 #Alexandria
-
 ARB_is_in_pilgrim_route = {
 	OR = {
 		province_id = 385 #mecca
@@ -129,90 +108,6 @@ ARB_is_in_extended_pilgrim_route = {
 	}
 }
 
-#ARB_pilgrim_route_trigger = {
-#	385 = {
-#		$trigger$
-#	}
-#	384 = {
-#		$trigger$
-#	}
-#	2331 = {
-#		$trigger$
-#	}
-#	4278 = {
-#		$trigger$
-#	}
-#	2329 = {
-#		$trigger$
-#	}
-#	2328 = {
-#		$trigger$
-#	}
-#	383 = {
-#		$trigger$
-#	}
-#	4268 = {
-#		$trigger$
-#	}
-#}
-
-#ARB_pilgrim_route_extended_trigger = {
-#	385 = {
-#		$trigger$
-#	}
-#	384 = {
-#		$trigger$
-#	}
-#	2331 = {
-#		$trigger$
-#	}
-#	4278 = {
-#		$trigger$
-#	}
-#	2329 = {
-#		$trigger$
-#	}
-#	2328 = {
-#		$trigger$
-#	}
-#	383 = {
-#		$trigger$
-#	}
-#	4268 = {
-#		$trigger$
-#	}
-#	379  = {
-#		$trigger$
-#	}
-#	1854  = {
-#		$trigger$
-#	}
-#	1855  = {
-#		$trigger$
-#	}
-#	382  = {
-#		$trigger$
-#	}
-#	364  = {
-#		$trigger$
-#	}
-#	4316  = {
-#		$trigger$
-#	}
-#	361  = {
-#		$trigger$
-#	}
-#	2316  = {
-#		$trigger$
-#	}
-#	362  = {
-#		$trigger$
-#	}
-#	358  = {
-#		$trigger$
-#	}
-#}
-
 MAM_has_bad_goods = {
 	#else doesn't work
 	OR = {
@@ -223,21 +118,6 @@ MAM_has_bad_goods = {
 		trade_goods = wool
 	}
 }
-
-#MAM_tge_bad_goods = {
-#	OR = {
-#		trade_goods = apiculture 
-#		trade_goods = camel 
-#		trade_goods = grain
-#		trade_goods = rice 
-#		trade_goods = livestock
-#		trade_goods = dates
-#		trade_goods = wool
-#		trade_goods = naval_supplies 
-#		trade_goods = fish
-#		trade_goods = lumber
-#	}
-#}
 
 MAM_upgrade_cot_and_trade_building = {
 	custom_trigger_tooltip = {
@@ -297,16 +177,6 @@ ME_is_interested_in_yemen = {
 			region = arabia_region
 			region = egypt_region
 			region = horn_of_africa_region
-		}
-	}
-}
-
-MAM_is_not_unreformed_mamluks_trigger = {
-	custom_trigger_tooltip = {
-		tooltip = MAM_is_not_unreformed_mamluks_trigger
-		OR = {
-			has_country_flag = MAM_concluded_reforms
-			NOT = { has_estate_privilege = ME_estate_nobles_MAM_oligarchy }
 		}
 	}
 }

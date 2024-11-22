@@ -521,6 +521,20 @@ hanseatic_sound_toll_tree = {
 				}
 				add_permanent_claim = ROOT
 			}
+			hamburg_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			lauenburg_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 			jutland_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -543,6 +557,8 @@ hanseatic_sound_toll_tree = {
 		provinces_to_highlight = {
 			OR = {
 				area = holstein_area
+				area = hamburg_area
+				area = lauenburg_area
 				area = jutland_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -554,6 +570,8 @@ hanseatic_sound_toll_tree = {
 				OR = {
 					area = jutland_area
 					area = holstein_area
+					area = hamburg_area
+					area = lauenburg_area
 				}
 			}
 		}

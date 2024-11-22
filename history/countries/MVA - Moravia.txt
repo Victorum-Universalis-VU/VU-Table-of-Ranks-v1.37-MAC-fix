@@ -1,8 +1,8 @@
 government = monarchy
-add_government_reform = margraviate_reform
+add_government_reform = eue_marquisate_reform
+government_rank = 5 #Marquisate_Reform
 primary_culture = moravian
 religion = catholic
-government_rank = 1
 capital = 4237 # Olomouc
 #technology_group = eastern
 technology_group = bohemian_tech_group

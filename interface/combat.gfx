@@ -1005,6 +1005,10 @@ spriteTypes = {
         texturefile = "gfx/interface/andorra_la_vella.dds"
     }
     spriteType = {                                                        
+        name = "GFX_combat_terrain_urban_palos"
+        texturefile = "gfx/interface/palos.dds"
+    }
+    spriteType = {                                                        
         name = "GFX_combat_terrain_urban_zaragoza"
         texturefile = "gfx/interface/zaragoza.dds"
     }
@@ -1019,6 +1023,10 @@ spriteTypes = {
     spriteType = {                                                        
         name = "GFX_combat_terrain_urban_lisboa"
         texturefile = "gfx/interface/lisboa.dds"
+    }
+    spriteType = {                                                        
+        name = "GFX_combat_terrain_urban_silves"
+        texturefile = "gfx/interface/silves.dds"
     }
     spriteType = {                                                        
         name = "GFX_combat_terrain_urban_sintra"
@@ -1739,6 +1747,78 @@ spriteTypes = {
     spriteType = {                                                        
         name = "GFX_combat_terrain_urban_kaffa"
         texturefile = "gfx/interface/kaffa.dds"
+    }
+    spriteType = {                                                        
+        name = "GFX_combat_terrain_urban_bobrujsk"
+        texturefile = "gfx/interface/bobrujsk.dds"
+    }
+    spriteType = {                                                        
+        name = "GFX_combat_terrain_urban_hadyach"
+        texturefile = "gfx/interface/hadyach.dds"
+    }
+    spriteType = {                                                        
+        name = "GFX_combat_terrain_urban_kaluga"
+        texturefile = "gfx/interface/kaluga.dds"
+    }
+    spriteType = {                                                        
+        name = "GFX_combat_terrain_urban_kherson"
+        texturefile = "gfx/interface/kherson.dds"
+    }
+    spriteType = {                                                        
+        name = "GFX_combat_terrain_urban_kremenchuk"
+        texturefile = "gfx/interface/kremenchuk.dds"
+    }
+    spriteType = {                                                        
+        name = "GFX_combat_terrain_urban_mtsensk"
+        texturefile = "gfx/interface/mtsensk.dds"
+    }
+    spriteType = {                                                        
+        name = "GFX_combat_terrain_urban_orenburg"
+        texturefile = "gfx/interface/orenburg.dds"
+    }
+    spriteType = {                                                        
+        name = "GFX_combat_terrain_urban_ostashkov"
+        texturefile = "gfx/interface/ostashkov.dds"
+    }
+    spriteType = {                                                        
+        name = "GFX_combat_terrain_urban_penza"
+        texturefile = "gfx/interface/penza.dds"
+    }
+    spriteType = {                                                        
+        name = "GFX_combat_terrain_urban_suzdal"
+        texturefile = "gfx/interface/suzdal.dds"
+    }
+    spriteType = {                                                        
+        name = "GFX_combat_terrain_urban_taganrog"
+        texturefile = "gfx/interface/taganrog.dds"
+    }
+    spriteType = {                                                        
+        name = "GFX_combat_terrain_urban_tambov"
+        texturefile = "gfx/interface/tambov.dds"
+    }
+    spriteType = {                                                        
+        name = "GFX_combat_terrain_urban_tobolsk"
+        texturefile = "gfx/interface/tobolsk.dds"
+    }
+    spriteType = {                                                        
+        name = "GFX_combat_terrain_urban_tomsk"
+        texturefile = "gfx/interface/tomsk.dds"
+    }
+    spriteType = {                                                        
+        name = "GFX_combat_terrain_urban_torzhok"
+        texturefile = "gfx/interface/torzhok.dds"
+    }
+    spriteType = {                                                        
+        name = "GFX_combat_terrain_urban_tyn"
+        texturefile = "gfx/interface/tyn.dds"
+    }
+    spriteType = {                                                        
+        name = "GFX_combat_terrain_urban_ustyug"
+        texturefile = "gfx/interface/ustyug.dds"
+    }
+    spriteType = {                                                        
+        name = "GFX_combat_terrain_urban_yelets"
+        texturefile = "gfx/interface/yelets.dds"
     }
     spriteType = {                                                        
         name = "GFX_combat_terrain_urban_azov"
@@ -5519,6 +5599,11 @@ spriteTypes = {
 	spriteType = {                                                        
         name = "GFX_combat_terrain_urban_tortosa"
         texturefile = "gfx/interface/tortosa.dds"
+    }
+
+    spriteType = {                                                        
+        name = "GFX_combat_terrain_urban_lagos_por"
+        texturefile = "gfx/interface/lagos_por.dds"
     }
 	
 #############################################

@@ -185,6 +185,13 @@ swabian_group_1 = {
 				}
 				add_permanent_claim = root
 			}
+			liechtenstein_area = {
+				limit = {
+					NOT = { owned_by = root }
+					NOT = { is_permanent_claim = root }
+				}
+				add_permanent_claim = root
+			}
 			romandie_area = {
 				limit = {
 					NOT = { owned_by = root }
@@ -217,6 +224,7 @@ swabian_group_1 = {
 				AND = {
 					OR = {
 						area = switzerland_area
+						area = liechtenstein_area
 						area = romandie_area
 						province_id = 4710
 					}
@@ -226,6 +234,7 @@ swabian_group_1 = {
 								value = 8 #of 11
 								OR = {
 									area = switzerland_area
+									area = liechtenstein_area
 									area = romandie_area
 									province_id = 4710
 								}
@@ -258,6 +267,7 @@ swabian_group_1 = {
 				value = 8 #of 11
 				OR = {
 					area = switzerland_area
+					area = liechtenstein_area
 					area = romandie_area
 					province_id = 4710
 				}
@@ -565,13 +575,13 @@ swabian_group_2 = {
 		effect = {
 			if = {
 				limit = {
-					NOT = { government_rank = 2 }
+					NOT = { government_rank = 8 }
 					OR = {
 						is_part_of_hre = no
 						is_elector = yes
 					}
 				}
-				set_government_rank = 2
+				set_government_rank = 8
 			}
 			south_german_region = {
 				limit = {

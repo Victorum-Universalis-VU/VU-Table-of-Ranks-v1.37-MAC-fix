@@ -1,6 +1,6 @@
 government = monarchy
-add_government_reform = appanage_reform
-government_rank = 1
+add_government_reform = eue_county_reform #appanage_reform
+government_rank = 4 #County
 primary_culture = cosmopolitan_french
 religion = catholic
 #technology_group = western
@@ -35,8 +35,8 @@ fixed_capital = 4776 # Cannot move capital away from this province & no power co
 }
 
 1215.6.15 = {
-    add_government_reform = marquisiate_reform
-	government_rank = 2
+    add_government_reform = eue_marquisate_reform
+	government_rank = 5 #Marquisate_Reform
 }
 
 1218.1.1 = {
@@ -427,9 +427,9 @@ fixed_capital = 4776 # Cannot move capital away from this province & no power co
 	}
 }
 
-1444.11.11 = {
-    add_government_reform = appanage_reform
-	government_rank = 1
+1444.1.1 = {
+    add_government_reform = eue_county_reform #appanage_reform
+	government_rank = 4 #County
 }
 
 1465.1.5 = {

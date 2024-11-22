@@ -1,6 +1,6 @@
 government = monarchy
 add_government_reform = feudalism_reform
-government_rank = 1
+government_rank = 9
 primary_culture = prussian
 religion = catholic
 #technology_group = western
@@ -281,7 +281,7 @@ add_government_reform = prussian_monarchy }
 
 1701.1.18 = { capital = 50 }	# Berlin
 
-1701.1.18 = { elector = yes government_rank = 2 }
+1701.1.18 = { elector = yes government_rank = 8 }
 
 1702.1.1 = { leader = {	name = "Leopold von Dessau"            	type = general	fire = 4	shock = 4	manuever = 4	siege = 3	death_date = 1747.4.7 } }
 

@@ -4,7 +4,7 @@
 
 owner = RSO
 controller = RSO
-culture = russian
+culture = muscovite
 religion = orthodox
 hre = no
 base_tax = 8

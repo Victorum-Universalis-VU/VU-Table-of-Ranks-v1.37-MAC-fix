@@ -151,6 +151,67 @@ guiTypes = {
 			format = left
 		}
 
+		#New additions for VU v1.37 - SF
+		#iconType = {
+		#	name = "modifier_icon_4"
+		#	position = { x= 520 y = 46 }
+		#	Orientation = "UPPER_LEFT"
+		#	scale = 0.6
+		#	quadTextureSprite ="GFX_event_bg_transparency"
+		#}
+
+		#instantTextBoxType = {
+		#	name = "modifier_desc_4"
+		#	position = { x= 550 y = 51 }
+		#	textureFile = ""
+		#	font = "vic_18"
+		#	borderSize = {x=4 y=4}
+		#	text = ""
+		#	maxWidth = 64
+		#	maxHeight = 32
+		#	format = left
+		#}
+
+		#iconType = {
+		#	name = "modifier_icon_5"
+		#	position = { x= 620 y = 46 }
+		#	Orientation = "UPPER_LEFT"
+		#	scale = 0.6
+		#	quadTextureSprite ="GFX_event_bg_transparency"
+		#}
+
+		#instantTextBoxType = {
+		#	name = "modifier_desc_5"
+		#	position = { x= 650 y = 51 }
+		#	textureFile = ""
+		#	font = "vic_18"
+		#	borderSize = {x=4 y=4}
+		#	text = ""
+		#	maxWidth = 64
+		#	maxHeight = 32
+		#	format = left
+		#}
+
+		#iconType = {
+		#	name = "modifier_icon_6"
+		#	position = { x= 720 y = 46 }
+		#	Orientation = "UPPER_LEFT"
+		#	scale = 0.6
+		#	quadTextureSprite ="GFX_event_bg_transparency"
+		#}
+
+		#instantTextBoxType = {
+		#	name = "modifier_desc_6"
+		#	position = { x= 750 y = 51 }
+		#	textureFile = ""
+		#	font = "vic_18"
+		#	borderSize = {x=4 y=4}
+		#	text = ""
+		#	maxWidth = 64
+		#	maxHeight = 32
+		#	format = left
+		#}
+
 		listboxType = {
 			name = "privileges_list"
 			backGround = ""

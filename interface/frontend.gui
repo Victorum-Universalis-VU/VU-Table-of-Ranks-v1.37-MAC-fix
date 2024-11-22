@@ -14,6 +14,20 @@ guiTypes = {
 	}
 
 	windowType = {
+		name = "frontend_link_item"
+		size = { x = 36 y = 36 }
+		guiButtonType = {
+			name = "button"
+			quadTextureSprite = "homepage"
+		}
+		iconType = {
+			name = "frame"
+			spriteType = "icon_link_frame"
+			alwaystransparent = yes
+		}
+	}
+
+	windowType = {
 		name = "start_type_option"
 		size = { x=80 y=50 }
 
@@ -252,6 +266,7 @@ guiTypes = {
 					position = { x= 0 y = 20 }
 					Orientation = "UPPER_LEFT"
 				}
+
 			}
 			
 			### MAIN MENU PANEL (upperright)
@@ -279,470 +294,7 @@ guiTypes = {
 					position = { x= -210 y = 15 }
 					Orientation = "UPPER_RIGHT"
 				}
-				# EXPANDED MOD FAMILY GUI START
-				## Window with Mod Icons
-				#windowType = {
-				#	name = "expanded_mod_family_window"
-				#	if_resolution = {
-				#		min_height = 1080
-				#		position = { x = 115 y = 180 }
-				#	}
-				#	if_resolution = {
-				#		max_height = 1079
-				#		min_height = 1050
-				#		position = { x = 115 y = 175 }
-				#	}
-				#	if_resolution = {
-				#		max_height = 1049
-				#		position = { x = -550 y = 200 }
-				#		orientation = upper_right
-				#	}
-				#
-				#	iconType = {
-				#		name = "expanded_mod_family_window_bg"
-				#		position = { x = 0 y = 0 }
-				#		spriteType = "GFX_expanded_mod_family_background"
-				#	}
-				#
-				#	instantTextBoxType = {
-				#		name = "expanded_mod_family_title"
-				#		position = { x = 46 y = 148 }
-				#		format = center
-				#		font = "Main_14"
-				#		text = "EXPANDED_MOD_FAMILY_TITLE"
-				#		maxWidth = 220
-				#		maxHeight = 20
-				#		fixedsize = yes
-				#		alwaystransparent = yes
-				#	}
-				#
-				#	### First Column of Mods
-				#	windowType = {
-				#		name = "missions_expanded"
-				#		position = { x = 10 y = 166 }
-				#		size = { x = 147 y = 26 }
-				#
-				#		iconType = {
-				#			name = "mod_icon"
-				#			position = { x = 0 y = 1 }
-				#			spriteType = "GFX_mod_icon_missions_expanded"
-				#			scale = 0.5
-				#		}
-				#
-				#		iconType = {
-				#			name = "mod_text_bg"
-				#			position = { x = 26 y = 2 }
-				#			spriteType = "GFX_expanded_mod_family_entry_background"
-				#		}
-				#
-				#		instantTextBoxType = {
-				#			name = "mod_text"
-				#			position = { x = 26 y = 6 }
-				#			format = center
-				#			font = "Main_16"
-				#			text = "MOD_TEXT_MISSIONS_EXPANDED"
-				#			maxWidth = 120
-				#			maxHeight = 20
-				#			alwaystransparent = yes
-				#		}
-				#	}
-				#
-				#	windowType = {
-				#		name = "governments_expanded"
-				#		position = { x = 10 y = 192 }
-				#		size = { x = 147 y = 26 }
-				#
-				#		iconType = {
-				#			name = "mod_icon"
-				#			position = { x = 0 y = 1 }
-				#			spriteType = "GFX_mod_icon_governments_expanded"
-				#			scale = 0.5
-				#		}
-				#
-				#		iconType = {
-				#			name = "mod_text_bg"
-				#			position = { x = 26 y = 2 }
-				#			spriteType = "GFX_expanded_mod_family_entry_background"
-				#		}
-				#
-				#		instantTextBoxType = {
-				#			name = "mod_text"
-				#			position = { x = 26 y = 6 }
-				#			format = center
-				#			font = "Main_16"
-				#			text = "MOD_TEXT_GOVERNMENTS_EXPANDED"
-				#			maxWidth = 120
-				#			maxHeight = 20
-				#			alwaystransparent = yes
-				#		}
-				#	}
-				#
-				#	windowType = {
-				#		name = "subjects_expanded"
-				#		position = { x = 10 y = 218 }
-				#		size = { x = 147 y = 26 }
-				#
-				#		iconType = {
-				#			name = "mod_icon"
-				#			position = { x = 0 y = 1 }
-				#			spriteType = "GFX_mod_icon_subjects_expanded"
-				#			scale = 0.5
-				#		}
-				#
-				#		iconType = {
-				#			name = "mod_text_bg"
-				#			position = { x = 26 y = 2 }
-				#			spriteType = "GFX_expanded_mod_family_entry_background"
-				#		}
-				#
-				#		instantTextBoxType = {
-				#			name = "mod_text"
-				#			position = { x = 26 y = 6 }
-				#			format = center
-				#			font = "Main_16"
-				#			text = "MOD_TEXT_SUBJECTS_EXPANDED"
-				#			maxWidth = 120
-				#			maxHeight = 20
-				#			alwaystransparent = yes
-				#		}
-				#	}
-				#
-				#	windowType = {
-				#		name = "national_ideas_expanded"
-				#		position = { x = 10 y = 244 }
-				#		size = { x = 147 y = 26 }
-				#
-				#		iconType = {
-				#			name = "mod_icon"
-				#			position = { x = 0 y = 1 }
-				#			spriteType = "GFX_mod_icon_national_ideas_expanded"
-				#			scale = 0.5
-				#		}
-				#
-				#		iconType = {
-				#			name = "mod_text_bg"
-				#			position = { x = 26 y = 2 }
-				#			spriteType = "GFX_expanded_mod_family_entry_background"
-				#		}
-				#
-				#		instantTextBoxType = {
-				#			name = "mod_text"
-				#			position = { x = 26 y = 6 }
-				#			format = center
-				#			font = "Main_16"
-				#			text = "MOD_TEXT_NATIONAL_IDEAS_EXPANDED"
-				#			maxWidth = 120
-				#			maxHeight = 20
-				#			alwaystransparent = yes
-				#		}
-				#	}
-				#
-				#	windowType = {
-				#		name = "trade_goods_expanded"
-				#		position = { x = 10 y = 270 }
-				#		size = { x = 147 y = 26 }
-				#
-				#		iconType = {
-				#			name = "mod_icon"
-				#			position = { x = 0 y = 1 }
-				#			spriteType = "GFX_mod_icon_trade_goods_expanded"
-				#			scale = 0.5
-				#		}
-				#
-				#		iconType = {
-				#			name = "mod_text_bg"
-				#			position = { x = 26 y = 2 }
-				#			spriteType = "GFX_expanded_mod_family_entry_background"
-				#		}
-				#
-				#		instantTextBoxType = {
-				#			name = "mod_text"
-				#			position = { x = 26 y = 6 }
-				#			format = center
-				#			font = "Main_16"
-				#			text = "MOD_TEXT_TRADE_GOODS_EXPANDED"
-				#			maxWidth = 120
-				#			maxHeight = 20
-				#			alwaystransparent = yes
-				#		}
-				#	}
-				#
-				#	windowType = {
-				#		name = "development_expanded"
-				#		position = { x = 10 y = 296 }
-				#		size = { x = 147 y = 26 }
-				#
-				#		iconType = {
-				#			name = "mod_icon"
-				#			position = { x = 0 y = 1 }
-				#			spriteType = "GFX_mod_icon_development_expanded"
-				#			scale = 0.5
-				#		}
-				#
-				#		iconType = {
-				#			name = "mod_text_bg"
-				#			position = { x = 26 y = 2 }
-				#			spriteType = "GFX_expanded_mod_family_entry_background"
-				#		}
-				#
-				#		instantTextBoxType = {
-				#			name = "mod_text"
-				#			position = { x = 26 y = 6 }
-				#			format = center
-				#			font = "Main_16"
-				#			text = "MOD_TEXT_DEVELOPMENT_EXPANDED"
-				#			maxWidth = 120
-				#			maxHeight = 20
-				#			alwaystransparent = yes
-				#		}
-				#	}
-				#
-				#								 
-				#								 
-				#
-				#	windowType = {
-				#		name = "mercenary_companies_expanded"
-				#		position = { x = 10 y = 322 }
-				#		size = { x = 147 y = 26 }
-				#
-				#		iconType = {
-				#			name = "mod_icon"
-				#			position = { x = 0 y = 1 }
-				#			spriteType = "GFX_mod_icon_mercenary_companies_expanded"
-				#			scale = 0.5
-				#		}
-				#
-				#		iconType = {
-				#			name = "mod_text_bg"
-				#			position = { x = 26 y = 2 }
-				#			spriteType = "GFX_expanded_mod_family_entry_background"
-				#		}
-				#
-				#		instantTextBoxType = {
-				#			name = "mod_text"
-				#			position = { x = 26 y = 6 }
-				#			format = center
-				#			font = "Main_16"
-				#			text = "MOD_TEXT_MERCENARY_COMPANIES_EXPANDED"
-				#			maxWidth = 120
-				#			maxHeight = 20
-				#			alwaystransparent = yes
-				#		}
-				#	}
-				#
-				#	### Second Column of Mods
-				#	windowType = {
-				#		name = "ages_and_splendor_expanded"
-				#		position = { x = 157 y = 166 }
-				#		size = { x = 147 y = 26 }
-				#
-				#		iconType = {
-				#			name = "mod_icon"
-				#			position = { x = 0 y = 1 }
-				#			spriteType = "GFX_mod_icon_ages_and_splendor_expanded"
-				#			scale = 0.5
-				#		}
-				#
-				#		iconType = {
-				#			name = "mod_text_bg"
-				#			position = { x = 26 y = 2 }
-				#			spriteType = "GFX_expanded_mod_family_entry_background"
-				#		}
-				#
-				#		instantTextBoxType = {
-				#			name = "mod_text"
-				#			position = { x = 26 y = 6 }
-				#			format = center
-				#			font = "Main_16"
-				#			text = "MOD_TEXT_AGES_AND_SPLENDOR_EXPANDED"
-				#			maxWidth = 120
-				#			maxHeight = 20
-				#			alwaystransparent = yes
-				#		}
-				#	}
-				#
-				#
-				#	windowType = {
-				#		name = "flavour_and_events_expanded"
-				#		position = { x = 157 y = 192 }
-				#		size = { x = 147 y = 26 }
-				#
-				#		iconType = {
-				#			name = "mod_icon"
-				#			position = { x = 0 y = 1 }
-				#			spriteType = "GFX_mod_icon_flavour_and_events_expanded"
-				#			scale = 0.5
-				#		}
-				#
-				#		iconType = {
-				#			name = "mod_text_bg"
-				#			position = { x = 26 y = 2 }
-				#			spriteType = "GFX_expanded_mod_family_entry_background"
-				#		}
-				#
-				#		instantTextBoxType = {
-				#			name = "mod_text"
-				#			position = { x = 26 y = 6 }
-				#			format = center
-				#			font = "Main_16"
-				#			text = "MOD_TEXT_FLAVOUR_AND_EVENTS_EXPANDED"
-				#			maxWidth = 120
-				#			maxHeight = 20
-				#			alwaystransparent = yes
-				#		}
-				#	}
-				#
-				#	windowType = {
-				#		name = "formables_expanded"
-				#		position = { x = 157 y = 218 }
-				#		size = { x = 147 y = 26 }
-				#
-				#		iconType = {
-				#			name = "mod_icon"
-				#			position = { x = 0 y = 1 }
-				#			spriteType = "GFX_mod_icon_formables_expanded"
-				#			scale = 0.5
-				#		}
-				#
-				#		iconType = {
-				#			name = "mod_text_bg"
-				#			position = { x = 26 y = 2 }
-				#			spriteType = "GFX_expanded_mod_family_entry_background"
-				#		}
-				#
-				#		instantTextBoxType = {
-				#			name = "mod_text"
-				#			position = { x = 26 y = 6 }
-				#			format = center
-				#			font = "Main_16"
-				#			text = "MOD_TEXT_FORMABLES_EXPANDED"
-				#			maxWidth = 120
-				#			maxHeight = 20
-				#			alwaystransparent = yes
-				#		}
-				#	}
-				#
-				#	windowType = {
-				#		name = "holy_roman_empire_expanded"
-				#		position = { x = 157 y = 244 }
-				#		size = { x = 147 y = 26 }
-				#
-				#		iconType = {
-				#			name = "mod_icon"
-				#			position = { x = 0 y = 1 }
-				#			spriteType = "GFX_mod_icon_holy_roman_empire_expanded"
-				#			scale = 0.5
-				#		}
-				#
-				#		iconType = {
-				#			name = "mod_text_bg"
-				#			position = { x = 26 y = 2 }
-				#			spriteType = "GFX_expanded_mod_family_entry_background"
-				#		}
-				#
-				#		instantTextBoxType = {
-				#			name = "mod_text"
-				#			position = { x = 26 y = 6 }
-				#			format = center
-				#			font = "Main_16"
-				#			text = "MOD_TEXT_HOLY_ROMAN_EMPIRE_EXPANDED"
-				#			maxWidth = 120
-				#			maxHeight = 20
-				#			alwaystransparent = yes
-				#		}
-				#	}
-				#
-				#	windowType = {
-				#		name = "great_monuments_expanded"
-				#		position = { x = 157 y = 270 }
-				#		size = { x = 147 y = 26 }
-				#
-				#		iconType = {
-				#			name = "mod_icon"
-				#			position = { x = 0 y = 1 }
-				#			spriteType = "GFX_mod_icon_great_monuments_expanded"
-				#			scale = 0.5
-				#		}
-				#
-				#		iconType = {
-				#			name = "mod_text_bg"
-				#			position = { x = 26 y = 2 }
-				#			spriteType = "GFX_expanded_mod_family_entry_background"
-				#		}
-				#
-				#		instantTextBoxType = {
-				#			name = "mod_text"
-				#			position = { x = 26 y = 6 }
-				#			format = center
-				#			font = "Main_16"
-				#			text = "MOD_TEXT_GREAT_MONUMENTS_EXPANDED"
-				#			maxWidth = 120
-				#			maxHeight = 20
-				#			alwaystransparent = yes
-				#		}
-				#	}
-				#
-				#	windowType = {
-				#		name = "peace_treaties_expanded"
-				#		position = { x = 157 y = 296 }
-				#		size = { x = 147 y = 26 }
-				#
-				#		iconType = {
-				#			name = "mod_icon"
-				#			position = { x = 0 y = 1 }
-				#			spriteType = "GFX_mod_icon_peace_treaties_expanded"
-				#			scale = 0.5
-				#		}
-				#
-				#		iconType = {
-				#			name = "mod_text_bg"
-				#			position = { x = 26 y = 2 }
-				#			spriteType = "GFX_expanded_mod_family_entry_background"
-				#		}
-				#
-				#		instantTextBoxType = {
-				#			name = "mod_text"
-				#			position = { x = 26 y = 6 }
-				#			format = center
-				#			font = "Main_16"
-				#			text = "MOD_TEXT_PEACE_TREATIES_EXPANDED"
-				#			maxWidth = 120
-				#			maxHeight = 20
-				#			alwaystransparent = yes
-				#		}
-				#	}
-				#
-				#	windowType = {
-				#		name = "advisor_types_expanded"
-				#		position = { x = 157 y = 322 }
-				#		size = { x = 147 y = 26 }
-				#
-				#		iconType = {
-				#			name = "mod_icon"
-				#			position = { x = 0 y = 1 }
-				#			spriteType = "GFX_mod_icon_advisor_types_expanded"
-				#			scale = 0.5
-				#		}
-				#
-				#		iconType = {
-				#			name = "mod_text_bg"
-				#			position = { x = 26 y = 2 }
-				#			spriteType = "GFX_expanded_mod_family_entry_background"
-				#		}
-				#
-				#		instantTextBoxType = {
-				#			name = "mod_text"
-				#			position = { x = 26 y = 6 }
-				#			format = center
-				#			font = "Main_16"
-				#			text = "MOD_TEXT_ADVISOR_TYPES_EXPANDED"
-				#			maxWidth = 120
-				#			maxHeight = 20
-				#			alwaystransparent = yes
-				#		}
-				#	}
-				#}
-				# EXPANDED MOD FAMILY GUI END
+				
 			}
 
 			### NEW CONTENT AVAILABLE.
@@ -925,6 +477,10 @@ guiTypes = {
 					name ="version_background"
 					spriteType = "GFX_frontend_version_bg"
 					position = { x= -32 y = 20 }
+					if_resolution = {
+						max_height = 1079
+						position = { x= 10 y = 20 }
+					}
 				}
 				
 				instantTextBoxType = {
@@ -936,6 +492,10 @@ guiTypes = {
 					format = centre
 					maxWidth = 147
 					maxHeight = 20
+					if_resolution = {
+						max_height = 1079
+						position = { x = 67 y = 38 }
+					}
 				}
 
 				guiButtonType = {
@@ -1001,13 +561,6 @@ guiTypes = {
 					fixedsize = yes
 					alwaystransparent = yes
 				}
-
-				#iconType =
-				#{
-				#	name ="frontend_small_frame"
-				#	spriteType = "GFX_frontend_small_frame"
-				#	position = { x= 1240 y = 37 }
-				#}
 			}
 
 			windowType = { #SOCIAL BUTTONS
@@ -1039,47 +592,16 @@ guiTypes = {
 					}
 				}
 				
-				guiButtonType = {
-					name = "homepage_button"
-					position = { x = -38 y = 14 }
-					quadTextureSprite ="homepage"
-					
+				OverlappingElementsBoxType = {
+					name = "frontend_links"
+					position = { x = -50 y = 14 }
+					size = { x = 205 y = 64 }
+					first_on_top = yes
+					format = center
 					if_resolution = {
 						max_height = 1079
-						position = { x = -98 y = 14 }
-					}
-				}
-
-				guiButtonType = {
-					name = "forum_button"
-					position = { x = 0 y = 14 }
-					quadTextureSprite ="forum"
-					
-					if_resolution = {
-						max_height = 1079
-						position = { x = -60 y = 14 }
-					}
-				}
-
-				guiButtonType = {
-					name = "facebook_button"
-					position = { x = 36 y = 14 }
-					quadTextureSprite ="facebook"
-
-					if_resolution = {
-						max_height = 1079
-						position = { x = -24 y = 14 }
-					}
-				}
-
-				guiButtonType = {
-					name = "twitter_button"
-					position = { x = 72 y = 14 }
-					quadTextureSprite ="twitter"
-					
-					if_resolution = {
-						max_height = 1079
-						position = { x = 12 y = 14 }
+						position = { x = -123 y = 14 }
+						size = { x = 110 y = 64 }
 					}
 				}
 				
@@ -1102,17 +624,6 @@ guiTypes = {
 					if_resolution = {
 						max_height = 1079
 						position = { x = 117 y = 8 }
-					}
-				}
-				
-				iconType = {
-					name ="frontend_small_frame"
-					spriteType = "GFX_frontend_small_frame"
-					position = { x= -40 y = 12 }
-
-					if_resolution = {
-						max_height = 1079
-						position = { x= -100 y = 12 }
 					}
 				}
 			}
@@ -1694,53 +1205,6 @@ guiTypes = {
 					horizontal = 0
 					scrollbartype = "standardlistbox_slider"
 				}
-
-				
-				#guiButtonType = {
-				#	name = "newgame_tab"
-				#	position = { x = 39 y = 48 }
-				#	quadTextureSprite ="GFX_tab_small_116"
-				#	Orientation = "UPPER_LEFT"
-				#}
-				#
-				#guiButtonType = {
-				#	name = "savedgame_tab"
-				#	position = { x = 146 y = 48 }
-				#	quadTextureSprite ="GFX_tab_small_116"
-				#	Orientation = "UPPER_LEFT"
-				#}
-				#
-				#instantTextBoxType = {
-				#	name = "bookmarks_label"
-				#	position = { x = 45 y = 59 }
-				#
-				#	font = "vic_18"
-				#	borderSize = {x = 0 y = 0}
-				#	text = "FE_HISTORICAL_START"
-				#	maxWidth = 100
-				#	maxHeight = 20
-				#	fixedsize = yes
-				#	alwaystransparent = yes
-				#	Orientation = "UPPER_LEFT"
-				#	format = centre
-				#	alwaystransparent = yes
-				#}
-				#
-				#instantTextBoxType = {
-				#	name = "savedgames_label"
-				#	position = { x = 152 y = 59 }
-				#
-				#	font = "vic_18"
-				#	borderSize = {x = 0 y = 0}
-				#	text = "FE_SAVED_GAMES"
-				#	maxWidth = 100
-				#	maxHeight = 20
-				#	fixedsize = yes
-				#	alwaystransparent = yes
-				#	Orientation = "UPPER_LEFT"
-				#	format = centre
-				#	alwaystransparent = yes
-				#}
 
 				listboxType = {
 					name = "enabled_dlc_list_0"
@@ -2893,8 +2357,7 @@ guiTypes = {
 		}
 }
 
-	listboxType =
-		{
+	listboxType = {
 		name ="testbox"
 		position = { x=0 y =0}
 		backGround="SandboxFloaterBackground"
@@ -2954,8 +2417,7 @@ guiTypes = {
 			delayedTooltipText = ""
 		}
 
-		iconType =
-		{
+		iconType = {
 			name ="out_of_sync_icon"
 			spriteType = "GFX_icon_out_of_sync"
 			position = { x= -16 y = -4 }
@@ -2963,8 +2425,7 @@ guiTypes = {
 		}
 
 
-		iconType =
-		{
+		iconType = {
 			name ="status_indicator"
 			spriteType = "GFX_lobby_mp_status_indicator"
 			position = { x= 0 y = 10 }
@@ -3006,8 +2467,7 @@ guiTypes = {
 			position = { x=180 y =0}
 		}
 
-		iconType =
-		{
+		iconType = {
 			name ="is_primary_local"
 			spriteType = "GFX_coop_player"
 			position = { x= 20 y = 15 }
@@ -3048,8 +2508,7 @@ guiTypes = {
 			delayedTooltipText = ""
 		}
 
-		iconType =
-		{
+		iconType = {
 			name ="out_of_sync_icon"
 			spriteType = "GFX_icon_out_of_sync"
 			position = { x= -16 y = -4 }
@@ -3057,8 +2516,7 @@ guiTypes = {
 		}
 
 
-		iconType =
-		{
+		iconType = {
 			name ="status_indicator"
 			spriteType = "GFX_lobby_mp_status_indicator"
 			position = { x= 0 y = 10 }
@@ -3134,8 +2592,7 @@ guiTypes = {
 			delayedTooltipText = ""
 		}
 
-		iconType =
-		{
+		iconType = {
 			name ="out_of_sync_icon"
 			spriteType = "GFX_icon_out_of_sync"
 			position = { x= -16 y = -4 }
@@ -3150,8 +2607,7 @@ guiTypes = {
 #			Orientation = "UPPER_LEFT"
 #		}
 
-		iconType =
-		{
+		iconType = {
 			name ="status_indicator"
 			spriteType = "GFX_lobby_mp_status_indicator"
 			position = { x= 0 y = 10 }
@@ -3170,8 +2626,7 @@ guiTypes = {
 			truncate = yes
 		}
 
-		iconType =
-		{
+		iconType = {
 			name ="is_primary_local"
 			spriteType = "GFX_coop_player"
 			position = { x= 20 y = 15 }
@@ -3210,24 +2665,21 @@ guiTypes = {
 			delayedTooltipText = ""
 		}
 
-		iconType =
-		{
+		iconType = {
 			name ="out_of_sync_icon"
 			spriteType = "GFX_icon_out_of_sync"
 			position = { x= -16 y = -4 }
 			Orientation = "UPPER_LEFT"
 		}
 
-#		iconType =
-#		{
+#		iconType = {
 #			name ="out_of_sync_icon02"
 #			spriteType = "GFX_icon_out_of_sync"
 #			position = { x= -16 y = -4 }
 #			Orientation = "UPPER_LEFT"
 #		}
 
-		iconType =
-		{
+		iconType = {
 			name ="status_indicator"
 			spriteType = "GFX_lobby_mp_status_indicator"
 			position = { x= 0 y = 10 }

@@ -354,7 +354,8 @@ vassal = {
 ##########
 
 # Polish-Lithuania
-union = {
+dependency = {
+	subject_type = "polish_crown_PU"
 	first = POL
 	second = LIT
 	start_date = 1386.7.1
@@ -362,7 +363,8 @@ union = {
 }
 
 # Polish-Lithuania
-union = {
+dependency = {
+	subject_type = "polish_crown_PU"
 	first = POL
 	second = LIT
 	start_date = 1447.6.25

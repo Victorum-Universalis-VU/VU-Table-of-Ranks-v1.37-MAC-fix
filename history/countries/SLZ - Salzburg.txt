@@ -1,13 +1,30 @@
 government = theocracy
-add_government_reform = leading_clergy_reform
-government_rank = 2
+add_government_reform = church_of_germany_archbishopric_reform
+government_rank = 5 #Archbishopric
 #technology_group = western
 technology_group = german_tech_group
 unit_type = western
 religion = catholic
-primary_culture = bavarian
+primary_culture = austrian
+add_accepted_culture = bavarian
 capital = 76	# Salzburg
 fixed_capital = 76 # Cannot move capital away from this province & no power cost to move to it
+
+#Austrian tags
+historical_rival = AUE
+historical_rival = AUH
+historical_rival = AUT
+historical_rival = BRX
+historical_rival = BSN
+historical_rival = CR1
+historical_rival = GRZ
+historical_rival = HAB
+historical_rival = HLR
+historical_rival = SH1
+historical_rival = STY
+historical_rival = TIR
+historical_rival = TNT
+historical_rival = VOR
 
 1396.1.1 = {
 	monarch = {

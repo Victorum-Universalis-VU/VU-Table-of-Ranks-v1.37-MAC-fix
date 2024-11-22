@@ -42,7 +42,7 @@ HNS_yarmouth_market = {
 	trade_value = 5
 }
 
-HNS_skane_market = {
+HNS_skane_market_1 = {
 	trade_goods_size = 2
 }
 

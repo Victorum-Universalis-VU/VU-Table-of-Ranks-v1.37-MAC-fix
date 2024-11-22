@@ -1,6 +1,6 @@
 government = theocracy
-add_government_reform = church_of_england_reform
-government_rank = 2
+add_government_reform = church_of_england_archbishopric_reform
+government_rank = 5 #Archbishopric
 primary_culture = english
 religion = catholic
 #technology_group = western

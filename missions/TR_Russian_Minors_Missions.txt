@@ -1233,7 +1233,10 @@ vu_tr_ukrainian_minors_missions_4 = {
 			region = crimea_region
 			owner = {
 				religion_group = muslim
-				has_reform = steppe_horde
+				OR = {
+					has_reform = steppe_horde
+					has_reform = scythian_horde_reform
+				}
 			}
 		}
 		trigger = {
@@ -1244,7 +1247,10 @@ vu_tr_ukrainian_minors_missions_4 = {
 						region = crimea_region
 						owner = {
 							religion_group = muslim
-							has_reform = steppe_horde
+							OR = {
+				            	has_reform = steppe_horde
+				            	has_reform = scythian_horde_reform
+				            }
 						}
 					}
 				}

@@ -12,25 +12,10 @@ base_tax = 2				#Taxing the cavaran trade routes was primary income here, accord
 base_production = 1
 base_manpower = 1 
 is_city = yes
+
+#Claimants
+add_core = D4M
 add_core = SYR
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 1516.8.24 = {	owner = TUR
 	controller = TUR

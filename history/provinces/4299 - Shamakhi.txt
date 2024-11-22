@@ -2,6 +2,7 @@
 
 owner = SRV
 controller = SRV
+add_core = SRV
 culture = tati
 religion = shiite
 capital = "Shemakha"
@@ -11,32 +12,16 @@ base_tax = 5
 base_production = 5
 base_manpower = 3 
 is_city = yes
-add_core = SHE
-add_core = SRV
-add_core = TAT
+
+#Buildings
 fort_15th = yes #Derbent Citadel and fortress
 
+#Claimants
+add_core = R4S
+add_core = SHE
+add_core = TAT
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#Histories by SF
 1459.1.1 = { revolt_risk = 3 } # Attacked by Safavids
 1460.1.1 = { revolt_risk = 0 }
 1499.1.1 = { revolt = { type = religious_rebels size = 0 name = "Qizilbash Tribesmen" leader = "Ismail Safavid" } controller = REB }

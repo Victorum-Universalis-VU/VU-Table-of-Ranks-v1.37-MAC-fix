@@ -170,6 +170,7 @@ country_event = {
 		        castille_area = { discover_country = ROOT }
 		        toledo_area = { discover_country = ROOT }
 		        asturias_area = { discover_country = ROOT }
+				vizcaya_area = { discover_country = ROOT }
 		        leon_area = { discover_country = ROOT }
 		        alentejo_area = { discover_country = ROOT }
 		        beieras_area = { discover_country = ROOT }
@@ -298,6 +299,7 @@ country_event = {
 				castille_area = { discover_country = ROOT }
 				toledo_area = { discover_country = ROOT }
 				asturias_area = { discover_country = ROOT }
+				vizcaya_area = { discover_country = ROOT }
 				leon_area = { discover_country = ROOT }
 				alentejo_area = { discover_country = ROOT }
 				beieras_area = { discover_country = ROOT }
@@ -320,6 +322,7 @@ country_event = {
 				south_german_region = { discover_country = ROOT }
 				southern_norway_area = { discover_country = ROOT }
 				gotaland_area = { discover_country = ROOT }
+				gotland_area = { discover_country = ROOT }
 				sjaelland_area = { discover_country = ROOT }
 				kobenhavn_area = { discover_country = ROOT }
 				jutland_area = { discover_country = ROOT }
@@ -564,6 +567,7 @@ country_event = {
 				castille_area = { discover_country = ROOT }
 				toledo_area = { discover_country = ROOT }
 				asturias_area = { discover_country = ROOT }
+				vizcaya_area = { discover_country = ROOT }
 				leon_area = { discover_country = ROOT }
 				alentejo_area = { discover_country = ROOT }
 				beieras_area = { discover_country = ROOT }
@@ -586,6 +590,7 @@ country_event = {
 				south_german_region = { discover_country = ROOT }
 				southern_norway_area = { discover_country = ROOT }
 				gotaland_area = { discover_country = ROOT }
+				gotland_area = { discover_country = ROOT }
 				sjaelland_area = { discover_country = ROOT }
 				kobenhavn_area = { discover_country = ROOT }
 				jutland_area = { discover_country = ROOT }
@@ -954,6 +959,7 @@ country_event = {
 				castille_area = { discover_country = ROOT }
 				toledo_area = { discover_country = ROOT }
 				asturias_area = { discover_country = ROOT }
+				vizcaya_area = { discover_country = ROOT }
 				leon_area = { discover_country = ROOT }
 				alentejo_area = { discover_country = ROOT }
 				beieras_area = { discover_country = ROOT }
@@ -976,6 +982,7 @@ country_event = {
 				south_german_region = { discover_country = ROOT }
 				southern_norway_area = { discover_country = ROOT }
 				gotaland_area = { discover_country = ROOT }
+				gotland_area = { discover_country = ROOT }
 				sjaelland_area = { discover_country = ROOT }
 				kobenhavn_area = { discover_country = ROOT }
 				jutland_area = { discover_country = ROOT }
@@ -1108,9 +1115,12 @@ country_event = {
 				1349 = { discover_country = ROOT }
 				1613 = { discover_country = ROOT }
 				1614 = { discover_country = ROOT }
+				1784 = { discover_country = ROOT }
 				1894 = { discover_country = ROOT }
 				2419 = { discover_country = ROOT }
 				4156 = { discover_country = ROOT }
+				6305 = { discover_country = ROOT }
+				6306 = { discover_country = ROOT }
 				6361 = { discover_country = ROOT }
 				6362 = { discover_country = ROOT }
 				6363 = { discover_country = ROOT }
@@ -1360,10 +1370,7 @@ country_event = {
 				418 = { undiscover_country = ROOT }
 				446 = { undiscover_country = ROOT }
 				451 = { undiscover_country = ROOT }
-				541 = { undiscover_country = ROOT }
 				577 = { undiscover_country = ROOT }
-				2032 = { undiscover_country = ROOT }
-				2049 = { undiscover_country = ROOT }
 				4025 = { undiscover_country = ROOT }
 				4034 = { undiscover_country = ROOT }
 			}

@@ -1,5 +1,6 @@
 government = tribal
 add_government_reform = steppe_horde
+government_rank = 6 #Horde
 primary_culture = nogaybak
 religion = sunni
 technology_group = nomad_group
@@ -178,7 +179,7 @@ religious_school = hanafi_school
 }
 
 1557.1.1 = {
-	government_rank = 1
+	government_rank = 6
 }
 
 1563.1.1 = {

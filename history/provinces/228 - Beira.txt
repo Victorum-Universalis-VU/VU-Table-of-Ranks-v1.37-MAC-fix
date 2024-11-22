@@ -4,6 +4,7 @@
 
 owner = POR
 controller = POR
+add_core = POR
 culture = portugese
 religion = catholic
 capital = "Viseu"
@@ -13,17 +14,13 @@ base_tax = 4
 base_production = 4
 base_manpower = 2 
 is_city = yes
-add_core = POR
 
 #fort_15th = yes			#Portuguese forts moved around for gameplay reasons
 
 center_of_trade = 1
 
-
-
-
-
-
+#Histories
+1444.11.11 = { owner = BJA controller = BJA add_core = BJA } # Portuguese territorial lands - By San Felipe
 
 1580.8.25 = { controller = SPA }
 1580.8.26 = { controller = POR }

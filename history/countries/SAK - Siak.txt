@@ -1,5 +1,6 @@
 government = monarchy
-add_government_reform = mandala_reform
+add_government_reform = islamic_sultanate_reform
+government_rank = 6 #Sultanate
 primary_culture = sumatran
 religion = sunni
 technology_group = chinese
@@ -17,7 +18,7 @@ religious_school = shafii_school
 }
 
 1445.1.1 = {
-	government_rank = 1
+	government_rank = 6
 }
 
 1459.1.1 = {
@@ -31,7 +32,7 @@ religious_school = shafii_school
 }
 
 1471.1.1 = {
-	government_rank = 2
+	government_rank = 8
 }
 
 1489.1.1 = {

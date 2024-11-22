@@ -2,6 +2,7 @@
 
 owner = TRE
 controller = TRE
+add_core = TRE
 culture = goths
 religion = orthodox
 hre = no
@@ -11,17 +12,8 @@ trade_goods = wine
 base_manpower = 4 
 capital = "Mangup"
 is_city = yes
-add_core = TRE
+
 center_of_trade = 2
-
-
-
-
-
-
-
-
-
 
 add_permanent_province_modifier = {
     name = navalbase_modifier_2
@@ -29,8 +21,12 @@ add_permanent_province_modifier = {
 }
 
 #History completed by docRobert
-1390.1.1 = { owner = FEO controller = FEO add_core = FEO remove_core = TRE }
-
+1390.1.1 = { 
+	owner = FEO 
+	controller = FEO 
+	add_core = FEO 
+	remove_core = TRE 
+}
 1474.1.1 = { unrest = 5 } #Population on a verge of rebellion
 1475.12.10 = {
 	owner = TUR

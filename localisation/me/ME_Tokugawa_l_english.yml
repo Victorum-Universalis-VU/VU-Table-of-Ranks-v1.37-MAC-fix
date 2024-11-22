@@ -37,23 +37,38 @@
  tokugawa_the_toshogu_shrine_title: "The Toshogu Shrine"
  tokugawa_the_toshogu_shrine_desc: "Originally dedicated to Tokugawa Ieyasu, the shrine hosts the great leader's last resting place. A tomb of great excellence and breathtaking architecture, drew the faithful from all four corners of the region, just to witness and spend time in this architectural miracle."
  
+ #Custom Tooltips
  TKG_ODA_ALLIES_TT_EVENT: "If we have a marriage with §Y[ODA.GetName]§! and the §Y[ODA.GetAdjective]§! opinion of us is at least §Y75§! when completing this mission:"
  TKG_ODA_ALLIES_TT_MODIFIER: "\nOtherwise, if we own §Y[1030.GetName]§! when completing this mission:"
  TKG_RULER_IS_NOT_IEYASU_TOKUGAWA: "§YIeyasu Tokugawa§! is NOT ruling §Y[Root.GetName]§!"
+ TKG_IEYASI_TOKUGAWA_WILL_GET_LAWGIVER_PERSONALITY: "§YIeyasu Tokugawa§! gains the §YLawgiver§! personality."
+ TKG_ODA_MIGHT_BE_ANNEXED_IN_5_YEARS: "§RThis might lead to our annexation in §Y5 years§!.§W"
  
- # Modifiers:
+ #Modifiers:
  tokugawa_not_only_in_name_modifier: "Ambitions of a new Shogunate"
+ desc_tokugawa_not_only_in_name_modifier: ""
  tokugawa_the_sekisho_network_modifier: "Solution to Mikawa Bandits"
+ desc_tokugawa_the_sekisho_network_modifier: ""
  tokugawa_the_uesugi_modifier: "Terminator of a Great Clan"
+ desc_tokugawa_the_uesugi_modifier: ""
  tokugawa_march_eastwards_modifier: "Mastered the Takeda"
+ desc_tokugawa_march_eastwards_modifier: ""
  tokugawa_the_rest_of_the_east_modifier: "Flank Secured"
+ desc_tokugawa_the_rest_of_the_east_modifier: ""
  tokugawa_inabayama_fortress_modifier: "Lessons from Inabayama"
+ desc_tokugawa_inabayama_fortress_modifier: ""
  tokugawa_founding_the_metsukes_modifier: "Metsuke Agents"
+ desc_tokugawa_founding_the_metsukes_modifier: ""
  tokugawa_kyoto_modifier: "A New Era"
+ desc_tokugawa_kyoto_modifier: ""
  tokugawa_the_city_of_edo_province_modifier: "The City of Edo"
+ desc_tokugawa_the_city_of_edo_province_modifier: ""
  tokugawa_expand_the_hatamoto_modifier: "Hatamoto Retainers"
+ desc_tokugawa_expand_the_hatamoto_modifier: ""
  tokugawa_the_oda_allies_province_modifier: "The Union of Clans"
+ desc_tokugawa_the_oda_allies_province_modifier: ""
  tokugawa_the_toshogu_shrine_province_modifier: "The Toshogu Shrine"
+ desc_tokugawa_the_toshogu_shrine_province_modifier: ""
  
  # Opinion Modifiers:
  tokugawa_the_oda_allies_opinion_modifier: "The Union of Clans"
@@ -73,6 +88,4 @@
  ME_Tokugawa_Events.EVTDESC3: "Our Oda allies have failed to show themselves as anything more than a buffer state. Many of their people have decided to join us in our campaign to unify Japan."
  ME_Tokugawa_Events3.EVTOPT1: "Wonderful."
  
- TKG_IEYASI_TOKUGAWA_WILL_GET_LAWGIVER_PERSONALITY: "§YIeyasu Tokugawa§! gains the §YLawgiver§! personality."
- TKG_ODA_MIGHT_BE_ANNEXED_IN_5_YEARS: "§RThis might lead to our annexation in §Y5 years§!.§W"
  

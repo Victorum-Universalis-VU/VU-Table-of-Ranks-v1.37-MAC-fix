@@ -1,7 +1,7 @@
 #GWY - Galoway
 government = monarchy
 add_government_reform = welsh_monarchy_reform #Known as the Privy Council of Scotland based off the King's Council or curia regis
-government_rank = 2
+government_rank = 8 #High_Kingdom
 primary_culture = scottish
 add_accepted_culture = highland_scottish
 add_accepted_culture = gallgaidheil

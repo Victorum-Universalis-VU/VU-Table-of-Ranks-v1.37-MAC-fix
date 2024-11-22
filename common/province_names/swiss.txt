@@ -1,3 +1,4 @@
+132 = { "Judenburg" "Judenburg" }
 4721 = "Fribourg"
 1871 = "Valais"
 1867 = "Vaud"

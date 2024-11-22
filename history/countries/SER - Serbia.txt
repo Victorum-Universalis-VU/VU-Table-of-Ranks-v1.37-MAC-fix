@@ -9,7 +9,7 @@ historical_friend = BOS
 unit_type = eastern
 
 1389.1.1 = {
-	government_rank = 1
+	government_rank = 8 #Kingdom
 }
 
 1397.6.24 = {
@@ -38,7 +38,7 @@ unit_type = eastern
 }
 
 1402.7.1 = {
-	government_rank = 2
+	government_rank = 8
 }
 
 1427.7.20 = {

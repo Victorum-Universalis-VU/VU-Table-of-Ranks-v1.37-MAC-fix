@@ -119,6 +119,7 @@
  dtt_weigh_house_bremen_modifier: "Weigh House of Bremen"
  desc_dtt_weigh_house_bremen_modifier: ""
  dtt_cloth_guild_modifier: "Cloth-Traders Guild Hall"
+ desc_dtt_cloth_guild_modifier: ""
  dtt_reinforced_defenses_modifier: "Reinforced the City's Defenses"
  desc_dtt_reinforced_defenses_modifier: ""
  dtt_open_peasant_revolts_modifier: "Open Peasant Revolts"
@@ -132,6 +133,8 @@
  dtt_likedeeler_crews_modifier: "Likedeeler Crews"
  desc_dtt_likedeeler_crews_modifier: ""
  dtt_until_dtt_dies_desc: "Until Death"
+ dtt_open_peasant_revolts_opinion: "Damn Peasants!"
+ desc_dtt_open_peasant_revolts_opinion: ""
  
  
  
@@ -156,17 +159,8 @@
  VU_Dith_Events.5.d: "'Yeah, Sebastian, you add too much milk in your cereal, it will become soggy.'\n'Well. Priscilla, some prefer their cereal soggy, you wretched witch!' \n'Men have been beheaded for less, you blasphemer!' \nRecently our social debates have devolved into our citizens arguing about their dietary preferences! Is this a sign of a healthy society or have we grown to comfortable off our own success? Whatever the case may be, the angered individuals cry out to our glorious leader for guidance in such a heated topic of discussion!" 
  VU_Dith_Events.5.a: "Surely, milk must follow the cereal."
  VU_Dith_Events.5.b: "No,milk comes first and aplenty!"
- FU_Dith_Events.5.c: "Whatever the order, we are one people!"
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+ VU_Dith_Events.5.c: "Whatever the order, we are one people!"
+  
  #|New CB and Peace Deal Loc made by Big Boss for Flavor Universalis|#
  # I can say that because I am a jew - Q
  LIBERATE_THE_PEOPLE_WAR_NAME: "War to Liberate the People"

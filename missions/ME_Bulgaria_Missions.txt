@@ -1166,7 +1166,7 @@ bulgaria_missions_3 = {
 					NOT = { has_dlc = "Common Sense" }
 				}
 				OR = {
-					government_rank = 2
+					government_rank = 8
 					total_development = 300
 				}
 			}
@@ -1248,7 +1248,7 @@ bulgaria_missions_3 = {
 				limit = {
 					has_dlc = "Common Sense"
 				}
-				government_rank = 2
+				government_rank = 8
 			}
 			else = {
 				grown_by_development = 500
@@ -1264,7 +1264,7 @@ bulgaria_missions_3 = {
 			}
 		}
 		effect = {
-			set_government_rank = 3
+			set_government_rank = 9
 			if = {
 				limit = {
 					has_dlc = "Emperor"

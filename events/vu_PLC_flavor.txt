@@ -196,7 +196,7 @@ country_event = { # Chmielnicki's Uprising
 				change_government = monarchy
 				add_government_reform = autocracy_reform
 				adopt_reform_progress = PLC
-				set_government_rank = 1
+				set_government_rank = 6
 				add_mil_power = 50
 				add_dip_power = 50
 				add_adm_power = 50
@@ -1129,10 +1129,7 @@ country_event = { # Elective monarchy estates influence
 	is_triggered_only = yes
 	
 	trigger = {
-		OR = {
-			has_reform = elective_monarchy
-			has_reform = phoenician_elective_monarchical_republic
-		}
+		has_reform = elective_monarchy
 		OR = {
 			has_estate = estate_church
 			has_estate = estate_nobles
@@ -1207,10 +1204,7 @@ country_event = { # Estate influence from foreign ruler based on his nationality
 	is_triggered_only = yes
 	
 	trigger = {
-		OR = {
-			has_reform = elective_monarchy
-			has_reform = phoenician_elective_monarchical_republic
-		}
+		has_reform = elective_monarchy
 		OR = {
 			has_estate = estate_church
 			has_estate = estate_nobles
@@ -1252,6 +1246,7 @@ country_event = { # Estate influence from foreign ruler based on his nationality
 			has_estate = estate_magnates
 			OR = {
 				ruler_culture = russian
+				ruler_culture = muscovite
 				ruler_culture = english
 				ruler_culture = lombard
 				ruler_culture = tuscan
@@ -1616,8 +1611,8 @@ country_event = { # Secularization of Teutonic Order
 			change_tag = PRU
 			swap_non_generic_missions = yes
 			if = {
-				limit = { NOT = { government_rank = 1 } }
-				set_government_rank = 1
+				limit = { NOT = { government_rank = 6 } }
+				set_government_rank = 6
 			}
 			if = {
 				limit = {
@@ -1686,8 +1681,8 @@ country_event = { # Secularization of Teutonic Order
 			change_tag = PRU
 			swap_non_generic_missions = yes
 			if = {
-				limit = { NOT = { government_rank = 1 } }
-				set_government_rank = 1
+				limit = { NOT = { government_rank = 6 } }
+				set_government_rank = 6
 			}
 			if = {
 				limit = {

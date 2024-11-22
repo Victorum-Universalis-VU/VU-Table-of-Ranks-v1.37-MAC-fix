@@ -2,7 +2,7 @@
 
 owner = MLL
 controller = MLL
-culture = russian
+culture = muscovite
 religion = orthodox
 hre = no
 base_tax = 8

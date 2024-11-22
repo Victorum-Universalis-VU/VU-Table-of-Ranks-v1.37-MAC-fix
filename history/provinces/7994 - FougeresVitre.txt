@@ -4,7 +4,7 @@
 owner = BRI
 controller = BRI
 add_core = BRI
-culture = gallo_culture
+culture = breton
 religion = catholic
 capital = "Vitré"
 base_tax = 5
@@ -22,12 +22,6 @@ fort_15th = yes
 #Special Modifiers
 
 #Known by Technology groups
-
-
-
-
-
-
 
 #Province history completed by - Darth Modus
 

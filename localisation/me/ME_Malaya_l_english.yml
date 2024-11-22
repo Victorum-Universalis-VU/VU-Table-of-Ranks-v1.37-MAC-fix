@@ -1118,7 +1118,7 @@
  MSA_absolutely_loyal_stance: "Has taken the §YAbsolutely Loyal§! stance towards the §YChinese Expedition§!."
  MSA_restrict_trade_title: "@[Root.Country.GetTag] Restrict Trade"
  MSA_restrict_trade_title_desc: "Trade has brought forth a new era to Nusantara, an era of religion spread, where Islam is knocking down the doors of every state. We could restrict trade in order to bring an end to this."
- MSA_repeal_restrictions_title: "@[Root.Country.GetTag] Repeal Restrictions"
+ MSA_repeal_restrictions_title: "Malaya Repeals Restrictions"
  MSA_repeal_restrictions_desc: "Trade has brought forth a new era to Nusantara, an era of religion spread, where Islam is knocking down the doors of every state. We have chosen to place restrictions in order to prevent that, but is that really worthwhile?"
 
  MSA_defeat_chinese_enemies_wargoal: "Show Superiority"
@@ -1143,7 +1143,3 @@
  flavor_mlc.9.g: "We are servants of the Mandate."
  flavor_mlc.9.f: "We are the ancient Sunda!"
  flavor_mlc.9.e: "Our literary name suits us best."
-
- bendahara: "Bendahara"
- bendahara_desc: "Bendahara"
- travelling_merchant: "Travelling Merchant"

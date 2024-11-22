@@ -2,7 +2,7 @@
 
 owner = HSK
 controller = HSK
-culture = japanese
+culture = chugoku 
 religion = shinto
 capital = "Tomo"
 trade_goods = rice

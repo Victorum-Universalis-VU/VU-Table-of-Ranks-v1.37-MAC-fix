@@ -2,7 +2,7 @@
 
 owner = SMZ
 controller = SMZ
-culture = kyushuan
+culture = satsugu 
 religion = shinto
 capital = "Akao"
 trade_goods = tropical_wood

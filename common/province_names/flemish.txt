@@ -23,6 +23,7 @@
 98 = "Utrecht"
 99 = "Gelre"
 100 = "Friesland"
+132 = { "Judenburg" "Judenburg" }
 134 = "Weenn"
 168 = "Normandië"
 182 = "Vermandland"

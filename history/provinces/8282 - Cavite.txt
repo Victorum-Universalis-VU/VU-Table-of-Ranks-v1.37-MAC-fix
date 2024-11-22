@@ -14,10 +14,8 @@ base_manpower = 10
 is_city = yes
 center_of_trade = 2
 
-
-
-
-
+#Claimants
+add_core = MA1
 
 1571.1.1 = { 
     owner = SPA

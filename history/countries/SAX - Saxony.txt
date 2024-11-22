@@ -1,6 +1,6 @@
 government = monarchy
-add_government_reform = feudalism_reform #saxon_circle (is a copy of the austrian circle with their oen added twist)
-government_rank = 1
+add_government_reform = imperial_circles_reform #saxon_circle (is a copy of the austrian circle with their own added twist)
+government_rank = 6 #Imperial_Circle
 primary_culture = saxon
 add_accepted_culture = franconian
 religion = catholic
@@ -10,6 +10,7 @@ technology_group = german_tech_group
 unit_type = western
 capital = 62 # Leipzig
 
+historical_friend = SAX
 
 #Elector
 1388.1.1 = {
@@ -101,6 +102,10 @@ capital = 62 # Leipzig
 }
 #Same as Friedrich II of Thuringia
 #Dukes of Saxony
+
+1439.10.27 = {
+    historical_friend = BOH
+}
 
 1443.7.31 = {
 	heir = {

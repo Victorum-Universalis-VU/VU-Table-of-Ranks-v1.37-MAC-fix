@@ -341,6 +341,13 @@ aachen_missions_3 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			frankfurt_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 	}
 

@@ -254,6 +254,7 @@ HAN_missions_2 = {
 				area = altmark_area
 				area = anhalt_area
 				area = hesse_area
+				area = frankfurt_area
 			}
 			NOT = { owned_by = ROOT }
 		}
@@ -265,6 +266,7 @@ HAN_missions_2 = {
 					area = altmark_area
 					area = anhalt_area
 					area = hesse_area
+					area = frankfurt_area
 				}
 				value = 8
 			}
@@ -518,6 +520,16 @@ HAN_missions_3 = {
 					owned_by = ROOT
 					NOT = { fort_level = 2 }
 				}
+				AND = {
+					area = hamburg_area
+					owned_by = ROOT
+					NOT = { fort_level = 2 }
+				}
+				AND = {
+					area = lauenburg_area
+					owned_by = ROOT
+					NOT = { fort_level = 2 }
+				}
 			}
 		}
 		trigger = {
@@ -527,6 +539,14 @@ HAN_missions_3 = {
 					type = all
 				}
 				holstein_area = {
+					owned_by = ROOT
+					fort_level = 2
+				}
+				hamburg_area = {
+					owned_by = ROOT
+					fort_level = 2
+				}
+				lauenburg_area = {
 					owned_by = ROOT
 					fort_level = 2
 				}
@@ -582,7 +602,11 @@ HAN_missions_3 = {
 					add_mil_power = 50
 					random_owned_province = {
 						limit = {
-							area = holstein_area
+							OR = {
+								area = holstein_area
+								area = hamburg_area
+								area = lauenburg_area
+							}
 							fort_level = 2
 						}
 						add_province_modifier = {
@@ -807,6 +831,13 @@ HAN_missions_4 = {
 				add_permanent_claim = ROOT
 			}
 			hesse_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			frankfurt_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT }
 					NOT = { is_core = ROOT }
@@ -1132,6 +1163,7 @@ HAN_missions_5_1 = {
 				area = lower_rhineland_area
 				area = palatinate_area
 				area = hesse_area
+				area = frankfurt_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
@@ -1142,6 +1174,7 @@ HAN_missions_5_1 = {
 					area = lower_rhineland_area
 					area = palatinate_area
 					area = hesse_area
+					area = frankfurt_area
 				}
 				value = 13
 			}

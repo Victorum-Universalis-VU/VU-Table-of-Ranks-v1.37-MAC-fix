@@ -281,7 +281,7 @@
 #			custom_trigger_tooltip = {
 #				tooltip = tooltip_governement_rank_3
 #				owner = {
-#					government_rank = 3
+#					government_rank = 9
 #				}
 #			}
 #		}

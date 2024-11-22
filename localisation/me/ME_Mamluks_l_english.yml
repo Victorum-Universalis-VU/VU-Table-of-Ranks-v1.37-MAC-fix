@@ -424,9 +424,9 @@
  MAM_portugal_doesnt_exist: "§Y[Mam_mission_target.GetName]§! does not exist."
  MAM_has_won_war_against_portugal: "Has won a war against §Y[Mam_mission_target.GetName]§!."
  MAM_alternative_triggers_will_initialize_later: "§YMission Triggers§! will unlock later."
- MAM_pretender_to_ottomans_decision: "Enable the '§YPretenders to Ottomans§!' decision, allowing us to turn out Turkish Vassal into @RMM §Y[RMM.GetName]§!."
+ MAM_pretender_to_ottomans_decision: "Enable the '§YPretenders to Ottomans§!' decision, allowing us to turn out Turkish Vassal into @RUM §Y[RUM.GetName]§!."
  MAM_distribute_10_base_tax: "Distribute §G10§! Base Tax amongst our provinces with a §YTax§! building."
- MAM_our_strongest_vassal: "Our most developed §YBeylik Vassal§! will change tag to @RMM §Y[RMM.GetName]§!."
+ MAM_our_strongest_vassal: "Our most developed §YBeylik Vassal§! will change tag to @RUM §Y[RUM.GetName]§!."
  MAM_our_strongest_vassal_2: "Our most developed §YBeylik Vassal§! will inherit the rest of the §YBeylik Vassals§!."
  MAM_5_totf: "Have at least §G5.00§! Tolerance of the True Faith"
  ME_has_invited_foreign_scholar: "Has invited a Muslim §YScholar§!."
@@ -453,7 +453,7 @@
  MAM_fight_yo_civil_war: "Our goal is to reach §G75.0%§! Warscore against §Y[Root.GetEnemyCountryName]§!. At that point, we will be considered to have won the §YCivil War§!, and §Y[Root.GetEnemyCountryName]§! will be annexed."
  MAM_no_nubia_country_has_more_than_100_dev: "No country with its capital in the §YHorn of Africa§! region has at least §G100§! §YTotal Development§!."
  MAM_no_maghreb_country_has_more_than_125_dev: "No country with its capital in the §YMaghreb§! region has at least §G125§! §YTotal Development§!."
- MAM_is_not_unreformed_mamluks_trigger: "In order to form @RMM §Y[RMM.GetName]§! or @ARB §Y[ARB.GetName]§! as the §Y[Root.GetName]§! we need to go through the §YMamluk Reforms§! disaster."
+ MAM_is_not_unreformed_mamluks_trigger: "In order to form @RUM §Y[RUM.GetName]§! or @ARB §Y[ARB.GetName]§! as the §Y[Root.GetName]§! we need to go through the §YMamluk Reforms§! disaster."
  MAM_no_country_with_exploration_ideas_with_capital_in_europe: "A Country with its capital in §YEurope§! and that has taken §YExploration Ideas§! has at least as many §YLight Ships§! as we do."
  MAM_for_every_barrack: "Gain §G5.00§! §YGovernment Reform Progress§! for every province with a §YManpower§! building, for a maximum of §G100.00§! at §Y20§! provinces."
  MAM_buff_to_amirs_integration_policy: "Buff the '§Y[Root.GetNobilityOrFallbackName] Integration Policy§!' Estate Privilege, making it grant additional Diplomatic Annexation Cost: §G-5.0%§! and Liberty Desire: §G-15.0%§!"
@@ -508,12 +508,6 @@
  ME_MAM_protect_churches_tt: "§YProtected Coptic Minority§! may now appear in §YBahari§!, §YDelta§!, §YVostani§! and §YSaid§! areas. Up to 2 provinces with the modifier might convert to §YCoptic§!."
  ME_estate_dhimmi_MAM_administrators: "Copts in Administration"
  ME_estate_dhimmi_MAM_administrators_desc: "With the large influx of willing and able Coptic peoples, they would eventually start seeking higher paying roles in society. We should let them into administative roles - what's the worst that could happen?"
- 
- # ME_estate_dhimmi_MAM_to_please_the_muslim_burghers_title: "Harshen the Pact"
- # ME_estate_dhimmi_MAM_to_please_the_muslim_burghers_desc: "" #scrapped
- 
- ME_estate_nobles_MAM_oligarchy: "Mamluk Oligarchy"
- ME_estate_nobles_MAM_oligarchy_desc: "Our state is essentially ruled by an oligarchy of Mamluks, willing to impose their rule if the monarch doesn't suit them. We will need to maintain a vigilant eye on their influence, while ensuring their loyalty in order to succeed in progressing as a nation." 
  
  mam_opposition_rebels_demands: "Enforce the will of the Opposition"
  mam_opposition_rebels_demands_desc: "Abbasid Revolters seek to restore the power to the rightful Abbasid Caliphs."

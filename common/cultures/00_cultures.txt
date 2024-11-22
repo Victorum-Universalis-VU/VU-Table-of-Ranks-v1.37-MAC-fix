@@ -7,7 +7,7 @@
 # graphical_culture = westerngfx second_graphical_culture = muslimgfx (fallback if the first does not exist)
 
 #VU Corrupted encoding symbols to look out for
-#ï ½ ? ¿½ ï VUl ?? ¿ ï¿½ ï¿½'ï¿½ '
+#ï ½ ? ¿½ ï VUl ?? ¿ ï¿½ ï¿½'ï¿½ ' Ã?Â¢ ¶
 
 germanic = {
 	graphical_culture = westerngfx
@@ -62,7 +62,8 @@ germanic = {
 		Wilhelmina Wilhelmine Wilma Xenia Yasmin Yvonne Zäzilia Zäzilie Zoe
 	}
 	dynasty_names = {
-		"von Oldenburg" "von Mecklenburg" "von Hohenzollern" "von Habsburg"	"von Zweibrücken" "von Wittelsbach"
+		"von Ahaus" "von Arenberg" "von Götterswyk" "von Mörs" "von Oldenburg" "von Mecklenburg" "von Hohenzollern" 
+		"von Habsburg"	"von Zweibrücken" "von Wittelsbach"
 		"von Holstein" "von Hesse-Kassel" "von Holstein-Gottorp" "von Pfalz-Neumarkt" "von Braunschweig-Lüneburg"
 		"von Hannover" "von Wettin" "von Rügen" "von Diepholz" "von Silesia-Glogau" "von Bibra" "von Bodeck" Boeselager
 		Jaworski Brauchitsch "von Bülow" "von Calw" "von Cham" "von Steutzlingen" "von Wetterau" "von Julichgau"
@@ -110,7 +111,7 @@ germanic = {
 		"von Berlichingen" "von Beetzen" Sieghardinger "von Walbeck" "von Knorring" "von Creytzen" Sack "von Taube"
 		Wöhrmann "von Keller" "von der Mark" "von Wittelsbach" "von Baden" Rotberg "von Frankenstein" "von Taube"
 		"von Uffeln" "von Hessen" "von Boyneburg" "von Schack" "von Fabrice" "von Hardenberg" "von Welf"
-		"von Schauenburg" "von Holstein-Gottorp" Askanier "von Oldenburg"
+		"von Schauenburg" "von Holstein-Gottorp" Askanier
 	}
 
 	pommeranian = {
@@ -226,6 +227,9 @@ germanic = {
 	lower_saxon = {
         graphical_culture = westerngfx
 		primary = HAN
+		dynasty_names = {
+		    "von Bentheim"
+		}
 		male_names = {
 			Ernst Adolf Alfred August Christian Eduard Friedrich Georg Karl Philipp Maximilian Octavius Wilhelm
 			Alexander Alois Anton Bruno Clemens Denis Gerfried Gottfried GüntherHelmut Herbert Ignatz Isidor Konstantin
@@ -265,7 +269,7 @@ germanic = {
         graphical_culture = westerngfx
 		primary = SAX
 		male_names = {
-			Friedrich Albrecht Christian Heinrich Rudolf August Ernst Georg Moritz Alexander Anton Hektor Johann Karl
+			Buchard Friedrich Albrecht Christian Heinrich Rudolf August Ernst Georg Moritz Alexander Anton Hektor Johann Karl
 			Clemens Wenzel Franz Xaver Joachim Joseph Magnus Maximilian Severinus Wolfgang Andreas Bruno Burkhard
 			Günther HermannLukas Micharl Reimund Ulrich Wilfried Wolfram Konrad Edwin Marcus Osmund Peter Ralph Reginald
 			Sigehelm Wulfhelm Wulfhere Alfred Alwin Adémar Alwin Adolf Albert Albrecht Arnold Baltasar Benedict Bernd
@@ -286,7 +290,7 @@ germanic = {
 			Ulfhild
 		}
 		dynasty_names = {
-			"von Schwarzburg" "von Schönburg" "von Schlotheim" "von Salza" "von Kospoth" "von Knuth" "von Wettin"
+			"von Lintorf" "von Warberg" "von Schwarzburg" "von Schönburg" "von Schlotheim" "von Salza" "von Kospoth" "von Knuth" "von Wettin"
 			Askanier "von Hohenzollern" "von Erffa" "von Bodungen" "von Eckersberg" "von Brandenstein" "von Pappenheim"
 			"von Wiehe" "von Westernhagen" "von Jena" "von Trützschler" "von Plessen" "von Haugwitz" "von Kanitz"
 			"von Falkenhayn" "von Thüna" "von Thüringen" "von Nostitz" "von Bieberstein" "von Meerheimb" "von Freiberg"
@@ -1138,18 +1142,27 @@ germanic = {
 	franconian = {
         graphical_culture = westerngfx
 		primary = FKN
+		male_names = {
+			Georg Johann Philipp
+		}
+		dynasty_names = {
+		    "von Sayn-Homburg" "von Sayn-Wittgenstein" "von Katzenelnbogen" "von Hanau-Lichtenberg" "von Leyningen-Dagsburg" "von Wertheim"
+		}
 	}
 	#VU addition
 	eastphalian = {
 		primary = BRU
 		male_names = {
-			Ernst Adolf Alfred August Christian Eduard Friedrich Georg Karl Philipp Maximilian Octavius Wilhelm
+			Magnus Ernst Adolf Alfred August Christian Eduard Friedrich Georg Karl Philipp Maximilian Octavius Wilhelm
 			Alexander Alois Anton Bruno Clemens Denis Gerfried Gottfried GüntherHelmut Herbert Ignatz Isidor Konstantin
 			Kuno Markus Martin Oskar Reinhard Silvester Stefan Waldemar Jakob
 		}
 		female_names = {
 			Amanda Beate Debora Sara Anne Saga Sibyl Joanna Joanne Adele Adelgunde Adelheid Adolfine Agatha Agnes
 			Alexandra Alice Alina Aline Alma Alwina Alwine Amalia Amalie
+		}
+		dynasty_names = {
+		    "von Saxe-Lauenburg" "von Ziegenhain" "von Waldeck"
 		}
 	}
 	westphalian = {
@@ -1159,6 +1172,9 @@ germanic = {
 	swabian = {
         graphical_culture = westerngfx
 		primary = SWA
+		dynasty_names = {
+		    "von Hinternknabber" "von Hohenstaufen" "von Brandis"
+		}
 	}
 	bavarian = {
         graphical_culture = westerngfx
@@ -1181,7 +1197,7 @@ germanic = {
 			"von Leublfing" "von Quirnheim" Notthafft "von Ortenburg" "von Parsberg" Pfäffinger "von Pienzenau"
 			"von Pudewels" "von Raumer" "von Rehlinger" "von Reitzenstein" "von Rohr" Rotenhan "Rüdt von Collenberg"
 			"von Waldow" "von Wartenberg" "von Sandizell" "von Sinzendorf" "von der Tann" "von Tattenbach"
-			"von Thuengen" "von Thürheim" "von Thurn und Taxis" "von Toerring" "von Koenigsegg"
+			"von Thuengen" "von Thürheim" "von Thurn und Taxis" "von Toerring" "von Koenigsegg" "von Helfenstein"
 		}
 	}
 	austrian = {
@@ -1643,18 +1659,19 @@ low_franconian = {
         graphical_culture = westerngfx
 		primary = HOL
 	}
-	brabantian = {
+	brabantian = { #Belgian
         graphical_culture = westerngfx
 		primary = BRB
 	}
-	dutch_saxon = {
+	dutch_saxon = { #Dutch
         graphical_culture = westerngfx
 		primary = GRN
 	}
-	zeelandic = {
+	zeelandic = { #Dutch
+		primary = ZEE
         graphical_culture = westerngfx
 	}
-	limburgish = {
+	limburgish = { #Dutch
         graphical_culture = westerngfx
 		primary = LBG
 		male_names = {
@@ -1664,14 +1681,14 @@ low_franconian = {
 			"van Limburg" "van Leuven" "van Brabant" "van Buren" "van Aarschot" "van Loon" "van Heinsberg" "van Breda" "van Hoorn" "van Bautersheim" "van Diest" "van Wassenberg" "van Valkenburg" "van zitterd" "van geleen"
 		}
 	}
-	guelders = {
+	guelders = { #Dutch
         graphical_culture = westerngfx
 		primary = GEL
 		dynasty_names = {
 			"de Friesland" "van Egmond" "van Gelre" "van Brederode" "van Oranje" "van Bronckhorst" "von Zutphen" "van Heemskerk" "van Bergh" "van Rhenen" "van de Veluwe" "van Keppel" "Van Voorst tot Voorst" "van Montfoort" "van Wassenaer" "van Haspinga" "van Bosinchem" "van Renesse" "van Wisch" "De Graeff" "De Witte"
 		}
 	}
-	flemish = {
+	flemish = { #Belgian
         graphical_culture = westerngfx
 		primary = FLA
 			dynasty_names = {
@@ -1707,7 +1724,7 @@ low_franconian = {
 			Wila Wendelmoet Wenna Willemine Yonefij Yvonne Zoete Margaretha Rosanne Tamara
 		}
 	}
-	frisian = {
+	frisian = { #Inside the low_countries region
         graphical_culture = westerngfx
 		primary = FRI
 		male_names = {
@@ -1729,13 +1746,15 @@ low_franconian = {
 			Sirksena Syrtsema "fan Thabor" Vitringa Walles Wiarda Zelle
 		}
 	}
+	gothic_ger = {
+		primary = FEO
+	}
 	east_frisian = {
         graphical_culture = westerngfx
 		primary = EFR
 	}
 	north_frisian = {
         graphical_culture = westerngfx
-		primary = EFR
 	}
 	#Cape CR
 	afrikaner_culture = {
@@ -2581,7 +2600,7 @@ british	= {
 		"de Valois" "de Bourbon" "de la Tour" "d'Anjou" 
 		"de Lorraine" "de Foix" "de Montfort" "de Blois" "de Penthievre" "de Dreux"
 		"de Rohan" "de Bar" "d'Albert" "d'Escoubleau" "de Neufville" "de Bourgogne"
-		"de Castellane" "d'Auvergne" "de Metz" 
+		"de Castellane" "d'Auvergne" "de Metz" "de Comminges" "de Armagnac"
 		#CKII Frankish
 		"de Laval" "de la Tour du Pin" "de Broglie"
 		"de Montesquiou" "de Courtenay" "d'Harcourt" "de La Croix" "Le Tellier"
@@ -2939,6 +2958,10 @@ latin = {
 	venetian = {
         graphical_culture = latingfx
 		primary = VEN
+		dynasty_names = {
+			"Ludovico Trevisan"
+		}
+		
 	}
 	dalmatian = {
         graphical_culture = latingfx
@@ -3081,7 +3104,7 @@ latin = {
 		Patrizia Renata Ricciarda Silvana Sofia Stefania Tiziana Tomasina Valentina Violante Virginia
 	}
 	dynasty_names = {
-		"de' Medici" "di Savoia" "d'Este" Farnese Visconti Sforza Gonzaga "d'Ivrea" Orsini 
+	    "de Aleramici" "de' Borja" "d'Cantelmo" "de' Medici" "di Savoia" "d'Este" Farnese Visconti Sforza Gonzaga "d'Ivrea" Orsini "d'Armagnac"
 		Colonna Caetani Ruspoli Aldobrandini Borghese Odescalchi Serlupi Crescenzi Massimo Patrizi Naro Montoro 
 		Theodoli Senni Ricci Rocchi Datti Pietromarchi Tuccimei Mazzetti 
 		# CKII
@@ -3562,7 +3585,7 @@ iberian	= {
 		graphical_culture = latingfx
 		country = { } 
 		province = { local_has_caravel = yes local_has_galleon = yes }
-		primary = CTT #Was CAT
+		primary = CAT #Was CTT
 		dynasty_names = {
 			"d'Aragó" "de Borja" "de Luna" "d'Urgell" "Folc de Cardona"
 			#CK2
@@ -3826,7 +3849,7 @@ french = {
         graphical_culture = westerngfx
 		primary = PIC
 		dynasty_names = {
-			"de Laval" "de la Tour du Pin" "de Broglie" "de Montesquiou" "de Courtenay" "d'Harcourt" "de La Croix" "Le Tellier" "de Rochechouart" "d'Aumont" "de Vergy" "de Saboulin" "de Gramont" "de Bissy" "de Barrau" "de La Fayette" "d'Armagnac" "du Quenoy" "de Ficquelmont" "de Talleyrand" "de Saintignon" "von Luxemburg" "de Montmorency" "de Savoie" "de Vaudemont"
+			"de Laval" "de la Tour du Pin" "de Broglie" "de Montesquiou" "de Courtenay" "d'Harcourt" "de La Croix" "Le Tellier" "de Rochechouart" "d'Aumont" "de Vergy" "de Saboulin" "de Gramont" "de Bissy" "de Barrau" "de La Fayette" "d'Armagnac" "du Quenoy" "de Ficquelmont" "de Talleyrand" "de Saintignon" "de Luxembourg" "de Montmorency" "de Savoie" "de Vaudemont"
 		}
 		male_names = {
 			Adrien Aimery Alain Aldebert Alphonse Amaury Ancel Antoine Archambaud Arnaud Arnault Arnoul Aubry Aymar Baudouin Bernard Bertrand Bohemond Boson Bouchard Centule Charles Clotaire Ebbon Enguerrand Eudes Eustache Evrard Foulques Francois Gaucher Gaucelin Gauthier Geoffroi Gilbert Gilles Godefroi Guichard Guiges Guilhem Guillaume Guy Hamelin Henri Herbert Hildebert Hugues Humbert Jacques Jaspert Jean Jourdain Julien Lothaire Louis Loup Mathieu Maurice Nicolas Ogier Onfroi Orson Othon Payen Philippe Pierre Raimbaut Raoul Raymond Raynaud Renaud Richard Robert Robin Roger Rorgues Roubaud Savary Sigismond Simon Thibault Thiébaut Thierry Thomas Valeran Yves
@@ -3891,6 +3914,9 @@ french = {
 	lorraine_culture = {
 	    graphical_culture = westerngfx
 		primary = LOR
+		dynasty_names = { 
+			"de Joinville" "de Lorraine-Vaudémont" "de Alsace"
+		}
 	}
 	#VULegacy Culture
 	auvergnat_culture = {
@@ -3972,10 +3998,10 @@ french = {
 	#Franccise Françoise Gilette Jeanne Josephine Magdeline Magdelaine Marianne Marie Perrine Roze “Marie Jeanne” “Marie
 	#Jacobe” “Helen Demoiselle” “Marie Angélique” “Marie Claude” Helen Thérésa End of Perry & Cat Dad's Louisiana naming
 	dynasty_names = {
-		"de Valois" "de Bourbon" "de la Tour" "d'Anjou" 
+		"de Valois" "de Bourbon" "de la Tour" "d'Anjou" "de Valois-Burgundy"
 		"de Lorraine" "de Foix" "de Montfort" "de Blois" "de Penthievre" "de Dreux"
 		"de Rohan" "de Bar" "d'Albert" "d'Escoubleau" "de Neufville" "de Bourgogne"
-		"de Castellane" "d'Auvergne" "de Montbéliard" "de Metz" 
+		"de Castellane" "d'Auvergne" "de Montbéliard" "de Metz" "de Comminges" "de Armagnac"
 		#CKII Frankish
 		"de Laval" "de la Tour du Pin" "de La Trémoille" "de Créquy" "de Broglie"
 		"de Montesquiou" "de Courtenay" "d'Harcourt" "de La Croix" "Le Tellier"
@@ -4697,7 +4723,7 @@ west_slavic = {
 			Fryderyk Jan Henryk Ludwik Jan Krystian Jerzy Jerzy Rudolf Jerzy Wilhelm Joachim Fryderyk Krystian 
 			Jan Jerzy Jerzy Ernest August Ernest Krystian Ludwik Rudolf Wladislaw Albert Aleksander Andel 
 			Cezar Dietrich Eugeniusz Filip Hermann Joachim Krzysztof Lech Libor Markus Maurycy Radomir 
-			Václav Wilhelm Ruprecht Branko Bruno Siegfried Tomás 
+			Václav Ruprecht Branko Bruno Siegfried Tomás 
 		}
 		female_names = {
 			Heinrike Ilona Andrea Helgi Heli Helina Helju Helle Helmi Helve Hiie Hilda Hilja Hille Iiris Ille Ilme Ilona Imbi 
@@ -4782,10 +4808,10 @@ west_slavic = {
 	dynasty_names = {
 		Gryf Piast Jagiellon Wisniowiecki Sobieski Leszczynski 
 		Poniatowski Radziwill Zamoyski Potocki Lubomirski 
-		Premyslovci Podebrad Mojmirid
+		Premyslovci Podebrad Mojmirid Premyslid
 		# CKII
 		"Jankovský z Vlašimi" Chotek Lichnowsky
-		Kounic Vítkovec Zerotín Czernín "von Harrach"
+		Kounic Vítkovec Zerotín Czernín "von Harrach" "von Hohenzollern"
 	}
 	male_names = {
 		# BOHEMIAN 
@@ -4865,7 +4891,48 @@ carpathian = {
 
 east_slavic = {
 	graphical_culture = easterngfx
-	russian = { #Muscovite - Vladimir-Suzdal dialects
+	russian = { #United russian culture
+        graphical_culture = easterngfx
+		primary = RUS
+		male_names = {
+			Vasiliy Ivan Dmitriy Yuriy Andrei Semen Fyodor Afanasiy Akim Aleksandr Alexei Anatoliy Arkadiy
+			Dorofey Feodosiy Feofilakt Gavriil Innokentiy Iosif Lavrentiy Makariy Matveiy Mikhail Nazariy
+			Onisim Pavel Prokopiy Pyotr Radomir Saveliy Sergei Terentiy Valeriy Yakim Yevgeniy
+			Afanasiy Athanasius Alexandr Alexander Alexei Alexis Andrei Andrew Boris Briachislav
+			Bretislaus Nikifor
+			Daniil Daniel Davyd David Demid Dmitriy Demetrius Dobrynia Fedot Theodat Feodor Theodore
+			Gavriil Gabriel Gleb
+			Grigoriy Gregory Iakov Jacob Igor Iliya Ingvar Ingvar Ivan John Iziaslav Kirill Cyril
+			Konstantin Constantine Koz'ma Cosma Lev Leo Matfei Matthew Mikhail Michael Mitrofan
+			Mstislav Nikita Oleg Helge Pavel Paul Putiata Radoslav Rodislav Rogvolod Roman
+			Rostislav Rurik
+			Rurik Ruslan Simeon Simon Stanislav Stanislav Stepan Stephen Sudislav
+			Svetozar Sviatopolk Svatopluk Sviatoslav Sviatoslav Terentiy Trifon Vasiliy Basil Vasilko
+			Viacheslav Vladimir Vladimir Vladislav Vladislav Voislav Volodar Vseslav
+			Vsevolod Vyshata Vysheslav Yaropolk Yaroslav Jaroslav Yefimiy Yelisey Yemelyan Emil Yeremey
+			Yevstafiy Yuriy George
+		}
+		female_names = {
+			Agafya Agatha Agrafena Alexandra Anastasia Anastasia Anna Anna Boleslava Darya Dobrava
+			Dobronega Dobroslava Yefimia Euphemia Yefrosinia Euphrosyne Yekaterina Catherine
+			Yelizaveta Elisabeth Yevdokia Eudocia Yevpraxia Feodora Theodora Feodosia Theodosia
+			Fevronia Gorislava Gradislava Gremislava Irina Irene Xenia Liubava
+			Liudmila Malfrida Malusha Maria Maria Marina Olena Helen Olga Pereyaslava Praskovya Praxida
+			Prebrana Predslava Premyslava Svetlana Yuliya
+			Pribislava Rogneda Rostislava Sbyslava Sofia Sophia Sviatoslava Tatyana Ulita Ulyana
+			Varvara Vasilisa Veleslava Verkhoslava Vseslava Viacheslava Yaroslava Zabava Zvenislava
+		}
+		dynasty_names = {
+			Rurikovich Godunov Shuisky Romanov Sheremetev Golitsyn Naryshkin Khilkov Gorchakov
+			Belosselsky Chelyadnin Potyomkin Poloch Izbor Tversky Lukisky Pleskov Toropetsky Dukhovsky
+			Koroviev Woland Tyvertsky Buzhansky Slutsky Pinesky Zhytomyrsky Vynnytsky Polan Ulich Drevl
+			Lyubech Roslavsky Turov
+			Dolgorukov Gagarin Galitzine Massalski Shuysky Gantimurov Sibirsky
+			# CKII
+			Demidov Lopukhin Tolstoy "Lobanov-Rostovsky" Menshikov Obolensky
+		}
+	}
+	muscovite = { #Muscovite - Vladimir-Suzdal dialects
         graphical_culture = easterngfx
 		primary = MOS
 		male_names = {
@@ -4949,7 +5016,7 @@ east_slavic = {
 	}
 	ryazanian = { #Southern Russian Dialects
         graphical_culture = easterngfx
-		#primary = RYA          #Culture removed
+		primary = RYA          #Culture removed
 		male_names = {
 			Vasiliy Ivan Dmitriy Yuriy Andrei Semen Fyodor Afanasiy Akim Aleksandr Alexei Anatoliy Arkadiy
 			Dorofey Feodosiy Feofilakt Gavriil Innokentiy Iosif Lavrentiy Makariy Matveiy Mikhail Nazariy
@@ -5015,6 +5082,46 @@ east_slavic = {
 			Gavriila Larisa Aleksandra Alla Bronislava Svetlana Yuliya Yaroslava Vladislava Lyudmila Nadejda Rostislava
 		}
 	}
+	ruthenian = {
+        graphical_culture = easterngfx
+		primary = KIE
+		male_names = {
+			Ivan Dmitriy Yuriy Andrei Semen Boris Fyodor Oleg Afanasiy Akim Aleksandr Alexei Anatoliy Arkadiy
+			Dorofey Feodosiy Feofilakt Gavriil Innokentiy Iosif Lavrentiy Makariy Matveiy Mikhail Nazariy
+			Onisim Pavel Prokopiy Pyotr Radomir Saveliy Sergei Terentiy Valeriy Yakim Yevgeniy Yaroslav Yaropolk
+			Vyacheslav Vsevolod Igor Izyaslav Rostislav Vladimir Mstislav Gleb Roman Ryurik Svyatoslav Ingvar
+			Stanislav Daniil Nikifor
+		}
+		female_names = {
+			Gavriila Larisa Aleksandra Alla Bronislava Svetlana Yuliya Yaroslava Vladislava Lyudmila Nadejda Rostislava
+		}
+	}
+	volhynian = {
+        graphical_culture = easterngfx
+		primary = VOL
+		male_names = {
+			Ivan Dmitriy Yuriy Andrei Semen Boris Fyodor Oleg Afanasiy Akim Aleksandr Alexei Anatoliy Arkadiy
+			Dorofey Feodosiy Feofilakt Gavriil Innokentiy Iosif Lavrentiy Makariy Matveiy Mikhail Nazariy
+			Onisim Pavel Prokopiy Pyotr Radomir Saveliy Sergei Terentiy Valeriy Yakim Yevgeniy Yaroslav Yaropolk
+			Vyacheslav Vsevolod Igor Izyaslav Rostislav Vladimir Mstislav Gleb Roman Ryurik Svyatoslav Ingvar
+			Stanislav Daniil Nikifor
+		}
+		female_names = {
+			Gavriila Larisa Aleksandra Alla Bronislava Svetlana Yuliya Yaroslava Vladislava Lyudmila Nadejda Rostislava
+		}
+	}
+	polesian = {
+        graphical_culture = easterngfx
+		male_names = {
+			Andrei Lubko Olgierd Bryachislav Vasiliy Svyatoslav Vladimir Izyaslav Vseslav Boris Aleksandr Adrian
+			Afanasiy Daniil Dmitriy Dorofey Faddey Feodosiy Feofil Foma Fyodor Gavriil Grigoriy Igor Ivan
+			Mikhail Naum Nikita Nikolai Pankrati Prokhor Pyotr Radoslav Ruslan Semen Serafim Sevastian Stanislav
+			Timofeiy Varfolomeiy Vikentiy Yaroslav Mefodiy
+		}
+		female_names = {
+			Gavriila Larisa Aleksandra Alla Bronislava Svetlana Yuliya Yaroslava Vladislava Lyudmila Nadejda Rostislava
+		}
+	}
 	rusyn = {
         graphical_culture = greekgfx
 		male_names = {
@@ -5026,20 +5133,6 @@ east_slavic = {
 		}
 		female_names = {
 			Gavriila Ewa Milka Larisa Aleksandra Alla Bronislava Svetlana Yuliya Pajza Oryna Yaroslava Vladislava Lyudmila Nadejda Rostislava Zuzanna
-		}
-	}
-	ruthenian = {
-        graphical_culture = easterngfx
-		primary = UKR
-		male_names = {
-			Ivan Dmitriy Yuriy Andrei Semen Boris Fyodor Oleg Afanasiy Akim Aleksandr Alexei Anatoliy Arkadiy
-			Dorofey Feodosiy Feofilakt Gavriil Innokentiy Iosif Lavrentiy Makariy Matveiy Mikhail Nazariy
-			Onisim Pavel Prokopiy Pyotr Radomir Saveliy Sergei Terentiy Valeriy Yakim Yevgeniy Yaroslav Yaropolk
-			Vyacheslav Vsevolod Igor Izyaslav Rostislav Vladimir Mstislav Gleb Roman Ryurik Svyatoslav Ingvar
-			Stanislav Daniil Nikifor
-		}
-		female_names = {
-			Gavriila Larisa Aleksandra Alla Bronislava Svetlana Yuliya Yaroslava Vladislava Lyudmila Nadejda Rostislava
 		}
 	}
 	#East Slavic Alaska CR
@@ -5113,7 +5206,47 @@ east_slavic = {
 
 slavic = {
 	graphical_culture = easterngfx
-	russian_new = { #Muscovite - Vladimir-Suzdal dialects
+	russian_new = { #United Russian culture
+        graphical_culture = easterngfx
+		male_names = {
+			Vasiliy Ivan Dmitriy Yuriy Andrei Semen Fyodor Afanasiy Akim Aleksandr Alexei Anatoliy Arkadiy
+			Dorofey Feodosiy Feofilakt Gavriil Innokentiy Iosif Lavrentiy Makariy Matveiy Mikhail Nazariy
+			Onisim Pavel Prokopiy Pyotr Radomir Saveliy Sergei Terentiy Valeriy Yakim Yevgeniy
+			Afanasiy Athanasius Alexandr Alexander Alexei Alexis Andrei Andrew Boris Briachislav
+			Bretislaus Nikifor
+			Daniil Daniel Davyd David Demid Dmitriy Demetrius Dobrynia Fedot Theodat Feodor Theodore
+			Gavriil Gabriel Gleb
+			Grigoriy Gregory Iakov Jacob Igor Iliya Ingvar Ingvar Ivan John Iziaslav Kirill Cyril
+			Konstantin Constantine Koz'ma Cosma Lev Leo Matfei Matthew Mikhail Michael Mitrofan
+			Mstislav Nikita Oleg Helge Pavel Paul Putiata Radoslav Rodislav Rogvolod Roman
+			Rostislav Rurik
+			Rurik Ruslan Simeon Simon Stanislav Stanislav Stepan Stephen Sudislav
+			Svetozar Sviatopolk Svatopluk Sviatoslav Sviatoslav Terentiy Trifon Vasiliy Basil Vasilko
+			Viacheslav Vladimir Vladimir Vladislav Vladislav Voislav Volodar Vseslav
+			Vsevolod Vyshata Vysheslav Yaropolk Yaroslav Jaroslav Yefimiy Yelisey Yemelyan Emil Yeremey
+			Yevstafiy Yuriy George
+		}
+		female_names = {
+			Agafya Agatha Agrafena Alexandra Anastasia Anastasia Anna Anna Boleslava Darya Dobrava
+			Dobronega Dobroslava Yefimia Euphemia Yefrosinia Euphrosyne Yekaterina Catherine
+			Yelizaveta Elisabeth Yevdokia Eudocia Yevpraxia Feodora Theodora Feodosia Theodosia
+			Fevronia Gorislava Gradislava Gremislava Irina Irene Xenia Liubava
+			Liudmila Malfrida Malusha Maria Maria Marina Olena Helen Olga Pereyaslava Praskovya Praxida
+			Prebrana Predslava Premyslava Svetlana Yuliya
+			Pribislava Rogneda Rostislava Sbyslava Sofia Sophia Sviatoslava Tatyana Ulita Ulyana
+			Varvara Vasilisa Veleslava Verkhoslava Vseslava Viacheslava Yaroslava Zabava Zvenislava
+		}
+		dynasty_names = {
+			Rurikovich Godunov Shuisky Romanov Sheremetev Golitsyn Naryshkin Khilkov Gorchakov
+			Belosselsky Chelyadnin Potyomkin Poloch Izbor Tversky Lukisky Pleskov Toropetsky Dukhovsky
+			Koroviev Woland Tyvertsky Buzhansky Slutsky Pinesky Zhytomyrsky Vynnytsky Polan Ulich Drevl
+			Lyubech Roslavsky Turov
+			Dolgorukov Gagarin Galitzine Massalski Shuysky Gantimurov Sibirsky
+			# CKII
+			Demidov Lopukhin Tolstoy "Lobanov-Rostovsky" Menshikov Obolensky
+		}
+	}
+	muscovite_new = { #Muscovite - Vladimir-Suzdal dialects
 		male_names = {
 			Vasiliy Ivan Dmitriy Yuriy Andrei Semen Fyodor Afanasiy Akim Aleksandr Alexei Anatoliy Arkadiy 
 			Dorofey Feodosiy Feofilakt Gavriil Innokentiy Iosif Lavrentiy Makariy Matveiy Mikhail Nazariy 
@@ -5253,6 +5386,31 @@ slavic = {
 			Gavriila Larisa Aleksandra Alla Bronislava Svetlana Yuliya Yaroslava Vladislava Lyudmila Nadejda Rostislava
 		}
 	}
+	volhynian_new = {
+        graphical_culture = easterngfx
+		male_names = {
+			Ivan Dmitriy Yuriy Andrei Semen Boris Fyodor Oleg Afanasiy Akim Aleksandr Alexei Anatoliy Arkadiy
+			Dorofey Feodosiy Feofilakt Gavriil Innokentiy Iosif Lavrentiy Makariy Matveiy Mikhail Nazariy
+			Onisim Pavel Prokopiy Pyotr Radomir Saveliy Sergei Terentiy Valeriy Yakim Yevgeniy Yaroslav Yaropolk
+			Vyacheslav Vsevolod Igor Izyaslav Rostislav Vladimir Mstislav Gleb Roman Ryurik Svyatoslav Ingvar
+			Stanislav Daniil Nikifor
+		}
+		female_names = {
+			Gavriila Larisa Aleksandra Alla Bronislava Svetlana Yuliya Yaroslava Vladislava Lyudmila Nadejda Rostislava
+		}
+	}
+	polesian_new = {
+        graphical_culture = easterngfx
+		male_names = {
+			Andrei Lubko Olgierd Bryachislav Vasiliy Svyatoslav Vladimir Izyaslav Vseslav Boris Aleksandr Adrian
+			Afanasiy Daniil Dmitriy Dorofey Faddey Feodosiy Feofil Foma Fyodor Gavriil Grigoriy Igor Ivan
+			Mikhail Naum Nikita Nikolai Pankrati Prokhor Pyotr Radoslav Ruslan Semen Serafim Sevastian Stanislav
+			Timofeiy Varfolomeiy Vikentiy Yaroslav Mefodiy
+		}
+		female_names = {
+			Gavriila Larisa Aleksandra Alla Bronislava Svetlana Yuliya Yaroslava Vladislava Lyudmila Nadejda Rostislava
+		}
+	}
 	rusyn_new = {
 		male_names = {
 			Ivan Dmitriy Yuriy Andrei Semen Boris Fyodor Oleg Afanasiy Akim Aleksandr Alexei Anatoliy Arkadiy 
@@ -5384,7 +5542,7 @@ slavic = {
 			Tyszkiewicz Kurnatowski Taczanowski Gosiewski Opalinski
 		}
 	}
-	kashubian_new = {
+	kashubian_culture_new = {
 		male_names = {
 			August Wladyslaw Stanislaw Kazimierz Aleksander Henryk Albert Kazimierz Michal Stefan 
 			August Aleksander Karol Kazimierz Krzysztof Fryderyk Olbracht Jan Karol Patryk
@@ -5456,7 +5614,7 @@ slavic = {
 			Woski Wirt Zejler
 		}
 	}
-	polabian_new = {
+	polabian_culture_new = {
 		male_names = {
 			Awgust Alojs Abraham Albin Bogumil Bjedrich Bjarnat Cyril Derwan Fryco Frido Filip
 			Handrij Jan Jurij Jakub Jozef Joachim Korla Kito Kristalub Krescan Michal Mikolaj Mato Mercin
@@ -5588,6 +5746,47 @@ slavic = {
 		}
 		dynasty_names = {
 			"Krum" "Dulo" "Cometopuli" "Asen" "Terter" "Shishman" "Teleki"
+		}
+	}
+	russo_alaskan_new = {
+        graphical_culture = easterngfx
+		#primary = MOS
+		male_names = {
+			Vasiliy Ivan Dmitriy Yuriy Andrei Semen Fyodor Afanasiy Akim Aleksandr Alexei Anatoliy Arkadiy
+			Dorofey Feodosiy Feofilakt Gavriil Innokentiy Iosif Lavrentiy Makariy Matveiy Mikhail Nazariy
+			Onisim Pavel Prokopiy Pyotr Radomir Saveliy Sergei Terentiy Valeriy Yakim Yevgeniy
+			Afanasiy Athanasius Alexandr Alexander Alexei Alexis Andrei Andrew Boris Briachislav
+			Bretislaus Nikifor
+			Daniil Daniel Davyd David Demid Dmitriy Demetrius Dobrynia Fedot Theodat Feodor Theodore
+			Gavriil Gabriel Gleb
+			Grigoriy Gregory Iakov Jacob Igor Iliya Ingvar Ingvar Ivan John Iziaslav Kirill Cyril
+			Konstantin Constantine Koz'ma Cosma Lev Leo Matfei Matthew Mikhail Michael Mitrofan
+			Mstislav Nikita Oleg Helge Pavel Paul Putiata Radoslav Rodislav Rogvolod Roman
+			Rostislav Rurik
+			Rurik Ruslan Simeon Simon Stanislav Stanislav Stepan Stephen Sudislav
+			Svetozar Sviatopolk Svatopluk Sviatoslav Sviatoslav Terentiy Trifon Vasiliy Basil Vasilko
+			Viacheslav Vladimir Vladimir Vladislav Vladislav Voislav Volodar Vseslav
+			Vsevolod Vyshata Vysheslav Yaropolk Yaroslav Jaroslav Yefimiy Yelisey Yemelyan Emil Yeremey
+			Yevstafiy Yuriy George
+		}
+		female_names = {
+			Agafya Agatha Agrafena Alexandra Anastasia Anastasia Anna Anna Boleslava Darya Dobrava
+			Dobronega Dobroslava Yefimia Euphemia Yefrosinia Euphrosyne Yekaterina Catherine
+			Yelizaveta Elisabeth Yevdokia Eudocia Yevpraxia Feodora Theodora Feodosia Theodosia
+			Fevronia Gorislava Gradislava Gremislava Irina Irene Xenia Liubava
+			Liudmila Malfrida Malusha Maria Maria Marina Olena Helen Olga Pereyaslava Praskovya Praxida
+			Prebrana Predslava Premyslava Svetlana Yuliya
+			Pribislava Rogneda Rostislava Sbyslava Sofia Sophia Sviatoslava Tatyana Ulita Ulyana
+			Varvara Vasilisa Veleslava Verkhoslava Vseslava Viacheslava Yaroslava Zabava Zvenislava
+		}
+		dynasty_names = {
+			Rurikovich Godunov Shuisky Romanov Sheremetev Golitsyn Naryshkin Khilkov Gorchakov
+			Belosselsky Chelyadnin Potyomkin Poloch Izbor Tversky Lukisky Pleskov Toropetsky Dukhovsky
+			Koroviev Woland Tyvertsky Buzhansky Slutsky Pinesky Zhytomyrsky Vynnytsky Polan Ulich Drevl
+			Lyubech Roslavsky Turov
+			Dolgorukov Gagarin Galitzine Massalski Shuysky Gantimurov Sibirsky
+			# CKII
+			Demidov Lopukhin Tolstoy "Lobanov-Rostovsky" Menshikov Obolensky
 		}
 	}
 	dynasty_names = {
@@ -5933,11 +6132,158 @@ byzantine = {
 		graphical_culture = greekgfx
 		primary = TRE
 	}
+	cappadocian_greek = {
+		primary = TRE
+		male_names = {
+			Adrianos Akakios Alexandros Alexios Anastasios Anatolios 
+			Andreas Andronikos Anthemios Anthimos Antiokhos Antonios Apollonios 
+			Arsenios Artemios Athanasios Bardas
+			Bartholomaios Basileios Belisarios Boethios Bosporios 
+			Khristophoros Khrysanthos Khrysogonos Damianos Daniel David Demetrios 
+			Diogenes Dionysios Dorotheos Eirenaios Eudoxios Eustratios
+			Eugenios Euphemios Eusebios Eustathios Evangelos Gabriel Gennadios Georgios 
+			Gerasimos Germanos Gregoras Gregorios Hektorios Helias 
+			Herakleios Hierotheos Himerios
+			Konstantinos Pavlos Nikolaos Aineias Alexeios Ambrosios
+			Dionysos Elpidios Hektor 
+			Kastor Manouel Matthaios Nestor Nikomedes Orestes Palaimon Pelagios Petros Philemon Philippos 
+			Skantarios Stefanos Theodoros Thomas Prokopios Ioannes Iason
+		}
+		female_names = {
+			Alexandra Adriane Agathe Agne Agnes Aikaterine Alexeia Anastasia 
+			Anna Anthe Anthousa Antipatra Antonia Apollonia Athanasia Barbara Basillike
+			Chrysogone Damiane Demetra Dionysia Dorothea Aigidia Eirene Elaiodora Epiphania 
+			Eudokia Eudoxia Eugenia Eulalia Eunike Euphemia Euphrasia Euphrosyne
+			Eupraxia Eusebia Eustathia Evanthia Gabrielia Garyphallia Georgia Gregoria Helene 
+			Ioanna Ioulia Iouliana Ioustina Kale Konstantia 
+			Konstantine Kyra Kyriake Hypatia Zoe
+		}
+		dynasty_names = {
+			Kantakouzenos Doukas Komnenos Palaiologos Laskaris Angelos Phokas
+			"Kameniatis" "Chameas" "Demetrianos" "Laloudios" "Stamopatas" "Peloponnesites" "Klados" "Avastaktos" 
+			"Lardotyros" "Kyritzios" "Kolovos" "Podopagouros" "Touvakes" "Peteinakes" "Ooryphas" "Myxares" "Toxias" 
+			"Bardouchos" "Boilas" "Skepides" "Mamoulianos" "Katakylas" "Drakokephalos" "Rentakes" "Exarchos" "Skepastos" 
+			"Kyminas" "Krasas" "Konstantinakes" "Mouzelis" "Souanites" "Karteroukas" "Machairas" "Koutzodaktylos" 
+			"Kanakaris" "Vamvaloudes" "Leontares" "Klokas" "Axiotes" "Chrysouchos" "Pyrrogenes" "Kophinas" "Makroleon" 
+			"Kalopragmon" "Karphitzes" "Trichares" "Kokkalos" "Kritharatos" "Kretikos" "Tourkos" "Symvatikes" 
+			"Glykomachaires" "Chrysochoos" "Vonos" "Mystakon" "Pterotos" "Monotes" "Manginos" 
+			"Kalavros" "Sikelos" "Kilikos" "Macrodoukas" "Aineidas" 
+			"Pegonitissos" "Kastriotis" "Kamateros" "Skleros"
+			"Makrembolites" "Botaneiates" "Diogenes" "Stratiotikos" "Monomachos" "Kalaphates" 
+			"Paphlagon" "Argyros" "Kourkouas" "Lekapenos" "Karbonopsis" "Makedon" "Stryphnos" "Euforbenos" 
+			"Gabras" "Aaron" "Lampinos" "Tzimiskes" "Kurtikainos" "Murzuphlos" "Balatios" "Ouranos" "Amorios" "Armenios" 
+			"Rangabes" "Logothetes" "Isauros" "Polites" "Studites" "Skamandrenos" "Synkellos" "Kauleas" "Monocharzanios" 
+			"Kassymatas" "Nesteutes" "Scholastikos" "Chrisostomos" "Nazianzen" "Nikomedianos" "Protokletos" "Garidas" 
+			"Grammatikos" "Zeno" "Gavalas" "Axuchos" "Kamonas" "Asidenos" "Hephaistos" "Karatzas" 
+			"Amiroutzes" "Bessarion" "Callistus" "Chalkokondyles" "Gazis" "Kourtesios" "Kallistos" "Kladas" "de Patras" 
+			"Gemistus" "Allatios" "Chalcocondyles" "Korniaktos" "Damaskenos" "Eparchos" "Flanginis" "Fokás" "Heraclides" 
+			"Kallokratos" "Kottounios" "Leontaritis" "Loukanis" "Margunios" "Musurus" "Nafpliotis" "Hatzidákis" 
+			"Aprenos"  "Chortatzis" "Gabrielopoulos" "Gounaropoulos" "Belissariotis" "Konstantopoulos" "Kavallarios" 
+			"Maniakis" "Notaras" "Sgouromallis" "Epiphanis" "Logaras" "Eudaimon" "Sakellarios" "Maurozoumis" "Stylaios" 
+			"Maleinos" "Basilakios" "Mamonas" "Kekaumenos" "Metaxas" "Kanavos" "Koukouzelis" "Koresis" "Makrinos" 
+			"Lambardas" "Adrianos" "Agallon" "Akropolites" "Aoinos" "Apokaukos" "Aprenos" "Arbantenos" "Argyros" 
+			"Arianites" "Atrapes" "Balsamon" "Batatzes" "Botaneiates" "Boumbalis" "Bourtzes" "Branas" "Bryennios" 
+			"Chandrenos" "Choniates" "Choumnos" "Chrysaphes" "Chrysoloras" "Dalassenos" "Dermokaïtes" "Diasorenos" 
+			"Dokeianos" "Eirenikos" "Exazenos" "Gavras" "Glabas" "Iagaris" "Kabakes" "Kabasilas" "Kalamanos" "Kaloethes" 
+			"Kalothetos" "Kamateros" "Katrares" "Kaukadenos" "Kontostephanos" "Koresses" "Kourkouas" 
+			"Kourtikes" "Limpidares" "Machoneos" "Makrembolites" "Malakes" "Maliasenos" "Mamalis" 
+			"Mandromenos" "Manouelites" "Melachroinos" "Mourtzouphlos" "Mouzakios" "Mouzalon" "Neokaisareites" 
+			"Nestongos" "Pantechnes" "Paraspondylos" "Petraliphas" "Petzikopoulos" "Philanthropenos" "Pleustes" 
+			"Prasomales" "Prinkips" "Psellos" "Radenos" "Rossatas" "Sarantapechos" "Sebastopoulos" "Segouropoulos" 
+			"Sgouros" "Spartenos" "Sphrantzes" "Strabomytes" "Synadenos" "Syraneres" "Syropoulos" "Tagares" 
+			"Tarchaneiotes" "Tornikes" "Trichas" "Tsaphas" "Tzamplakon" "Tzykandeles" "Zaridas" "Akunin" "Abalantes" 
+			"Aboudimos" "Adralestos" "Agallianos" "Agrites" "Akapnes" "Alopos" "Alousianos" "Alyattes" "Amaseianos" 
+			"Amiropoulos" "Anatolikos" "Andreiomenos" "Androsalites" "Anemas" "Angoures" "Anthemiotes" "Antiochites" 
+			"Antiochos" "Antipapas" "Arbintenos" "Areobindenos" "Areobindos" "Argyropoulos" "Aristenos" "Artoukomites" 
+			"Arvantenos" "Attaleiates" "Aulenos" "Aulepates" "Axinites" "Axiomatikos" "Balantes" "Barbaros" "Bardales" 
+			"Barenos" "Barsakes" "Barys" "Belissariotes" "Bempetziotes" "Beriboes" "Beriotes" "Blachernites" "Blangas" 
+			"Boïlas" "Bouches" "Boutzares" "Bouzenos" "Brachamios" "Bringas" "Chaldos" "Chalkites" "Chalkoutzes" 
+			"Chamaretos" "Charsianites" "Chasanes" "Chazanes" "Choinides" "Choirosphaktes" "Chomatenos" "Chordolibas" 
+			"Choriates" "Chrouselios" "Chrousos" "Chrysanthos" "Chryselios" "Chrysobalantites" "Chrysoberges" "Chytes" 
+			"Daimones" "Dalessenos" "Dalassenos Doukas" "Dekanos" "Diabatenos" "Dikaios" "Diogenes" "Domestikopouolos" 
+			"Doxapatres" "Drakontopoulos" "Drosinos" "Drosos" "Droulenos" 
+			"Elegmites" "Enochos" "Epanokomites" "Ergodotes" "Erotikos" "Eugenianos" "Eugenios" "Eulogios" "Exotrochos" 
+			"Gabalas" "Galaton" "Gelotes" "Gidos" "Glykys" "Goudeles" "Gourzoubathenos" "Granatos" "Gribas" "Grispos" 
+			"Gymnos" "Hagiochrisophorites" "Hagioprokopites" "Hagiotheodorites" "Hagiozacharites" "Hamartolos" 
+			"Haplorabdes" "Haploucheir" "Hexakionites" "Hexaklinites" "Hexamilites" "Hierakes" "Hikanatos" "Iasites" 
+			"Iberopoulos" "Isakiotes" "Italikos" "Kaballarios" "Kabasilas" "Kaisar" "Kalameteros" "Kalamaras" 
+			"Kalampakes" "Kalognomos" "Kamytzes Komnenodoukas" "Kappadokes" "Kappadox Kalampakes" "Karabitenos" 
+			"Karabitziotes" "Karaïonatan" "Karamallos" "Karandenos" "Karantes" "Kardamopoulos" "Karenos" "Karianites" 
+			"Karkaronymos" "Karmalikes" "Karouzeiates" "Kaspax" "Kastamonites" "Katakalon" "Katakalos" "Kataphloros" 
+			"Katas" "Katharos" "Katotikos" "Katzamoundes" "Kegenes" "Kekaleimenos" "Keklymmenos" "Kemineianos" "Kenchres" 
+			"Kentenares" "Kephalas" "Keroularios" "Kibyrraiotes" "Kinnamos" "Kokkinos" "Komnenodoukas" "Konops" 
+			"Kopsenos" "Kostomyres" "Kotertzes" "Kouloukes" "Kouneres" "Krateros" "Krinites" 
+			"Kritharas" "Kritopolos" "Kyminianos" "Kynochorites" "Kyriotes" "Kyritzes" "Labouzenos" "Laktentitzes" 
+			"Lalakon" "Lampsiotes" "Lapardas" "Leichoudes" "Lependrenos" "Leukedonites" "Libadares" "Libadas" 
+			"Libellisios" "Limas" "Liparites" "Lithokastrites" "Logariastes" "Loules" "Louloukes" "Lykaon" "Machetarios" 
+			"Madrites" "Madytenos" "Makropoderes" "Maleïnos" "Maleses" "Mamalos" "Manganes" "Marachas" "Marapas" 
+			"Marchapsabos" "Marianites" "Marzapoulos" "Matzaris" "Matzas" "Matzoukes" "Maurex" "Maurokatakalos" "Mauros" 
+			"Maurozomes" "Mechos" "Megalommates" "Megenos" "Meginos" "Melias" "Melissenos" "Mermentoulos" "Mesarites" 
+			"Meschos" "Mesopotamites" "Metochites" "Metropoulos" "Mitylenaios" "Monachites" "Monokarites" "Monomachatos" 
+			"Moroiannes" "Mosaraph" "Moschos" "Mosele" "Moungos" "Mourmoures" "Moustakes" "Mozaes" "Myralides" 
+			"Myredeïtes" "Myrelaetes" "Myron" "Nabatenos" "Narbiotes" "Narsites" "Neophytos" "Neustongios" "Nikerites" 
+			"Nikoulitzes" "Noe" "Oinaiotes" "Olyntenos" "Opos" "Pagomenos" "Pakourianos" "Paktiares" 
+			"Doukas Mourtzouphlos" "Palaiotes" "Palatinos" "Pamphilos" "Panaretos" "Pankalos" 
+			"Panokomites" "Parsakoutenos" "Parthenios" "Paxenos" "Pediasimos" "Peganites" "Pegonites" "Pekoules" 
+			"Pelamedes" "Pentarkles" "Pepagomenos" "Pepanos" "Perenos" "Peribleptenos" "Phalkon" "Phialites" "Philaretos" 
+			"Philinos" "Philokales" "Phrangopolos" "Pistophilos" "Pleures" "Politopolos" "Pothos" "Probatas" 
+			"Promountenos" "Proteuon" "Ptochos" "Rentakenos" "Rizenos" "Rodios" "Rogerios" "Romaios" "Rousopoulos" 
+			"Sagopoulos" "Sarakenopoulos" "Saronites" "Sauloioannes" "Semnos" "Serblias" "Sikoundenos" "Sinopites" 
+			"Skandales" "Skanranos" "Skeblenos" "Skoutariotes" "Skribas" "Smyrnaios" "Solomon" "Sortes" 
+			"Soumenos" "Spanogregores" "Spanopoulos""Stachytzes" "Stemnitziotes"
+			"Strephnes" "Stypeiotes" "Styppes" "Synacheris" "Syros" "Taronites" "Tatikes" "Tetragonites" "Theodorokanos" 
+			"Theodosiopolites" "Thrakesios" "Thylakas" "Tilapos" "Timonites" "Tourmarchopoulos" "Traphines" "Trellos" 
+			"Triakontaphyllos" "Triblattites" "Trichinopodes" "Triphyllios" "Tzanzes" "Tzefres" "Tzetas" "Tzipoureles" 
+			"Tzirithon" "Tzoulas" "Tzoumenes" "Tzouroulles" "Tzympenos" "Vatatzes" "Xanthos" "Xenos" "Xeros" "Xiphias" 
+			"Xiphilinos" "Xylinites" "Zabareiotes" "Zagarommates" "Zerbos" "Zomes" "Zonaras" "Kalomalas" "Kaloudes" 
+			"Kampanarios" "Kamytzes" "Kallierges" "Loukites" "Kometopoulos" "Basiliakos" 
+			"Pateranos" "von Winterthur" "Paleologo" "Gregoras" "Sanudo" "Komytzes" "Lascaris" "Kyrdiniatis" "Agapetos" 
+			"Attikos" "Anastasiotis" "Evergetidiotis" "Chliarinos" "Chysovergis" "Eugeniotis" "Vorradiotis" "Mountanis" 
+			"Theotokitis" "Viticlenou" "Autoreianos" "Akoimitos" "Charitopoulos" "Panemorphiotis" "Hyakinthiotis" 
+			"Galesiotis" "Bekkos" "Kyprios" "Gonitis" "Pammakaristiotis" "Perivleptiotis" "Manganiotis" "Kalekas" 
+			"Herakleidon" "Xylaloes" "Syrikos" "Tatikios" "Aspietes" "Kastenianos" "Leovachos" "Maniatis" "Vaklikas" 
+			"Maurikios" "Skrinarios" "Mesanaktis" "Lachanodrakon" "Kalokyris" "Lykodontis" "Skyllaris" "Ampelas" 
+			"Gerontas" "Apokapis" "Pallikarios" "Orphanotrophos" "Chlorokokis" "Hexavoulis" "Martinakios" "Agelastos" 
+			"Kotzes" "Toxaras" "Aplakes" "Gomostos" "Koupharas" "Tyropoulis" "Kontomytes" "Chenopoulos" "Sellokalas" 
+			"Kentrokoukouros" "Antigonos" "Pastillas" "Katakalitzes" "Manikophagos" "Kolokynthis" "Rachites" "Bua Spatas" 
+			"Apsimaros" "Artemios"
+		}
+	}
 	goths = {
 		graphical_culture = easterngfx
 		primary = FEO
 		dynasty_names = {
 			"of Gothia"
+		}
+		male_names = {
+			Alexios Ioannes Manuel David Basileios Skantarios Andronikos Michael Georgios Aineias 
+			Aristoteles Bartholomaios Chrysanthos Diogenes Dionysos Eirenaios Elpidios Gregorios Hektor 
+			Iason Iosephos Kastor Kreon Matthaios Nestor Nikolaos Nikomedes Orestes Palaemon Pavlos 
+			Pelagios Alexandros
+			Philemon Philippos Prokopios Stefanos Theodoros Timotheos Ambrosios Petros Herakles Hermes 
+			Hippolytos Hypatios Iakobos Jacob Ignatios Ignatius Innokentios Ioannes John Ioannikios 
+			Iordanes Ioseph Joseph Isaakios Isaias Isidoros Ioulianos Julian Ioustinianos Justinian 
+			Ioustinos Justin Kaisarios Caesar
+			Kallinikos Kallistos Komitas Konstantinos Constantine Konstantios Constantius Konstas Constans 
+			Kosmas Cosmas Kyriakos Kyrillos Cyril Kyros Laurentios Laurence Lazaros Leon Leo Leontios 
+			Leontius Loukas Makarios Manuel Markos Marcus
+			Matthaios Matthew Maurikios Maximos Maximus Megistos Magnus Meletios Methodios Michael Michael 
+			Narses Neophytos Nikephoros Niketas Nikodemos Nikolaos Nicholas Niphon Orestes Pamphilios 
+			Pankratios Pantoleon Paschalis
+			Pavlos Paul Pelagios Pelagius Petros Peter Philaretos Philippos Philip Philotheos Phokas 
+			Photios Polykarpos Porphyrios Prokopios Procopius Pyrros Raphail Romanos Roman Sabas Samuel 
+			Samuel Serapion Sebastianos Sebastian Sergios Sergius Stephanos Stephen
+			Staurakios Symeon Simon Symmachos Symmachus Theocharistos Theodoros Theodore Theodosios 
+			Theodosios Theodotos Theodat Theodoulos Theoktistos Theophanes Theophilos Theophylaktos Thomas 
+			Thomas Tiberios Tiberius Traianos Trajan
+			Timotheos Tryphon Valerios Valerius Zacharias Zenobios Zenon
+		}
+		female_names = {
+			Agape Photine Sotiria Leontia Margarita Margaret Maria Maria Markia Marcia Martha Martha Melissa Melisende Nikarete 
+			Nikoletta Nonna Parthena Pavlina Paulina Pelagia Petronia Petronia Philippa Philippa Phyllis 
+			Pulcheria Pulcheria Rhodanthe Romane Romylia Sergia Sergia Sibylla Sibylla
+			Simonis Sophia Sophia Stephania Stephania Thekla Theochariste Theodora Theodora Theodosia 
+			Theodosia Theognosia Theoktiste Theophano Thomais Valeria Valeria Viviana Viviana Xene Zenobia 
 		}
 	}
 	griko = { #Italian Greeks
@@ -6104,10 +6450,10 @@ byzantine = {
 		graphical_culture = persiangfx
 	}
 	#VULegacy Culture
-	cappadocian = {
-		graphical_culture = greekgfx
-		#primary = CAP # Cappadocia is not in vanilla nor VU!
-	}
+	#cappadocian = {
+	#	graphical_culture = greekgfx
+	#	#primary = CAP # Cappadocia is not in vanilla nor VU!
+	#}
 	#VULegacy Culture
 	cypriot = {
 		graphical_culture = greekgfx
@@ -6479,7 +6825,7 @@ turko_semitic = { #Levantine -Darth Modus changed to Arabic
         graphical_culture = muslimgfx
 		primary = NAJ
 		dynasty_names = {
-			Saud Rasulid Tahiride Jabrid "al-Qasimi"
+			Saud Rasulid Tahiride Jabrid "al-Qasimi" "al-Munajis"
 			Nabhani Yaruba "al-Said" Usfurid Jarwanid Hashim
 		}
 		male_names = {
@@ -6492,6 +6838,45 @@ turko_semitic = { #Levantine -Darth Modus changed to Arabic
 			Nasr Nizam Qawurd Ramadan Sa'daddin Sadiq Sami Samir Shaiban
 			Shamir Shujah Sulayman Solomon Talib Ubayd Uways Yahya Yahya Ya'qub Jacob Youkhanna John Yusuf
 			Joseph Zeyd
+		}
+		female_names = {
+			Nadiyya Adila Amsha Asiya Faghira Habiba Hanifa Jahaira Kamala Layla Maryam Nafisa Nyawela Parand
+			Parween Paymaneh Paywand Qamara Rafiqa Rasa Rashida Reshawna
+			Saaman Sabba Saghar Sahba Sajida Samira Semeah Setara Shahrbano Shahzadah Shameem Shararah
+			Sheeftah Sheeva Shogofa Shokouh Shola Sholah Simin Souzan
+			Taliba Tanaz Taneen Yagana Yakta Yasmin Zaynab
+		}
+	}
+
+	gargnomic_arabic = {
+        graphical_culture = muslimgfx
+		primary = GAG
+		dynasty_names = {
+			Munajis "al-Munajis" "Ghayr Munkar" Rahib Kabih Alhimar Alfara Jalaad Alfatih "Musasat mub" Ridfilar Bushwakir "Iieadat Hizam" 
+			"Babaghat al Julud" "el-Snackbar Vendor" "al-Sanab" "al-Sodus" "al-Sakhif" "al-Don" "al-Ibn" "al-Nuffsaid" "von Hoe" "von Tinbag" "von Bergerbus" 
+			"von Jubn" "von Lovindorf" "the Cheese" "the Skint" "the Cheap" "Cheap side" "Defiler" "Cheeky Monkey" "von Palpatine" "von Paypal"
+			"von Hoehenzollern" "the Goat" "el-Taco" "el-Competente" "de Trashtemara" "de Bygonne" "the Speedy" "el Rapido" Durmiente 
+			"Ala Ciesta" "El Cansado" "the Regenerate" "the Spawner" "The Magnificent" "the Insidious" "Phalic Smasher" "Poo Stomper" "Turd Reaper" 
+			"The Mocker" "the Offensive" "the Prostelyser" "the Mimic" Apostate "Gargons Prostate" "Apple Thrower" "Egg Boiler" "Egg Thrower" 
+			"Preserver of Chickens" "Lemon Farmer" "Gargon the Juicer" "the Chosen" "the Melificent" "Re-filer" "the Engineer" "the Scientist" 
+			"the Doctor" "the Nurse" "the Undertaker" "the lost friend"	"the Harbinger" "Bringer of Goodnews" "Bringer of Doom" "the Shipbuilder" 
+			"the Destroyer" "Sapper of Dreams" "Killer of Fates" "the Giver & Taker" "the Banker" "the Painter" "the Alcoholic" "the Joker" 
+			"the Puller of Legs" "Lover of Democracy" "the Imperial" "the Marksman" "the Melevolent" "the Benevolent" "the Mooner" "the Clapper" 
+			"the Incinerator" "the Bin Man" "the Arch-Cultist" "the Supreme Leader" "the Creamer" "Falaffel Enjoyer" "the Doner Turner" "the Gyroscope Maker"
+			"the Dominator" "the Dugeon Keeper" "the Slayer" "the Player" "the Greatest" "Miakalifa's Daddy" "the Naughty" "the Terrifying" "the Indestructible" 
+			"the Infinite" "the God Particle" "the Climber" "the Atomsmasher" "Stalinium Inventor" "of Project Staleen" "Leneen's Inspiration" "Tzar's Bane"
+			"Bane of Thoror" "Prince of Darkness" "Prince of Pleasure" "eater of Bats" "the Lab Technician" "Lord of all Deities" "God of Gods" "God of Food" 
+			"Bringer of Rain" "God of Suffering" "God of Misfits" "God of Checanery" "God of Artists" "Lord of Artism" "Bringer Curses" "the Plumber"
+			"the Thunderer" "the Lightning Bolt Thrower" "the Impressive" "the Henthai-Novelist" "the Scandalous" "Wench Slayer"
+			"Lover of Wencheslaus" "the Laser Show" "the Unfiler" "the Tax Collector" "the IRS Agent" "the IRS Founder" "the Tith Enjoyer" "the Relic forgetter"
+			"the Avenger" "the Revenger" "the Tax lad" "the Bully" "the Infamous" "the Hoarder" "Lord of Crows" "the Unsmither" "the Skill de-Niler"
+            "the Perpetrader" "the Brewer" "God of Dwarves" "the Nutcracker" "the Fister" "the Scroatifyer"	"the d'Sleever"	"Inventor of Deeznutz"
+            "the Desparager" "the Accurate" "the Canoneer" "the Missile Launcher" "the Boyant" "the Conjurer" "the Trickster"			
+		}
+		male_names = {
+			Gargon Palpatine Enrique Palps Pope Gargonette Sargonette Aargon Aargonette Sargon Jargon "Gardeen-hoe" Sharoon Kareen Gargonious Gargonious Talilbaba Almuqatar "Jarijun Aleazim" Jarijun
+			"Gargon ibn Jarijun" "Gargon ibn-Don" "Gargon ibn-Modus" "Gargon ibn-Pru" Alshaykh "Jarijun al'akbar" Nnargon "Gargon al-Habibi" "Mosaab" 
+			"Falafel al-XP" "Gargon al-Babbi" "Gargnome al-Mufsid" "Gargnome al-Nuffsaid" "Palpa-Rhinate"
 		}
 		female_names = {
 			Nadiyya Adila Amsha Asiya Faghira Habiba Hanifa Jahaira Kamala Layla Maryam Nafisa Nyawela Parand
@@ -6604,9 +6989,9 @@ turko_semitic = { #Levantine -Darth Modus changed to Arabic
 		}
 	}
 	#VULegacy Culture
-	tungur_culture = {
+	tunjur = {
 		graphical_culture = africangfx
-		primary = TUG			#Tungur tag
+		primary = TUG			#Tunjur tag
 		dynasty_names = {
 			Saud Rasulid Tahiride Jabrid "al-Qasimi"
 			Nabhani Yaruba "al-Said" Usfurid Jarwanid Hashim
@@ -11501,7 +11886,7 @@ japanese_g = {
 			Yuuka Yuuki Yuuko Yuuna Yuzuki
 		}
 	}
-	japanese = { #Shikoku
+	shikoku = {
 	    province = { local_has_samurai = yes }
 		#primary = NA
 		dynasty_names = {
@@ -11662,7 +12047,7 @@ japanese_g = {
 			Yuuka Yuuki Yuuko Yuuna Yuzuki
 		}
 	}
-	vu_ryukyuan = { 
+	vu_ryukyuan = { #Okinawa
 	    province = { local_has_samurai = yes }
 		#primary = NA
 		dynasty_names = {
@@ -11743,9 +12128,36 @@ japanese_g = {
 			Yuuka Yuuki Yuuko Yuuna Yuzuki
 		}
 	}
-	satsugu = { #Hichiku
+	satsugu = { 
 	    province = { local_has_samurai = yes }
 		#primary = NA
+		dynasty_names = {
+			Yamato Arisugawa Asaka Fushimi "Kan'in" Katsura Kaya Kitashirakawa
+			Kuni Nashimoto Takeda Yamashina
+		}
+		male_names = {
+			Motohito Mihito Hikohito Fusahito Katsuhito Tomohito Michihito Kazuhito Kotohito Okiko Tsuguhito Nagahito
+			Satohito Asahito Toshiko Yasuhito Teruhito Hidehito Morohito Ayahito Takauji Yoshiakira Yoshimitsu
+			Yoshimochi Yoshikazu Yoshinori Yoshikatsu Yoshimasa Yoshihisa Yoshitane Yoshizumi Yoshiharu Yoshiteru
+			Yoshihide Yoshiaki Nobutada Hidenobu Hideyoshi Hideyori Ieyasu Hidetada Iemitsu Ietsuna Tsunayoshi Ienobu
+			Ietsugu Yoshimune Ieshige Ieharu Ienari Ieyoshi Iesada Iemochi Yoshinobu
+		}
+		female_names = {
+			Toku Sen Tama Aya Ina Kumiko Ai Aiko Aimi Aina Airi Akane Akemi Aki Akiko Akira Ami Aoi Asuka Atsuko Aya Ayaka
+			Ayako Ayame Ayane Ayano Chika Chikako Chinatsu Chiyo Chiyoko Cho Chou Chouko Emi Etsuko Hana Hanae Hanako Haru
+			Haruka Haruko Haruna Hikari Hikaru Hina Hinata Hiroko Hitomi Honoka Hoshi Hoshiko Hotaru Izumi Junko Kaede
+			Kanon Kaori Kaoru Kasumi Kazue Kazuko Keiko Kiku Kiyoko Kohaku Koharu Kokoro Kotone Kumiko Kyo Kyou Mai Makoto
+			Mami Manami Mao Mariko Masami Masuyo Mayu Megumi Mei Michi Michiko Midori Mika Miki Miku Minako Minato Mio
+			Misaki Mitsuko Miu Miyako Miyu Mizuki Moe Momoka Momoko Moriko Nana Nanami Naoko Naomi Natsuki Natsuko Natsumi
+			Noa Noriko Ran Rei Ren Riko Rin Rina Rio Sachiko Saki Sakura Sakurako Satomi Sayuri Setsuko Shinju Shinobu
+			Shiori Shizuka Shun Sora Sumiko Suzu Suzume Takako Takara Tamiko Tomiko Tomoko Tomomi Tsubaki Tsubame Tsubasa
+			Tsukiko Ume Umeko Wakana Yasu Yoko Yoshi Yoshiko Youko Yua Yui Yuina Yuki Yukiko Yuko Yumi Yumiko Yuri Yuu
+			Yuuka Yuuki Yuuko Yuuna Yuzuki
+		}
+	}
+	japanese = { #Standard Japanese
+	    province = { local_has_samurai = yes }
+		primary = JAP
 		dynasty_names = {
 			Yamato Arisugawa Asaka Fushimi "Kan'in" Katsura Kaya Kitashirakawa
 			Kuni Nashimoto Takeda Yamashina
@@ -12032,7 +12444,7 @@ filipino_i = {
 			Amihan Amparo Bituin Danika Donato Eman Erlat Jaya Kirana Ligaya Liwanag Liwayway Lualhati Mahal Marikit Maylin Midori Qadan Qamra Sarki Shawdi Taite Thuraya Ujana Ulan Ulani Umay Umi Umika Unna Ura Uyen Zabby
 		}
 		dynasty_names = {
-			Datoon Panindagat Abacan Abaday Abao Abat Abaya Abayari Abeya Abiad Abinsay Ablang Ablasa Abuan Abucajo Abut Abuyen Aclan Acob Acolola Acop Acpal Acupan Adapon Aday Agbay Agumabay Agunod Agup Akut Alambat Alao Alasaas "Alay-ay" Albalos Alcaparlas Alday Alderite Alibin Alicbusan Aligmayo Alikpala Aliling Alimboyugen Alimurung Alipio Alnas Alonto Alpay Alujipan Alumisin Alupay Amaba Amahit Amaming Ambagan Ambat Ambayon Amboy Ambulo Amicay Amiling Amit Ammog Ampalayon Ampang Ampong Amulong Amurao Ancaya Andal Andaya Angobung Angus Aniag Aningalan Annala Antalan Anub Apanapao Apanay Apdal Apelin Apigo Apili Aplaon Apoga Apoian Aporongao Arao Arauag Aro Aromin Arong Asoy Aswit Ato Auza Ayran Ayuman Ayuyao "Ba-ad" Baal Babingao Bables Baboyan Bacad Bacani Bacay Bacaycay Baclao Baclayan Baclig Bacolor Bacotot Bactad Bacunawa Badabgio Badar Baddas Bael Bagadiong Bagain Bagala Bagalayos Bagaman Bagang Bagarinao Bagasbas Bagongarao Bagoyo Bagsit Bague Bahena Baisac Baitan Baje Bakaranis Balaba Balabagan Balabis Balaga Balamut Balana Balanga Balangatan Balanon Balantakbo Balaoing Balaraw Balason Balata Balatazo Balatbat Balatibat Balatico Balbiran Balgos Baliao Baligad Baliling Balimbin Balino Balisacan Balondo Baluran Balweg Banaria Banasan Banasihan Banaticla Bandigas Bandol Bandong Bangachon Bangad Bangayan Banghulot Bangit Bangwa Banico "Banigo-os" Baniqued Banlaygas Bantegui Bantilan Banting Banua Baqui Baradi Barangan Baraoidan Baratang Bariring Barlaan Barongan Barutan Basibas Basig Basingat Basingit Baste Basubas Bataclan Batenga Bathan Batin Batingan Batoctoy Batong Batoon Battad Battong Battung Batuyong Bauan Bawalan Baya Bayan Baylon Bayna Bayog Bayot Bayquen Baysac Bayudan Bayuga Becbec Belano Beligan Belite Benipayo Biabas Bigalbal Binaday Binayas Binlot Binotapa Binsol Bio Bitagon Blas Bocalig Bocasan Bolisay Boljoon Bonalong Boncan Bongolan Bongot Bongubung Bonoano Botengan Braza Buban Bucaneg Bucat Bucay Bucsit Bugaoisan Bugas Bugayong Bugnosen Buhain Bulahan Bulala Bulanan Bulanon Bulaoat Bulaon Bulaong Bulatao Bulawan Bulayo Buli Bulseco Bulusan Bumacod Bumagat Bumanglag Bunac Bundoc Bungcayao Bunsoy Buntua Buractaon Butalid Butic Butigan Butiu Caabay Cabacungan Cabading Cabael Cabahug Cabanag Cabanatan Cabanayan Cabanday Cabangbang Cabanit Cabansag Cabanting Cabasaan Cabasagan Cabasug Cabatana Cabatic Cabatingan Cabatu Cabatuando Cabatungan Cabauatan Cabaya Cabe Cabebe Cabeguin Cabigao Cabigas Cabigting Cabilan Cabili Cabochan Cabuang Cabuchao Cabudol "Cabug-as" Cabuhat Cabulda Cabungcal Cabunoc Cabuquit Cabututan Cacab Cacal Cacalda Cacanindin Cacapit Cacpal Caculitan Cadang Caday Cadisal Cadlaon Cadwising Cagaanan Cagacan Cagadas Cagadoc Cagalawan Cagampang Cagaoanan Cagaoas Cagasan Cagatao Cagauan Cagayan Cagayat Cagiwa Cagonot Caguingin Cagungon Cahimat Caindoc Cainghug Cainglit Calalo Calambacal Calangan Calanoc Calanoy Calibuso Calica Calicdan Caligtan Calilan Calilung Calimag Calimbas Calimlim Calinao Calip "Caliw-caliw" Callangan Callueng Calo Calonge Calpito Caluag Calubaquib Calubayan Caluncagin Calupid Calupig Caluya Camagay Camanag Cambas Cambay Camiling Camurungan Candao Canilao Caniya Canlas Canoy Canumay Canwaring Caparas Capati Capoy Capuyan Caraan Caragay Carandang Carangal Caranguian Carao Carasig Carating Carayoan Cariaso Carungay Carungcong Carungi Carunungan Casiano Casibang Casim Casuga Casumbal Casupang Catanyag Catapang Cataran Catbagan Catibog Catindig Catotocan Catubay Catubig Catubo Caunin Cawad Cawilan Cayangho Cayanoc Caylo Cayongcong Cayron Cayton Codog Colcol "Col-long" Conlu Conol Copon Corong Cosalan Cubacub Cudiamat Culala Culanag Culaton Cumti Cupino Curameng Cusi Cuyos Daan Daang Dabao Dabu Dacalcap Dacay Dacion Dacumos Dacuno Dacuycuy Dagohoy Dagsaan Dagsi Daguhay Daguio Dagupion Dahilig Dahiug Dailo Dalangpan Dalaque Dalida Dalig Dalit Dalog Dalugdugan Dalupan Damilo Damo Danao Danda Dandin Dandoy Dangkulos Dangoy Dangtayan Danguilan Dangwa Daoang Daog Daomilas Daos Dapat Dapayan Daquil Daranciang Datahan Datangel Dato Datoc Datuin Datumanong Dauz Dawa Dawi Dawis Dayag Dayanan Dayao Dayoan Dayot Dayunot Deang Decolongon Deen Delasin Diano Diapo Dicang Digamon Digol Dikitanan Dimaampao Dimaandal Dimaguila Dimanlig Dimapilis Dimapindan Dimaporo Dimaranan Dimasuhid Dimaya Dimayacyac Dingal Dinolang Dinopol Docuyanan Dolap Dolera Domantay Domogan Domugho Domulot Doneio Dopale Doplon Dorilag Dornogan Dua Dualan Dualos Ducduc Ducisin Duco Ducut Dugay Duhaylungsod Dulag Dulay Dulaypan Duldulao Dumadag Dumag Dumagpi Dumalag Dumalog Dumalot Dumalus "Duma-og" Dumaran Dumaslan Dumaual Dumayag Dumayas Dumdum Dumlaon Dumo Dumondon Dumpay Duna Dungca Dupaya Dupim Duyan Elbo Estigoy Fangonil "Fiag-oy" Gaane Gabato Gabayan Gabuat Gacungan Gacutan Gacuya Gador Gagalac Gagpud Galam Galamgam Galapon Galauran Galay Gali Galima Galit Gamata Gamelon Gamit Gamol Gampon Ganaban Ganaden Gangan Gannod Ganutan Gaoiran Gapasin Garayblas Garong Garvida Gatbonton Gatchalian Gatdula Gatmaitan Gatnaytan Gatpolintan Gauam Gayagay Ginubatan Godoy Gombat Gonong Gonowon Guani Guanlao Guawaran Guiang Guieb Guihama Guilaran Guipit Gulapa Gumapas Gumatay Gumato Gumihid Gumila Gumintong Gumiran Gungab Gunigundo Gusilatar Gutang Gutilban Habalo Hadap Halum Hanopol Haparam Hapayhari Hicban Hinayon Homoroc Hubag Ibay Ibuna Ibuos Ibus Icat Icban Iguban Ilanan Ilog Ilumin Imbo Inabayan Inclan Inda Inding Iniba Intatano Inton Iporong Irong Itchon Itliong Iyog Jabol Jaca Jacang Jacutan Jacutin Jain Jalbuna Jamo Jamorabon Janabajab Jandoc Jayan Juagdan Juco Juico Jumat Jumawan Jungao Kabahit Kabaong Kabayao Kaimo Kalalo Kalanduyan Kalingasan Karingal Kasilag Katalbas Katindig Kayanan Killip Labao Labay Labayen Labtik Labuanan Labuga Labuguen Lacaden Lacandile Lacandola Lacanglacang Lacbawan Lacdan Lacdao Laconsay Lacsamana Lactaoen Lagadi Lagana Lagandaon Lagang Laganson Lagasca Lagbas Lagdameo Laglagaron Lagmay Lago Lagos Lagunsad Lagustan Laig Laing Lakandula Laksa Lalangan Lalu Lamangan Lamayan Lampitoc Lancoan Langkin Lansang Lansigan Lantin Lapak Lapid Lapitan Lappay Lapuz Laranang Laraya Lasam Laygo Layno Layog Layosa Layugan Layumas Lesaca Leyran Libed Libina Libiran Liboon Libunao Licaycay Liclican Lico Licuanan Ligon Ligot Ligutan Lihat Lima Lindawan Lindog Lingao Linsangan Lising Liwag Loglog Lombos Lomboy Lomibao Lomuntad Longid Lontoc Lota Lucagbo "Lucay-lucay" Lucban Lucena Luczon Lugami Lugmao Lugtu Lumaban Lumagbas Lumahan Lumain Lumala Lumanga Lumanog Lumawig Lumbad Lumbang Lumibaw Lumiqued Lumontad Lumungsod Lumunsad Lupitan Luspo Luyaben Luyun Luzon Maambo Maambong Mabalay Mabalot Mabaquiao Mabasa Mabborang Macablo Macadangal Macadangdang Macagba Macahilig Macairan Macalagay Macalalad Macalalag Macalam Macale Macalguim Macalincag Macalindong Macalisang Macaloso Macalug Macanas Macandog Macanip Macapinlac Macapobre Macapugay Macapulay Macaraat Macaroy Macasa Macasero Macasieb Macatanban Macatumpag Macauyag Macawili Maclang Macmang Macorol Mactal Madijanon Madlangawa Maduli Madwen Maga Magadap Magadya Magahis Magalona Magalued Maganto Magaoay Magarin Magaso Magayaga Magbag Magbanua Magbitang Magbojos Magboo Magcawas Magdadarao Magdaluyo Magdamo Magdato Magday Maggay Maghirang Maglacas Maglalang Maglasang Magpale Magpili Magplaya Magpoc Magpusao Magsadia Magsalin Magsanoc Magsayo Magtalas Magtubo Maguddayo Maharais Mahinay Maigue Maitem Majul Makayan Makil Makinano Malabanan Malabed Malabuyo Malacad Malaggay Malalis Malaluan Malana Malang Malapira Malapit Malapitan Malayang Malbog Malibiran Malig Malijan Malilay Malimba Malimban Malipot Maliwat Mallabo Mallilin Malpaya Mamaril Mamisao Mamot Mamuad Manacsa Managbanag Managuelod Manalang Manalansan Manalastas Manaligod Manaloto Manangan Manapol Manarang Manarin Manasas Manawis Manayan Mandap Mandilag Manegdeg Mangabang Mangabat Mangaliman Mangalindan Mangalino Mangalus Mangampat Manganip Manganon Mangaser Mangaya Mangayagam Mangayo Mangiliman Mangkay Manglapus Manglaya Manglicmot Manglona Mangoba Mangonon Mangosin Mangrobang Mangtalan Manguiat Manguinao Manguino Mangulabnan "Mang-usans" Maniago Manibo Manibusan Manicad Manilag Maninay Maningding Manipula Maniquis Manlansing Manliclic Manlongat Manlutac Manongdo Manoto Manotoc Manrobang Mantaring Manubay Manuntag Manuyong Mappala Maraan Marahan Maralit Maranan Maranon Marasigan Marayag Marigomon Marucut Masaganda Masibay Masungsong Mataac Matalam Matibag Mationg Matito Matulac Matundan Maybanting Maybituin Mayoyo Mingoc Moguet Momongan Mongaya Motos Mugol Munsayac Musngi Musni Muyot Nabua Nacapuy Nacpil Naguiat Naguit Nakpawan Nanquil Napalan Napuli Narag Naui Navalta Nepomuceno Ngaya Ngujo Nicdao Niguidula Nimo Nipay Nisnisan Nogoy Nuguid Nunag Oasay Ogtong Okala Olala Olalia Omaga Omipon Ongkapin Ontoy Ople Oppus Orang Orara Orayani Orenia Orig Orines Ouano Paa Paat Pabualan Pabulayan Pabustan Pacana Pacas Pacatang Pacpaco Pacquing Pacubas Paculan Pacut Padagas Padamada Padoan Padunan Padungaw Paeca Paet Pagaduan Pagalilauan Pagampao Pagao Pagaoa Pagdanganan Pagdilao Pagilagan Pagliaro Paglingayen Pagniligan Pagsanghan Pagsibigan Pagtakhan Paguio Pagulayan Paguyo Pahate Palacay Palad Palag Palaganas Palangan Palangdao Palapal Palapala Palapus Palec Paling Palisoc Pallasa Paludipan Palugod Palumbarit Pamandanan Pamatong Pambid Pamintuan Pamon Panaguinto Panay Pandy Pangalanan Pangdan Panis Panlao Panlaqui Panlasigui Panoringan Pansoy Pantig Panuncialonan Panuyas Parangalan Paraoan Parawan Parotong Parpana Parungao Pasahol Pasaoa Pasayan Pasicolan Pasking Pasquil Patalinhug Patao Pataray Patawaran Patoc Patubo Paurom Payaoan Payawal Payomo "Payong-ayong" Payot Payoyot Payuyao Pedlaoan Pedronan Penano Pendatum Pesigan Pespes Pila Pilande Pili Piluden Pinga Pingkian Pingol Pinlac Pintac "Pit-og" Pitpit Poblete Pogoy Polangcus Polilen Polotan Poquis Poyaoan Puldulao Pulsungay Pumaren Punio Punsalan Punsoy Punyeg Puruganan Puyot Queppet Querimit Quibola Quiboloy Quimen Quimin Quimno Quimosing Quimot Quinabo Quinot Quinoy Quiodala Quiray Quirimit Quisisem Quitiquit Raagas Rabaca Rabago Rabang Rabara Rabe Rabuco Racasa Racelis Rafal Ragadio Ragamat Raganit Ragasa Ragay Ragot Raguindin Ralutin Ramiscal Ramoran Rapanut Rapatan Raposas Rasay Recato Retuta Ribao Ribucan Ridao Ringpis Robang Rosaupan Rumbaoa Rumusod Sabanal Sabangan Sabile Sabio Sablay Sablayan Sabog Sabugo Sabulao Sacayanan Saclayan Sacpa Sadangsal Sadiri Sado Sadural Sagabaen Sagadraca Sagalla Sagaran Sagawinit Sagayadoro Sagayaga Sagibo Sagiguinto Sagisi Sagman Sagmit Sagnep Sagudan Saguinsing Saguisag Sagum Sagun Sahagun Sajor Salalima Salangsang Salapantan Salarila Salarzon Salboro Salenda Saley Sali Saliba Salire Salita Salumag Salumbides Samala Sambeli Sampaga Sampang Sampilo Samporna Sanga Sangalang Sangil Saoyen Sapigao Sapin Sapodeng Sarabia Saradpon Sarangaya Sarao Sarigumba Sarile Satot Saulan Sawi Sawit Saya Sayaboc Saymo Sayo Seggay Siababa Siasat Sibayan Sicam Sigua Sijalbo Silago Silang Simangan Simbulan Singian Sinja Sisante Somaoang Sonson Sopapan Sopsop Sorio Suayan Suaybaguio Subaybay Subili "Subing-Subing" Subong Sucaldito Sucdad Sucgang Sugay Sugcang Sulit Sumagcang Sumang Sumaoang Sumibcay Sundita Sunga Sunio Supnet Suyat Taag Taal Taasan Taay Tabag Tabalanza Tabamo Tabaquing Tabayoyong Tabilin Tabisula Tablac Tablang Tablico Tablit Tabocol Tabogader Tabonda Taboyayong Tabua Tabucbuc Tabudlo Tabug Tabula Tabulog Tabuno Tabura Taburaza Tabuyo Tacadena Tacan Tacang Tacason Tacata Tacbas Tacderan Tacdol Taclas Tacorda Tacud Tacuyan Tacuycuy Tacwigan Tadena Taeza Tagalogan Tagamolila Tagarro Tagasa Tagatac Tagay Taghap Tagle Tagorda Tagud Taguines Taguinod Tagulao Tajanlangit Tala Talaban Talactac Talagtag Talampas Talaro Talaroc Talastas Talatala Talaugon Talens Talimoro Talingting Talisayon Talosig Talusan Tamo Tamondong Tanga Tangaan Tangalin Tanghal Tanghalan Tanglao Tanicala Tanopo Tapang Tapawan Tapaya Tapina Tapuro Taracatac Taroc Tawatao Tayabas Tayactac Tayag Tayao Tela Teneza Terre Tiap Tibok Tiglao Timbas Tindoc Tindog Tindongan Tinoyan Tiong "Tira-tira" Togonon Toliao Tomagan Tomalon Tomawis Tomines Tongol Tongpalan "To-ong" Tubig Tubo Tucay Tugade Tugado Tukodlangit Tuktukan Tulabing Tulio Tulud Tumala Tumale Tumanda Tumaneng Tumang Tumao Tumbaga Tumulak Tunac Tungol Tungpalan Tuparan Tupas Turinia Tutaan Tuyay Ubungen Ugalino Ugay Ulanday Ulat Umagtang Umayam Uminga Umipig Unabia Undag Undayan Urakoy Usi Vagay Vinoray Visaya Wandag Watan Yabes Yacat Yadao Yagin Yago Yagyagan Yamat Yambot Yamguas Yanga Yanong Yapes Yaranon Yasay Ybut Ygot Yoro Yting Yumol Yusi
+			Oton Datoon Panindagat Abacan Abaday Abao Abat Abaya Abayari Abeya Abiad Abinsay Ablang Ablasa Abuan Abucajo Abut Abuyen Aclan Acob Acolola Acop Acpal Acupan Adapon Aday Agbay Agumabay Agunod Agup Akut Alambat Alao Alasaas "Alay-ay" Albalos Alcaparlas Alday Alderite Alibin Alicbusan Aligmayo Alikpala Aliling Alimboyugen Alimurung Alipio Alnas Alonto Alpay Alujipan Alumisin Alupay Amaba Amahit Amaming Ambagan Ambat Ambayon Amboy Ambulo Amicay Amiling Amit Ammog Ampalayon Ampang Ampong Amulong Amurao Ancaya Andal Andaya Angobung Angus Aniag Aningalan Annala Antalan Anub Apanapao Apanay Apdal Apelin Apigo Apili Aplaon Apoga Apoian Aporongao Arao Arauag Aro Aromin Arong Asoy Aswit Ato Auza Ayran Ayuman Ayuyao "Ba-ad" Baal Babingao Bables Baboyan Bacad Bacani Bacay Bacaycay Baclao Baclayan Baclig Bacolor Bacotot Bactad Bacunawa Badabgio Badar Baddas Bael Bagadiong Bagain Bagala Bagalayos Bagaman Bagang Bagarinao Bagasbas Bagongarao Bagoyo Bagsit Bague Bahena Baisac Baitan Baje Bakaranis Balaba Balabagan Balabis Balaga Balamut Balana Balanga Balangatan Balanon Balantakbo Balaoing Balaraw Balason Balata Balatazo Balatbat Balatibat Balatico Balbiran Balgos Baliao Baligad Baliling Balimbin Balino Balisacan Balondo Baluran Balweg Banaria Banasan Banasihan Banaticla Bandigas Bandol Bandong Bangachon Bangad Bangayan Banghulot Bangit Bangwa Banico "Banigo-os" Baniqued Banlaygas Bantegui Bantilan Banting Banua Baqui Baradi Barangan Baraoidan Baratang Bariring Barlaan Barongan Barutan Basibas Basig Basingat Basingit Baste Basubas Bataclan Batenga Bathan Batin Batingan Batoctoy Batong Batoon Battad Battong Battung Batuyong Bauan Bawalan Baya Bayan Baylon Bayna Bayog Bayot Bayquen Baysac Bayudan Bayuga Becbec Belano Beligan Belite Benipayo Biabas Bigalbal Binaday Binayas Binlot Binotapa Binsol Bio Bitagon Blas Bocalig Bocasan Bolisay Boljoon Bonalong Boncan Bongolan Bongot Bongubung Bonoano Botengan Braza Buban Bucaneg Bucat Bucay Bucsit Bugaoisan Bugas Bugayong Bugnosen Buhain Bulahan Bulala Bulanan Bulanon Bulaoat Bulaon Bulaong Bulatao Bulawan Bulayo Buli Bulseco Bulusan Bumacod Bumagat Bumanglag Bunac Bundoc Bungcayao Bunsoy Buntua Buractaon Butalid Butic Butigan Butiu Caabay Cabacungan Cabading Cabael Cabahug Cabanag Cabanatan Cabanayan Cabanday Cabangbang Cabanit Cabansag Cabanting Cabasaan Cabasagan Cabasug Cabatana Cabatic Cabatingan Cabatu Cabatuando Cabatungan Cabauatan Cabaya Cabe Cabebe Cabeguin Cabigao Cabigas Cabigting Cabilan Cabili Cabochan Cabuang Cabuchao Cabudol "Cabug-as" Cabuhat Cabulda Cabungcal Cabunoc Cabuquit Cabututan Cacab Cacal Cacalda Cacanindin Cacapit Cacpal Caculitan Cadang Caday Cadisal Cadlaon Cadwising Cagaanan Cagacan Cagadas Cagadoc Cagalawan Cagampang Cagaoanan Cagaoas Cagasan Cagatao Cagauan Cagayan Cagayat Cagiwa Cagonot Caguingin Cagungon Cahimat Caindoc Cainghug Cainglit Calalo Calambacal Calangan Calanoc Calanoy Calibuso Calica Calicdan Caligtan Calilan Calilung Calimag Calimbas Calimlim Calinao Calip "Caliw-caliw" Callangan Callueng Calo Calonge Calpito Caluag Calubaquib Calubayan Caluncagin Calupid Calupig Caluya Camagay Camanag Cambas Cambay Camiling Camurungan Candao Canilao Caniya Canlas Canoy Canumay Canwaring Caparas Capati Capoy Capuyan Caraan Caragay Carandang Carangal Caranguian Carao Carasig Carating Carayoan Cariaso Carungay Carungcong Carungi Carunungan Casiano Casibang Casim Casuga Casumbal Casupang Catanyag Catapang Cataran Catbagan Catibog Catindig Catotocan Catubay Catubig Catubo Caunin Cawad Cawilan Cayangho Cayanoc Caylo Cayongcong Cayron Cayton Codog Colcol "Col-long" Conlu Conol Copon Corong Cosalan Cubacub Cudiamat Culala Culanag Culaton Cumti Cupino Curameng Cusi Cuyos Daan Daang Dabao Dabu Dacalcap Dacay Dacion Dacumos Dacuno Dacuycuy Dagohoy Dagsaan Dagsi Daguhay Daguio Dagupion Dahilig Dahiug Dailo Dalangpan Dalaque Dalida Dalig Dalit Dalog Dalugdugan Dalupan Damilo Damo Danao Danda Dandin Dandoy Dangkulos Dangoy Dangtayan Danguilan Dangwa Daoang Daog Daomilas Daos Dapat Dapayan Daquil Daranciang Datahan Datangel Dato Datoc Datuin Datumanong Dauz Dawa Dawi Dawis Dayag Dayanan Dayao Dayoan Dayot Dayunot Deang Decolongon Deen Delasin Diano Diapo Dicang Digamon Digol Dikitanan Dimaampao Dimaandal Dimaguila Dimanlig Dimapilis Dimapindan Dimaporo Dimaranan Dimasuhid Dimaya Dimayacyac Dingal Dinolang Dinopol Docuyanan Dolap Dolera Domantay Domogan Domugho Domulot Doneio Dopale Doplon Dorilag Dornogan Dua Dualan Dualos Ducduc Ducisin Duco Ducut Dugay Duhaylungsod Dulag Dulay Dulaypan Duldulao Dumadag Dumag Dumagpi Dumalag Dumalog Dumalot Dumalus "Duma-og" Dumaran Dumaslan Dumaual Dumayag Dumayas Dumdum Dumlaon Dumo Dumondon Dumpay Duna Dungca Dupaya Dupim Duyan Elbo Estigoy Fangonil "Fiag-oy" Gaane Gabato Gabayan Gabuat Gacungan Gacutan Gacuya Gador Gagalac Gagpud Galam Galamgam Galapon Galauran Galay Gali Galima Galit Gamata Gamelon Gamit Gamol Gampon Ganaban Ganaden Gangan Gannod Ganutan Gaoiran Gapasin Garayblas Garong Garvida Gatbonton Gatchalian Gatdula Gatmaitan Gatnaytan Gatpolintan Gauam Gayagay Ginubatan Godoy Gombat Gonong Gonowon Guani Guanlao Guawaran Guiang Guieb Guihama Guilaran Guipit Gulapa Gumapas Gumatay Gumato Gumihid Gumila Gumintong Gumiran Gungab Gunigundo Gusilatar Gutang Gutilban Habalo Hadap Halum Hanopol Haparam Hapayhari Hicban Hinayon Homoroc Hubag Ibay Ibuna Ibuos Ibus Icat Icban Iguban Ilanan Ilog Ilumin Imbo Inabayan Inclan Inda Inding Iniba Intatano Inton Iporong Irong Itchon Itliong Iyog Jabol Jaca Jacang Jacutan Jacutin Jain Jalbuna Jamo Jamorabon Janabajab Jandoc Jayan Juagdan Juco Juico Jumat Jumawan Jungao Kabahit Kabaong Kabayao Kaimo Kalalo Kalanduyan Kalingasan Karingal Kasilag Katalbas Katindig Kayanan Killip Labao Labay Labayen Labtik Labuanan Labuga Labuguen Lacaden Lacandile Lacandola Lacanglacang Lacbawan Lacdan Lacdao Laconsay Lacsamana Lactaoen Lagadi Lagana Lagandaon Lagang Laganson Lagasca Lagbas Lagdameo Laglagaron Lagmay Lago Lagos Lagunsad Lagustan Laig Laing Lakandula Laksa Lalangan Lalu Lamangan Lamayan Lampitoc Lancoan Langkin Lansang Lansigan Lantin Lapak Lapid Lapitan Lappay Lapuz Laranang Laraya Lasam Laygo Layno Layog Layosa Layugan Layumas Lesaca Leyran Libed Libina Libiran Liboon Libunao Licaycay Liclican Lico Licuanan Ligon Ligot Ligutan Lihat Lima Lindawan Lindog Lingao Linsangan Lising Liwag Loglog Lombos Lomboy Lomibao Lomuntad Longid Lontoc Lota Lucagbo "Lucay-lucay" Lucban Lucena Luczon Lugami Lugmao Lugtu Lumaban Lumagbas Lumahan Lumain Lumala Lumanga Lumanog Lumawig Lumbad Lumbang Lumibaw Lumiqued Lumontad Lumungsod Lumunsad Lupitan Luspo Luyaben Luyun Luzon Maambo Maambong Mabalay Mabalot Mabaquiao Mabasa Mabborang Macablo Macadangal Macadangdang Macagba Macahilig Macairan Macalagay Macalalad Macalalag Macalam Macale Macalguim Macalincag Macalindong Macalisang Macaloso Macalug Macanas Macandog Macanip Macapinlac Macapobre Macapugay Macapulay Macaraat Macaroy Macasa Macasero Macasieb Macatanban Macatumpag Macauyag Macawili Maclang Macmang Macorol Mactal Madijanon Madlangawa Maduli Madwen Maga Magadap Magadya Magahis Magalona Magalued Maganto Magaoay Magarin Magaso Magayaga Magbag Magbanua Magbitang Magbojos Magboo Magcawas Magdadarao Magdaluyo Magdamo Magdato Magday Maggay Maghirang Maglacas Maglalang Maglasang Magpale Magpili Magplaya Magpoc Magpusao Magsadia Magsalin Magsanoc Magsayo Magtalas Magtubo Maguddayo Maharais Mahinay Maigue Maitem Majul Makayan Makil Makinano Malabanan Malabed Malabuyo Malacad Malaggay Malalis Malaluan Malana Malang Malapira Malapit Malapitan Malayang Malbog Malibiran Malig Malijan Malilay Malimba Malimban Malipot Maliwat Mallabo Mallilin Malpaya Mamaril Mamisao Mamot Mamuad Manacsa Managbanag Managuelod Manalang Manalansan Manalastas Manaligod Manaloto Manangan Manapol Manarang Manarin Manasas Manawis Manayan Mandap Mandilag Manegdeg Mangabang Mangabat Mangaliman Mangalindan Mangalino Mangalus Mangampat Manganip Manganon Mangaser Mangaya Mangayagam Mangayo Mangiliman Mangkay Manglapus Manglaya Manglicmot Manglona Mangoba Mangonon Mangosin Mangrobang Mangtalan Manguiat Manguinao Manguino Mangulabnan "Mang-usans" Maniago Manibo Manibusan Manicad Manilag Maninay Maningding Manipula Maniquis Manlansing Manliclic Manlongat Manlutac Manongdo Manoto Manotoc Manrobang Mantaring Manubay Manuntag Manuyong Mappala Maraan Marahan Maralit Maranan Maranon Marasigan Marayag Marigomon Marucut Masaganda Masibay Masungsong Mataac Matalam Matibag Mationg Matito Matulac Matundan Maybanting Maybituin Mayoyo Mingoc Moguet Momongan Mongaya Motos Mugol Munsayac Musngi Musni Muyot Nabua Nacapuy Nacpil Naguiat Naguit Nakpawan Nanquil Napalan Napuli Narag Naui Navalta Nepomuceno Ngaya Ngujo Nicdao Niguidula Nimo Nipay Nisnisan Nogoy Nuguid Nunag Oasay Ogtong Okala Olala Olalia Omaga Omipon Ongkapin Ontoy Ople Oppus Orang Orara Orayani Orenia Orig Orines Ouano Paa Paat Pabualan Pabulayan Pabustan Pacana Pacas Pacatang Pacpaco Pacquing Pacubas Paculan Pacut Padagas Padamada Padoan Padunan Padungaw Paeca Paet Pagaduan Pagalilauan Pagampao Pagao Pagaoa Pagdanganan Pagdilao Pagilagan Pagliaro Paglingayen Pagniligan Pagsanghan Pagsibigan Pagtakhan Paguio Pagulayan Paguyo Pahate Palacay Palad Palag Palaganas Palangan Palangdao Palapal Palapala Palapus Palec Paling Palisoc Pallasa Paludipan Palugod Palumbarit Pamandanan Pamatong Pambid Pamintuan Pamon Panaguinto Panay Pandy Pangalanan Pangdan Panis Panlao Panlaqui Panlasigui Panoringan Pansoy Pantig Panuncialonan Panuyas Parangalan Paraoan Parawan Parotong Parpana Parungao Pasahol Pasaoa Pasayan Pasicolan Pasking Pasquil Patalinhug Patao Pataray Patawaran Patoc Patubo Paurom Payaoan Payawal Payomo "Payong-ayong" Payot Payoyot Payuyao Pedlaoan Pedronan Penano Pendatum Pesigan Pespes Pila Pilande Pili Piluden Pinga Pingkian Pingol Pinlac Pintac "Pit-og" Pitpit Poblete Pogoy Polangcus Polilen Polotan Poquis Poyaoan Puldulao Pulsungay Pumaren Punio Punsalan Punsoy Punyeg Puruganan Puyot Queppet Querimit Quibola Quiboloy Quimen Quimin Quimno Quimosing Quimot Quinabo Quinot Quinoy Quiodala Quiray Quirimit Quisisem Quitiquit Raagas Rabaca Rabago Rabang Rabara Rabe Rabuco Racasa Racelis Rafal Ragadio Ragamat Raganit Ragasa Ragay Ragot Raguindin Ralutin Ramiscal Ramoran Rapanut Rapatan Raposas Rasay Recato Retuta Ribao Ribucan Ridao Ringpis Robang Rosaupan Rumbaoa Rumusod Sabanal Sabangan Sabile Sabio Sablay Sablayan Sabog Sabugo Sabulao Sacayanan Saclayan Sacpa Sadangsal Sadiri Sado Sadural Sagabaen Sagadraca Sagalla Sagaran Sagawinit Sagayadoro Sagayaga Sagibo Sagiguinto Sagisi Sagman Sagmit Sagnep Sagudan Saguinsing Saguisag Sagum Sagun Sahagun Sajor Salalima Salangsang Salapantan Salarila Salarzon Salboro Salenda Saley Sali Saliba Salire Salita Salumag Salumbides Samala Sambeli Sampaga Sampang Sampilo Samporna Sanga Sangalang Sangil Saoyen Sapigao Sapin Sapodeng Sarabia Saradpon Sarangaya Sarao Sarigumba Sarile Satot Saulan Sawi Sawit Saya Sayaboc Saymo Sayo Seggay Siababa Siasat Sibayan Sicam Sigua Sijalbo Silago Silang Simangan Simbulan Singian Sinja Sisante Somaoang Sonson Sopapan Sopsop Sorio Suayan Suaybaguio Subaybay Subili "Subing-Subing" Subong Sucaldito Sucdad Sucgang Sugay Sugcang Sulit Sumagcang Sumang Sumaoang Sumibcay Sundita Sunga Sunio Supnet Suyat Taag Taal Taasan Taay Tabag Tabalanza Tabamo Tabaquing Tabayoyong Tabilin Tabisula Tablac Tablang Tablico Tablit Tabocol Tabogader Tabonda Taboyayong Tabua Tabucbuc Tabudlo Tabug Tabula Tabulog Tabuno Tabura Taburaza Tabuyo Tacadena Tacan Tacang Tacason Tacata Tacbas Tacderan Tacdol Taclas Tacorda Tacud Tacuyan Tacuycuy Tacwigan Tadena Taeza Tagalogan Tagamolila Tagarro Tagasa Tagatac Tagay Taghap Tagle Tagorda Tagud Taguines Taguinod Tagulao Tajanlangit Tala Talaban Talactac Talagtag Talampas Talaro Talaroc Talastas Talatala Talaugon Talens Talimoro Talingting Talisayon Talosig Talusan Tamo Tamondong Tanga Tangaan Tangalin Tanghal Tanghalan Tanglao Tanicala Tanopo Tapang Tapawan Tapaya Tapina Tapuro Taracatac Taroc Tawatao Tayabas Tayactac Tayag Tayao Tela Teneza Terre Tiap Tibok Tiglao Timbas Tindoc Tindog Tindongan Tinoyan Tiong "Tira-tira" Togonon Toliao Tomagan Tomalon Tomawis Tomines Tongol Tongpalan "To-ong" Tubig Tubo Tucay Tugade Tugado Tukodlangit Tuktukan Tulabing Tulio Tulud Tumala Tumale Tumanda Tumaneng Tumang Tumao Tumbaga Tumulak Tunac Tungol Tungpalan Tuparan Tupas Turinia Tutaan Tuyay Ubungen Ugalino Ugay Ulanday Ulat Umagtang Umayam Uminga Umipig Unabia Undag Undayan Urakoy Usi Vagay Vinoray Visaya Wandag Watan Yabes Yacat Yadao Yagin Yago Yagyagan Yamat Yambot Yamguas Yanga Yanong Yapes Yaranon Yasay Ybut Ygot Yoro Yting Yumol Yusi
 		}
 	}
 	pampangan = {
@@ -16577,6 +16989,7 @@ brythonic = {
 			#New by Draiocht, using the country, historical dynasties with more than 2 dukes, Gwened, and a handful of
 			#other important or common patronyms, will try to add more at some point
 			Breizh Monforzh "de Dreux" Kerne Penteur Roazhon Naoned Gwened Tangi Karter Roc'han
+			"de Rohan"
 			#Most of these are not even remotely Breton, removing Rohan Penteur Leon Roazhon Poutrecoet Naoned Leon "de
 			#Dinan" "de Vitré" "de Cornouaille" "de Rohan" "de Porhoët" "of Brittany" "de Châteaubriant" "de Nantes"
 			#Leon Guennec Pensec "de Vannes" "de Bretagne" "Sant Nazar" Tanguy Hennebont Gwened "de Rennes" "de Rieux"

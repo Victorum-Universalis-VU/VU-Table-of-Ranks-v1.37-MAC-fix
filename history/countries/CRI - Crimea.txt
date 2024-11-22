@@ -1,9 +1,10 @@
 government = tribal
 add_government_reform = steppe_horde
+government_rank = 8 #Khanate
 technology_group = nomad_group
 primary_culture = crimean
 religion = sunni
-capital = 3244	# Crimea
+capital = 7192	# Qirq Yer
 
 1441.1.1 = {
 	monarch = {
@@ -86,7 +87,7 @@ capital = 3244	# Crimea
 		dip = 3
 		mil = 3
 	}
-	government_rank = 1
+	government_rank = 6
 }
 
 1478.5.1 = {

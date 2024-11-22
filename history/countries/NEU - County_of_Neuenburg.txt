@@ -1,6 +1,6 @@
 government = monarchy
-add_government_reform = feudalism_reform
-government_rank = 1
+add_government_reform = eue_county_reform
+government_rank = 4 #County
 #technology_group = western
 technology_group = swiss_tech_group
 unit_type = western
@@ -9,10 +9,11 @@ primary_culture = swiss
 capital = 8520 #Neuenburg
 fixed_capital = 8520 # Cannot move capital away from this province & no power cost to move to it
 
-1431.1.1 = {
+1444.1.1 = {
 	monarch = {
-		name = "Anton von Rotenhan"
-		birth_date = 1390.1.1
+		name = "Eberhard" 
+		dynasty = "von Württemberg-Urach"
+		birth_date = 1387.2.14
 		adm = 3
 		dip = 3
 		mil = 2

@@ -65,10 +65,10 @@ me_prince_rise_to_power = {
 	state_governing_cost = -0.1
 }
 
-ME_heir_of_timur = {
-	land_morale = 0.05
-	timurid_legitimacy_per_battle = 0.01
-}
+#ME_heir_of_timur = {
+#	land_morale = 0.05
+#	timurid_legitimacy_per_battle = 0.01
+#}
 
 me_prince_forwards = {
 	movement_speed = 0.1

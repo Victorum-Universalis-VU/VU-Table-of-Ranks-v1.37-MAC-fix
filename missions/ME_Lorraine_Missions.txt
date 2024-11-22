@@ -359,7 +359,7 @@ LOR_missions_3 = {
 				limit = {
 					has_dlc = "Common Sense"
 				}
-				government_rank = 2
+				government_rank = 8
 			}
 			else = {
 				total_development = 300

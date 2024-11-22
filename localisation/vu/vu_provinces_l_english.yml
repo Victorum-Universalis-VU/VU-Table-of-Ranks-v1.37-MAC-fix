@@ -19,6 +19,348 @@
  #VU_prov_names_l_english (Province Names) - These are HR's provinces
  ############################################################
  
+ PROV8800:0 "Kangersuatqortoq"
+ PROV_ADJ8800:0 "Kangersuatqortoq"
+
+ PROV8801:0 "Zacapantla"
+ PROV_ADJ8801:0 "Zacapantla"
+
+ PROV8802:0 "Aappipaluk"
+ PROV_ADJ8802:0 "Aappipaluk"
+ 
+ PROV8803:0 "Vegrebiens"
+ PROV_ADJ8803:0 "Vegrebiens"
+ 
+ PROV8804:0 "Alluitjaat"
+ PROV_ADJ8804:0 "Alluitjaat"
+
+ PROV8805:0 "Narsarsiarsuk"
+ PROV_ADJ8805:0 "Narsarsiarsuk"
+
+ PROV8806:0 "Napataq"
+ PROV_ADJ8806:0 "Napataq"
+
+ PROV8807:0 "Kamline"
+ PROV_ADJ8807:0 "Kamline"
+
+ PROV8808:0 "Arsuarsuit"
+ PROV_ADJ8808:0 "Arsuarsuit"
+
+ PROV8809:0 "Cunduapico"
+ PROV_ADJ8809:0 "Cunduapico"
+
+ PROV8810:0 "Apatnito"
+ PROV_ADJ8810:0 "Apatnito"
+
+ PROV8811:0 "Tecazingan"
+ PROV_ADJ8811:0 "Tecazingan"
+
+ PROV8812:0 "Oxrior"
+ PROV_ADJ8812:0 "Oxrior"
+ 
+ PROV8813:0 "Kangilinnguit"
+ PROV_ADJ8813:0 "Kangilinnguit"
+
+ PROV8814:0 "Saarhivik"
+ PROV_ADJ8814:0 "Saarhivik"
+
+ PROV8815:0 "Kangerqortoq"
+ PROV_ADJ8815:0 "Kangerqortoq"
+
+ PROV8816:0 "Irapuaguillo"
+ PROV_ADJ8816:0 "Irapuaguillo"
+
+ PROV8817:0 "Midwaki"
+ PROV_ADJ8817:0 "Midwaki"
+
+ PROV8818:0 "Nuugaatlik"
+ PROV_ADJ8818:0 "Nuugaatlik"
+
+ PROV8819:0 "Niarapaluk"
+ PROV_ADJ8819:0 "Niarapaluk"
+
+ PROV8820:0 "Narsarniarfik"
+ PROV_ADJ8820:0 "Narsarniarfik"
+
+ PROV8821:0 "Cosoleachula"
+ PROV_ADJ8821:0 "Cosoleachula"
+ 
+ PROV8822:0 "Comiloya"
+ PROV_ADJ8822:0 "Comiloya"
+
+ PROV8823:0 "Narsarqortoq"
+ PROV_ADJ8823:0 "Narsarqortoq"
+
+ PROV8824:0 "Illormiut"
+ PROV_ADJ8824:0 "Illormiut"
+
+ PROV8825:0 "Napperckamack"
+ PROV_ADJ8825:0 "Napperckamack"
+
+ PROV8826:0 "Lenapehoking"
+ PROV_ADJ8826:0 "Lenapehoking"
+
+ PROV8827:0 "Cushnoc"
+ PROV_ADJ8827:0 "Cushnoc"
+
+ PROV8828:0 "Chintewink"
+ PROV_ADJ8828:0 "Chintewink"
+
+ PROV8829:0 "Manatawny"
+ PROV_ADJ8829:0 "Manatawny"
+
+ PROV8830:0 "Kanawha"
+ PROV_ADJ8830:0 "Kanawha"
+
+ PROV8831:0 "Corbina"
+ PROV_ADJ8831:0 "Corbina"
+
+ PROV8832:0 "Annis"
+ PROV_ADJ8832:0 "Annis"
+
+ PROV8833:0 "Megedagik"
+ PROV_ADJ8833:0 "Megedagik"
+
+ PROV8834:0 "Qeqertarmannaq"
+ PROV_ADJ8834:0 "Qeqertarmannaq"
+
+ PROV8835:0 "I-cha-hta-ka"
+ PROV_ADJ8835:0 "I-cha-hta-ka" 
+
+ PROV8836:0 "Mahoning"
+ PROV_ADJ8836:0 "Mahoning" 
+
+ PROV8837:0 "Guasayuca"
+ PROV_ADJ8837:0 "Guasayuca" 
+
+ PROV8838:0 "Tó Ppí K?é"
+ PROV_ADJ8838:0 "Tó Ppí K?é" #The ? is ment to be there lol
+
+ PROV8839:0 "Tosoiba"
+ PROV_ADJ8839:0 "Tosoiba" 
+
+ PROV8840:0 "Fremont"
+ PROV_ADJ8840:0 "Fremont" 
+
+ PROV8841:0 "Aulinta"
+ PROV_ADJ8841:0 "Aulinta" 
+
+ PROV8842:0 "Huichin"
+ PROV_ADJ8842:0 "Huichin"
+
+ PROV8843:0 "Oroysom"
+ PROV_ADJ8843:0 "Oroysom"
+
+ PROV8844:0 "Miwok"
+ PROV_ADJ8844:0 "Miwok"
+
+ PROV8845:0 "Sap'wi"
+ PROV_ADJ8845:0 "Sap'wi"
+
+ PROV8846:0 "Tataviam"
+ PROV_ADJ8846:0 "Tataviam"
+
+ PROV8847:0 "Puvunga"
+ PROV_ADJ8847:0 "Puvunga"
+
+ PROV8848:0 "Hotuuk"
+ PROV_ADJ8848:0 "Hotuuk"
+
+ PROV8849:0 "Tovalum"
+ PROV_ADJ8849:0 "Tovalum"
+
+ PROV8850:0 "Asuksangna"
+ PROV_ADJ8850:0 "Asuksangna"
+
+ PROV8851:0 "Chiap"
+ PROV_ADJ8851:0 "Chiap"
+
+ PROV8852:0 "Sinyeweche"
+ PROV_ADJ8852:0 "Sinyeweche"
+
+ PROV8853:0 "Pimu"
+ PROV_ADJ8853:0 "Pimu" 
+
+ PROV8854:0 "Isersuaq"
+ PROV_ADJ8854:0 "Isersuaq" 
+
+ PROV8855:0 "Siorapasiarsuk"
+ PROV_ADJ8855:0 "Siorapasiarsuk" 
+
+ PROV8856:0 "Aquixo"
+ PROV_ADJ8856:0 "Aquixo" 
+
+ PROV8857:0 "Siorapalik"
+ PROV_ADJ8857:0 "Siorapalik" 
+
+ PROV8858:0 "Itilluk"
+ PROV_ADJ8858:0 "Itilluk" 
+
+ PROV8859:0 "Kitsisuarnaq"
+ PROV_ADJ8859:0 "Kitsisuarnaq" 
+
+ PROV8860:0 "Saarsat"
+ PROV_ADJ8860:0 "Saarsat" 
+
+ PROV8861:0 "Aasrasak"
+ PROV_ADJ8861:0 "Aasrasak" 
+
+ PROV8862:0 "Kapisiltut"
+ PROV_ADJ8862:0 "Kapisiltut" 
+
+ PROV8863:0 "Kangaatniarfik"
+ PROV_ADJ8863:0 "Kangaatniarfik" 
+
+ PROV8864:0 "Narsiaat"
+ PROV_ADJ8864:0 "Narsiaat" 
+
+ PROV8865:0 "Cardalgo"
+ PROV_ADJ8865:0 "Cardalgo" 
+
+ PROV8866:0 "Kuumhivik"
+ PROV_ADJ8866:0 "Kuumhivik" 
+
+ PROV8867:0 "Minnewasca"
+ PROV_ADJ8867:0 "Minnewasca" 
+
+ PROV8868:0 "Niaqornaaq"
+ PROV_ADJ8868:0 "Niaqornaaq" 
+
+ PROV8869:0 "Kitsisuarsiaat"
+ PROV_ADJ8869:0 "Kitsisuarsiaat" 
+
+ PROV8870:0 "Ilinaaq"
+ PROV_ADJ8870:0 "Ilinaaq" 
+
+ PROV8871:0 "Alluitsiaat"
+ PROV_ADJ8871:0 "Alluitsiaat" 
+
+ PROV8872:0 "Savisut"
+ PROV_ADJ8872:0 "Savisut" 
+
+ PROV8873:0 "Itilmijit"
+ PROV_ADJ8873:0 "Itilmijit" 
+
+ PROV8874:0 "Kullorsuk"
+ PROV_ADJ8874:0 "Kullorsuk" 
+
+ PROV8875:0 "Upersuarsuit"
+ PROV_ADJ8875:0 "Upersuarsuit" 
+
+ PROV8876:0 "Bracenach"
+ PROV_ADJ8876:0 "Bracenach" 
+
+ PROV8877:0 "Ittotoormiit"
+ PROV_ADJ8877:0 "Ittotoormiit" 
+
+ PROV8878:0 "Nutaarluitsup"
+ PROV_ADJ8878:0 "Nutaarluitsup" 
+
+ PROV8879:0 "Villahua"
+ PROV_ADJ8879:0 "Villahua" 
+
+ PROV8880:0 "Chilientes"
+ PROV_ADJ8880:0 "Chilientes" 
+
+ PROV8881:0 "Zinatumal"
+ PROV_ADJ8881:0 "Zinatumal" 
+
+ PROV8882:0 "Atilende"
+ PROV_ADJ8882:0 "Atilende" 
+
+ PROV8883:0 "Camora"
+ PROV_ADJ8883:0 "Camora" 
+
+ PROV8884:0 "Irapico"
+ PROV_ADJ8884:0 "Irapico" 
+
+ PROV8885:0 "Altadenas"
+ PROV_ADJ8885:0 "Altadenas" 
+
+ PROV8886:0 "Penquilucan"
+ PROV_ADJ8886:0 "Penquilucan" 
+
+ PROV8887:0 "Tancruz"
+ PROV_ADJ8887:0 "Tancruz"
+
+ PROV8888:0 "Juaduacan"
+ PROV_ADJ8888:0 "Juaduacan" 
+
+ PROV8889:0 "Latchfait"
+ PROV_ADJ8889:0 "Latchfait" 
+
+ PROV8890:0 "Orilajara"
+ PROV_ADJ8890:0 "Orilajara" 
+
+ PROV8891:0 "Nuugaatmiit"
+ PROV_ADJ8891:0 "Nuugaatmiit" 
+
+ PROV8892:0 "Tijuapan"
+ PROV_ADJ8892:0 "Tijuapan" 
+
+ PROV8893:0 "Orizaloapan"
+ PROV_ADJ8893:0 "Orizaloapan" 
+
+ PROV8894:0 "Duracingo"
+ PROV_ADJ8894:0 "Duracingo" 
+
+ PROV8895:0 "Ixtahuahua"
+ PROV_ADJ8895:0 "Ixtahuahua" 
+
+ PROV8896:0 "Atlicoco"
+ PROV_ADJ8896:0 "Atlicoco" 
+
+ PROV8897:0 "Navozava"
+ PROV_ADJ8897:0 "Navozava" 
+
+ PROV8898:0 "Irapuamosa"
+ PROV_ADJ8898:0 "Irapuamosa" 
+
+ PROV8899:0 "Tapadalgo"
+ PROV_ADJ8899:0 "Tapadalgo" 
+
+ PROV8900:0 "Cunduadoba"
+ PROV_ADJ8900:0 "Cunduadoba" 
+
+ PROV8901:0 "Tonanito"
+ PROV_ADJ8901:0 "Tonanito" 
+
+ PROV8902:0 "Chalpango"
+ PROV_ADJ8902:0 "Chalpango" 
+
+ PROV8903:0 "Madepopan"
+ PROV_ADJ8903:0 "Madepopan" 
+
+ PROV8904:0 "Chilataro"
+ PROV_ADJ8904:0 "Chilataro"
+
+ PROV8905:0 "Kahnawake"
+ PROV_ADJ8905:0 "Kahnawake"  
+
+ PROV8906:0 "Aappilatsiaq"
+ PROV_ADJ8906:0 "Aappilatsiaq"
+
+ PROV8907:0 "Keskeskeck"
+ PROV_ADJ8907:0 "Keskeskeck"
+
+ PROV8908:0 "Matinecock"
+ PROV_ADJ8908:0 "Matinecock"
+
+ PROV8909:0 "Lenape"
+ PROV_ADJ8909:0 "Lenape"
+
+ PROV8910:0 "He Sapa"
+ PROV_ADJ8910:0 "He Sapa"
+
+ PROV8911:0 "Hiamovi"
+ PROV_ADJ8911:0 "Hiamovi"
+
+ PROV8798:0 "Missouri River"
+ PROV_ADJ8798:0 "Missouri River"
+
+ PROV8799:0 "Ohio River"
+ PROV_ADJ8799:0 "Ohio River"
+
  PROV2023:0 "Munsee"
  PROV_ADJ2023:0 "Munsee"
  
@@ -125,8 +467,8 @@
  PROV3337:0 "Nalchik"
  PROV_ADJ3337:0 "Nalchik"
 
- PROV3338:0 "Yashkul"
- PROV_ADJ3338:0 "Yashkul"
+ PROV3338:0 "Majar"
+ PROV_ADJ3338:0 "Majar"
 
  PROV3339:0 "Temirgoy"
  PROV_ADJ3339:0 "Temirgoy"
@@ -452,9 +794,39 @@
  PROV3301:0 "Dorogobuzh"
  PROV3302:0 "Bakhmut"
  PROV3303:0 "Beloye"
+ PROV3531:0 "Rothschwaige"
+ PROV3532:0 "Central Sugbu"
+ PROV3533:0 "Tagbilaran"
+ PROV3534:0 "Parang"
+ PROV3535:0 "Kalamansig"
+ PROV3536:0 "Namayan"
+ PROV3537:0 "Cainta" 
+ PROV3538:0 "Silang" 
+ PROV3539:0 "Taal" 
+ PROV3540:0 "Mambusao" 
+ PROV3541:0 "Bacjawan" 
+ PROV3542:0 "Irong_Irong" 
+ PROV3543:0 "Mangsungay" 
+ PROV3544:0 "Bago" 
+ PROV3545:0 "Bayawan" 
+ PROV3546:0 "Tanjay" 
+ PROV3547:0 "Dumanhug" 
+ PROV3548:0 "Talisay"
+ PROV3549:0 "Paranan"
+ PROV3550:0 "Dumalneg"
+ PROV3551:0 "Itawat"
+ PROV3552:0 "Masinloc"
+ PROV3553:0 "Lipa"
+ PROV3554:0 "Surigaonon"
+ PROV3555:0 "Cateel"
+ PROV3556:0 "Lupon"
+ PROV3557:0 "Malaybalay"
+ PROV3558:0 "Bongloy"
+ PROV3559:0 "Sindangan"
+ PROV3560:0 "Sibuco"
+ PROV3561:0 "Zabala"
  PROV3584:0 "Ebro Estuary"
  PROV3585:0 "Ebro River"
- PROV3586:0 "Elbe River"
  PROV3587:0 "Oder River"
  PROV3693:0 "Kozloduy"
  PROV3694:0 "Doichov"
@@ -789,10 +1161,41 @@
  PROV_ADJ3298:0 "Ávila"
  PROV_ADJ3299:0 "Segovia"
  PROV_ADJ3300:0 "San Marino"
- PROV_ADJ3584:0 "Ebro_Estuary"
- PROV_ADJ3585:0 "Ebro_River"
- PROV_ADJ3586:0 "Elbe_River"
- PROV_ADJ3587:0 "Oder_River"
+ PROV_ADJ3531:0 "Rothschwaige"
+ PROV_ADJ3532:0 "Central Sugbu"
+ PROV_ADJ3533:0 "Tagbilaran"
+ PROV_ADJ3534:0 "Parang"
+ PROV_ADJ3535:0 "Kalamansig"
+ PROV_ADJ3536:0 "Namayan"
+ PROV_ADJ3537:0 "Caintan" 
+ PROV_ADJ3538:0 "Silangan" 
+ PROV_ADJ3539:0 "Taalan" 
+ PROV_ADJ3540:0 "Mambusan" 
+ PROV_ADJ3541:0 "Bacjawan" 
+ PROV_ADJ3542:0 "Irongan" 
+ PROV_ADJ3543:0 "Mangsungayan" 
+ PROV_ADJ3544:0 "Bagoan" 
+ PROV_ADJ3545:0 "Bayawan" 
+ PROV_ADJ3546:0 "Tanjayan" 
+ PROV_ADJ3547:0 "Dumanhugan" 
+ PROV_ADJ3548:0 "Talisayan"
+ PROV_ADJ3549:0 "Paranan"
+ PROV_ADJ3550:0 "Dumalnegan"
+ PROV_ADJ3551:0 "Itawatan"
+ PROV_ADJ3552:0 "Masinlocan"
+ PROV_ADJ3553:0 "Lipan"
+ PROV_ADJ3554:0 "Surigaonon"
+ PROV_ADJ3555:0 "Cateelan"
+ PROV_ADJ3556:0 "Luponan"
+ PROV_ADJ3557:0 "Malaybalayan"
+ PROV_ADJ3558:0 "Bongloyan"
+ PROV_ADJ3559:0 "Sindangan"
+ PROV_ADJ3560:0 "Sibucoan"
+ PROV_ADJ3561:0 "Zabalan"
+ PROV_ADJ3584:0 "Ebro Estuary"
+ PROV_ADJ3585:0 "Ebro River"
+ PROV_ADJ3586:0 "Elbe River"
+ PROV_ADJ3587:0 "Oder River"
  PROV_ADJ3693:0 "Kozloduy"
  PROV_ADJ3694:0 "Doichov"
  PROV_ADJ3695:0 "Batin"
@@ -1141,7 +1544,7 @@
  PROV_ADJ5591:0 "Jan Mayen"
  PROV_ADJ5592:0 "Kawâwâchikamach"
  PROV_ADJ5593:0 "Caniapuscaw"
- PROV_ADJ5594:0 "Nitchequon"
+ PROV5594:0 "Northern Quebec"
  PROV_ADJ5595:0 "Panniqtuuq"
  PROV_ADJ5596:0 "Kanngiqtugaapik"
  PROV_ADJ5597:0 "Tahuna"
@@ -1510,7 +1913,7 @@
  PROV_ADJ7089:0 "Feltre"
  PROV_ADJ7090:0 "Rovigno"
  PROV_ADJ7091:0 "Tolmino"
- PROV_ADJ7093:0 "Brixen"
+ PROV_ADJ7093:0 "Brixen im Thale"
  PROV_ADJ7094:0 "Belluno"
  PROV_ADJ7095:0 "Sulcis"
  PROV_ADJ7096:0 "Udine"
@@ -2211,6 +2614,12 @@
  PROV_ADJ8549:0 "Atayal"
  PROV_ADJ8673:0 "Menara"
  PROV_ADJ8700:0 "Keningau"
+ PROV8795:0 "Central Elbe River"
+ PROV_ADJ8795:0 "Central Elbe River"
+ PROV8796:0 "Upper Elbe River"
+ PROV_ADJ8796:0 "Upper Elbe River"
+ PROV8797:0 "Upper Mississippi"
+ PROV_AD8797:0 "Upper Mississippi"
 
  ############################################################################################################
  ############################################################################################################
@@ -2241,12 +2650,35 @@
  PROV_ADJ3349:0 "Porsangr"
  PROV3350:0 "Gallur"
  PROV_ADJ3350:0 "Gallur"
+ PROV3528:0 "Bismark"
+ PROV_ADJ3528:0 "Bismarker"
+ PROV3529:0 "Genthin"
+ PROV_ADJ3529:0 "Genthiner"
+ PROV3530:0 "Großenhain"
+ PROV_ADJ3530:0 "Großenhainer"
+ PROV3567:0 "Tierzo"
+ PROV_ADJ3567:0 "Tierzan"
+ PROV3568:0 "Silves"
+ PROV_ADJ3568:0 "Silves"
+ PROV3569:0 "Kutna Hora"
+ PROV3570:0 "Liberec"
+ PROV3571:0 "Most"
+ PROV3572:0 "Chomutov"
+ PROV3573:0 "St. Annaberg"
+ PROV3574:0 "Sumava"
+ PROV3575:0 "Ore"
+ PROV3576:0 "Krusne Hory"
+ PROV3577:0 "Jeseniky"
+ PROV3578:0 "Beskydy"
+ PROV3579:0 "Tartary"
+ PROV3580:0 "Haizer"
+ PROV3581:0 "Djurdjura"
  PROV3584:0 "Ebro Estuary"
  PROV_ADJ3584:0 "Ebro Estuary"
  PROV3585:0 "Ebro River"
  PROV_ADJ3585:0 "Ebro River"
- PROV3586:0 "Elbe River"
- PROV_ADJ3586:0 "Elbe River"
+ PROV3586:0 "Lower Elbe River"
+ PROV_ADJ3586:0 "Lower Elbe River"
  PROV3587:0 "Oder River"
  PROV_ADJ3587:0 "Oder River"
  PROV3588:0 "Rameshk"
@@ -2577,7 +3009,7 @@
  PROV3972:0 "Ulash"
  PROV_ADJ3972:0 "Ulashi"
  PROV3973:0 "Elbistan"
- PROV_ADJ3973: "Elbistani"
+ PROV_ADJ3973:0 "Elbistani"
  PROV3974:0 "Mudawwara"
  PROV_ADJ3974:0 "Mudawwaran"
  PROV3975:0 "Göksun"
@@ -5091,7 +5523,7 @@
  PROV7091:0 "Tolmino"
  PROV7092:0 "Visk"
  PROV_ADJ7092:0 "Visk"
- PROV7093:0 "Brixen"
+ PROV7093:0 "Brixen im Thale"
  PROV7094:0 "Belluno"
  PROV7095:0 "Sulcis"
  PROV7096:0 "Udine"
@@ -5414,8 +5846,8 @@
  PROV7409:0 "Haro Strait"
  PROV7410:0 "Chandeleur Sound"
  PROV7411:0 "Lake Borgne"
- PROV7412:0 "Central Mississippi"
- PROV7413:0 "Upper Mississippi"
+ PROV7412:0 "Lower Central Mississippi"
+ PROV7413:0 "Upper Central Mississippi"
  PROV7414:0 "Chesapeak Bay"
  PROV7415:0 "Albemarle Sound"
  PROV7416:0 "Plymouth"
@@ -5669,7 +6101,7 @@
  PROV7664:0 "Vimperk"
  PROV7665:0 "Slavonice"
  PROV7666:0 "Nová Ves nad Lužnicí"
- PROV7667:0 "Lipno"
+ PROV7667:0 "Chremis"
  PROV7668:0 "Dietmarbrunnen"
  PROV7669:0 "Wels"
  PROV7670:0 "Bad Ischl"
@@ -6541,11 +6973,11 @@
  PROV8519:0 "Ferrette"
  PROV8520:0 "Neuenburg"
  PROV8521:0 "Biel"
- PROV8522:0 "Lausanne"
+ PROV8522:0 "Payerne"
  PROV8523:0 "Villingen"
  PROV8524:0 "Lorrach"
  PROV8525:0 "Zug"
- PROV8526:0 "Aarau"
+ PROV8526:0 "Aargau"
  PROV8527:0 "Brienz"
  PROV8528:0 "Thun"
  PROV8529:0 "Lucerne"
@@ -6555,7 +6987,7 @@
  PROV8533:0 "Tuttlingen"
  PROV8534:0 "Winterthur"
  PROV8535:0 "Jestetten"
- PROV8536:0 "Vaduz"
+ PROV8536:0 "Lappersdorf"
  PROV8537:0 "Kreuzlingen"
  PROV8538:0 "Tiengen"
  PROV8539:0 "Schaffhausen"
@@ -7000,6 +7432,19 @@
  PROV_ADJ8763:0 "Itaperuna"
 
  # Victorum Universalis province adjectives. Please note these are extremely incomplete, but appear? to only be seen when the province in question is selected as a capital for a custom nation. So I'm treating them as a secondary concern for the moment. -Darth Modus
+ PROV_ADJ3569:0 "Kutna Hora"
+ PROV_ADJ3570:0 "Liberec"
+ PROV_ADJ3571:0 "Most"
+ PROV_ADJ3572:0 "Chomutov"
+ PROV_ADJ3573:0 "St. Annaberg"
+ PROV_ADJ3574:0 "Sumava"
+ PROV_ADJ3575:0 "Ore"
+ PROV_ADJ3576:0 "Krusne Hory"
+ PROV_ADJ3577:0 "Jeseniky"
+ PROV_ADJ3578:0 "Beskydy"
+ PROV_ADJ3579:0 "Tartary"
+ PROV_ADJ3580:0 "Haizer"
+ PROV_ADJ3581:0 "Djurdjura"
  PROV_ADJ4140:0 "Vozian"
  PROV_ADJ4846:0 "Woolna"
  PROV_ADJ4847:0 "Warnindilyakwan"
@@ -8212,7 +8657,7 @@
  PROV_ADJ7664:0 "Vimperk"
  PROV_ADJ7665:0 "Slavonice"
  PROV_ADJ7666:0 "Nová Ves nad Lužnicí"
- PROV_ADJ7667:0 "Lipno"
+ PROV_ADJ7667:0 "Chremis"
  PROV_ADJ7668:0 "Dietmarbrunnen"
  PROV_ADJ7669:0 "Wels"
  PROV_ADJ7670:0 "Bad Ischl"
@@ -8399,11 +8844,11 @@
  PROV_ADJ8519:0 "Ferrette"
  PROV_ADJ8520:0 "Neuenburg"
  PROV_ADJ8521:0 "Biel"
- PROV_ADJ8522:0 "Lausanne"
+ PROV_ADJ8522:0 "Payerne"
  PROV_ADJ8523:0 "Villingen"
  PROV_ADJ8524:0 "Lorrach"
  PROV_ADJ8525:0 "Zug"
- PROV_ADJ8526:0 "Aarau"
+ PROV_ADJ8526:0 "Aargau"
  PROV_ADJ8527:0 "Brienz"
  PROV_ADJ8528:0 "Thun"
  PROV_ADJ8529:0 "Lucerne"
@@ -8413,7 +8858,7 @@
  PROV_ADJ8533:0 "Tuttlingen"
  PROV_ADJ8534:0 "Winterthur"
  PROV_ADJ8535:0 "Jestetten"
- PROV_ADJ8536:0 "Vaduz"
+ PROV_ADJ8536:0 "Lappersdorf"
  PROV_ADJ8537:0 "Kreuzlingen"
  PROV_ADJ8538:0 "Tiengen"
  PROV_ADJ8539:0 "Schaffhausen"
@@ -8484,3 +8929,16 @@
  PROV_ADJ8793:0 "Niemegk"
  PROV8794:0 "Ulmerfeld"
  PROV_ADJ8794:0 "Ulmerfeld"
+ 
+ PROV3583:0 "Gleisdorf"
+ PROV_ADJ3583:0 "Gleisdorf"
+ 
+ PROV3582:0 "Schladming"
+ PROV_ADJ3582:0 "Schladming"
+ 
+ PROV3565:0 "Santiago do Cacem"
+ PROV_ADJ3565:0 "Santiago do Cacem"
+ 
+ PROV3566:0 "Liechtenstein"
+ PROV_ADJ3566:0 "Liechtenstein"
+ 

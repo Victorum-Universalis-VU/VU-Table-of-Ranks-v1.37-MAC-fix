@@ -13,31 +13,6 @@ native_size = 50
 native_ferocity = 10
 native_hostileness = 10
 
-#Claimants
-
-#Buildings
-
-#Special Modifiers
-
-#Known by Technology groups
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #Histories by SF
 1444.11.11 = {
     owner = MAM
@@ -46,6 +21,11 @@ native_hostileness = 10
 	trade_goods = camel		#Served as desert fortress with small oasis for most of the history
 	base_manpower = 2 
 	is_city = yes
+
+	#Claimants
+	add_core = J0R
+	add_core = PLE
+	add_core = R4S
 }
 1516.8.24 = {	owner = TUR
 	controller = TUR

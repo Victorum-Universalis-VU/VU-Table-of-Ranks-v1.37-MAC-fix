@@ -142,6 +142,7 @@ tr_muscovy_conquest = {
 				area = curonia_area
 				area = estonia_ingria_area
 				area = livonia_area
+				area = riga_area
 			}
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
@@ -157,6 +158,10 @@ tr_muscovy_conquest = {
 				country_or_non_sovereign_subject_holds = ROOT	
 			}
 			livonia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT	
+			}
+			riga_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT	
 			}
@@ -570,6 +575,13 @@ required_missions = { tr_invade_novgorod_mission }
 				add_permanent_claim = ROOT
 			}
 			livonia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			riga_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT	}
 					NOT = { is_core = ROOT	}

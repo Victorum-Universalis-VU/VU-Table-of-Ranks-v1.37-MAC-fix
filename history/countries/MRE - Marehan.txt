@@ -1,5 +1,6 @@
 government = tribal
 add_government_reform = tribal_kingdom
+government_rank = 6 #Petty_Kingdom
 technology_group = east_african
 unit_type = sub_saharan
 religion = sunni

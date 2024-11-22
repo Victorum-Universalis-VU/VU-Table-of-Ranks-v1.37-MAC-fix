@@ -15,11 +15,10 @@ base_manpower = 2
 capital = "Kalmar"
 is_city = yes
 fort_15th = yes # Kalmar Slott
+
+#Claimants
+add_core = KLR
 add_core = OTG
-
-
-
-
 
 center_of_trade = 1
 extra_cost = 10

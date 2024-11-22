@@ -30,6 +30,10 @@ spriteTypes = {
 		texturefile = "gfx//interface//sort_macro_tax_cost.dds"
 	}
 
+
+
+
+
 	spriteType = {
 		name = "GFX_create_navy_template_bg"
 		texturefile = "gfx/interface/create_navy_template_bg.dds"
@@ -99,6 +103,11 @@ spriteTypes = {
 		texturefile = "gfx//interface//culture_selection_bg.dds"
 	}
 
+
+
+
+
+
 	spriteType = {
 		name = "GFX_exploit_button_manpower"
 		texturefile = "gfx//interface//exploit_button_manpower.dds"
@@ -138,6 +147,13 @@ spriteTypes = {
 		name = "GFX_sort_total_49"
 		texturefile = "gfx//interface//sort_total_49.dds"
 	}
+
+
+
+
+
+
+	
 	
 	spriteType = {
 		name = "GFX_close_gold"

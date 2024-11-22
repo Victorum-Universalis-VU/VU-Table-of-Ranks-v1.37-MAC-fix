@@ -2,6 +2,7 @@
 
 owner = QAR
 controller = QAR
+add_core = QAR
 culture = kurdish
 religion = yazidi				#old kurdish beliefs
 capital = "Egil"
@@ -11,17 +12,9 @@ base_tax = 4
 base_production = 3
 base_manpower = 3
 is_city = yes
-add_core = QAR
+
+#Claimants
 add_core = EGI 					#Principality of Egil - core city
-
-
-
-
-
-
-
-
-
 
 #Province history completed by docRobert
 

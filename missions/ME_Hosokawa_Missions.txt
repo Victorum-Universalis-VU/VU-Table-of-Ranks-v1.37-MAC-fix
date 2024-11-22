@@ -8,6 +8,12 @@ HSK_missions_1 = {
 			AND = {
 				NOT = { has_reform = indep_daimyo }
 				NOT = { has_reform = daimyo }
+		        NOT = { has_reform = daimyo_barony_reform }
+		        NOT = { has_reform = daimyo_viscounty_reform }
+		        NOT = { has_reform = daimyo_county_reform }
+		        NOT = { has_reform = daimyo_marquisate_reform }
+		        NOT = { has_reform = daimyo_duchy_reform }
+		        NOT = { has_reform = daimyo_principality_reform }
 				NOT = { has_reform = shogunate }
 			}
 			has_country_flag = use_missions_expanded_missions_instead_of_paradox
@@ -97,6 +103,12 @@ HSK_missions_2 = {
 			AND = {
 				NOT = { has_reform = indep_daimyo }
 				NOT = { has_reform = daimyo }
+		        NOT = { has_reform = daimyo_barony_reform }
+		        NOT = { has_reform = daimyo_viscounty_reform }
+		        NOT = { has_reform = daimyo_county_reform }
+		        NOT = { has_reform = daimyo_marquisate_reform }
+		        NOT = { has_reform = daimyo_duchy_reform }
+		        NOT = { has_reform = daimyo_principality_reform }
 				NOT = { has_reform = shogunate }
 			}
 			has_country_flag = use_missions_expanded_missions_instead_of_paradox
@@ -217,6 +229,12 @@ HSK_missions_3 = {
 			AND = {
 				NOT = { has_reform = indep_daimyo }
 				NOT = { has_reform = daimyo }
+		        NOT = { has_reform = daimyo_barony_reform }
+		        NOT = { has_reform = daimyo_viscounty_reform }
+		        NOT = { has_reform = daimyo_county_reform }
+		        NOT = { has_reform = daimyo_marquisate_reform }
+		        NOT = { has_reform = daimyo_duchy_reform }
+		        NOT = { has_reform = daimyo_principality_reform }
 				NOT = { has_reform = shogunate }
 			}
 			has_country_flag = use_missions_expanded_missions_instead_of_paradox
@@ -318,6 +336,12 @@ HSK_missions_4 = {
 			AND = {
 				NOT = { has_reform = indep_daimyo }
 				NOT = { has_reform = daimyo }
+		        NOT = { has_reform = daimyo_barony_reform }
+		        NOT = { has_reform = daimyo_viscounty_reform }
+		        NOT = { has_reform = daimyo_county_reform }
+		        NOT = { has_reform = daimyo_marquisate_reform }
+		        NOT = { has_reform = daimyo_duchy_reform }
+		        NOT = { has_reform = daimyo_principality_reform }
 				NOT = { has_reform = shogunate }
 			}
 			has_country_flag = use_missions_expanded_missions_instead_of_paradox
@@ -395,6 +419,12 @@ HSK_missions_5 = {
 			AND = {
 				NOT = { has_reform = indep_daimyo }
 				NOT = { has_reform = daimyo }
+		        NOT = { has_reform = daimyo_barony_reform }
+		        NOT = { has_reform = daimyo_viscounty_reform }
+		        NOT = { has_reform = daimyo_county_reform }
+		        NOT = { has_reform = daimyo_marquisate_reform }
+		        NOT = { has_reform = daimyo_duchy_reform }
+		        NOT = { has_reform = daimyo_principality_reform }
 				NOT = { has_reform = shogunate }
 			}
 			has_country_flag = use_missions_expanded_missions_instead_of_paradox

@@ -98,7 +98,7 @@
 #			emperor = {
 #				country_event = { id = hre_event.5 }
 #			}
-#			set_government_rank = 3
+#			set_government_rank = 9
 #			north_german_region = {
 #				limit = {
 #					NOT = { owned_by = ROOT }

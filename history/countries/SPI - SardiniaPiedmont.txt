@@ -1,6 +1,6 @@
 government = monarchy
 add_government_reform = kingdom_of_sardinia_reform
-government_rank = 1
+government_rank = 8 #Kingdom
 #technology_group = western
 technology_group = italian_tech_group
 unit_type = western
@@ -10,7 +10,7 @@ capital = 103 # Piedomont
 
 
 1720.2.20 = {
-	government_rank = 2
+	government_rank = 8
 	monarch = {
 		name = "Vittorio Amedeo II"
 		dynasty = "di Savoia"
@@ -44,7 +44,7 @@ capital = 103 # Piedomont
 }
 
 1730.9.3 = {
-	government_rank = 2
+	government_rank = 8
 	monarch = {
 		name = "Carlo Emanuele III"
 		dynasty = "di Savoia"
@@ -77,7 +77,7 @@ capital = 103 # Piedomont
 }
 
 1773.2.20 = {
-	government_rank = 2
+	government_rank = 8
 	monarch = {
 		name = "Vittorio Amedeo III"
 		dynasty = "di Savoia"
@@ -110,7 +110,7 @@ capital = 103 # Piedomont
 }
 
 1796.10.16 = {
-	government_rank = 2
+	government_rank = 8
 	monarch = {
 		name = "Carlo Emanuele IV"
 		dynasty = "di Savoia"
@@ -132,7 +132,7 @@ capital = 103 # Piedomont
 }
 
 1802.6.4 = {
-	government_rank = 2
+	government_rank = 8
 	monarch = {
 		name = "Vittorio Emanuele I"
 		dynasty = "di Savoia"
@@ -154,7 +154,7 @@ capital = 103 # Piedomont
 }
 
 1821.3.13 = {
-	government_rank = 2
+	government_rank = 8
 	monarch = {
 		name = "Carlo Felice"
 		dynasty = "di Savoia"
@@ -176,7 +176,7 @@ capital = 103 # Piedomont
 }
 
 1831.4.27 = {
-	government_rank = 2
+	government_rank = 8
 	monarch = {
 		name = "Carlo Alberto"
 		dynasty = "di Savoia-Carignano"
@@ -209,7 +209,7 @@ capital = 103 # Piedomont
 }
 
 1849.3.24 = {
-	government_rank = 2
+	government_rank = 8
 	monarch = {
 		name = "Vittorio Emanuele II"
 		dynasty = "di Savoia-Carignano"

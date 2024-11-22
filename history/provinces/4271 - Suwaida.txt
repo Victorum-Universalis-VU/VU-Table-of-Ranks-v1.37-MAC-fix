@@ -12,27 +12,13 @@ base_tax = 4
 base_production = 6
 base_manpower = 4
 is_city = yes
+
+#Claimants
+add_core = A1P
+add_core = R4S
 add_core = SYR
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#Histories by SF
 1516.8.24 = {
 	owner = TUR
 	controller = TUR

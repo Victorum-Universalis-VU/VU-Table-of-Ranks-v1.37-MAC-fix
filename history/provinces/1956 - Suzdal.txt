@@ -4,18 +4,18 @@
 
 owner = MOS
 controller = MOS
-culture = russian
+culture = muscovite
 religion = orthodox
 hre = no
-base_tax = 10
-base_production = 9
+base_tax = 6
+base_production = 6
 trade_goods = vodka	#was grain
-base_manpower = 5
+base_manpower = 6
 capital = "Suzdal"
 is_city = yes
 add_core = NZH
 add_core = MOS
-
+center_of_trade = 1
 
 
 

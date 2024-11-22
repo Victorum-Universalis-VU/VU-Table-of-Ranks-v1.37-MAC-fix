@@ -1,5 +1,6 @@
 government = monarchy
 add_government_reform = autocracy_reform
+government_rank = 6 #Petty Kingdom
 primary_culture = tigray
 religion = coptic
 technology_group = east_african

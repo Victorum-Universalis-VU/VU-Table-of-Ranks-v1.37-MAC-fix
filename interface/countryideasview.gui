@@ -13,8 +13,7 @@ guiTypes = {
 		Orientation = "UPPER_LEFT"
 		upsound = tab_ideas
 		
-		iconType =
-		{
+		iconType = {
 			name ="domesticpanel_bg"
 			spriteType = "GFX_country_ideas_view_bg"
 			position = {  x= -7 y = -10 }
@@ -22,8 +21,7 @@ guiTypes = {
 
 		}
 		
-		iconType =
-		{
+		iconType = {
 			name ="topGold"
 			spriteType = "GFX_country_ideas_view_topGold"
 			position = { x= -2 y = 78 }
@@ -54,8 +52,7 @@ guiTypes = {
 		
 		### ------- Unique ideas -------	
 				
-		guiButtonType =
-		{
+		guiButtonType =	{
 			name ="unique_ideas_category"
 			spriteType = "GFX_shield_thin"
 			position = { x= 15 y = 130 }
@@ -74,8 +71,7 @@ guiTypes = {
 			format = left
 		}
 
-		iconType =
-		{
+		iconType = {
 			name ="unique_ideas_start_icon_1"
 			spriteType = "GFX_idea_empty"
 			position = { x = 297 y = 127 }
@@ -96,8 +92,7 @@ guiTypes = {
 			format = left
 		}
 		
-		iconType =
-		{
+		iconType = {
 			name ="unique_ideas_start_icon_2"
 			spriteType = "GFX_idea_empty"
 			position = { x = 376 y = 127 }
@@ -118,8 +113,7 @@ guiTypes = {
 			format = left
 		}		
 		
-		iconType =
-		{
+		iconType = {
 			name ="unique_ideas_bonus_icon"
 			spriteType = "GFX_idea_empty"
 			position = { x = 452 y = 127 }
@@ -199,7 +193,7 @@ guiTypes = {
 			
 			iconType = {
 				name ="domesticpanel_overlay"
-				spriteType = "GFX_choose_idea_bg"
+				spriteType = "GFX_new_choose_idea_bg"
 				position = { x= -7 y = -10 }
 				Orientation = "UPPER_LEFT"
 			}				
@@ -285,12 +279,6 @@ guiTypes = {
 				scrollbartype = "standardlistbox_slider"
 				borderSize = {x = 0 y = 0}
 			}			
-
-			#iconType = {
-			#	name ="close_gold"
-			#	spriteType = "GFX_close_gold2"
-			#	position = { x=961 y =6 }
-			#}	
 			
 			guiButtonType = {
 				name = "back_button"
@@ -378,7 +366,8 @@ guiTypes = {
 			spriteType = "GFX_icon_powers_administrative"
 			position = { x= 3 y = 2 }
 			Orientation = "UPPER_LEFT"
-		}				
+		}
+
 
 		instantTextBoxType = {
 			name = "ideas_idea_title"
@@ -460,7 +449,8 @@ guiTypes = {
 			spriteType = "GFX_icon_powers_administrative"
 			position = { x= 3 y = 2 }
 			Orientation = "UPPER_LEFT"
-		}				
+		}
+
 
 		instantTextBoxType = {
 			name = "ideas_idea_title"
@@ -479,6 +469,7 @@ guiTypes = {
 			spriteType = "GFX_ideas_bonus_strip"
 			position = { x = 170 y = 3 }
 			Orientation = "UPPER_LEFT"
+
 		}	
 
 		OverlappingElementsBoxType = {
@@ -561,6 +552,8 @@ guiTypes = {
 		dontRender = ""
 		horizontalBorder = ""
 		
+
+
 		guiButtonType = {
 			name ="unlock"
 			quadTextureSprite= "GFX_ideaView_free_slot_button"
@@ -610,7 +603,7 @@ guiTypes = {
 			quadTextureSprite= "GFX_ideas_view_unlockideabg"
 			position = { x= 0 y = 0 }
 			Orientation = "UPPER_LEFT"
-			clicksound = click #DOESNT WORK
+			clicksound = click
 		}
 		
 		iconType = {

@@ -1,7 +1,7 @@
 #STC - Strathclyde
 government = monarchy
-add_government_reform = scottish_monarchy #Known as the Privy Council of Scotland based off the King's Council or curia regis
-government_rank = 2
+add_government_reform = lowland_clan_reform
+government_rank = 1 #Clan
 primary_culture = scottish
 add_accepted_culture = highland_scottish
 add_accepted_culture = gallgaidheil

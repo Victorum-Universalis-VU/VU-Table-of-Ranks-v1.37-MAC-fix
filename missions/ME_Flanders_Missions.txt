@@ -5,6 +5,7 @@ FLA_missions_1 = {
 	potential = {
 		tag = FLA
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
+		NOT = { has_dlc = "Winds of Change" }
 	}
 	has_country_shield = yes
 	
@@ -68,6 +69,7 @@ FLA_missions_2 = {
 	potential = {
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 		tag = FLA
+		NOT = { has_dlc = "Winds of Change" }
 	}
 	has_country_shield = yes
 	
@@ -195,6 +197,7 @@ FLA_missions_3 = {
 	potential = {
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 		tag = FLA
+		NOT = { has_dlc = "Winds of Change" }
 	}
 	has_country_shield = yes
 	
@@ -401,9 +404,9 @@ FLA_missions_3 = {
 			}
 			if = {
 				limit = {
-					NOT = { government_rank = 2 }
+					NOT = { government_rank = 8 }
 				}
-				set_government_rank = 2
+				set_government_rank = 8
 			}
 			change_government = republic
 			add_government_reform = dutch_republic
@@ -422,6 +425,7 @@ FLA_missions_4 = {
 	potential = {
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 		tag = FLA
+		NOT = { has_dlc = "Winds of Change" }
 	}
 	has_country_shield = yes
 	
@@ -507,6 +511,7 @@ FLA_missions_5 = {
 	potential = {
 		has_country_flag = use_missions_expanded_missions_instead_of_paradox
 		tag = FLA
+		NOT = { has_dlc = "Winds of Change" }
 	}
 	has_country_shield = yes
 	

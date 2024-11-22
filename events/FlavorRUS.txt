@@ -1,4 +1,4 @@
-#VU updated by San Felipe for 1.36
+#Updated to v1.36 - SF
 ########################################
 # Major Flavor Events                  #
 ########################################
@@ -117,53 +117,51 @@ country_event = {
 }
 
 # Russian claims in the East
-country_event = {
-	id = flavor_rus.3
-	title = "flavor_rus.EVTNAME3404"
-	desc = "flavor_rus.EVTDESC3404"
-	picture = MILITARY_CAMP_eventPicture
-	fire_only_once = yes
-	trigger = {
-		OR = {
-		    tag = RUS
-			owns = 303	#Saratov
-			owns = 473	#Samara
-			owns = 1971	#Tsaritsyn
-			owns = 1082	#Kazan
-			owns = 464	#Astrakhan
-			tag = TZR
-		}
-	}
-
-	mean_time_to_happen = {
-		months = 60
-	}
-
-	option = {		# It all belongs to Mother Russia
-		name = "flavor_rus.EVTOPTA3404"
-		ai_chance = { factor = 100 }
-		303 = {
-			add_base_tax = 2
-			add_base_manpower = 2	 
-		}
-		473 = {
-			add_base_tax = 2
-			add_base_manpower = 2
-		}
-		1971 = {
-			add_base_tax = 2
-			add_base_manpower = 2
-		}
-		1082 = {
-			add_base_tax = 2
-			add_base_manpower = 2
-		}
-		464 = {
-			add_base_tax = 2
-			add_base_manpower = 2
-		}
-	}
-}
+#country_event = {
+#	id = flavor_rus.3
+#	title = "flavor_rus.EVTNAME3404"
+#	desc = "flavor_rus.EVTDESC3404"
+#	picture = MILITARY_CAMP_eventPicture
+#	fire_only_once = yes
+#	trigger = {
+#		OR = {
+#		    tag = RUS
+#			owns = 303	#Saratov
+#			owns = 473	#Samara
+#			owns = 1971	#Tsaritsyn
+#			owns = 1082	#Kazan
+#			owns = 464	#Astrakhan
+#			tag = TZR
+#		}
+#	}
+#	mean_time_to_happen = {
+#		months = 60
+#	}
+#	option = {		# It all belongs to Mother Russia
+#		name = "flavor_rus.EVTOPTA3404"
+#		ai_chance = { factor = 100 }
+#		303 = {
+#			add_base_tax = 2
+#			add_base_manpower = 2	 
+#		}
+#		473 = {
+#			add_base_tax = 2
+#			add_base_manpower = 2
+#		}
+#		1971 = {
+#			add_base_tax = 2
+#			add_base_manpower = 2
+#		}
+#		1082 = {
+#			add_base_tax = 2
+#			add_base_manpower = 2
+#		}
+#		464 = {
+#			add_base_tax = 2
+#			add_base_manpower = 2
+#		}
+#	}
+#}
 
 # Russian claims on Poland-Lithuania
 country_event = {
@@ -945,17 +943,9 @@ country_event = {
 	
 	trigger = {
 		tag = RUS
-		if = { 
-			limit = { 
- 				has_saved_event_target = EmperorOfChina
-			}
-			event_target:EmperorOfChina = {
-				exists = yes
-				is_neighbor_of = ROOT
-			}
-		}
-		else = { 
-			always = no 
+		event_target:EmperorOfChina = {
+			exists = yes
+			is_neighbor_of = ROOT
 		}
 	}
 	
@@ -2358,20 +2348,6 @@ country_event = {
 			}
 			add_permanent_claim = ROOT
 		}
-		kama_area = {
-			limit = {
-				NOT = { is_permanent_claim = ROOT }
-				NOT = { is_core = ROOT }
-			}
-			add_permanent_claim = ROOT
-		}
-		pomor_area = {
-			limit = {
-				NOT = { is_permanent_claim = ROOT }
-				NOT = { is_core = ROOT }
-			}
-			add_permanent_claim = ROOT
-		}
 		vyatka_area = {
 			limit = {
 				NOT = { is_permanent_claim = ROOT }
@@ -2386,48 +2362,13 @@ country_event = {
 			}
 			add_permanent_claim = ROOT
 		}
-		west_karelia_area = {
-			limit = {
-				NOT = { is_permanent_claim = ROOT }
-				NOT = { is_core = ROOT }
-			}
-			add_permanent_claim = ROOT
-		}
-		tambov_area = {
-			limit = {
-				NOT = { is_permanent_claim = ROOT }
-				NOT = { is_core = ROOT }
-			}
-			add_permanent_claim = ROOT
-		}
-		middle_don_area = {
-			limit = {
-				NOT = { is_permanent_claim = ROOT }
-				NOT = { is_core = ROOT }
-			}
-			add_permanent_claim = ROOT
-		}
-		pskov_area = {
-			limit = {
-				NOT = { is_permanent_claim = ROOT }
-				NOT = { is_core = ROOT }
-			}
-			add_permanent_claim = ROOT
-		}
-		toropets_area = {
-			limit = {
-				NOT = { is_permanent_claim = ROOT }
-				NOT = { is_core = ROOT }
-			}
-			add_permanent_claim = ROOT
-		}
-		bashkiria_area = {
-			limit = {
-				NOT = { is_permanent_claim = ROOT }
-				NOT = { is_core = ROOT }
-			}
-			add_permanent_claim = ROOT
-		}
+		#volga_area = {
+		#	limit = {
+		#		NOT = { is_permanent_claim = ROOT }
+		#		NOT = { is_core = ROOT }
+		#	}
+		#	add_permanent_claim = ROOT
+		#}
 		kazan_area = {
 			limit = {
 				NOT = { is_permanent_claim = ROOT }
@@ -2463,7 +2404,7 @@ country_event = {
 			}
 			add_permanent_claim = ROOT
 		}
-		add_permanent_claim_province = { province = 1777 }
+		add_permanent_claim_province = { province = 3291 }
 		add_permanent_claim_province = { province = 2408 }
 		add_permanent_claim_province = { province = 299 }
 
@@ -2505,55 +2446,13 @@ country_event = {
 			}
 			add_claim = ROOT
 		}
-		west_karelia_area = {
-			limit = {
-				NOT = { is_permanent_claim = ROOT }
-				NOT = { is_core = ROOT }
-			}
-			add_claim = ROOT
-		}
-		tambov_area = {
-			limit = {
-				NOT = { is_permanent_claim = ROOT }
-				NOT = { is_core = ROOT }
-			}
-			add_claim = ROOT
-		}
-		middle_don_area = {
-			limit = {
-				NOT = { is_permanent_claim = ROOT }
-				NOT = { is_core = ROOT }
-			}
-			add_claim = ROOT
-		}
-		pskov_area = {
-			limit = {
-				NOT = { is_permanent_claim = ROOT }
-				NOT = { is_core = ROOT }
-			}
-			add_claim = ROOT
-		}
-		toropets_area = {
-			limit = {
-				NOT = { is_permanent_claim = ROOT }
-				NOT = { is_core = ROOT }
-			}
-			add_claim = ROOT
-		}
-		kama_area = {
-			limit = {
-				NOT = { is_permanent_claim = ROOT }
-				NOT = { is_core = ROOT }
-			}
-			add_claim = ROOT
-		}
-		bashkiria_area = {
-			limit = {
-				NOT = { is_permanent_claim = ROOT }
-				NOT = { is_core = ROOT }
-			}
-			add_claim = ROOT
-		}
+		#volga_area = {
+		#	limit = {
+		#		NOT = { is_permanent_claim = ROOT }
+		#		NOT = { is_core = ROOT }
+		#	}
+		#	add_claim = ROOT
+		#}
 		kazan_area = {
 			limit = {
 				NOT = { is_permanent_claim = ROOT }
@@ -2589,7 +2488,7 @@ country_event = {
 			}
 			add_claim = ROOT
 		}
-		add_claim_province = { province = 1777 }
+		add_claim_province = { province = 3291 }
 		add_claim_province = { province = 2408 }
 		add_claim_province = { province = 299 }
 
@@ -2657,13 +2556,14 @@ country_event = {
 	option = {
 		name = flavor_rus.102.a
 		1955 = {
+			rename_capital = "Arkhangelsk"
+			change_province_name = "Arkhangelsk"
 			add_base_tax = -1
 			add_base_production = -1
 			add_base_manpower = -1
-			add_center_of_trade_level = -1
 		}
 		313 = {
-			center_of_trade = 2
+			add_center_of_trade_level = 1
 			add_base_tax = 2
 			add_base_production = 2
 			add_base_manpower = 2
@@ -2707,7 +2607,7 @@ country_event = {
 					cede_province = ROOT
 				}
 			}
-			laponia_area = {
+			1930 = {
 				add_core = FIN
 				remove_core = ROOT 
 				if = {
@@ -2882,44 +2782,44 @@ country_event = {
 }
 
 # Establishment of Rostov-on-Don
-country_event = {
-	id = flavor_rus.114
-	title = flavor_rus.114.t
-	desc = flavor_rus.114.desc
-	picture = CITY_DEVELOPMENT_eventPicture
-	trigger = {
-		has_dlc = "Domination"
-		tag = RUS
-		owns_core_province = 286
-	}
-	mean_time_to_happen = {
-		months = 50
-	}
-	fire_only_once = yes
-	goto = 286
+#country_event = {
+#	id = flavor_rus.114
+#	title = flavor_rus.114.t
+#	desc = flavor_rus.114.desc
+#	picture = CITY_DEVELOPMENT_eventPicture
+#	trigger = {
+#		has_dlc = "Domination"
+#		tag = RUS
+#		owns_core_province = 286
+#	}
+#	mean_time_to_happen = {
+#		months = 50
+#	}
+#	fire_only_once = yes
+#	goto = 286
+#
+#	option = {
+#		name = flavor_rus.114.a
+#		add_years_of_income = -0.2
+#		286 = {
+#			change_province_name = "Rostov-on-Don"
+#			rename_capital = "Rostov-on-Don"
+#			if = {
+#				limit = { NOT = { has_shipyard_building_trigger = yes } }
+#				add_building = shipyard
+#			}
+#			add_base_tax = 2
+#			add_base_production = 2
+#			add_base_manpower = 1
+#			center_of_trade = 1
+#		}
+#		ai_chance = {
+#			factor = 1
+#		}
+#	}
+#}
 
-	option = {
-		name = flavor_rus.114.a
-		add_years_of_income = -0.2
-		286 = {
-			change_province_name = "Rostov-on-Don"
-			rename_capital = "Rostov-on-Don"
-			if = {
-				limit = { NOT = { has_shipyard_building_trigger = yes } }
-				add_building = shipyard
-			}
-			add_base_tax = 2
-			add_base_production = 2
-			add_base_manpower = 1
-			center_of_trade = 1
-		}
-		ai_chance = {
-			factor = 1
-		}
-	}
-}
-
-# The Christian border of Persia
+# The Christian border of Persia Komandor: check it if dosnt work
 country_event = {
 	id = flavor_rus.116
 	title = flavor_rus.116.t
@@ -2930,11 +2830,19 @@ country_event = {
 		hidden_effect = {
 			random_ally = {
 				limit = {
-					capital_scope = { region = caucasia_region }
-					religion = ROOT
-					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-						region = persia_region
-						value = 20
+					religion_group = ROOT
+					capital_scope = {
+						OR = {
+							area = imereti_area
+							area = samtskhe_area
+							area = armenia_area
+							area = shirvan_area
+						}
+					}
+					num_of_cities = 9
+					has_opinion = {
+						who = ROOT
+						value = 100
 					}
 				}
 				save_event_target_as = rus_persian_ally
@@ -3072,7 +2980,7 @@ country_event = {
 	#oof
 	option = {
 		name = flavor_rus.119.a
-		persia_region = {
+		caucasia_region = {
 			limit = {
 				NOT = { is_core = ROOT }
 				NOT = { is_permanent_claim = ROOT }
@@ -3811,7 +3719,7 @@ country_event = {
 			}
 		}
 		#vu_change_tech_group_to_western = yes
-		change_technology_group = western
+		#change_technology_group = western
 		add_prestige_or_monarch_power = {
 			amount = 50
 		}
@@ -3825,9 +3733,7 @@ country_event = {
 	#	name = flavor_rus.134.b
 	#	set_country_flag = rus_westernized_in_court
 	#	if = {
-	#		limit = { 
-	#	        technology_group = eastern
-	#		}
+	#		limit = { technology_group = eastern }
 	#		unlock_estate = {
 	#			estate = estate_cossacks
 	#			show_conditions = yes
@@ -4153,7 +4059,7 @@ country_event = {
 	
 	option = {		# Legalize the Serfdom
 		name = flavor_rus.306.a
-		remove_estate_privilege = estate_nobles_early_serfdom
+		rus_clear_peasantry_estate_privileges = yes
 		set_estate_privilege = estate_nobles_legalized_serfdom
 		add_years_of_owned_provinces_production_income = {
 			custom_tooltip = MONOPOLY_INCOME_GRAIN_DESC
@@ -4170,7 +4076,7 @@ country_event = {
 	option = {		# Accept deteriorating Economy and Burgher Uprisings
 		name = flavor_rus.306.b
 		goto = revolt_province
-		remove_estate_privilege = estate_nobles_early_serfdom
+		rus_clear_peasantry_estate_privileges = yes
 		set_estate_privilege = estate_nobles_peasant_liberation
 		event_target:revolt_province = {
 			spawn_rebels = {
@@ -4228,7 +4134,7 @@ country_event = {
 	
 	option = {		# Encourage the freedom of thought of the Peasantry
 		name = flavor_rus.307.a
-		remove_estate_privilege = estate_nobles_increased_peasant_freedom
+		rus_clear_peasantry_estate_privileges = yes
 		set_estate_privilege = estate_nobles_peasant_liberation
 		change_innovativeness = 2
 		add_stability = -2
@@ -4240,7 +4146,7 @@ country_event = {
 	option = {		# Such thoughts are dangerous for the state.
 		name = flavor_rus.307.b
 		goto = revolt_province
-		remove_estate_privilege = estate_nobles_increased_peasant_freedom
+		rus_clear_peasantry_estate_privileges = yes
 		set_estate_privilege = estate_nobles_legalized_serfdom
 		add_stability_or_adm_power = yes
 		add_absolutism = 20
@@ -4438,7 +4344,7 @@ country_event = {
 
 	option = {		# Keep the Masses in Chains
 		name = flavor_rus.310.a
-		remove_estate_privilege = estate_nobles_legalized_serfdom
+		rus_clear_peasantry_estate_privileges = yes
 		set_estate_privilege = estate_nobles_total_serfdom
 		add_stability_or_adm_power = yes
 		event_target:revolt_province = {
@@ -4454,7 +4360,7 @@ country_event = {
 	}
 	option = {		# Let introduce the idea of 'Freedom'
 		name = flavor_rus.310.b
-		remove_estate_privilege = estate_nobles_legalized_serfdom
+		rus_clear_peasantry_estate_privileges = yes
 		set_estate_privilege = estate_burghers_the_new_middle_class
 		add_stability = -2
 		event_target:revolt_province = {
@@ -4545,7 +4451,7 @@ country_event = {
 				loyalty = -50
 			}
 		}
-		remove_estate_privilege = estate_nobles_peasant_liberation
+		rus_clear_peasantry_estate_privileges = yes
 		set_estate_privilege = estate_burghers_the_new_middle_class
 
 		ai_chance = {
@@ -4570,7 +4476,7 @@ country_event = {
 				loyalty = -50
 			}
 		}
-		remove_estate_privilege = estate_nobles_peasant_liberation
+		rus_clear_peasantry_estate_privileges = yes
 		set_estate_privilege = estate_nobles_total_serfdom
 		ai_chance = {
 			factor = 2
@@ -4610,7 +4516,7 @@ country_event = {
 			}
 			add_reform_progress_small_effect = yes
 		}
-		remove_estate_privilege = estate_nobles_total_serfdom
+		rus_clear_peasantry_estate_privileges = yes
 		set_estate_privilege = estate_nobles_restricted_serfdom
 		add_stability = -2
 		if = {
@@ -4628,7 +4534,7 @@ country_event = {
 	}
 	option = {		# It is perfect as it is
 		name = flavor_rus.312.b
-		remove_estate_privilege = estate_nobles_total_serfdom
+		rus_clear_peasantry_estate_privileges = yes
 		set_estate_privilege = estate_nobles_devastating_serfdom
 		add_stability_or_adm_power = yes
 		ai_chance = {
@@ -4665,8 +4571,7 @@ country_event = {
 
 	option = {		# End the Challenge of the Burghers
 		name = flavor_rus.313.a
-		remove_estate_privilege = estate_burghers_the_new_middle_class
-		remove_estate_privilege = estate_burghers_rise_of_the_burghers
+		rus_clear_peasantry_estate_privileges = yes
 		add_stability = -2
 		if = {
 			limit = {
@@ -4677,16 +4582,42 @@ country_event = {
 				loyalty = -20
 			}
 		}
+		event_target:revolt_province = {
+			spawn_rebels = {
+				type = anti_tax_rebels
+				size = 5
+			}
+		}
 		add_absolutism = 50
 		ai_chance = {
-			factor = 90
+			factor = 85
 		}
 	}
 	option = {		# Declare the Republic!
 		name = flavor_rus.313.b
 		change_government = republic
 		add_stability = -1
-		
+		define_ruler = {
+			name = "Pavel Pestel"
+			change_adm = 3
+			change_dip = 3
+			change_mil = 3
+		}
+
+		ai_chance = {
+			factor = 5
+		}
+	}
+	option = {		# Declare the Constitutional monarchy!
+		name = flavor_rus.313.c
+		add_government_reform = parliamentary_reform
+		event_target:revolt_province = {
+			spawn_rebels = {
+				type = particularist_rebels
+				size = 2
+			}
+		}
+
 		ai_chance = {
 			factor = 10
 		}
@@ -4747,8 +4678,7 @@ country_event = {
 	option = {		# Death to the oppressors of the worker class!
 		name = flavor_rus.398.a
 		add_yearly_manpower = 2
-		remove_estate_privilege = estate_nobles_early_serfdom
-		remove_estate_privilege = estate_nobles_legalized_serfdom
+		rus_clear_peasantry_estate_privileges = yes
 		add_revolutionary_zeal_or_absolutism = {
 			amount = 20
 		}
@@ -4769,8 +4699,7 @@ country_event = {
 	option = {		# They are just another enemies of the revolution!
 		name = flavor_rus.399.a
 		add_yearly_manpower = 2
-		remove_estate_privilege = estate_nobles_early_serfdom
-		remove_estate_privilege = estate_nobles_legalized_serfdom
+		rus_clear_peasantry_estate_privileges = yes
 		add_revolutionary_zeal_or_absolutism = {
 			amount = 20
 		}
@@ -5628,136 +5557,5 @@ country_event = {	#Declaring our destiny
 		1083 = {
 			add_local_autonomy = -20
 		}
-	}
-}
-
-country_event = {	#Fate of Novgorod
-	id = flavor_rus.3001
-	title = "flavor_rus.3001.t"
-	desc = "flavor_rus.3001.d"
-	picture = COURT_eventPicture
-	
-	fire_only_once = yes
-	
-	major = yes
-	
-	trigger = {
-		tag = MOS
-		is_year = 1455
-		NOV = { exists = yes }
-	}
-	
-	mean_time_to_happen = {
-		months = 60
-	}
-	
-	option = {	#We will dismantle the whole state of Novgorod
-		name = "flavor_rus.3001.a"
-		ai_chance = { factor = 95 }
-		custom_tooltip = flavor_rus.3001.tooltip
-		set_country_flag = dismantle_novgorod_flag
-		add_adm_power = -25
-		add_dip_power = -50
-		add_casus_belli = {
-			target = NOV
-			type = cb_vassalize_mission
-			months = 240
-		}
-	}
-	option = {	#We will take just claims
-		name = "flavor_rus.3001.b"
-		ai_chance = { factor = 5 }
-		every_province = {
-			limit = { owned_by = NOV }
-			add_permanent_claim = ROOT
-		}
-		beloozero_area = {
-			limit = { owned_by = NOV }
-			add_core = ROOT
-		}
-	}
-}
-
-country_event = {	#Dismantle Novgorod
-	id = flavor_rus.3002
-	title = "flavor_rus.3002.t"
-	desc = "flavor_rus.3002.d"
-	picture = REVOLUTION_eventPicture
-	
-	fire_only_once = yes
-	
-	major = yes
-	
-	trigger = {
-		tag = MOS
-		has_country_flag = dismantle_novgorod_flag
-		NOV = { exists = yes }
-		war_with = NOV
-		war_score_against = {
-			who = NOV
-			value = 80
-		}
-		controls = 310
-		controls = 7879
-	}
-	
-	mean_time_to_happen = {
-		days = 1
-	}
-	
-	option = {	#Novgorod ceases to exist
-		name = "flavor_rus.3002.a"
-		ai_chance = { factor = 100 }
-		highlight = yes
-		custom_tooltip = flavor_rus.3002.tooltip
-		clr_country_flag = dismantle_nogorod_flag
-		white_peace = NOV
-		add_prestige = 25
-		add_legitimacy = 25
-		add_treasury = 700
-		add_mil_power = 25
-		310 = {
-			add_devastation = 50
-		}
-		add_splendor = 100
-		hidden_effect = {
-			5649 = {
-				add_core = SMI
-			}
-			1777 = {
-				add_core = SMI
-			}
-			7496 = {
-				add_core = SMI
-			}
-			5650 = {
-				add_core = SMI
-			}
-			NOV = {
-				release = SMI
-			}
-			SMI = {
-				adopt_reform_progress = NOV
-				change_religion = finnish_pagan_reformed
-			}
-		}
-		if = {
-			limit = {
-				4129 = {
-					owned_by = NOV
-				}
-				exists = PRM
-			}
-			4129 = {
-				cede_province = PRM
-			}
-		}
-		inherit = NOV
-	}
-	option = {	#Continue the war
-		name = "flavor_rus.3002.b"
-		ai_chance = { factor = 0 }
-		custom_tooltip = flavor_rus.3002.c.tooltip
-		clr_country_flag = dismantle_nogorod_flag
 	}
 }

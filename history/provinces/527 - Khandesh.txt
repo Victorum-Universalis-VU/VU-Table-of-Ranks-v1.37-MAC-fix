@@ -2,6 +2,7 @@
 
 owner = KHD
 controller = KHD
+add_core = KHD
 culture = marathi
 religion = hinduism
 capital = "Burhanpur"
@@ -12,24 +13,14 @@ base_production = 10
 base_manpower = 10
 is_city = yes
 fort_15th = yes
-add_core = KHD
-
-
-
-
-
-
-
-
-
-
-
-
 
 extra_cost = 16
 center_of_trade = 2
 
+#Claimants
+add_core = MAR
 
+#Histories by SF
 1508.1.1 = { owner = GUJ controller = GUJ } # Conquered by the Ahmad Shahis
 1543.1.1 = { owner = BNG controller = BNG } # Conquered by Sher Shah Sur
 1545.1.1 = { owner = KHD controller = KHD } # Death of Sher Shah, governor declares independence

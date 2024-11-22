@@ -13,31 +13,9 @@ base_production = 2
 base_manpower = 2
 is_city = yes
 
+#Claimants
+add_core = A1P
 add_core = SYR
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 1516.8.24 = {
 	owner = TUR

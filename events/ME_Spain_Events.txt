@@ -76,11 +76,11 @@ country_event = {
 		if = {
 			limit = {
 				MLO = {
-					government_rank = 2
+					government_rank = 8
 				}
 			}
 			MLO = {
-				set_government_rank = 1
+				set_government_rank = 6
 			}
 		}
 	}
@@ -99,11 +99,11 @@ country_event = {
 		if = {
 			limit = {
 				MLO = {
-					government_rank = 2
+					government_rank = 8
 				}
 			}
 			MLO = {
-				set_government_rank = 1
+				set_government_rank = 6
 			}
 		}
 	}
@@ -647,7 +647,9 @@ country_event = {
 	trigger = {
 		tag = SPA
 		capital_scope = {
-			has_building = el_escorial
+			has_great_project = {
+				type = el_escorial
+			}
 		}
 	}
 	

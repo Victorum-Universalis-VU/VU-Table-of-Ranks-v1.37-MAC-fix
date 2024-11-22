@@ -23,11 +23,6 @@ hre = no
 
 #Known by Technology groups
 
-
-
-
-
-
 #Histories
 1215.6.15 = { owner = AMD controller = AMD add_core = AMD } # Alhomad territorial lands - By San Felipe
 
@@ -35,7 +30,7 @@ hre = no
 
 1407.1.1 = {
 	add_permanent_claim = CAS
-}	#Besieged unsuccessfully by Castille, claims remain as it's disputed border region
+}	#Besieged unsuccessfully by Castile, claims remain as it's disputed border region
 1484.3.1 = {
 	owner = CAS
 	controller = CAS

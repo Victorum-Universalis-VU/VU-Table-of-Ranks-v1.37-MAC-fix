@@ -12,19 +12,12 @@ base_tax = 5
 base_production = 5
 base_manpower = 4 
 is_city = yes
+
+#Claimants
+add_core = EGY
+add_core = F4T
 add_core = KEM
-
-
-
-
-
-
-
-
-
-
-
-
+add_core = PT0
 
 extra_cost = 5
 

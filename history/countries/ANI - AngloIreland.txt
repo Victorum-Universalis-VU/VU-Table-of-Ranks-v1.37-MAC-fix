@@ -1,6 +1,6 @@
 government = republic
 add_government_reform = puppet_kingdom_reform
-government_rank = 2
+government_rank = 6 #Puppet_Kingdom
 #technology_group = western
 technology_group = english_tech_group
 unit_type = western
@@ -296,8 +296,6 @@ national_focus = MIL
 	
 	# Cromwell and the Republic
 	religion = reformed
-	#add_government_reform = presidential_despot_reform
-	#set_legacy_government = republican_dictatorship
 }
 
 1652.4.21 = {

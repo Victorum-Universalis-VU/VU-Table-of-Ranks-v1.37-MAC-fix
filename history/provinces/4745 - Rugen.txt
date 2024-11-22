@@ -14,14 +14,10 @@ trade_goods = fish
 is_city = yes
 hre = no
 
-
-
-
-
-
-
-
-
+#Histories by DonBrom & SF
+1300.1.1 = {
+	culture = pommeranian #Added by SF in VU v1.37 on advice of Don Brom since according to his sources, Polabian Slavs had already been fully assimilated by the Germans.
+}
 
 1325.1.1 = {
 	owner = WOL
@@ -30,5 +26,14 @@ hre = no
 	remove_core = POM
 	hre = yes
 }	#House of Wizlaw dies out. Rugen inherited by the Griffins and goes with them to Pomerania. Specifically Wartislaw IV of Wolgast.
-1444.1.1 = { owner = RUG controller = RUG add_core = RUG }
-1450.1.1 = { culture = pommeranian 	owner = WOL controller = WOL add_core = WOL} #Slavs outcompeted
+1444.1.1 = { 
+	owner = RUG 
+	controller = RUG 
+	add_core = RUG 
+}
+1450.1.1 = { 
+	#culture = pommeranian 
+	owner = WOL 
+	controller = WOL 
+	add_core = WOL
+} #Slavs outcompeted

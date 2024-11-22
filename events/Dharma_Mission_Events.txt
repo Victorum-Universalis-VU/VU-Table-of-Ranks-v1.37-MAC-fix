@@ -1,4 +1,4 @@
-#VU updated by San Felipe for 1.35
+#Updated to 1.37 - SF
 ###########################################
 # Mission Events for the Bahmani Sultanate
 #
@@ -243,7 +243,7 @@ country_event = {
 	
 	option = {
 		name = mug_mission_events.2.a
-		add_prestige = 20
+		add_prestige_or_monarch_power = { amount = 20 }
 		add_treasury = 1000
 	}
 }

@@ -1,12 +1,11 @@
-#7093 - Brixen
+#7093 - Brixental
 
 owner = BRX
 controller = BRX
 add_core = BRX
-add_core = TIR
 culture = austrian
 religion = catholic
-capital = "Brixen"
+capital = "Brixen im Thale"
 base_tax = 4
 base_production = 4
 base_manpower = 2
@@ -14,12 +13,9 @@ trade_goods = glass			#crystal chandeliers, also elite furniture
 is_city = yes
 hre = yes
 
-
-
-
-
-
-
+#Claimants
+add_core = HAB
+add_core = TIR
 
 #Province history completed by - Nikicaga & Darth Modus
 #First shattering unused
@@ -37,10 +33,10 @@ hre = yes
 #By circa 1430 very unclear if this is Austria, an Austrian fief, an Austrian apanage, or an independent HRE bishopric. Calling it independent because people love tags, and Austria has enough dev problems
 
 #Second shattering unused
-1444.11.16 = { #VictorumUniversalis batch edit shortcut second performance start begins
-	owner = HAB
-	controller = HAB
-	add_core = HAB
+1444.1.1 = { #VictorumUniversalis batch edit shortcut second performance start begins
+	owner = SLZ
+	controller = SLZ
+	add_core = SLZ
 } #Cut all mod added tags, reverting to nearest or most logical vanilla tag owner. I think it is safe to leave cores, though.
 1444.11.18 = { #VictorumUniversalis batch edit shortcut second performance start ends
 	owner = BRX

@@ -2,9 +2,9 @@
 #Region - Iberia
 #Area - Catalonia
 
-owner = ARA
-controller = ARA
-add_core = CTT
+owner = MJO
+controller = MJO
+add_core = MJO
 capital = "Perpignan"
 is_city = yes
 culture = catalan
@@ -14,19 +14,15 @@ base_tax = 2
 base_production = 2 
 trade_goods = citrus
 base_manpower = 2 
+
+#Claimants
 add_core = ARA
-add_core = MJO
+
 #fort_15th = yes			#Darth Modus removed fort. Aragon was losing too much money and there are already 2 forts right next to Roussillon
 
-
-
-
-
-
-
-
+#Histories
 1412.6.29 = { revolt = { type = pretender_rebels size = 1 leader = "Jaume d'Urgell"} controller = REB } # Jaime de Urgell Uprising
-1413.1.1 = { revolt = {} controller = ARA }
+1444.11.11 = { owner = CAT controller = CAT add_core = CAT } # Portuguese territorial lands - By San Felipe
 1462.1.1 = { owner = FRA controller = FRA } # Treaty of Bayonne: Aragon sells Roussillon to France
 1493.1.19 = { owner = ARA controller = ARA } # Treaty of Barcelona: Charles VIII restores Roussillon to Aragon
 1516.1.23 = {

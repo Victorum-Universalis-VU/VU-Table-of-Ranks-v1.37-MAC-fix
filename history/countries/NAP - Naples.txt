@@ -1,5 +1,6 @@
 government = monarchy
 add_government_reform = kingdom_of_sicily_reform
+government_rank = 8 #Kingdom
 #technology_group = western
 technology_group = italian_tech_group
 unit_type = western
@@ -186,8 +187,10 @@ set_capital = 121
 	}		
 }
 
-1709.12.22 = { government = monarchy
-add_government_reform = autocracy_reform }
+1709.12.22 = { 
+	government = monarchy
+	add_government_reform = autocracy_reform 
+}
 
 1713.9.22 = {
 	monarch = {
@@ -201,9 +204,11 @@ add_government_reform = autocracy_reform }
 	}
 }
 
-1734.6.2 = { government = monarchy
-# add_government_reform = letat_cest_moi_reform 
-government_rank = 1 }
+1734.6.2 = { 
+	government = monarchy 
+	# add_government_reform = letat_cest_moi_reform 
+	government_rank = 6 
+}
 
 1734.5.15 = {
 	monarch = {
@@ -242,7 +247,7 @@ government_rank = 1 }
 }
 
 1768.5.12 = {
-	government_rank = 2
+	government_rank = 8
 }
 
 1800.1.1 = { capital = 125 } # Palermo
@@ -260,7 +265,7 @@ government_rank = 1 }
 }
 
 1806.3.11 = {
-	government_rank = 1
+	government_rank = 6
 }
 
 1808.8.1 = {
@@ -272,7 +277,14 @@ government_rank = 1 }
 		dip = 3
 		mil = 2
 		adm = 2
-		leader = {	name = "Gioacchino I Murat"	type = general	fire = 4	shock = 4	manuever = 6	siege = 2 }
+		leader = {	
+			name = "Gioacchino I Murat"	
+			type = general	
+			fire = 4	
+			shock = 4	
+			manuever = 6	
+			siege = 2 
+		}
 	}
 }
 

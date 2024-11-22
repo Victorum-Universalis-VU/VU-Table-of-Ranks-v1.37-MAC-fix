@@ -14,7 +14,7 @@ country_event = {
 			was_tag = BAV
 		}
 		has_country_flag = me_bav_the_kingdom_of_bavaria
-		NOT = { government_rank = 2 }
+		NOT = { government_rank = 8 }
 		total_development = 300
 		is_part_of_hre = yes
 		is_subject = no
@@ -28,7 +28,7 @@ country_event = {
 
 	immediate = {
 		hidden_effect = {
-			set_government_rank_force = 2
+			set_government_rank_force = 8
 		}
 	}
 

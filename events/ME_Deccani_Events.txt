@@ -133,7 +133,7 @@ country_event = {
 		name = ME_Deccani_Events.4.c
 
 		add_prestige = 25
-		set_government_rank = 3
+		set_government_rank = 9
 		add_country_modifier = {
 			name = "deccani_nizam_ul_mulk"
 			duration = -1

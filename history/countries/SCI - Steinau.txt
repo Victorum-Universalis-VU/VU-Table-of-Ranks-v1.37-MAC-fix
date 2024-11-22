@@ -1,6 +1,6 @@
 government = monarchy
-add_government_reform = feudalism_reform
-government_rank = 1
+add_government_reform = eue_county_reform
+government_rank = 4 #County
 #technology_group = eastern
 technology_group = polish_tech_group
 unit_type = western
@@ -8,3 +8,13 @@ primary_culture = schlesian
 add_accepted_culture = silesian_german
 religion = catholic
 capital = 8245 #Steinau
+
+1365.1.1 = {
+	monarch = {
+		name = "Lippeverwaltung"
+		adm = 1
+		dip = 1
+		mil = 1
+		regent = yes
+	}
+}

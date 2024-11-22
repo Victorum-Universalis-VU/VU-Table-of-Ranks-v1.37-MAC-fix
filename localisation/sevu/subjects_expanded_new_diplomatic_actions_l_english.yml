@@ -32,10 +32,6 @@
  increase_colonial_autonomy_desc: "Increase the autonomy of §Y[From.GetName]§!. [From.GetIncreaseColonialAutonomyDesc]"
  increase_colonial_autonomy_tooltip: "Increase the autonomy of §Y[From.GetName]§!.\n"
 
- demand_manpower_from_autonomous_dominion_title: "Demand Manpower"
- demand_manpower_from_autonomous_dominion_desc: "Demand men from §Y[From.GetName]§! to fight for [Root.GetName]. This will transfer §Y5,000§! manpower from them to us. \nThis will increase their liberty desire by §R+10%§!."
- demand_manpower_from_autonomous_dominion_tooltip: "Demand men from §Y[From.GetName]§! to fight for [Root.GetName].\n"
-
  decrease_colonial_autonomy_title: "Decrease Colonial Autonomy"
  decrease_colonial_autonomy_desc: "Decrease the autonomy of §Y[From.GetName]§!. [From.GetDecreaseColonialAutonomyDesc] \nThis will change their liberty desire by §R+25%§!."
  decrease_colonial_autonomy_tooltip: "Decrease the autonomy of §Y[From.GetName]§!.\n"

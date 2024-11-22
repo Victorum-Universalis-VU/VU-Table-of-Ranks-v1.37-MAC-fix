@@ -14,30 +14,10 @@ base_manpower = 2
 is_city = yes
 fort_15th = yes			#the name Amadiya is eponymous to Imad al-Din Zengi who built a fortress there in 1142
 
+#Claimants
+add_core = ASR
+
 add_local_autonomy = 80	#Badinan Emirate existed here from 1376. MAKE INTO ACTUAL TAG LATER
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 add_permanent_province_modifier = {
     name = jewish_population 

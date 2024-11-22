@@ -1,4 +1,4 @@
-#Country Name: Please see filename.
+#ALS - Alsace
 
 graphical_culture = westerngfx
 
@@ -8,13 +8,6 @@ revolutionary_colors = { 16 0 16 }
 
 historical_idea_groups = {
 	defensive_ideas
-	religious_ideas
-	diplomatic_ideas
-	economic_ideas
-	innovativeness_ideas
-	spy_ideas
-	offensive_ideas
-trade_ideas
 }
 
 historical_units = {
@@ -122,8 +115,8 @@ ship_names = {
 }
 
 army_names = {
-	"Armée d'Alsace"    "Armée du Rhin"        "Armée des Vosges"      
-	"Armée du Sundgau"  "Armée du Jura"        "Armée de l'Ochsenfeld" 
+	"Armée d'Alsace" "Armée du Rhin" "Armée des Vosges"      
+	"Armée du Sundgau" "Armée du Jura" "Armée de l'Ochsenfeld" 
 	"Armée de la Hardt" "Armée de la Décapole" "Armée de Strasbourg"
 	"Armée de $PROVINCE$" 
 }

@@ -235,8 +235,8 @@ vu_pipestone = {
 }
 
 vu_devil_tower = {
-	start = 5629
-	date = 1300.01.01 
+	start = 8910
+	date = 0000.01.01 
 	time = { months = 0 }
 	build_cost = 0
 	can_be_moved = no

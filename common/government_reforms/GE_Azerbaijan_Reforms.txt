@@ -31,6 +31,8 @@ turkic_qasilbash_heirs_reform = {
 	}
 	custom_attributes = {
 		enables_qizilbash_company = yes #unlocks qizilbash mercenaries
+		enables_estate_qizilbash = yes #VU addition for v1.37 - SF
+	#	disables_estate_qizilbash = yes #VU addition for v1.37 - SF #As mentionned doesn't really make sense to have both enables_estate_qizilbash and disables_estate_qizilbash in the same reform.  - Altan
 	}
 	ai = {
 		factor = 100

@@ -5,7 +5,7 @@
 
 owner = YAR
 controller = YAR
-culture = russian
+culture = muscovite
 religion = orthodox
 hre = no 
 base_tax = 8			#destruction by the Golden Horde, a series of fires and plagues seriously weakened the city in the starting period
@@ -16,7 +16,7 @@ capital = "Yaroslavl"
 is_city = yes
 fort_15th = yes
 add_core = YAR
-
+center_of_trade = 2
 
 
 

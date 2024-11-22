@@ -191,6 +191,7 @@ spriteTypes = {
 		name = "mission_rb_control_electors"
 		texturefile = "gfx//interface//missions//dlc_missions//rb//mission_rb_control_electors.dds"
 	}
+
 	spriteType = {
 		name = "mission_rb_control_state_religion"
 		texturefile = "gfx//interface//missions//dlc_missions//rb//mission_rb_control_state_religion.dds"
@@ -425,4 +426,5 @@ spriteTypes = {
 		name = "mission_rb_weather_the_reformation"
 		texturefile = "gfx//interface//missions//dlc_missions//rb//mission_rb_weather_the_reformation.dds"
 	}
+	
 }	

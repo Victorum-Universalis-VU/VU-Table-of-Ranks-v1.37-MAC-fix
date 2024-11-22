@@ -2,6 +2,7 @@
 
 owner = SHY
 controller = SHY
+add_core = SHY
 culture = uzbehk
 religion = sunni
 capital = "Chimbay"
@@ -11,14 +12,11 @@ base_tax = 5
 base_production = 3
 base_manpower = 4
 is_city = yes
-add_core = SHY
+
+#Claimants
+add_core = K4W
 add_core = KHI
 add_core = TRS
-
-
-
-
-
 
 center_of_trade = 2
 

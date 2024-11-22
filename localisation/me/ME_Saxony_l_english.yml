@@ -134,78 +134,134 @@
  saxony_claim_east_frankish_heritage_tt: "\n§RThis will disable the decisions to form @PRU §Y[PRU.GetName]§! and @GER §Y[GER.GetName]§!.§W \n\n§OThis will make it impossible to complete the mission '§YRoad to Germany§!'. \nThe mission will be automatically completed without giving any bonuses.§W"
  tt_replace_modifier_saxony_the_polish_prerogative_modifier_with_saxony_unite_the_thrones_modifier: "Change '§YSaxon-Polish Relations§!' with: \n   Diplomatic Annexation Cost: §G-25.0%§!"
 
- # Modifiers:
+ #Modifiers:
  saxony_leipziger_reichsmesse_province_modifier: "Leipziger Reichsmesse"
+ desc_saxony_leipziger_reichsmesse_province_modifier: ""
  saxony_leipziger_buchmesse_province_modifier: "Leipziger Buchmesse"
+ desc_saxony_leipziger_buchmesse_province_modifier: ""
  saxony_integrate_poland_modifier_1: "Cultural Acceptance"
+ desc_saxony_integrate_poland_modifier_1: ""
  saxony_integrate_poland_modifier_2: "Integrated Poland"
+ desc_saxony_integrate_poland_modifier_2: ""
  saxony_imperial_religious_conflict_modifier: "Imperial Religious Conflict"
+ desc_saxony_imperial_religious_conflict_modifier: ""
  saxony_church_above_crown_modifier: "Catholic State"
+ desc_saxony_church_above_crown_modifier: ""
  saxony_oppose_the_reformation_modifier: "Oppose the Reformation"
+ desc_saxony_oppose_the_reformation_modifier: ""
  saxony_the_catholic_league_modifier: "The Catholic League"
+ desc_saxony_the_catholic_league_modifier: ""
  saxony_entwicklungsprogramm_province_modifier: "Sächsisches Entwicklungsprogramm"
+ desc_saxony_entwicklungsprogramm_province_modifier: ""
  saxony_saxon_university_province_modifier: "Saxon University"
+ desc_saxony_saxon_university_province_modifier: ""
  saxony_leipziger_handelsboerse_modifier: "Leipziger Handelsbörse"
+ desc_saxony_leipziger_handelsboerse_modifier: ""
  saxony_reconquest_of_the_lausitz_modifier: "Sorbian Minority"
+ desc_saxony_reconquest_of_the_lausitz_modifier: ""
  saxony_construct_the_finstertor_province_modifier: "Finstertor"
+ desc_saxony_construct_the_finstertor_province_modifier: ""
  saxony_the_saxon_polish_union_modifier: "A Saxon-Polish Union"
+ desc_saxony_the_saxon_polish_union_modifier: ""
  saxony_the_polish_prerogative_modifier: "Saxon-Polish Relations"
+ desc_saxony_the_polish_prerogative_modifier: ""
  saxony_unite_the_thrones_modifier: "Saxon-Polish Relations"
+ desc_saxony_unite_the_thrones_modifier: ""
  saxony_secure_the_saxon_coasts_modifier: "Coast Defense"
+ desc_saxony_secure_the_saxon_coasts_modifier: ""
  saxony_crown_above_church_modifier: "Independent State Church"
+ desc_saxony_crown_above_church_modifier: ""
  saxony_embrace_the_reformation_modifier: "Embraced the Reformation"
+ desc_saxony_embrace_the_reformation_modifier: ""
  saxony_union_of_auhausen_modifier: "The Protestant Union"
+ desc_saxony_union_of_auhausen_modifier: ""
  saxony_victory_in_the_league_war_modifier: "Winner of the League War"
+ desc_saxony_victory_in_the_league_war_modifier: ""
  saxony_saxon_coinage_modifier_1: "A New Currency"
+ desc_saxony_saxon_coinage_modifier_1: ""
  saxony_saxon_coinage_modifier_2: "Saxon Coinage"
+ desc_saxony_saxon_coinage_modifier_2: ""
  saxony_a_saxon_march_modifier: "Legacy of the Saxon Marches"
+ desc_saxony_a_saxon_march_modifier: ""
  saxony_a_saxon_coast_modifier: "Naval Armament"
+ desc_saxony_a_saxon_coast_modifier: ""
  saxony_eastward_expansion_modifier: "Baltic Sea Power"
+ desc_saxony_eastward_expansion_modifier: ""
  saxony_a_saxon_naval_base_modifier: "Baltic Sea Bases"
+ desc_saxony_a_saxon_naval_base_modifier: ""
  saxony_conquer_hesse_modifier: "Cultural Supremacy Ambition"
+ desc_saxony_conquer_hesse_modifier: ""
  saxony_conquer_lower_franconia_modifier: "Southward Expansion"
+ desc_saxony_conquer_lower_franconia_modifier: ""
  saxony_the_road_to_germany_modifier: "Road to Germany"
+ desc_saxony_the_road_to_germany_modifier: ""
  saxony_the_reichserzmarschall_of_saxony_modifier: "Reichs-Erzmarschall"
+ desc_saxony_the_reichserzmarschall_of_saxony_modifier: ""
  saxony_a_throne_built_on_blood_modifier: "A Throne Built on Blood"
+ desc_saxony_a_throne_built_on_blood_modifier: ""
  saxony_saxon_mining_industry_province_modifier: "Saxon Mining Industry"
+ desc_saxony_saxon_mining_industry_province_modifier: ""
  saxony_eisenkammer_pirna_modifier: "Iron Management of Pirna"
+ desc_saxony_eisenkammer_pirna_modifier: ""
  saxony_construct_the_german_cathedral_modifier: "German Cathedral"
+ desc_saxony_construct_the_german_cathedral_modifier: ""
  saxony_westward_expansion_modifier: "Unification of the Saxonies"
+ desc_saxony_westward_expansion_modifier: ""
  saxony_reunite_saxony_and_thuringia_province_modifier: "Integration Efforts"
+ desc_saxony_reunite_saxony_and_thuringia_province_modifier: ""
  saxony_saxon_humanism_modifier: "Saxon Humanism"
+ desc_saxony_saxon_humanism_modifier: ""
  saxony_a_grand_kursachsen_modifier: "Holy Roman Elector"
+ desc_saxony_a_grand_kursachsen_modifier: ""
  saxony_a_kingdom_within_modifier: "Kingdom of Saxony"
+ desc_saxony_a_kingdom_within_modifier: ""
  saxony_saxon_imperial_ambitions_modifier: "Imperial Ambitions"
+ desc_saxony_saxon_imperial_ambitions_modifier: ""
  saxony_meissener_porzellan_modifier: "Meißener Porzellan"
+ desc_saxony_meissener_porzellan_modifier: ""
  saxony_meissener_porzellan_province_modifier: "Porzellanproduktion"
+ desc_saxony_meissener_porzellan_province_modifier: ""
  saxony_desdner_residenzschloss_tooltip_province_modifier: "Dresdner Residenzschloss"
+ desc_saxony_desdner_residenzschloss_tooltip_province_modifier: ""
  saxony_integrate_the_city_of_goslar_province_modifier: "Integration of the Imperial City"
+ desc_saxony_integrate_the_city_of_goslar_province_modifier: ""
  saxony_construct_the_royal_library_modifier: "National Library"
+ desc_saxony_construct_the_royal_library_modifier: ""
  saxony_the_origin_of_knowledge_and_culture_modifier: "A Place of Culture"
+ desc_saxony_the_origin_of_knowledge_and_culture_modifier: ""
  saxony_the_weimar_classic_modifier: "The Weimar Classicism"
+ desc_saxony_the_weimar_classic_modifier: ""
  saxony_the_enlightenment_ideals_modifier: "The Englightenment Ideals"
+ desc_saxony_the_enlightenment_ideals_modifier: ""
  saxony_literature_of_the_weimar_classic_modifier: "Fruchtbringende Gesellschaft"
+ desc_saxony_literature_of_the_weimar_classic_modifier: ""
  saxony_obersaechsischer_reichskreis_modifier: "Imperial Circle Leader"
+ desc_saxony_obersaechsischer_reichskreis_modifier: ""
  saxony_claim_east_frankish_heritage_modifier: "East Frankish Legacy"
+ desc_saxony_claim_east_frankish_heritage_modifier: ""
  saxony_rammelsberg_province_modifier: "Rammelsberg"
+ desc_saxony_rammelsberg_province_modifier: ""
  saxony_nordmark_tooltip_modifier: "Nordmark"
+ desc_saxony_nordmark_tooltip_modifier: ""
  saxony_nordmark_subject_tooltip_modifier: "Nordmark"
+ desc_saxony_nordmark_subject_tooltip_modifier: ""
 
- # Triggered Modifiers:
- ## Country:
+ #Triggered Modifiers:
+ #Country:
  saxony_nordmark_triggered_modifier: "Nordmark"
  saxony_nordmark_subject_triggered_modifier: "Nordmark"
 
- ## Province:
+ #Province:
  saxony_desdner_residenzschloss_province_modifier: "Dresdner Residenzschloss"
+ desc_saxony_desdner_residenzschloss_province_modifier: ""
 
- # Decisions:
+ #Decisions:
  sax_release_the_nordmark_title: "Release the Nordmark"
  sax_release_the_nordmark_desc: "It has been too long since the Northern March served its original purpose, the defense of Germanic peoples in the region. We have curtailed the influence of Brandenburg, and as such perhaps it is time to restore its predecessor under our rule."
 
  SAX_UNTIL_NOT_OUR_MARCH_ANYMORE: "for as long as @BRA §YBrandenburg§! is our §YMarch§!"
 
- # Events:
+ #Events:
  ME_Saxony_Events.EVTNAME1: "The Leipziger Buchmesse"
  ME_Saxony_Events.EVTDESC1: "[62.GetName] has developed into a major market town, attracting craftsmen and traders from across the Holy Roman Empire. These immigrants bring with them considerable wealth and new trades: Recently, Konrad Kachelofen, one of Nürnberg's most prominent printers, relocated to the city and established a large printing press in it. This will surely lead to great future prosperity for the city - and higher tax receipts for us - in future."
  ME_Saxony_Events1.EVTOPT1: "[62.GetName] should play a role in the printing industry as well."
@@ -221,28 +277,21 @@
  ME_Saxony_Events3.EVTOPT2: "We need to reunite the Frankish Realm again, but under our rule!"
  ME_Saxony_Events3.EVTOPT3: "Their claim is wrong and doesn't concern us."
 
- # Country Names:
+ #Country Names:
  EAST_FRANCIA: "East Francia"
  EAST_FRANCIA_ADJ: "East Frankish"
  BRA_NORDMARK: "Nordmark"
  BRA_NORDMARK_ADJ: "Brandenburgian"
 
- # Advisors:
- me_reformist: "Reformist"
- me_reformist_desc: "An advisor that wants to peacefully reform the religion. He is not afraid of adopting parts of different religions to achieve his goal."
-
- me_lyricist: "Lyricist"
- me_lyricist_desc: "An advisor that is focussed on writing books or poems, but potentially can also be of use to distribute propaganda or draw up laws."
-
- # CB Types:
+ #CB Types:
  cb_restore_personal_union_saxony_poland: "Unite the Thrones"
  cb_restore_personal_union_saxony_poland_desc: "We have a claim on their throne and should enforce it."
 
- # War Goal Types:
+ #War Goal Types:
  take_capital_personal_union_saxony_poland: "Take the capital"
  take_capital_personal_union_saxony_poland_desc: "War goal is to take the capital."
 
- # Ideas:
+ #Ideas:
  SAX_East_Francia_ideas: "East Frankish Ideas"
  SAX_East_Francia_ideas_start: "East Frankish Traditions"
  SAX_East_Francia_ideas_bonus: "East Frankish Ambition"

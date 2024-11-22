@@ -56,6 +56,13 @@ ragusa_missions_slot_1 = {
 				}
 				add_core = ROOT
 			}
+			ragusa_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_core = ROOT
+			}
 			bosnia_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
@@ -85,11 +92,18 @@ ragusa_missions_slot_1 = {
 		required_missions = { ragusa_balkan_latin_republic }
 		position = 2
 		provinces_to_highlight = {
-			area = east_adriatic_coast_area
+			OR = {
+				area = east_adriatic_coast_area
+				area = ragusa_area
+			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
 			east_adriatic_coast_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			ragusa_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -161,6 +175,7 @@ ragusa_missions_slot_1 = {
 		provinces_to_highlight = {
 			OR = {
 				area = east_adriatic_coast_area
+				area = ragusa_area
 				area = croatia_area
 				area = carinthia_area
 			}
@@ -172,6 +187,7 @@ ragusa_missions_slot_1 = {
 						value = 5
 						OR = {
 							area = east_adriatic_coast_area
+							area = ragusa_area
 							area = croatia_area
 							area = carinthia_area
 						}
@@ -185,6 +201,7 @@ ragusa_missions_slot_1 = {
 				value = 5
 				OR = {
 					area = east_adriatic_coast_area
+					area = ragusa_area
 					area = croatia_area
 					area = carinthia_area
 				}

@@ -47,81 +47,86 @@
  tex_texan_national_army_desc: "Regardless of size, the keys to a powerful military are morale, discipline, and organization. Whilst our men are proud to fight for the Texan cause, our army is in dire need of reform and our organization levels are but laughable. This oversight renders us vulnerable to any scheming Europeans or nearby freedom fighters who seek to conquer our lands. It is in our best interests to professionalize our army and organize it so that it can valiantly fight for our sake and secure victories time and time again."
  tex_texan_rangers_title: "Texan Rangers"
  tex_texan_rangers_desc: "Once the scourge of the frontier, we have realized that cowboys have more worth than we ever expected. Their skill in handling them steeds is immaculate and they can control them better than the Indians themselves. Although they may be unprofessional, they surely will help swell our ranks and allow for better cavalry combat. After all, what's a Texan without patriotism and love of the army?" 
+ 
  #Events:
-
  ME_Texas_Events.1.T: "The Establishment of Houston"
  ME_Texas_Events.1.D: "Strategically located at the junction between the Buffalo and White Oak Bayous, Houston was destined to be a burgeoning metropolis since investors first proposed the idea. Regionally, it is positioned at a central location among our coastal population centers, and the region is already extremely potent, albeit limited by rivers that we will either have to bridge over or veer away. The plains upon which the city was founded will be a historical landmark for the Texan people and be a testament to the mighty cities of the Texan nation."
  ME_Texas_Events.1.OPT1: "It will become the new capital of our nation."
  ME_Texas_Events.1.OPT2: "We lack the funds necessary for this."
- 
+ #
  ME_Texas_Events.2.T: "The Wild West"
  ME_Texas_Events.2.D: "Compared to our major metropolitan area sprawled along the coast of Galveston Bay, our western frontier is barren and underpopulated. Most settlers are hookers, escaped fugitives, and those who seek to get away from our authority in the land of outlaws dubbed the 'Wild West'. The lands referred to as the Wild West are actually very potent and we believe that the mass flatlands can be utilized as grazing grounds and ranches. However, these criminals and cowboys despise our government and threaten our authority over our recent expansionist investment."
  ME_Texas_Events.2.OPT1: "Worrisome."
- 
+ #
  ME_Texas_Events.3.T: "Future of the Natives"
  ME_Texas_Events.3.D: "For generations upon generations, Texas has been the ancestral homes of the barbarous Indians, who are not even worthy of being called a 'civilized' culture. Nevertheless, it has become the home of the Texans as well and many Indians refuse to acknolwedge our settlements of their lands and wage war on our nation. Many of them raid our new frontiers and no large settlements have arisen because of this. We must choose to educate them or exterminate them in order to eclipse them and remove them as a threat."
  ME_Texas_Events.3.OPT1: "Education is more ethical."
  ME_Texas_Events.3.OPT2: "They are savages beyond rehabilitation."
- 
+ #
  ME_Texas_Events.4.T: "Gold Discovered in California!"
  ME_Texas_Events.4.D: "The rumors were true! Our miners have discovered pockets in gold in Northern California, with only some being found near the Sierra Nevada. News has spread all across the land that the vast gold mines rumored to be in California exist and now many prospectors have already arrived at our shores."
  ME_Texas_Events.4.OPT1: "Gee golly!"
- 
+ #
  ME_Texas_Events.5.T: "The Lone Star Triumphant"
  ME_Texas_Events.5.D: "Once, we were looked down upon by the imperialist colonial powers as a weak secessionist movement within one of their many, many colonies. When we succeeded beyond all expectations, we were still nowhere near stable or powerful. We were but a small state surrounded by enemies and land open for settlements. Through the development of our cities and our expansion into the vast frontier, we have swelled to a new zenith, and the Lone Star has come out triumphant against all odds."
  ME_Texas_Events.5.OPT1: "Texas stands strong!"
-
+ #
  ME_Texas_Events.6.T: "An Offer from Texas"
  ME_Texas_Events.6.D: "Instead of attempt to eradicate us like all of the other European powers, these 'Texans' have been hospitable and they have made us eager to seek an agreement as soon as possible. Recently, an offer has arrived that lists the following: \n\nCaddo would become a vassal of Texas, however they will be treated as equals to the Texan citizens. \nCaddo will voluntarily migrate near the Texan borders in order to eliminate the distance between Texas and Caddo. \n\nWe see this as a valuable deal as it allows us to assimilate ourselves voluntarily without any form of bloodshed involved."
  ME_Texas_Events.6.OPT1: "This is the ideal method of  preserving our people without suffering."
+ ME_Texas_Events.6.OPT2: ""
  ME_Texas_Events.7.OPT2: "This is a power move hidden behind their superficial arms of hospitality."
- 
+ #
  ME_Texas_Events.7.T: "Caddoan Agreement"
  ME_Texas_Events.7.D: "Our peaceful ambitions have finally been noticed. Believing our 'true' intentions, the Caddoans have agreed to become our vassals and have migrated to lands right next to our borders. However, we still have to uphold the promises we made in the offer. This means that the Caddoan natives will be treated as our citizens as long as the Caddoans rightfully remain our vassals."
  ME_Texas_Events.7.OPT1: "Great."
- 
+ #
  ME_Texas_Events.8.T: "Caddoan Refusal"
  ME_Texas_Events.8.D: "Even after we opened our arms of hospitality to the Caddoans, they have foolishly refused our offer. Now, we can justify our conquests of the lands as they have rejected any peaceful offers of subjugation."
  ME_Texas_Events.8.OPT1: "Their loss, not ours."
  
  #Modifiers:
- #1st column
  tex_rio_grandean_navigation: "Rio Grandean Navigation"
- #2nd column
+ desc_tex_rio_grandean_navigation: ""
  tex_assimilation_natives: "Assimilation of the Natives"
+ desc_tex_assimilation_natives: ""
  tex_settle_natives_lands: "Settle the Native Lands"
+ desc_tex_settle_natives_lands: ""
  tex_culturally_united_texas: "A Culturally United Texas"
- #3rd column
+ desc_tex_culturally_united_texas: ""
  tex_purified_texas: "Purified Texas"
+ desc_tex_purified_texas: ""
  tex_gulf_trade: "Gulf Trade"
- #4th column
+ desc_tex_gulf_trade: ""
  tex_diplomatic_enterprise: "Diplomatic Enterprise"
+ desc_tex_diplomatic_enterprise: ""
  tex_shining_fort_capital: "Fort Texas"
+ desc_tex_shining_fort_capital: ""
  tex_ranches_new_mexico: "Ranches of New Mexico"
+ desc_tex_ranches_new_mexico: ""
  tex_centralization_texas: "Centralization of Texas"
+ desc_tex_centralization_texas: ""
  tex_texan_gold_mines: "Texan Gold Mines"
- #5th column
+ desc_tex_texan_gold_mines: ""
  tex_army_people: "Army of the People"
+ desc_tex_army_people: ""
  tex_professionalize_rangers: "Professionalized Rangers"
+ desc_tex_professionalize_rangers: ""
+ tex_influx_immigrants: "Influx of Immigrants to Houston and Surrounding Areas"
+ desc_tex_influx_immigrants: ""
+ tex_autonomous_cowboys: "Autonomous Cowboys"
+ desc_tex_autonomous_cowboys: ""
+ tex_lone_star: "The Lone Star"
+ desc_tex_lone_star: ""
  
- # Opinion Modifiers:
- 
- #Trade Modifiers
+ #Keys
  tex_texan_dominance_mexico: "Texan Dominance in Mexico"
  tex_merchants_outcompeted: "Merchants Outcompeted"
  
- #Event modifiers
- tex_influx_immigrants: "Influx of Immigrants to Houston and Surrounding Areas"
- tex_autonomous_cowboys: "Autonomous Cowboys"
- tex_lone_star: "The Lone Star"
- 
- #Decision modifiers
- 
- #TOOLTIPS
+ #Custom Tooltips
  TEX_NATIVES_CONQUEST: "Seeing as the natives have refused our peaceful offers, they have asked for our wrath."
  TEX_ALLIANCE_CADDO: "By allying them, Caddo will ALWAYS opt to accept your offer and become your vassal."
  TEXAS_CULTURE_TOOLTIP: "Your primary culture is NOT Amerindian"
  TEXAS_CULTURE_PROVINCES: "The culture group is Amerindian"
  TEXAS_CULTURE_PROVINCES_NOT: "The culture group is NOT Amerindian"
 
- #Decisions:

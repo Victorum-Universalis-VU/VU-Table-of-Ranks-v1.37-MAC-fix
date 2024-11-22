@@ -3,7 +3,6 @@
 owner = CAS
 controller = CAS
 add_core = CAS
-add_core = TLD #BTB added: Castilian revolter tag.
 culture = castillian
 religion = catholic
 capital = "Aranjuez"
@@ -14,7 +13,10 @@ trade_goods = fruit
 is_city = yes
 hre = no
 
+#Claimants
 
+#Histories
+1444.11.11 = { owner = TLD controller = TLD add_core = TLD } # Castilian territorial lands - By San Felipe
 
 
 

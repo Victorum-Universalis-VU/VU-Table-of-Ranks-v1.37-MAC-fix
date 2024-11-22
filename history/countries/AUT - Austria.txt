@@ -1,12 +1,49 @@
 government = monarchy
-add_government_reform = feudalism_reform
-government_rank = 1
+add_government_reform = austrian_duchy_reform
+government_rank = 6 #Duchy
 primary_culture = austrian
 religion = catholic
-technology_group = western
+technology_group = german_tech_group
 capital = 134 # Wien
 
 national_focus = ADM
+
+#Bavarian Tags
+historical_rival = BAV
+historical_rival = BET
+historical_rival = EGR
+historical_rival = FRG
+historical_rival = HLF
+historical_rival = ING
+historical_rival = KMP
+historical_rival = KRH
+historical_rival = LBV
+historical_rival = LMP
+historical_rival = OET
+historical_rival = PSS
+historical_rival = REG
+historical_rival = TRU
+historical_rival = UBV
+historical_rival = WLB
+
+#Czech tags
+historical_rival = BOH
+
+#Austrian tags
+historical_friend = AUE
+historical_friend = AUH
+historical_friend = BRX
+historical_friend = BSN
+historical_friend = CR1
+historical_friend = GRZ
+historical_friend = HAB
+historical_friend = HLR
+historical_friend = SH1
+historical_rival = SLZ
+historical_friend = STY
+historical_friend = TIR
+historical_friend = TNT
+historical_friend = VOR
 
 1395.8.29 = {
 	monarch = {
@@ -55,6 +92,10 @@ national_focus = ADM
 		birth_date = 1415.9.21
 		death_date = 1493.8.19
 	}
+	#set_ruler_flag = friedrich_III_flag
+}
+
+1440.2.22 = {
 	heir = {
 		name = "Ladislaus Postumus"
 		monarch_name = "Ladislaus Postumus"
@@ -66,7 +107,6 @@ national_focus = ADM
 		birth_date = 1440.2.22
 		death_date = 1457.11.23
 	}
-	set_ruler_flag = friedrich_III_flag
 	set_heir_flag = ladislaus_postumus_flag
 }
 

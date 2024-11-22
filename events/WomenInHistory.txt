@@ -1,3 +1,4 @@
+#Updated to v1.37 - SF
 ########################################
 # Events for Women in History
 #
@@ -14,8 +15,9 @@ country_event = {
 	title = women_history_events.1.t
 	desc = women_history_events.1.d
 	picture = wihgfx_FEMALE_RULER_eventPicture
-	
+	fire_only_once = yes
 	trigger = {
+		NOT = { has_dlc = "Domination" }	#Domination version of this event
 		is_year = 1533
 		NOT = {
 			is_year = 1603
@@ -37,19 +39,10 @@ country_event = {
 			}
 			is_in_capital_area = yes
 		}
-		NOT = {
-			has_global_flag = wih_elizabeth_eng_flag
-		}
 	}
 	
 	mean_time_to_happen = {
 		months = 200
-	}
-	
-	immediate = {
-		hidden_effect = {
-			set_global_flag = wih_elizabeth_eng_flag
-		}
 	}
 	
 	option = {
@@ -101,6 +94,7 @@ country_event = {
 	picture = wihgfx_FEMALE_RULER_eventPicture
 
 	trigger = {
+		NOT = { has_dlc = "Domination" }	#Domination version of this event
 		OR = {
 		    tag = RUS
 		    tag = TZR
@@ -127,6 +121,7 @@ country_event = {
 		NOT = {
 			has_global_flag = wih_catherine_rus_flag
 		}
+		NOT = {	has_dlc = "Domination"	}
 	} 
 	
 	mean_time_to_happen = {
@@ -141,14 +136,30 @@ country_event = {
 	
 	option = {
 		name = women_history_events.2.a
-		define_ruler = {
-			name = "Yekaterina"
-			dynasty = "Romanov"
-			adm = 6
-			dip = 6
-			mil = 5
-			culture = russian
-			female = yes
+		if = {
+			limit = {
+				has_updated_culture = { culture = slavic }
+			}
+			define_ruler = {
+				name = "Yekaterina"
+				dynasty = "Romanov"
+				adm = 6
+				dip = 6
+				mil = 5
+				culture = russian_new
+				female = yes
+			}
+		}
+		else = {
+			define_ruler = {
+				name = "Yekaterina"
+				dynasty = "Romanov"
+				adm = 6
+				dip = 6
+				mil = 5
+				culture = russian
+				female = yes
+			}
 		}
 		if = {
 			limit = {
@@ -169,13 +180,28 @@ country_event = {
 		add_dip_power = 100
 		add_mil_power = 100
 		add_meritocracy_effect = yes
-		define_advisor = {
-			female = yes
-			culture = russian
-			type = statesman #spymaster
-			discount = yes
-			skill = 2
-			name = "Yekaterina Romanov"
+		if = {
+			limit = {
+				has_updated_culture = { culture = slavic }
+			}
+			define_advisor = {
+				female = yes
+				culture = russian_new
+				type = statesman #spymaster
+				discount = yes
+				skill = 2
+				name = "Yekaterina Romanov"
+			}
+		}
+		else = {
+			define_advisor = {
+				female = yes
+				culture = russian
+				type = statesman #spymaster
+				discount = yes
+				skill = 2
+				name = "Yekaterina Romanov"
+			}
 		}
 	}
 }
@@ -200,8 +226,10 @@ country_event = {
 		NOT = {
 			has_global_flag = wih_kosem_tur_flag
 		}
-		NOT = {	advisor_exists = 1600 }
-		NOT = {	is_advisor_employed = 1600 }
+		NOT = {
+			advisor_exists = 1600
+			is_advisor_employed = 1600
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -284,7 +312,7 @@ country_event = {
 			culture = ruthenian
 			discount = yes
 			skill = 2
-			name = "Kosem Sultan"
+			name = "Kösem Sultan"
 		}
 	}
 }
@@ -583,8 +611,10 @@ country_event = {
 		NOT = {
 			has_global_flag = wih_marywollstonecraft_flag
 		}
-		NOT = {	advisor_exists = 1626 }
-		NOT = {	is_advisor_employed = 1625 }
+		NOT = {
+			advisor_exists = 1626
+			is_advisor_employed = 1625
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -739,26 +769,36 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		OR = {
-			tag = SPA
+		OR = { 
 			AND = {
-				NOT = {
-					exists = SPA
+				OR = {
+					tag = SPA
+					AND = {
+						NOT = {
+							exists = SPA
+						}
+						tag = CAS
+					}
 				}
-				tag = CAS
+		        is_year = 1468
+		        NOT = {
+		        	is_year = 1504
+		        }
+		        has_regency = no
+		        has_government_attribute = heir
+		        is_lesser_in_union = no
+		        government = monarchy
+		        NOT = {
+		        	has_disaster = castilian_civil_war
+		        }
+	        }
+			AND = {
+				has_disaster = castilian_civil_war
+				has_country_flag = cas_aragon_candidate
+				has_country_flag = civil_war_in_castile
 			}
 		}
-		is_year = 1468
-		NOT = {
-			is_year = 1504
-		}
-		has_regency = no
-		has_government_attribute = heir
-		is_lesser_in_union = no
-		government = monarchy
-		NOT = {
-			has_disaster = castilian_civil_war
-		}
+		NOT = { has_country_flag = no_isabella_event_flag } 
 	}
 	
 	mean_time_to_happen = {
@@ -770,15 +810,16 @@ country_event = {
 		add_meritocracy_effect = yes
 		define_heir = {
 			name = "Isabella"
-			age = 16
 			dynasty = "de Trastámara"
 			culture = castillian
-			claim = 100
+			claim = 95
 			adm = 5
 			dip = 6
 			mil = 3
+			age = 16
 			female = yes
 		}
+		set_country_flag = cas_isabel_heir_accepted_flag
 		if = {
 			limit = {
 				has_dlc = "Rights of Man" 
@@ -1154,8 +1195,10 @@ country_event = {
 		NOT = {
 			has_global_flag = wih_lamalince_flag
 		}
-		NOT = {	advisor_exists = 1629 }
-		NOT = {	is_advisor_employed = 1629 }
+		NOT = {
+			advisor_exists = 1629
+			is_advisor_employed = 1629
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -1238,8 +1281,10 @@ country_event = {
 		NOT = {
 			has_global_flag = wih_juanainesdelacruz_flag
 		}
-		NOT = {	advisor_exists = 1631 }
-		NOT = {	is_advisor_employed = 1631 }
+		NOT = {
+			advisor_exists = 1631
+			is_advisor_employed = 1631
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -1402,7 +1447,7 @@ country_event = {
 		define_ruler = {
 			name = "Nzinga Mbandi"
 			dynasty = "Ngola"
-			culture = kongolese
+			culture = ROOT
 			DIP = 5
 			ADM = 5
 			MIL = 5
@@ -1653,7 +1698,7 @@ country_event = {
 		}
 		if = {
 			limit = {
-				has_or_building_flagship = no
+				has_spare_flagship_capacity = yes
 				capital_scope = {
 					has_port = yes
 				}
@@ -2010,7 +2055,7 @@ country_event = {
 	}
 }
 
-# Louise of Mecklenburg-Strelitz (1776 – 1810)
+# Louise of Mecklenburg-Strelitz (1776 - 1810)
 country_event = {
 	id = women_history_events.28
 	title = women_history_events.28.t
@@ -2223,7 +2268,7 @@ country_event = {
 	}
 }
 
-# Abigail Adams (1744 – 1818)
+# Abigail Adams (1744 - 1818)
 country_event = {
 	id = women_history_events.31
 	title = women_history_events.31.t
@@ -2372,7 +2417,7 @@ country_event = {
 	}
 }
 
-# Sacagawea (1787? – 1812)
+# Sacagawea (1787? - 1812)
 country_event = {
 	id = women_history_events.33
 	title = women_history_events.33.t
@@ -2527,7 +2572,10 @@ country_event = {
 	picture = wihgfx_FEMALE_SCHOLAR_eventPicture
 
 	trigger = {
-		religion = hinduism
+		OR = {
+			religion = hinduism
+			religion = surya_majapahit
+		}
 		primary_culture = rajput
 		capital_scope = {
 			region = west_india_region
@@ -2788,7 +2836,7 @@ country_event = {
 		add_meritocracy_effect = yes
 		if = {
 			limit = {
-				has_global_flag = sinicized_vietnamese_flag
+				has_updated_culture = { culture = vietnamese }
 			}
 			define_advisor = {
 				female = yes
@@ -3211,8 +3259,10 @@ country_event = {
 		NOT = {
 			has_global_flag = wih_yekaterinaromanovnavorontsovadashkova_flag
 		}
-		NOT = {	advisor_exists = 1609 }
-		NOT = {	is_advisor_employed = 1609 }
+		NOT = {
+			advisor_exists = 1609
+			is_advisor_employed = 1609
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -3228,13 +3278,28 @@ country_event = {
 	option = {
 		name = women_history_events.45.a
 		add_meritocracy_effect = yes
-		define_advisor = {
-			female = yes
-			discount = yes
-			type = diplomat
-			culture = russian
-			skill = 2
-			name = "Yekaterina Romanovna Vorontsova-Dashkova"
+		if = {
+			limit = {
+				has_updated_culture = { culture = slavic }
+			}
+			define_advisor = {
+				female = yes
+				discount = yes
+				type = diplomat
+				culture = russian_new
+				skill = 2
+				name = "Yekaterina Romanovna Vorontsova-Dashkova"
+			}
+		}
+		else = {
+			define_advisor = {
+				female = yes
+				discount = yes
+				type = diplomat
+				culture = russian
+				skill = 2
+				name = "Yekaterina Romanovna Vorontsova-Dashkova"
+			}
 		}
 	}
 	option = {
@@ -3309,6 +3374,12 @@ country_event = {
 		OR = {
 			has_reform = shogunate
 			has_reform = daimyo
+		    has_reform = daimyo_barony_reform
+		    has_reform = daimyo_viscounty_reform
+		    has_reform = daimyo_county_reform
+		    has_reform = daimyo_marquisate_reform
+		    has_reform = daimyo_duchy_reform
+		    has_reform = daimyo_principality_reform
 		}
 		is_year = 1570
 		NOT = {
@@ -3350,7 +3421,7 @@ country_event = {
 	}
 }
 
-# Empress Dowager Xiaozhuang (1613 – 1688)
+# Empress Dowager Xiaozhuang (1613 - 1688)
 country_event = {
 	id = women_history_events.48
 	title = women_history_events.48.t
@@ -3514,6 +3585,12 @@ country_event = {
 		OR = {
 			has_reform = shogunate
 			has_reform = daimyo
+		    has_reform = daimyo_barony_reform
+		    has_reform = daimyo_viscounty_reform
+		    has_reform = daimyo_county_reform
+		    has_reform = daimyo_marquisate_reform
+		    has_reform = daimyo_duchy_reform
+		    has_reform = daimyo_principality_reform
 		}
 		is_year = 1572
 		NOT = {
@@ -3688,6 +3765,7 @@ country_event = {
 		OR = {
 			tag = CRO
 			tag = HUN
+			was_tag = HUN
 		}
 		has_truce = yes
 		is_year = 1643
@@ -3993,6 +4071,12 @@ country_event = {
 		OR = {
 			has_reform = shogunate
 			has_reform = daimyo
+		    has_reform = daimyo_barony_reform
+		    has_reform = daimyo_viscounty_reform
+		    has_reform = daimyo_county_reform
+		    has_reform = daimyo_marquisate_reform
+		    has_reform = daimyo_duchy_reform
+		    has_reform = daimyo_principality_reform
 		}
 		is_year = 1571
 		NOT = {
@@ -4300,6 +4384,7 @@ country_event = {
 			tag = HUN
 			tag = BOH
 			tag = NED
+			was_tag = HUN
 		}
 		is_year = 1505
 		NOT = {
@@ -4704,7 +4789,10 @@ country_event = {
 		is_year = 1611 
 		is_lesser_in_union = no
 		government = monarchy
-		NOT = { has_reform = steppe_horde }
+		NOT = { 
+			has_reform = steppe_horde
+			has_reform = scythian_horde_reform
+		}
 		NOT = {
 			is_year = 1667
 		}
@@ -5029,7 +5117,10 @@ country_event = {
 			is_year = 1522
 		}
 		government = monarchy
-		NOT = { has_reform = steppe_horde }
+		NOT = { 
+			has_reform = steppe_horde
+			has_reform = scythian_horde_reform
+		}
 		OR = {
 			AND = {
 				NOT = {
@@ -5050,8 +5141,10 @@ country_event = {
 			has_global_flag = wih_eleniethiopia_flag
 		}
 		is_lesser_in_union = no
-		NOT = {	advisor_exists = 1611 }
-		NOT = {	is_advisor_employed = 1611 }
+		NOT = {
+			advisor_exists = 1611
+			is_advisor_employed = 1611
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -5337,25 +5430,56 @@ country_event = {
 		add_dip_power = 100
 		add_mil_power = 100
 		add_meritocracy_effect = yes
-		define_advisor = {
-			name = "Sophia Alekseyevna Romanov"
-			culture = russian
-			discount = yes
-			type = statesman
-			skill = 2
-			female = yes
+		if = {
+			limit = {
+				has_updated_culture = { culture = slavic }
+			}
+			define_advisor = {
+				name = "Sophia Alekseyevna Romanov"
+				culture = russian_new
+				discount = yes
+				type = statesman
+				skill = 2
+				female = yes
+			}
+		}
+		else = {
+			define_advisor = {
+				name = "Sophia Alekseyevna Romanov"
+				culture = russian
+				discount = yes
+				type = statesman
+				skill = 2
+				female = yes
+			}
 		}
 	}
 	option = {
 		name = women_history_events.77.b
-		define_ruler = {
-			name = "Sophia"
-			dynasty = "Romanov"
-			culture = russian
-			adm = 3
-			dip = 4
-			mil = 3
-			female = yes
+		if = {
+			limit = {
+				has_updated_culture = { culture = slavic }
+			}
+			define_ruler = {
+				name = "Sophia"
+				dynasty = "Romanov"
+				culture = russian_new
+				adm = 3
+				dip = 4
+				mil = 3
+				female = yes
+			}
+		}
+		else = {
+			define_ruler = {
+				name = "Sophia"
+				dynasty = "Romanov"
+				culture = russian
+				adm = 3
+				dip = 4
+				mil = 3
+				female = yes
+			}
 		}
 		if = {
 			limit = {
@@ -5873,7 +5997,10 @@ country_event = {
 		}
 		is_lesser_in_union = no
 		government = monarchy
-		NOT = { has_reform = steppe_horde }
+		NOT = { 
+			has_reform = steppe_horde
+			has_reform = scythian_horde_reform
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -6186,7 +6313,10 @@ country_event = {
 		}
 		is_lesser_in_union = no
 		government = monarchy
-		NOT = { has_reform = steppe_horde }
+		NOT = { 
+			has_reform = steppe_horde
+			has_reform = scythian_horde_reform
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -6465,8 +6595,10 @@ country_event = {
 		NOT = {
 			has_global_flag = wih_safiyesultan_flag
 		}
-		NOT = {	advisor_exists = 1601 }
-		NOT = {	is_advisor_employed = 1601 }
+		NOT = {
+			advisor_exists = 1601
+			is_advisor_employed = 1601
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -6600,26 +6732,57 @@ country_event = {
 		add_dip_power = 100
 		add_mil_power = 100
 		add_meritocracy_effect = yes
-		define_advisor = {
-			name = "Elizaveta Romanov"
-			type = statesman
-			discount = yes
-			culture = russian
-			skill = 2
-			female = yes
+		if = {
+			limit = {
+				has_updated_culture = { culture = slavic }
+			}
+			define_advisor = {
+				name = "Elizaveta Romanov"
+				type = statesman
+				discount = yes
+				culture = russian_new
+				skill = 2
+				female = yes
+			}
+		}
+		else = {
+			define_advisor = {
+				name = "Elizaveta Romanov"
+				type = statesman
+				discount = yes
+				culture = russian
+				skill = 2
+				female = yes
+			}
 		}
 
 	}
 	option = {
 		name = women_history_events.95.b
-		define_ruler = {
-			name = "Elizaveta"
-			dynasty = "Romanov"
-			culture = russian
-			adm = 3
-			dip = 4
-			mil = 3
-			female = yes
+		if = {
+			limit = {
+				has_updated_culture = { culture = slavic }
+			}
+			define_ruler = {
+				name = "Elizaveta"
+				dynasty = "Romanov"
+				culture = russian_new
+				adm = 3
+				dip = 4
+				mil = 3
+				female = yes
+			}
+		}
+		else = {
+			define_ruler = {
+				name = "Elizaveta"
+				dynasty = "Romanov"
+				culture = russian
+				adm = 3
+				dip = 4
+				mil = 3
+				female = yes
+			}
 		}
 		if = {
 			limit = {
@@ -6676,7 +6839,10 @@ country_event = {
 		}
 		is_lesser_in_union = no
 		government = monarchy
-		NOT = { has_reform = steppe_horde }
+		NOT = { 
+			has_reform = steppe_horde
+			has_reform = scythian_horde_reform
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -6695,25 +6861,56 @@ country_event = {
 		add_dip_power = 100
 		add_mil_power = 100
 		add_meritocracy_effect = yes
-		define_advisor = {
-			name = "Anna of Russia"
-			culture = russian
-			type = statesman
-			skill = 2
-			discount = yes
-			female = yes
+		if = {
+			limit = {
+				has_updated_culture = { culture = slavic }
+			}
+			define_advisor = {
+				name = "Anna of Russia"
+				culture = russian_new
+				type = statesman
+				skill = 2
+				discount = yes
+				female = yes
+			}
+		}
+		else = {
+			define_advisor = {
+				name = "Anna of Russia"
+				culture = russian
+				type = statesman
+				skill = 2
+				discount = yes
+				female = yes
+			}
 		}
 	}
 	option = {
 		name = women_history_events.96.b
-		define_ruler = {
-			name = "Anna"
-			dynasty = Romanov
-			culture = russian
-			adm = 3
-			dip = 3
-			mil = 2
-			female = yes
+		if = {
+			limit = {
+				has_updated_culture = { culture = slavic }
+			}
+			define_ruler = {
+				name = "Anna"
+				dynasty = Romanov
+				culture = russian_new
+				adm = 3
+				dip = 3
+				mil = 2
+				female = yes
+			}
+		}
+		else = {
+			define_ruler = {
+				name = "Anna"
+				dynasty = Romanov
+				culture = russian
+				adm = 3
+				dip = 3
+				mil = 2
+				female = yes
+			}
 		}
 		if = {
 			limit = {
@@ -6750,8 +6947,10 @@ country_event = {
 		}
 		is_lesser_in_union = no
 		government = monarchy
-		NOT = { advisor_exists = 1602 }
-		NOT = {	is_advisor_employed = 1602 }
+		NOT = {
+			advisor_exists = 1602
+			is_advisor_employed = 1602
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -6864,7 +7063,7 @@ country_event = {
 		add_meritocracy_effect = yes
 		if = {
 			limit = {
-				has_global_flag = sinicized_korean_flag
+				has_updated_culture = { culture = korean }
 			}
 			define_advisor = {
 				name = "Heo Nanseolheon"

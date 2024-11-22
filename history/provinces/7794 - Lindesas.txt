@@ -13,11 +13,8 @@ trade_goods = iron
 is_city = yes
 hre = no
 
-
-
-
-
-
+#Claims
+add_core = SVD
 
 1434.6.1 = { revolt = { type = anti_tax_rebels size = 2 name = "Engelbrekt" } controller = REB } # Engelbrekt rebellion
 1436.4.27 = { revolt = {} controller = SWE } # Engelbrekt was murdered by Måns Bengtsson Natt och Dag

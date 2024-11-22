@@ -218,6 +218,13 @@ swiss_missions_2 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			liechtenstein_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 			wurttemburg_area = {
 				limit = {
 					NOT = { is_core = ROOT }

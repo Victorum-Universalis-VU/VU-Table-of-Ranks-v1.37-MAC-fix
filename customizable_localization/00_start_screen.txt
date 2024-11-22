@@ -71,7 +71,15 @@ defined_text = {
 	text = {
         localisation_key = string_start_title_daimyo
         trigger = {
-			has_reform = daimyo
+			OR = {
+				has_reform = daimyo
+			    has_reform = daimyo_barony_reform
+			    has_reform = daimyo_viscounty_reform
+			    has_reform = daimyo_county_reform
+			    has_reform = daimyo_marquisate_reform
+			    has_reform = daimyo_duchy_reform
+			    has_reform = daimyo_principality_reform
+			}
 		}
     }
 	text = {
@@ -290,7 +298,6 @@ defined_text = {
         localisation_key = string_start_title_hisn_kayfa
         trigger = {
 			tag = HSN
-			dynasty = Ayyubid
 		}
     }
 	text = {
@@ -315,7 +322,10 @@ defined_text = {
 	text = {
         localisation_key = string_start_title_horde
         trigger = {
-			has_reform = steppe_horde
+			OR = {
+				has_reform = steppe_horde
+				has_reform = scythian_horde_reform
+			}
         }
     }
 	text = {
@@ -1699,6 +1709,13 @@ defined_text = {
 			religion = hinduism
         }
     }
+	#Surya Majapahit
+	text = {
+        localisation_key = string_start_religion_surya_majapahit
+        trigger = {
+			religion = surya_majapahit
+        }
+    }
 	#Sikh
 	text = {
         localisation_key = string_start_religion_sikh
@@ -2030,14 +2047,20 @@ defined_text = {
 	text = {
         localisation_key = string_deities_info #Has to end with \n
         trigger = {
-			religion = hinduism
+			OR = {
+				religion = hinduism
+				religion = surya_majapahit
+			}
 			has_dlc = "Wealth of Nations"
         }
     }
 	text = {
         localisation_key = string_deities_info_no #\n
         trigger = {
-			religion = hinduism
+			OR = {
+				religion = hinduism
+				religion = surya_majapahit
+			}
 			NOT = { has_dlc = "Wealth of Nations" }
         }
     }
@@ -2317,14 +2340,20 @@ defined_text = {
 		trigger = {
 			government = monarchy
 			NOT = { has_reform = mamluk_government }
-			NOT = { has_reform = steppe_horde }
+			NOT = { 
+				has_reform = steppe_horde
+				has_reform = scythian_horde_reform
+			}
 		}
 	}
 	text = {
 		localisation_key = string_start_government_horde_heirs
 		trigger = {
 			government = monarchy
-			has_reform = steppe_horde
+			OR = {
+				has_reform = steppe_horde
+				has_reform = scythian_horde_reform
+			}
 		}
 	}
 	text = {
@@ -2441,7 +2470,10 @@ defined_text  = {
         trigger = {
 			government = monarchy
 			NOT = { has_reform = iqta }
-			NOT = { has_reform = steppe_horde }
+			NOT = { 
+				has_reform = steppe_horde
+				has_reform = scythian_horde_reform
+			}
 			NOT = { has_reform = mamluk_government }
 			has_dlc = "Rights of Man"
         }
@@ -2743,7 +2775,10 @@ defined_text  = {
     text = {
         localisation_key = string_start_horde
         trigger = {
-			has_reform = steppe_horde
+			OR = {
+				has_reform = steppe_horde
+				has_reform = scythian_horde_reform
+			}
 			has_dlc = "The Cossacks"
         }
     }
@@ -3052,7 +3087,10 @@ defined_text = {
 	text = {
 		localisation_key = string_cossacks_steppe_nomads
         trigger = {
-			has_reform = steppe_horde
+			OR = {
+				has_reform = steppe_horde
+				has_reform = scythian_horde_reform
+			}
 			has_dlc = "The Cossacks"
         }
 	}

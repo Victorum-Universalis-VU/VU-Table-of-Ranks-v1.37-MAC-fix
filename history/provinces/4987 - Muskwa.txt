@@ -13,6 +13,10 @@ native_ferocity = 1
 native_hostileness = 3 
 
 
+latent_trade_goods = {
+    oil
+}
+
 
 
 add_permanent_province_modifier = {

@@ -1,7 +1,7 @@
 #Carib
 government = native
 add_government_reform = native_clan_council_reform
-government_rank = 1
+government_rank = 1 #Lordship
 primary_culture = ineri
 add_accepted_culture = east_taino
 religion = animism

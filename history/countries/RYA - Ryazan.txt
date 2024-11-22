@@ -1,7 +1,7 @@
 government = monarchy
 add_government_reform = principality
-government_rank = 1
-primary_culture = russian
+government_rank = 7 #Principality
+primary_culture = ryazanian
 religion = orthodox
 #technology_group = eastern
 technology_group = russian_tech_group
@@ -73,5 +73,5 @@ fixed_capital = 301 # Cannot move capital away from this province & no power cos
 }
 
 1454.1.1 = {
-	government_rank = 1
+	government_rank = 7 #Principality
 }

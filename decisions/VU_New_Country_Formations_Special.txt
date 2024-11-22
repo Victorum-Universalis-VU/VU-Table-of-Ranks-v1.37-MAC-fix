@@ -309,7 +309,7 @@ country_decisions = {
 		allow = {
 			NOT = { exists = CEL }
 			is_at_war = no
-			government_rank = 2			#Replaces the government specific Nots, as all Irish minors are rank 1. Also useful because we dont want a rank 1 jumping to rank 3 in one go
+			government_rank = 8			#Replaces the government specific Nots, as all Irish minors are rank 1. Also useful because we dont want a rank 1 jumping to rank 3 in one go
 			num_of_owned_provinces_with = {
 				is_core = ROOT
 				region = ireland_region
@@ -361,8 +361,8 @@ country_decisions = {
 			change_tag = CEL
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
-				limit = { NOT = { government_rank = 3 } }
-				set_government_rank = 3
+				limit = { NOT = { government_rank = 9 } }
+				set_government_rank = 9
 			}
 			custom_tooltip = permanent_claim_on_all_celtic_lands_tooltip			#Cleaning things up with two custom tooltips, and hiding the various claims
 			hidden_effect = {
@@ -778,8 +778,8 @@ country_decisions = {
 				add_permanent_claim = ANI
 			}
 			if = {
-				limit = { NOT = { government_rank = 2 } }
-				set_government_rank = 2
+				limit = { NOT = { government_rank = 8 } }
+				set_government_rank = 8
 			}
 			if = {
 				limit = {
@@ -849,7 +849,7 @@ country_decisions = {
 			is_at_war = no
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
-			government_rank = 2			#We dont want a rank 1 jumping to rank 3 in one go
+			government_rank = 8			#We dont want a rank 1 jumping to rank 3 in one go
 			owns_core_province = 4120			#Kildare, stand in for Tara
 			owns_core_province = 250			#Fife
 			num_of_owned_provinces_with = {
@@ -917,8 +917,8 @@ country_decisions = {
 				add_permanent_claim = TNA
 			}
 			if = {
-				limit = { NOT = { government_rank = 3 } }
-				set_government_rank = 3
+				limit = { NOT = { government_rank = 9 } }
+				set_government_rank = 9
 			}
 			add_country_modifier = {
 				name = "centralization_modifier"
@@ -962,7 +962,7 @@ country_decisions = {
 			is_at_war = no
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
-			government_rank = 2			#We dont want a rank 1 jumping to rank 3 in one go
+			government_rank = 8			#We dont want a rank 1 jumping to rank 3 in one go
 			owns_core_province = 236			#London
 			owns_core_province = 242			#Gwynedd and Angelsey
 			num_of_owned_provinces_with = {
@@ -985,8 +985,8 @@ country_decisions = {
 				add_permanent_claim = YYK
 			}
 			if = {
-				limit = { NOT = { government_rank = 3 } }
-				set_government_rank = 3
+				limit = { NOT = { government_rank = 9 } }
+				set_government_rank = 9
 			}
 			add_country_modifier = {
 				name = "centralization_modifier"
@@ -1085,8 +1085,8 @@ country_decisions = {
 			custom_tooltip = annex_all_britain_and_ireland_tooltip
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
-				limit = { NOT = { government_rank = 3 } }
-				set_government_rank = 3
+				limit = { NOT = { government_rank = 9 } }
+				set_government_rank = 9
 			}
 			add_country_modifier = {
 				name = centralization_modifier
@@ -1426,7 +1426,7 @@ country_decisions = {
             NOT = { has_country_flag = formed_imperial_russia }
             NOT = { religion_group = muslim }
             culture_group = east_slavic
-            NOT = { primary_culture = novgorodian }
+            has_reform = russian_empire_reform
         }
 		provinces_to_highlight = {
 			owned_by = RUS
@@ -1437,7 +1437,7 @@ country_decisions = {
 			is_nomad = no
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
-			adm_tech = 47
+			adm_tech = 43
 			total_development = 2000
 			prestige = 80
 			legitimacy = 80

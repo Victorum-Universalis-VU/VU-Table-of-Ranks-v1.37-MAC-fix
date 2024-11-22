@@ -1,6 +1,6 @@
 government = monarchy
 add_government_reform = daimyo
-government_rank = 1
+government_rank = 1 #Daimyo_Lordship
 primary_culture = japanese
 religion = shinto
 technology_group = chinese

@@ -13,7 +13,10 @@ native_ferocity = 1
 native_hostileness = 2
 tribal_owner = WAM
 
-
+add_permanent_province_modifier = {
+    name = navalbase_modifier
+    duration = -1
+}
 
 
 1620.11.21 = {

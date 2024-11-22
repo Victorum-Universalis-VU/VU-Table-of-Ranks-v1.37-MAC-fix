@@ -2,8 +2,9 @@
 #Region - Germany
 #Area - Romandie
 
-owner = SAV
-controller = SAV
+owner = VUD
+controller = VUD
+add_core = VUD
 culture = arpitan
 religion = catholic
 capital = "Lausanne"
@@ -13,17 +14,11 @@ base_tax = 2
 base_production = 3			#Lowered dev generally in Romandie, became richer later as part of die Sweitz, but at this point was just provincial Savoy
 base_manpower = 2 
 is_city = yes
-add_core = SAV
 
+#Claimants
 
-
-
-
-
-
-
-
-
+#History by SF
+1444.1.1 = { add_core = SAV }
 1499.1.1 = { owner = FRA controller = FRA add_core = FRA } 
 1513.7.3 = { unrest = 7 } # Luzern Peasant War
 1515.1.1 = { unrest = 0 }

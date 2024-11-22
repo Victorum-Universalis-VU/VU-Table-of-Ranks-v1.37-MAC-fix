@@ -6,6 +6,7 @@ latent_trade_goods = {
 
 owner = POL
 controller = POL
+add_core = POL
 culture = polish
 religion = catholic
 capital = "Kraków"
@@ -16,31 +17,16 @@ trade_goods = salt
 base_manpower = 8
 is_city = yes
 fort_15th = yes
- #Jagiellonian University established in 1364 by Casimir III the Great
-add_core = POL
+
+#Jagiellonian University established in 1364 by Casimir III the Great
+
+#Claimants
+add_core = KRA
+
 add_permanent_province_modifier = {
     name = jewish_population 
     duration = -1
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 center_of_trade = 3
 extra_cost = 15
@@ -101,9 +87,9 @@ extra_cost = 15
 	add_core = HAB
 } # Austrian Empire annexes Free City of Krakow
 1867.3.30 = {
-	owner = AHE
-	controller = AHE
-	add_core = AHE
+	owner = AUH
+	controller = AUH
+	add_core = AUH
 	remove_core = HAB
 } # Austria-Hungary formed
 1918.11.11 = {

@@ -645,7 +645,10 @@ MSA_Missions_Expansion_3 = {
 			hidden_effect = {
 				if = {
 					limit = {
-						religion = hinduism
+						OR = {
+					    	religion = hinduism
+					    	religion = surya_majapahit
+					    }
 					}
 					add_country_modifier = {
 						name = MSA_legacy_of_the_hindu_empire
@@ -1880,7 +1883,7 @@ MSA_Missions_Trade_5 = {
 		}
 		effect = {
 			define_advisor = {
-				type = travelling_merchant
+				type = trader
 				skill = 3
 				culture = ROOT
 				religion = ROOT
@@ -3472,7 +3475,6 @@ MSA_Missions_Hindu_2 = {
 		#	}
 		}
 		effect = {
-			#https://en.wikipedia.org/wiki/Vijaya_(bow)
 			add_country_modifier = {
 				name = MSA_vijaya_strikes
 				duration = 5475
@@ -3550,7 +3552,10 @@ MSA_Missions_Hindu_3 = {
 			num_of_allies = 2
 			calc_true_if = {
 				all_ally = {
-					religion = hinduism
+					OR = {
+				    	religion = hinduism
+				    	religion = surya_majapahit
+				    }
 					has_opinion = {
 						who = ROOT
 						value = 100
@@ -3568,7 +3573,10 @@ MSA_Missions_Hindu_3 = {
 			hidden_effect = {
 				random_ally = {
 					limit = {
-						religion = hinduism
+						OR = {
+					    	religion = hinduism
+					    	religion = surya_majapahit
+					    }
 						has_opinion = {
 							who = ROOT
 							value = 100
@@ -3602,28 +3610,41 @@ MSA_Missions_Hindu_3 = {
 			owner = {
 				NOT = {
 					religion = hinduism
+					religion = surya_majapahit
 				}
 			}
 		}
 		trigger = {
 			552 = {
 				owner = {
-					religion = hinduism
+					OR = {
+						religion = hinduism
+						religion = surya_majapahit
+					}
 				}
 			}
 			536 = {
 				owner = {
-					religion = hinduism
+					OR = {
+						religion = hinduism
+						religion = surya_majapahit
+					}
 				}
 			}
 			2052 = {
 				owner = {
-					religion = hinduism
+					OR = {
+						religion = hinduism
+						religion = surya_majapahit
+					}
 				}
 			}
 			511 = {
 				owner = {
-					religion = hinduism
+					OR = {
+						religion = hinduism
+						religion = surya_majapahit
+					}
 				}
 			}
 		}
@@ -3636,7 +3657,10 @@ MSA_Missions_Hindu_3 = {
 			hidden_effect = {
 				every_owned_province = {
 					limit = {
-						religion = hinduism
+						OR = {
+					    	religion = hinduism
+					    	religion = surya_majapahit
+					    }
 					}
 					add_local_autonomy = -10
 				}

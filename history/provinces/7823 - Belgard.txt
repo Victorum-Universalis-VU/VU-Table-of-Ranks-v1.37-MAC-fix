@@ -13,21 +13,16 @@ trade_goods = lumber
 is_city = yes
 hre = yes
 
-
-
-
-
-
-
-
-
+#Histories by DonBrom & SF
 1295.1.1 = {
 	owner = STP
 	controller = STP
 	add_core = STP
 	remove_core = POM
 }	#Barnim II of Pomerania dies, killed by the husband of a woman he seduced. Pomerania fractures.
-
+1300.1.1 = {
+	culture = pommeranian #Added by SF in VU v1.37 on advice of Don Brom since according to his sources, Kashubian Slavs had already been fully assimilated by the Germans.
+}
 1469.1.1 = {
 	unrest = 4
 } # Conflict with Swidwin, battle was fought in 1469 between two towns

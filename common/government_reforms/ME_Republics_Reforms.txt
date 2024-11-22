@@ -4,17 +4,20 @@ constitutional_republic_reform = {
 	allow_normal_conversion = yes
 	effect = {}
 	potential = {
+		government_rank = 6
 		OR = {
 			has_reform = constitutional_republic_reform
 			has_institution = enlightenment
 		}
 	}
 	trigger = {
+		government_rank = 6
 		OR = {
 			has_reform = constitutional_republic_reform
 			has_institution = enlightenment
 		}
 	}
+	queen = no
 	modifiers = {
 		max_absolutism = -30
 		global_autonomy = -0.20

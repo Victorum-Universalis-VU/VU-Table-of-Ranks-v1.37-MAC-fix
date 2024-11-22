@@ -1,11 +1,11 @@
 # cost = CFixedPoint( base_cost + ( level * level * level_cost ) ).GetTruncated()
-# DEFAULT: base_cost = 0, level_cost = 0.4, max_level = 4
+# DEFAULT: base_cost = 0, level_cost = 0.4, max_level = 25
 
 newer_idea_adm_modifiers = {
 	category = ADM	
 	custom_yearly_harmony = {
 		yearly_harmony = 0.25
-		max_level = 2
+		max_level = 25
 		level_cost_2 = 5
 		enabled = {
 			has_dlc = "Mandate of Heaven"
@@ -24,7 +24,7 @@ newer_idea_adm_modifiers = {
 	}
 	custom_harmonization_speed = {
 		harmonization_speed = 0.1
-		max_level = 2
+		max_level = 25
 		level_cost_2 = 10
 		enabled = {
 			has_dlc = "Mandate of Heaven"
@@ -43,7 +43,7 @@ newer_idea_adm_modifiers = {
 	}
 	custom_meritocracy = {
 		meritocracy = 0.5
-		max_level = 2
+		max_level = 25
 		level_cost_2 = 15
 		chance = {
 			factor = 0.5
@@ -59,7 +59,7 @@ newer_idea_adm_modifiers = {
 	}
 	custom_monarch_admin_power = {
 		monarch_admin_power = 1
-		max_level = 1
+		max_level = 25
 		level_cost_1 = 45
 		chance = {
 			factor = 0.1
@@ -73,14 +73,14 @@ newer_idea_adm_modifiers = {
 	}
 	custom_yearly_absolutism = {
 		yearly_absolutism = 0.5
-		max_level = 2
+		max_level = 25
 		level_cost_1 = 15
 		level_cost_2 = 60
 		
 	}
 	custom_administrative_efficiency = {
 		administrative_efficiency = 0.05
-		max_level = 2
+		max_level = 25
 		level_cost_1 = 15
 		level_cost_2 = 60
 		chance = {
@@ -180,7 +180,7 @@ newer_idea_adm_modifiers = {
 	}
 	custom_adm_tech_cost_modifier = {
 		adm_tech_cost_modifier = -0.05
-		max_level = 2
+		max_level = 25
 		level_cost_2 = 20
 	}
 	custom_build_time = {
@@ -225,7 +225,7 @@ newer_idea_mil_modifiers = {
 	}
 	custom_siege_blockade_progress = {
 		siege_blockade_progress = 1
-		max_level = 1
+		max_level = 25
 		level_cost_1 = 5
 		chance = {
 			factor = 1
@@ -244,7 +244,10 @@ newer_idea_mil_modifiers = {
 			factor = 1
 			modifier = {
 				factor = 2
-				has_reform = steppe_horde
+				OR = {
+					has_reform = scythian_horde_reform
+					has_reform = steppe_horde
+				}
 			}
 			modifier = {
 				factor = 0
@@ -260,13 +263,13 @@ newer_idea_mil_modifiers = {
 	}
 	custom_artillery_levels_available_vs_fort = {
 		artillery_levels_available_vs_fort = 1
-		max_level = 2
+		max_level = 25
 		level_cost_1 = 3
 		level_cost_2 = 10
 	}
 	custom_monarch_military_power = {
 		monarch_military_power = 1
-		max_level = 1
+		max_level = 25
 		level_cost_1 = 45
 		chance = {
 			factor = 0.1
@@ -304,13 +307,16 @@ newer_idea_mil_modifiers = {
 	}
 	custom_cavalry_flanking = {
 		cavalry_flanking = 0.25
-		max_level = 2
+		max_level = 25
 		level_cost_2 = 10
 		chance = {
 			factor = 1
 			modifier = {
 				factor = 2
-				has_reform = steppe_horde
+				OR = {
+					has_reform = scythian_horde_reform
+					has_reform = steppe_horde
+				}
 			}
 			modifier = {
 				factor = 0
@@ -343,7 +349,7 @@ newer_idea_mil_modifiers = {
 	}
 	custom_army_tradition_from_battle = {
 		army_tradition_from_battle = 0.5
-		max_level = 2
+		max_level = 25
 		level_cost_2 = 5
 
 	}
@@ -397,12 +403,12 @@ newer_idea_mil_modifiers = {
 	}
 	custom_mil_tech_cost_modifier = {
 		mil_tech_cost_modifier = -0.05
-		max_level = 2
+		max_level = 25
 		level_cost_2 = 20
 	}
 	custom_free_leader_pool = {
 		free_leader_pool = 1
-		max_level = 2
+		max_level = 25
 		level_cost_2 = 10
 	}
 	custom_global_regiment_cost = {
@@ -430,7 +436,7 @@ newer_idea_dip_modifiers = {
 	category = DIP	
 	custom_warscore_cost_vs_other_religion = {
 		warscore_cost_vs_other_religion = -0.125
-		max_level = 2
+		max_level = 25
 		level_cost_1 = 5
 		level_cost_2 = 15
 		chance = {
@@ -439,13 +445,13 @@ newer_idea_dip_modifiers = {
 	}
 	custom_war_taxes_cost_modifier = {
 		war_taxes_cost_modifier = -0.5
-		max_level = 2
+		max_level = 25
 		level_cost_1 = 10
 		level_cost_2 = 20
 	}
 	custom_monarch_diplomatic_power = {
 		monarch_diplomatic_power = 1
-		max_level = 1
+		max_level = 25
 		level_cost_1 = 45
 		chance = {
 			factor = 0.1
@@ -466,7 +472,7 @@ newer_idea_dip_modifiers = {
 	}
 	custom_reduced_liberty_desire_on_same_continent = {
 		reduced_liberty_desire_on_same_continent = 10
-		max_level = 2
+		max_level = 25
 		level_cost_2 = 10
 		chance = {
 			factor = 0.15
@@ -478,7 +484,7 @@ newer_idea_dip_modifiers = {
 	}
 	custom_naval_tradition_from_battle = {
 		naval_tradition_from_battle = 0.5
-		max_level = 2
+		max_level = 25
 		level_cost_2 = 5
 		chance = {
 			factor = 1
@@ -581,17 +587,11 @@ newer_idea_dip_modifiers = {
 			factor = 0.25
 			modifier = {
 				factor = 2
-				OR = {
-					religion = arctolatry
-					religion = totemism
-				}
+				religion = totemism
 			}
 			modifier = {
 				factor = 0
-				NOT = { 
-					religion = arctolatry
-					religion = totemism 
-				}
+				NOT = { religion = totemism }
 			}
 		}
 	}
@@ -606,7 +606,7 @@ newer_idea_dip_modifiers = {
 	}
 	custom_province_warscore_cost = {
 		province_warscore_cost = -0.125
-		max_level = 2
+		max_level = 25
 		level_cost_1 = 15
 		level_cost_2 = 25
 		chance = {
@@ -615,7 +615,7 @@ newer_idea_dip_modifiers = {
 	}
 	custom_dip_tech_cost_modifier = {
 		dip_tech_cost_modifier = -0.05
-		max_level = 2
+		max_level = 25
 		level_cost_2 = 20
 		chance = {
 			factor = 0.5
@@ -623,7 +623,7 @@ newer_idea_dip_modifiers = {
 	}
 	custom_papal_influence = {
 		papal_influence = 1
-		max_level = 2
+		max_level = 25
 		level_cost_2 = 20
 		chance = {
 			factor = 1
@@ -644,7 +644,7 @@ newer_idea_dip_modifiers = {
 	}
 	custom_auto_explore_adjacent_to_colony = {
 		auto_explore_adjacent_to_colony = yes
-		max_level = 1
+		max_level = 25
 		chance = {
 			factor = 0.15
 		}
@@ -669,7 +669,7 @@ newer_idea_dip_modifiers = {
 	}
 	custom_placed_merchant_power = {
 		placed_merchant_power = 5
-		max_level = 2
+		max_level = 25
 		level_cost_2 = 10
 		chance = {
 			factor = 0.5

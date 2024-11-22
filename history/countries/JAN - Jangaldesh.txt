@@ -1,6 +1,6 @@
 government = tribal
 add_government_reform = tribal_kingdom
-government_rank = 1
+government_rank = 6 #Petty_Kingdom
 primary_culture = rajput
 religion = hinduism
 technology_group = indian
@@ -9,15 +9,13 @@ fixed_capital = 512 # Cannot move capital away from this province & no power cos
 
 1399.1.1 = {
 	monarch = {
-		name = "Rao" # ??? Many small tribes that weren't unified of whom the Bhati Rajputs was most prominent, atleast some of the time...
+		name = "Rao"
 		dynasty = "Bhati"
 		DIP = 0
 		MIL = 2
 		ADM = 0
 	}
 }
-
- 
 
 1465.1.1 = {
 	monarch = {
@@ -421,5 +419,5 @@ add_government_reform = autocracy_reform } #Bikaner founded
 }
 
 1816.1.1 = {
-	government_rank = 2
+	government_rank = 8
 }

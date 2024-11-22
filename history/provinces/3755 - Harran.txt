@@ -2,6 +2,7 @@
 
 owner = AKK
 controller = AKK
+add_core = AKK
 culture = al_suryah_arabic
 religion = sunni
 capital = "Harran"
@@ -10,27 +11,9 @@ base_tax = 2			#Very destroyed after Mongol Invasions
 base_production = 1
 base_manpower = 1
 is_city = yes
-add_core = AKK
+
+#Claimants
 add_core = SYR
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 1507.1.1 = { owner = PER controller = PER add_core = PER remove_core = AKK } # The Safavids took over
 1516.8.24 = {

@@ -1,6 +1,6 @@
 government = tribal
 add_government_reform = siberian_tribe
-government_rank = 1
+government_rank = 6 #Chiefdom
 primary_culture = yukagyr
 religion = tengri_pagan_reformed
 technology_group = nomad_group

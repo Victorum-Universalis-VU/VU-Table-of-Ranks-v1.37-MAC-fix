@@ -19,7 +19,7 @@
  BEL:0 "Belgium"
  BEL_ADJ:0 "Belgian"
  #Iberia
- BSP:0 "Spainish Empire"
+ BSP:0 "Spanish Empire"
  BSP_ADJ:0 "Spanish"
  SPB:0 "Bourbon Spain"
  SPB_ADJ:0 "Spanish"
@@ -50,14 +50,9 @@
  NGC_ADJ:0 "Northern German"
  AUE:0 "Austrian Empire"
  AUE_ADJ:0 "Austrian"
- AHE:0 "Austria-Hungary"
- AHE_ADJ:0 "Austro-Hungarian"
+ #AHE:0 "Austria-Hungary"
+ #AHE_ADJ:0 "Austro-Hungarian"
  
- #Great Britain
- #ML8991
- AFU:0 "Les Rouyaumes Unis"
- AFU_ADJ:0 "Anglois"
-
  #Addition by KyuQem#
  NRE:0 "North Sea Empire"
  NRE_ADJ:0 "North Sea"
@@ -109,8 +104,8 @@
  french_third_republic_reform:0 "Third Republic"
  french_third_republic_reform_desc:0 "This government consists of a group of individuals, headed by a President who rules the country as a republic."
  #
- #self_governing_dominion_vu_government:0 "Dominion"
- #self_governing_dominion_vu_government_desc:0 "A type of colony that is autonomous, a Dominion acts as a country inside a country."
+ self_governing_dominion_vu_government:0 "Dominion"
+ self_governing_dominion_vu_government_desc:0 "A type of colony that is autonomous, a Dominion acts as a country inside a country."
  #
  #self_governing_super_dominion_vu_government:0 "Super Dominion"
  #self_governing_super_dominion_vu_government_desc:0 "A type of colony that is autonomous, a Super Dominion acts as a empire inside a empire."
@@ -294,8 +289,11 @@
  imperial_russia_title:0 "Imperial Russia"
  imperial_russia_desc:0 "'Imperatorskaya Rossiya' is the new name we shall call our empire and St.Petersburg will be her new and shining capital on the shores of the Baltic. Gone are the days of old as we welcome with open arms this new modern age of enlightenment."
 
- ##############################
- # VU - Custom Tooltip by Altan
- ##############################
-
-russian_nation_requirements_vu: "You must own §YMoskva§!, §YNovgorod§!, §YTver§! or §YYaroslavl§!, §YRyazan§! or §YSmolensk§!, §YNijni-Novgorod§! or §YVladimir§!.\nYou must start as or have annexed §YTver§!, §YGalich§!, §YZubtsov§!, §YPronsk§!, §YRyazan§!, §YYaroslav§!, §YPolotsk§! or §YRostov§!.\n§YMozhaysk§!, §YSerpukhov§!, §YPskov§!, §YMologa§!, §YBeloozero§! must either be your starting country or your vassal or annexed."
+ ###########################################
+ # VU - Custom Tooltip by Altan and Komandor
+ ###########################################
+ 
+ russian_nation_requirements_1_vu: "You must own §YMoskva§!, §YNovgorod§!, §YTver§! or §YYaroslavl§!, §YRyazan§! or §YSmolensk§!, §YNizhny Novgorod§! or §YVladimir§!."
+ russian_nation_requirements_2_vu: "You must start as or have annexed §YTver§!, §YGalich§!, §YZubtsov§!, §YPronsk§!, §YRyazan§!, §YYaroslav§!, §YPolotsk§! and §YRostov§!."
+ russian_nation_requirements_3_vu: "§YMozhaysk§!, §YSerpukhov§!, §YPskov§!, §YMologa§! and §YBeloozero§! must either be your starting country or your vassal or annexed."
+ russian_culture_tt: "All §YMuscovite§!, §YRyazanian§! and §YNovgorodian§! provinces will adopt §YRussian§! culture"

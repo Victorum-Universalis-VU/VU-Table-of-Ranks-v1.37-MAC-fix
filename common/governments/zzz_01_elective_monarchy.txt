@@ -64,7 +64,7 @@ elective_monarchy = {
 				trade_princes_reform
 				dhimmi_nobles_reform
 				council_of_sheikhs_reform
-				muscovite_manorialism_reform
+				#muscovite_manorialism_reform
 				order_of_the_swan_reform
 				junker_class_reform
 				blood_tax_reform
@@ -215,7 +215,7 @@ elective_monarchy = {
 		    	abolish_manrent_reform
 		    	permanent_marathas_council_reform
 		    	governmental_purbias_register_reform
-		    	foreign_formation_regiments_reform
+		    	#foreign_formation_regiments_reform
 		    	gustavan_artillery_reform
 		    	reorganize_the_imperial_army
 		    	arabian_horses_reform
@@ -494,7 +494,7 @@ elective_monarchy = {
 				enlightened_monarchy_reform
 			#	GE
 				abolish_clergy_privileges_reform
-				peters_council_reform
+				#peters_council_reform
 				nizam_i_jedid_reform
 				commonwealth_of_nations_reform
 			}
@@ -514,14 +514,14 @@ elective_monarchy = {
 		mamluk_government_legacy
 		feudal_theocracy_legacy
 		elective_monarchy_legacy
-		phoenician_elective_monarchical_republic_legacy
+		#phoenician_elective_monarchical_republic_legacy
 		celestial_empire_legacy
 		ottoman_government_legacy
 		iqta_legacy
 		daimyo_legacy
 		shogunate_legacy
-		selucian_kingdom_legacy
-		selucian_satrapy_legacy
+		#selucian_kingdom_legacy
+		#selucian_satrapy_legacy
 		indep_daimyo_legacy
 		principality_legacy
 		#greek_aparchate_legacy
@@ -587,6 +587,12 @@ elective_monarchy = {
 	#Flavor
 	exclusive_reforms = {
 		daimyo
+		daimyo_barony_reform
+		daimyo_viscounty_reform
+		daimyo_county_reform
+		daimyo_marquisate_reform
+		daimyo_duchy_reform
+		daimyo_principality_reform
 		shogunate
 		selucian_kingdom_reform
 		selucian_satrapy_reform

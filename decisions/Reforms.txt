@@ -54,7 +54,7 @@ country_decisions = {
 		}
 	}
 	
-	reforms_me_habsburg_monarchy = {
+	reforms_declare_the_archduchy_monarchy = {
 		major = yes
 		potential ={
 			has_reform = austrian_archduchy_reform
@@ -70,17 +70,17 @@ country_decisions = {
 			}
 		}
 		effect = {
-			add_government_reform = habsburg_monarchy_reform
+			add_government_reform = austrian_dual_monarchy #Was habsburg_monarchy_reform
 		}
 		ai_will_do = {
 			factor = 100
 		}
 	}
 	
-	reforms_me_austrian_empire = {
+	reforms_declare_the_austrian_empire = {
 		major = yes
 		potential ={
-			has_reform = habsburg_monarchy_reform
+			has_reform = austrian_dual_monarchy #Was habsburg_monarchy_reform
 		}
 		allow = {
 			absolutism = 50
@@ -89,7 +89,7 @@ country_decisions = {
 			total_development = 500
 		}
 		effect = {
-			add_government_reform = austrian_empire_reform
+			add_government_reform = austrian_absolute_monarchy
 		}
 		ai_will_do = {
 			factor = 100
@@ -379,69 +379,6 @@ country_decisions = {
 		}
 	}
 	
-	# reforms_GE_solar_kingdom_reform = {
-		# potential = {
-			# government = monarchy
-			# OR = {
-				# culture_group = burman
-				# culture_group = southeastasian_group 
-			# }
-			# NOT = { has_reform = solar_kingdom_reform }
-		# }
-		# provinces_to_highlight = {
-			# OR = {
-				# area = upper_burma_area
-				# area = central_burma_area
-				# area = lower_burma_area
-				# area = central_thai_area
-				# area = north_tenasserim_area
-				# area = cambodia_area
-				# area = mekong_area
-			# }
-			# NOT = {
-				# country_or_non_sovereign_subject_holds = ROOT
-			# }
-		# }
-		# allow = {
-			# upper_burma_area = {
-				# type = all
-				# country_or_non_sovereign_subject_holds = ROOT
-			# }
-			# central_burma_area = {
-				# type = all
-				# country_or_non_sovereign_subject_holds = ROOT
-			# }
-			# lower_burma_area = {
-				# type = all
-				# country_or_non_sovereign_subject_holds = ROOT
-			# }
-			# central_thai_area = {
-				# type = all
-				# country_or_non_sovereign_subject_holds = ROOT
-			# }
-			# north_tenasserim_area = {
-				# type = all
-				# country_or_non_sovereign_subject_holds = ROOT
-			# }
-			# cambodia_area = {
-				# type = all
-				# country_or_non_sovereign_subject_holds = ROOT
-			# }
-			# mekong_area = {
-				# type = all
-				# country_or_non_sovereign_subject_holds = ROOT
-			# }
-			# stability = 3
-		# }
-		# effect = {
-			# add_stability = -4
-			# add_government_reform = solar_kingdom_reform
-		# }
-		# ai_will_do = {
-			# factor = 100
-		# }
-	# }
-	
 	GE_blood_sacrifice = {
 		major = yes
 		potential = {
@@ -516,145 +453,4 @@ country_decisions = {
 			factor = 0
 		}
 	}
-
-	#Turned off by San Felipe as it is broken and is still broken in the very latest Steam GE mod version.
-	#GE_emergency_powers = {
-	#	#major = no
-	#	potential = {
-	#		has_government_attribute = enables_emergency_power
-	#	}
-	#	allow = {
-	#		republican_tradition = 25
-	#		NOT = {
-	#			has_ruler_modifier = GE_emergency_powers_modifier
-	#		}
-	#	}
-	#	effect = {
-	#		add_republican_tradition = -25
-	#		add_ruler_modifier = {
-	#			name = GE_emergency_powers_modifier
-	#			duration = 3650
-	#		}
-	#		add_absolutism = 20
-	#	}
-	#	ai_will_do = {
-	#		factor = 0
-	#	}
-	#}
-	#GE_become_confederacy = {
-	#	major = yes
-	#	potential = {
-	#		has_reform = crown_of_aragon
-	#		always = no
-	#	}
-	#	allow = {
-	#		always = no
-	#	}
-	#	effect = {
-	#		change_government = confederacy
-	#		change_government_reform_progress = 10000
-	#	}
-	#	ai_will_do = {
-	#		factor = 0
-	#	}
-	#}
-	
-	#reform_byz_gov_part_1 = {
-	#	major = no
-	#	potential = {
-	#		has_reform = byzantine_autocracy_reform
-	#		NOT = { has_reform = byzantine_transitional_gov_reform }
-	#		NOT = { have_had_reform = byzantine_transitional_gov_reform }
-	#	}
-	#	allow = {
-	#		government_reform_progress = 100
-	#		stability = 2
-	#		grown_by_development = 300
-	#		legitimacy_equivalent = 99
-	#		prestige = 25
-	#		NOT = { num_of_rebel_controlled_provinces = 1 }
-	#		NOT = { num_of_rebel_armies = 1 }
-	#		is_at_war = no
-	#		has_institution = renaissance
-	#		employed_advisor = { category = ADM }
-	#		employed_advisor = { category = DIP }
-	#		NOT = { corruption = 1 }
-	#		is_in_deficit = no
-	#	}
-	#	effect = {
-	#		add_stability = -1
-	#		add_adm_power = -100
-	#		add_dip_power = -100
-	#		add_mil_power = -50
-	#		add_corruption = 4
-	#		add_legitimacy = -30
-	#		remove_advisor_by_category = ADM
-	#		remove_advisor_by_category = DIP
-	#		change_government_reform_progress = -100
-	#		remove_government_reform = byzantine_autocracy_reform
-	#		add_government_reform = byzantine_transitional_gov_reform
-	#	}
-	#	ai_will_do = {
-	#		factor = 100
-	#	}
-	#}
-	
-	#reform_byz_gov_part_2 = {
-	#	major = no
-	#	potential = {
-	#		has_reform = byzantine_transitional_gov_reform
-	#		NOT = { has_reform = reformed_byzantine_monarchy_reform }
-	#		NOT = { have_had_reform = reformed_byzantine_monarchy_reform }
-	#	}
-	#	allow = {
-	#		government_reform_progress = 100
-	#		stability = 2
-	#		grown_by_development = 600
-	#		legitimacy_equivalent = 99
-	#		prestige = 50
-	#		NOT = { num_of_rebel_controlled_provinces = 1 }
-	#		NOT = { num_of_rebel_armies = 1 }
-	#		is_at_war = no
-	#		employed_advisor = { category = ADM }
-	#		employed_advisor = { category = DIP }
-	#		employed_advisor = { category = MIL }
-	#		NOT = { corruption = 1 }
-	#		is_in_deficit = no
-	#		adm = 4
-	#		dip = 4
-	#		dip = 3
-	#		OR = {
-	#			innovativeness = 15
-	#			has_institution = new_world_i
-	#		}
-	#		estate_loyalty = {
-	#			estate = estate_burghers
-	#			loyalty = 50
-	#		}
-	#		estate_loyalty = {
-	#			estate = estate_nobles
-	#			loyalty = 60
-	#		}
-	#		estate_loyalty = {
-	#			estate = estate_church
-	#			loyalty = 60
-	#		}
-	#	}
-	#	effect = {
-	#		add_stability = -2
-	#		add_adm_power = -100
-	#		add_dip_power = -100
-	#		add_mil_power = -50
-	#		add_corruption = 4
-	#		add_legitimacy = -30
-	#		remove_advisor_by_category = ADM
-	#		remove_advisor_by_category = DIP
-	#		change_government_reform_progress = -100
-	#		remove_government_reform = byzantine_transitional_gov_reform
-	#		add_government_reform = reformed_byzantine_monarchy_reform
-	#	}
-	#	ai_will_do = {
-	#		factor = 100
-	#	}
-	#}
 }

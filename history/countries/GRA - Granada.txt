@@ -5,7 +5,7 @@ religion = sunni
 add_accepted_culture = andalucian
 technology_group = muslim
 capital = 223	# Granada
-government_rank = 1
+government_rank = 6 #Sultanate
 religious_school = maliki_school
 
 change_estate_land_share = {

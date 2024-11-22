@@ -1,6 +1,6 @@
 government = monarchy
-add_government_reform = iqta
-government_rank = 1
+add_government_reform = islamic_emirate_reform
+government_rank = 5 #Emirate
 primary_culture = al_suryah_arabic
 religion = sunni
 technology_group = muslim
@@ -10,7 +10,7 @@ religious_school = shafii_school
 
 1378.1.1 = {
 	monarch = {
-		name = "al-‘Adil Fakhr al-Din"
+		name = "al-'Adil Fakhr al-Din"
 		dynasty = "Ayyubid"
 		adm = 2
 		dip = 2

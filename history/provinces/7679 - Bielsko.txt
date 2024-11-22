@@ -71,9 +71,9 @@ base_manpower = 2
 1750.1.1 = { base_tax = 8 base_production = 8 base_manpower = 6 }
 1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved
 1867.3.30 = {
-	owner = AHE
-	controller = AHE
-	add_core = AHE
+	owner = AUH
+	controller = AUH
+	add_core = AUH
 	remove_core = HAB
 } # Austria-Hungary is formed
 1880.1.1 = {
@@ -85,5 +85,5 @@ base_manpower = 2
 	owner = POL
 	controller = POL
 	add_core = POL
-	remove_core = AHE
+	remove_core = AUH
 } # Polish declares independence, end of WWI

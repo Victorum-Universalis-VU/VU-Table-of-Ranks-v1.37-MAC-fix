@@ -511,7 +511,7 @@ LIT_missions_2 = {
 		}
 		effect = {
 			define_advisor = {
-				type = muscovy_architect
+				type = civil_engineer
 				skill = 3
 				culture = ruthenian
 				religion = orthodox
@@ -559,6 +559,7 @@ LIT_missions_2 = {
 				area = estonia_ingria_area
 				area = curonia_area
 				area = livonia_area
+				area = riga_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
@@ -568,6 +569,7 @@ LIT_missions_2 = {
 					area = estonia_ingria_area
 					area = curonia_area
 					area = livonia_area
+					area = riga_area
 				}
 				value = 7
 			}
@@ -909,6 +911,13 @@ LIT_missions_3 = {
 				add_permanent_claim = ROOT
 			}
 			livonia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			riga_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 					NOT = { is_core = ROOT }

@@ -14,23 +14,7 @@ native_ferocity = 9
 native_hostileness = 5
 
 #Claimants
-
-#Buildings
-
-#Special Modifiers
-
-#Known by Technology groups
-
-
-
-
-
-
-
-
-
-
-
+add_core = R4S
 
 #Histories by SF
 1444.11.11 = {

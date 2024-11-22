@@ -6,13 +6,6 @@ color = { 74 136 241 }
 
 historical_idea_groups = {
 	religious_ideas
-	defensive_ideas
-	offensive_ideas
-	maritime_ideas
-	trade_ideas
-	spy_ideas
-	diplomatic_ideas
-	economic_ideas
 }
 
 historical_units = {
@@ -30,7 +23,7 @@ leader_names = {
 	Bakan Balam Bor
 	Canek Chaob Chiam
 	Hnuyg
-	Kayom Kíin Kukumatz
+	Kayom Kï¿½in Kukumatz
 	Mochcouoh
 	Nachancan Nohochacyum
 	Pacal
@@ -89,30 +82,30 @@ monarch_names = {
 }
 
 ship_names = {
-	Aké "Ah Puch" "Altun Ha"
+	Akï¿½ "Ah Puch" "Altun Ha"
 	Bonampak Becan Bolonchen
-	Chaac Camazotz Cancuén Caracol Cerros Chacchoben Chacmultun Chinikiha Chinkultic 
+	Chaac Camazotz Cancuï¿½n Caracol Cerros Chacchoben Chacmultun Chinikiha Chinkultic 
 	Chunchucmil Civiltuk Calakmul Copan Coba
 	"Chichen Itza"
 	Dzibilchaltun Dzibilnocac Dzilam
 	"Dos Pilas" "Cahal Pech"
-	Edzná Ekab "Ek'Balam" 
+	Edznï¿½ Ekab "Ek'Balam" 
 	Gumarcaj Gucumatz
 	Hocchob Hormiguero Hunahpu Huracan
 	Ixbalanque Ixchel Ixtab Ichmac Ichmul Itzan Ixil Iximche Ixlu Izamal "Ix Chel"
-	Labná Louisville Lubaantun Lubaantun Jaina Jolja "Joya de Cerén"
+	Labnï¿½ Louisville Lubaantun Lubaantun Jaina Jolja "Joya de Cerï¿½n"
 	Kaminaljuyu Kabah Kiuic "Kantunil Kin"
 	Lamanai 
 	Mayapan Machaquila Mani Muluchtzekel Muyil 
 	Nakum Nakbe Naranjo Nebaj "Nim Li Punit"
 	Okop Oxcutzcab Oxkintok 
-	Palenque Pomoná Pusilha "Piedras Negras"
+	Palenque Pomonï¿½ Pusilha "Piedras Negras"
 	Quirigua
 	"Rio Azul" "Rio Bec"
 	Sayil Seibal Sisila
-	Tonina Tikal Tulum Tancah Tazumal Tecoh Topoxté 
+	Tonina Tikal Tulum Tancah Tazumal Tecoh Topoxtï¿½ 
 	Uxmal Uaxactun Ucanal Uci Utatlan
-	Waká
+	Wakï¿½
 	Xcalumkin Xcaret Xcorralche Xcucsuc Xculoc Xlapak Xpuhil Xultun Xunantunich
 	Yaklmai Yaxchilan Yaxha Yo'okop 
 	Zipacna Zaculeu 

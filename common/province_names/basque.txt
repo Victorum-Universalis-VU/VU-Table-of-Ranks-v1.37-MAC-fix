@@ -1,10 +1,11 @@
-173 = "Lapurdi"
-209 = "Bizkaia"
-210 = "Nafarroa"
 
+132 = { "Judenburg" "Judenburg" }
+173 = "Lapurdi"
 197 = "Rosselló"
 207 = "Asturias"
 208 = "Leon"
+209 = "Bizkaia"
+210 = "Nafarroa"
 211 = "Pirinioak"
 213 = "Bartzelona"
 214 = "Aragoi"

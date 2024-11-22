@@ -596,7 +596,7 @@ country_event = {
 		ai_chance = { factor = 1 }
 		
 		define_advisor = {
-			type = travelling_merchant
+			type = trader
 			skill = 3
 			culture = persian
 			religion = ROOT
@@ -655,23 +655,23 @@ country_event = {
 		ai_chance = { factor = 1 }
 		
 		trigger = {
-			NOT = { exists = RMM }
+			NOT = { exists = RUM } 
 		}
 		
 		151 = {
-			add_core = RMM
-			cede_province = RMM
+			add_core = RUM
+			cede_province = RUM
 		}
 		
 		custom_tooltip = " "
 		
 		create_subject = {
-			subject = RMM
+			subject = RUM
 			subject_type = march
 		}
 		
 		hidden_effect = {
-			RMM = {
+			RUM = {
 				change_religion = ROOT
 				change_primary_culture = ROOT
 			}
@@ -681,9 +681,9 @@ country_event = {
 		
 		balkan_region = {
 			limit = {
-				NOT = { owned_by = RMM }
+				NOT = { owned_by = RUM } 
 			}
-			add_permanent_claim = RMM
+			add_permanent_claim = RUM
 		}
 		
 		custom_tooltip = " "
@@ -702,8 +702,8 @@ country_event = {
 				limit = {
 					owned_by = ROOT
 				}
-				cede_province = RMM
-				add_core = RMM
+				cede_province = RUM
+				add_core = RUM
 			}
 		}
 	}

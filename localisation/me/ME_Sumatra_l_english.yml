@@ -1,4 +1,5 @@
 ﻿l_english:
+ #Missions:
  SUM_defeat_the_fakes_title: "Crush the Pretenders"
  SUM_defeat_the_fakes_desc: "Our home is native to many polities, many of them claiming the heritage of Srivijaya. However, there is only one successor to Srivijaya, and it is [Root.GetName]."
  SUM_generic_unite_the_island_title: "Unite the Island"
@@ -38,14 +39,23 @@
  SUM_generic_navy_title: "Harmony with the Seas"
  SUM_generic_navy_desc: "With the island of Sumatra surrounded by water, we will not be able to secure our independence without a functional navy. By being in tune with the sea, [Root.GetName] will be able to establish itself as a rightful contender to the throne of Sumatra."
  
+ #Modifiers:
  SUM_navy_modifier: "Mastery of the Sailor's Life"
+ desc_SUM_navy_modifier: ""
  SUM_army_modifier: "Mastery of the Islander's Life"
+ desc_SUM_army_modifier: ""
  SUM_sumatran_architecture: "Sumatran Architecture"
+ desc_SUM_sumatran_architecture: ""
  SUM_trade: "Secured Sumatran Routes"
  desc_SUM_trade: ""
  SUM_capital_of_srivijaya_conquered: "Capital of Srivijaya Conquered"
+ desc_SUM_capital_of_srivijaya_conquered: ""
  SUM_generic_suvarnadvipa_modifier: "Island of Gold"
+ desc_SUM_generic_suvarnadvipa_modifier: ""
  SUM_generic_spice_flows: "The Spice Must Flow"
+ desc_SUM_generic_spice_flows: ""
  SUM_hegemony: "Religious Hegemony"
+ desc_SUM_hegemony: ""
  
+ #Custom Tooltips:
  SUM_when_both_are_completed: "When both §YMight of Our Armies§! and §YHarmony with the Seas§! missions are completed, gain §Ypermanent claims§! on our capital state and states that border it."

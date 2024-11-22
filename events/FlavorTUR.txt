@@ -1,4 +1,4 @@
-#VU updated by San Felipe for 1.36
+#Updated to v1.36 - SF
 ########################################
 # Major Flavor Events                  #
 ########################################
@@ -3322,7 +3322,7 @@ country_event = {
 		controls = 134
 		OR = {
 			tag = TUR
-			tag = RMM
+			tag = RUM
 			has_mission = tur_conquer_vienna
 		}
 		NOT = { religion_group = christian }	#It wouldn't be so dramatic if the Ottomans were just another Christian kingdom
@@ -3332,13 +3332,13 @@ country_event = {
 					OR = {
 						OR = {
 							tag = TUR
-							tag = RMM
+							tag = RUM
 							has_mission = tur_conquer_vienna
 						}
 						overlord = {
 							OR = {
 								tag = TUR
-								tag = RMM
+								tag = RUM
 								has_mission = tur_conquer_vienna
 							}
 						}
@@ -3438,6 +3438,23 @@ country_event = {
 		HAB = {
 			remove_historical_rival = ROOT
 			hidden_effect = { grant_independence = yes }
+			eyalet_effect = {
+				tag = EY3
+			}
+		}
+		create_subject = {
+			who = HAB
+			subject_type = eyalet
+		}
+		HAB = {
+			if = {
+				limit = { NOT = { government = monarchy } }
+				change_government = monarchy
+			}
+			if = {
+				limit = { NOT = { has_reform = eyalet_government } }
+				add_government_reform = eyalet_government
+			}
 			if = {
 				limit = {
 					is_lesser_in_union = no
@@ -3465,14 +3482,6 @@ country_event = {
 					}
 				}
 			}
-			add_government_reform = eyalet_government
-			eyalet_effect = {
-				tag = EY3
-			}
-		}
-		create_subject = {
-			who = HAB
-			subject_type = eyalet
 		}
 		ai_chance = {
 			factor = 1
@@ -4226,6 +4235,7 @@ country_event = {
 				area = tuscany_area
 				area = lazio_area
 				area = central_italy_area
+				area = san_marino_area
 				area = corsica_sardinia_area
 			}
 			value = 10
@@ -4289,6 +4299,10 @@ country_event = {
 			limit = { owned_by = ROOT }
 			add_core = event_target:first_potential_eyalet
 		}
+		san_marino_area = {
+			limit = { owned_by = ROOT }
+			add_core = event_target:first_potential_eyalet
+		}
 		corsica_sardinia_area = {
 			limit = { owned_by = ROOT }
 			add_core = event_target:first_potential_eyalet
@@ -4340,6 +4354,10 @@ country_event = {
 			add_core = event_target:second_potential_eyalet
 		}
 		central_italy_area = {
+			limit = { owned_by = ROOT }
+			add_core = event_target:second_potential_eyalet
+		}
+		san_marino_area = {
 			limit = { owned_by = ROOT }
 			add_core = event_target:second_potential_eyalet
 		}
@@ -4491,7 +4509,7 @@ country_event = {
 				change_religion = ROOT
 			}
 			add_government_reform = eyalet_government
-			set_government_rank = 2
+			set_government_rank = 8
 			add_liberty_desire = -25
 			set_capital = 225
 			eyalet_effect = {
@@ -6115,6 +6133,10 @@ country_event = {
 				controlled_by = ROOT
 			}
 		}
+		NOT = { exists = EGY }
+	}
+	mean_time_to_happen = {
+		days = 1
 	}
 
 	option = {
@@ -6196,8 +6218,6 @@ country_event = {
 	picture = EYALET_REBELLION_eventPicture
 	fire_only_once = yes
 	trigger = {
-		has_country_flag = has_eyalet_country_name
-		has_country_flag = is_EY7_flag
 		has_country_modifier = tur_mamlukian_administration
 		NOT = { is_subject_of_type = eyalet }
 		NOT = { is_subject_of_type = core_eyalet }
@@ -6645,7 +6665,7 @@ country_event = {
 		has_dlc = "Domination"
 		OR = {
 			tag = TUR
-			tag = RMM
+			tag = RUM
 		}
 		owns_or_non_sovereign_subject_of = 358
 	}
@@ -6872,7 +6892,7 @@ country_event = {
 	fire_only_once = yes
 	trigger = {
 		tag = TUR
-		government_rank = 3
+		government_rank = 9
 		num_of_cities = 200
 		has_any_disaster = no
 		is_bankrupt = no
@@ -8445,7 +8465,6 @@ country_event = {
 			government_reform = mansure_army_reform
 		}
 		add_government_reform = mansure_army_reform
-		#vu_change_tech_group_to_western = yes
 		change_technology_group = western 
 		change_unit_type = western 
 	}
@@ -8456,7 +8475,6 @@ country_event = {
 		unlock_government_reform = {
 			government_reform = mansure_army_reform
 		}
-		#vu_change_tech_group_to_western = yes
 		change_technology_group = western 
 		change_unit_type = western 
 	}

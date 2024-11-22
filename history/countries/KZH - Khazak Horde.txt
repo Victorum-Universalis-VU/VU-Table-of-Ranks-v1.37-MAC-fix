@@ -1,5 +1,6 @@
 government = tribal
 add_government_reform = steppe_horde
+government_rank = 6 #Steppe_Horde
 primary_culture = khazak
 religion = sunni
 technology_group = nomad_group
@@ -192,7 +193,7 @@ religious_school = hanafi_school
 }
 
 1732.1.1 = {
-	government_rank = 1
+	government_rank = 6
 }
 
 1734.1.1 = {

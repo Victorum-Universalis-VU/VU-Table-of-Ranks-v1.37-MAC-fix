@@ -1,10 +1,10 @@
 government = native
 add_government_reform = native_clan_council_reform
-government_rank = 1
+government_rank = 2 #Barony
 primary_culture = shoshone
 religion = totemism
 technology_group = north_american
-capital = 5016	# Bannock
+capital = 5815 # Bannock
 
 
 1444.11.11 = {

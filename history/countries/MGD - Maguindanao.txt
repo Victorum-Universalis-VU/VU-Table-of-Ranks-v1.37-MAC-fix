@@ -1,10 +1,11 @@
 government = monarchy
-add_government_reform = plutocratic_reform
-government_rank = 1
+add_government_reform = islamic_sultanate_reform
+government_rank = 6 #Sultanate
 technology_group = chinese
 primary_culture = maguindanao
 capital = 652	# Maguindanao
 religion = sunni
+religious_school = shafii_school
 
 1444.1.1 = {
 	monarch = {

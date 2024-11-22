@@ -328,6 +328,13 @@ mai_group_1 = {
 				}
 				add_permanent_claim = root
 			}
+			frankfurt_area = {
+				limit = {
+					NOT = { is_permanent_claim = root }
+					NOT = { is_core = root }
+				}
+				add_permanent_claim = root
+			}
 			79 = {
 				if = {
 					limit = {
@@ -426,6 +433,13 @@ kol_group_1 = {
 				add_permanent_claim = root
 			}
 			hesse_area = {
+				limit = {
+					NOT = { is_core = root }
+					NOT = { is_permanent_claim = root }
+				}
+				add_permanent_claim = root
+			}
+			frankfurt_area = {
 				limit = {
 					NOT = { is_core = root }
 					NOT = { is_permanent_claim = root }

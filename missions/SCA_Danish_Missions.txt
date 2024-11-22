@@ -568,6 +568,13 @@ dan_trade_and_colonial_mission_slot = {
 				}
 				add_permanent_claim = ROOT
 			}
+			riga_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 			estonia_ingria_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -1685,6 +1692,7 @@ dan_sweden_and_great_power_mission_slot = {
 			OR = {
 				area = svealand_area
 				area = gotaland_area
+				area = gotland_area
 				area = norrland_area
 				area = bothnia_area
 				area = finland_area
@@ -1696,6 +1704,10 @@ dan_sweden_and_great_power_mission_slot = {
 				type = all
 			}
 			gotaland_area = {
+				owned_by = ROOT
+				type = all
+			}
+			gotland_area = {
 				owned_by = ROOT
 				type = all
 			}
@@ -4330,10 +4342,13 @@ dan_sca_conquest_slot_3 = {
 				area = norrland_area
 				area = bothnia_area
 				area = gotaland_area
+				area = gotland_area
 				area = skaneland_area
 				area = denmark_area
 				area = jutland_area
 				area = holstein_area
+				area = hamburg_area
+				area = lauenburg_area
 				area = mecklenburg_area
 				area = vorpommern_area
 				area = hinter_pommern_area
@@ -4351,10 +4366,13 @@ dan_sca_conquest_slot_3 = {
 				norrland_area = { OR = { country_or_non_sovereign_subject_holds = ROOT has_port = no } type = all }
 				bothnia_area = { OR = { country_or_non_sovereign_subject_holds = ROOT has_port = no } type = all }
 				gotaland_area = { OR = { country_or_non_sovereign_subject_holds = ROOT has_port = no } type = all }
+				gotland_area = { OR = { country_or_non_sovereign_subject_holds = ROOT has_port = no } type = all }
 				skaneland_area = { OR = { country_or_non_sovereign_subject_holds = ROOT has_port = no } type = all }
 				denmark_area = { OR = { country_or_non_sovereign_subject_holds = ROOT has_port = no } type = all }
 				jutland_area = { OR = { country_or_non_sovereign_subject_holds = ROOT has_port = no } type = all }
 				holstein_area = { OR = { country_or_non_sovereign_subject_holds = ROOT has_port = no } type = all }
+				hamburg_area = { OR = { country_or_non_sovereign_subject_holds = ROOT has_port = no } type = all }
+				lauenburg_area = { OR = { country_or_non_sovereign_subject_holds = ROOT has_port = no } type = all }
 				mecklenburg_area = { OR = { country_or_non_sovereign_subject_holds = ROOT has_port = no } type = all }
 				vorpommern_area = { OR = { country_or_non_sovereign_subject_holds = ROOT has_port = no } type = all }
 				hinter_pommern_area = { OR = { country_or_non_sovereign_subject_holds = ROOT has_port = no } type = all }
@@ -4393,6 +4411,7 @@ dan_sca_conquest_slot_4 = {
 			OR = {
 				area = estonia_ingria_area
 				area = livonia_area
+				area = riga_area
 				area = curonia_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -4402,6 +4421,7 @@ dan_sca_conquest_slot_4 = {
 				OR = {
 					area = estonia_ingria_area
 					area = livonia_area
+					area = riga_area
 					area = curonia_area
 				}
 				value = 6

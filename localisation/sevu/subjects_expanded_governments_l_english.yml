@@ -15,10 +15,6 @@
  PUPPET_STATE_LEADER_MALE: "Governor"
  PUPPET_STATE_LEADER_FEMALE: "Governor"
 
- AUTONOMOUS_DOMINION: "Viceroyalty"
- AUTONOMOUS_DOMINION_LEADER_MALE: "Viceroy and General Governor"
- AUTONOMOUS_DOMINION_LEADER_FEMALE: "Vicereine and General Governor"
- 
  ROMAN_CLIENT_PRINCIPATUS: "Principatus cliens"
  ROMAN_CLIENT_REGNUM: "Regnum cliens"
  ROMAN_CLIENT_KINGDOM_DUX_MALE: "Dux socius"

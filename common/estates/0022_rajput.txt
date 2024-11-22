@@ -5,7 +5,10 @@ estate_rajput = {
 
 	# If true, country will get estate
 	trigger = {
-		has_dlc = "Dharma"
+		OR = {
+			has_dlc = "Dharma"
+			has_dlc = "Winds of Change"
+		}
 		NOT = { has_government_attribute = disables_estate_rajput }
 		NOT = { has_disabled_estate = { estate = estate_rajput } }
 		OR = {
@@ -73,7 +76,10 @@ estate_rajput = {
 		}
 		modifier = {
 			factor = 0.5
-			NOT = { religion = hinduism }
+			NOT = { 
+				religion = hinduism
+				religion = surya_majapahit
+			}
 		}
 		modifier = {
 			factor = 0.5
@@ -116,7 +122,10 @@ estate_rajput = {
 	influence_modifier = {
 		desc = EST_VAL_RULED_BY_NON_HINDU
 		trigger = {
-			NOT = { religion = hinduism }
+			NOT = { 
+				religion = hinduism
+				religion = surya_majapahit
+			}
 			any_owned_province = {
 				NOT = { religion_group = dharmic }
 			}
@@ -171,6 +180,7 @@ estate_rajput = {
 		estate_rajput_royal_court_tasks
 		estate_rajput_noble_promotion
 		estate_rajput_force_conscription
+		estate_rajputs_MUG_rajput_mansabdars
 		#GE
 		estate_rajput_land_privileges
 	}

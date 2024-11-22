@@ -1893,6 +1893,20 @@ lubeck_missions_5 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			hamburg_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			lauenburg_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 			if = {
 				limit = { hre_size = 1 }
 				emperor = {
@@ -1912,11 +1926,29 @@ lubeck_missions_5 = {
 		required_missions = { hsa_secure_salt_road hsa_imperial_allegience }
 		position = 3 
 		provinces_to_highlight = {
-			area = holstein_area 
+			OR = {
+				area = holstein_area
+				area = hamburg_area
+				area = lauenburg_area
+			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
 			holstein_area = {
+				type = all 
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT 
+					owner = { is_in_trade_league_with = ROOT }
+				}
+			}
+			hamburg_area = {
+				type = all 
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT 
+					owner = { is_in_trade_league_with = ROOT }
+				}
+			}
+			lauenburg_area = {
 				type = all 
 				OR = {
 					country_or_non_sovereign_subject_holds = ROOT 

@@ -1,5 +1,6 @@
 government = theocracy
-add_government_reform = leading_clergy_reform
+add_government_reform = islamic_imamate_reform
+government_rank = 1 #Lordship
 primary_culture = shilha
 religion = sunni
 technology_group = muslim
@@ -20,8 +21,9 @@ religious_school = maliki_school
 }
 
 1465.1.1 = {
-	government = monarchy
-	add_government_reform = iqta
+	government = theocracy
+	add_government_reform = islamic_grand_muftate_reform
+	government_rank = 2 #Barony
 }
 
 1465.1.1 = {

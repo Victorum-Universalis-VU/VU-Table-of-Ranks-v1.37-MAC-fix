@@ -1,11 +1,10 @@
 government = monarchy
-add_government_reform = plutocratic_reform
-government_rank = 1
+add_government_reform = huangdom_reform
+government_rank = 6 #Petty Kingdom
 technology_group = chinese
 primary_culture = pangasinense
 capital = 2698 #Pangasinan
 religion = mahayana
-government_rank = 2
 
 1409.1.1 = {
 	monarch = {

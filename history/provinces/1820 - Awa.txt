@@ -2,7 +2,7 @@
 
 owner = HSK
 controller = HSK
-culture = japanese
+culture = shikoku
 religion = shinto
 capital = "Tokushima"
 trade_goods = whaling

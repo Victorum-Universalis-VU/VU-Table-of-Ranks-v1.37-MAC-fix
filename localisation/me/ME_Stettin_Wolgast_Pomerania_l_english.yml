@@ -1,6 +1,6 @@
 ﻿l_english:
- # Missions:
- ## Stettin
+ #Missions:
+ #Stettin
  STE_reclaim_uckermark_title: "Reclaim Borderlands"
  STE_reclaim_uckermark_desc: "The never-ending conflict between the Pomeranian Dukes and the [BRA.GetAdjective] margraves has resulted in many wars and uncountable amounts of lives lost. Despite these shocking statistics, it seems that the conflict is nowhere near being concluded. As such, for yet another time, we must go to war in order to reclaim what's lost."
  STE_build_marketplace_title: "Hanseatic Ties"
@@ -8,19 +8,19 @@
  STE_stettin_stargard_war_title: "Wheat War"
  STE_stettin_stargard_war_desc: "In 1454, the mutual violation of the conflicting privileges granted to the cities of Stettin and Stargard lead to a military conflict between the two cities. It would be dubbed the 'Wheat War' as the conflicting privileges mandated the wheat trade conducted in the Stettin Lagoon. The cities would wage an open diplomatic war by appealing to the pomeranian rulers. The Hanseatic League was invited to help mediate the conflict and to put an end to the war. It was on a Hanseatic Trial that the conflict ended in 1464."
 
- ## Wolgast
+ #Wolgast
  WOL_support_the_mercantile_cities_title: "Hanseatic Guilds"
  WOL_support_the_mercantile_cities_desc: "Anklam, Greifswald, [2994.GetName], [47.GetName], these are the most important cities in our realm, yet they all have very strong ties to the Hanseatic League - most certainly the most important trade organization in the area. While we could try to weaken the influence of these institutions, why don't we support them instead? Such can only result in more money flowing to the treasury."
  WOL_golden_priveleges_title: "The Golden Privileges"
  WOL_golden_priveleges_desc: "To help win over the support of the hanseatic cities within his realm, Duke Warcislaw IX of Wolgast-Pomerania has granted the cities of Stralsund, Greifswald, Demmin and Anklam the so-called 'Golden Privileges'. The concessions were far-reaching and made the cities very powerful and autonomous. Among the most important privileges were the freedom from paying taxes, the right to make alliances with each other, the rights of land acquisition by the cities and guaranteed jurisdiction against their own city dwellers."
  
- ## Rugen
+ #Rugen
  RUG_insel_der_wohlstands_title: "Insel des Wohlstands"
  RUG_insel_der_wohlstands_desc: "All [4745.GetName] is famous for are its notorious ties with Baltic Piracy. It doesn't have to be this way, [4745.GetName] deserves acclaim, not condemnation. Let us establish [4745.GetName] as a place where people can look for opportunity in their lives, even if that means reinforcing the privateer ideals."
  RUG_rugen_naval_base_title: "Rügen Naval Base"
  RUG_rugen_naval_base_desc: "[4745.GetName] is the island upon which our state is based. The sound that is located between the isle and the mainland is formed perfectly to support a naval base from which we can launch devastating raids upon enemy bases or flotillas."
  
- ## Generic:
+ #Generic:
  POM_den_korps_pommerns_title: "Die Korps Pommerns"
  POM_den_korps_pommerns_desc: "The pomeranian lords are in near-perpetual warfare against the [BRA.GetAdjective] Margraves. These fiends shall never subjugate us! And to guarantee that, a new force shall be formed that will not only fend off the Saxon Menace from the south, but will also help bring Pomeranians together once and for all."
  POM_unite_pomerania_title: "Family United"
@@ -34,8 +34,7 @@
  POM_capture_rostock_title: "The Western Cities"
  POM_capture_rostock_desc: "Our Mecklenburgian neighbors are very much alike to us. Hanseatic ties, maritime culture, similar customs are but a few characteristics we share. For this reason, maybe integrating them into our state, peaceful or not, could bring prosperity to both the Mecklenburgians and us?"
 
-
- ## Formable Pomerania:
+ #Formable Pomerania:
  POM_seek_greatest_minds_title: "Seek Great Minds"
  POM_seek_greatest_minds_desc: "Boguslaw the Great, the ruler of unified Pomerania, had embarked on a pilgrimage to Jerusalem in 1496. On his way back, the Duke paid a visit to the Pope, who granted him the occupation right to the Cammin Bishopric among other benefits. Moreover, Boguslaw sought great minds in Italy, and had found lawyers that he brought to Pomerania, Petrus von Ravenna and Johannes von Kitscher, the former having later become a rector in the University of Greifswald."
  POM_greifswald_university_title: "Academia Gryphica"
@@ -66,32 +65,52 @@
  POM_if_we_get_attacked: "If we get attacked by §Y[BRA.GetName]§!, we can get an event to request §Y100§! ¤ from the Emperor."
  POM_seek_greatest_minds_trigger_tt: " advisors employed"
 
- # Modifiers:
+ #Modifiers:
  POM_kirche: "Pommersche Evangelische Kirche"
+ desc_POM_kirche: ""
  POM_unity_with_rome: "Unity with Rome"
+ desc_POM_unity_with_rome: ""
  STE_resisting_the_eagle: "Resisting the Eagle"
+ desc_STE_resisting_the_eagle: ""
  STE_wheat_war_resolved: "Wheat War Resolved"
+ desc_STE_wheat_war_resolved: ""
  POM_uniting_pomerania: "To Unite Pomerania"
+ desc_POM_uniting_pomerania: ""
  POM_the_great: "The Great"
+ desc_POM_the_great: ""
  POM_surrounded_by_kinsmen: "Surrounded by Kinsmen"
+ desc_POM_surrounded_by_kinsmen: ""
  POM_imperial_prince: "Imperial Prince"
+ desc_POM_imperial_prince: ""
  POM_independence_mandated: "Independence Mandated"
+ desc_POM_independence_mandated: ""
  WOL_golden_priveleges_modifier: "Golden Privileges"
+ desc_WOL_golden_priveleges_modifier: ""
  POM_university_of_greifswald: "University of Greifswald"
+ desc_POM_university_of_greifswald: ""
  POM_great_minds: "The Great Minds"
+ desc_POM_great_minds: ""
  WOL_supporting_cities: "Supporting the Burghers"
+ desc_WOL_supporting_cities: ""
  POM_similar_customs: "Similar Customs"
+ desc_POM_similar_customs: ""
  POM_uniting_with_piasts: "Uniting with Piasts"
+ desc_POM_uniting_with_piasts: ""
  POM_Boguslaw: "Boguslaw"
+ desc_POM_Boguslaw: ""
  POM_gdansk: "Growth of Local Port"
+ desc_POM_gdansk: ""
  RUG_island_of_opportunity: "Island of Opportunity"
+ desc_RUG_island_of_opportunity: ""
  RUG_naval_supremacy: "Naval Supremacy"
+ desc_RUG_naval_supremacy: ""
  POM_legacy_of_eric_modifier: "Claims on Scandinavia"
+ desc_POM_legacy_of_eric_modifier: ""
 
- # Trade Modifiers:
+ #Keys:
  POM_supporting_merchants: "Supported Cities"
 
- # Events:
+ #Events:
  ME_Stettin_Wolgast_Pomerania_Events.1.t: "Death of [Root.Monarch.GetName]"
  ME_Stettin_Wolgast_Pomerania_Events.1.d: "Pestilence claims their next targets. [Root.Monarch.GetName] of [Root.Monarch.GetDynasty] and their royal family have died due to the plague. Now, the Brandenburger March, which has claims to Stettiner throne, is vying for control with the Wolgast branch of the Gryf Family."
  ME_Stettin_Wolgast_Pomerania_Events.1.a: "Fate of Stettin is uncertain."
@@ -134,7 +153,7 @@
  ME_Stettin_Wolgast_Pomerania_Events.6.tt: "§Y[From.GetName]§! may become an elector of the Holy Roman Empire."
  POM_we_ask_for_100: "We will request §Y100§! ¤ from §Y[This.GetName]§!. If §Y[This.GetName]§! accepts, §Y[This.GetName]§! will transfer the gold to us and gain §Y5§! Imperial Authority."
 
- # CB & War Goal:
+ #CB & War Goal:
  cb_pomeranian_succession: "Pomeranian Succession"
  cb_pomeranian_succession_desc: "We shall be the successors to Stettin."
 
@@ -142,3 +161,5 @@
  pom_succession_war_desc: "The war goal is to win battles."
 
  POM_SUCCESSION: "War for Stettiner Succession"
+ 
+ 

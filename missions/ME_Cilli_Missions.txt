@@ -501,11 +501,18 @@ cilli_missions_2 = {
 		}
 		position = 3
 		provinces_to_highlight = {
-			area = east_adriatic_coast_area
+			OR = {
+				area = east_adriatic_coast_area
+				area = ragusa_area
+			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
 			east_adriatic_coast_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			ragusa_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}

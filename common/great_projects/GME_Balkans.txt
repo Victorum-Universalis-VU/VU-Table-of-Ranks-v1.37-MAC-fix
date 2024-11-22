@@ -17,7 +17,7 @@ gme_great_palace_constantinople = {
 				tag = BYZ
 				tag = ROM
 				tag = TUR
-				tag = RMM
+				tag = RUM
 			}
 		}
 	}
@@ -29,7 +29,7 @@ gme_great_palace_constantinople = {
 				tag = BYZ
 				tag = ROM
 				tag = TUR
-				tag = RMM
+				tag = RUM
 			}
 		}
 	}

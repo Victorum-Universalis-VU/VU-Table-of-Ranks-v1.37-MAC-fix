@@ -1,10 +1,10 @@
-government = monarchy
-add_government_reform = iqta
+government = theocracy
+add_government_reform = islamic_sharifate_reform
+government_rank = 4 #Sharifate
 primary_culture = al_iraqiya_arabic
 religion = shiite
 technology_group = muslim
 capital = 408	# Basra
-government_rank = 1
 
 1534.1.1 = {
 	monarch = {

@@ -1,5 +1,6 @@
 government = tribal
 add_government_reform = tribal_kingdom
+government_rank = 6 #Petty_Kingdom
 primary_culture = muisca
 religion = inti #Some similarities with Andean religions, better fit than animism.
 technology_group = andean

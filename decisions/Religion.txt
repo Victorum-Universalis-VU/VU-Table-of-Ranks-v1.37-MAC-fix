@@ -355,6 +355,7 @@ country_decisions = {
 	enforce_religion_muslim = {
 		potential = {
 			NOT = { has_ruler_modifier = muslim_enforced_religion }
+			NOT = { has_ruler_modifier = ARB_muslim_enforced_religion_buff }
 			religion_group = muslim
 		}
 		allow = {
@@ -362,11 +363,23 @@ country_decisions = {
 			has_regency = no
 		}
 		effect = {	
-			add_ruler_modifier = {
-				name = "muslim_enforced_religion"
-				duration = -1
+			if = {
+				limit = {
+					has_country_flag = ARB_buff_enforce_religious_unity_flag
+				}
+				add_ruler_modifier = {
+					name = "ARB_muslim_enforced_religion_buff"
+					duration = -1
+				}
+				add_piety = 0.3
 			}
-			add_piety = -0.15
+			else = {
+				add_ruler_modifier = {
+					name = "muslim_enforced_religion"
+					duration = -1
+				}
+				add_piety = -0.15
+			}
 		}
 		ai_will_do = {
 			factor = 1		
@@ -376,6 +389,7 @@ country_decisions = {
 	the_khalifah = {
 		potential = {
 			NOT = { has_ruler_modifier = khalifah }
+			NOT = { has_ruler_modifier = ARB_khalifah_upgraded }
 			religion = sunni
 			NOT = { tag = MAM } #Controls the Caliph already.
 			ruler_religion = sunni
@@ -386,12 +400,27 @@ country_decisions = {
 			is_female = no
 		}
 		effect = {	
-			add_ruler_modifier = {
-				name = "khalifah"
-				duration = -1
+			if = {
+				limit = {
+					mission_completed = ARB_unite_arabia
+				}
+				add_ruler_modifier = {
+					name = "ARB_khalifah_upgraded"
+					duration = -1
+				}
+				change_piety_effect = {
+					amount = 0.2
+				}
 			}
-			change_piety_effect = {
-				amount = 0.1
+			else = {
+				add_ruler_modifier = {
+					name = "khalifah"
+					duration = -1
+				}
+				
+				change_piety_effect = {
+					amount = 0.1
+				}
 			}
 		}
 		ai_will_do = {
@@ -541,7 +570,14 @@ country_decisions = {
 			}
 		}
 		allow = {
-			legitimacy = 90
+			if = {
+				limit = { OR = { government = monarchy government = tribal } }
+				legitimacy = 90
+			}
+			if = {
+				limit = { uses_devotion = yes }
+				NOT = { devotion = 80 }
+			}
 			has_regency = no
 			is_free_or_tributary_trigger = yes
 			custom_trigger_tooltip = {
@@ -581,6 +617,64 @@ country_decisions = {
 				has_country_flag = sultan_titles_for_non_muslims
 				had_country_flag = { flag = sultan_titles_for_non_muslims days = 10950 } #After 30 years
 				NOT = { tag = ARK }
+			}
+			modifier = {
+				factor = 0
+				government = theocracy
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					religion_group = jewish_group
+					religion_group = zoroastrian_group
+				}
+			}
+		}
+	}
+	
+	trade_propagation_convert_to_zoroastrianism = {
+		potential = {
+			has_dlc = "Cradle of Civilization"
+			NOT = { religion_group = zoroastrian_group }
+			capital_scope = {
+				religion_group = zoroastrian_group
+				is_node_in_trade_company_region = yes
+			}
+		}
+		allow = {
+			if = {
+				limit = { OR = { government = monarchy government = tribal } }
+				legitimacy = 90
+			}
+			if = {
+				limit = { uses_devotion = yes }
+				NOT = { devotion = 80 }
+			}
+			has_regency = no
+			is_free_or_tributary_trigger = yes
+			dominant_religion = zoroastrian
+		}
+		effect = {
+			change_religion = zoroastrian
+			add_stability = 1
+			add_legitimacy = 10
+			country_event = {
+				id = flavor_per.72
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				government = theocracy
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					religion_group = jewish_group
+					religion_group = muslim
+					religion_group = christian
+				}
 			}
 		}
 	}
@@ -740,6 +834,7 @@ country_decisions = {
 	ibadat_khana = {
 		potential = {
 			NOT = { has_country_modifier = house_of_worship }
+			NOT = { has_country_modifier = house_of_worship_upgrade }
 			religion_group = muslim
 		}
 		allow = {
@@ -770,6 +865,10 @@ country_decisions = {
 					religion = hinduism
 					any_owned_province = { religion_group = muslim }			
 				}
+				AND = {
+					religion = surya_majapahit
+					any_owned_province = { religion_group = muslim }			
+				}
 			}
 		}
 		allow = {
@@ -794,7 +893,10 @@ country_decisions = {
 	anti_muslim_edict = {
 		potential = {
 			NOT = { has_country_modifier = muslim_resistance }
-			religion = hinduism
+			OR = {
+				religion = hinduism
+				religion = surya_majapahit
+			}
 			NOT = { any_owned_province = { religion = sunni } }
 			any_neighbor_country = {
 				religion_group = muslim
@@ -821,7 +923,10 @@ country_decisions = {
 	acceptance_of_religious_sects = {
 		potential = {
 			NOT = { has_country_modifier = religious_sect_tolerance }
-			religion = hinduism
+			OR = {
+				religion = hinduism
+				religion = surya_majapahit
+			}
 		}
 		allow = {
 			is_defender_of_faith = no
@@ -847,7 +952,10 @@ country_decisions = {
 		potential = {
 			NOT = { has_country_modifier = the_haridasa_movement }	
 			NOT = { has_country_modifier = the_advaita_movement }
-			religion = hinduism
+			OR = {
+				religion = hinduism
+				religion = surya_majapahit
+			}
 		}
 		allow = {
 			stability = 1
@@ -877,7 +985,10 @@ country_decisions = {
 		potential = {
 			NOT = { has_country_modifier = the_advaita_movement }
 			NOT = { has_country_modifier = the_haridasa_movement }
-			religion = hinduism
+			OR = {
+				religion = hinduism
+				religion = surya_majapahit
+			}
 		}
 		allow = {
 			stability = 1
@@ -1370,7 +1481,7 @@ country_decisions = {
 			}
 		}
 		allow = {
-			government_rank = 3
+			government_rank = 9
 			owns_core_province = 2221 #Various locations suggested to have been the site of these fires.
 			owns_core_province = 2207 #Various locations suggested to have been the site of these fires.
 			owns_core_province = 2235 #Various locations suggested to have been the site of these fires.
@@ -1390,7 +1501,6 @@ country_decisions = {
 			factor = 1
 			modifier = {
 				NOT = {
-					OR = {
 						owns_core_province = 2221 #Various locations suggested to have been the site of these fires.
 					    owns_core_province = 2207 #Various locations suggested to have been the site of these fires.
 					    owns_core_province = 2235 #Various locations suggested to have been the site of these fires.
@@ -1398,7 +1508,6 @@ country_decisions = {
 					    owns_core_province = 2218 #Various locations suggested to have been the site of these fires.
 					    owns_core_province = 441 #Various locations suggested to have been the site of these fires.
 					    owns_core_province = 2223 #Various locations suggested to have been the site of these fires.
-					}
 				}
 				factor = 0
 			}
@@ -1461,17 +1570,15 @@ country_decisions = {
 			factor = 1
 			modifier = {
 				NOT = {
-					OR = {
-						owns_core_province = 428 #Teheran
-					    owns_core_province = 429 #Isfahan
-					    owns_core_province = 432 #Kerman
-					    owns_core_province = 433 #Yazd
-					    owns_core_province = 450 #Balkh
-					    owns_core_province = 504 #Thatta
-					    owns_core_province = 517 #Sanjan
-					    owns_core_province = 529 #Mumbai
-					    owns_core_province = 2210 #Kermanshah
-					}
+					owns_core_province = 428 #Teheran
+					owns_core_province = 429 #Isfahan
+					owns_core_province = 432 #Kerman
+					owns_core_province = 433 #Yazd
+					owns_core_province = 450 #Balkh
+					owns_core_province = 504 #Thatta
+					owns_core_province = 517 #Sanjan
+					owns_core_province = 529 #Mumbai
+					owns_core_province = 2210 #Kermanshah
 				}
 				factor = 0
 			}
@@ -1891,7 +1998,7 @@ country_decisions = {
 			stability = 1
 		}
 		effect = {
-			add_prestige = -100
+			tooltip = { add_prestige = -100 }
 			add_stability = -2
 			change_religion = sikhism
 			if = {
@@ -1917,7 +2024,7 @@ country_decisions = {
 			religion = shinto
 			OR = {
 				is_incident_active = incident_spread_of_christianity
-				has_country_flag = christians_present
+				#has_country_flag = christians_present #Hashed out since it isn't linked to anything - SF
 				has_ruler_flag = christian_tutors
 			}
 			NOT = {
@@ -2003,7 +2110,13 @@ country_decisions = {
 			modifier = {
 				factor = 0
 				OR = {
-					has_reform = daimyo
+				    has_reform = daimyo
+			        has_reform = daimyo_barony_reform
+			        has_reform = daimyo_viscounty_reform
+			        has_reform = daimyo_county_reform
+			        has_reform = daimyo_marquisate_reform
+			        has_reform = daimyo_duchy_reform
+			        has_reform = daimyo_principality_reform
 					has_ruler_modifier = christian_ruler
 					has_country_flag = a_kirishitan_realm
 				}
@@ -2151,8 +2264,7 @@ country_decisions = {
 				NOT = { treasury = 6000 }
 			}
 		}
-	}
-	
+	}	
 	#Cut because the Grand Crusade war doesn't really have any place in the current content, but it could be very useful for the future.
 	#Also modders should have the chance to just uncomment it all so they can experience the great 30 Years War like Crusade.
 	#join_the_grand_crusade = {

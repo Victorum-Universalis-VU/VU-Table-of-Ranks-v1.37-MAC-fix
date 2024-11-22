@@ -1,28 +1,25 @@
-#VU - Updated by San Felipe for 1.36.*
+#VU - Updated by San Felipe for 1.37.*
 tatar_missions_1 = {
 	slot = 1
 	generic = no
 	ai = yes
 	potential = {
 		OR = {
-			AND = {
-				has_country_flag = use_paradox_missions
-				OR = {
-					tag = GOL
-					tag = CRI
-					tag = KAZ
-				}
-			}			
+			tag = GOL
+			tag = CRI		
 			tag = NOG
-			tag = KZH
+			tag = KAZ
 			tag = SHY
 			tag = GLH
 			tag = SIB
 			tag = BSH
 			tag = AST
 			tag = QAS
+			tag = KZH
+			tag = CHG
 			tag = KAS
 		}
+		NOT = { has_dlc = "Winds of Change" }
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -49,7 +46,10 @@ tatar_missions_1 = {
 			if = {
 				limit = {
 					has_dlc = "The Cossacks"
-					has_reform = steppe_horde
+					OR = {
+				    	has_reform = steppe_horde
+				    	has_reform = scythian_horde_reform
+				    }
 				}
 				horde_unity = 90
 			}
@@ -329,25 +329,21 @@ tatar_missions_slot_2 = {
 	ai = yes
 	potential = {
 		OR = {
-			AND = {
-				has_country_flag = use_paradox_missions
-				OR = {
-			        tag = GOL
-			        tag = CRI
-			        tag = NOG
-			        tag = KAZ
-			        tag = SHY
-			        tag = GLH
-			        tag = SIB
-			        tag = BSH
-			        tag = AST
-			        tag = QAS
-					tag = GLH
-				}
-			}			
+			tag = GOL
+			tag = CRI
+			tag = NOG
+			tag = KAZ
+			tag = SHY
+			tag = GLH
+			tag = SIB
+			tag = BSH
+			tag = AST
+			tag = QAS	
 			tag = KZH
+			tag = CHG
 			tag = KAS
 		}
+		NOT = { has_dlc = "Winds of Change" }
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -554,10 +550,10 @@ tatar_missions_slot_2 = {
 			if = {
 				limit = {
 					NOT = {
-						government_rank = 3
+						government_rank = 9
 					}
 				}
-				set_government_rank = 3
+				set_government_rank = 9
 			}
 			4678 = {
 				add_base_tax = 2
@@ -593,7 +589,10 @@ tatar_missions_slot_2 = {
 		effect = {
 			if = {
 				limit = {
-					has_reform = steppe_horde
+					OR = {
+				    	has_reform = steppe_horde
+				    	has_reform = scythian_horde_reform
+				    }
 					has_dlc = "The Cossacks"
 				}
 				add_horde_unity = 20
@@ -629,25 +628,21 @@ tatar_missions_2 = {
 	ai = yes
 	potential = {
 		OR = {
-			AND = {
-				has_country_flag = use_paradox_missions
-				OR = {
-			        tag = GOL
-			        tag = CRI
-			        tag = NOG
-			        tag = KAZ
-			        tag = SHY
-			        tag = GLH
-			        tag = SIB
-			        tag = BSH
-			        tag = AST
-			        tag = QAS
-					tag = GLH
-				}
-			}			
+			tag = GOL
+			tag = CRI
+			tag = NOG
+			tag = KAZ
+			tag = SHY
+			tag = GLH
+			tag = SIB
+			tag = BSH
+			tag = AST
+			tag = QAS
 			tag = KZH
+			tag = CHG
 			tag = KAS
 		}
+		NOT = { has_dlc = "Winds of Change" }
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes

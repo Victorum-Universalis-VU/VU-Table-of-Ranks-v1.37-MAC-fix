@@ -49,6 +49,7 @@ florentine_republic = {
 			tag = TUS
 		}
 	}
+	fixed_rank = 6
 	valid_for_nation_designer = yes
 	nation_designer_cost = 20
 	modifiers = {
@@ -103,6 +104,7 @@ genoese_republic = {
 		merchants = 1
 		trade_deals_slots = 3
 	}
+	fixed_rank = 6
 	valid_for_nation_designer = yes
 	nation_designer_cost = 50
 	legacy_equivalent = merchant_republic
@@ -162,6 +164,7 @@ giudicati_sardi_reform = {
 	icon = sardinia_giudicati_sardi
 	allow_normal_conversion = yes
 	potential = {
+		government_rank = 8
 		OR = {
 			have_had_reform = giudicati_sardi_reform
 			tag = SAR
@@ -169,6 +172,7 @@ giudicati_sardi_reform = {
 		}
 	}
 	trigger = {
+		government_rank = 8
 		OR = {
 			have_had_reform = giudicati_sardi_reform
 			tag = SAR
@@ -199,6 +203,7 @@ house_of_este_reform = {
 			was_tag = FER
 		}
 	}
+	fixed_rank = 6
 	valid_for_nation_designer = yes
 	nation_designer_cost = 20
 	modifiers = {
@@ -227,6 +232,7 @@ house_of_gonzaga_reform = {
 			has_reform = house_of_gonzaga_reform
 		}
 	}
+	fixed_rank = 6
 	modifiers = {
 		cavalry_cost = -0.10
 		same_culture_advisor_cost = -0.10
@@ -247,10 +253,21 @@ italian_monarchy_reform = {
 	valid_for_nation_designer = no
 	potential = {
 		tag = ITA
+		government_rank = 8
 	}
 	modifiers = {
 		legitimacy = 1
 		governing_capacity = 150
+	}
+	custom_attributes = {
+		has_italian_lordship = yes
+		has_italian_barony = yes
+		has_italian_viscounty = yes
+		has_italian_county = yes
+		has_italian_marquisate = yes
+		has_italian_duchy = yes
+		has_italian_principality = yes
+		has_italian_kingdom = yes
 	}
 	government_abilities = {
 		republican_vs_monarchist_mechanic
@@ -283,6 +300,7 @@ kingdom_of_sardinia_reform = {
 	icon = kingdom_of_sardinia
 	allow_normal_conversion = yes
 	valid_for_nation_designer = no
+	fixed_rank = 8
 	potential = {
 		OR = {
 			primary_culture = sardinian
@@ -303,6 +321,9 @@ kingdom_of_sardinia_reform = {
 		state_maintenance_modifier = -0.10
 		development_cost_in_primary_culture = -0.10
 	}
+	custom_attributes = {
+		has_italian_kingdom = yes
+	}
 	ai = {
 		factor = 100
 	}
@@ -312,6 +333,7 @@ kingdom_of_sicily_reform = {
 	allow_normal_conversion = yes
 	valid_for_nation_designer = no
 	potential = {
+		government_rank = 8
 		OR = {
 			primary_culture = neapolitan
 			primary_culture = sicilian
@@ -319,6 +341,7 @@ kingdom_of_sicily_reform = {
 		}
 	}
 	trigger = {
+		government_rank = 8
 		OR = {
 			primary_culture = neapolitan
 			primary_culture = sicilian
@@ -355,6 +378,7 @@ palaiologos_montferrat_reform = {
 			has_reform = palaiologos_montferrat_reform
 		}
 	}
+	fixed_rank = 6
 	modifiers = {
 		advisor_cost = -0.10
 		core_creation = -0.05
@@ -462,6 +486,10 @@ savoia_reform = {
 		ae_impact = -0.05
 		development_cost_in_primary_culture = -0.10
 	}
+	fixed_rank = 6
+	custom_attributes = {
+		has_italian_duchy = yes
+	}
 	ai = {
 		factor = 100
 	}
@@ -488,6 +516,8 @@ signoria_baglioni_reform = {
 			was_tag = PGA
 		}
 	}
+	fixed_rank = 6
+	queen = no
 	duration = 12
 	royal_marriage = yes
 	modifiers = {

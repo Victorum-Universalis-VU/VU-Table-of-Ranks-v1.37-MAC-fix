@@ -16,7 +16,7 @@ ME_caliph_tag_trigger = {
 
 ME_is_caliphate_trigger = {
 	OR = {
-		has_reform = ME_caliphate_reform_sunni
+		has_reform = caliphate_reform
 		has_reform = ME_caliphate_reform_sunni_andalusia
 		has_reform = ME_caliphate_reform_sunni_arabian
 		has_reform = ME_caliphate_reform_shia_ibadi
@@ -26,7 +26,7 @@ ME_is_caliphate_trigger = {
 #alias for cases where the condition has to be this
 ME_has_caliphate_reform_trigger = {
 	OR = {
-		has_reform = ME_caliphate_reform_sunni
+		has_reform = caliphate_reform
 		has_reform = ME_caliphate_reform_sunni_andalusia
 		has_reform = ME_caliphate_reform_sunni_arabian
 		has_reform = ME_caliphate_reform_shia_ibadi

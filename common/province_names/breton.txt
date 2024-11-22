@@ -1,6 +1,7 @@
 ##XXX = { "Province Name" "City Name" } - New addition to EUIV
 
 169 = { "Aodoù-an-Hanternoz" "Sant-Brieg" }
+132 = { "Judenburg" "Judenburg" }
 7992 = { "Bro-Raez" "Rezé" }
 7994 = { "Gwilen" "Gwitreg" }
 7995 = { "Aod an Emrodez" "Kankaven" }

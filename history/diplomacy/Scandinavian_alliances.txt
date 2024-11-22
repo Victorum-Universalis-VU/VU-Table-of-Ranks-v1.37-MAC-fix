@@ -118,14 +118,30 @@ alliance = {
 # Vassals #
 ###########
 
-vassal = {
+#vassal = {
+#	first = NOR
+#	second = ICE
+#	start_date = 1444.1.1
+#	end_date = 1444.11.16 #VictorumUniversalis batch edit shortcut second performance start begins
+#}
+
+dependency = {
+	subject_type = "norwegian_duchy"
 	first = NOR
 	second = ICE
 	start_date = 1444.1.1
 	end_date = 1444.11.16 #VictorumUniversalis batch edit shortcut second performance start begins
 }
 
-vassal = {
+#vassal = {
+#	first = NOR
+#	second = ICE
+#	start_date = 1444.11.18 #VictorumUniversalis batch edit shortcut second performance start ends
+#	end_date = 1536.1.1
+#}
+
+dependency = {
+	subject_type = "norwegian_duchy"
 	first = NOR
 	second = ICE
 	start_date = 1444.11.18 #VictorumUniversalis batch edit shortcut second performance start ends
@@ -137,7 +153,8 @@ vassal = {
 ##########
 
 # Kalmar Union
-union = {
+dependency = {
+	subject_type = "danish_crown_PU"
 	first = DAN
 	second = SWE
 	#start_date = 1397.6.17
@@ -146,7 +163,8 @@ union = {
 }
 
 # Kalmar Union
-union = {
+dependency = {
+	subject_type = "danish_crown_PU"
 	first = DAN
 	second = SWE
 	start_date = 1457.2.24
@@ -154,7 +172,8 @@ union = {
 }
 
 # Kalmar Union
-union = {
+dependency = {
+	subject_type = "danish_crown_PU"
 	first = DAN
 	second = SWE
 	start_date = 1497.10.18
@@ -162,7 +181,8 @@ union = {
 }
 
 # Kalmar Union
-union = {
+dependency = {
+	subject_type = "danish_crown_PU"
 	first = DAN
 	second = SWE
 	start_date = 1503.12.14
@@ -170,7 +190,8 @@ union = {
 }
 
 # Denmark-Norway
-union = {
+dependency = {
+	subject_type = "danish_crown_PU"
 	first = DAN
 	second = NOR
 	#start_date = 1397.6.17
@@ -179,7 +200,8 @@ union = {
 }
 
 # Sweden-Norway
-union = {
+dependency = {
+	subject_type = "danish_crown_PU"
 	first = SWE
 	second = NOR
 	start_date = 1449.11.20
@@ -187,7 +209,8 @@ union = {
 }
 
 # Denmark-Norway
-union = {
+dependency = {
+	subject_type = "danish_crown_PU"
 	first = DAN
 	second = NOR
 	start_date = 1450.8.2
@@ -195,7 +218,8 @@ union = {
 }
 
 # Sweden-Norway
-union = {
+dependency = {
+	subject_type = "danish_crown_PU"
 	first = SWE
 	second = NOR
 	start_date = 1814.8.14

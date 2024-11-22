@@ -1,4 +1,4 @@
-#VU updated to 1.35 by San Felipe 
+#VU updated to v1.37 by San Felipe 
 country_decisions = {
 	great_zimbabwe_nation = {
 		major = yes
@@ -73,11 +73,10 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = GZI
-			on_change_tag_effect = yes
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
-				limit = { NOT = { government_rank = 2 } }
-				set_government_rank = 2
+				limit = { NOT = { government_rank = 8 } }
+				set_government_rank = 8
 			}
 			add_country_modifier = {
 				name = "centralization_modifier"
@@ -97,6 +96,7 @@ country_decisions = {
 				limit = { has_dlc = "Origins" }
 				swap_non_generic_missions = yes
 			}
+			on_change_tag_effect = yes
 		}
 		ai_will_do = {
 			factor = 1

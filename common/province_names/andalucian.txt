@@ -97,7 +97,7 @@
 124 = { "Mesina" "Mesina" }
 128 = "Baja Carintia"
 129 = "Carniola"
-132 = "Estiria"
+132 = { "Judenburg" "Judenburg" }
 134 = "Viena"
 165 = "Berna"
 166 = "Waldstätten"
@@ -296,7 +296,7 @@
 4349 = { "Laguna" "Calamba" }
 4350 = { "Mindoro Occidental" "Caminawit" }
 4351 = { "Negros Occidental" "Ciudad de Bacolod" }
-4352 = { "Isla de Cebu" "Ciudad de Cebu" }
+4352 = { "Cebu" "Ciudad de Cebu" }
 4353 = { "Leyte" "Carigara" }
 4354 = { "Zamboanga" "Ciudad de Zamboanga" }
 7166 = { "Agusan del Norte" "Butuan" }

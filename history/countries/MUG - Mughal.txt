@@ -1,5 +1,6 @@
 government = monarchy
 add_government_reform = indian_sultanate_reform
+government_rank = 9 #Ghazi
 technology_group = indian
 religion = sunni
 primary_culture = afghani
@@ -40,7 +41,7 @@ religious_school = hanafi_school
 1526.4.21 = {
 	capital = 522
 	change_unit_type = indian
-	government_rank = 3
+	government_rank = 9
 	primary_culture = kanauji
 }
 
@@ -469,7 +470,7 @@ religious_school = hanafi_school
 }
 
 1785.1.1 = {
-	government_rank = 1
+	government_rank = 6
 }
 
 1806.11.18 = {
@@ -497,6 +498,6 @@ religious_school = hanafi_school
 }
 
 #1803.1.1 = {
-#	government_rank = 3
+#	government_rank = 9
 #}
 

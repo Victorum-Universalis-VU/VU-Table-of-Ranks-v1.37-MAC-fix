@@ -1,6 +1,6 @@
 government = tribal
 add_government_reform = tribal_kingdom
-government_rank = 1
+government_rank = 6 #Petty_Kingdom
 primary_culture = madagasque
 religion = shamanism #Fetishism
 technology_group = east_african

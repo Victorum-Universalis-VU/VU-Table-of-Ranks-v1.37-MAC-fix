@@ -1,4 +1,4 @@
-#VU updated by San Felipe for 1.36
+#Updated to 1.37 - SF
 ########################################
 # Flavor Events for Brandenburg - Prussia
 #
@@ -105,6 +105,7 @@ country_event = {
 					region = guinea_region
 					region = niger_region
 					region = central_africa_region
+					#region = east_africa_region
 					region = horn_of_africa_region
 					region = cameroon_region
 					region = lower_guinea_region
@@ -358,7 +359,7 @@ country_event = {
 
 	option = {
 		name = "flavor_brapru.EVTOPTA1" #Ignore the rabble
-		50 = {	create_revolt = 1 }
+		50 = {	anti_tax_rebels = 1  } #Was create_revolt = 1 but changed by SF for VU v1.37
 	}
 	option = {
 		name = "flavor_brapru.EVTOPTB1" #Listen to the people
@@ -1894,7 +1895,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = BRA
+		OR = {
+			tag = BRA
+			tag = PRU
+		}
 		owns = 50
 		religion = protestant
 		is_year = 1635
@@ -2247,8 +2251,9 @@ country_event = {
 		#}
 		had_country_flag = {
 			flag = accepted_ANS_union_flag
-			days = 1825 #Was 50
+			days = 1825 
 		}
+		has_dlc = "Domination"
 	}
 
 	mean_time_to_happen = { months = 1 } 
@@ -2270,6 +2275,11 @@ country_event = {
 
 		custom_tooltip = release_franconia_tt
 		hidden_effect = {
+			#upper_franconia_area = {
+			#	limit = { country_or_non_sovereign_subject_holds = ROOT }
+			#	add_core = FKN
+			#	remove_core = ROOT 
+			#}
 			franconia_area = {
 				limit = { country_or_non_sovereign_subject_holds = ROOT }
 				add_core = FKN
@@ -2285,7 +2295,10 @@ country_event = {
 			every_province = {
 				limit = { 
 					country_or_non_sovereign_subject_holds = ROOT 
-					area = franconia_area 
+					OR = { 
+						#area = upper_franconia_area 
+						area = franconia_area 
+					}
 				}
 				add_core = FKN 
 				cede_province = FKN 
@@ -2313,7 +2326,7 @@ country_event = {
 	}
 }
 
-#Credit for these events goes to Stiopa and his team - Yes they do because your fucking company can't come up with anything new - by San Felipe 
+#Credit for these events goes to Stiopa and his team
 country_event = { 
 	id = flavor_brapru.43
 	title = flavor_brapru.43.t
@@ -2414,7 +2427,7 @@ country_event = {
 	title = flavor_brapru.45.t #Kreditwerk
 	desc = flavor_brapru.45.d
 	picture = COURT_eventPicture
-
+	fire_only_once = yes
 	trigger = {
 		OR = { 
 			tag = BRA 

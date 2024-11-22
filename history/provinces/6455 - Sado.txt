@@ -3,7 +3,7 @@
 owner = HNM
 controller = HNM
 add_core = HNM
-culture = togoku
+culture = hokuriku 
 religion = shinto
 capital = "Sawata"
 trade_goods = copper

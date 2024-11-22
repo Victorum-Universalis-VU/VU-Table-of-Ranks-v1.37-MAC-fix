@@ -1,5 +1,6 @@
 government = monarchy
-add_government_reform = english_monarchy
+add_government_reform = british_monarchy
+government_rank = 8 #Kingdom
 #technology_group = western
 technology_group = english_tech_group
 unit_type = western
@@ -8,7 +9,6 @@ add_accepted_culture = scottish
 add_accepted_culture = welsh
 religion = protestant
 capital = 236	# London
-
 
 #1525.1.1 = { decision = judiciary_act }
 
@@ -63,7 +63,7 @@ capital = 236	# London
 		female = yes
 	}
 }
-1707.5.12  = { changed_tag_from = ENG }
+1707.5.12 = { changed_tag_from = ENG }
 
 1714.6.8 = {
 	heir = {

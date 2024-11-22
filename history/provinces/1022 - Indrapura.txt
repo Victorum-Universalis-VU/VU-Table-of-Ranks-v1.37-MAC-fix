@@ -14,19 +14,17 @@ is_city = yes
 add_core = CHA
 add_core = ANN
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+#Histories by SF
+1400.1.1 = {
+	add_permanent_province_modifier = {
+        name = chinese_minorities
+        duration = -1
+    }
+	add_permanent_province_modifier = {
+        name = japanese_minorities
+        duration = -1
+    }
+}
 1407.3.1 = {
 	owner = DAI
 	controller = DAI

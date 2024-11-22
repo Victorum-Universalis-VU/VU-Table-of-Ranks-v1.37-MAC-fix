@@ -173,6 +173,7 @@
 2662 = "Comayagua"
 2667 = "Laredo"
 2668 = "Rio Bravo"
+8904 = { "Lazaro Cardenas" "Lazaro Cardenas" }
 
 
 #USA

@@ -1,6 +1,6 @@
 government = monarchy
-add_government_reform = feudalism_reform
-government_rank = 1
+add_government_reform = eue_county_reform
+government_rank = 4 #County
 primary_culture = lower_saxon
 add_accepted_culture = hannoverian
 religion = catholic
@@ -9,10 +9,11 @@ technology_group = german_tech_group
 unit_type = western
 capital = 7508 #Tecklenburg
 
-1431.1.1 = {
+1450.1.1 = {
 	monarch = {
-		name = "Anton von Rotenhan"
-		birth_date = 1390.1.1
+		name = "Otto VII" 
+		dynasty = "von Tecklenburg"
+		birth_date = 1426.1.1
 		adm = 3
 		dip = 3
 		mil = 2

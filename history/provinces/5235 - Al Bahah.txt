@@ -14,25 +14,9 @@ native_ferocity = 9
 native_hostileness = 5
 
 #Claimants
+add_core = R4S
 
-#Buildings
-
-#Special Modifiers
-
-#Known by Technology groups
-
-
-
-
-
-
-
-
-
-
-
-
-#Histories
+#Histories by SF
 1215.6.15 = { 
     owner = AZD
 	controller = AZD

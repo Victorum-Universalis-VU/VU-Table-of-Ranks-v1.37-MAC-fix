@@ -15,7 +15,7 @@ country_decisions = {
 				ai = no
 			}
 			NOT = { tag = TUR }
-			NOT = { exists = RMM }
+			NOT = { exists = RUM } 
 			NOT = { tag = HLR }
 			NOT = { tag = PAP }
 			NOT = { tag = BYZ }
@@ -56,7 +56,7 @@ country_decisions = {
 			is_subject = no #Cannot even be a tributary
 			is_nomad = no
 			religion_group = muslim
-			NOT = { exists = RMM }
+			NOT = { exists = RUM } 
 			NOT = { exists = TUR }
 			NOT = { exists = BYZ }
 			owns_core_province = 151		# Constantinople
@@ -69,37 +69,45 @@ country_decisions = {
 			owns_core_province = 4312		# Eskeshehir
 		}
 		effect = {
-			change_tag = RMM
-			on_change_tag_effect = yes
-			restore_country_name = yes
-			if = {
-				limit = {
-			  
-					NOT = { government = monarchy }
-					is_revolutionary = no
-	  
-								 
+			change_tag = RUM
+			RUM = {
+				if = {
+					limit = {
+						NOT = { government = monarchy }
+						is_revolutionary = no
+					}
+					change_government = monarchy
 				}
-				change_government_to_monarchy = yes
+				if = {
+					limit = { is_revolutionary = no }
+					add_government_reform = sultanate_of_rum_reform
+				}
 			}
 			if = {
-				limit = { is_revolutionary = no }
-				add_government_reform = sultanate_of_rum_reform
-	 
+				limit = {
+					OR = {
+						tag = AKK
+						tag = QAR
+						was_tag = AKK
+						was_tag = QAR
+					}
+				}
+				override_country_name = SELJUK_EMPIRE
+				set_country_flag = is_SELJUK_EMPIRE_flag
 			}
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
 				limit = {
-					NOT = { government_rank = 2 }
+					NOT = { government_rank = 8 }
 				}
-				set_government_rank = 2
+				set_government_rank = 8
 			}
 			anatolia_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
 					NOT = { is_core = ROOT }
 				}
-				add_permanent_claim = RMM
+				add_permanent_claim = RUM
 			}
 			add_country_modifier = {
 				name = "centralization_modifier"
@@ -112,6 +120,7 @@ country_decisions = {
 			add_prestige = 25
 			set_country_flag = formed_rum_flag
 			swap_non_generic_missions = yes
+			on_change_tag_effect = yes
 		}
 		ai_will_do = {
 			factor = 1

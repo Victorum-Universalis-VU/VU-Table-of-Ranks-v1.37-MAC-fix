@@ -12,29 +12,13 @@ base_tax = 2
 base_production = 2
 base_manpower = 2
 is_city = yes
+
+#Claimants
 add_core = LEB
+add_core = R4S
 add_core = SYR
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#Histories by SF
 1500.1.1 = {
 	religion = shiite
 } # Islam controled the city and upper class, and quickly became the majority religion, if it wasnt already in the 15th century

@@ -2,6 +2,7 @@
 
 owner = QAR
 controller = QAR
+add_core = QAR
 culture = kurdish		#Mukri Kurds
 religion = sunni		#Kurds followed sunni branch
 capital = "Savojbolagh"
@@ -11,18 +12,11 @@ base_tax = 4
 base_production = 3
 base_manpower = 3
 is_city = yes
-add_core = QAR
 
 add_local_autonomy = 80	#Mukriyan tribes
 
-
-
-
-
-
-
-
-
+#Claimants
+add_core = ILK
 
 #Holy crap is this history old. revolt_risk?! Was fucking removed in 1.8.
 1400.1.1 = {

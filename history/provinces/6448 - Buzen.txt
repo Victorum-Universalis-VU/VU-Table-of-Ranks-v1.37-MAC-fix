@@ -2,7 +2,7 @@
 
 owner = OUC
 controller = OUC
-culture = kyushuan
+culture = honichi 
 religion = shinto
 capital = "Kokura"
 trade_goods = grain

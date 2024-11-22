@@ -1,6 +1,6 @@
 government = theocracy
 add_government_reform = monastic_order_reform
-government_rank = 1
+government_rank = 5 #Monastic_Order
 primary_culture = prussian
 add_accepted_culture = pommeranian
 add_accepted_culture = kashubian_culture
@@ -115,7 +115,7 @@ add_country_modifier = {
 	}
 }
 
-1466.10.19 = { capital = 41 government_rank = 1 } # Königsberg
+1466.10.19 = { capital = 41 government_rank = 6 } # Königsberg
 
 1467.4.5 = {
 	monarch = {
@@ -188,5 +188,5 @@ add_country_modifier = {
 # Prussia is formed in 1525.2.10
 
 1525.2.10 = {
-	government_rank = 2
+	government_rank = 8
 }

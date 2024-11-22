@@ -16,17 +16,11 @@ is_city = yes
 
 #Claimants
 add_core = BSM
+add_core = R4S
 
 #Buildings
 
 #Special Modifiers
-
-#Known by Technology groups
-
-
-
-
-
 
 #Histories
 1215.6.15 = { owner = BSM controller = BSM add_core = BSM } # Banu Sulaym territorial lands - By San Felipe

@@ -80,10 +80,10 @@ add_core = POL
 	remove_core = PLC
 } # First partition of Poland
 1867.3.30 = {
-	owner = AHE
-	controller = AHE
-	add_core = AHE
-	remove_core = AHE
+	owner = AUH
+	controller = AUH
+	add_core = AUH
+	remove_core = AUH
 } # Austria-Hungary is formed
 1880.1.1 = {
 	base_tax = 4
@@ -94,5 +94,5 @@ add_core = POL
 	owner = POL
 	controller = POL
 	add_core = POL
-	remove_core = AHE
+	remove_core = AUH
 } # Poland declares independence, end of WWI

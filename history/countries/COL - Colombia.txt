@@ -15,6 +15,7 @@ capital = 825	# Bogota
 		mil = 4
 	}
 	set_legacy_government = constitutional_republic
+	government_rank = 6 #Colony
 }
 
 1811.4.1 = {

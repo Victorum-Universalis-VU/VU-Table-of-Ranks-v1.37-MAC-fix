@@ -142,10 +142,11 @@ country_decisions = {
 			953 = {
 				NOT = { has_construction = building }
 			}
-			NOT = { white_house_building = 1 }
 			NOT = {
 				any_province = {
-					has_building = white_house_building
+					has_great_project = {
+						type = white_house
+					}
 				}
 			}
 		}
@@ -175,10 +176,8 @@ country_decisions = {
 			953 = {
 				custom_tooltip = START_CONSTRUCTION_OF_WHITE_HOUSE_BUILDING
 				hidden_effect = {
-					add_building_construction = {
-						building = white_house_building
-						speed = 1
-						cost = 1
+					add_great_project = {
+						type = white_house
 					}
 				}
 			}

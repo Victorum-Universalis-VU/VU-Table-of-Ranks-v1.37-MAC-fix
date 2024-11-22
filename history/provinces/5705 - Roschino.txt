@@ -18,10 +18,8 @@ is_city = yes
 #fort_15th = yes
 add_local_autonomy = 25
 
-
-
-
-
+#Claimants
+add_core = IGR
 
 1478.1.15 = {	owner = MOS controller = MOS add_core = MOS remove_core = NOV }			#Annexation of Novgorod by Moscovy
 1547.4.16 = { owner = RUS controller = RUS add_core = RUS remove_core = MOS }	#Ivan IV (the Terrible) crowned 'Tsar of all Russians'

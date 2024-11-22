@@ -8,13 +8,6 @@ revolutionary_colors = { 13  8  5 }
 
 historical_idea_groups = {
 	administrative_ideas
-	trade_ideas
-	defensive_ideas
-	innovativeness_ideas
-	diplomatic_ideas
-	offensive_ideas
-	economic_ideas
-	quality_ideas
 }
 
 historical_units = {
@@ -83,14 +76,14 @@ monarch_names = {
 
 leader_names = {
 	Jacobs Meincke Reinike Schlien Wacker 
-	Busekke Bußacker Gesiter Gothan Jauert 
+	Busekke Buï¿½acker Gesiter Gothan Jauert 
 	Klatt Laudan Niemann Panck Porepp Sass 
-	Schultz Schuhr Seeland Steinkopp Theeß 
+	Schultz Schuhr Seeland Steinkopp Theeï¿½ 
 	Warncke Wilcke Schliechting 
 }
 
 ship_names = {
-	Mekelenborch "Fürst Borwin" "Fürst Nikolaus"
+	Mekelenborch "Fï¿½rst Borwin" "Fï¿½rst Nikolaus"
 	"Herzog Albrecht" "Herzog Heinrich" "Herzog Magnus"
 	"Herzog Erich" "Herzog Balthasar" "Herzog Karl"
 	"Herzog Adolf Friedrich" "Herzog Johann Georg"

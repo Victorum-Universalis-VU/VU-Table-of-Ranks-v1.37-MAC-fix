@@ -1,5 +1,6 @@
 government = monarchy
 add_government_reform = feudalism_reform
+government_rank = 9
 primary_culture = cosmopolitan_french
 add_accepted_culture = gascon
 add_accepted_culture = occitain
@@ -44,7 +45,6 @@ add_country_modifier = {
 	leader = {
 		name = "Jean Le Meingre"
 		type = general
-
 		fire = 2
 		shock = 2
 		manuever = 3
@@ -57,7 +57,6 @@ add_country_modifier = {
 	leader = {
 		name = "Charles d'Albret"
 		type = general
-
 		fire = 2
 		shock = 2
 		manuever = 3
@@ -137,7 +136,6 @@ add_country_modifier = {
 	leader = {
 		name = "Jean Bureau"
 		type = general
-
 		fire = 4
 		shock = 4
 		manuever = 1
@@ -302,8 +300,10 @@ add_country_modifier = {
 
 1511.1.1 = { leader = {	name = "Gaston de Foix"		type = general	fire = 2	shock = 4	manuever = 3	siege = 0	death_date = 1512.4.11 } }
 
-1515.1.1 = { government = monarchy
-add_government_reform = autocracy_reform }
+1515.1.1 = { 
+	government = monarchy
+	add_government_reform = autocracy_reform 
+}
 
 1515.1.1 = { leader = { name = "Pedro Navarro"		type = general	fire = 3	shock = 2	manuever = 2	siege = 3	death_date = 1528.8.28 } }
 
@@ -1000,7 +1000,7 @@ add_government_reform = autocracy_reform }
 	government = republic
 	add_government_reform = revolutionary_republic_reform
 	revolution_target = yes
-	government_rank = 3
+	government_rank = 9
 	monarch = {
 		name = "La Convention nationale"
 		adm = 3
@@ -1114,7 +1114,7 @@ add_government_reform = autocracy_reform }
 }
 
 1814.4.11 = {
-	government_rank = 2
+	government_rank = 8
 	add_government_reform = feudalism_reform
 	monarch = {
 		name = "Louis XVIII"

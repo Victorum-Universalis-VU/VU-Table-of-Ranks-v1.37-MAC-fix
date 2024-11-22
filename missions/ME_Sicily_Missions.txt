@@ -240,9 +240,9 @@ sicily_mission_1 = {
 			}
 			if = {
 				limit = {
-					NOT = { government_rank = 3 }
+					NOT = { government_rank = 9 }
 				}
-				set_government_rank = 3
+				set_government_rank = 9
 			}
 		}
 	}
@@ -1489,7 +1489,7 @@ sicily_mission_5 = {
 		}
 		effect = {
 			add_prestige = 10
-			set_government_rank = 3
+			set_government_rank = 9
 			add_country_modifier = {
 				name = sic_champion_christianity
 				duration = -1

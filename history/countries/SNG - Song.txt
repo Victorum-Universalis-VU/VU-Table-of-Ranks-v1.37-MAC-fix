@@ -1,7 +1,7 @@
 #VU 1.35 addition by San Felipe
 government = monarchy
 add_government_reform = celestial_empire
-government_rank = 3
+government_rank = 9 #Empire
 technology_group = chinese
 religion = confucianism
 add_harmonized_religion = mahayana

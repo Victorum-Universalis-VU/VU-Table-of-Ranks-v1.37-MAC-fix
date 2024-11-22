@@ -4,7 +4,7 @@ owner = POL
 controller = POL
 add_core = POL
 add_core = VOL
-culture = rusyn
+culture = volhynian
 religion = orthodox
 capital = "Sanok"
 base_tax = 3
@@ -13,15 +13,6 @@ base_manpower = 1
 trade_goods = lumber		#No iron and no lead ore was ever found and mined in Sanok area. Someone made mistake by putting here iron in the first place. What this region is known for is tourism and dense forests covering mountains.
 is_city = yes
 hre = no
-
-
-
-
-
-
-
-
-
 
 # History for VU completed by docRobert
 
@@ -64,20 +55,20 @@ hre = no
 	base_manpower = 2
 }
 1867.3.30 = {
-	owner = AHE
-	controller = AHE
-	add_core = AHE
+	owner = AUH
+	controller = AUH
+	add_core = AUH
 	remove_core = HAB
 } # Austria-Hungary is formed
 1914.8.15 = {
 	controller = RUS
 }
 1915.6.1 = {
-	controller = AHE
+	controller = AUH
 }
 1918.11.11 = {
 	owner = POL
 	controller = POL
 	add_core = POL
-	remove_core = AHE
+	remove_core = AUH
 } # Poland declares independence, end of WWI

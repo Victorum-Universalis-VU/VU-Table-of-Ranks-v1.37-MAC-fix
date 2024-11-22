@@ -68,6 +68,7 @@ annex_rhineland = {
 				area = north_rhine_area
 				area = lower_rhineland_area
 				area = hesse_area
+				area = frankfurt_area
 				area = palatinate_area
 				area = baden_area
 				area = wurttemburg_area

@@ -2,7 +2,7 @@
 
 owner = OTM
 controller = OTM
-culture = kyushuan
+culture = honichi 
 religion = shinto
 capital = "Funai"
 trade_goods = tropical_wood

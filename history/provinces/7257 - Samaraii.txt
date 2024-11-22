@@ -1,4 +1,4 @@
-#7257 - Samaraii
+#7257 - Samar
 
 #Default
 owner = ZAZ
@@ -6,7 +6,7 @@ controller = ZAZ
 add_core = ZAZ
 culture = cossack
 religion = sunni
-capital = "Dnipro"			#Dates to circa mid 16th century so.... much better than most of Wild Fields, but still really horrible.
+capital = "Samar"			#Dates to circa mid 16th century so.... much better than most of Wild Fields, but still really horrible.
 base_tax = 1
 base_production = 1
 base_manpower = 1

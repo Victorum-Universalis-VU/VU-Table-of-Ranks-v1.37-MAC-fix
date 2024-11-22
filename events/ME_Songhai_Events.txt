@@ -86,7 +86,7 @@ country_event = {
 		add_legitimacy_equivalent = { amount = 20 republican_tradition = 20 }
 		change_government_reform_progress = 100
 		add_prestige = 20
-		set_government_rank = 3
+		set_government_rank = 9
 	}
 }
 
@@ -103,15 +103,15 @@ country_event = {
 
 		if = {
 			limit = {
-				government_rank = 3
+				government_rank = 9
 			}
-			set_government_rank = 2
+			set_government_rank = 8
 		}
 		else_if = {
 			limit = {
-				government_rank = 2
+				government_rank = 8
 			}
-			set_government_rank = 1
+			set_government_rank = 6
 		}
 		else = {
 			add_legitimacy_equivalent = { amount = -30 republican_tradition = -30 }

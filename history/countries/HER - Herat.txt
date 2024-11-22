@@ -1,10 +1,9 @@
-technology_group = muslim
+government = monarchy
+add_government_reform = islamic_governate_reform
+government_rank = 5 #Governate
 primary_culture = khorasani
 add_accepted_culture = persian
 religion = sunni
-government = monarchy
-#add_government_reform = timurid_governor #Same than HNS
-add_government_reform = iqta
-government_rank = 2
+technology_group = muslim
 capital = 446 #Herat
 religious_school = hanafi_school

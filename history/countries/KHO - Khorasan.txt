@@ -1,5 +1,6 @@
 government = monarchy
-add_government_reform = timurid_governor
+add_government_reform = islamic_governate_reform
+government_rank = 5 #Governate
 primary_culture = khorasani
 add_accepted_culture = persian
 religion = shiite
@@ -7,10 +8,8 @@ religion = shiite
 technology_group = persian_tech_group
 unit_type = muslim
 #capital = 446	# Herat
-capital = 2214 #Astarabad
+capital = 2221 #Mashhad
 
-set_country_flag = ME_can_use_timurid_legitimacy
-save_global_event_target_as = ME_succession_crisis_KHO
 #set_variable = {
 #	which = timurid_legitimacy_value
 #	value = 20
@@ -96,7 +95,7 @@ save_global_event_target_as = ME_succession_crisis_KHO
 
 1461.1.1 = {
 	monarch = {
-		name = "Abû Sa'id"
+		name = "Ab  Sa'id"
 		dynasty = "Timurid"
 		adm = 3
 		dip = 5

@@ -1,5 +1,6 @@
 government = monarchy
 add_government_reform = nayankara_reform
+government_rank = 6 #Petty_Kingdom
 technology_group = indian
 religion = hinduism
 primary_culture = kannada
@@ -24,7 +25,14 @@ change_rajputs_or_marathas_or_nobles_land_share_effect = {
 		ADM = 4
 		DIP = 2
 		MIL = 3
-		leader = {	name = "Harihara II"	type = general	fire = 1	shock = 2	manuever = 2 siege = 0	}
+		leader = {	
+			name = "Harihara II"	
+			type = general	
+			fire = 1	
+			shock = 2	
+			manuever = 2 
+			siege = 0	
+		}
 	}
 }
 
@@ -190,7 +198,17 @@ change_rajputs_or_marathas_or_nobles_land_share_effect = {
 	}
 }
 
-1460.1.1 = { leader = {	name = "Narisimha Saluva"	type = general	fire = 2	shock = 3	siege = 0	manuever = 2 death_date = 1486.1.1 } }
+1460.1.1 = { 
+	leader = {	
+		name = "Narisimha Saluva"	
+		type = general	
+		fire = 2	
+		shock = 3	
+		siege = 0	
+		manuever = 2 
+		death_date = 1486.1.1 
+	} 
+}
 
 1465.1.1 = {
 	monarch = {
@@ -235,7 +253,14 @@ change_rajputs_or_marathas_or_nobles_land_share_effect = {
 		ADM = 4
 		DIP = 3
 		MIL = 4
-		leader = {	name = "Saluva Narisimha"	type = general	fire = 2	shock = 3	manuever = 2 siege = 1 }
+		leader = {	
+			name = "Saluva Narisimha"	
+			type = general	
+			fire = 2	
+			shock = 3	
+			manuever = 2 
+			siege = 1 
+		}
 	}
 	primary_culture = telegu
 	add_accepted_culture = kannada
@@ -352,7 +377,15 @@ change_rajputs_or_marathas_or_nobles_land_share_effect = {
 		DIP = 1
 		MIL = 3
 	}
-	leader = {	name = "Rama Raya Aravidu"	type = general	fire = 2	shock = 2	siege = 1	manuever = 2 death_date = 1549.1.1 }
+	leader = {	
+		name = "Rama Raya Aravidu"	
+		type = general	
+		fire = 2	
+		shock = 2	
+		siege = 1	
+		manuever = 2 
+		death_date = 1549.1.1 
+	}
 	clear_scripted_personalities = yes
 	add_ruler_personality = drunkard_personality
 }

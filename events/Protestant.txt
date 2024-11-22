@@ -37,36 +37,21 @@ country_event = {
 	mean_time_to_happen = {
 		months = 4000
 		
-		#Some new VU controls to finally get ahold of when the Reformation hits... bit heavy handed, but what can you do? Especially now that ages are controled by it.
-		# modifier = {
-			# factor = 99.0
-			# NOT = { is_year = 1490 }
-		# }
-		# modifier = {
-			# factor = 8.0
-			# NOT = { is_year = 1500 }
-		# }
-		# modifier = {
-			# factor = 4.0
-			# NOT = { is_year = 1505 }
-		# }
-		# modifier = {
-			# factor = 2.0
-			# NOT = { is_year = 1510 }
-		# }
-		# modifier = {
-			# factor = 1.2
-			# NOT = { is_year = 1515 }
-		# }
-		# modifier = {
-			# factor = 0.8
-			# NOT = { is_year = 1520 }
-		# }
-		# modifier = {
-			# factor = 0.5
-			# NOT = { is_year = 1525 }
-		# }
-		#Vanilla culture group factors moved to bottom and adjusted
+		modifier = {
+			factor = 2
+			PAP = { is_part_of_hre = yes }
+			OR = {
+				culture_group = germanic
+				culture_group = scandinavian
+				culture_group = british
+				primary_culture = anglois
+				culture_group = west_slavic
+				primary_culture = czech_new
+				primary_culture = sorbian_new
+				primary_culture = schlesian_new
+				primary_culture = polish_new
+			}
+		}
 		modifier = {
 			factor = 0.95
 			reform_desire = 1.05
@@ -123,6 +108,34 @@ country_event = {
 			government = theocracy
 		}
 		modifier = {
+			factor = 2
+			has_dlc = "Rule Britannia"	#For Anglicanism
+			OR = {
+				culture_group = british
+				primary_culture = anglois
+			}
+		}
+		modifier = {
+			factor = 8.0
+			OR = {
+				NOT = { exists = PAP }
+				PAP = { is_part_of_hre = no }
+			}
+			OR = {
+				culture_group = latin
+				culture_group = iberian
+			}
+		}
+		modifier = {
+			factor = 0.75
+			PAP = { is_part_of_hre = yes }
+			is_part_of_hre = no
+			OR = {
+				culture_group = latin
+				culture_group = iberian
+			}
+		}
+		modifier = {
 			factor = 0.5
 			OR = {
 				culture_group = scandinavian			#This is actually okay for the whole group
@@ -154,10 +167,7 @@ country_event = {
 		}
 		modifier = {
 			factor = 8.0
-			OR = {
-				culture_group = iberian			#Very Catholic
-				culture_group = gaelic			#Very Catholic
-			}
+			culture_group = gaelic			#Very Catholic
 		}
 		modifier = {
 			factor = 32.0

@@ -86,15 +86,14 @@ country_decisions = {
 			}
 			owns_core_province = 2774	# Kismayo
 			owns_core_province = 2777	# Bardera
-				   
-				   
 		}
 		effect = {
 			change_tag = SOM
+			on_change_tag_effect = yes
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
-				limit = { NOT = { government_rank = 2 } }
-				set_government_rank = 2
+				limit = { NOT = { government_rank = 8 } }
+				set_government_rank = 8
 			}
 			set_capital = 1205
 			horn_of_africa_region = {

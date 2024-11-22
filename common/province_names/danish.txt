@@ -16,6 +16,7 @@
 44 = "Hamborg"
 45 = "Lybek"
 94 = "Lützelburg"
+132 = { "Judenburg" "Judenburg" }
 225 = "Gnesen"
 233 = "Kaarnwæll"
 236 = "Middlsex"

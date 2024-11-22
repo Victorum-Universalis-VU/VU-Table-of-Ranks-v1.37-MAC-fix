@@ -17,6 +17,9 @@ native_ferocity = 1
 native_hostileness = 4
 
 
+latent_trade_goods = {
+    oil
+}
 
 
 

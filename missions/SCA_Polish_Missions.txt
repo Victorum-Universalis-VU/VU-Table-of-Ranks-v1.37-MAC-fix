@@ -4604,7 +4604,7 @@ poland_sca_slot_5_branching_lit_hre = {
 			total_development = 1500
 			if = {
 				limit = { has_dlc = "Common Sense" } 
-				government_rank = 3 
+				government_rank = 9 
 				has_final_tier_reforms_trigger = yes
 			}
 			else = { 
@@ -4903,7 +4903,7 @@ poland_sca_slot_5_branching_lit_east = {
 			total_development = 1500
 			if = {
 				limit = { has_dlc = "Common Sense" } 
-				government_rank = 3 
+				government_rank = 9 
 				has_final_tier_reforms_trigger = yes
 			}
 			else = { 
@@ -4973,7 +4973,7 @@ poland_sca_slot_5_branching_hre_west = {
 			}
 			else = {
 				OR = {
-					government_rank = 3 
+					government_rank = 9 
 					total_development = 1000
 				}
 				prestige = 70
@@ -5497,6 +5497,13 @@ poland_sca_slot_5_d = {
 				}
 				add_permanent_claim = ROOT
 			}
+			riga_area = {
+				limit = {
+					NOT = { is_core = ROOT	}
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
 			curonia_area = {
 				limit = {
 					NOT = { is_core = ROOT	}
@@ -5554,6 +5561,7 @@ poland_sca_slot_5_e = {
 				area = estonia_ingria_area 
 				area = curonia_area
 				area = livonia_area
+				area = riga_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
@@ -5736,6 +5744,7 @@ poland_sca_slot_5_plc_3 = {
 				area = estonia_ingria_area 
 				area = curonia_area
 				area = livonia_area
+				area = riga_area
 				area = latgallia_area
 				area = north_livonia_area
 			}
@@ -5751,6 +5760,10 @@ poland_sca_slot_5_plc_3 = {
 				country_or_non_sovereign_subject_holds = ROOT 
 			}
 			livonia_area = {
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			riga_area = {
 				type = all 
 				country_or_non_sovereign_subject_holds = ROOT 
 			}

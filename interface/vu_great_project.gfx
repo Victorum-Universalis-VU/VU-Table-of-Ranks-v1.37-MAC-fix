@@ -16,10 +16,10 @@ spriteTypes = {
         name = "GFX_great_project_vu_at_turaif"	
         texturefile = "gfx//interface//great_projects//VU_Monuments//great_projects_vu_at_turaif.dds"
     }
-    spriteType = {
-        name = "GFX_great_project_vu_bahla_fort"	
-        texturefile = "gfx//interface//great_projects//VU_Monuments//great_projects_vu_bahla_fort.dds"
-    }
+    #spriteType = {
+    #    name = "GFX_great_project_vu_bahla_fort"	
+    #    texturefile = "gfx//interface//great_projects//VU_Monuments//great_projects_vu_bahla_fort.dds"
+    #}
     spriteType = {
         name = "GFX_great_project_vu_qalhat"	
         texturefile = "gfx//interface//great_projects//VU_Monuments//great_projects_vu_qalhat.dds"
@@ -166,8 +166,8 @@ spriteTypes = {
         texturefile = "gfx//interface//great_projects//VU_Monuments//great_projects_vu_sofiyivka_park.dds"
     }
     spriteType = {
-        name = "GFX_great_project_vu_saint_sophia_cathedral"	
-        texturefile = "gfx//interface//great_projects//VU_Monuments//great_projects_vu_saint_sophia_cathedral.dds"
+        name = "GFX_great_project_vu_dormition_cathedral"	
+        texturefile = "gfx//interface//great_projects//VU_Monuments//great_projects_vu_dormition_cathedral.dds"
     }
     spriteType = {
         name = "GFX_great_project_vu_kamianets_podilskyi_castle"	
@@ -194,20 +194,24 @@ spriteTypes = {
         texturefile = "gfx//interface//great_projects//VU_Monuments//great_projects_vu_smolensk_kremlin.dds"
     }
     spriteType = {
-        name = "GFX_great_project_vu_zaraysk_kremlin"	
-        texturefile = "gfx//interface//great_projects//VU_Monuments//great_projects_vu_zaraysk_kremlin.dds"
+        name = "GFX_great_project_vu_astrakhan_kremlin"	
+        texturefile = "gfx//interface//great_projects//VU_Monuments//great_projects_vu_astrakhan_kremlin.dds"
     }
     spriteType = {
-        name = "GFX_great_project_vu_suzdal_kremlin"	
-        texturefile = "gfx//interface//great_projects//VU_Monuments//great_projects_vu_suzdal_kremlin.dds"
+        name = "GFX_great_project_vu_nizhny_novgorod_kremlin"	
+        texturefile = "gfx//interface//great_projects//VU_Monuments//great_projects_vu_nizhny_novgorod_kremlin.dds"
+    }
+	spriteType = {
+        name = "GFX_great_project_vu_novgorod_detinets"	
+        texturefile = "gfx//interface//great_projects//VU_Monuments//great_projects_vu_novgorod_detinets.dds"
     }
     spriteType = {
         name = "GFX_great_project_vu_chersonesus"	
         texturefile = "gfx//interface//great_projects//VU_Monuments//great_projects_vu_chersonesus.dds"
     }
     spriteType = {
-        name = "GFX_great_project_vu_ferapontov_monastery"	
-        texturefile = "gfx//interface//great_projects//VU_Monuments//great_projects_vu_ferapontov_monastery.dds"
+        name = "GFX_great_project_vu_prilutsky_monastery"	
+        texturefile = "gfx//interface//great_projects//VU_Monuments//great_projects_vu_prilutsky_monastery.dds"
     }
     spriteType = {
         name = "GFX_great_project_vu_solovetsky_monastery"	
@@ -573,6 +577,11 @@ spriteTypes = {
 		name = "GFX_great_project_vu_mosteiro_de_alcobaca"
 		texturefile = "gfx//interface//great_projects//VU_Portugal//great_project_vu_mosteiro_de_alcobaca.dds"
 	}
+
+	spriteType = {
+		name = "GFX_great_project_vu_se_de_evora"
+		texturefile = "gfx//interface//great_projects//VU_Portugal//great_project_vu_se_de_evora.dds"
+	}
 	#Canadian Cities
 	spriteType = {
 		name = "GFX_great_project_vu_st_johns"
@@ -799,10 +808,6 @@ spriteTypes = {
 		name = "GFX_great_project_vu_louisville_ky"
 		texturefile = "gfx//interface//great_projects//VU_Non_Generic_Towns//great_project_vu_louisville_ky.dds"
 	}	
-	#spriteType = {
-	#	name = "GFX_great_project_vu_detroit_mi"
-	#	texturefile = "gfx//interface//great_projects//VU_Non_Generic_Towns//great_project_vu_detroit_mi.dds"
-	#}
 	spriteType = {
 		name = "GFX_great_project_vu_milwaukee_wi"
 		texturefile = "gfx//interface//great_projects//VU_Non_Generic_Towns//great_project_vu_milwaukee_wi.dds"
@@ -1279,10 +1284,6 @@ spriteTypes = {
 		name = "GFX_great_project_vu_brasilia_brz"
 		texturefile = "gfx//interface//great_projects//VU_Non_Generic_Towns//great_project_vu_brasilia_brz.dds"
 	}
-	#spriteType = {
-	#	name = "GFX_great_project_vu_salvador_brz"
-	#	texturefile = "gfx//interface//great_projects//VU_Non_Generic_Towns//great_project_vu_salvador_brz.dds"
-	#}
 	spriteType = {
 		name = "GFX_great_project_vu_recife_brz"
 		texturefile = "gfx//interface//great_projects//VU_Non_Generic_Towns//great_project_vu_recife_brz.dds"
@@ -1341,10 +1342,6 @@ spriteTypes = {
 		name = "GFX_great_project_vu_brandenburg_gate"	
 		texturefile = "gfx//interface//VU_great_projects//great_project_vu_brandenburg_gate.dds"
 	}
-	#spriteType = {
-	#	name = "GFX_great_project_vu_venetian_arsenal"	
-	#	texturefile = "gfx//interface//VU_great_projects//great_project_vu_venetian_arsenal.dds"
-	#}
 	spriteType = {
 		name = "GFX_great_project_vu_warsaw_palace"	
 		texturefile = "gfx//interface//VU_great_projects//great_project_vu_warsaw_palace.dds"
@@ -1353,10 +1350,6 @@ spriteTypes = {
 		name = "GFX_great_project_vu_belgrade_fortress"	
 		texturefile = "gfx//interface//VU_great_projects//great_project_vu_belgrade_fortress.dds"
 	}
-	#spriteType = {
-	#	name = "GFX_great_project_vu_arc_of_triumph"	
-	#	texturefile = "gfx//interface//VU_great_projects//great_project_vu_arc_of_triumph.dds"
-	#}
 	spriteType = {
 		name = "GFX_great_project_vu_black_stone"	
 		texturefile = "gfx//interface//VU_great_projects//great_project_vu_black_stone.dds"
@@ -1457,10 +1450,7 @@ spriteTypes = {
 		name = "GFX_great_project_vu_amsterdam_stock_exchange"	
 		texturefile = "gfx//interface//VU_great_projects//great_project_vu_amsterdam_stock_exchange.dds"
 	}
-	spriteType = {
-		name = "GFX_great_project_vu_university_vienna"	
-		texturefile = "gfx//interface//VU_great_projects//great_project_vu_university_vienna.dds"
-	}
+
 	spriteType = {
 		name = "GFX_great_project_vu_white_tower"	
 		texturefile = "gfx//interface//VU_great_projects//great_project_vu_white_tower.dds"

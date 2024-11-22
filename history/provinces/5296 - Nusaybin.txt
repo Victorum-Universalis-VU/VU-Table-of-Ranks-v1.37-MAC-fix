@@ -13,25 +13,10 @@ base_production = 3
 base_manpower = 1 
 is_city = yes
 
+#Claimants
+add_core = Z3N
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#Histories by SF
 1469.2.4 = {
 	owner = AKK
 	controller = AKK

@@ -6,7 +6,7 @@
 owner = KIR
 controller = KIR
 add_core = KIR
-culture = ruthenian
+culture = ryazanian
 religion = orthodox
 hre = no
 base_tax = 1 

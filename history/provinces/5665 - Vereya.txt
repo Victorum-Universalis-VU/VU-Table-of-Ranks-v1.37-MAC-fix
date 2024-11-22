@@ -3,7 +3,7 @@
 owner = BLO
 controller = BLO
 add_core = BLO
-culture = russian
+culture = muscovite
 religion = orthodox
 capital = "Vereya"
 trade_goods = lumber

@@ -3,7 +3,6 @@
 owner = RUT
 controller = RUT
 add_core = RUT
-add_core = LEK
 culture = dagestani
 religion = sunni
 capital = "Ketsh"	#Uncertain
@@ -14,30 +13,9 @@ base_production = 2
 base_manpower = 2 
 is_city = yes
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#Claimants
+add_core = DAG
+add_core = LEK
 
 1444.1.1 = { add_local_autonomy = 60 } #Semi-independent tribes
 1555.1.1 = { 

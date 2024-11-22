@@ -12,21 +12,12 @@ base_tax = 5
 base_production = 6
 base_manpower = 2
 is_city = yes
+
+#Claimants
+add_core = EGY
 add_core = KEM
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+add_core = PT0
+add_core = R4S
 
 1517.1.1 = {
 	owner = TUR

@@ -2,6 +2,7 @@
 
 owner = MSY
 controller = MSY
+add_core = MSY
 culture = al_iraqiya_arabic
 religion = shiite
 capital = "Hoveyzeh"
@@ -11,26 +12,18 @@ base_tax = 6
 base_production = 6
 base_manpower = 4
 is_city = yes
+
+#Buildings
 fort_15th = yes
-add_core = MSY
 
+#Claimants
+add_core = R4S
 
-
-
-
-
-
-
-
-
-
-
+#Histories by SF
 1535.1.1 = { controller = TUR } # Wartime occupation
 1536.1.1 = { controller = MSY } # End of Ottoman-Safavid war
 1587.1.1 = { controller = TUR } # Wartime occupation
 1590.3.21 = { controller = MSY } # Peace of Istanbul
-
-
 1719.1.1 = { unrest = 5 } # Rebellion
 1720.1.1 = { unrest = 0 }
 1747.1.1 = { unrest = 3 } # Shah Nadir is killed, local khanates emerged

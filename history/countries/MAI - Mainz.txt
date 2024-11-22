@@ -1,5 +1,6 @@
 government = theocracy
-add_government_reform = leading_clergy_reform
+add_government_reform = church_of_germany_archbishopric_reform
+government_rank = 5 #Archbishopric
 primary_culture = franconian
 add_accepted_culture = hessian
 add_accepted_culture = eastphalian

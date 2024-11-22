@@ -1,5 +1,6 @@
 government = monarchy
 add_government_reform = mandala_reform
+government_rank = 7 #High Kingdom
 primary_culture = burmese
 add_accepted_culture = shan
 add_accepted_culture = mon

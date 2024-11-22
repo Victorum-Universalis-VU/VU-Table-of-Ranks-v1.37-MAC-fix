@@ -12,7 +12,7 @@ tur_conquest_of_europe = {
 		has_dlc = "Domination"
 		tag = TUR
 		NOT = { map_setup = map_setup_random }
-		has_country_flag = use_paradox_missions
+		#has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 
@@ -701,6 +701,13 @@ tur_conquest_of_europe = {
 				}
 				add_permanent_claim = ROOT
 			}
+			san_marino_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 			lazio_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -742,6 +749,7 @@ tur_conquest_of_europe = {
 					OR = {
 						area = tuscany_area
 						area = central_italy_area
+						area = san_marino_area
 						area = lazio_area
 					}
 					NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -763,6 +771,7 @@ tur_conquest_of_europe = {
 				OR = {
 					area = tuscany_area
 					area = central_italy_area
+					area = san_marino_area
 					area = lazio_area
 				}
 				value = 10
@@ -1063,7 +1072,7 @@ tur_african_conquest = {
 		has_dlc = "Domination"
 		tag = TUR
 		NOT = { map_setup = map_setup_random }
-		has_country_flag = use_paradox_missions
+		#has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 
@@ -1276,6 +1285,7 @@ tur_african_conquest = {
 				area = albania_area
 				area = croatia_area
 				area = east_adriatic_coast_area
+				area = ragusa_area
 				area = bosnia_area
 				area = slavonia_area
 			}
@@ -1289,6 +1299,7 @@ tur_african_conquest = {
 					area = albania_area
 					area = croatia_area
 					area = east_adriatic_coast_area
+					area = ragusa_area
 					area = bosnia_area
 					area = slavonia_area
 				}
@@ -2043,7 +2054,7 @@ tur_egyptian_conquest = {
 		has_dlc = "Domination"
 		tag = TUR
 		NOT = { map_setup = map_setup_random }
-		has_country_flag = use_paradox_missions
+		#has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 
@@ -2976,7 +2987,7 @@ tur_arabian_conquest = {
 		has_dlc = "Domination"
 		tag = TUR
 		NOT = { map_setup = map_setup_random }
-		has_country_flag = use_paradox_missions
+		#has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 
@@ -3632,7 +3643,7 @@ tur_dummy_missions_path = {
 		NOT = { has_country_flag = tur_chose_legalism }
 		NOT = { has_country_flag = tur_chose_mysticism }
 		NOT = { has_country_flag = tur_non_muslim_path_flag }
-		has_country_flag = use_paradox_missions
+		#has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 
@@ -3931,7 +3942,7 @@ tur_legalism_path = {
 		tag = TUR
 		NOT = { map_setup = map_setup_random }
 		has_country_flag = tur_chose_legalism
-		has_country_flag = use_paradox_missions
+		#has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 
@@ -4092,7 +4103,7 @@ tur_mysticism_path = {
 		tag = TUR
 		NOT = { map_setup = map_setup_random }
 		has_country_flag = tur_chose_mysticism
-		has_country_flag = use_paradox_missions
+		#has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 
@@ -4252,7 +4263,7 @@ tur_non_muslim_path = {
 		tag = TUR
 		NOT = { map_setup = map_setup_random }
 		has_country_flag = tur_non_muslim_path_flag
-		has_country_flag = use_paradox_missions
+		#has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 
@@ -4353,7 +4364,7 @@ tur_issue_the_kannuname_slot = {
 		has_dlc = "Domination"
 		tag = TUR
 		NOT = { map_setup = map_setup_random }
-		has_country_flag = use_paradox_missions
+		#has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 
@@ -4427,7 +4438,7 @@ tur_persian_conquest = {
 		has_dlc = "Domination"
 		tag = TUR
 		NOT = { map_setup = map_setup_random }
-		has_country_flag = use_paradox_missions
+		#has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 
@@ -5027,7 +5038,7 @@ tur_stagnation_slot_1 = {
 		tag = TUR
 		NOT = { map_setup = map_setup_random }
 		has_country_flag = tur_unlocked_disaster_missions
-		has_country_flag = use_paradox_missions
+		#has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 
@@ -5370,7 +5381,7 @@ tur_stagnation_slot_2 = {
 		tag = TUR
 		NOT = { map_setup = map_setup_random }
 		has_country_flag = tur_unlocked_disaster_missions
-		has_country_flag = use_paradox_missions
+		#has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 
@@ -5456,7 +5467,7 @@ tur_stagnation_slot_3 = {
 		tag = TUR
 		NOT = { map_setup = map_setup_random }
 		has_country_flag = tur_unlocked_disaster_missions
-		has_country_flag = use_paradox_missions
+		#has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 
@@ -5631,7 +5642,7 @@ tur_stagnation_slot_4 = {
 		tag = TUR
 		NOT = { map_setup = map_setup_random }
 		has_country_flag = tur_unlocked_disaster_missions
-		has_country_flag = use_paradox_missions
+		#has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 
@@ -5775,7 +5786,7 @@ tur_stagnation_slot_5 = {
 		tag = TUR
 		NOT = { map_setup = map_setup_random }
 		has_country_flag = tur_unlocked_disaster_missions
-		has_country_flag = use_paradox_missions
+		#has_country_flag = use_paradox_missions
 	}
 	has_country_shield = yes
 

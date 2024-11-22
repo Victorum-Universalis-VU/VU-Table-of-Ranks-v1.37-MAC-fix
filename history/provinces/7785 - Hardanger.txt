@@ -13,11 +13,8 @@ trade_goods = fruit			#fruit cultivation imported from england circa 1300, appar
 is_city = yes
 hre = no
 
-
-
-
-
-
+#Claimants
+add_core = HOR
 
 #1444 on
 1531.11.5 = { revolt = { type = revolutionary_rebels size = 0 } controller = REB } # The Return of Christian II

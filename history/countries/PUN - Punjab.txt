@@ -20,6 +20,7 @@ capital = 507	# Lahore
 	}
 	government = monarchy
 	add_government_reform = indian_sultanate_reform
+	government_rank = 6 #Sultanate
 	religion = sunni
 	religious_school = hanafi_school
 	clear_scripted_personalities = yes
@@ -41,7 +42,8 @@ capital = 507	# Lahore
 	religion = sunni
 	religious_school = hanafi_school
 	government = monarchy
-add_government_reform = iqta
+	add_government_reform = islamic_sultanate_reform
+	government_rank = 6 #Sultanate
 	capital = 507 #Lahore
 }
 

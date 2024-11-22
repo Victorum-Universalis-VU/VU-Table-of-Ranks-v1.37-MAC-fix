@@ -4,7 +4,7 @@
 owner = KIR
 controller = KIR
 add_core = KIR 
-culture = byelorussian
+culture = polesian
 religion = orthodox
 capital = "Kapyl"			#Also Kletsk
 base_tax = 2

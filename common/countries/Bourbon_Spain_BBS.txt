@@ -1,4 +1,4 @@
-#Country Name: Please see filename.
+#BBS - Bourbon Spain
 
 graphical_culture = westerngfx
 
@@ -12,13 +12,6 @@ historical_score = 7400
 
 historical_idea_groups = {
 	exploration_ideas
-	religious_ideas
-	offensive_ideas
-	expansion_ideas
-	influence_ideas
-	maritime_ideas
-	quality_ideas
-	defensive_ideas
 }
 
 historical_units = {
@@ -91,14 +84,15 @@ monarch_names = {
 }
 
 leader_names = {
-	"Abarca de Bolea" "de Aguirre" "de Alarcón" "Álvarez de Toledo" "de Aragón" "de Austria" "de Ayala"
-	"de Bazán" "de Beaumont" "de Benavides" "de Borbón" "de Borja"
-	"Cabeza de Vaca" "Cagigal de la Vega" Campomanes "de la Cerda" Colón Coronado Cortés Dávila
-	"de Egmont" Elcano Elhuyar "Fadrique de Toledo" "Fernández de Castro" "Fernández de Córdoba" "de Figueroa" Fitz-James "Folch de Cardona" Fonseca
-	Gálvez Gómez Gravina "de Grijalva" Grimaldi "de Guzmán" "de Jovellanos" "de Leiva"
-	"Lópe de Haro" "Manrique de Lara" "Manrique de Velasco" "de Mendoza" "de Montcada" "Nuñez de Balboa"
-	"de Ojeda" Orellana Osorio Palafox Patiño Pimentel Pizarro "Ponce de León" Portocarrero
-	"de Requesens" "de Ripperdá" "de Rojas" Sastre Tellez-Girón "de la Vega" "de Zúñiga"
+	"de Aguirre" "de Alarcón" "Alonso de Guzman" "de Toledo" "de Andrade" "de Ayala"
+	"de Bazán" "de Barrientos" "de Benavides" Campomanes "de Castilla" "de la Cerda" Cienfuegos Colón Coronado Cortés
+	"de Toledo" "de Córdoba" "de la Cueva" "de Figueroa" Fonseca
+	Gálvez Gómez "de Guzmán" "Jiménez de Cisneros"
+	"de Leiva" "López de Haro" "de Luna"
+	"de Lara" "de Velasco" "de Villena" "de Mendoza"
+	Narváez "de Nebrija" "de Balboa" "de Ojeda" Orellana Osorio 
+	Pacheco Pimentel Pinzón Pizarro "de León" Portocarrero
+	"de Rojas" Tellez-Girón "de la Vega" "de Zúñiga"
 }
 
 ship_names = {
@@ -160,9 +154,21 @@ ship_names = {
 
 
 army_names = {
-	"Guardia Real" "Ejército de $PROVINCE$"
+	"Guardia Real" "Ejército Real" "Ejército Nacional" "Ejército de Escocia" "Ejército de Irlanda" "Ejército del Norte" "Ejército de Austria" "Ejército de Bohemia" "Ejército de Moravia" "Ejército de Hungría" "Ejército de Italia" "Ejército de Silesia" 
+	"Ejército de Transilvania" "Ejército de Albania" "Ejército de Grecia" "Ejército de Croacia" "Ejército de Polonia" "Ejército de la Costa Dálmata" "Ejército de Baviera" "Ejército de Turingia" "Ejército de Franconia" "Ejército de Suabia" "Ejército del Rin" 
+	"Ejército de Westfalia" "Ejército sajón" "Ejército de Brandeburgo" "Ejército de Pomerania" "Ejército de Schleswig-Holstein" "Ejército de Baja Sajonia" "Ejército de Dinamarca" "Ejército de Suecia" "Ejército del Mar Báltico" "Ejército de Finlandia" 
+	"Ejército de Eslovaquia" "Ejército de Noruega" "Ejército de los Países Bajos" "Ejército de Suiza" "Ejército del Tirol" "Ejército de Estiria" "Ejércitode los Alpes" "Ejército de Lorena" "Ejército de Francia" "Ejército de Borgoña" "Ejército de Bretaña" 
+	"Ejército de Provenza" "Ejército de Nápoles" "Ejército de Bulgaria" "Ejército de Iberia" "Ejército de Cataluña" "Ejército de los Pirineos" "Ejército de Portugal" "Ejército de Macedonia" "Ejército de Prusia Oriental" "Ejército de Anatolia" 
+	"Ejército de Mesopotamia" "Ejército de Siria" "Ejército de Palestina" "Ejército de Arabia" "Ejército de Persia" "Ejército del Cáucaso" "Ejército de la India del Norte" "Ejército de la India Central" "Ejército de la India Occidental" 
+	"Ejército de la India Oriental" "Ejército de Birmania" "Ejército de Indochina" "Ejército de China" "Ejército de Egipto" "Ejército de Libia" "Ejército del Norte de África" "Ejército de África Oriental" "Ejército de África Occidental" 
+	"Ejército de Sudáfrica" "Ejército de Australia" "Ejército de las Indias Orientales" "Guarnición del Pacífico" "Ejército del Japón" "Ejército de Siberia" "Ejército de Asia Central" "Ejército del Himalaya" "Ejército de Camerún" "Ejército de Tanganica" 
+	"Ejército de Groenlandia" "Ejército de Islandia" "Ejército de América del Norte" "Ejército del Caribe" "Ejército de Venezuela" "Ejército de Centroamérica" "Ejército de Brasil" "Ejército de Perú" "Ejército de Colombia" "Ejército de Papua Nueva Guinea" 
+	"Ejército de Bolivia" "Ejército de Chile" "Ejército de Argentina" "Ejército de Afganistán" "Ejército de Cuba" "Ejército del Indo" "Ejército de Malaya" "Ejército de Filipinas" "Ejército de Nueva Zelanda" "Ejército de Bosnia" "Ejército de los Balcanes" 
+	"Ejército de Ucrania" "Ejército de $PROVINCE$"
 }
 
 fleet_names = {
-	"Armada Real"	"Flota de $PROVINCE$"
+	"Armada Real" "Escuadrón Azul" "Escuadrón Rojo" "Escuadrón Blanco" "Escuadrón del Canal" "Escuadrón del Mar del Norte" "Flota del Mar del Norte" "Flota del Canal" "Flota del Atlántico" "Flota del Báltico" "Flota del Pacífico" "Flota del Caribe" 
+	"Flota de las Indias Orientales" "Flota Nacional" "Flota del Mediterráneo" "Flota de Reserva" "Flota del Este" "Gran Flota" "Flota del Lejano Oriente" "Primera Flota" "Segunda Flota" "Tercera Flota" "Flota Occidental" "Flota filipina" 
+	"Flota de $PROVINCE$"
 }

@@ -1,6 +1,6 @@
 government = monarchy
-government_rank = 1
-add_government_reform = feudalism_reform
+add_government_reform = eue_viscounty_reform
+government_rank = 3 #City_State
 #technology_group = eastern
 technology_group = russian_tech_group
 unit_type = eastern

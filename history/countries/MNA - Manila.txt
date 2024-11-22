@@ -1,10 +1,10 @@
 government = monarchy
-add_government_reform = plutocratic_reform
-government_rank = 1
+add_government_reform = islamic_sultanate_reform
+government_rank = 6 #Sultanate
 technology_group = chinese
-religion = animism
+religion = sunni
 primary_culture = filipino
-capital = 656	# Manila
+capital = 656 #Manila
 
 1440.1.1 = {
 	monarch = {

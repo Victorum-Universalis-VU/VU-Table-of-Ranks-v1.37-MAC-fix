@@ -1,4 +1,5 @@
 ﻿l_english:
+ #Missions:
  sie_old_rivalries_title: "Old Rivalries"
  sie_old_rivalries_desc: "The ascendant Florentine Republic is a threat to our survival. Despite their superior numbers we must push them back the same way our forefathers did at the battle of Montaperti many years ago. Another option, of course, would be to be on good terms with them until we are ready to strike."
  sie_siena_papacy_title: "Siena and the Papacy"
@@ -64,23 +65,39 @@
  ME_Siena_Events.3.OPT3: "Only horses are fast enough for the excitement."
  ME_Siena_Events.3.OPT4: "All these animals are too dangerous to be let loose in the Campo. Have good old-fashioned peasants give them piggyback rides instead."
 
+ #Modifiers:
  sie_rivalry_diminshed: "Archrival - Florence"
+ desc_sie_rivalry_diminshed: ""
  sie_archrival_florence: "Rivalry Diminished"
+ desc_sie_archrival_florence: ""
  sie_supporting_papacy: "Supporting the Papacy"
+ desc_sie_supporting_papacy: ""
  sie_resisting_papal_influence: "Resisting Papal Influence"
+ desc_sie_resisting_papal_influence: ""
  sie_influencing_church: "Influencing the Church"
+ desc_sie_influencing_church: ""
  sie_pope_siena: "Pope of Siena"
+ desc_sie_pope_siena: ""
  sie_control_papacy: "Control of the Papacy"
+ desc_sie_control_papacy: ""
  sie_chair_st_peter: "Chair of St Peter"
+ desc_sie_chair_st_peter: ""
  sie_sienese_banking_industry: "Sienese Banking Industry"
+ desc_sie_sienese_banking_industry: ""
  sie_hospital_via_francigena: "Hospital on the Via Francigena"
+ desc_sie_hospital_via_francigena: ""
  sie_sienese_school: "Sienese School"
+ desc_sie_sienese_school: ""
  sie_sienese_tuscany: "Sienese Tuscany"
+ desc_sie_sienese_tuscany: ""
  sie_wolf_siena: "Wolf of Siena"
+ desc_sie_wolf_siena: ""
  sie_sienese_naval_ambitions: "Sienese Naval Ambitions"
+ desc_sie_sienese_naval_ambitions: ""
  sie_elsa_valley_crystals: "Elsa Valley Crystals"
+ desc_sie_elsa_valley_crystals: ""
 
- #Event's 
+ #Events: 
  sie_piccolomini_library: "Piccolomini Library"
  sie_ideal_city_planning: "Ideal City Planning"
  sie_commentaries_pope: "Commentaries of the Pope"
@@ -95,5 +112,5 @@
  sie_crazy_horses: "Crazy Horses!"
  sie_peasant_piggybank: "Peasant Piggybacking"
 
- #TT
+ #Custom Tooltips:
  SIE_RENAISSANCE_TT: "Every Owned Province will gain §G100§! progress in the §YRenaissance§! Institution"

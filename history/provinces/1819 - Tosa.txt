@@ -2,7 +2,7 @@
 
 owner = HSK
 controller = HSK
-culture = japanese
+culture = shikoku
 religion = shinto
 capital = "Nakamura"
 trade_goods = naval_supplies

@@ -1,3 +1,4 @@
+#Updated to v1.37 - SF
 country_decisions = {
 
 	scandinavian_nation = {
@@ -17,10 +18,7 @@ country_decisions = {
 			NOT = { exists = SCA }
 			NOT = { tag = PAP }
 			NOT = { tag = HLR }
-			OR = {
-			    has_country_flag = fin_scandinavia
-			    culture_group = scandinavian
-			}
+			culture_group = scandinavian
 			OR = {
 				ai = no
 				AND = {
@@ -85,13 +83,13 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = SCA
+			swap_non_generic_missions = yes
 			on_change_tag_effect = yes
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
-				limit = { NOT = { government_rank = 2 } }
-				set_government_rank = 2
+				limit = { NOT = { government_rank = 8 } }
+				set_government_rank = 8
 			}
-			swap_non_generic_missions = yes
 			if = {
 				limit = {
 					has_dlc = "Lions of the North"
@@ -252,6 +250,13 @@ country_decisions = {
 							add_permanent_claim = ROOT
 						}
 						livonia_area = {
+							limit = {
+								NOT = { is_core = ROOT }
+								NOT = { is_permanent_claim = ROOT }
+							}
+							add_permanent_claim = ROOT
+						}
+						riga_area = {
 							limit = {
 								NOT = { is_core = ROOT }
 								NOT = { is_permanent_claim = ROOT }

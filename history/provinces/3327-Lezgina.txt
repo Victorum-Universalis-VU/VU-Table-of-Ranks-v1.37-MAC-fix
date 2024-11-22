@@ -3,7 +3,6 @@
 owner = AKN
 controller = AKN
 add_core = AKN
-add_core = LEK
 culture = dagestani
 religion = sunni
 capital = "Akhstag"	#Uncertain
@@ -14,30 +13,9 @@ base_production = 1
 base_manpower = 2 
 is_city = yes
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#Claimants
+add_core = DAG
+add_core = LEK
 
 1444.1.1 = { add_local_autonomy = 60 } #Semi-independent tribes
 1555.1.1 = { 

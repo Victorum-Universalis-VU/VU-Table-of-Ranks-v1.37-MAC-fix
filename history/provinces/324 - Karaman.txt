@@ -13,11 +13,9 @@ base_tax = 5
 base_production = 5
 base_manpower = 3
 is_city = yes
+
 center_of_trade = 2
-
-#Claimants
-
-#Buildings
+extra_cost = 8
 
 #Special Modifiers
 add_permanent_province_modifier = {
@@ -25,11 +23,19 @@ add_permanent_province_modifier = {
 	duration = -1
 }
 
-#Known by Technology groups
+#Claimants
 
 #Histories by SF
-1215.6.15 = { owner = RMM controller = RMM add_core = RMM } # Sultanate of Rum territorial lands - By San Felipe
-1444.11.11 = { owner = KAR controller = KAR add_core = KAR } # Karaman territorial lands - By San Felipe
+1215.6.15 = { 
+	owner = RUM 
+	controller = RUM 
+	add_core = RUM 
+}  # Sultanate of Rum territorial lands - By San Felipe
+1444.11.11 = { 
+	owner = KAR 
+	controller = KAR 
+	add_core = KAR 
+} # Karaman territorial lands - By San Felipe
 1483.1.1 = {
 	owner = TUR
 	controller = TUR

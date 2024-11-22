@@ -11,22 +11,11 @@ base_tax = 6
 base_production = 6
 base_manpower = 4
 is_city = yes
-add_core = BSR
+
+#Claimants
+add_core = JAL
 add_core = QAR
 add_core = MSY
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 add_province_triggered_modifier = religious_center
 
@@ -57,15 +46,12 @@ add_province_triggered_modifier = religious_center
 	remove_core = PER
 } # Conquered by the Ottomans
 1560.1.1 = { #Revolt against Ottoman Governor of Basra
-	owner = BSR
 	controller = TUR
 }
 1568.1.1 = { #Campaign against Marsh Arabs over.
 	owner = TUR
 }
 1596.1.1 = {
-	owner = BSR
-	controller = BSR
 	remove_core = TUR
 }
 #Independent 1624 - 1668

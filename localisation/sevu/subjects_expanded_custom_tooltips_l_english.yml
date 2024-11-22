@@ -3,6 +3,12 @@
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_vassal: "Can be made into a §YVassal§!"
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_march: "Can be made into a §YMarch§!"
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_daimyo_vassal: "Can be made into a §YDaimyo§!"
+ IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_daimyo_barony_vassal: "Can be made into a §YDaimyo Barony§!"
+ IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_daimyo_viscounty_vassal: "Can be made into a §YDaimyo Viscounty§!"
+ IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_daimyo_county_vassal: "Can be made into a §YDaimyo County§!"
+ IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_daimyo_marquisate_vassal: "Can be made into a §YDaimyo Marquisate§!"
+ IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_daimyo_duchy_vassal: "Can be made into a §YDaimyo Duchy§!"
+ IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_daimyo_principality_vassal: "Can be made into a §YDaimyo Principality§!"
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_personal_union: "Can be made into a §YJunior Partner§!"
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_client_vassal: "Can be made into a §YClient State§!"
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_client_march: "Can be made into a §YClient March§!"
@@ -12,13 +18,10 @@
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_puppet_state: "Can be made into a §YPuppet State§!"
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_dominion: "Can be made into a §YDominion§!"
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_dominion_t: "Can be made into a §YDominion§!"
- IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_autonomous_dominion: "Can be made into an §YAutonomous Dominion§!"
- IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_autonomous_dominion_tc: "Can be made into an §YAutonomous Dominion§!"
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_roman_client_kingdom: "Can be made into a §YRoman Client Kingdom§!"
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_voivodeship: "Can be made into a §YVoivodeship§!"
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_fief_subject: "Can be made into a §YFiefdom§!"
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_crusader_state_vassal: "Can be made into a §YCrusader State§!"
- #IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_salic_personal_union: "Can be made into a §YSalic Union§!"
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_nahuatl_vassal: "Can be made into a §YNahuatl Vassal§!"
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_peasant_vassal: "Can be made into a §YPeasant Vassal§!"
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_pirate_brotherhood_vassal: "Can be made into a §YPirate Brotherhood§!"
@@ -49,8 +52,6 @@
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_religious_march: "Can be made into a §YReligious March§!"
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_stato_da_mar_vassal: "Can be made into a §YStato da Mar§!"
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_medieval_vassal: "Can be made into a §YMedieval Vassal§!"
-
- THIS_IS_FORMER_AUTONOMOUS_DOMINION: "Is a former §YDominion§! or a former §YColonial Nation§!"
 
  # Diplomatic Actions:
  CANNOT_DECLARE_WAR_ON_OVERLORD_ALLY: "Our overlord §Y[Root.Overlord.GetName]§! will not tolerate wars against their alliances started by us."
@@ -84,7 +85,7 @@
  CANNOT_ANNEX_SUBJECT_IF_OVERLORD_DISALLOWED_IT: "We cannot annex or integrate subjects while our overlord has disallowed doing that."
  CANNOT_ANNEX_FIEF_SUBJECT_BEFORE_25_YEARS: "To be able to annex a [fief_subject] they need to be our subject for at least §Y25§! years. [From.GetName] is our subject for only §Y[From.GetYearsUnderCurrentOverlord]§! years."
  CANNOT_ANNEX_ANNEXABLE_COLONY_BEFORE_25_YEARS: "To be able to annex a [annexable_colony] they need to be our subject for at least §Y25§! years. [From.GetName] is our subject for only §Y[From.GetYearsUnderCurrentOverlord]§! years."
- CANNOT_ANNEX_DOMINION_BEFORE_30_YEARS: "To be able to annex a [dominion] they need to be our subject for at least §Y30§! years. [From.GetName] is our subject for only §Y[From.GetYearsUnderCurrentOverlord]§! years."
+ CANNOT_ANNEX_DOMINION_BEFORE_30_YEARS: "To be able to annex a [self_governing_dominion_vu] they need to be our subject for at least §Y30§! years. [From.GetName] is our subject for only §Y[From.GetYearsUnderCurrentOverlord]§! years."
 
  CANNOT_SEPARATE_PEACE_OVERLORD_OF_WAR_LEADER: "You cannot separate peace the overlord of the enemy war leader."
 
@@ -102,8 +103,6 @@
  DID_NOT_DEMAND_TROOPS_OF_FIEF_WITHIN_LAST_10_YEARS: "Was NOT forced to transfer troops to its overlord within the last §Y10 years§!"
 
  HAS_LESS_THAN_HALF_OF_PREV_TOTAL_DEVELOPMENT: "Has less than §Y50%§! of §Y[Prev.GetName]'s§! development"
-
- DID_NOT_DEMAND_MANPOWER_OF_AUTONOMOUS_DOMINION_WITHIN_LAST_5_YEARS: "Was NOT forced to transfer manpower to its overlord within the last §Y5 years§!"
 
  IS_NOT_IN_THE_CAPITAL_COLONIAL_REGION: "Is NOT in the same colonial region as its owners capital"
  HAS_NO_OTHER_COLONIAL_NATION_IN_SAME_REGION: "§Y[Root.GetName]§! does NOT have any colonial subject in this colonial region"
@@ -234,8 +233,6 @@
  MEDIEVAL_VASSAL_ANNUL_ALLIANCE_TT: "@[Root.GetTag] §Y[Root.GetName]§! is forced to break its alliance with @[medieval_vassal_target_final_ally_target.GetTag] §Y[medieval_vassal_target_final_ally_target.GetName]§!."
 
  # Triggered Modifiers:
- HAS_AT_LEAST_3_DOMINIONS_OR_AUTONOMOUS_DOMINIONS_IN_TRADE_COMPANY_REGIONS: "Has at least §Y3§! §YDominions§! or §YAutonomous Dominions§! with their capital in a trade company region (established via decisions)"
-
  HAS_DUTCH_PROVINCES_REFORM_1: "§YInterne Vrede§! was enacted"
  HAS_DUTCH_PROVINCES_REFORM_2: "§YExterne Vrede§! was enacted"
  HAS_DUTCH_PROVINCES_REFORM_3: "§YSuccessiewet§! was enacted"
@@ -271,10 +268,6 @@
  display_protectorate_desc_tt: "§g[protectorate_desc]§W"
  display_puppet_state_title_tt: "§Y[puppet_state]§!"
  display_puppet_state_desc_tt: "§g[puppet_state_desc]§W"
- display_dominion_title_tt: "§Y[dominion]§!"
- display_dominion_desc_tt: "§g[dominion_desc]§W"
- display_autonomous_dominion_title_tt: "§Y[autonomous_dominion]§!"
- display_autonomous_dominion_desc_tt: "§g[autonomous_dominion_desc]§W"
  display_roman_client_kingdom_title_tt: "§Y[roman_client_kingdom]§!"
  display_roman_client_kingdom_desc_tt: "§g[roman_client_kingdom_desc]§W"
  display_voivodeship_title_tt: "§Y[voivodeship]§!"

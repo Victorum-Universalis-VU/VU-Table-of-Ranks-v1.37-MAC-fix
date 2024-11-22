@@ -5,6 +5,7 @@ monarch_power = MIL
 # no bonus for MIL currently
 ahead_of_time = {
 	monthly_russian_modernization = 0.05
+	ahead_of_time_benefit_mil = 1
 }
 
 # Pre-era techs
@@ -341,6 +342,10 @@ technology = {  #Logistics
 
 	supply_limit = 0.20
 	land_morale = 0.1
+	enable = ribauldequin #First used by King Edward III against the French in the HYW
+	enable = small_cannon
+	enable = bombard
+	enable = war_wagon
 }
 
 technology = {  # Moats
@@ -1706,5 +1711,5 @@ technology = {
 	enable = A7V
 	
 	#Trench
-	trench = yes
+	#trench = yes
 }

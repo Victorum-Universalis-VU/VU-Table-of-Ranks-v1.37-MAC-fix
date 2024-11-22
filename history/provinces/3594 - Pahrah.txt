@@ -14,8 +14,8 @@ is_city = yes
 add_local_autonomy = 50
 add_core = BAL
 
-
-
+#Claimants
+add_core = BUY
 
 
 

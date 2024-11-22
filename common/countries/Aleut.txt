@@ -1,4 +1,4 @@
-#Country Name: Please see filename.
+#YYB - Aleut
 
 graphical_culture = northamericagfx
 
@@ -6,13 +6,6 @@ color = { 43  85  252 }
 
 historical_idea_groups = {
 	religious_ideas
-	defensive_ideas
-	offensive_ideas
-	trade_ideas
-	diplomatic_ideas
-	plutocracy_ideas
-	spy_ideas
-	economic_ideas
 }
 
 historical_units = {
@@ -69,7 +62,6 @@ monarch_names = {
 	"Ukiuk #0" = 1
 	"Unnuk #0" = 1
 	"Usuiituk #0" = 1
-	
 	"Ahnah #0" = -1
 	"Kaya #0" = -1
 	"Koko #0" = -1

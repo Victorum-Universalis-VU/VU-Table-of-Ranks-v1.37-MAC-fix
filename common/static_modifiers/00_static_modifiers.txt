@@ -1,3 +1,4 @@
+#Updated by SF for VU v1.37.*
 # All global modifiers are here. They are applied from certain game-features.
 #
 # Effects are fully scriptable here.
@@ -10,7 +11,7 @@
 
 difficulty_very_easy_player = {
 	global_manpower_modifier = 0.5
-	manpower_recovery_speed = 0.50
+	manpower_recovery_speed = 0.5
 	land_forcelimit_modifier = 0.5
 	naval_forcelimit_modifier = 0.5
 	production_efficiency = 0.5
@@ -26,17 +27,17 @@ difficulty_very_easy_player = {
 	free_leader_pool = 1
 	diplomatic_reputation = 2
 	interest = -2
-	improve_relation_modifier = 0.10
+	improve_relation_modifier = 0.1
 	ae_impact = -0.33
-	yearly_corruption = -1.0
+	yearly_corruption = -1
 }
 
 difficulty_easy_player = {
-	manpower_recovery_speed = 0.50
+	manpower_recovery_speed = 0.5
 	global_unrest = -5
 	interest = -2
 	ae_impact = -0.33
-	yearly_corruption = -1.0
+	yearly_corruption = -1
 }
 
 difficulty_normal_player = {
@@ -51,24 +52,22 @@ difficulty_very_hard_player = {
 ##########################################################################
 # Handicap Modifiers for AI
 ##########################################################################
-
 #added varying governing capacity to help the ai not release giant disloyal vassals - Lord_Bowser
-
 difficulty_very_easy_ai = {
-	governing_capacity = 100
+	#governing_capacity = 100 #-Modus
 }
 
 difficulty_easy_ai = {
-	governing_capacity = 150
+	#governing_capacity = 150 #-Modus
 }
 
 difficulty_normal_ai = {
-	governing_capacity_modifier = 0.2
-	governing_capacity = 300
+	#governing_capacity_modifier = 0.2 #-Modus
+	#governing_capacity = 300
 }
 
 difficulty_hard_ai = {
-	manpower_recovery_speed = 0.50
+	manpower_recovery_speed = 0.5
 	global_unrest = -1
 	war_exhaustion = -0.05
 	interest = -1
@@ -79,7 +78,7 @@ difficulty_hard_ai = {
 }
 
 difficulty_very_hard_ai = {
-	manpower_recovery_speed = 0.50
+	manpower_recovery_speed = 0.5
 	global_manpower_modifier = 0.5
 	land_forcelimit_modifier = 0.5
 	naval_forcelimit_modifier = 0.5
@@ -190,7 +189,7 @@ arid = {
 	supply_limit_modifier = -0.6
 	local_hostile_attrition = 5
 	allowed_num_of_buildings = -1
-	local_development_cost = 0.5
+	local_development_cost = 0.4 # reduced to 0.4 from 0.5 as 0.5 seems very extreme
 	local_institution_spread = -0.2
 
 	picture = "climate_arid"
@@ -264,9 +263,9 @@ severe_monsoon = {
 blockaded = {
 	regiment_recruit_speed = 0.2
 	ship_recruit_speed = 0.5			#VU AddOn changed from 0.2. Inspired by the Rule the Waves mod, which has some really good ideas but is just a bit much for me.
+	local_monthly_devastation = 0.25
 	#trade_goods_size_modifier = -0.5
 	#province_trade_power_modifier = -0.9			#VU AddOn changed from -0.75. Inspired by the Rule the Waves mod, which has some really good ideas but is just a bit much for me.
-	local_monthly_devastation = 0.25 #VU change up from 0.1
 }
 
 no_adjacent_controlled = {
@@ -447,6 +446,7 @@ same_culture_group = {
 }
 
 non_accepted_culture = {
+	monthly_persian_influence = -0.01
 	local_tax_modifier = -0.25			#VU AddOn changed from 0.33, comprehensively reducing culture penalties and increasing religious ones
 	local_missionary_strength = -0.02
 	local_manpower_modifier = -0.25			#VU AddOn changed from 0.33, comprehensively reducing culture penalties and increasing religious ones
@@ -620,35 +620,35 @@ scorched_earth = {
 
 base_values = {
 	max_absolutism = 65
-	merchants = 3 #2						#VU Bugfixes adjusted because there are now so many more trade nodes.						#Start with 2 merchants
-	diplomats = 2							#Start with 2 diplomats..
-	missionaries = 1						#1 missionary
-	army_tradition_decay = 0.06				#lose 6% yearly
-	navy_tradition_decay = 0.05				#lose 5% yearly
-	prestige_decay = 0.07					#lose 7% prestige each year (this is mostly to counter bonuses from the dozens of monuments)
+	merchants = 1	#2						#VU Bugfixes adjusted because there are now so many more trade nodes.						#Start with 2 merchants
+	diplomats = 2	#Start with 2 diplomats..
+	missionaries = 1	#1 missionary
+	army_tradition_decay = 0.06	#lose 6% yearly
+	navy_tradition_decay = 0.05	#lose 5% yearly
+	prestige_decay = 0.07	#lose 7% prestige each year (this is mostly to counter bonuses from the dozens of monuments)
 	tolerance_own = 3
-	diplomatic_upkeep = 2					#VU AddOn changed from 4 - Note adding dip upkeep bonus to government levels and institutions, so kingdoms start with the same as vanilla, empires get 1 more, while countries with feudalism are unaffected, but countries without have 1 less.
+	diplomatic_upkeep = 2	#VU AddOn changed from 4 - Note adding dip upkeep bonus to government levels and institutions, so kingdoms start with the same as vanilla, empires get 1 more, while countries with feudalism are unaffected, but countries without have 1 less.
 	tolerance_heathen = -3
 	tolerance_heretic = -2
-	global_missionary_strength = 0.01		#VU AddOn changed from 0.02 - VU generally lowers development by a fair amount, and provinces struck me as a little to easy to convert beforehand, so reducing the base conversion speed.
-	global_manpower = 6.0					#VU AddOn changed from 10.0 - It strikes me as odd that a country, even one with a single 1/1/1 province, automatically has around half the manpower of a large kingdom. I know this is a 'balance' thing, but asymmetry is fun.
+	global_missionary_strength = 0.01	#VU AddOn changed from 0.02 - VU generally lowers development by a fair amount, and provinces struck me as a little to easy to convert beforehand, so reducing the base conversion speed.
+	global_manpower = 5	#VU AddOn changed from 10.0 - It strikes me as odd that a country, even one with a single 1/1/1 province, automatically has around half the manpower of a large kingdom. I know this is a 'balance' thing, but asymmetry is fun.
 	advisor_pool = 3
 	colonist_placement_chance = 0.05
 	free_leader_pool = 1
 	republican_tradition = 1
 	monthly_fervor_increase = 1
-	vassal_income = 0.10
-	horde_unity = -2
+	vassal_income = 0.1
 	devotion = -0.5
+	horde_unity = -2
 	meritocracy = -2
-	governing_capacity = 200				#VU Probably not a wise idea to lower from 200 to 80 based on the 10 to 4 max states conversion.
-	num_accepted_cultures = 5				#VU AddOn changed from 2 - Note accepted culture bonus to government levels, so kingdoms start with the same as vanilla, and empires get 1 more.
+	governing_capacity = 350	#VU Probably not a wise idea to lower from 200 to 80 based on the 10 to 4 max states conversion.
+	num_accepted_cultures = 1	#VU AddOn changed from 2 - Note accepted culture bonus to government levels, so kingdoms start with the same as vanilla, and empires get 1 more.
 	monthly_splendor = 1
 	artillery_levels_available_vs_fort = 5
-	cav_to_inf_ratio = 0.3					#VU AddOn changed from 0.5 - Seriously, what normal army was a full 50 percent cavalry? Realistic might be closer to 10 as a base, but 30 hits a nice gameplay/realism balance, I think.
+	cav_to_inf_ratio = 0.3	#VU AddOn changed from 0.5 - Seriously, what normal army was a full 50 percent cavalry? Realistic might be closer to 10 as a base, but 30 hits a nice gameplay/realism balance, I think.
 	merc_maintenance_modifier = 0.5
-	monthly_heir_claim_increase = 0.417
-	cavalry_flanking = 0.50					#Cavalry buff because paradox refuses to buff cavalry.
+	monthly_heir_claim_increase = 0.4
+	cavalry_flanking = 0.5	#Cavalry buff because paradox refuses to buff cavalry.
 	tolerance_of_heretics_capacity = 3
 	tolerance_of_heathens_capacity = 3
 	max_flagships = 1
@@ -658,26 +658,27 @@ base_values = {
 
 # AI 'cheats' that compensate for flaws in its long-term decision making, removing these may severely cripple the AI
 ai_nation = {
-	global_tax_income = 24 # Quonton - Boost to ai to allow them to have a economy. Only 2 ducats a month
-	diplomats = 1 							# ai has to reserve a diplomat for short term action so it gets an extra to put it on equal footing with player
-	free_leader_pool = 1					# ai needs to have enough pool for 1 general & 1 admiral
+	#AI is somewhat competent now, no more need for so many cheats
+	global_tax_income = 12
+	free_leader_pool = 1
 	sailors_recovery_speed = 0.25
-	native_uprising_chance = -0.2			#VU AddOn added - As was pointed out to me, the AI doesn't really handle native revolts well, so we want this to be very rare.
-	army_tradition_decay = -0.02			#VU AddOn added - AI isn't (and to be fair, shouldn't be, as aggressive as player. As a result, AI will always have lower tradition, and always be easily steamrolled by an expansionist player. Trying this to offset that a bit here.
+	native_uprising_chance = -0.2	#VU AddOn added - As was pointed out to me, the AI doesn't really handle native revolts well, so we want this to be very rare.
+	max_absolutism = 20	#Cuz ai cant use the disaster
 	navy_tradition_decay = -0.02			#VU AddOn added - AI isn't (and to be fair, shouldn't be, as aggressive as player. As a result, AI will always have lower tradition, and always be easily steamrolled by an expansionist player. Trying this to offset that a bit here.
 	max_absolutism = 20 #Cuz ai cant use the disaster
-	fort_maintenance_modifier = -0.25 #For proper fort logic
+	fort_maintenance_modifier = -0.3	#For proper fort logic
 	state_maintenance_modifier = -0.25
 	may_return_manpower_on_disband = yes #at lst that much for army del bug
 	governing_capacity = 250 #Fixes pdx big brain (-_-)
 	governing_cost = -0.05
-	global_supply_limit_modifier = 0.25 #REDUCE ARMY EVAL ERRORS + LESS LAG IN LATE GAME
-	nobles_influence_modifier = -0.1
+	global_supply_limit_modifier = 0.25	#REDUCE ARMY EVAL ERRORS + LESS LAG IN LATE GAME
+	nobles_influence_modifier = -0.1	#Reminder : Remove after estate re-work
 	eunuchs_influence_modifier = -0.1
 	country_admin_power = 1 #AI is stupid with monarch points so they get more
 	country_diplomatic_power = 1 #AI is stupid with monarch points so they get more
 	country_military_power = 1 #AI is stupid with monarch points so they get more
 }
+
 
 
 war_taxes = {
@@ -689,6 +690,8 @@ war_taxes = {
 stability = {
 	global_trade_power = 0.01				#1% chance each step.
 	global_spy_defence = 0.05				#-15 to +15% modifier
+	monthly_cultural_unity = 0.1
+	monthly_divine_authority = 0.05
 }
 
 positive_stability = {
@@ -705,7 +708,8 @@ positive_stability = {
 	global_institution_spread = 0.05
 	yearly_harmony = 0.25
 	monthly_ottoman_decadence = -0.05
-	# GE:
+	monthly_authority_power = -0.01
+	#GE
 	monthly_imperial_grace_power = 0.084
 }
 
@@ -723,7 +727,8 @@ negative_stability = {
 	yearly_harmony = 0.25
 	monthly_russian_modernization = 0.03
 	monthly_ottoman_decadence = -0.15
-	# GE:
+	monthly_authority_power = 0.05
+	#GE
 	monthly_imperial_grace_power = 0.5
 }
 
@@ -844,14 +849,18 @@ bankruptcy = {
 	idea_cost = 0.5
 	imperial_mandate = -0.1
 	great_project_upgrade_cost = 0.5
-	monthly_russian_modernization = -1							   
+	monthly_russian_modernization = -1
+	monthly_authority_power = 0.25
 }
 
 
 war = {
 	monthly_militarized_society = 0.1
 	rr_girondists_influence = 0.15
-	# GE:
+	monthly_arabic_trade_influence_power = -0.5
+	monthly_blood = 0.3
+	monthly_authority_power = -0.05
+	#GE
 	monthly_bureaucracy_vs_military_power = 0.05
 	monthly_imperial_grace_power = -0.1
 }
@@ -866,6 +875,10 @@ peace = {
 	monthly_militarized_society = -0.1
 	monthly_ottoman_decadence = 0.1
 	monthly_asha_vahishta = 0.25
+	monthly_arabic_trade_influence_power = 0.1
+	monthly_cultural_unity = 0.1
+	monthly_blood = -0.05
+	monthly_authority_power = 0.1
 }
 
 unconditional_surrender = {
@@ -893,12 +906,16 @@ war_exhaustion = {
 	global_trade_goods_size_modifier = -0.02
 	recover_army_morale_speed = -0.005			#VU AddOn new, as a war drags on soliders recover morale more slowly. At 20 WE it should be the penalty as 100 AT gives in bonus.
     monthly_militarized_society = -0.05
+	monthly_arabic_trade_influence_power = -0.05
+	monthly_cultural_unity = -0.05
+	monthly_authority_power = 0.01
 }
 
 doom = {
 	technology_cost = 0.5
 	idea_cost = 0.2
 	ae_impact = -1
+	blood_gain_modifier = 1
 }
 
 authority = {
@@ -928,6 +945,7 @@ mercantilism = {
 	embargo_efficiency = 0.5
 	burghers_loyalty_modifier = 0.05
 	vaisyas_loyalty_modifier = 0.05
+	embargo_efficiency = 1
 	build_cost = -0.003						#added build cost reduction because mercantilism was never worth investing any dip points into - Lord_Bowser
 	build_time = -0.001						#added build time reduction because mercantilism was never worth investing any dip points into - Lord_Bowser
 }
@@ -961,6 +979,7 @@ navy_tradition = {
 	mr_traders_influence = 0.1
 	blockade_efficiency = 1
 	sailors_recovery_speed = 0.2
+	monthly_arabic_trade_influence_power = 0.2
 	burghers_loyalty_modifier = 0.05
 	vaisyas_loyalty_modifier = 0.05
 	allowed_geobukseon_fraction = 0.5
@@ -973,6 +992,7 @@ positive_piety = { #As of 1.23 Legalism
 	global_tax_modifier = 0.20
 	brahmins_muslim_loyalty_modifier = -0.1
 	church_loyalty_modifier = 0.1
+	piety_dhimmi_loyalty_modifier = -0.1
 	dhimmi_loyalty_modifier = -0.1
 }
 
@@ -982,6 +1002,7 @@ negative_piety = { #As of 1.23 Mysticism
 	global_missionary_strength = 0.03
 	idea_cost = -0.1
 	brahmins_muslim_loyalty_modifier = 0.1
+	piety_church_loyalty_modifier = -0.1
 	church_loyalty_modifier = -0.1
 	dhimmi_loyalty_modifier = 0.1
 }
@@ -1013,15 +1034,18 @@ emperor = {
 	prestige = 1
 }
 
-states_in_hre = {							#VU Additions - bonuses for each non-free city with capital in HRE.. as emperor
-	land_forcelimit	= 0.125					#VU adjusted VU's from 0.2
-	global_manpower = 0.125					#VU adjusted VU's from 0.2
+states_in_hre = {
+	#VU Additions - bonuses for each non-free city with capital in HRE.. as emperor
+	land_forcelimit = 0.125	#VU adjusted VU's from 0.2
+	global_manpower = 0.125	#VU adjusted VU's from 0.2
+	tax_income = 0.125	#Emperor needs some cash -Don
 }
 
-free_cities_in_hre = {						#VU Additions - bonuses for each free city in the HRE.. as emperor
-	global_tax_income = 2					#VU adjusted VU's from 5
-	global_manpower = 0.25					#VU adjusted VU's from 0.15
-	land_forcelimit	= 0.125					#VU adjusted VU's from 0.25
+free_cities_in_hre = {
+	#VU Additions - bonuses for each free city in the HRE.. as emperor
+	global_tax_income = 2	#VU adjusted VU's from 5
+	global_manpower = 0.25	#VU adjusted VU's from 0.15
+	land_forcelimit = 0.125	#VU adjusted VU's from 0.25
 }
 
 free_city_in_hre = {
@@ -1039,7 +1063,7 @@ occupied_imperial = {
 	legitimacy = -0.5
 }
 
-emperor_revoked_reform =  {
+emperor_revoked_reform = {
 	diplomatic_reputation = -3
 }
 
@@ -1099,6 +1123,8 @@ legitimacy = {
 	monthly_militarized_society = 0.05
 	max_absolutism = 20
 	nobles_loyalty_modifier = 0.1
+	monthly_cultural_unity = 0.2
+	monthly_divine_authority = 0.3
 	# GE:
 	monthly_italian_dinasties = 0.50
 }
@@ -1118,6 +1144,7 @@ devotion = {
 	harmonization_speed = 0.5
 	monthly_piety_accelerator = 0.01
 	yearly_authority = 0.5
+	monthly_divine_authority = 0.1
 	yearly_patriarch_authority = 0.01
 	yearly_doom_reduction = 0.5
 	yearly_karma_decay = 0.1
@@ -1168,58 +1195,57 @@ corruption = {
 	monthly_heir_claim_increase = 0.025
 	monthly_russian_modernization = -1
 	monthly_ottoman_decadence = 10
-	# GE:
+	monthly_arabic_trade_influence_power = -0.5
+	monthly_authority_power = 0.5
+	#GE
 	monthly_corruption_mechanic_power = 1
 	monthly_imperial_grace_power = -1
 }
 
 root_out_corruption = {
 	yearly_corruption = -1.0
-	# GE:
+	#GE
 	monthly_corruption_mechanic_power = -0.08
 }
 
 recovery_motivation = {
-	global_tax_modifier = 0.5
-	defensiveness = 0.25
-	manpower_recovery_speed = 0.5
-	army_tradition = 1
-	navy_tradition = 1
-	global_unrest = -5
-	interest = -1
-	horde_unity = 10
+	#Modus asked this to be Hashed -Don
+	#global_tax_modifier = 0.5
+	#defensiveness = 0.25
+	#manpower_recovery_speed = 0.5
+	#army_tradition = 1
+	#navy_tradition = 1
+	#global_unrest = -5
+	#interest = -1
+	#horde_unity = 10
 }
 
 luck = {
-	#core
-	global_missionary_strength = 0.01
-	stability_cost_modifier = -0.10
-	global_institution_spread = 0.1
-	monthly_splendor = 1
-
-	#economy
-	mercenary_cost = -0.2
-	embracement_cost = -0.2
-	interest = -1
-	missionary_maintenance_cost = -0.1
-
-	#military
-	manpower_recovery_speed = 0.25
-	defensiveness = 0.1
-	siege_ability = 0.05
-
-	#diplomacy
-	spy_offence = 0.1
-	improve_relation_modifier = 0.25
-
-	#government
-	global_unrest = -1
-	republican_tradition = 0.5
-	legitimacy = 1
-	ae_impact = -0.25
-	governing_capacity_modifier = 0.1		#added governing cap to help historically strong nations not release everything instantly -Lord_Bowser
-	governing_capacity = 150
-
+	#Modus asked this to be Hashed -Don
+	##core
+	#global_missionary_strength = 0.01
+	#stability_cost_modifier = -0.1
+	#global_institution_spread = 0.1
+	#monthly_splendor = 1
+	##economy
+	#mercenary_cost = -0.2
+	#embracement_cost = -0.2
+	#interest = -1
+	#missionary_maintenance_cost = -0.1
+	##military
+	#manpower_recovery_speed = 0.25
+	#defensiveness = 0.1
+	#siege_ability = 0.05
+	##diplomacy
+	#spy_offence = 0.1
+	#improve_relation_modifier = 0.25
+	##government
+	#global_unrest = -1
+	#republican_tradition = 0.5
+	#legitimacy = 1
+	#ae_impact = -0.25
+	#governing_capacity_modifier = 0.1	#added governing cap to help historically strong nations not release everything instantly -Lord_Bowser
+	#governing_capacity = 150
 }
 
 over_extension = {
@@ -1268,14 +1294,15 @@ prestige = {
 	eunuchs_loyalty_modifier = 0.05
 	qizilbash_loyalty_modifier = 0.05
 	ghulams_loyalty_modifier = 0.05
-	# GE:
+	monthly_divine_authority = 0.1
+	monthly_authority_power = -0.2
+	#GE
 	monthly_italian_dinasties = 0.25
 }
 
 no_debate_in_parliament = {
-	yearly_corruption = 0.1
-	global_unrest = 2						# people get mad when you ignore parliament, especially bc cities with seats get -2 unrest, so this balances it a bit
-											# also the corruption gives you back negative unrest, so don't worry :) - Lord_Bowser
+	yearly_corruption = 0.1 # also the corruption gives you back negative unrest, so don't worry :) - Lord_Bowser
+	global_unrest = 2		# people get mad when you ignore parliament, especially bc cities with seats get -2 unrest, so this balances it a bit						
 }
 
 
@@ -1287,11 +1314,13 @@ republican_tradition = {
 	burghers_loyalty_modifier = 0.05
 	vaisyas_loyalty_modifier = 0.05
 	monthly_liberalism = 0.4
+	monthly_authority_power = -0.05
 }
 
 inverse_republican_tradition = {
 	stability_cost_modifier = 1.5
 	rr_jacobins_influence = -0.1
+	monthly_authority_power = 0.25
 }
 
 ########################################
@@ -1324,6 +1353,7 @@ religious_unity = {
 	church_loyalty_modifier = 0.05
 	brahmins_hindu_loyalty_modifier = 0.05
 	yearly_harmony = 1
+	monthly_cultural_unity = 0.1
 }
 
 inverse_religious_unity = {
@@ -1416,6 +1446,17 @@ BYZ_discipline = {
 	discipline = 0.05
 }
 
+soyurghal_base_overlord_modifiers = {
+	land_forcelimit_modifier = 0.05
+	soyurghals_amount_check_influence = 1 #used for exporting, invisible by default
+}
+
+soyurghal_base_modifiers = { #slightly weaker pronoia but without penalties
+	global_manpower = 5
+	global_manpower_modifier = 0.25
+	global_regiment_cost = -0.25
+}
+
 tributary_state_behind_overlord_tech_adm = {
 	adm_tech_cost_modifier = -0.05
 }
@@ -1461,6 +1502,7 @@ in_golden_era = {
 	naval_morale = 0.1
 	max_absolutism = 5
 	max_revolutionary_zeal = 10
+	monthly_arabic_trade_influence_power = 0.25
 }
 
 absolutism = {
@@ -1487,7 +1529,7 @@ high_army_professionalism = {
 	discipline = 0.10			#VU AddOn added. The reasoning here should be obvious. Note I also cut 0.05 from absolutism and removed the damage bonuses, so this isn't that massive
 	#fire_damage = 0.1			#VU AddOn removed. Replaced by discipline.
 	#shock_damage = 0.1			#VU AddOn removed. Replaced by discipline.
-	#siege_ability = 0.2			#VU AddOn removed. Replaced by discipline, plus I'm getting closer with sieges reblancing in this addon, I don't really want (or think we need) another wild card.
+	siege_ability = 0.15			#VU AddOn removed. Replaced by discipline, plus I'm getting closer with sieges reblancing in this addon, I don't really want (or think we need) another wild card.
 	drill_decay_modifier = -0.5
 	allowed_samurai_fraction = 0.1
 }
@@ -1543,6 +1585,8 @@ power_projection = {
 	devotion = 0.5
 	horde_unity = 0.5
 	republican_tradition = 0.2
+	monthly_divine_authority = 0.05
+	monthly_authority_power = -0.1
 }
 
 power_projection_25 = {
@@ -1555,6 +1599,7 @@ land_forcelimit = {
 	num_of_pronoiars = 1
 }
 
+#100 Naval Forcelimit = 1
 ###############################################
 # By San Felipe - First Lord of the Admiralty #
 ###############################################
@@ -1567,6 +1612,7 @@ naval_forcelimit = {
 
 trade_company_strong = {
 	merchants = 1
+	monthly_arabic_trade_influence_power = 0.01
 }
 
 large_colonial_nation = {
@@ -1596,6 +1642,7 @@ private_enterprise_overlord = {
 	merchants = 2                           #VU OnlyKarlos addition and increased from 2 in 1.35
 	global_tariffs = -0.05         		    #VU OnlyKarlos addition
 	global_trade_power = 0.025      		#Added in VU and decreased from 0.05
+	global_tariffs = -0.05
 	naval_forcelimit = 1            		#Added in VU
 	land_forcelimit = 1             		#Added in VU
 }
@@ -1623,6 +1670,7 @@ crown_colony_subject = {
 private_enterprise_subject = {
 	merchants = 1							#VU Addition by OnlyKarlos - Private Enterprises are colonies that heavily focus on trade.
 	global_ship_trade_power = 0.25			#VU Addition by OnlyKarlos and increased from 0.2
+	global_trade_goods_size_modifier = 0.2
 	naval_tradition_from_trade = 0.1
 	ship_power_propagation = 0.1
 }
@@ -1664,7 +1712,9 @@ self_governing_dominion_vu_subject = {
 #}
 
 march_subject = {
-	land_forcelimit = 5		#VU AddOn changed from 1. Uses up an dip upkeep slot, so might as well be useful
+	land_forcelimit = 3		#VU AddOn changed from 1. Uses up an dip upkeep slot, so might as well be useful
+	naval_forcelimit = 3		#Added by Prussia to stop collapse of naval force limit when using march subjects
+	global_tax_modifier = 0.01	#Added by Prussia to stop total economic bleed when using march subjects
 }
 
 vassal_subject = {
@@ -1674,11 +1724,651 @@ vassal_subject = {
 daimyo_subject = {
 }
 
+daimyo_barony_subject = {
+}
+
+daimyo_viscounty_subject = {
+}
+
+daimyo_county_subject = {
+}
+
+daimyo_marquisate_subject = {
+}
+
+daimyo_duchy_subject = {
+}
+
+daimyo_principality_subject = {
+}
+
 appanage_subject = {
 }
 
 appanage_overlord = {
 	nobles_loyalty_modifier = 0.02
+}
+
+scottish_clan_subject = {
+}
+
+scottish_clan_overlord = {
+}
+
+#NEW ISLAMIC BONUSES by SF
+imamate_subject = {
+	land_forcelimit = -3
+}
+
+imamate_overlord = {
+	global_tax_modifier = 0.05
+}
+
+grand_muftate_subject = {
+	land_forcelimit = -3
+}
+
+grand_muftate_overlord = {
+	global_tax_modifier = 0.05
+}
+
+sheikdom_subject = {
+	land_forcelimit = -3
+}
+
+sheikdom_overlord = {
+	global_tax_modifier = 0.05
+}
+
+sharifate_subject = {
+	land_forcelimit = -1 
+}
+
+sharifate_overlord = {
+	global_tax_modifier = 0.04
+}
+
+emirate_subject = {
+	land_forcelimit = 5
+	naval_forcelimit = 5
+	global_tax_modifier = 0.01
+	nobles_loyalty_modifier = 0.03
+}
+
+emirate_bonus = {
+	global_manpower_modifier = 0.35
+	land_forcelimit_modifier = 0.40
+	naval_forcelimit_modifier = 0.40
+	defensiveness = 0.5
+	fort_maintenance_modifier = -0.20
+	manpower_recovery_speed = 0.30
+	land_maintenance_modifier = -0.25
+	naval_maintenance_modifier = -0.25
+}
+
+governate_subject = {
+	land_forcelimit = 5
+	naval_forcelimit = 5
+	global_tax_modifier = 0.01
+	nobles_loyalty_modifier = 0.03
+}
+
+governate_bonus = {
+	global_manpower_modifier = 0.35
+	land_forcelimit_modifier = 0.40
+	naval_forcelimit_modifier = 0.40
+	defensiveness = 0.5
+	fort_maintenance_modifier = -0.20
+	manpower_recovery_speed = 0.30
+	land_maintenance_modifier = -0.25
+	naval_maintenance_modifier = -0.25
+}
+
+sultanate_subject = {
+	land_forcelimit = 6
+	naval_forcelimit = 6
+	nobles_loyalty_modifier = 0.05
+}
+
+sultanate_bonus = {
+	global_manpower_modifier = 0.5
+	land_forcelimit_modifier = 0.50
+	naval_forcelimit_modifier = 0.50
+	defensiveness = 0.5
+	fort_maintenance_modifier = -0.30
+	manpower_recovery_speed = 0.40
+	land_maintenance_modifier = -0.3
+	naval_maintenance_modifier = -0.3
+}
+
+taifa_subject = {
+	land_forcelimit = 7
+	naval_forcelimit = 7
+	nobles_loyalty_modifier = 0.05
+}
+
+taifa_bonus = {
+	global_manpower_modifier = 0.5
+	land_forcelimit_modifier = 0.50
+	naval_forcelimit_modifier = 0.50
+	defensiveness = 0.5
+	fort_maintenance_modifier = -0.30
+	manpower_recovery_speed = 0.40
+	land_maintenance_modifier = -0.3
+	naval_maintenance_modifier = -0.3
+}
+
+malikate_subject = {
+	land_forcelimit = 8
+	naval_forcelimit = 8
+	nobles_loyalty_modifier = 0.05
+}
+
+malikate_bonus = {
+	global_manpower_modifier = 0.5
+	land_forcelimit_modifier = 0.50
+	naval_forcelimit_modifier = 0.50
+	defensiveness = 0.5
+	fort_maintenance_modifier = -0.30
+	manpower_recovery_speed = 0.40
+	land_maintenance_modifier = -0.3
+	naval_maintenance_modifier = -0.3
+}
+
+#NEW SUBJECT BONUSES by Prussia #
+lordship_subject = { #Added by Prussia
+	land_forcelimit = -3
+}
+
+lordship_overlord = { #Added by Prussia
+	global_tax_modifier = 0.05	#Added so that lower ranked subjects provide more tax than men when compared to higher ranked subs - Prussia
+}
+baronial_subject = { #Added by Prussia
+	land_forcelimit = -3
+}
+
+baronial_overlord = { #Added by Prussia
+	global_tax_modifier = 0.05	#Added so that lower ranked subjects provide more tax than men when compared to higher ranked subs - Prussia
+}
+
+earldom_subject = { #Added by Prussia
+	land_forcelimit = -1 
+}
+
+earldom_overlord = { #Added by Prussia
+	global_tax_modifier = 0.04	#Added so that lower ranked subjects provide more tax than men when compared to higher ranked subs - Prussia
+}
+
+viscounty_subject = { #Added by Prussia
+	land_forcelimit = 1 
+}
+
+viscounty_overlord = { #Added by Prussia
+	global_tax_modifier = 0.03	#Added so that lower ranked subjects provide more tax than men when compared to higher ranked subs - Prussia
+}
+
+european_abbacy_subject = { #Added by SF
+    land_forcelimit = 1
+	naval_forcelimit = 1
+	global_tax_modifier = 0.025
+}
+
+european_abbacy_overlord = { #Added by SF
+	land_forcelimit = 1
+	naval_forcelimit = 1
+	global_tax_modifier = 0.1
+    church_loyalty_modifier = 0.01
+}
+
+european_bishopric_subject = { #Added by Prussia
+    land_forcelimit = 1		#VU AddOn changed from 1. Uses up an dip upkeep slot, so might as well be useful
+	naval_forcelimit = 1		#Added by Prussia to stop collapse of naval force limit when using march subjects
+	global_tax_modifier = 0.05	#Added so that lower ranked subjects provide more tax than men when compared to higher ranked subs - Prussia
+}
+
+european_bishopric_overlord = { #Added by Prussia
+	land_forcelimit = 1		#VU AddOn changed from 1. Uses up an dip upkeep slot, so might as well be useful
+	naval_forcelimit = 1		#Added by Prussia to stop collapse of naval force limit when using march subjects
+	global_tax_modifier = 0.1	#Added so that lower ranked subjects provide more tax than men when compared to higher ranked subs - Prussia
+    church_loyalty_modifier = 0.015
+}
+
+european_archbishopric_subject = { #Added by Prussia
+    land_forcelimit = 3	        #VU AddOn changed from 1. Uses up an dip upkeep slot, so might as well be useful
+	naval_forcelimit = 3		#Added by Prussia to stop collapse of naval force limit when using march subjects
+	global_tax_modifier = 0.05	#Added so that lower ranked subjects provide more tax than men when compared to higher ranked subs - Prussia
+}
+
+european_archbishopric_overlord = { #Added by Prussia
+	land_forcelimit = 3	        #VU AddOn changed from 1. Uses up an dip upkeep slot, so might as well be useful
+	naval_forcelimit = 3		#Added by Prussia to stop collapse of naval force limit when using march subjects
+	global_tax_modifier = 0.1	#Added so that lower ranked subjects provide more tax than men when compared to higher ranked subs - Prussia
+    church_loyalty_modifier = 0.02
+}
+
+marquisate_subject = { #Added by Prussia
+	land_forcelimit = 3		#VU AddOn changed from 1. Uses up an dip upkeep slot, so might as well be useful
+	naval_forcelimit = 3		#Added by Prussia to stop collapse of naval force limit when using march subjects
+	global_tax_modifier = 0.02	#Added so that lower ranked subjects provide more tax than men when compared to higher ranked subs - Prussia
+    nobles_loyalty_modifier = 0.02
+}
+
+marquisate_bonus = {
+	global_manpower_modifier = 0.25
+	land_forcelimit_modifier = 0.30
+	naval_forcelimit_modifier = 0.30
+	defensiveness = 0.5			#VU AddOn changed from 0.2 - with all the new defensiveness in the addon, 20 just seemed lame. Just imagine a mountain terrain max fort capital of a march.... I can see the years passing already =p
+	fort_maintenance_modifier = -0.20
+	manpower_recovery_speed = 0.20
+	land_maintenance_modifier = -0.20
+	naval_maintenance_modifier = -0.20
+}
+
+duchy_subject = { #Edited by Prussia
+	land_forcelimit = 5		#VU AddOn changed from 1. Uses up an dip upkeep slot, so might as well be useful
+	naval_forcelimit = 5		#Added by Prussia to stop collapse of naval force limit when using march subjects
+	global_tax_modifier = 0.01	#Added by Prussia to stop total economic bleed when using march subjects
+	nobles_loyalty_modifier = 0.03
+}
+
+duchy_bonus = {
+	global_manpower_modifier = 0.35
+	land_forcelimit_modifier = 0.40
+	naval_forcelimit_modifier = 0.40
+	defensiveness = 0.5			#VU AddOn changed from 0.2 - with all the new defensiveness in the addon, 20 just seemed lame. Just imagine a mountain terrain max fort capital of a march.... I can see the years passing already =p
+	fort_maintenance_modifier = -0.20
+	manpower_recovery_speed = 0.30
+	land_maintenance_modifier = -0.25
+	naval_maintenance_modifier = -0.25
+}
+
+principality_subject = { #Edited by Prussia
+	land_forcelimit = 5		#VU AddOn changed from 1. Uses up an dip upkeep slot, so might as well be useful
+	naval_forcelimit = 5		#Added by Prussia to stop collapse of naval force limit when using march subjects
+	global_tax_modifier = 0.01	#Added by Prussia to stop total economic bleed when using march subjects
+	nobles_loyalty_modifier = 0.03
+}
+
+principality_bonus = {
+	global_manpower_modifier = 0.35
+	land_forcelimit_modifier = 0.40
+	naval_forcelimit_modifier = 0.40
+	defensiveness = 0.5			#VU AddOn changed from 0.2 - with all the new defensiveness in the addon, 20 just seemed lame. Just imagine a mountain terrain max fort capital of a march.... I can see the years passing already =p
+	fort_maintenance_modifier = -0.20
+	manpower_recovery_speed = 0.30
+	land_maintenance_modifier = -0.25
+	naval_maintenance_modifier = -0.25
+}
+
+kingdom_subject = { #Edited by Prussia
+	land_forcelimit = 10		#VU AddOn changed from 1. Uses up an dip upkeep slot, so might as well be useful
+	naval_forcelimit = 10		#Added by Prussia to stop collapse of naval force limit when using march subjects
+	nobles_loyalty_modifier = 0.05
+}
+
+kingdom_bonus = {
+	global_manpower_modifier = 0.5
+	land_forcelimit_modifier = 0.50
+	naval_forcelimit_modifier = 0.50
+	defensiveness = 0.5			#VU AddOn changed from 0.2 - with all the new defensiveness in the addon, 20 just seemed lame. Just imagine a mountain terrain max fort capital of a march.... I can see the years passing already =p
+	fort_maintenance_modifier = -0.30
+	manpower_recovery_speed = 0.40
+	land_maintenance_modifier = -0.3
+	naval_maintenance_modifier = -0.3
+}
+
+#ISSIAK
+issiak_bonus = {
+	global_manpower_modifier = 0.35
+	land_forcelimit_modifier = 0.40
+	naval_forcelimit_modifier = 0.40
+	defensiveness = 0.5			#VU AddOn changed from 0.2 - with all the new defensiveness in the addon, 20 just seemed lame. Just imagine a mountain terrain max fort capital of a march.... I can see the years passing already =p
+	fort_maintenance_modifier = -0.20
+	manpower_recovery_speed = 0.30
+	land_maintenance_modifier = -0.25
+	naval_maintenance_modifier = -0.25
+}
+
+#MONGOLIAN VASSAL
+mongolian_vassal_subject = { #Edited by Prussia
+	land_forcelimit = 5		#VU AddOn changed from 1. Uses up an dip upkeep slot, so might as well be useful
+	naval_forcelimit = 5		#Added by Prussia to stop collapse of naval force limit when using march subjects
+	global_tax_modifier = 0.01	#Added by Prussia to stop total economic bleed when using march subjects
+	nobles_loyalty_modifier = 0.03
+}
+
+mongolian_vassal_bonus = {
+	global_manpower_modifier = 0.35
+	land_forcelimit_modifier = 0.40
+	naval_forcelimit_modifier = 0.40
+	defensiveness = 0.5			#VU AddOn changed from 0.2 - with all the new defensiveness in the addon, 20 just seemed lame. Just imagine a mountain terrain max fort capital of a march.... I can see the years passing already =p
+	fort_maintenance_modifier = -0.20
+	manpower_recovery_speed = 0.30
+	land_maintenance_modifier = -0.25
+	naval_maintenance_modifier = -0.25
+}
+
+# ARAGONESE UNIONS #
+aragonese_crown_pu_subject = {
+	global_manpower_modifier = 0.25
+	land_forcelimit_modifier = 0.30
+	naval_forcelimit_modifier = 0.30
+	defensiveness = 0.5			#VU AddOn changed from 0.2 - with all the new defensiveness in the addon, 20 just seemed lame. Just imagine a mountain terrain max fort capital of a march.... I can see the years passing already =p
+	fort_maintenance_modifier = -0.20
+	manpower_recovery_speed = 0.20
+	land_maintenance_modifier = -0.20
+	naval_maintenance_modifier = -0.20
+}
+
+aragonese_crown_pu_bonus = {
+	land_forcelimit = 5		#VU AddOn changed from 1. Uses up an dip upkeep slot, so might as well be useful
+	naval_forcelimit = 5		#Added by Prussia to stop collapse of naval force limit when using march subjects
+	global_tax_modifier = 0.01	#Added so that lower ranked subjects provide more tax than men when compared to higher ranked subs - Prussia
+	nobles_loyalty_modifier = 0.01
+}
+
+# AUSTRIAN UNIONS #
+austrian_crown_pu_subject = {
+	global_manpower_modifier = 0.25
+	land_forcelimit_modifier = 0.30
+	naval_forcelimit_modifier = 0.30
+	defensiveness = 0.5			#VU AddOn changed from 0.2 - with all the new defensiveness in the addon, 20 just seemed lame. Just imagine a mountain terrain max fort capital of a march.... I can see the years passing already =p
+	fort_maintenance_modifier = -0.20
+	manpower_recovery_speed = 0.20
+	land_maintenance_modifier = -0.20
+	naval_maintenance_modifier = -0.20
+}
+
+austrian_crown_pu_bonus = {
+	land_forcelimit = 5		#VU AddOn changed from 1. Uses up an dip upkeep slot, so might as well be useful
+	naval_forcelimit = 5		#Added by Prussia to stop collapse of naval force limit when using march subjects
+	global_tax_modifier = 0.01	#Added so that lower ranked subjects provide more tax than men when compared to higher ranked subs - Prussia
+	nobles_loyalty_modifier = 0.01
+}
+
+# BENELUX UNIONS #
+benelux_crown_pu_subject = {
+	global_manpower_modifier = 0.25
+	land_forcelimit_modifier = 0.30
+	naval_forcelimit_modifier = 0.30
+	defensiveness = 0.5
+	fort_maintenance_modifier = -0.20
+	manpower_recovery_speed = 0.20
+	land_maintenance_modifier = -0.20
+	naval_maintenance_modifier = -0.20
+}
+
+benelux_crown_pu_bonus = {
+	land_forcelimit = 5
+	naval_forcelimit = 5
+	global_tax_modifier = 0.01
+	nobles_loyalty_modifier = 0.01
+}
+
+# BOHEMIAN UNIONS #
+bohemian_crown_pu_subject = {
+	global_manpower_modifier = 0.25
+	land_forcelimit_modifier = 0.30
+	naval_forcelimit_modifier = 0.30
+	defensiveness = 0.5
+	fort_maintenance_modifier = -0.20
+	manpower_recovery_speed = 0.20
+	land_maintenance_modifier = -0.20
+	naval_maintenance_modifier = -0.20
+}
+
+bohemian_crown_pu_bonus = {
+	land_forcelimit = 5
+	naval_forcelimit = 5
+	global_tax_modifier = 0.01
+	nobles_loyalty_modifier = 0.01
+}
+
+# BURGUNDIAN UNIONS #
+burgundian_crown_pu_subject = {
+	global_manpower_modifier = 0.25
+	land_forcelimit_modifier = 0.30
+	naval_forcelimit_modifier = 0.30
+	defensiveness = 0.5
+	fort_maintenance_modifier = -0.20
+	manpower_recovery_speed = 0.20
+	land_maintenance_modifier = -0.20
+	naval_maintenance_modifier = -0.20
+}
+
+burgundian_crown_pu_bonus = {
+	land_forcelimit = 5
+	naval_forcelimit = 5
+	global_tax_modifier = 0.01
+	nobles_loyalty_modifier = 0.01
+}
+
+# BYZANTINE UNIONS #
+byzantine_crown_pu_subject = {
+	global_manpower_modifier = 0.25
+	land_forcelimit_modifier = 0.30
+	naval_forcelimit_modifier = 0.30
+	defensiveness = 0.5
+	fort_maintenance_modifier = -0.20
+	manpower_recovery_speed = 0.20
+	land_maintenance_modifier = -0.20
+	naval_maintenance_modifier = -0.20
+}
+
+byzantine_crown_pu_bonus = {
+	land_forcelimit = 5
+	naval_forcelimit = 5
+	global_tax_modifier = 0.01
+	nobles_loyalty_modifier = 0.01
+}
+
+# DANISH UNIONS #
+danish_crown_pu_subject = {
+	global_manpower_modifier = 0.25
+	land_forcelimit_modifier = 0.30
+	naval_forcelimit_modifier = 0.30
+	defensiveness = 0.5
+	fort_maintenance_modifier = -0.20
+	manpower_recovery_speed = 0.20
+	land_maintenance_modifier = -0.20
+	naval_maintenance_modifier = -0.20
+}
+
+danish_crown_pu_bonus = {
+	land_forcelimit = 5
+	naval_forcelimit = 5
+	global_tax_modifier = 0.01
+	nobles_loyalty_modifier = 0.01
+}
+
+# ENGLISH UNIONS #
+english_crown_pu_subject = {
+	global_manpower_modifier = 0.25
+	land_forcelimit_modifier = 0.30
+	naval_forcelimit_modifier = 0.30
+	defensiveness = 0.5			#VU AddOn changed from 0.2 - with all the new defensiveness in the addon, 20 just seemed lame. Just imagine a mountain terrain max fort capital of a march.... I can see the years passing already =p
+	fort_maintenance_modifier = -0.20
+	manpower_recovery_speed = 0.20
+	land_maintenance_modifier = -0.20
+	naval_maintenance_modifier = -0.20
+}
+
+english_crown_pu_bonus = {
+	land_forcelimit = 5		#VU AddOn changed from 1. Uses up an dip upkeep slot, so might as well be useful
+	naval_forcelimit = 5		#Added by Prussia to stop collapse of naval force limit when using march subjects
+	global_tax_modifier = 0.01	#Added so that lower ranked subjects provide more tax than men when compared to higher ranked subs - Prussia
+	nobles_loyalty_modifier = 0.01
+}
+
+# FRENCH UNIONS #
+french_crown_pu_subject = {
+	global_manpower_modifier = 0.25
+	land_forcelimit_modifier = 0.30
+	naval_forcelimit_modifier = 0.30
+	defensiveness = 0.5
+	fort_maintenance_modifier = -0.20
+	manpower_recovery_speed = 0.20
+	land_maintenance_modifier = -0.20
+	naval_maintenance_modifier = -0.20
+}
+
+french_crown_pu_bonus = {
+	land_forcelimit = 5
+	naval_forcelimit = 5
+	global_tax_modifier = 0.01
+	nobles_loyalty_modifier = 0.01
+}
+
+# GERMAN UNIONS #
+german_crown_pu_subject = {
+	global_manpower_modifier = 0.25
+	land_forcelimit_modifier = 0.30
+	naval_forcelimit_modifier = 0.30
+	defensiveness = 0.5
+	fort_maintenance_modifier = -0.20
+	manpower_recovery_speed = 0.20
+	land_maintenance_modifier = -0.20
+	naval_maintenance_modifier = -0.20
+}
+
+german_crown_pu_bonus = {
+	land_forcelimit = 5
+	naval_forcelimit = 5
+	global_tax_modifier = 0.01
+	nobles_loyalty_modifier = 0.01
+}
+
+# HUNGARIAN UNIONS #
+hungarian_crown_pu_subject = {
+	global_manpower_modifier = 0.25
+	land_forcelimit_modifier = 0.30
+	naval_forcelimit_modifier = 0.30
+	defensiveness = 0.5
+	fort_maintenance_modifier = -0.20
+	manpower_recovery_speed = 0.20
+	land_maintenance_modifier = -0.20
+	naval_maintenance_modifier = -0.20
+}
+
+hungarian_crown_pu_bonus = {
+	land_forcelimit = 5
+	naval_forcelimit = 5
+	global_tax_modifier = 0.01
+	nobles_loyalty_modifier = 0.01
+}
+
+# ITALIAN UNIONS #
+italian_crown_pu_subject = {
+	global_manpower_modifier = 0.25
+	land_forcelimit_modifier = 0.30
+	naval_forcelimit_modifier = 0.30
+	defensiveness = 0.5
+	fort_maintenance_modifier = -0.20
+	manpower_recovery_speed = 0.20
+	land_maintenance_modifier = -0.20
+	naval_maintenance_modifier = -0.20
+}
+
+italian_crown_pu_bonus = {
+	land_forcelimit = 5
+	naval_forcelimit = 5
+	global_tax_modifier = 0.01
+	nobles_loyalty_modifier = 0.01
+}
+
+# POLISH UNIONS #
+polish_crown_pu_subject = {
+	global_manpower_modifier = 0.25
+	land_forcelimit_modifier = 0.30
+	naval_forcelimit_modifier = 0.30
+	defensiveness = 0.5
+	fort_maintenance_modifier = -0.20
+	manpower_recovery_speed = 0.20
+	land_maintenance_modifier = -0.20
+	naval_maintenance_modifier = -0.20
+}
+
+polish_crown_pu_bonus = {
+	land_forcelimit = 5
+	naval_forcelimit = 5
+	global_tax_modifier = 0.01
+	nobles_loyalty_modifier = 0.01
+}
+
+# PORTUGUESE CROWN UNIONS #
+portuguese_crown_pu_subject = {
+	global_manpower_modifier = 0.25
+	land_forcelimit_modifier = 0.30
+	naval_forcelimit_modifier = 0.30
+	defensiveness = 0.5			#VU AddOn changed from 0.2 - with all the new defensiveness in the addon, 20 just seemed lame. Just imagine a mountain terrain max fort capital of a march.... I can see the years passing already =p
+	fort_maintenance_modifier = -0.20
+	manpower_recovery_speed = 0.20
+	land_maintenance_modifier = -0.20
+	naval_maintenance_modifier = -0.20
+}
+
+portuguese_crown_pu_bonus = {
+	land_forcelimit = 5		#VU AddOn changed from 1. Uses up an dip upkeep slot, so might as well be useful
+	naval_forcelimit = 5		#Added by Prussia to stop collapse of naval force limit when using march subjects
+	global_tax_modifier = 0.01	#Added so that lower ranked subjects provide more tax than men when compared to higher ranked subs - Prussia
+	nobles_loyalty_modifier = 0.01
+}
+
+# RUSSIAN UNIONS #
+russian_crown_pu_subject = {
+	global_manpower_modifier = 0.25
+	land_forcelimit_modifier = 0.30
+	naval_forcelimit_modifier = 0.30
+	defensiveness = 0.5
+	fort_maintenance_modifier = -0.20
+	manpower_recovery_speed = 0.20
+	land_maintenance_modifier = -0.20
+	naval_maintenance_modifier = -0.20
+}
+
+russian_crown_pu_bonus = {
+	land_forcelimit = 5
+	naval_forcelimit = 5
+	global_tax_modifier = 0.01
+	nobles_loyalty_modifier = 0.01
+}
+
+# SPANISH CROWN UNIONS #
+spanish_crown_pu_subject = {
+	global_manpower_modifier = 0.25
+	land_forcelimit_modifier = 0.30
+	naval_forcelimit_modifier = 0.30
+	defensiveness = 0.5			#VU AddOn changed from 0.2 - with all the new defensiveness in the addon, 20 just seemed lame. Just imagine a mountain terrain max fort capital of a march.... I can see the years passing already =p
+	fort_maintenance_modifier = -0.20
+	manpower_recovery_speed = 0.20
+	land_maintenance_modifier = -0.20
+	naval_maintenance_modifier = -0.20
+}
+
+spanish_crown_pu_bonus = {
+	land_forcelimit = 5		#VU AddOn changed from 1. Uses up an dip upkeep slot, so might as well be useful
+	naval_forcelimit = 5		#Added by Prussia to stop collapse of naval force limit when using march subjects
+	global_tax_modifier = 0.01	#Added so that lower ranked subjects provide more tax than men when compared to higher ranked subs - Prussia
+	nobles_loyalty_modifier = 0.01
+}
+
+# SWEDISH CROWN UNIONS #
+swedish_crown_pu_subject = {
+	global_manpower_modifier = 0.25
+	land_forcelimit_modifier = 0.30
+	naval_forcelimit_modifier = 0.30
+	defensiveness = 0.5			#VU AddOn changed from 0.2 - with all the new defensiveness in the addon, 20 just seemed lame. Just imagine a mountain terrain max fort capital of a march.... I can see the years passing already =p
+	fort_maintenance_modifier = -0.20
+	manpower_recovery_speed = 0.20
+	land_maintenance_modifier = -0.20
+	naval_maintenance_modifier = -0.20
+}
+
+swedish_crown_pu_bonus = {
+	land_forcelimit = 5		#VU AddOn changed from 1. Uses up an dip upkeep slot, so might as well be useful
+	naval_forcelimit = 5		#Added by Prussia to stop collapse of naval force limit when using march subjects
+	global_tax_modifier = 0.01	#Added so that lower ranked subjects provide more tax than men when compared to higher ranked subs - Prussia
+	nobles_loyalty_modifier = 0.01
 }
 
 union_subject = {
@@ -1731,6 +2421,7 @@ eyalet_modifier = {
 #scales to amount of up-to-date forts compared to total development
 maintained_forts = {
 	army_tradition = 1
+	nobles_loyalty_modifier_forts = 0.1 
 	fort_bonus_check_influence = 1
 }
 
@@ -1775,7 +2466,6 @@ autonomy_increased = {
 
 autonomy_decreased = {
 	local_unrest = 10
-
 	picture="autonomy_decreased"
 }
 
@@ -1809,6 +2499,7 @@ recruitment_sabotaged = {
 
 merchants_slandered = {
 	global_trade_power = -0.1
+	monthly_arabic_trade_influence_power = -0.1
 }
 
 discontent_sowed = {
@@ -1834,6 +2525,7 @@ scaled_trade_league_leader = { #scaled by number of members
 	global_sailors = 1000
 	land_forcelimit = 1
 	global_manpower = 1
+	monthly_authority_power = -0.01
 }
 
 in_trade_league = {
@@ -2193,7 +2885,9 @@ regiment_drill_modifier = { # Used by individual regiments
 }
 
 army_drill_modifier = { # Used by an entire army, is the average of all subunits drill
-	movement_speed = 0.2
+	movement_speed = 0.15
+	drill_decay_modifier = -0.25
+	reserves_organisation = 0.15
 }
 
 janissary_regiment = {
@@ -2290,6 +2984,7 @@ voc_indiamen_ship = {
 	can_transport_units = yes
 }
 
+
 cossacks_regiment = {
     shock_damage = 0.15
 }
@@ -2359,7 +3054,8 @@ over_governing_capacity_modifier = {
 	monthly_prussian_militarized_society_3 = -1
 	administrative_efficiency = -0.5
 	monthly_ottoman_decadence = 2
-	# GE:
+	monthly_authority_power = 0.5
+	#GE
 	monthly_imperial_grace_power = -1
 }
 
@@ -2414,9 +3110,11 @@ guru_teaching = {
 }
 
 diplomatic_reputation = {
+	num_of_soyurghals = 0.5
 }
 
 tolerance_own = {
+	monthly_divine_authority = 0.03
 }
 
 tolerance_heretic = {
@@ -2431,6 +3129,8 @@ num_accepted_cultures = {
 ruler_adm = {
 	monthly_council_consensus = 0.1
 	monthly_egyptian_westernization = 0.05
+	monthly_divine_authority = 0.01
+
 	# GE:
 	monthly_bureaucracy_vs_military_power = -0.05
 	monthly_political_focus_power = 0.084
@@ -2441,6 +3141,8 @@ ruler_adm = {
 ruler_dip = {
 	monthly_council_consensus = 0.1
 	monthly_egyptian_westernization = 0.05
+	monthly_arabic_trade_influence_power = 0.05
+	monthly_divine_authority = 0.01
 	# GE:
 	monthly_political_focus_power = 0.084
 }
@@ -2448,6 +3150,7 @@ ruler_dip = {
 ruler_mil = {
 	monthly_council_consensus = 0.1
 	monthly_egyptian_westernization = 0.05
+	monthly_divine_authority = 0.01
 	# GE:
 	monthly_bureaucracy_vs_military_power = 0.05
 	monthly_political_focus_power = 0.084
@@ -2530,11 +3233,12 @@ average_subject_liberty_desire = { #100% LD => 100% modifier
 }
 
 reverse_average_subject_liberty_desire = { #100% LD => 0% modifier
-
+	MAY_conditional_loyalty = 0.1
 }
 
 average_global_autonomy = { #100% autonomy => 100% modifier
 	monthly_ottoman_decadence = 0.25
+	monthly_divine_authority = -0.5
 }
 
 reverse_average_global_autonomy = { #100% autonomy => 0% modifier
@@ -2592,6 +3296,11 @@ reverse_sailors_percentage = {
 
 }
 
+may_dynastic_influence_modifier = {
+	legitimacy = 0.25 
+	land_forcelimit = 3
+}
+
 ################################
 # GE Additions by Jay Double U #
 ################################
@@ -2611,5 +3320,4 @@ null_modifier = {
 # Handicap Modifiers for human player
 ##########################################################################
 rajput_regiment = {
-	
 }

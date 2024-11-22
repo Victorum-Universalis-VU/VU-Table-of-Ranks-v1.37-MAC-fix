@@ -2,6 +2,7 @@
 
 owner = BSM
 controller = BSM
+add_core = BSM
 culture = tripolitanian
 religion = sunni
 capital = "Sirte"			#Ben Jawad in vanilla, but Sirte is more recognisable. As far as I can tell, there weren't really any settlements or centers here until the late Ottoman era, and this was really just bandit country preying on the North African trade caravans.
@@ -11,16 +12,12 @@ base_tax = 2
 base_production = 1 
 base_manpower = 1 
 is_city = yes
-add_core = BSM
+
+#Claimants
+add_core = R4S
 add_core = TRP
 
-
-
-
-
-
-
-
+#Histories by SF
 1444.11.16 = { #VictorumUniversalis batch edit shortcut no vassal start date begin
 	owner = ---
 	controller = ---

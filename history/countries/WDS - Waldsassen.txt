@@ -1,6 +1,6 @@
 government = theocracy
-add_government_reform = theocratic_government
-government_rank = 1
+add_government_reform = church_of_germany_abbacy_reform
+government_rank = 1 #Abbacy
 primary_culture = franconian
 religion = catholic
 #technology_group = western

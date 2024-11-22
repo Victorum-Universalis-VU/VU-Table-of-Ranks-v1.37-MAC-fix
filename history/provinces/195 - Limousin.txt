@@ -17,15 +17,11 @@ center_of_trade = 1
 
 #Claimants
 add_core = GUY
+add_core = LMG #Prussia
 
 #Special Modifiers
 
 #Known by Technology groups
-
-
-
-
-
 
 #Histories
 1215.6.15 = { owner = ENG controller = ENG add_core = ENG } # Part of English Duchy of Aquitaine - By San Felipe

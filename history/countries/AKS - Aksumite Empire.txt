@@ -1,6 +1,6 @@
 government = monarchy
 add_government_reform = feudal_monarchy
-government_rank = 3
+government_rank = 9 #Empire
 primary_culture = tigray
 religion = coptic
 technology_group = east_african

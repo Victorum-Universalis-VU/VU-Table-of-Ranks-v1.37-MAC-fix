@@ -1,3 +1,4 @@
+#VU updated to 1.37 by San Felipe 
 country_decisions = {
 	
 	BYZ_justinians_empire_decision = {
@@ -427,9 +428,7 @@ country_decisions = {
 				limit = {
 					exists = TUR
 				}
-				BYZ = {
-					has_won_war_against = { who = TUR }
-				}
+				has_won_war_against = { who = TUR }
 			}
 			num_of_owned_provinces_with = {
 				religion = orthodox

@@ -5,7 +5,7 @@ add_government_power = {
 	power_type = italian_dinasties
 	value = 15
 }
-government_rank = 1
+government_rank = 6 #Duchy
 primary_culture = romagnan
 religion = catholic
 #technology_group = western

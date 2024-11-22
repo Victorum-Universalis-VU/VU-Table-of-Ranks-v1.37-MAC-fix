@@ -1755,6 +1755,24 @@ BRA_missions_6 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			hamburg_area = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+						is_core = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			lauenburg_area = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+						is_core = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
 			6819 = {
 				if = {
 					limit = {
@@ -3707,6 +3725,7 @@ PRU_missions_4 = {
 					area = romandie_area
 					area = carinthia_area
 					area = switzerland_area
+					area = liechtenstein_area
 				}
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
@@ -3728,6 +3747,7 @@ PRU_missions_4 = {
 						area = romandie_area
 						area = carinthia_area
 						area = switzerland_area
+						area = liechtenstein_area
 					}
 				}
 				value = 90
@@ -3991,9 +4011,16 @@ PRU_missions_4 = {
 					duration = -1
 				}
 			}
-			custom_tooltip = " "
 			if = {
-				limit = { has_dlc = "Domination" }
+				limit = { 
+					has_dlc = "Domination" 
+					OR = {
+						tag = PRU
+						tag = GER 
+						has_country_flag = access_to_prussian_militarization_flag #For the modders
+					}
+					has_reform = prussian_monarchy
+				}
 				custom_tooltip = pru_access_advanced_militarization_tt
 				clr_country_flag = enable_second_mil_level_flag
 				set_country_flag = enable_third_mil_level_flag
@@ -4922,6 +4949,13 @@ PRU_missions_6 = {
 				add_permanent_claim = ROOT
 			}
 			hesse_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			frankfurt_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }

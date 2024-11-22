@@ -1,6 +1,6 @@
 government = theocracy
 add_government_reform = papacy_reform
-government_rank = 2
+government_rank = 8 #Papacy
 primary_culture = umbrian
 add_accepted_culture = aquitaine
 add_accepted_culture = neapolitan
@@ -8,8 +8,8 @@ religion = catholic
 #technology_group = western
 technology_group = italian_tech_group
 unit_type = western
-capital = 118	# Roma
-fixed_capital = 118  # Cannot move capital away from this province & no power cost to move to it
+capital = 118 #Roma
+fixed_capital = 118 #Cannot move capital away from this province & no power cost to move to it
 add_army_professionalism = 0.05
 
 historical_friend = SNM
@@ -18,10 +18,12 @@ change_estate_land_share = {
 	estate = estate_church
 	share = -30
 }
+
 change_estate_land_share = {
 	estate = estate_burghers
 	share = 5
 }
+
 change_estate_land_share = {
 	estate = estate_nobles
 	share = 5
@@ -82,6 +84,10 @@ change_estate_land_share = {
 		dip = 1
 		mil = 2
 	}
+}
+
+1439.10.27 = {
+    historical_rival = BOH
 }
 
 1447.2.23 = {

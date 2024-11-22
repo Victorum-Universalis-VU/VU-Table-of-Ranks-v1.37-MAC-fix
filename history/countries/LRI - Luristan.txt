@@ -1,6 +1,6 @@
 government = tribal
-add_government_reform = tribal_kingdom
-government_rank = 1
+add_government_reform = islamic_taifa_reform
+government_rank = 7 #Taifa
 primary_culture = luri
 religion = sunni
 technology_group = persian_tech_group

@@ -1,6 +1,7 @@
+#YUA - Yuan
 government = monarchy
 add_government_reform = celestial_empire
-government_rank = 3
+government_rank = 9 #Empire
 technology_group = nomad_group
 religion = confucianism
 primary_culture = altaic_new

@@ -2,6 +2,7 @@
 
 owner = OMA
 controller = OMA
+add_core = OMA
 culture = omani_culture
 religion = ibadi
 capital = "Hayma"			
@@ -11,21 +12,9 @@ base_tax = 1
 base_production = 1
 base_manpower = 1
 is_city = yes
-add_core = OMA
 fort_15th = yes
 
+#Claimants
+add_core = R4S
 
-
-
-
-
-
-
-
-
-
-
-
-#Interior largely avoids Portuguese influence, remains more or less independent througout the period, as far as I can tell. Might make it a protectorate, vassal, or new tributary at some point, but no history changes
-
-
+#Histories by SF

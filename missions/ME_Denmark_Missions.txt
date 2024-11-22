@@ -83,6 +83,14 @@ DAN_missions_1 = {
 					}
 					add_claim = ROOT
 				}
+				gotland_area = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_claim = ROOT
+				}
 				vastra_gotaland_area = {
 					limit = {
 						NOT = { owned_by = ROOT }
@@ -106,6 +114,7 @@ DAN_missions_1 = {
 				area = svealand_area
 				area = norrland_area
 				area = gotaland_area
+				area = gotland_area
 				area = vastra_gotaland_area
 			}
 			NOT = { owned_by = ROOT }
@@ -120,6 +129,10 @@ DAN_missions_1 = {
 				owned_by = ROOT
 			}
 			gotaland_area = {
+				type = all
+				owned_by = ROOT
+			}
+			gotland_area = {
 				type = all
 				owned_by = ROOT
 			}
@@ -1059,6 +1072,13 @@ DAN_missions_3 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			riga_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 			curonia_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
@@ -1075,12 +1095,17 @@ DAN_missions_3 = {
 		provinces_to_highlight = {
 			OR = {
 				area = livonia_area
+				area = riga_area
 				area = curonia_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
 			livonia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			riga_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}

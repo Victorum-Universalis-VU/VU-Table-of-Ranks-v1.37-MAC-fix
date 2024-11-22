@@ -620,10 +620,10 @@ NOR_mission_group_3 = {
 		effect = {
 			if = {
 				limit = {
-					NOT = { government_rank = 3 }
+					NOT = { government_rank = 9 }
 					is_part_of_hre = no
 				}
-				set_government_rank = 3
+				set_government_rank = 9
 			}
 			add_country_modifier = {
 				name = "norwegian_north_sea_empire_modifier"
@@ -1220,7 +1220,7 @@ NOR_mission_group_5 = {
 			}
 		}
 		effect = {
-			183 = {				# Champagne
+			183 = {	# Champagne
 				add_trade_modifier = {
 					who = ROOT
 					duration = 7300
@@ -1253,7 +1253,7 @@ NOR_mission_group_5 = {
 			}
 		}
 		effect = {
-			172 = {				# Bordeaux
+			172 = {	# Bordeaux
 				add_trade_modifier = {
 					who = ROOT
 					duration = 7300
@@ -1261,7 +1261,7 @@ NOR_mission_group_5 = {
 					key = norway_bordeaux_ambition
 				}
 			}
-			183 = {				# Champagne
+			183 = {	# Champagne
 				add_trade_modifier = {
 					who = ROOT
 					duration = 7300

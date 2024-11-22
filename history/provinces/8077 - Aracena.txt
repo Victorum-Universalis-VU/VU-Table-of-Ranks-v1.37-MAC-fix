@@ -15,7 +15,6 @@ is_city = yes
 hre = no
 
 #Claimants
-add_core = SVL
 
 #Buildings
 
@@ -23,12 +22,7 @@ add_core = SVL
 
 #Known by Technology groups
 
-
-
-
-
-
 #Histories
 1215.6.15 = { owner = AMD controller = AMD add_core = AMD } # Alhomad territorial lands - By San Felipe
 
-1444.11.11 = { owner = CAS controller = CAS add_core = CAS } # Castilian territorial lands - By San Felipe
+1444.11.11 = { owner = SVL controller = SVL add_core = SVL } # Castilian territorial lands - By San Felipe

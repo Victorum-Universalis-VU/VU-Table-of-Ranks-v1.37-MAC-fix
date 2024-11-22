@@ -1,22 +1,21 @@
-#VU updated by San Felipe for 1.35
+#Updated by SF for VU v1.37*
 #Pre 1444 Techs added by Quonton
 monarch_power = ADM
-
 # applied when a country is ahead of time in this technology
 ahead_of_time = {
 	production_efficiency = 0.1
 	yearly_corruption = -0.05
 	monthly_russian_modernization = 0.05
+	ahead_of_time_benefit_adm = 1
 }
 
 # Pre-era techs
-technology = { #Tribal Government
+technology = {
+	#Tribal Government
 	# Tech 0
 	year = 1150
-
 	tribal_despotism_legacy = yes
 	tribal_federation_legacy = yes
-
 	native_earthwork = yes
 	native_palisade = yes
 	native_fortified_house = yes
@@ -27,33 +26,31 @@ technology = { #Tribal Government
 	native_sweat_lodge = yes
 	native_great_trail = yes
 	native_ceremonial_fire_pit = yes
-
 	aqueduct = yes
 	cesspit = yes
 	hall = yes
 	well = yes
-
 	#effect = { } # When a country researches the technology
 }
 
-technology = { #Advanced Tribes
+technology = {
+	#Advanced Tribes
 	# Tech 1
 	year = 1190
 	expects_institution = {
 		feudalism = 0.25
 	}
-	
 	tribal_democracy_legacy = yes
 	tribal_kingdom_legacy = yes
 }
 
-technology = { #Feudal Monarchy
+technology = {
+	#Feudal Monarchy
 	# Tech 2
 	year = 1196
 	expects_institution = {
 		feudalism = 0.5
 	}
-
 	#Monarchies
 	despotic_monarchy = yes
 	feudal_monarchy = yes
@@ -61,56 +58,53 @@ technology = { #Feudal Monarchy
 }
 
 # The 30 big techs from here on
-
-technology = { #Medieval Administration  
+technology = {
+	#Medieval Administration  
 	# Tech 3
 	year = 1214
 	expects_institution = {
 		feudalism = 0.5
 	}
-
 	production_efficiency = 0.005
 	may_support_rebels = yes
-	# abyssian007 edit make the road available at a tech level
+	allowed_idea_groups = 1
 }
 
-technology = { #Royal Charters
+technology = {
+	#Royal Charters
 	# Tech 4
 	year = 1232
 	expects_institution = {
 		feudalism = 0.5
 		gunpowder_warfare = 0.05
 	}
-
-	production_efficiency = 0.005	
+	production_efficiency = 0.005
 }
 
-technology = { #Centralisation Attempts
+technology = {
+	#Centralisation Attempts
 	# Tech 5
 	year = 1245
 	expects_institution = {
 		feudalism = 0.5
 		gunpowder_warfare = 0.05
 	}
-
 	administrative_efficiency = 0.005
 }
 
-
-
-technology = { #Parlament and Republican Regimes
+technology = {
+	#Parlament and Republican Regimes
 	# Tech 6
 	year = 1258
 	expects_institution = {
 		feudalism = 0.5
 		gunpowder_warfare = 0.05
 	}
-
 	production_efficiency = 0.005
 }
 
-
-technology = { #Agriculture
+technology = {
+	#Agriculture
 	# Tech 7  
 	year = 1271
 	expects_institution = {
@@ -118,13 +112,13 @@ technology = { #Agriculture
 		gunpowder_warfare = 0.05
 		medicine = 0.05
 	}
-
 	production_efficiency = 0.005
 	administrative_efficiency = 0.005
+	allowed_idea_groups = 2
 }
 
-
-technology = { #Legal Systems
+technology = {
+	#Legal Systems
 	# Tech 8
 	year = 1284
 	expects_institution = {
@@ -132,12 +126,11 @@ technology = { #Legal Systems
 		gunpowder_warfare = 0.05
 		medicine = 0.05
 	}
-	allowed_idea_groups = 1
 	administrative_efficiency = 0.005
 }
 
-
-technology = {  #Religion
+technology = {
+	#Religion
 	#Tech 9
 	year = 1297
 	expects_institution = {
@@ -146,13 +139,12 @@ technology = {  #Religion
 		medicine = 0.05
 		civil_service = 0.05
 	}
-
 	administrative_efficiency = 0.005
 	bath_house = yes
 }
 
-
-technology = { #Bureaucracy 
+technology = {
+	#Bureaucracy 
 	#Tech 10
 	year = 1310
 	expects_institution = {
@@ -162,12 +154,11 @@ technology = { #Bureaucracy
 		civil_service = 0.1		#having this is rather important for this tech
 		market_production = 0.1
 	}
-
 	governing_capacity = 100
 }
 
-
-technology = {  #New Governments
+technology = {
+	#New Governments
 	# Tech 11
 	year = 1323
 	#THIS IS COPY PASTE NEEDS WORK
@@ -178,11 +169,12 @@ technology = {  #New Governments
 		civil_service = 0.15
 		market_production = 0.1
 	}
-
 	administrative_efficiency = 0.005
+	allowed_idea_groups = 3
 }
 
-technology = {  # Civil Service 
+technology = {
+	# Civil Service 
 	# Tech 12
 	year = 1336
 	expects_institution = {
@@ -192,11 +184,11 @@ technology = {  # Civil Service
 		civil_service = 0.25
 		market_production = 0.2
 	}
-
 	production_efficiency = 0.01
 }
 
-technology = { # Constable
+technology = {
+	# Constable
 	# Tech 13
 	year = 1349
 	expects_institution = {
@@ -206,11 +198,11 @@ technology = { # Constable
 		civil_service = 0.4
 		market_production = 0.35
 	}
-
 	governing_capacity = 100
 }
 
-technology = {  # Organized Courts
+technology = {
+	# Organized Courts
 	# Tech 14
 	year = 1362
 	expects_institution = {
@@ -220,12 +212,12 @@ technology = {  # Organized Courts
 		civil_service = 0.5
 		market_production = 0.4
 	}
-
 	administrative_efficiency = 0.005
 	library = yes
 }
 
-technology = {  # Early Machinery
+technology = {
+	# Early Machinery
 	# Tech 15
 	year = 1375
 	expects_institution = {
@@ -235,11 +227,12 @@ technology = {  # Early Machinery
 		civil_service = 0.4
 		market_production = 0.5
 	}
-
 	production_efficiency = 0.01
+	allowed_idea_groups = 4
 }
 
-technology = {  # Royal Officials
+technology = {
+	# Royal Officials
 	# Tech 16
 	year = 1388
 	expects_institution = {
@@ -249,11 +242,11 @@ technology = {  # Royal Officials
 		civil_service = 0.5
 		market_production = 0.4
 	}
-
 	custom_house = yes
 }
 
-technology = {  # Late Feudalism
+technology = {
+	# Late Feudalism
 	# Tech 17
 	year = 1401
 	expects_institution = {
@@ -263,13 +256,12 @@ technology = {  # Late Feudalism
 		civil_service = 0.5
 		market_production = 0.5
 	}
-
-	allowed_idea_groups = 2
 	production_efficiency = 0.01
 	administrative_efficiency = 0.005
 }
 
-technology = {  # Better Tax Collection
+technology = {
+	# Better Tax Collection
 	# Tech 18
 	year = 1414
 	expects_institution = {
@@ -279,11 +271,12 @@ technology = {  # Better Tax Collection
 		civil_service = 0.5
 		market_production = 0.5
 	}
-
 	administrative_efficiency = 0.005
+	allowed_idea_groups = 5
 }
 
-technology = {  # Council of Constance
+technology = {
+	# Council of Constance
 	# Tech 19
 	year = 1427
 	expects_institution = {
@@ -293,11 +286,11 @@ technology = {  # Council of Constance
 		civil_service = 0.5
 		market_production = 0.5
 	}
-
-	administrative_efficiency = 0.005	
+	administrative_efficiency = 0.005
 }
 
-technology = {  #Husite Wars
+technology = {
+	#Husite Wars
 	# Tech 20
 	year = 1440
 	expects_institution = {
@@ -307,13 +300,12 @@ technology = {  #Husite Wars
 		civil_service = 0.5
 		market_production = 0.5
 	}
-
 	administrative_efficiency = 0.005
 }
 
 #End of pre-1444 techs
-
-technology = { #Temples
+technology = {
+	#Temples
 	# Tech 21
 	year = 1453
 	expects_institution = {
@@ -323,13 +315,13 @@ technology = { #Temples
 		civil_service = 0.4
 		market_production = 0.5
 	}
-
 	# Temple Building
 	temple = yes
-
+	allowed_idea_groups = 6
 }
 
-technology = { #National Ideas
+technology = {
+	#National Ideas
 	# Tech 22
 	year = 1466
 	expects_institution = {
@@ -340,12 +332,11 @@ technology = { #National Ideas
 		civil_service = 0.5
 		market_production = 0.5
 	}
-
-	allowed_idea_groups = 3
-	production_efficiency =	0.03
+	production_efficiency = 0.03
 }
 
-technology = { #Workshop
+technology = {
+	#Workshop
 	# Tech 23
 	year = 1479
 	expects_institution = {
@@ -356,14 +347,15 @@ technology = { #Workshop
 		civil_service = 0.4
 		market_production = 0.5		#Very important for this tech
 	}
-
 	#Workshop
 	farm_estate = yes
 	workshop = yes
 	ramparts = yes
+	allowed_idea_groups = 7
 }
 
-technology = { #Renaissance Thought
+technology = {
+	#Renaissance Thought
 	# Tech 24
 	year = 1492
 	expects_institution = {
@@ -374,14 +366,13 @@ technology = { #Renaissance Thought
 		market_production = 0.5
 		renaissance = 0.5
 	}
-	
 	#Noble Republic
-	allowed_idea_groups = 4
 	#Sculpture Workshop TGE Manufactory
 	sculpture_workshop = yes
 }
 
-technology = { #Courthouse
+technology = {
+	#Courthouse
 	# Tech 25
 	year = 1505
 	expects_institution = {
@@ -392,14 +383,14 @@ technology = { #Courthouse
 		market_production = 0.5
 		renaissance = 0.5
 	}
-
-	governing_capacity = 200   #Dev doubled but cap gains not?
 	#Courthouse Building
 	courthouse = yes
-
+	governing_capacity = 200	#Dev doubled but cap gains not?
+	allowed_idea_groups = 8
 }
 
-technology = { #The Scythe
+technology = {
+	#The Scythe
 	# Tech 26
 	year = 1518
 	expects_institution = {
@@ -411,17 +402,14 @@ technology = { #The Scythe
 		renaissance = 0.5
 		new_world_i = 0.15
 	}
-	
 	#The Scythe
-	production_efficiency =	0.02
-
-
+	production_efficiency = 0.02
 }
 
-technology = { #Modern Theocracy
+technology = {
+	#Modern Theocracy
 	# Tech 27
 	year = 1531
-	allowed_idea_groups = 5
 	expects_institution = {
 		feudalism = 0.5
 		gunpowder_warfare = 0.4
@@ -431,15 +419,15 @@ technology = { #Modern Theocracy
 		renaissance = 0.5
 		new_world_i = 0.3
 	}
-	
 	theocratic_government = yes
-	
 	#Woodworking Workshop TGE Manufactory
 	wood_workshop = yes
 	school = yes
+	allowed_idea_groups = 9
 }
 
-technology = { #Textile Manufactory
+technology = {
+	#Textile Manufactory
 	# Tech 28
 	year = 1544
 	expects_institution = {
@@ -451,13 +439,12 @@ technology = { #Textile Manufactory
 		renaissance = 0.5
 		new_world_i = 0.5
 	}
-	
 	#Textile Manufactory
 	textile = yes
-
 }
 
-technology = { #Early Modern Administration
+technology = {
+	#Early Modern Administration
 	# Tech 29
 	year = 1557
 	expects_institution = {
@@ -469,17 +456,17 @@ technology = { #Early Modern Administration
 		renaissance = 0.5
 		new_world_i = 0.5
 	}
-	
-	administrative_monarchy	= yes
-	administrative_republic	= yes
+	administrative_monarchy = yes
+	administrative_republic = yes
 	governing_capacity = 250	#Dev doubled but cap gains not?
 	state_house = yes
-	
 	#Counting House Building
 	counting_house = yes
+	allowed_idea_groups = 10
 }
 
-technology = { #Improved Drainage
+technology = {
+	#Improved Drainage
 	# Tech 30
 	year = 1570
 	expects_institution = {
@@ -492,12 +479,12 @@ technology = { #Improved Drainage
 		new_world_i = 0.5
 		printing_press = 0.15
 	}
-	
 	#Improved Drainage
 	production_efficiency = 0.03
 }
 
-technology = { #Scientific Experimentation
+technology = {
+	#Scientific Experimentation
 	# Tech 31
 	year = 1583
 	expects_institution = {
@@ -510,15 +497,14 @@ technology = { #Scientific Experimentation
 		new_world_i = 0.5
 		printing_press = 0.3
 	}
-	
 	plantations = yes
-	allowed_idea_groups	= 6
-	
 	#Leather Workshop TGE Manufactory
 	leather_workshop = yes
+	allowed_idea_groups = 11
 }
 
-technology = { #Military Administration
+technology = {
+	#Military Administration
 	# Tech 32
 	year = 1596
 	expects_institution = {
@@ -531,12 +517,12 @@ technology = { #Military Administration
 		new_world_i = 0.5
 		printing_press = 0.5
 	}
-	
 	may_force_march = yes
 	soldier_households = yes
 }
 
-technology = { #Metallurgy
+technology = {
+	#Metallurgy
 	# Tech 33
 	year = 1609
 	expects_institution = {
@@ -549,14 +535,13 @@ technology = { #Metallurgy
 		new_world_i = 0.5
 		printing_press = 0.5
 	}
-	
 	mills = yes
-	production_efficiency =	0.035
-
-
+	production_efficiency = 0.035
+	allowed_idea_groups = 12
 }
 
-technology = { #University
+technology = {
+	#University
 	# Tech 34
 	year = 1622
 	expects_institution = {
@@ -570,17 +555,15 @@ technology = { #University
 		printing_press = 0.5
 		global_trade = 0.15
 	}
-
 	governing_capacity = 250	#Dev doubled but cap gains not?
-
 	administrative_efficiency = 0.15
 	development_cost_modifier = -0.15
-	
 	#University Building
 	university = yes
 }
 
-technology = { #National Sovereignty
+technology = {
+	#National Sovereignty
 	# Tech 35 
 	year = 1635
 	expects_institution = {
@@ -594,11 +577,11 @@ technology = { #National Sovereignty
 		printing_press = 0.5
 		global_trade = 0.3
 	}
-	
-	allowed_idea_groups	= 7
+	allowed_idea_groups = 13
 }
 
-technology = { #Cathedral
+technology = {
+	#Cathedral
 	# Tech 36
 	year = 1648
 	expects_institution = {
@@ -612,12 +595,12 @@ technology = { #Cathedral
 		printing_press = 0.5
 		global_trade = 0.5
 	}
-	
 	#Cathedral
 	cathedral = yes
 }
 
-technology = { #Absolute Rulership
+technology = {
+	#Absolute Rulership
 	# Tech 37
 	year = 1661
 	expects_institution = {
@@ -631,12 +614,13 @@ technology = { #Absolute Rulership
 		printing_press = 0.5
 		global_trade = 0.5
 	}
-	
 	republican_dictatorship = yes
 	governing_capacity = 400	#Dev doubled but cap gains not?
+	allowed_idea_groups = 14
 }
 
-technology = { #Land Clearance
+technology = {
+	#Land Clearance
 	# Tech 38
 	year = 1674
 	expects_institution = {
@@ -651,12 +635,12 @@ technology = { #Land Clearance
 		global_trade = 0.5
 		manufactories = 0.15
 	}
-	
 	#Land Clearance
-	production_efficiency =	0.04
+	production_efficiency = 0.04
 }
 
-technology = { #The Constitution
+technology = {
+	#The Constitution
 	# Tech 39
 	year = 1687
 	expects_institution = {
@@ -670,17 +654,16 @@ technology = { #The Constitution
 		global_trade = 0.5
 		manufactories = 0.3
 	}
-	
-	allowed_idea_groups = 8
 	constitutional_monarchy = yes
 	constitutional_republic = yes
-
 	#Town Hall Building
 	town_hall = yes
 	stamp_office = yes
+	allowed_idea_groups = 15
 }
 
-technology = { #Measuring the World
+technology = {
+	#Measuring the World
 	# Tech 40
 	year = 1700
 	expects_institution = {
@@ -695,11 +678,11 @@ technology = { #Measuring the World
 		global_trade = 0.5
 		manufactories = 0.5
 	}
-	
 	administrative_efficiency = 0.15
 }
 
-technology = { #Bonds and Tontines
+technology = {
+	#Bonds and Tontines
 	# Tech 41
 	year = 1713
 	expects_institution = {
@@ -714,20 +697,18 @@ technology = { #Bonds and Tontines
 		manufactories = 0.5
 		enlightenment = 0.15
 	}
-	
 	governing_capacity = 500	#Dev doubled but cap gains not?
-	
 	#Treasury Building
 	treasury = yes
-	
 	#Steam Engine Assembly Line TGE Manufactory
 	steam_engine_manu = yes
+	allowed_idea_groups = 16
 }
 
-technology = { #Improved Production
+technology = {
+	#Improved Production
 	# Tech 42
 	year = 1726
-
 	#Newcomen Engine
 	expects_institution = {
 		feudalism = 0.5
@@ -742,16 +723,15 @@ technology = { #Improved Production
 		manufactories = 0.5
 		enlightenment = 0.3
 	}
-	
 	#Improved Farm Animals
-	production_efficiency =	0.045
-    furnace = yes
+	production_efficiency = 0.045
+	furnace = yes
 }
 
-technology = { #Separation of Powers
+technology = {
+	#Separation of Powers
 	# Tech 43
 	year = 1739
-
 	#Separation of Powers
 	expects_institution = {
 		feudalism = 0.5
@@ -766,11 +746,11 @@ technology = { #Separation of Powers
 		manufactories = 0.5
 		enlightenment = 0.5
 	}
-	
-	allowed_idea_groups = 9
+	allowed_idea_groups = 17
 }
 
-technology = { #Modern Bureaucracy
+technology = {
+	#Modern Bureaucracy
 	# Tech 44
 	year = 1752
 	expects_institution = {
@@ -791,10 +771,10 @@ technology = { #Modern Bureaucracy
 	city_hall = yes
 }
 
-technology = { #Rotherham Plough
+technology = {
+	#Rotherham Plough
 	# Tech 45
 	year = 1765
-
 	#Modern Bureaucracy
 	expects_institution = {
 		feudalism = 0.5
@@ -809,16 +789,17 @@ technology = { #Rotherham Plough
 		enlightenment = 0.5
 		industrialization = 0.25
 	}
-	
 	#Rotherham Plough
-	production_efficiency =	0.050
+	production_efficiency = 0.05
 	administrative_efficiency = 0.15
-	development_cost_modifier = -0.20
+	development_cost_modifier = -0.2
 	governing_capacity = 500	#Dev doubled but cap gains not?
 	excise_office = yes
+	allowed_idea_groups = 18
 }
 
-technology = { #Rights of Man
+technology = {
+	#Rights of Man
 	# Tech 46
 	year = 1778
 	expects_institution = {
@@ -835,23 +816,21 @@ technology = { #Rights of Man
 		enlightenment = 1
 		industrialization = 0.5
 	}
-
 	#Watt Steam Engine
-	production_efficiency =	0.055
-	
+	production_efficiency = 0.055
 	#Grand Cathedral Building
 	grand_cathedral = yes
 	supreme_court = yes
 }
 
-technology = { #Advanced Production
+technology = {
+	#Advanced Production
 	# Tech 47
 	year = 1791
-
 	#Improved Draft Animals
-    #Advanced Production
-    #Interchangeable Parts
-	production_efficiency =	0.060
+	#Advanced Production
+	#Interchangeable Parts
+	production_efficiency = 0.06
 	expects_institution = {
 		feudalism = 0.5
 		gunpowder_warfare = 0.5
@@ -866,11 +845,12 @@ technology = { #Advanced Production
 		enlightenment = 0.5
 		industrialization = 1
 	}
-
 	distillery = yes
+	allowed_idea_groups = 19
 }
 
-technology = { #Revolutionary Ideals
+technology = {
+	#Revolutionary Ideals
 	# Tech 48
 	year = 1804
 	expects_institution = {
@@ -887,14 +867,13 @@ technology = { #Revolutionary Ideals
 		enlightenment = 1
 		industrialization = 1
 	}
-	
 	#Rights of Man
-	allowed_idea_groups = 10
 	enlightened_despotism = yes
 	bureaucratic_despotism = yes
 }
 
-technology = { #Factories
+technology = {
+	#Factories
 	# Tech 49
 	year = 1817
 	expects_institution = {
@@ -912,16 +891,15 @@ technology = { #Factories
 		industrialization = 1
 		imperialism = 0.5
 	}
-
 	#Factory Building
 	factory = yes
 	cannery_workshop = yes
 	penitentiary = yes
-	
 	#Revolutionary Ideals
 	revolutionary_republic = yes
 	revolutionary_empire = yes
 	governing_capacity = 750	#Dev doubled but cap gains not?
+	allowed_idea_groups = 20
 }
 
 technology = {
@@ -942,9 +920,8 @@ technology = {
 		industrialization = 1
 		imperialism = 1
 	}
-	
 	#Four field rotation
-	production_efficiency 	=	0.065
+	production_efficiency = 0.065
 }
 
 technology = {
@@ -966,9 +943,9 @@ technology = {
 		imperialism = 1
 	}
 	production_efficiency = 0.07
-	
 	#Railway System Building
 	railway_system = yes
+	allowed_idea_groups = 21
 }
 
 technology = {
@@ -989,12 +966,9 @@ technology = {
 		industrialization = 1
 		imperialism = 1
 	}
-
 	#Secularism
 	administrative_efficiency = 0.2
 	governing_capacity = 750	#Dev doubled but cap gains not?
-	allowed_idea_groups = 11
-
 	sewer_system = yes
 }
 
@@ -1017,13 +991,12 @@ technology = {
 		imperialism = 1
 		nationalism_institution = 0.5
 	}
-
 	#Universal Suffrage
 	governing_capacity = 1000	#Dev doubled but cap gains not?
 	#parliamentary_monarchy = yes
 	#parliamentary_democracy = yes
-
 	latrines = yes
+	allowed_idea_groups = 22
 }
 
 technology = {
@@ -1045,10 +1018,8 @@ technology = {
 		imperialism = 1
 		nationalism_institution = 0.75
 	}
-
 	#Repleceable Parts
-	production_efficiency =	0.075
-
+	production_efficiency = 0.075
 	pump_house = yes
 }
 
@@ -1071,10 +1042,9 @@ technology = {
 		imperialism = 1
 		nationalism_institution = 1
 	}
-
 	#Assembly Line
-	production_efficiency =	0.08
-
+	production_efficiency = 0.08
+	allowed_idea_groups = 23
 }
 
 technology = {
@@ -1096,10 +1066,8 @@ technology = {
 		imperialism = 1
 		nationalism_institution = 1.25
 	}
-
 	#Progressivism
 	governing_capacity = 1250	#Dev doubled but cap gains not?
-	allowed_idea_groups = 12
 }
 
 technology = {
@@ -1121,8 +1089,8 @@ technology = {
 		imperialism = 1
 		nationalism_institution = 1.5
 	}
-
 	#Electrification
-	production_efficiency =	0.085
+	production_efficiency = 0.085
 	development_cost_modifier = -0.25
+	allowed_idea_groups = 24
 }

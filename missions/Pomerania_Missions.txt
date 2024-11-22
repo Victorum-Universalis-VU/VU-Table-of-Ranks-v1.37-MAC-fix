@@ -643,6 +643,24 @@ pom_2 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			hamburg_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+						is_permanent_claim = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			lauenburg_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+						is_permanent_claim = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 	}
 	
@@ -653,6 +671,8 @@ pom_2 = {
 			OR = {
 				area = lower_saxony_area
 				area = holstein_area
+				area = hamburg_area
+				area = lauenburg_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
@@ -661,6 +681,8 @@ pom_2 = {
 				OR = {
 					area = lower_saxony_area
 					area = holstein_area
+					area = hamburg_area
+					area = lauenburg_area
 				}
 				value = 4
 			}
@@ -718,6 +740,15 @@ pom_2 = {
 				add_claim = ROOT
 			}
 			gotaland_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+						is_claim = ROOT
+					}
+				}
+				add_claim = ROOT
+			}
+			gotland_area = {
 				limit = {
 					NOT = {
 						is_core = ROOT

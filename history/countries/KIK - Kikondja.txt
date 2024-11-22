@@ -1,5 +1,6 @@
 government = tribal
 add_government_reform = tribal_kingdom
+government_rank = 6 #Petty_Kingdom
 primary_culture = luba
 religion = shamanism
 technology_group = central_african
@@ -18,7 +19,7 @@ capital = 4098 # Upemba
 		dip = 3
 		mil = 3
 	}
-} #All fictional
+}
 
 1490.1.1 = {
 	monarch = {

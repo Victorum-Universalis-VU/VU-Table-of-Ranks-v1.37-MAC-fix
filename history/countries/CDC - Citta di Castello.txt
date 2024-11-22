@@ -1,6 +1,6 @@
 government = republic
 add_government_reform = signoria_reform
-government_rank = 1
+government_rank = 6 #Republic
 #technology_group = western
 technology_group = italian_tech_group
 unit_type = western
@@ -15,7 +15,7 @@ fixed_capital = 7035
 
 #History, currently empty.
 
-1483.11.30  = {
+1483.11.30 = {
 	monarch = {
 		name = "Niccolò I"		#He was not really the ruler of the city because he struggled to impose his power but he was the leader of the most influent family, and his son will later be the legitimate ruler.
 		dynasty = "Vitelli"

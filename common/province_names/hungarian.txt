@@ -10,7 +10,7 @@
 129 = "Krajna"
 130 = "Isztria"
 131 = "Zágráb"
-132 = "Stájerföld"
+132 = { "Judenburg" "Judenburg" }
 134 = "Bécs"
 137 = "Raguza"
 140 = "Ráma"

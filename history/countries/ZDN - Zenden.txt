@@ -1,14 +1,13 @@
 government = theocracy
-add_government_reform = leading_clergy_reform
-government_rank = 1
-mercantilism = 25
+add_government_reform = church_of_switzerland_bishopric_reform
+government_rank = 3 #Bishopric
 #technology_group = western
 technology_group = swiss_tech_group
 unit_type = western
 religion = catholic
 primary_culture = swiss
 add_accepted_culture = arpitan
-capital = 1871	# Valais
+capital = 1871 #Sion
 fixed_capital = 1871 # Cannot move capital away from this province & no power cost to move to it
 
 #Prince-bishops of Sion

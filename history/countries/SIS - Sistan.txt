@@ -1,8 +1,8 @@
 government = monarchy
-add_government_reform = iqta
+add_government_reform = islamic_governate_reform
+government_rank = 5 #Governate
 primary_culture = khorasani
 religion = sunni
-government_rank = 1
 #technology_group = muslim
 technology_group = persian_tech_group
 unit_type = muslim

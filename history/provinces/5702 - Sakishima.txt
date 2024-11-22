@@ -2,7 +2,7 @@
 
 owner = RYU
 controller = RYU
-culture = vu_ryukyuan #Was really Ryukuan
+culture = vu_ryukyuan
 religion = animism
 capital = "Sakishima"
 trade_goods = fish

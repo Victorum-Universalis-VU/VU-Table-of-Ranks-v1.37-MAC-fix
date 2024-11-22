@@ -1,4 +1,4 @@
-#Country Name: Please see filename.
+#FRA - France
 
 graphical_culture = westerngfx
 
@@ -12,13 +12,6 @@ historical_score = 6700
 
 historical_idea_groups = {
 	economic_ideas
-	offensive_ideas
-	exploration_ideas
-	defensive_ideas	
-	administrative_ideas	
-	maritime_ideas
-	quality_ideas
-	innovativeness_ideas
 }
 
 historical_units = {
@@ -99,7 +92,7 @@ monarch_names = {
 }
 
 leader_names = {
-	d'Ambleteuse d'Aulnay
+	"d'Ambleteuse" "d'Albret" "d'Aulnay"
 	"de Beauharnais" "de Bercy" "de Béthune" "de Boissieu" "de Bonnefoy" "de Bonneuil" "du Bosquet" "de la Bretonnière" "de Broglie"
 	"de Castaing" "de Caumartin" "de Chambly" "de Chambronne" "de Champmartin" "de Chevigny" "des Coulons" "de Crèvecœur" "de Crussol"
 	"de Dampierre" Desgouttes Duquesne
@@ -110,7 +103,7 @@ leader_names = {
 	"de La Barthe" "de La Ferrandie" "de La Galissonière" "de La Mothe" "de La Motte d'Airan" "de La Porte" "Le Tellier" "de Lhéry" "de Luynes"
 	"de Marguerye" "de Maurepas"
 	"de Neufchâtel"
-	"d'Ornano"
+	"d'Orleans" "d'Ornano"
 	"de Pellefort"
 	"de Richemont" "de Rochechouart" "de Rochemaure" "de Rieu"
 	"de Saint-Chamond" "de Saint-Esprit" "de Saint-Germain" "de Saint-Omer" "de Siorac"
@@ -156,12 +149,20 @@ ship_names = {
 }
 
 army_names = {
-	"Armée royale" "Armée des Flandres" "Armée du Nord" "Armée de l'Est" "Armée du Jura" "Armée du Lyonnais" "Armée des Alpes"
-	"Armée du Midi" "Armée des Pyrénées" "Armée de l'Atlantique" "Armée de Bretagne" "Armée d'Italie" "Armée de $PROVINCE$"
+	"Armée royale" "Armée des Flandres" "Armée du Nord" "Armée del'Est" "Armée du Jura" "Armée du Lyonnais" "Armée des Alpes" "Armée du Midi" "Armée des Pyrénées" "Armée de l'Atlantique" "Armée de Bretagne" "Armée d'Italie" "Armée intérieure" 
+	"Armée d'Écosse" "Armée d'Irlande" "Armée d'Autriche" "Armée de Bohême" "Armée de Moravie" "Armée de Hongrie" "Armée de Silésie" "Armée de Transylvanie" "Armée d'Albanie" "Armée de Grèce" "Armée de Croatie" "Armée de Pologne" "Armée de la côte dalmate" 
+	"Armée de Bavière" "Armée de Thuringe" "Armée de Franconie" "Armée de Souabe" "Armée du Rhin" "Armée Westphalienne" "Armée Saxonne" "Armée de Brandebourg" "Armée de Poméranie" "Armée du Schleswig-Holstein" "Armée de Basse-Saxe" "Armée du Danemark" 
+	"Armée de Suède" "Armée de la mer Baltique" "Armée de Finlande" "Armée de Slovaquie" "Armée de Norvège" "Armée des Pays-Bas" "Armée de Suisse" "Armée du Tyrol" "Armée de Styrie" "Armée de Lorraine" "Armée de France" "Armée de Bourgogne" 
+	"Armée de Provence" "Armée de Naples" "Armée de Bulgarie" "Armée d'Ibérie" "Armée de Catalogne" "Armée du Portugal" "Armée de Macédoine" "Armée de Prusse orientale" "Armée d'Anatolie" "Armée de Mésopotamie" "Armée de Syrie" "Armée de Palestine" 
+	"Armée d'Arabie" "Armée de Perse" "Armée du Caucase" "Armée de l'Inde du Nord" "Armée de l'Inde Centrale" "Armée de l'Inde occidentale" "Armée de l'Inde del'Est" "Armée de Birmanie" "Armée d'Indochine" "Armée de Chine" "Armée d'Egypte" "Armée de Libye" 
+	"Armée d'Afrique du Nord" "Armée d'Afrique de l'Est" "Armée d'Afrique de l'Ouest" "Armée d'Afrique du Sud" "Armée d'Australie" "Armée des Indes orientales" "Garnison du Pacifique" "Armée du Japon" "Armée de Sibérie" "Armée d'Asie Centrale" 
+	"Armée de l'Himalaya" "Armée du Cameroun" "Armée du Tanganyika" "Armée du Groenland" "Armée d'Islande" "Armée d'Amérique du Nord" "Armée des Caraïbes" "Armée du Venezuela" "Arméed'Amérique Centrale" "Armée du Brésil" "Armée du Pérou" "Armée de Colombie" 
+	"Armée de Papouasie-Nouvelle-Guinée" "Armée de Bolivie" "Armée du Chili" "Armée d'Argentine" "Armée d'Afghanistan" "Armée de Cuba" "Armée de l'Indus" "Armée de Malaisie" "Armée des Philippines" "Armée de Nouvelle-Zélande" "Armée de Bosnie" 
+	"Armée des Balkans" "Armée d'Ukraine" "Armée de $PROVINCE$"
 }
 
 fleet_names = {
-	"Escadre de la Manche" "Escadre de l'Atlantique" "Escadre de Méditerranée" "Escadre de Gascogne" "Escadre Bleue" "Escadre Rouge" "Escadre Blanche"
+	"Marine Royale" "Escadre de la Manche" "Escadre de l'Atlantique" "Escadre de Méditerranée" "Escadre de Gascogne" "Escadre Bleue" "Escadre Rouge" "Escadre Blanche" "Escadron de la mer du Nord" "Flotte de la mer du Nord" "Flotte de Canaux" 
+	"Flotte de la Baltique" "Flotte du Pacifique" "Flotte des Indes Orientales" "Flotte intérieure" "Flotte de la Méditerranée" "Flotte de Réserve" "Flotte de l'Est" "Grande Flotte" "Flotte d'Extrême-Orient" "Première flotte" "Deuxième flotte" 
+	"Troisième flotte" "Flotte Occidentale" "Flotte des Caraïbes"
 }
-
-

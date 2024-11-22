@@ -229,7 +229,7 @@
  tooltip_any_friendly_coast_border_province_has_embraced_globalism_same_religion:0 "Nearby Friendly Province of the same religion has §YGlobalism§!"
  tooltip_any_friendly_coast_border_province_has_embraced_globalism_diff_religion:0 "Nearby Friendly Province of a different religion has §YGlobalism§!"
 
- tooltip_governement_rank_3:0 "Owner has government rank §YEmpire§!"
+ tooltip_governement_rank_7:0 "Owner has government rank §YEmpire§!"
  desc_birthplace_of_the_renaissance:0 "This province was a major center of the Renaissance and still benefits from the developments that brought."
  
  birthplace_of_the_new_world:0 "Major Colonial Port"

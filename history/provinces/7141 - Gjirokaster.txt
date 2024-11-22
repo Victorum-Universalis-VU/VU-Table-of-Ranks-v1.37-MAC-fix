@@ -25,14 +25,6 @@ add_local_autonomy = 10
 
 #Known by Technology groups
 
-
-
-
-
-
-
-
-
 #Histories by SF
 1215.6.15 = { owner = EPI controller = EPI add_core = EPI } # Epirian territorial lands - By San Felipe
 1444.11.11 = { owner = TUR controller = TUR add_core = TUR } # Turkish territorial lands - By San Felipe
@@ -69,7 +61,7 @@ add_local_autonomy = 10
 	controller = GRE
 	remove_core = EPI
 } #Annexed by Greece
-1915.10.21 = { controller = AHE } #WW1
+1915.10.21 = { controller = AUH }
 1916.11.15 = {
 	owner = ITA
 	controller = ITA

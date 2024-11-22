@@ -2,6 +2,7 @@
 
 owner = TIM
 controller = TIM
+add_core = TIM
 culture = hazara
 religion = sunni
 capital = "Ahangaran"
@@ -11,14 +12,10 @@ base_tax = 4
 base_production = 4
 base_manpower = 8
 is_city = yes
-add_core = TIM
+
+#Claimants
 add_core = AFG
-
-
-
-
-
-
+add_core = GHU
 
 1449.2.1 = { #Conquered by Babur bin Baysunkur
 	owner = KHO

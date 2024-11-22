@@ -1366,7 +1366,7 @@ country_event = {
 		modifier = {
 			factor = 1.25
 			NOT = {
-				government_rank = 2
+				government_rank = 8
 			}
 		}
 		modifier = {

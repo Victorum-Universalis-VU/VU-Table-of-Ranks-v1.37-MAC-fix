@@ -803,13 +803,13 @@ country_event = {
 		name = ME_United_Kingdoms_Events.12.a
 		if = {
 		    limit = {
-			    tag = CTT
+			    tag = CAT #Changed from CTT
 			}
 		    catalonia_area = {
-		    	add_core = CTT
+		    	add_core = CAT #Changed from CTT
 		    }
-		    release = CTT
-		    create_march = CTT
+		    release = CAT #Changed from CTT
+		    create_march = CAT #Changed from CTT
 		    change_government = monarchy
 		    set_legacy_government = feudal_monarchy
 		    add_government_reform = feudalism_reform

@@ -7,6 +7,7 @@
 112 = "Veneza"
 116 = "Florença"
 121 = "Nápoles"
+132 = { "Judenburg" "Judenburg" }
 134 = "Viena"
 165 = "Berna"
 174 = "Bordéus"
@@ -354,6 +355,7 @@
 
 #Europe
 8063 = { "Olivença" "Olivença" }
+8090 = { "Viana" "Barcelos" }
 8101 = { "Elvas" "Elvas" }
 8102 = { "Estremoz" "Estremoz" }
 8104 = { "Moura" "Moura" }

@@ -6,6 +6,7 @@ ahead_of_time = {
 	trade_efficiency = 0.2
 	monthly_russian_modernization = 0.05
 	yearly_corruption = -0.05
+	ahead_of_time_benefit_dip = 1
 }
 
 # Pre-era techs
@@ -14,7 +15,7 @@ technology = { #Early Ships
 	year = 1150
 	
 	naval_morale = 2.0
-	range = 60
+	range = 20
 	may_fabricate_claims = yes
 
 	enable = war_canoe
@@ -49,6 +50,7 @@ technology = { #Merchants & Trade
 	trade_range	= 50
 	global_colonial_growth = 10
 
+	cinema = yes
 
 }
 
@@ -77,6 +79,7 @@ technology = { #The Knarr
 	enable = galley
 	
 	naval_engagement_width = 20
+	
 	potters = yes
 }
 
@@ -292,7 +295,7 @@ technology = {  # Value of Diplomacy
 	}
 
 	naval_morale = 0.5
-	range = 50
+	range = 20
 }
 
 technology = {  # Winds of Renaissance
@@ -307,7 +310,7 @@ technology = {  # Winds of Renaissance
 	}
 
 	global_colonial_growth = 5
-	range = 50
+	range = 20
 }
 
 #End of pre-1444 techs
@@ -325,7 +328,7 @@ technology = { #The Early Carrack
 
 	naval_morale = 0.1
 	naval_maintenance = 0.1
-	range = 100
+	range = 40
 	trade_efficiency = 0.01
 	global_colonial_growth = 15
 	may_build_flagships = yes
@@ -407,9 +410,11 @@ technology = { #Naval Ambitions
 	}
 	
 	naval_morale = 0.3
-	range = 115
+	range = 100
 	impressment_offices = yes
 	naval_engagement_width = 10
+	
+	theatrics = yes
 }
 
 technology = { #Docks
@@ -494,7 +499,7 @@ technology = { #Wharf
 		new_world_i = 0.5
 	}
 	
-	range = 100
+	range = 50
 
 	wharf = yes
 	
@@ -568,8 +573,6 @@ technology = { #The Galleass
 	
 	tradecompany = yes
 	num_accepted_cultures = 1
-
-	theatrics = yes
 	
 	enable = galleass
 }
@@ -1182,7 +1185,6 @@ technology = {
 	trade_range = 20
 	range = 100
 
-	cinema = yes
 	radio_station = yes
 }
 

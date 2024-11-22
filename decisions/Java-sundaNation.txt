@@ -13,7 +13,10 @@ country_decisions = {
 				primary_culture = sundanese 
 				primary_culture = javanese 
 			}
-			NOT = { has_reform = steppe_horde }
+			NOT = { 
+				has_reform = steppe_horde
+				has_reform = scythian_horde_reform
+			}
 		}
 		provinces_to_highlight = {
 			region = indonesia_region
@@ -49,9 +52,9 @@ country_decisions = {
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
 				limit = {
-					NOT = { government_rank = 2 }
+					NOT = { government_rank = 8 }
 				}
-				set_government_rank = 2
+				set_government_rank = 8
 			}
 			indonesia_region = {
 				limit = {

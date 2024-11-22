@@ -107,7 +107,7 @@ USA_missions_1 = {
 				}
 				OR = {
 					AND = {
-						government_rank = 3
+						government_rank = 9
 						OR = {
 							culture_group = apachean
 							culture_group = muskogean
@@ -241,19 +241,19 @@ USA_missions_2 = {
 		}
 		effect = {
 			define_advisor = {
-				type = usa_secretary_of_the_treasury
+				type = treasurer
 				skill = 3
 				name = "Alexander Hamilton"
 				cost_multiplier = 0.75
 			}
 			define_advisor = {
-				type = usa_head_diplomat
+				type = diplomat
 				skill = 3
 				name = "Benjamin Franklin"
 				cost_multiplier = 0.75
 			}
 			define_advisor = {
-				type = usa_secretary_of_war
+				type = commander
 				skill = 3
 				name = "Henry Knox"
 				cost_multiplier = 0.75
@@ -1207,7 +1207,11 @@ USA_missions_4 = {
 		required_missions = { USA_missions_proper_nation }
 		position = 5
 		trigger = {
-			white_house_building = 1
+			953 = {
+				has_great_project = {
+			    	type = white_house
+			    }
+			}
 		}
 		effect = {
 			add_prestige = 10

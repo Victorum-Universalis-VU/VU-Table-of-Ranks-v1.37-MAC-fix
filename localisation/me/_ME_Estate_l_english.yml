@@ -28,9 +28,12 @@
  ME_enable_estate_burghers_arid_development_tt: "Unlocks the '§YAdaptation to Arid Climate§!' privilege, making it available regardless of our §YCapital§! Location."
  ME_estate_church_tariqa_tt: "Getting at least §Y50 Piety§! towards §YMysticism§! will also give us:\n    Morale Damage: §G+10.0%§!"
 
- ME_estate_burghers_steppe_development: "Steppe Development"
- ME_estate_burghers_steppe_development_desc: ""
  ME_estate_church_ADU_invite_sufi_orders: "Invite Sufi Orders"
  ME_estate_church_ADU_invite_sufi_orders_desc: ""
- 
+ ME_estate_nomadic_tribes_unify_tribe: "Unify Tribe"
+ ME_estate_nomadic_tribes_unify_tribe_desc: ""
+ ME_estate_nomadic_tribes_destruction_of_the_lands: "Destruction of Lands"
+ ME_estate_nomadic_tribes_destruction_of_the_lands_desc: ""
+ ME_estate_nomadic_tribes_raise_warband: "Tribes Raise Warband"
+ ME_estate_nomadic_tribes_raise_warband_desc: "" 
  

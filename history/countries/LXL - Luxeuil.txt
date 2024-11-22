@@ -1,6 +1,6 @@
 government = theocracy
-add_government_reform = leading_clergy_reform
-government_rank = 1
+add_government_reform = church_of_france_abbacy_reform
+government_rank = 1 #Abbacy
 primary_culture = burgundian
 religion = catholic
 #technology_group = western

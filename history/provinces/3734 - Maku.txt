@@ -2,6 +2,7 @@
 
 owner = ART
 controller = ART		#Armenian state of Artez, ruled by armenian Amatuni family
+add_core = ART
 culture = armenian		#Armenians and some Jalai tribes. But really just tribes.
 religion = miaphysite
 capital = "Maku"
@@ -12,16 +13,9 @@ base_production = 1
 base_manpower = 2
 is_city = yes
 fort_15th = yes			#Allegedly unpenetrable fort, would only be taken thanks to use of artillery in 16th century
-add_core = ART
 
-
-
-
-
-
-
-
-
+#Claimants
+add_core = ILK
 
 1534.7.13 = { controller = TUR } # Occupation of Tabriz
 1535.1.1 = {

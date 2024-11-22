@@ -7,13 +7,6 @@ color = { 44  51  65 }
 
 historical_idea_groups = {
 	defensive_ideas
-	offensive_ideas
-	trade_ideas
-	diplomatic_ideas
-	religious_ideas
-	economic_ideas
-	administrative_ideas
-	spy_ideas
 }
 
 historical_units = {
@@ -101,7 +94,7 @@ leader_names = {
 	Kokang
 	Kyon
 	Kyaukku
-	Lègya
+	Lï¿½gya
 	Yatsauk
 	Lwee
 	Lwelong
@@ -115,9 +108,9 @@ leader_names = {
 	Bawnin
 	Bawzaing
 	Mogaung
-	Mönglong
+	Mï¿½nglong
 	Momeik
-	Monè
+	Monï¿½
 	Mongnawng
 	Mobye
 	"Mong Pan"
@@ -125,7 +118,7 @@ leader_names = {
 	Maingseik
 	Maington
 	Mohnyin
-	Möngyawng
+	Mï¿½ngyawng
 	Nanke
 	Nankok
 	Nankon

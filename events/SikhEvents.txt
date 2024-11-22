@@ -1,4 +1,4 @@
-#VU updated by San Felipe for 1.35
+#Updated to v1.37 - SF
 namespace = sikhism_flavor
 
 # The Sikh Faith - Guru Nanak founds Sikhism
@@ -92,9 +92,11 @@ country_event = {
 	mean_time_to_happen = {
 		days = 7
 	}
+
 	immediate = {
 		set_global_flag = guru_event_happening
 	}
+
 	after = {
 		clr_global_flag = guru_event_happening
 	}
@@ -128,9 +130,11 @@ country_event = {
 	immediate = {
 		set_global_flag = guru_event_happening
 	}
+
 	after = {
 		clr_global_flag = guru_event_happening
 	}
+
 	option = {
 		name = "sikhism_flavor.3.a"
 		appoint_next_guru = yes
@@ -160,9 +164,11 @@ country_event = {
 	immediate = {
 		set_global_flag = guru_event_happening
 	}
+
 	after = {
 		clr_global_flag = guru_event_happening
 	}
+
 	option = {
 		name = "sikhism_flavor.4.a"
 		appoint_next_guru = yes
@@ -192,9 +198,11 @@ country_event = {
 	immediate = {
 		set_global_flag = guru_event_happening
 	}
+
 	after = {
 		clr_global_flag = guru_event_happening
 	}
+
 	# Builds the Harmandir Sahib
 	option = {
 		name = "sikhism_flavor.5.a"
@@ -254,9 +262,11 @@ country_event = {
 	immediate = {
 		set_global_flag = guru_event_happening
 	}
+
 	after = {
 		clr_global_flag = guru_event_happening
 	}
+
 	option = {
 		name = "sikhism_flavor.6.a"
 		appoint_next_guru = yes
@@ -286,9 +296,11 @@ country_event = {
 	immediate = {
 		set_global_flag = guru_event_happening
 	}
+
 	after = {
 		clr_global_flag = guru_event_happening
 	}
+
 	option = {
 		name = "sikhism_flavor.7.a"
 		appoint_next_guru = yes
@@ -318,9 +330,11 @@ country_event = {
 	immediate = {
 		set_global_flag = guru_event_happening
 	}
+
 	after = {
 		clr_global_flag = guru_event_happening
 	}
+
 	option = {
 		name = "sikhism_flavor.8.a"
 		appoint_next_guru = yes
@@ -350,9 +364,11 @@ country_event = {
 	immediate = {
 		set_global_flag = guru_event_happening
 	}
+
 	after = {
 		clr_global_flag = guru_event_happening
 	}
+
 	# Improve relations with hindu neighbors
 	option = {
 		name = "sikhism_flavor.9.a"
@@ -392,9 +408,11 @@ country_event = {
 	immediate = {
 		set_global_flag = guru_event_happening
 	}
+
 	after = {
 		clr_global_flag = guru_event_happening
 	}
+
 	option = {
 		name = "sikhism_flavor.10.a"
 		appoint_next_guru = yes

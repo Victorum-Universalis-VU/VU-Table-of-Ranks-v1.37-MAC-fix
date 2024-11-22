@@ -74,7 +74,7 @@
 369 = "Inse Orc" #Orkney
 1978 = "Inse Shealtainn" #Shetlands
 
-
+132 = { "Judenburg" "Judenburg" }
 236 = "Londain" #London
 4373 = "Diabhal" #Devon
 233 = "Corn na Breataine" #Cornwall

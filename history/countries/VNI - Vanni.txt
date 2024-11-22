@@ -1,6 +1,6 @@
-government = tribal
-add_government_reform = tribal_kingdom
-government_rank = 1
+government = monarchy
+add_government_reform = aryachakravarti_reform
+government_rank = 6 #Duchy
 technology_group = indian
 religion = hinduism
 primary_culture = tamil
@@ -9,8 +9,8 @@ fixed_capital = 2100 # Cannot move capital away from this province & no power co
 
 1444.1.1 = {
 	monarch = { #not real
-		name = Ayumennaya
-		dynasty = Vanniari
+		name = "Ayumennaya"
+		dynasty = "Vanniari"
 		adm = 3
 		dip = 2
 		mil = 3

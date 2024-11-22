@@ -283,7 +283,7 @@ has_absolutism_reduction_for_estate_privileges = {
 	OR = {
 		has_idea = respected_authority
 		has_country_flag = has_halved_absolutism_reduction
-		has_government_attribute = has_halved_absolutism_reduction_gov
+		#has_government_attribute = has_halved_absolutism_reduction_gov
 	}
 }
 

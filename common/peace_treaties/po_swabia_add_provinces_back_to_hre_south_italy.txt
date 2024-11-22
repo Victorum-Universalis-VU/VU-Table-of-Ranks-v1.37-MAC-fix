@@ -52,6 +52,10 @@ po_swabia_add_provinces_back_to_hre_south_italy = {
 				owned_by = FROM
 				is_part_of_hre = no
 			}
+			san_marino_area = {
+				owned_by = FROM
+				is_part_of_hre = no
+			}
 		}
 	}
 	is_allowed = { 
@@ -96,6 +100,13 @@ po_swabia_add_provinces_back_to_hre_south_italy = {
 			set_in_empire = yes
 		}
 		central_italy_area = {
+			limit = {
+				owned_by = FROM
+				is_part_of_hre = no
+			}
+			set_in_empire = yes
+		}
+		san_marino_area = {
 			limit = {
 				owned_by = FROM
 				is_part_of_hre = no

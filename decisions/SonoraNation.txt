@@ -1,3 +1,4 @@
+#Updated to v1.37 - SF
 country_decisions = {
 
 	sonora_nation = {
@@ -75,6 +76,7 @@ country_decisions = {
 				}
 			}
 			change_tag = SNA
+			on_change_tag_effect = yes
 			if = {
 				limit = {
 					NOT = { is_former_colonial_nation = yes }
@@ -84,9 +86,9 @@ country_decisions = {
 			}
 			if = {
 				limit = {
-					NOT = { government_rank = 2 }
+					NOT = { government_rank = 8 }
 				}
-				set_government_rank = 2
+				set_government_rank = 8
 			}
 			if = {
 				limit = {
@@ -145,18 +147,18 @@ country_decisions = {
 				}
 				add_permanent_claim = SNA
 			}
+			#nayarit_area = {
+			#	limit = {
+			#		NOT = { owned_by = ROOT }
+			#	}
+			#	add_permanent_claim = SNA
+			#}
 			new_mexico_area = { #VU area
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = SNA
 			}
-			#nayarit_area = { EU4 vanilla area
-			#	limit = {
-			#		NOT = { owned_by = ROOT }
-			#	}
-			#	add_permanent_claim = SNA
-			#}
 			2476 = {
 				add_permanent_claim = SNA
 			}
@@ -173,10 +175,7 @@ country_decisions = {
 			#can't have more than one elective monarchy in the game
 			if = {
 				limit = {
-					OR = {
-						has_reform = elective_monarchy
-						has_reform = phoenician_elective_monarchical_republic
-					}
+					has_reform = elective_monarchy
 				}
 				change_government = monarchy
 				add_government_reform = feudalism_reform

@@ -1,6 +1,6 @@
 government = monarchy
-add_government_reform = iqta
-government_rank = 1
+add_government_reform = islamic_emirate_reform
+government_rank = 5 #Emirate
 primary_culture = acehnese
 religion = sunni
 technology_group = chinese

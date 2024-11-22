@@ -2,6 +2,7 @@
 
 owner = MSY
 controller = MSY
+add_core = MSY
 culture = al_iraqiya_arabic
 religion = shiite
 capital = "Basra"
@@ -11,20 +12,6 @@ base_tax = 6
 base_production = 6
 base_manpower = 10
 is_city = yes
-add_core = BSR
-add_core = MSY
-
-
-
-
-
-
-
-
-
-
-
-
 
 extra_cost = 18
 center_of_trade = 2
@@ -47,7 +34,11 @@ add_permanent_province_modifier = {
 	duration = -1
 }
 
+#Claimants
+add_core = BSR
+add_core = R4S
 
+#Histories by SF
 1508.1.1 = {
 	owner = PER
 	controller = PER

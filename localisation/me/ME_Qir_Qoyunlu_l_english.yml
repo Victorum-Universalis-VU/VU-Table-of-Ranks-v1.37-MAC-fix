@@ -2,6 +2,7 @@
  # Country:
  
  QIR_true_turkoman: "Turkoman Elan"
+ desc_QIR_true_turkoman: ""
  QIR_unlock_decision_to_have_up_to_5_cossacks: "Unlock the '§YElite Corps§!' Decision, allowing us to hire §YSpecial Units§! using §YCossack Cavalry Mechanic§!.\n We may have up to §G10§! such units."
  
  QIR_fate_of_qir_qoyunlu_title: "Fate of Our Tribes"
@@ -183,7 +184,7 @@
  QIR_if_they_have_defensive_edict: "Additionally, if the province has the §YDefensive Edict§!, it will also gain:"
  QIR_exploiting_dev_now_will_give_2.5_tribal_allegiance: "§YExploiting Development§! will now give §G+2.50§! Tribal Allegiance per development exploited."
  QIR_modify_rhyton: "Modify '§YRhyton of Enemy Blood§!' by:\n    Razing power gain: §G+25.0%§!\n    Available Loot: §G+25.0%§!"
- QIR_every_province_in_balkans: "Every owned province in the §YBalkans§! Region will be ceded to §Y[RMM.GetName]§!."
+ QIR_every_province_in_balkans: "Every owned province in the §YBalkans§! Region will be ceded to §Y[RUM.GetName]§!."
  QIR_reward_if_done_via_razing: "§YReward§! if the mission has been completed by §MRazing§!:"
  QIR_reward_if_done_via_alliance_or_subject: "§YReward§! if the mission has been completed by §MAlliance§! or §MSubject§!:"
  QIR_reward_if_done_via_conquest: "§YReward§! if the mission has been completed by §MConquest§!:"

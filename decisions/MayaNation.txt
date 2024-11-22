@@ -1,3 +1,4 @@
+#Updated to v1.37 - SF
 country_decisions = {
 
 	maya_nation = {
@@ -52,7 +53,7 @@ country_decisions = {
 				limit = {
 					has_dlc = "El Dorado"
 				}
-				is_religion_reformed = yes
+				num_of_maya_religious_reforms = { amount = 2 }
 			}
 			else = {
 				has_institution = feudalism
@@ -66,13 +67,12 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = MAY
-			on_change_tag_effect = yes
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
 				limit = {
-					NOT = { government_rank = 3 }
+					NOT = { government_rank = 9 }
 				}
-				set_government_rank = 3
+				set_government_rank = 9
 			}
 			yucatan_area = {
 				limit = {
@@ -91,8 +91,10 @@ country_decisions = {
 			if = {
 				limit = { is_tribal = yes }
 				change_government = monarchy
-				#set_legacy_government = despotic_monarchy
+				add_government_reform = autocracy_reform
 			}
+			swap_non_generic_missions = yes
+			on_change_tag_effect = yes
 		}
 		ai_will_do = {
 			factor = 10

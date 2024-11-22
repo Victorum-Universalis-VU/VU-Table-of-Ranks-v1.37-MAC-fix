@@ -2,7 +2,7 @@
 
 owner = BAL
 controller = BAL
-culture = brahui
+culture = baluchi
 religion = sunni
 capital = "Kalat"
 trade_goods = dyes
@@ -14,9 +14,8 @@ is_city = yes
 fort_15th = yes
 add_core = BAL
 
-
-
-
+#Claimants
+add_core = GHZ
 
 1595.1.1 = { owner = MUG controller = MUG add_core = MUG }
 1666.1.1 = {

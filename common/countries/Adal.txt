@@ -1,4 +1,4 @@
-#Country Name: Please seefilename.
+#ADA - Adal
 
 graphical_culture = muslimgfx
 
@@ -8,13 +8,6 @@ revolutionary_colors = { 0 5 0 }
 
 historical_idea_groups = {
 	defensive_ideas
-	offensive_ideas
-	trade_ideas
-	religious_ideas
-	spy_ideas
-	economic_ideas
-	quantity_ideas
-	diplomatic_ideas
 }
 
 historical_units = {
@@ -73,7 +66,6 @@ monarch_names = {
 	"Husayn #0" = 0
 	"Baziwi #0" = 0
 	"Fasil #0" = 0
-	
 	"Nuha #0" = -1
 	"Sadaf #0" = -1
 	"Bati #0" = -1

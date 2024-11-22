@@ -2,11 +2,11 @@
 
 owner = ZAZ
 controller = ZAZ
-culture = crimean
+culture = cossack
 religion = sunni
 hre = no
 base_tax = 2 
-base_production = 2 
+base_production = 1 
 trade_goods = livestock
 base_manpower = 2 
 capital = "Sich"

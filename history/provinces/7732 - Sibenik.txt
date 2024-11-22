@@ -15,20 +15,13 @@ is_city = yes
 hre = no
 
 #Claimants
+add_core = DAL
 
 #Buildings
 
 #Special Modifiers
 
 #Known by Technology groups
-
-
-
-
-
-
-
-
 
 #Histories by SF
 1215.6.15 = { owner = CRO controller = CRO add_core = CRO } # Croatian territorial lands - By San Felipe

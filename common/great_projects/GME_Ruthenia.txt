@@ -26,6 +26,8 @@ gme_brotherhood_school = {
 		}
 		owner = {
 			NOT = { primary_culture = russian }
+			NOT = { primary_culture = muscovite }
+			NOT = { primary_culture = ryazanian }
 			NOT = { primary_culture = novgorodian}
 			NOT = { primary_culture = karelian }
 		}

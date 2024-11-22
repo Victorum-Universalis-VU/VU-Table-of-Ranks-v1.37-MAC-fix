@@ -251,6 +251,13 @@ perugia_mission_2 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			san_marino_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 	}
 
@@ -288,6 +295,7 @@ perugia_mission_2 = {
 			OR = {
 				area = naples_area
 				area = central_italy_area
+				area = san_marino_area
 				area = lazio_area
 				area = tuscany_area
 			}
@@ -304,6 +312,11 @@ perugia_mission_2 = {
 				NOT = { unrest = 1 }
 			}
 			central_italy_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+				NOT = { unrest = 1 }
+			}
+			san_marino_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 				NOT = { unrest = 1 }

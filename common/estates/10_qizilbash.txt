@@ -6,7 +6,7 @@ estate_qizilbash = {
 	# If true, country will get estate
 	trigger = {
 		has_dlc = "King of Kings"
-		NOT = { has_government_attribute = disables_estate_qizilbash }
+		#NOT = { has_government_attribute = disables_estate_qizilbash } #Commenting this out as it's not used anywhere. Remember to enable it again when we add a reform to disable the estate. - By Altan
 		NOT = { has_disabled_estate = { estate = estate_qizilbash } }
 		OR = {
 			has_government_attribute = enables_estate_qizilbash
@@ -350,6 +350,10 @@ estate_qizilbash = {
 
 	custom_name = {
 		desc = estate_aswaran
+		trigger = { religion_group = zoroastrian_group }
+	}
+	custom_desc = {
+		desc = estate_aswaran_desc
 		trigger = { religion_group = zoroastrian_group }
 	}
 

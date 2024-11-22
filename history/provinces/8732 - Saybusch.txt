@@ -67,10 +67,10 @@ add_core = POL
 	base_production = 3
 } # Fameous brewery of beer that would function in modern times too
 1867.3.30 = {
-	owner = AHE
-	controller = AHE
-	add_core = AHE
-	remove_core = AHE
+	owner = AUH
+	controller = AUH
+	add_core = AUH
+	remove_core = AUH
 } # Austria-Hungary is formed
 1880.1.1 = {
 	base_tax = 3
@@ -81,5 +81,5 @@ add_core = POL
 	owner = POL
 	controller = POL
 	add_core = POL
-	remove_core = AHE
+	remove_core = AUH
 } # Polish declares independence, end of WWI

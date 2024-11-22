@@ -8,18 +8,7 @@ economic_hegemon = {
 			}
 			monthly_income = 1000
 		}
-		else_if = {
-			limit = {
-				tag = MUG
-			}
-			custom_trigger_tooltip = {
-				tooltip = me_mug_completed_industrial_mission
-				has_country_flag = me_mug_economic_hegemon
-			}
-		}
-		else = {
-			monthly_income = 500
-		} 
+		else = { monthly_income = 500 }
 		NOT = { any_other_great_power = { monthly_income = root } }
 		NOT = { has_country_modifier = lost_hegemony }
 	}
@@ -40,5 +29,6 @@ economic_hegemon = {
 	max = {
 		governing_capacity_modifier = 0.20
 	}
-	
+	#effect = {} # When a country picks the hegemon
+	#removed_effect = {} # When a country loses the hegemon
 }

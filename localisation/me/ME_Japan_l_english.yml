@@ -204,7 +204,7 @@
  JAP_CHINESE_PEACEFUL_TT: "Every Owned Province of the §YEast Asian§! Culture Group will gain:"
  JAP_CHINESE_CONVERSION_TT: "10 Random Provinces of the §YEast Asian§! Culture Group will convert to our main culture"
 
- JAP_OWNS_DIRECTLY_TT: "Owns all the provinces in the following Regions/Area: §YJapan§!, §YManchuria§!, §YKorea§!, §YSouthChina§!, §YIndochina§!, §YBurma§!, §YShanxi§!, §YNorthHenan§!, §YSouthHenan§!, §YNorthAnhui§!, §YSouthHebei§!, §YHejian§!, §YShandong§!, §YJiangsu§!, §YNorthTenasserim§!, §YCentralTenasserim§!, §YMalaya§!, §YMalacca§!"
+ JAP_OWNS_DIRECTLY_TT: "Owns all the provinces in the following Regions: §YJapan§!, §YManchuria§!, §YKorea§!, §YNorth China§!, §YSouth China§!, §YXinan§!, §YSouth China Sea Islands§!, §YIndochina§!, §YBurma§!, §YPhilippines§!, and §YMalaya§"
  JAP_OWNS_VASSALS_TT: "Owns, or its non-Tributary Subjects, all the provinces in the following Regions/Area: §YBengal§!, §YPalawan§!, §YWestMindanao§!, §YEastMindanao§!, §YVisayas§!, §YSouthernLuzon§!, §YNorthernLuzon§!"
  JAP_OWNS_VASSAL_TRADE_CENTERS_TT: "Owns, or its non-Tributary Subjects, all the provinces, with a center of trade, in the following §MTrade Nodes§!: §YTheMoluccas§!, §YPhilippines§! and §YMalacca§!"
  JAP_OWNS_VASSAL_TRADE_INDIES_TT: "Owns, or its non-Tributary Subjects, all the provinces in the following §MTrade Nodes§! with a §Mcenter of trade§!: §YTheMoluccas§!, §YPhilippines§! and §YMalacca§!"
@@ -214,7 +214,7 @@
 
  JAP_CONTROLLERS_TRADE_TT: "[Root.GetName] will gain Permanent Claim on all provinces, inside the §YMalaya§! and §YIndonesia§! region that are §Mcoastal§! and have a §Mcenter of trade§!"
 
- JAP_DELICATE_COEXISTANCE_TRIGGER_TT: "All provinces in the §YSouth China Region§!, §YShanxi§!, §YNorth Henan§!, §YSouth Henan§!, §YNorth Anhui§!, §YNorth Hebei§!, §YSouth Hebei§!, §YShandong§! and §YNorth Jiangsu§! areas:\n	Owned by §Y[Root.GetName]§!\n	Local Autonomy Above Minimum lower than §Y15%§!\n	Unrest lower than §Y1§!"
+ JAP_DELICATE_COEXISTANCE_TRIGGER_TT: "All provinces in the §YSouth China§! and §YNorth China Regions§!:\n	Owned by §Y[Root.GetName]§!\n	Local Autonomy Above Minimum lower than §Y15%§!\n	Unrest lower than §Y1§!"
 
  JAP_TOGEN_SHIRATAKI_TRIGGER_TT: "All provinces in the §YJapan Region§!:\n	Owned by §Y[Root.GetName]§!\n\nAll §yareas§! in the §YJapan Region§!:\n   One of the following must be true:\n	Have a §YFort§! of any level\n	Have a §YCoastal Defense§! or §YNaval Battery§!"
 
@@ -223,4 +223,4 @@
  JAP_SAMEGAWARA_EFFECT_TT: "Every Colonial Subject will gain:"
  JAP_SHIZURASE_EFFECT_TT: "Every Owned Province, §Youtside§! the Japan Region, with either: §YCostal Defence§!, §YNaval Batter§!, §YShipyard§!, §YGrand Shipyard§!, §YDock§!, §YDryDock§! will gain:"
  JAP_EAST_INDIES_EFFECT_TT: "Every Province, owned by [Root.GetName] or its non-Tributary Subjects in the trade nodes of §MMalacca§!, §MMoluccas§! or §MMPhilippines§! trade node, with a §Ycenter of trade§! of any level, will gain:"
- JAP_SPICE_EFFECT_TT: "Every Owned Province, with the §Mspice§! trade goods will gain:"
+ JAP_SPICE_EFFECT_TT: "Every Owned Province, with the §MSpice§!, §MCinnamon§!, §MSaffron§!, §MCloves§!, §MNutmeg§!, and §MVanilla§! trade goods will gain:"

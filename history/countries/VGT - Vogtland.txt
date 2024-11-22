@@ -1,6 +1,6 @@
 government = monarchy
-add_government_reform = feudalism_reform
-government_rank = 1
+add_government_reform = eue_county_reform
+government_rank = 4 #County
 primary_culture = saxon
 add_accepted_culture = franconian
 religion = catholic
@@ -9,12 +9,12 @@ technology_group = german_tech_group
 unit_type = western
 capital = 2965 #Vogtland
 
-1431.1.1 = {
+1426.1.1 = {
 	monarch = {
-		name = "Anton von Rotenhan"
-		birth_date = 1390.1.1
-		adm = 3
-		dip = 3
-		mil = 2
+		name = "Herren von Plauen"
+		adm = 1
+		dip = 2
+		mil = 1
+		regent = yes
 	}
 }

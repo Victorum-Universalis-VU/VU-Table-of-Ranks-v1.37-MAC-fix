@@ -8,13 +8,6 @@ revolutionary_colors = { 2 3 2 } #purple \o/
 
 historical_idea_groups = {
 	court_ideas
-	religious_ideas
-	aristocracy_ideas
-	offensive_ideas
-	quality_ideas
-	trade_ideas
-	spy_ideas
-	defensive_ideas
 }
 
 historical_units = {

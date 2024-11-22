@@ -12,22 +12,9 @@ base_tax = 3
 base_production = 2
 base_manpower = 2
 is_city = yes
-#add_core = PER
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#Claimants
+add_core = ILK
 
 1458.9.1 = { revolt = { type = pretender_rebels size = 0 name = "Hasan Ali's Faction" leader = "Hasan Ali" } controller = REB } # Civil war in Qara Quyunlu
 1458.12.1 = { revolt = {} controller = QAR }

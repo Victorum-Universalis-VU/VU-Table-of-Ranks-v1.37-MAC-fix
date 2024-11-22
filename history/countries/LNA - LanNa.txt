@@ -1,5 +1,6 @@
 government = monarchy
 add_government_reform = mandala_reform
+government_rank = 7 #High Kingdom
 technology_group = chinese
 religion = buddhism
 primary_culture = northern_thai
@@ -291,7 +292,7 @@ capital = 589 # Chiang Mai
 }
 
 1558.4.2 = {
-	government_rank = 1
+	government_rank = 6
 }
 
 1564.1.1 = {
@@ -332,7 +333,7 @@ capital = 589 # Chiang Mai
 }
 
 1596.1.1 = {
-	government_rank = 2
+	government_rank = 8
 }
 
 # 1st Rule
@@ -412,7 +413,7 @@ capital = 589 # Chiang Mai
 }
 
 1614.1.1 = {
-	government_rank = 1
+	government_rank = 6
 }
 
 1615.1.1 = {
@@ -591,7 +592,7 @@ capital = 589 # Chiang Mai
 		dip = 0
 		mil = 0
 	}
-	government_rank = 2
+	government_rank = 8
 }
 
 1727.1.1 = {
@@ -609,7 +610,7 @@ capital = 589 # Chiang Mai
 }
 
 1757.1.1 = {
-	government_rank = 1
+	government_rank = 6
 }
 
 1759.1.1 = {

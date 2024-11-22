@@ -79,11 +79,17 @@ vu_addon_triggered_modifier_mil_focus = {
 vu_addon_bandaid_horde_fix = {
 	potential = {
 		religion = tengri_pagan_reformed
-		has_reform = steppe_horde
+		OR = {
+			has_reform = steppe_horde 
+			has_reform = scythian_horde_reform
+		}
 	}
 	trigger = {
 		religion = tengri_pagan_reformed
-		has_reform = steppe_horde
+		OR = {
+			has_reform = steppe_horde 
+			has_reform = scythian_horde_reform
+		}
 	}
 	cav_to_inf_ratio = 0.20			#compensating for the lost ratio for the rest of the world
 }

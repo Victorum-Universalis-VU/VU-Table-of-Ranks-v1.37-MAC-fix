@@ -25,7 +25,7 @@ country_decisions = {
 				167 = { #Rouen
 					is_strongest_trade_power = ROOT
 				}
-				174 = { #Rouen
+				174 = { #Bordeux
 					is_strongest_trade_power = ROOT
 				}
 				227 = { #Lisbon
@@ -195,6 +195,7 @@ country_decisions = {
 			OR = {
 				full_idea_group = maritime_ideas
 				full_idea_group = naval_ideas
+				full_idea_group = trade_ideas
 			}
 			OR = {
 				custom_trigger_tooltip = {
@@ -289,7 +290,7 @@ country_decisions = {
 				        167 = { #Rouen
 				        	is_strongest_trade_power = ROOT
 				        }
-				        174 = { #Rouen
+				        174 = { #Bordeux
 				        	is_strongest_trade_power = ROOT
 				        }
 				        227 = { #Lisbon
@@ -491,4 +492,43 @@ country_decisions = {
 		}
 	}
 
+	replenish_mercenary_ranks = {
+		major = yes
+		potential = {
+			has_country_flag = ven_condottieri_flag
+			owns = 112
+		} 
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = ROOT_5_YEAR_CD_TT
+				OR = {
+					had_country_flag = {
+						flag = 5_year_cd_flag
+						days = 1825
+					}
+					NOT = { has_country_flag = 5_year_cd_flag }
+				}	
+			}
+			any_hired_mercenary_company = {
+				NOT = { has_company_manpower = 0.75 }
+				location = {
+					province_id = 112
+				}
+			}
+			mil_power_cost = 20
+			years_of_income = 0.1
+		}
+		effect = {
+			clr_country_flag = 5_year_cd_flag
+			set_country_flag = 5_year_cd_flag
+			random_hired_mercenary_company = {
+				limit = {
+					location = { province_id = 112 } 
+				}
+				add_company_manpower = 0.5
+			}
+			mil_power_cost = 20
+			add_years_of_income = -0.1
+		}
+	}
 }

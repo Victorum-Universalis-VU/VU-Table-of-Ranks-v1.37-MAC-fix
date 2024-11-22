@@ -1,87 +1,77 @@
 ﻿l_english:
-
-#ANDORRAN PRINCE-BISHOPRIC
-#Religion Court - GOVERNMENT
- PRINCE_BISHOPRIC_ANDORRA:0 "Prince Bishopric" #Andorran Prince Bishopric
- PRINCE_ARCHBISHOPRIC_ANDORRA:0 "Prince Archbishopric" #Andorran Prince Archbishopric
- PRINCE_METROPOLITAN_ANDORRA:0 "Prince Major Archbishopric" #Andorran Abbot Patriarch
-#Bishopric Court - MALE TITLES
- PRINCE_BISHOP_ANDORRA:0 "Bishop of Urgell" #Andorran Prince Bishopric
- PRINCE_ARCHBISHOP_ANDORRA:0 "Archbishop of Urgell" #Andorran Prince Archbishopric
- PRINCE_CARDINAL_ANDORRA:0 "Cardinal of Urgell" #Andorran Abbot Patriarch
-#CHURCH OF ENGLAND
-#Religion Court - GOVERNMENT
- ENGLISH_BISHOPRIC:0 "Bishopric" #English Bishopric
- ENGLISH_ARCHBISHOPRIC:0 "Archbishopric" #English Archbishopric
- ENGLISH_METROPOLITAN:0 "Major Archbishopric" #English Major Archbishopric
-#Bishopric Court - MALE TITLES
- ENGLISH_BISHOP:0 "Bishop" #English Bishopric
- ENGLISH_ARCHBISHOP:0 "Archbishop" #English Archbishopric
- ENGLISH_CARDINAL:0 "Cardinal" #English Major Archbishopric
-#CHURCH of FRANCE
-#Religion Court - GOVERNMENT
- FRENCH_BISHOPRIC:0 "Bishopric" #French Prince Bishopric
- FRENCH_ARCHBISHOPRIC:0 "Archbishopric" #French Prince Archbishopric
- FRENCH_METROPOLITAN:0 "Major Archbishopric" #French Major Archbishopric
-#Bishopric Court - MALE TITLES
- FRENCH_BISHOP:0 "Bishop" #French Prince Bishopric
- FRENCH_ARCHBISHOP:0 "Archbishop" #French Prince Archbishopric
- FRENCH_CARDINAL:0 "Cardinal" #French Major Archbishopric
-#PALATINE BISHOPRIC OF DURHAM
-#Religion Court - GOVERNMENT
-#PALATINE_BISHOPRIC:0 "Palatine Bishopric" #Northumbrian Palatine Bishopric
-#PALATINE_ARCHBISHOPRIC:0 "Palatine Archbishopric" #Northumbrian Palatine Archbishopric
-#PALATINE_METROPOLITAN:0 "Palatine Major Archbishopric" #Northumbrian Palatine Archbishopric
-#Bishopric Court - MALE TITLES
-#PALATINE_BISHOP:0 "Bishop" #Northumbrian Palatine Bishopric
-#PALATINE_ARCHBISHOP:0 "Archbishop" #Northumbrian Palatine Archbishopric
-#PALATINE_CARDINAL:0 "Cardinal" #Northumbrian Palatine Archbishopric
-#ORANGE PRINCIPALITY
-#Principality - GOVERNMENT
- PRINCIPALITY_ORANGE:0 "Principality" #Orangian Principality
- PRINCIPALITY_GRAND_ORANGE:0 "Grand Principality" #Orangian Grand Principality
-#Principality Court - MALE CONSORT TITLES
- PRINCIPALITY_PRINCE_CONSORT_ORANGE:0 "Count-Consort" #Spouse of Orangian Princess
+ #ANDORRAN PRINCE-BISHOPRIC
+ #Religion Court - GOVERNMENT
+ PRINCE_BISHOPRIC_ANDORRA:0 "Príncep Bisbat"
+ PRINCE_ARCHBISHOPRIC_ANDORRA:0 "Príncep Arquebisbat"
+ PRINCE_METROPOLITAN_ANDORRA:0 "Príncep Cardenal"
+ #Bishopric Court - MALE TITLES
+ PRINCE_BISHOP_ANDORRA:0 "Bisbe d'Urgell"
+ PRINCE_ARCHBISHOP_ANDORRA:0 "Arquebisbe d'Urgell"
+ PRINCE_CARDINAL_ANDORRA:0 "Cardenal d'Urgell"
+ #CHURCH OF ENGLAND
+ #Religion Court - GOVERNMENT
+ ENGLISH_BISHOPRIC:0 "Bishopric"
+ ENGLISH_ARCHBISHOPRIC:0 "Archbishopric"
+ ENGLISH_METROPOLITAN:0 "Major Archbishopric"
+ #Bishopric Court - MALE TITLES
+ ENGLISH_BISHOP:0 "Bishop"
+ ENGLISH_ARCHBISHOP:0 "Archbishop"
+ ENGLISH_CARDINAL:0 "Cardinal"
+ #PALATINE BISHOPRIC OF DURHAM
+ #Religion Court - GOVERNMENT
+ #PALATINE_BISHOPRIC:0 "Palatine Bishopric" #Northumbrian Palatine Bishopric
+ #PALATINE_ARCHBISHOPRIC:0 "Palatine Archbishopric" #Northumbrian Palatine Archbishopric
+ #PALATINE_METROPOLITAN:0 "Palatine Major Archbishopric" #Northumbrian Palatine Archbishopric
+ #Bishopric Court - MALE TITLES
+ #PALATINE_BISHOP:0 "Bishop" #Northumbrian Palatine Bishopric
+ #PALATINE_ARCHBISHOP:0 "Archbishop" #Northumbrian Palatine Archbishopric
+ #PALATINE_CARDINAL:0 "Cardinal" #Northumbrian Palatine Archbishopric
+ #ORANGE PRINCIPALITY
+ #Principality - GOVERNMENT
+ PRINCIPALITY_ORANGE:0 "Principality"
+ PRINCIPALITY_GRAND_ORANGE:0 "Grand Principality"
+ #Principality Court - MALE CONSORT TITLES
+ PRINCIPALITY_PRINCE_CONSORT_ORANGE:0 "Count-Consort"
  GRAND_PRINCIPALITY_PRINCE_CONSORT_ORANGE:0 "Duke-Consort"
-#Principality Court - MALE RULER TITLES
- PRINCIPALITY_PRINCE_ORANGE:0 "Prince of Orange" #Orangian Prince
- PRINCIPALITY_GRAND_PRINCE_ORANGE:0 "Grand Prince of Orange" #Orangian Grand Prince
-#Principality Court - FEMALE CONSORT TITLES
- PRINCIPALITY_PRINCESS_CONSORT_ORANGE_fem:0 "Countess-Consort" #Spouse of Orangian Prince
+ #Principality Court - MALE RULER TITLES
+ PRINCIPALITY_PRINCE_ORANGE:0 "Prince of Orange"
+ PRINCIPALITY_GRAND_PRINCE_ORANGE:0 "Grand Prince of Orange"
+ #Principality Court - FEMALE CONSORT TITLES
+ PRINCIPALITY_PRINCESS_CONSORT_ORANGE_fem:0 "Countess-Consort"
  GRAND_PRINCIPALITY_PRINCESS_CONSORT_ORANGE_fem:0 "Duchess-Consort"
-#Principality Court - FEMALE RULER TITLES
- PRINCIPALITY_PRINCESS_ORANGE_fem:0 "Princess of Orange" #Orangian Princess
- PRINCIPALITY_GRAND_PRINCESS_ORANGE_fem:0 "Grand Princess of Orange" #Orangian Grand Princess
-#WELSH PRINCIPALITY
-#Principality - GOVERNMENT
- PRINCIPALITY_WALES:0 "Principality" #Welsh Principality
- PRINCIPALITY_GRAND_WALES:0 "Grand Principality" #Welsh Grand Principality
-#Principality Court - MALE CONSORT TITLES
- PRINCIPALITY_PRINCE_CONSORT_WALES:0 "Earl-Consort" #Spouse of Welsh Prince
- GRAND_PRINCIPALITY_PRINCE_CONSORT_WALES:0 "Prince-Consort" #Spouse of Welsh Grand Prince
-#Principality Court - MALE RULER TITLES
- PRINCIPALITY_PRINCE_WALES:0 "Prince of Wales" #Welsh Prince
- PRINCIPALITY_GRAND_PRINCE_WALES:0 "Grand Prince of Wales" #Welsh Grand Prince
-#Principality Court - FEMALE CONSORT TITLES
- PRINCIPALITY_PRINCESS_CONSORT_WALES_fem:0 "Countess-Consort" #Spouse of Welsh Prince
- GRAND_PRINCIPALITY_PRINCESS_CONSORT_WALES_fem:0 "Princess-Consort" #Spouse of Welsh Grand Prince
-#Principality Court - FEMALE RULER TITLES
- PRINCIPALITY_PRINCESS_WALES_fem:0 "Princess of Wales" #Welsh Princess
- PRINCIPALITY_GRAND_PRINCESS_WALES_fem:0 "Grand Princess of Wales" #Welsh Grand Princess
-#TURKISH SULTANATE
-#Sultanate - GOVERNMENT
- TURKISH_SULTANATE_DUKEDOM:0 "Beylik" #Turkish Dukedom
- TURKISH_SULTANATE_KINGDOM:0 "Sultanate" #Turkish Kingdom
- TURKISH_SULTANATE_EMPIRE:0 "Great Sultanate" #Turkish Empire
-#Sultanate Court - MALE RULER TITLES
- TURKISH_SULTANATE_DUKE:0 "Bey" #Turkish Duke
- TURKISH_SULTANATE_KING:0 "Sultan" #Turkish King
- TURKISH_SULTANATE_EMPEROR:0 "Great Sultan" #Turkish Emperor
-#Sultanate Court - FEMALE CONSORT TITLES
- TURKISH_SULTANATE_QUEEN_CONSORT_fem:0 "Hatun" #Spouse of Turkish King
- TURKISH_SULTANATE_EMPRESS_CONSORT_fem:0 "Haseki-Sultan" #Spouse of Turkish Emperor
-#Sultanate Court - MALE HEIR TITLES
- TURKISH_SULTANATE_CROWN_PRINCE:0 "Efendi" #Turkish Crown-Prince
+ #Principality Court - FEMALE RULER TITLES
+ PRINCIPALITY_PRINCESS_ORANGE_fem:0 "Princess of Orange"
+ PRINCIPALITY_GRAND_PRINCESS_ORANGE_fem:0 "Grand Princess of Orange"
+ #WELSH PRINCIPALITY
+ #Principality - GOVERNMENT
+ PRINCIPALITY_WALES:0 "Principality"
+ PRINCIPALITY_GRAND_WALES:0 "Grand Principality"
+ #Principality Court - MALE CONSORT TITLES
+ PRINCIPALITY_PRINCE_CONSORT_WALES:0 "Earl-Consort"
+ GRAND_PRINCIPALITY_PRINCE_CONSORT_WALES:0 "Prince-Consort"
+ #Principality Court - MALE RULER TITLES
+ PRINCIPALITY_PRINCE_WALES:0 "Prince of Wales"
+ PRINCIPALITY_GRAND_PRINCE_WALES:0 "Grand Prince of Wales"
+ #Principality Court - FEMALE CONSORT TITLES
+ PRINCIPALITY_PRINCESS_CONSORT_WALES_fem:0 "Countess-Consort"
+ GRAND_PRINCIPALITY_PRINCESS_CONSORT_WALES_fem:0 "Princess-Consort"
+ #Principality Court - FEMALE RULER TITLES
+ PRINCIPALITY_PRINCESS_WALES_fem:0 "Princess of Wales"
+ PRINCIPALITY_GRAND_PRINCESS_WALES_fem:0 "Grand Princess of Wales"
+ #TURKISH SULTANATE
+ #Sultanate - GOVERNMENT
+ TURKISH_SULTANATE_DUKEDOM:0 "Beylik"
+ TURKISH_SULTANATE_KINGDOM:0 "Sultanate"
+ TURKISH_SULTANATE_EMPIRE:0 "Great Sultanate"
+ #Sultanate Court - MALE RULER TITLES
+ TURKISH_SULTANATE_DUKE:0 "Bey"
+ TURKISH_SULTANATE_KING:0 "Sultan"
+ TURKISH_SULTANATE_EMPEROR:0 "Great Sultan"
+ #Sultanate Court - FEMALE CONSORT TITLES
+ TURKISH_SULTANATE_QUEEN_CONSORT_fem:0 "Hatun"
+ TURKISH_SULTANATE_EMPRESS_CONSORT_fem:0 "Haseki-Sultan"
+ #Sultanate Court - MALE HEIR TITLES
+ TURKISH_SULTANATE_CROWN_PRINCE:0 "Efendi"
 
 
  #This file contains localisation work not done by Darth Modus, organised by contributor.
@@ -435,10 +425,15 @@
  ayu_portuguese_treaty:0 "Portuguese-Siamese Treaty"
  desc_ayu_portuguese_treaty:0 "Signed in Ayutthaya by representatives from both Portugal and Siam, the Portuguese-Siamese treaty of 1516 outlined the importance for religious tolerance. Under the terms highlighted, Siam agreed to guarantee the religious freedoms, with as many as three hundred Portuguese nationals settling down in Ayutthaya as a result."
  ###########################
- #Opinion modifiers
+ #Opinion Modifiers
  ###########################
  signed_treaty:0 "Signed Treaty"
  rejected_treaty:0 "Rejected Treaty"
+ ###########################
+ #Event Modifiers
+ ###########################
+ mississippi_estuary_modifier:0 "The Mississippi Estuary"
+ desc_mississippi_estuary_modifier:0 "Controlling the important river estuary of the Mississippi strengthens our hold of the trade in the region."
  ###########################
  #National Ideas
  ###########################
@@ -806,8 +801,8 @@
  GLW_ADJ:1 "Clanricarde"
  GLG:1 "Glogau"
  GLG_ADJ:1 "Glogau"
- ALS:1 "Alsace"
- ALS_ADJ:1 "Alsatian"
+ #ALS:1 "Elsass"
+ #ALS_ADJ:1 "Alsatian"
  #HRZ:1 "Saint Sava"
  #HRZ_ADJ:1 "Saint Savan
  #Rename Provinces VU 13.0

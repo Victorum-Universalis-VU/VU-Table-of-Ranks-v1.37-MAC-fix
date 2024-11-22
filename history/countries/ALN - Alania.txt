@@ -1,6 +1,6 @@
 government = tribal
 add_government_reform = tribal_federation
-government_rank = 1
+government_rank = 6
 primary_culture = alan
 add_accepted_culture = circassian
 historical_rival = GEN

@@ -24,6 +24,7 @@ WES_missions_1 = {
 				area = lower_rhineland_area
 				area = palatinate_area
 				area = hesse_area
+				area = frankfurt_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
@@ -34,6 +35,7 @@ WES_missions_1 = {
 					area = lower_rhineland_area
 					area = palatinate_area
 					area = hesse_area
+					area = frankfurt_area
 				}
 				value = 13
 			}
@@ -124,7 +126,6 @@ WES_missions_1 = {
 				name = WES_swabia_modifier
 				duration = 9125
 			}
-			#ME_mercenary_commander?
 			bavaria_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT }

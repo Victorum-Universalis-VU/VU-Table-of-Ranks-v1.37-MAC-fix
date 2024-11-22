@@ -462,6 +462,13 @@ WES_Generic_Missions_2 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			frankfurt_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 			braunschweig_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT }
@@ -798,7 +805,7 @@ WES_Generic_Missions_3_2 = {
 					}
 				}
 				define_advisor = {
-					type = muscovy_architect
+					type = civil_engineer
 					religion = ROOT
 					culture = ROOT
 					skill = 1

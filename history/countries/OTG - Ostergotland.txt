@@ -8,10 +8,9 @@ technology_group = scandinavian_tech_group
 unit_type = western
 capital = 2	#Linkoping
 
-
 1441.11.01 = {
 	monarch = {
-		name = "Regency"
+		name = "Regentskap"
 		adm = 3
 		dip = 3
 		mil = 3

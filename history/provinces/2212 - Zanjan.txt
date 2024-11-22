@@ -2,7 +2,8 @@
 
 owner = TIM
 controller = TIM
-culture = azerbaijani
+add_core = TIM
+culture = persian
 religion = shiite
 capital = "Zanjan"
 trade_goods = spices
@@ -11,19 +12,10 @@ base_tax = 6
 base_production = 6
 base_manpower = 2 
 is_city = yes
+
+#Claimants
 add_core = ARL
-add_core = TIM
-
-
-
-
-
-
-
-
-
-
-
+add_core = PER
 
 1442.1.1 = { #Death of Yusuf Khwaja, governor of Rayy. Appointment of Sultan Muhammad b. Baysunghur as governor of northern Iran.
 	owner = QOM

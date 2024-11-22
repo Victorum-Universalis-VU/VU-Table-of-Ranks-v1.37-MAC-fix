@@ -2,6 +2,7 @@
 
 owner = DRZ
 controller = DRZ
+add_core = DRZ
 culture = chechen
 religion = shiite
 capital = "Solzh-Glala"
@@ -11,33 +12,10 @@ base_tax = 2
 base_production = 5
 base_manpower = 3
 is_city = yes
-add_core = DRZ
+
+#Claimants
 add_core = AVR
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+add_core = DAG
 
 1569.1.1 = { owner = GAZ controller = GAZ } # Budai-Chopan conquest
 1801.1.18 = {

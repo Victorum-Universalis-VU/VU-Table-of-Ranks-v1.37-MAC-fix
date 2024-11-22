@@ -1,5 +1,6 @@
 government = tribal
-add_government_reform = tribal_kingdom #Various constallations of Makua Tribes
+add_government_reform = tribal_kingdom
+government_rank = 6 #Petty_Kingdom
 primary_culture = makua
 religion = shamanism #Fetishism
 technology_group = central_african

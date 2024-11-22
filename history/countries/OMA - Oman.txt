@@ -1,10 +1,10 @@
 government = monarchy
 add_government_reform = ME_ibadi_community
+government_rank = 1 #Imamate
 primary_culture = omani_culture
 religion = ibadi
 technology_group = muslim
-capital = 403	# Muscat
-government_rank = 1
+capital = 5246	#Ibri
 religious_school = hanbali_school
 
 #Nabhan dynasty

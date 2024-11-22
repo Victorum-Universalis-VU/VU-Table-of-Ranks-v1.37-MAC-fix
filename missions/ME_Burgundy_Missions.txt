@@ -1104,9 +1104,9 @@ BUR_missions_5 = {
 		effect = {
 			if = {
 				limit = {
-					NOT = { government_rank = 2 }
+					NOT = { government_rank = 8 }
 				}
-				set_government_rank = 2
+				set_government_rank = 8
 			}
 			else = {
 				add_adm_power = 100

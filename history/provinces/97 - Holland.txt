@@ -24,13 +24,8 @@ add_permanent_province_modifier = {
     duration = -1
 }
 
-
-
-
-
-
-
-
+#Buildings
+cinema = yes #Red light district - D
 
 #Province history completed by - Darth Modus
 #1291.5.21 = { #VictorumUniversalis batch edit shortcut the first shattering begins

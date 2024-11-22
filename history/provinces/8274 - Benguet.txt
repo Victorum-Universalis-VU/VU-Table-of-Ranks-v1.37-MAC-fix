@@ -1,5 +1,7 @@
 #Benguet
-
+owner = IFG
+controller = IFG
+add_core = IFG
 culture = kankanaey
 religion = animism
 capital = "Benguet"
@@ -9,12 +11,6 @@ base_tax = 4
 base_production = 4
 base_manpower = 4
 is_city = yes
-owner = PGS
-controller = PGS
-add_core = PGS
-
-
-
 
 1572.1.1 = { } #Conquistador Juan de Salcedo leads a small expedition into the southern part of Benguet, but is forced to retreat.
 1620.1.1 = { } #In 1620, Fajardo sent the first expedition under Captain Garcia Aldana y Cabrera, Governor of Pangasinan which reaches the settlement of Bua, only to find it abandoned.

@@ -96,16 +96,14 @@ country_event = {
 		name = flavor_mor.3.a #Ok
 		add_piety = -0.25
 		add_prestige_or_monarch_power = { amount = 10 }
-		
 		set_country_flag = MOR_negative_piety_buff
 		custom_tooltip = MOR_negative_piety_buff
 	}
 	
 	option = {
 		name = me_flavor_mor.3.b #Ok
-		
 		add_piety = 0.1
-		add_prestige = -10
+		add_prestige = 10
 	}
 }
 
@@ -134,7 +132,6 @@ country_event = {
 			name = "mor_idrisid_cult_soaring"
 			duration = 3650
 		}
-		
 		set_country_flag = MOR_negative_piety_buff
 		custom_tooltip = MOR_negative_piety_buff
 	}
@@ -165,7 +162,6 @@ country_event = {
 	
 	option = {
 		name = flavor_mor.5.a #A great man has passed away
-		
 		custom_tooltip = ME_this_begins_event_chain
 		add_piety = -0.05
 		set_country_flag = mor_death_of_yahya
@@ -197,9 +193,7 @@ country_event = {
 		ai_chance = { factor = 1 }
 		add_stability = -1
 		country_event = { id = flavor_mor.7 days = 30 }
-		
 		custom_tooltip = " "
-		
 		custom_tooltip = ME_benefits_of_marinids
 		set_country_flag = MOR_marinid_buff
 		tooltip = {
@@ -214,7 +208,6 @@ country_event = {
 		name = flavor_mor.6.b #They remain our trusted advisors.
 		ai_chance = { factor = 0 }
 		set_country_flag = mor_wattasid_power
-		
 		custom_tooltip = ME_this_will_lead_to_a_rebellion
 		custom_tooltip = ME_benefits_of_wattasids
 		tooltip = {
@@ -303,10 +296,8 @@ country_event = {
 			}
 			kill_heir = { allow_new_heir = no }
 		}
-		
 		custom_tooltip = ME_benefits_of_wattasids
 		set_country_flag = MOR_wattasid_buff
-		
 		tooltip = {
 			add_country_modifier = {
 				name = MOR_wattasids
@@ -318,17 +309,14 @@ country_event = {
 	option = {
 		name = flavor_mor.8.b #This is my Throne!
 		ai_chance = { factor = 50 }
-		
 		custom_tooltip = ME_benefits_of_marinids
 		set_country_flag = MOR_marinid_buff
-		
 		tooltip = {
 			add_country_modifier = {
 				name = MOR_marinids
 				duration = -1
 			}
 		}
-		
 		random_owned_province = {
 			limit = {
 				is_capital = no

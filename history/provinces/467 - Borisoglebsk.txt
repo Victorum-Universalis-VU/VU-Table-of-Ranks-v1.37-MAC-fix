@@ -2,10 +2,6 @@
 #Region - Russia
 #Area - Tambov
 
-latent_trade_goods = {
-	coal
-}
-
 owner = GOL
 controller = GOL
 culture = mishary
@@ -13,9 +9,9 @@ religion = sunni
 capital = "Uryupinsk"
 trade_goods = wool
 hre = no
-base_tax = 1
+base_tax = 2
 base_production = 1
-base_manpower = 1
+base_manpower = 3
 is_city = yes
 add_core = GOL
 center_of_trade = 1

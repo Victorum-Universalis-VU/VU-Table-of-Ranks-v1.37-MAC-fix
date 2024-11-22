@@ -2,6 +2,7 @@
 
 owner = HDR
 controller = HDR
+add_core = HDR
 culture = yemeni_culture
 religion = sunni
 capital = "Tarim"			#vanilla Say'un, but Tarim was more important early on
@@ -11,22 +12,11 @@ base_tax = 4
 base_production = 4
 base_manpower = 4 
 is_city = yes
-add_core = HDR
 
+#Claimants
+add_core = R4S
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+#Histories by SF
 #1644.1.1 = {
 #} #Al-Mutawakkil Isma'il conquered Yemen in its entirety, from Asir in the north to Dhofar in the east.
 #But calling HDR a vassal instead of direct territory

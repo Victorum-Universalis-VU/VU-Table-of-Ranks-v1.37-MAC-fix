@@ -849,7 +849,7 @@ country_event = {
 			define_ruler = {
 				dynasty = ROOT
 			}
-			set_government_rank = 1
+			set_government_rank = 6
 		}
 		set_country_flag = me_hab_byzantium_in_hre
 		custom_tooltip = " "
@@ -1283,7 +1283,7 @@ country_event = {
 
 		define_advisor = {
 			name = "Franz Anton von Raab"
-			type = me_land_reformer
+			type = loyalist
 			skill = 3
 			cost_multiplier = 0.10
 			culture = ROOT
@@ -3244,7 +3244,7 @@ country_event = {
 		134 = {
 			add_building = university
 			add_great_project_tier = {
-				type = vu_university_vienna
+				type = vu_university_of_vienna
 				tier = 1
 			}
 		}

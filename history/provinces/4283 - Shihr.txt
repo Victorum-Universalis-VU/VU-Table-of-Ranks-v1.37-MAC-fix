@@ -1,8 +1,8 @@
 #4283 - Shihr
 
-owner = OMA
-controller = OMA
-add_core = OMA
+owner = MUS
+controller = MUS
+add_core = MUS
 capital = "Mirbat"
 culture = mahri_culture
 religion = sunni
@@ -13,23 +13,11 @@ base_production = 5
 base_manpower = 3 
 is_city = yes
 
+#Claimants
+add_core = OMA
+add_core = R4S
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#Histories by SF
 1515.1.1 = {
 	owner = POR
 	controller = POR

@@ -910,6 +910,7 @@ country_event = {
 	desc = flavor_kon.16.d	
 	picture = AFRICAN_CATHOLIC_eventPicture
 	is_triggered_only = yes
+
 	option = {
 		name = flavor_kon.16.a
 		trigger = {
@@ -927,6 +928,7 @@ country_event = {
 		name = flavor_kon.16.b
 		change_government_reform_progress = 50
 		add_adm_power = 100
+		
 		ai_chance = {
 			factor = 0
 		}

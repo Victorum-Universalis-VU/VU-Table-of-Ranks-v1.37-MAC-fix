@@ -16,7 +16,7 @@ religion = catholic
 base_tax = 2
 base_production = 2
 base_manpower = 2
-trade_goods = fruit
+trade_goods = vegetables #Was fruit but changed in VU v1.37 - SF
 
 #Cores and Occupation (Alphabetical after current)
 add_core = BOH
@@ -31,7 +31,10 @@ hre = yes
 
 #Discoveries
 
-
-
-
 #Histories
+1444.1.1 = { 
+    owner = MVA
+	controller = MVA
+	add_core = MVA
+	add_core = BOH
+} # Released due to Don - SF

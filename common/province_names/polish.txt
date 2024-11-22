@@ -66,6 +66,7 @@
 128 = "Dolna Karyntia"
 129 = "Kraina"
 131 = "Zagrzeb"
+132 = { "Judenburg" "Judenburg" }
 133 = "Linec"
 134 = "Wieden"
 135 = "Sopron"
@@ -701,7 +702,7 @@
 8264 = "Kalawa"
 8265 = "Gubin"
 8266 = "Lubusz"
-8522 = "Lozanna"
+8522 = "Payerne'a"
 8529 = "Lucerna"
 8732 = "Zywiec"
 8733 = "Pyrzyce"

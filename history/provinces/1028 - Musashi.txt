@@ -2,7 +2,7 @@
 
 owner = OUE
 controller = OUE
-culture = togoku
+culture = kanto 
 religion = shinto
 capital = "Kawagoe"
 trade_goods = horses

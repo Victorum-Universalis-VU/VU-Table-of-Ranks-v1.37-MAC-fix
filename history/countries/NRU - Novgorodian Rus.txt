@@ -1,6 +1,6 @@
 government = republic
 add_government_reform = improved_veche_republic
-government_rank = 3
+government_rank = 8 #Kingdom
 mercantilism = 25
 primary_culture = novgorodian
 religion = orthodox
@@ -12,4 +12,4 @@ historical_rival = RUS
 capital = 310	# Novgorod
 add_accepted_culture = byelorussian
 add_accepted_culture = ruthenian
-add_accepted_culture = russian
+add_accepted_culture = muscovite

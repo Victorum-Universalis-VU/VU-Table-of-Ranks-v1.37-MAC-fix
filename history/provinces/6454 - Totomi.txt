@@ -3,7 +3,7 @@
 owner = SBA
 controller = SBA
 add_core = SBA
-culture = togoku
+culture = tokai 
 religion = shinto
 capital = "Kakegawa"
 trade_goods = tea

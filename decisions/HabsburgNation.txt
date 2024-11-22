@@ -2,11 +2,12 @@ country_decisions = {
     habsburg_nation = {
 		major = yes
 		potential = {
-			normal_or_historical_nations = yes
-			was_never_end_game_tag_trigger = yes
-			was_never_german_regional_tag_trigger = yes
-			NOT = { has_country_flag = formed_austria_flag }
+			#normal_or_historical_nations = yes
+			#was_never_end_game_tag_trigger = yes
+			#was_never_german_regional_tag_trigger = yes
+			tag = AUT
 			NOT = { tag = HAB }
+			NOT = { has_country_flag = formed_austria_flag }
 			primary_culture = austrian
 			ai = no
 		}
@@ -19,59 +20,84 @@ country_decisions = {
 		}
 		allow = {
 			#adm_tech = 27 #VU - Hashed out by SF
+			tag = AUT
 			NOT = { exists = HAB }
 			has_regency = no
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no
-			OR = {
+			AND = {
 				AND = {
 					owns_core_province = 134      #Vienna - Capital of Austria
 					134 = {						  #Vienna
 						is_state = yes
 					}
 				}
-				AND = {
-					OR = {
-						CNL = {	junior_union_with = ROOT }
-						CNL = {	is_subject_of = ROOT }
+				if = { 
+					limit = { NOT = { tag = CNL }}
+					AND = {
+						OR = {
+							CNL = {	junior_union_with = ROOT }
+							CNL = {	is_subject_of = ROOT }
+							owns_core_province = 129      
+						}
+						CNL = { NOT = { num_of_cities = 8 } }
 					}
-					CNL = { NOT = { num_of_cities = 8 } }
 				}
-				AND = {
-					OR = {
-						CR1 = {	junior_union_with = ROOT }
-						CR1 = {	is_subject_of = ROOT }
+				if = { 
+					limit = { NOT = { tag = CR1 }}
+					AND = {
+						OR = {
+							CR1 = {	junior_union_with = ROOT }
+							CR1 = {	is_subject_of = ROOT }
+							owns_core_province = 7673
+						}
+						CR1 = { NOT = { num_of_cities = 8 } }
 					}
-					CR1 = { NOT = { num_of_cities = 8 } }
 				}
-				AND = {
-					OR = {
-						BSN = {	junior_union_with = ROOT }
-						BSN = {	is_subject_of = ROOT }
+				if = { 
+					limit = { NOT = { tag = BSN }}
+					AND = {
+						OR = {
+							BSN = {	junior_union_with = ROOT }
+							BSN = {	is_subject_of = ROOT }
+							owns_core_province = 7674
+						}
+						BSN = { NOT = { num_of_cities = 8 } }
 					}
-					BSN = { NOT = { num_of_cities = 8 } }
 				}
-				AND = {
-					OR = {
-						SH1 = {	junior_union_with = ROOT }
-						SH1 = {	is_subject_of = ROOT }
+				if = { 
+					limit = { NOT = { tag = SH1 }}
+					AND = {
+						OR = {
+							SH1 = {	junior_union_with = ROOT }
+							SH1 = {	is_subject_of = ROOT }
+							owns_core_province = 7670
+						}
+						SH1 = { NOT = { num_of_cities = 8 } }
 					}
-					SH1 = { NOT = { num_of_cities = 8 } }
 				}
-				AND = {
-					OR = {
-						STY = {	junior_union_with = ROOT }
-						STY = {	is_subject_of = ROOT }
+				if = { 
+					limit = { NOT = { tag = STY }}
+					AND = {
+						OR = {
+							STY = {	junior_union_with = ROOT }
+							STY = {	is_subject_of = ROOT }
+							owns_core_province = 1863
+						}
+						STY = { NOT = { num_of_cities = 8 } }
 					}
-					STY = { NOT = { num_of_cities = 8 } }
 				}
-				AND = {
-					OR = {
-						TIR = {	junior_union_with = ROOT }
-						TIR = {	is_subject_of = ROOT }
+				if = { 
+					limit = { NOT = { tag = TIR }}
+					AND = {
+						OR = {
+							TIR = {	junior_union_with = ROOT }
+							TIR = {	is_subject_of = ROOT }
+							owns_core_province = 73
+						}
+						TIR = { NOT = { num_of_cities = 8 } }
 					}
-					TIR = { NOT = { num_of_cities = 8 } }
 				}
 			}
 		}

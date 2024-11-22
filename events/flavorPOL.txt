@@ -279,7 +279,6 @@ country_event = {
 		OR = {
 			has_reform = polish_elective_monarchy
 			has_reform = elective_monarchy
-			has_reform = phoenician_elective_monarchical_republic
 		}
 		NOT = { has_country_flag = pol_pact_conventa_flag }
 		has_country_flag = pol_had_nieszawa_privileges_country_flag
@@ -1509,13 +1508,9 @@ country_event = {
 		remove_estate_privilege = estate_nobles_golden_liberty
 		if = {
 			limit = {
-				OR = {
-					has_reform = elective_monarchy
-					has_reform = phoenician_elective_monarchical_republic
-				}
+				has_reform = elective_monarchy
 			}
 			remove_government_reform = elective_monarchy
-			remove_government_reform = phoenician_elective_monarchical_republic
 			#set_legacy_government = administrative_monarchy
 			remove_heir = {}
 			add_absolutism = 10
@@ -1841,8 +1836,8 @@ country_event = {
 			limit = { has_dlc = "Lions of the North" }
 			custom_tooltip = pol_impact_future_missions_tt 
 			set_country_flag = pol_chose_pu_flag
+			custom_tooltip = pol_potential_cb_on_hungary_tt
 		}
-		custom_tooltip = pol_potential_cb_on_hungary_tt
 	}
 	
 	option = {
@@ -1871,14 +1866,17 @@ country_event = {
 				who = ROOT
 				modifier = lit_denied_birthright
 			}
-			set_country_flag = lit_decline_pu_flag
+			if = {
+				limit = { has_dlc = "Lions of the North" }
+				set_country_flag = lit_decline_pu_flag
+			}
 		}
 		if = {
-			limit = { has_dlc = "Emperor" }
-			custom_tooltip = pol_impact_future_missions_tt 
+			limit = { has_dlc = "Lions of the North" }
 			set_country_flag = pol_denied_pu_flag
+			custom_tooltip = pol_impact_future_missions_tt 
+			custom_tooltip = pol_potential_cb_on_bohemia_tt
 		}
-		custom_tooltip = pol_potential_cb_on_bohemia_tt
 	}
 }
 
@@ -2038,11 +2036,9 @@ country_event = {
 				OR = {
 					has_reform = polish_elective_monarchy
 					has_reform = elective_monarchy
-					has_reform = phoenician_elective_monarchical_republic
 				}
 			}
 			remove_government_reform = elective_monarchy
-			remove_government_reform = phoenician_elective_monarchical_republic
 			remove_government_reform = polish_elective_monarchy
 			#set_legacy_government = administrative_monarchy
 			remove_heir = {}
@@ -2064,11 +2060,9 @@ country_event = {
 				OR = {
 					has_reform = polish_elective_monarchy
 					has_reform = elective_monarchy
-					has_reform = phoenician_elective_monarchical_republic
 				}
 			}
 			remove_government_reform = elective_monarchy
-			remove_government_reform = phoenician_elective_monarchical_republic
 			remove_government_reform = polish_elective_monarchy
 			#set_legacy_government = administrative_monarchy
 			remove_heir = {}
@@ -2685,6 +2679,10 @@ country_event = { #The Crown of Rome
 		
 		trigger = { 
 			religion = catholic 
+			thrace_area = {
+				type = all 
+				owned_by = ROOT
+			}
 		}
 		if = { 
 			limit = { 

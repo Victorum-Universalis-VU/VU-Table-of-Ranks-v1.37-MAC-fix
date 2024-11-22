@@ -1,5 +1,6 @@
 government = monarchy
 add_government_reform = mandala_reform
+government_rank = 8 #Kingdom
 primary_culture = khmer
 religion = buddhism
 technology_group = chinese
@@ -557,7 +558,7 @@ capital = 2380 # Phnom Penh
 		dip = 1
 		mil = 0
 	}
-	government_rank = 1
+	government_rank = 6
 }
 
 1779.1.1 = {

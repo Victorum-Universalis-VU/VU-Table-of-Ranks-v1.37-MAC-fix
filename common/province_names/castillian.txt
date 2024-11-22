@@ -83,6 +83,7 @@
 5855 = { "Los Angeles" "Los Angeles" }
 5859 = { "Tijuana" "Tijuana" }
 6005 = { "Santa Lucia" "Fuerte de Santa Lucia" }
+8904 = { "Lazaro Cardenas" "Lazaro Cardenas" }
 
 #Atlantic
 1098 = "Isla Santa Elena"
@@ -119,7 +120,7 @@
 94 = { "Luxemburgo" "Luxemburgo" }
 92 = { "Brabante" "Bruselas" }
 96 = { "Zelanda" "Midelburgo" }
-97 = { "Holanda" Ámsterdam }
+97 = { "Holanda" "Ámsterdam" }
 98 = { "Utreque" "Utreque" }
 99 = "Güeldres"
 100 = { "Frisia" "Leuvarda" }
@@ -137,7 +138,7 @@
 124 = { "Mesina" "Mesina" }
 128 = "Baja Carintia"
 129 = "Carniola"
-132 = "Estiria"
+132 = { "Judenburg" "Judenburg" }
 134 = "Viena"
 165 = "Berna"
 166 = "Waldstätten"
@@ -259,6 +260,7 @@
 8087 = { "Cazorla" "Cazorla" }
 8088 = { "Dénia" "Dénia" }
 8089 = { "Maestrazgo" "Maestrazgo" }
+8505 = { "San Lorenzo" "San Lorenzo de El Escorial" }
 
 #Caribbean
 481 = { "La Bermuda" "Bermúdez" }
@@ -316,6 +318,7 @@
 2659 = { "Puerto Plata" "San Felipe" }
 2662 = "Comayagua"
 2668 = "Rio Bravo"
+4548 = { "Huelva" "Palos" }
 4618 = { "Artibonite" "Gonaïves" }
 4619 = { "Norte" "Cabo Haitiano" }
 4620 = { "Xamaná" "Santa Bárbara" }
@@ -354,6 +357,7 @@
 6015 = { "Gran Exuma" "Ciudad de San Jorge" }
 6016 = { "Isla del cay del Ron" "Nueva Sevilla" }
 6017 = { "Isla Torcida" "Grandes Ligas" }
+8090 = { "Viana" "Barcelos" }
 
 #Indian Ocean
 1103 = "Santa Apolonia"
@@ -368,7 +372,7 @@
 4349 = { "Laguna" "Calamba" }
 4350 = { "Mindoro Occidental" "Caminawit" }
 4351 = { "Negros Occidental" "Ciudad de Bacolod" }
-4352 = { "Isla de Cebu" "Ciudad de Cebu" }
+4352 = { "Cebu" "Ciudad de Cebu" }
 4353 = { "Leyte" "Carigara" }
 4354 = { "Zamboanga" "Ciudad de Zamboanga" }
 7166 = { "Agusan del Norte" "Butuan" }

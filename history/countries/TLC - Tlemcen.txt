@@ -1,5 +1,6 @@
 government = monarchy
-add_government_reform = iqta 
+add_government_reform = islamic_malikate_reform
+government_rank = 8 #Malikate
 technology_group = muslim
 religion = sunni
 primary_culture = shenwa
@@ -80,7 +81,14 @@ change_estate_land_share = {
 		adm = 4
 		dip = 1
 		mil = 2
-		leader = {	name = "Ahmad II"	type = general	fire = 3	shock = 2	manuever = 3	siege = 0 }
+		leader = {	
+			name = "Ahmad II"	
+			type = general	
+			fire = 3	
+			shock = 2	
+			manuever = 3	
+			siege = 0 
+		}
 	}
 }
 
@@ -102,7 +110,7 @@ change_estate_land_share = {
 		dip = 3
 		mil = 2
 	}
-	government_rank = 1
+	government_rank = 6
 }
 
 1505.1.1 = {
@@ -145,7 +153,8 @@ change_estate_land_share = {
 	}
 }
 1549.1.1 = {
-	government_rank = 1
+	add_government_reform = islamic_sultanate_reform
+	government_rank = 6
 }
 
 1550.1.1 = {

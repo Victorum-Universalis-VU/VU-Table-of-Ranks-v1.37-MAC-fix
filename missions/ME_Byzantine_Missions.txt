@@ -145,6 +145,14 @@ byzantine_missions_1 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			san_marino_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+					is_empty = no
+				}
+				add_permanent_claim = ROOT
+			}
 			add_prestige_or_monarch_power = { amount = 20 }
 		}
 	}
@@ -156,7 +164,8 @@ byzantine_missions_1 = {
 		provinces_to_highlight = {
 			OR = {
 				area = central_italy_area 
-				area = lazio_area 
+				area = lazio_area
+				area = san_marino_area 
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
@@ -166,6 +175,10 @@ byzantine_missions_1 = {
 				country_or_non_sovereign_subject_holds = ROOT 
 			}
 			central_italy_area = {
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			san_marino_area = {
 				type = all 
 				country_or_non_sovereign_subject_holds = ROOT 
 			}

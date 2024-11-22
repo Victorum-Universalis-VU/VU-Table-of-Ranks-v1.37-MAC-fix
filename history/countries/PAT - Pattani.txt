@@ -1,12 +1,12 @@
 government = monarchy
-add_government_reform = plutocratic_reform
-government_rank = 1
+add_government_reform = islamic_sultanate_reform
+government_rank = 6 #Sultanate
 technology_group = chinese
 religion = sunni
 primary_culture = malayan
 capital = 594	# Pattani
 fixed_capital = 594 # Cannot move capital away from this province & no power cost to move to it
-religious_school = shafii_school
+religious_school = maliki_school
 
 1399.1.1 = {
 	add_piety = -0.1
@@ -33,7 +33,7 @@ religious_school = shafii_school
 }
 
 1500.1.1 = {
-	government_rank = 1
+	government_rank = 6
 }
 
 1511.8.24 = {
@@ -210,7 +210,7 @@ religious_school = shafii_school
 }
 
 1632.1.1 = {
-	government_rank = 2
+	government_rank = 8
 }
 
 
@@ -240,7 +240,7 @@ religious_school = shafii_school
 }
 
 1636.1.1 = {
-	government_rank = 1
+	government_rank = 6
 }
 
 1649.1.1 = {

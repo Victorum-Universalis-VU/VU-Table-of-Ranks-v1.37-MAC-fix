@@ -1,20 +1,19 @@
-#1966 - Chelyaba
+#1966 - Iske Sibai
 
 owner = NOG
 controller = NOG
-capital = "Chelyaba"
-culture = bashkir
+capital = "Iske Sibai"
+culture = khazak
 religion = sunni
 trade_goods = fur
 hre = no
-base_tax = 1
+base_tax = 2
 base_production = 1
-base_manpower = 2
+base_manpower = 3
 is_city = yes
 add_core = NOG
 add_core = SIB
 add_core = BSH
-center_of_trade = 1
 
 unrest = 15
 

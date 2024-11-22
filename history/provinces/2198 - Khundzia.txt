@@ -2,6 +2,7 @@
 
 owner = AVR
 controller = AVR
+add_core = AVR
 #culture = dagestani
 culture = avar
 religion = sunni	
@@ -12,32 +13,9 @@ base_tax = 4
 base_production = 4 
 base_manpower = 6
 is_city = yes
-add_core = AVR
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#Claimants
+add_core = DAG
 
 1801.1.18 = {
 	owner = RUS

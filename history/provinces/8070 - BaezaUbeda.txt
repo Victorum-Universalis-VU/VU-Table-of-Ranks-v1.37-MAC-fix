@@ -1,9 +1,9 @@
 #8070 - BaezalÚbeda
 
 #Default
-owner = CAS
-controller = CAS
-add_core = CAS
+owner = JAE
+controller = JAE
+add_core = JAE
 culture = andalucian
 religion = catholic
 capital = "Úbeda"			#Also Baeza
@@ -15,7 +15,7 @@ is_city = yes
 hre = no
 
 #Claimants
-add_core = JAE
+add_core = CAS
 
 #Buildings
 
@@ -23,12 +23,7 @@ add_core = JAE
 
 #Known by Technology groups
 
-
-
-
-
-
 #Histories
 1215.6.15 = { owner = AMD controller = AMD add_core = AMD } # Alhomad territorial lands - By San Felipe
 
-1444.11.11 = { owner = CAS controller = CAS add_core = CAS } # Castilian territorial lands - By San Felipe
+1444.11.11 = { owner = JAE controller = JAE add_core = JAE } # Castilian territorial lands - By San Felipe

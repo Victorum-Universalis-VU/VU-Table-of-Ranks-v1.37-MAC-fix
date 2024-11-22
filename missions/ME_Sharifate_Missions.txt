@@ -268,21 +268,6 @@ HED_missions_2 = {
 				}
 				num_of_times_improved = 3
 			}
-			#custom_trigger_tooltip = {
-			#	tooltip = HED_highlighted_area_is_owned_by_us_subject_or_overlord_and_has_road_network
-			#	ARB_pilgrim_route_trigger = {
-			#		trigger = {
-			#			owner = {
-			#				OR = {
-			#					tag = ROOT
-			#					is_subject_of = ROOT
-			#					overlord_of = ROOT
-			#				}
-			#			}
-			#			num_of_times_improved = 3
-			#		}
-			#	}
-			#}
 		}
 		effect = {
 			384 = {
@@ -452,20 +437,6 @@ HED_missions_3 = {
 				}
 				num_of_times_improved = 3
 			}
-			#custom_trigger_tooltip = {
-			#	tooltip = HED_highlighted_area_is_owned_by_us_subject_or_overlord
-			#	ARB_pilgrim_route_trigger = {
-			#		trigger = "
-			#			owner = {
-			#				OR = {
-			#					tag = ROOT
-			#					is_subject_of = ROOT
-			#					overlord_of = ROOT
-			#				}
-			#			}
-			#		"
-			#	}
-			#}
 		}
 		effect = {
 			384 = {
@@ -692,21 +663,6 @@ HED_missions_3 = {
 				}
 				num_of_times_improved = 3
 			}
-			#custom_trigger_tooltip = {
-			#	tooltip = HED_highlighted_area_is_owned_by_us_subject_or_overlord_and_has_road_network
-			#	ARB_pilgrim_route_extended_trigger = {
-			#		trigger = "
-			#			owner = {
-			#				OR = {
-			#					tag = ROOT
-			#					is_subject_of = ROOT
-			#					overlord_of = ROOT
-			#				}
-			#			}
-			#			num_of_times_improved = 3
-			#		"
-			#	}
-			#}
 		}
 		effect = {
 			custom_tooltip = ARB_the_highlighted_area
@@ -716,16 +672,6 @@ HED_missions_3 = {
 					duration = -1
 				}
 			}
-			#hidden_effect = {
-			#	ARB_pilgrim_route_extended_effect = {
-			#		effect = "
-			#			add_permanent_province_modifier = {
-			#				name = HED_road
-			#				duration = -1
-			#			}
-			#		"
-			#	}
-			#}
 			add_stability_or_adm_power = yes
 		}
 	}

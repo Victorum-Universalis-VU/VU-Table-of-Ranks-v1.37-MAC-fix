@@ -1,5 +1,6 @@
 government = monarchy
 add_government_reform = indian_sultanate_reform
+government_rank = 6 #Sultanate
 technology_group = indian
 religion = sunni
 primary_culture = marathi
@@ -248,7 +249,14 @@ religious_school = hanafi_school
 		DIP = 1
 		MIL = 3
 	}
-	leader = {	name = "Malik Ambar"	type = general	fire = 3	shock = 5	manuever = 3	siege = 1 death_date = 1626.1.1 }
+	leader = {	
+		name = "Malik Ambar"	
+		type = general	fire = 3	
+		shock = 5	
+		manuever = 3	
+		siege = 1
+		death_date = 1626.1.1 
+	}
 	set_legacy_government = administrative_monarchy
 }
 

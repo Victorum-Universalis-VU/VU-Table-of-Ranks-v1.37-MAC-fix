@@ -1,6 +1,6 @@
 government = monarchy
 add_government_reform = rajput_kingdom
-government_rank = 1
+government_rank = 6 #Ranate
 primary_culture = rajput
 religion = hinduism
 technology_group = indian
@@ -466,5 +466,5 @@ fixed_capital = 528 # Cannot move capital away from this province & no power cos
 }
 
 1818.2.10 = {
-	government_rank = 2
+	government_rank = 8
 }

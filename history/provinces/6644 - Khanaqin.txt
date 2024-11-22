@@ -12,29 +12,12 @@ base_tax = 2
 base_production = 3
 base_manpower = 3
 is_city = yes
-add_core = IRQ
-add_core = BHT
+
+#Claimants
 add_core = ARD
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+add_core = ASR
+add_core = BHT
+add_core = IRQ
 
 1405.1.1 = {
 	owner = QAR

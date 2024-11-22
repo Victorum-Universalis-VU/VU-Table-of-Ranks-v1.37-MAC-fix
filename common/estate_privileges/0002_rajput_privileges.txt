@@ -11,8 +11,15 @@ estate_rajput_land_rights = {
 	}
 	penalties = {
 	}
+
 	benefits = {
 		governing_capacity = 200
+	}
+	conditional_modifier = {
+		trigger = { has_country_flag = ned_land_rights_buff_flag }
+		modifier = {
+			governing_capacity = 50
+		}
 	}
 	ai_will_do = {
 		factor = 5
@@ -103,7 +110,7 @@ estate_rajput_land_rights = {
 		modifier = {
 			factor = 5
 			NOT = { adm_tech = 30 }
-			NOT = { government_rank = 1 }
+			NOT = { government_rank = 6 }
 			governing_capacity_percentage = 0.65
 		}
 		#Tag specific convincement - after tech 17 (+250 governing capacity) it should not play a role anymore
@@ -267,6 +274,15 @@ estate_rajput_rajput_regiments = {
 	benefits = {
 	    infantry_cost = -0.10
 	}
+	conditional_modifier = {
+		trigger = {
+			has_country_flag = MUG_rajputana_mission_flag
+		}
+		modifier = {
+			max_absolutism = 5
+			allowed_rajput_fraction = 0.15
+		}
+	}
 	mechanics = {
 		enables_rajput_regiments
 		exempt_from_seize_land
@@ -301,7 +317,7 @@ estate_rajput_military = {
 		country_military_power = 1
 	}
 	ai_will_do = {
-		factor = 12
+		factor = 100
 		modifier = {
 			factor = 0
 			OR = {
@@ -851,6 +867,8 @@ estate_rajput_subject_rights = {
 				is_subject_of_type = march
 				is_subject_of_type = client_march
 				is_subject_of_type = personal_union
+				is_subject_of_type = incorporated_vassal
+				is_subject_of_type = integrated_personal_union
 			}
 		}
 		NOT = { has_estate = estate_nobles }
@@ -867,6 +885,8 @@ estate_rajput_subject_rights = {
 						is_subject_of_type = march
 						is_subject_of_type = client_march
 						is_subject_of_type = personal_union
+						is_subject_of_type = incorporated_vassal
+						is_subject_of_type = integrated_personal_union
 					}
 				}
 			}
@@ -925,8 +945,16 @@ estate_rajput_better_integration = {
 				is_subject_of_type = vassal
 				is_subject_of_type = client_vassal
 				is_subject_of_type = daimyo_vassal
+				is_subject_of_type = daimyo_barony_vassal
+				is_subject_of_type = daimyo_viscounty_vassal
+				is_subject_of_type = daimyo_county_vassal
+				is_subject_of_type = daimyo_marquisate_vassal
+				is_subject_of_type = daimyo_duchy_vassal
+				is_subject_of_type = daimyo_principality_vassal
 				is_subject_of_type = personal_union
 				is_subject_of_type = appanage
+				is_subject_of_type = incorporated_vassal
+				is_subject_of_type = integrated_personal_union
 			}
 		}
 		NOT = { has_estate = estate_nobles }
@@ -1198,5 +1226,32 @@ estate_rajput_force_conscription = {
 	}
 	ai_will_do = {
 		factor = 0
+	}
+}
+
+estate_rajputs_MUG_rajput_mansabdars = {
+	icon = privilege_promote_rajput_nobility
+	influence = 0.05
+	loyalty = 0.1
+	is_valid = {
+		has_country_flag = MUG_unlock_rajput_mansabdar_privilege_flag
+	}
+	
+	benefits = {
+		free_land_leader_pool = 1
+	}
+	penalties = {
+		nobles_influence_modifier = -0.05
+	}
+	
+	loyalty_scaled_conditional_modifier = {
+		trigger = { always = yes }
+		modifier = {
+			manpower_recovery_speed = 0.15 
+		}
+	}
+	
+	ai_will_do = {
+		factor = 1
 	}
 }

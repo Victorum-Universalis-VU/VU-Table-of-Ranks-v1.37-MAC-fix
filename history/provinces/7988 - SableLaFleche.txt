@@ -14,7 +14,8 @@ trade_goods = horses
 is_city = yes
 hre = no
 
-
+#Claims
+add_core = ENG
 
 
 

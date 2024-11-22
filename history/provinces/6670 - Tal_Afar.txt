@@ -13,33 +13,11 @@ base_production = 3
 base_manpower = 2
 is_city = yes
 
+#Claimants
+add_core = ASR
 add_core = IRQ
 add_core = BHT
 add_core = SIN
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 1469.2.4 = {
 	owner = AKK

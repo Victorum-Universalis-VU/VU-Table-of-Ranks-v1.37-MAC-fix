@@ -37,6 +37,7 @@ take_province_swabia_add_provinces_back_to_hre = {
 						area = calabria_area
 						area = apulia_area
 						area = central_italy_area
+						area = san_marino_area
 					}
 				}
 			}

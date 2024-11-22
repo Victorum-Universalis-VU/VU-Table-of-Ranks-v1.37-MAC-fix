@@ -1,6 +1,6 @@
-government_rank = 1
 government = tribal
 add_government_reform = tribal_despotism
+government_rank = 4 #County
 primary_culture = mozabite
 technology_group = muslim
 religion = ibadi

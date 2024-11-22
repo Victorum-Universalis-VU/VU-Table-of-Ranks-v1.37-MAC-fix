@@ -33,16 +33,27 @@
  
  # Modifiers:
  me_otomo_contact_with_europe: "Contact with European Technology"
+ desc_me_otomo_contact_with_europe: ""
  me_otomo_into_the_mainland: "Into the Mainland"
+ desc_me_otomo_into_the_mainland: ""
  me_otomo_a_new_shogun: "A New Shogun"
+ desc_me_otomo_a_new_shogun: ""
  me_otomo_loyal_daimyos: "Loyal Daimyos"
+ desc_me_otomo_loyal_daimyos: ""
  me_otomo_buzen_castle: "Buzen Castle"
+ desc_me_otomo_buzen_castle: ""
  me_otomo_pride_of_kyushu: "Pride of Kyushu"
+ desc_me_otomo_pride_of_kyushu: ""
  me_otomo_master_gunners: "Master Gunners"
+ desc_me_otomo_master_gunners: ""
  me_otomo_portuguese_tercos: "Tercio Warfare"
+ desc_me_otomo_portuguese_tercos: ""
  me_otomo_the_clan_is_marching: "The Clan is Marching"
+ desc_me_otomo_the_clan_is_marching: ""
  me_true_shinto_clan: "True Shinto Clan"
+ desc_me_true_shinto_clan: ""
  me_otomo_christian_zeal: "Christian Zeal"
+ desc_me_otomo_christian_zeal: ""
  
  # Events:
  ME_Otomo_Events.1.t: "Question of Faith"

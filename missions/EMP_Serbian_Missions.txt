@@ -368,6 +368,13 @@ emp_ser_west_balkan_branch = {
 				}
 				add_permanent_claim = ROOT
 			}
+			ragusa_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 			4754 = {
 				if = {
 					limit = {
@@ -1031,7 +1038,7 @@ emp_ser_east_branch = {
 			}
 		}
 		effect = {
-			set_government_rank = 3
+			set_government_rank = 9
 		}
 	}
 }

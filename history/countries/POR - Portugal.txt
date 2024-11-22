@@ -1,5 +1,7 @@
+#POR - Portugal
 government = monarchy
 add_government_reform = portuguese_monarchy_reform
+government_rank = 8
 primary_culture = portugese
 religion = catholic
 #technology_group = western

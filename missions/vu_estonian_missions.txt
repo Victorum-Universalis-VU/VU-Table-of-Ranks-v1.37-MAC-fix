@@ -17,7 +17,8 @@ estonian_mission_1 = {
 				area = estonia_ingria_area
 				area = curonia_area
 				area = north_livonia_area
-				area = livonia_area 
+				area = livonia_area
+				area = riga_area
 				area = latgallia_area
 			}
 			NOT = {
@@ -34,6 +35,10 @@ estonian_mission_1 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			livonia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			riga_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -145,6 +150,13 @@ estonian_mission_2 = {
 				add_permanent_claim = ROOT
 			}
 			livonia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			riga_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }

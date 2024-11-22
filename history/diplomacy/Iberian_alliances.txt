@@ -38,7 +38,7 @@ guarantee = {
 # Royal Marriages #
 ###################
 
-# Ferdinand II and Isabella of Castille
+# Ferdinand II and Isabella of Castile
 royal_marriage = {
 	first = ARA
 	second = CAS
@@ -98,79 +98,78 @@ alliance = {
 	end_date = 1514.8.7
 }
 
+######################
+# Spanish Crowns ARA #
+######################
+#VU additions by Prussia and integrated by SF
+dependency = {
+	subject_type = "aragonese_crown_PU"
+	first = ARA
+	second = SAR
+	start_date = 1324.1.1
+	end_date = 1474.12.11
+}
+
+dependency = {
+	subject_type = "aragonese_crown_PU"
+	first = ARA
+	second = COR
+	start_date = 1324.1.1
+	end_date = 1474.12.11
+}
+
+dependency = {
+	subject_type = "aragonese_crown_PU"
+	first = ARA
+	second = SIC
+	start_date = 1409.7.26
+	end_date = 1474.12.11
+}
+
+dependency = {
+	subject_type = "aragonese_crown_PU"
+	first = ARA
+	second = CAT
+	start_date = 1137.1.1
+	end_date = 1474.12.11
+}
+
+dependency = {
+	subject_type = "aragonese_crown_PU"
+	first = ARA
+	second = MJO
+	start_date = 1344.1.1
+	end_date = 1474.12.11
+}
+
+dependency = {
+	subject_type = "aragonese_crown_PU"
+	first = ARA
+	second = VAL
+	start_date = 1238.1.1
+	end_date = 1474.12.11
+}
+
 #########
 # Union #
 #########
 
-# VU addition
-union = {
-	first = ARA
-	second = SIC
-	start_date = 1295.6.20			#Treaty of Anagni gives Sicily to the Pope, who promptly gives it to Charles II of Naples, but the local regent Frederick III of Sicily and populous refuse to acknowledge this and rebel, naming Frederick III of Sicily king and sparking the war again, but putting Sicily back with Aragon's royal family.
-	end_date = 1409.7.25			#Thrones united when  Martin I inherits Sicily from his son
-}
-
-# Sicily and Aragon - EU4 Vanilla
-#union = {
-#	first = ARA
-#	second = SIC
-#	start_date = 1401.5.26
-#	end_date = 1409.7.25
-#}
-
-union = {
-	first = ARA
-	second = SIC
-	start_date = 1409.7.26
-	end_date = 1442.3.3	#Naples temporary annexes Sicily. Actually more complicated, but that is what we're saying for now.
-}
-
-union = {
-	first = ARA
-	second = SAR
-	start_date = 1421.1.1
-	end_date = 1444.11.16 #VictorumUniversalis batch edit shortcut second performance start begins
-}
-
-union = {
-	first = ARA
-	second = COR
-	start_date = 1421.1.1
-	end_date = 1444.11.13 #VictorumUniversalis batch edit shortcut the second shattering begins
-} #Counts of Cinarca, a personal union under the Crown of Aragon... sort of.
-
-union = {
-	first = ARA
-	second = COR
-	start_date = 1444.11.18 #VictorumUniversalis batch edit shortcut second performance start ends
-	end_date = 1453.1.1			#Bank of Saint George takes posession of the island, and the weak Aragonese influence is broken.
-} #Counts of Cinarca, a personal union under the Crown of Aragon... sort of.
-
-# Aragon and Sicily, Alfons V/Alfonso I
-union = {
+#Aragon and Sicily, Alfons V/Alfonso I
+dependency = {
+	subject_type = "aragonese_crown_PU"
 	first = ARA
 	second = NAP
 	start_date = 1442.3.3
 	end_date = 1458.6.27
 }
 
-union = {
-	first = ARA
-	second = SAR
-	start_date = 1444.11.18 #VictorumUniversalis batch edit shortcut second performance start ends
-	end_date = 1516.1.22
-}
+#############
+# Event PUs #
+#############
 
-# VU Addition
-union = {
-	first = ARA
-	second = SIC
-	start_date = 1458.6.27 #Resplit.
-	end_date = 1516.1.22
-}
-
-# Navarra under John II of Aragon
-union =  {
+#Get's created through event!!! 
+dependency = {
+	subject_type = "aragonese_crown_PU"
 	first = ARA
 	second = NAV
 	start_date = 1458.6.29
@@ -203,7 +202,7 @@ guarantee = {
 # Royal Marriages #
 ###################
 
-# Henry IV of Castille and Joana of Portugal
+# Henry IV of Castile and Joana of Portugal
 royal_marriage = {
 	first = CAS
 	second = POR
@@ -304,6 +303,14 @@ alliance = {
 	end_date = 1718.12.17
 }
 
+# Habsburg, Spain and Bavaria
+alliance = {
+	first = SPA
+	second = BAV
+	start_date = 1519.1.12
+	end_date = 1521.4.28
+}
+
 # Spain-France
 alliance = {
 	first = SPB
@@ -392,7 +399,7 @@ union = {
 	end_date = 1516.1.23
 }
 
-# Castille-Burgundy Union - Felipe I/Philippe IV
+# Castile-Burgundy Union - Felipe I/Philippe IV
 union = {
 	first = CAS
 	second = BUR
@@ -406,6 +413,127 @@ union = {
 	second = POR
 	start_date = 1580.8.26
 	end_date = 1640.12.1
+}
+
+
+#####################
+# Spanish Crown PU  #
+#####################
+
+#VU additions by Prussia and integrated by SF
+dependency = {
+	subject_type = "spanish_crown_PU"
+	first = CAS
+	second = LON
+	start_date = 1230.12.10
+	end_date = 1903.12.31
+}
+
+dependency = {
+	subject_type = "spanish_crown_PU"
+	first = CAS
+	second = ASU
+	start_date = 1388.12.1
+	end_date = 1903.12.31
+}
+
+dependency = {
+	subject_type = "spanish_crown_PU"
+	first = CAS
+	second = TLD
+	start_date = 1085.1.1
+	end_date = 1833.1.1
+}
+
+dependency = {
+	subject_type = "spanish_crown_PU"
+	first = CAS
+	second = MUR
+	start_date = 1266.12.1
+	end_date = 1833.1.1
+}
+
+dependency = {
+	subject_type = "spanish_crown_PU"
+	first = CAS
+	second = CDB
+	start_date = 1236.1.1
+	end_date = 1833.1.1
+}
+
+dependency = {
+	subject_type = "spanish_crown_PU"
+	first = CAS
+	second = JAE
+	start_date = 1246.1.1
+	end_date = 1833.1.1
+}
+
+#union =  {
+#	first = CAS
+#	second = KGD
+#	start_date = 1492.1.1
+#	end_date = 1833.1.1
+#}
+
+dependency = {
+	subject_type = "spanish_crown_PU"
+	first = CAS
+	second = SVL
+	start_date = 1248.1.1
+	end_date = 1833.1.1 #Nueva Planta
+}
+
+dependency = {
+	subject_type = "spanish_crown_PU"
+	first = CAS
+	second = BDH
+	start_date = 1248.1.1
+	end_date = 1833.1.1 #Nueva Planta
+}
+
+dependency = {
+	subject_type = "spanish_crown_PU"
+	first = CAS
+	second = GAL
+	start_date = 1248.1.1
+	end_date = 1833.1.1 #Nueva Planta
+}
+
+############
+# Senorios #
+############
+
+dependency = {
+	subject_type = "castilian_lordship"
+	first = CAS
+	second = ALV
+	start_date = 1248.1.1
+	end_date = 1833.1.1 #Nueva Planta
+}
+
+dependency = {
+	subject_type = "castilian_lordship"
+	first = CAS
+	second = GUP
+	start_date = 1248.1.1
+	end_date = 1833.1.1 #Nueva Planta
+}
+
+dependency = {
+	subject_type = "castilian_lordship"
+	first = CAS
+	second = LBC
+	start_date = 1379.12.1
+	end_date = 1876.1.1
+}
+
+dependency = {
+	subject_type = "castilian_lordship"
+	first = CAS
+	second = MLN
+	start_date = 1248.1.1
+	end_date = 1833.1.1 #Nueva Planta
 }
 
 ################################################################
@@ -456,7 +584,7 @@ royal_marriage = {
 	end_date = 1438.9.13
 }
 
-# Afonso V, and Joana ('A Beltrajana'), Infanta of Castille, daughter of Henrique IV of Castille and Joana, Infanta of Portugal
+# Afonso V, and Joana ('A Beltrajana'), Infanta of Castile, daughter of Henrique IV of Castile and Joana, Infanta of Portugal
 royal_marriage = {
 	first = POR
 	second = CAS
@@ -464,7 +592,7 @@ royal_marriage = {
 	end_date = 1481.8.29
 } 
 
-# Afonso, Heir to João, and Isabella of Aragon-Castille
+# Afonso, Heir to João, and Isabella of Aragon-Castile
 royal_marriage = {
 	first = POR
 	second = CAS
@@ -531,4 +659,43 @@ royal_marriage = {
 	second = CSP
 	start_date = 1790.1.9
 	end_date = 1826.3.10
+}
+
+############
+# Counties #
+############
+dependency = {
+	subject_type = "portuguese_county"
+	first = POR
+	second = BZA
+	start_date = 1242.3.1
+	end_date = 1910.10.5
+}
+
+dependency = {
+	subject_type = "portuguese_county"
+	first = POR
+	second = CIM
+	start_date = 1242.3.1
+	end_date = 1910.10.5
+}
+
+dependency = {
+	subject_type = "portuguese_county"
+	first = POR
+	second = BJA
+	start_date = 1242.3.1
+	end_date = 1910.10.5
+}
+
+###########################
+# Spanish Crown PUs - POR #
+###########################
+
+dependency = {
+	subject_type = "portuguese_crown_PU"
+	first = POR
+	second = AGV
+	start_date = 1242.3.1
+	end_date = 1910.10.5
 }

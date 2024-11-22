@@ -4,7 +4,7 @@
 owner = KIR
 controller = KIR
 add_core = KIR
-culture = ruthenian
+culture = ryazanian
 religion = orthodox
 capital = "Sevsk"
 trade_goods = lumber

@@ -1,6 +1,6 @@
 government = monarchy
 add_government_reform = autocracy_reform
-government_rank = 2
+government_rank = 8
 technology_group = muslim
 religion = ashurist
 primary_culture = assyrian

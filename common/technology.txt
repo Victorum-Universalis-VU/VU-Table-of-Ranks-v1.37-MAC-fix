@@ -319,7 +319,10 @@ groups = {
 		start_level = 3
 		start_cost_modifier = 0.3
 		nation_designer_trigger = {
-			has_reform = steppe_horde
+			OR = {
+				has_reform = steppe_horde
+				has_reform = scythian_horde_reform
+			}
 		}
 		nation_designer_cost = {
 			trigger = {

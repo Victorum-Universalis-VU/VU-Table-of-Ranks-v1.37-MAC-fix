@@ -2,6 +2,7 @@
 
 owner = TIM
 controller = TIM
+add_core = TIM
 culture = aimaq
 religion = sunni
 capital = "Dahan-e Falezak"
@@ -11,21 +12,10 @@ base_tax = 3
 base_production = 5
 base_manpower = 2
 is_city = yes
-add_core = TIM
+
+#Claimants
 add_core = AFG
-
-
-
-
-
-
-
-
-
-
-
-
-
+add_core = GHU
 
 1449.2.1 = { #Conquered by Babur bin Baysunkur
 	owner = KHO

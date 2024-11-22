@@ -12,31 +12,11 @@ base_tax = 3
 base_production = 4
 base_manpower = 2
 is_city = yes
+
+#Claimants
+add_core = ASR
 add_core = BHT
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+add_core = IRQ
 
 1469.2.4 = {
 	owner = AKK

@@ -15,6 +15,8 @@ base_manpower = 1
 is_city = yes
 
 #Claimants
+add_core = NAB
+add_core = R4S
 
 #Buildings
 
@@ -22,30 +24,17 @@ is_city = yes
 
 #Known by Technology groups
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #Histories
-1215.6.15 = { owner = MAM controller = MAM add_core = MAM } # Mamluk territorial lands - By San Felipe
-
-1444.11.11 = { owner = MDA controller = MDA add_core = MDA } # Medina territorial lands - By San Felipe
-
-
+1215.6.15 = { 
+	owner = MAM 
+	controller = MAM 
+	add_core = MAM 
+} # Mamluk territorial lands - By San Felipe
+1444.11.11 = { 
+	owner = MDA 
+	controller = MDA 
+	add_core = MDA
+} # Medina territorial lands - By San Felipe
 1482.6.1 = { #Mamluks place all Hejaz under Mecca
 	owner = HED
 	controller = HED

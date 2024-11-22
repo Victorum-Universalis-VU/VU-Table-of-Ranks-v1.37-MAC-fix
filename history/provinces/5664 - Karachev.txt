@@ -3,7 +3,7 @@
 owner = BLV
 controller = BLV
 add_core = BLV
-culture = russian
+culture = ryazanian
 religion = orthodox
 capital = "Karachev"			#originally Korachev, but going with modern for recognisabilty. After all, what is between a and o in Russian?
 trade_goods = vodka

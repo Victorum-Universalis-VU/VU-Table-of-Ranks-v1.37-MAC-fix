@@ -2,6 +2,7 @@
 
 owner = BTL
 controller = BTL
+add_core = BTL
 culture = kurdish
 religion = sunni
 capital = "Bitlis"
@@ -11,33 +12,11 @@ base_tax = 4
 base_production = 4
 base_manpower = 2 
 is_city = yes
-add_core = BTL
 
+#Claimants
+add_core = R4S
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#Histories by SF
 1469.2.4 = {
 	owner = AKK
 	controller = AKK

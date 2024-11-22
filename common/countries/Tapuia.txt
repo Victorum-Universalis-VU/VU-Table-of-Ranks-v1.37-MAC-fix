@@ -7,13 +7,6 @@ revolutionary_colors = { 8  1  1 }
 
 historical_idea_groups = {
 	religious_ideas
-	defensive_ideas
-	offensive_ideas
-	maritime_ideas
-	trade_ideas
-	spy_ideas
-	diplomatic_ideas
-	economic_ideas
 }
 
 historical_units = {
@@ -26,7 +19,7 @@ historical_units = {
 }
 
 leader_names = {
-	Aimoré Prajé Takrukrak Krekmún Ituêto Futikrak Gueren Gutucrac Mekmek Minhagiran Nakrehê Naknyanúk
+	Aimorï¿½ Prajï¿½ Takrukrak Krekmï¿½n Ituï¿½to Futikrak Gueren Gutucrac Mekmek Minhagiran Nakrehï¿½ Naknyanï¿½k
 }
 
 monarch_names = {
@@ -43,5 +36,5 @@ monarch_names = {
 }
 
 ship_names = {
-	Guatá Waitaká Takrukrak Futikrak Gueren Mekmek Minhagiran Naknyanúk Prajé Azelene
+	Guatï¿½ Waitakï¿½ Takrukrak Futikrak Gueren Mekmek Minhagiran Naknyanï¿½k Prajï¿½ Azelene
 }

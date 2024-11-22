@@ -43,26 +43,6 @@ greek_league = {
 #Made by claivin for Missions Expanded
 ############
 # Crusader Kingdom
-crusader_kingdom_legacy = {
-	icon = "crown"
-	allow_normal_conversion = no
-	legacy_government = yes
-	valid_for_new_country = no
-	allow_convert = no
-
-	valid_for_new_country = no
-
-	valid_for_nation_designer = yes
-	nation_designer_cost = 60
-
-	monarchy = yes
-	modifiers = {
-		global_missionary_strength = 0.03
-		tolerance_own = 2
-		papal_influence = 2
-	}
-}
-
 crusader_kingdom = {
 	lock_level_when_selected = yes
 	icon = "king"
@@ -74,7 +54,6 @@ crusader_kingdom = {
 	nation_designer_trigger = {
 		religion = catholic
 	}
-	legacy_equivalent = crusader_kingdom_legacy
 	valid_for_nation_designer = yes
 	nation_designer_cost = 60
 	modifiers = {
@@ -110,39 +89,6 @@ sharia_reform = {
 }
 
 # Khagnate
-khaganate_legacy = {
-	icon = "crown"
-	allow_normal_conversion = no
-	legacy_government = yes
-	valid_for_new_country = no
-	allow_convert = no
-	fixed_rank = 3
-	valid_for_new_country = no
-
-	valid_for_nation_designer = yes
-	nation_designer_cost = 200
-
-	monarchy = yes
-	modifiers = {
-		max_absolutism = 10
-		yearly_absolutism = 0.10
-		culture_conversion_cost = -0.25
-		global_unrest = -1
-		vassal_income = 0.33
-		diplomats = 1
-		free_leader_pool = 2
-	}
-	conditional = {
-		allow = { has_dlc = "Cradle of Civilization" }
-		government_abilities = {
-			iqta_mechanic
-		}
-	}
-	custom_attributes = {
-		locked_government_type = yes
-	}
-}
-
 khaganate = {
 	lock_level_when_selected = yes
 	icon = "horde_riding"
@@ -153,8 +99,7 @@ khaganate = {
 	nation_designer_trigger = {
 		culture_group = tartar
 	}
-	fixed_rank = 3
-	legacy_equivalent = khaganate_legacy
+	fixed_rank = 9
 	valid_for_nation_designer = yes
 	nation_designer_cost = 200
 	modifiers = {
@@ -287,30 +232,6 @@ trade_confederation_reform = {
 ###############
 # LordVarangian's new Governments
 ###############
-
-athenian_monarchy_legacy = {
-	icon = "crown"
-	allow_normal_conversion = no
-	legacy_government = yes
-	valid_for_new_country = no
-	allow_convert = no
-	valid_for_new_country = no
-
-	valid_for_nation_designer = yes
-	nation_designer_cost = 250
-
-	monarchy = yes
-	modifiers = {
-		drill_gain_modifier = 0.25
-		yearly_army_professionalism = 0.02
-		culture_conversion_cost = -0.25
-		global_unrest = -1
-		vassal_income = 0.33
-		diplomats = 1
-		free_leader_pool = 2
-	}
-}
-
 athenian_monarchy = {
 	icon = "crown"
 	allow_normal_conversion = no
@@ -320,7 +241,6 @@ athenian_monarchy = {
 	valid_for_new_country = no
 	allow_convert = no
 	valid_for_new_country = no
-	legacy_equivalent = athenian_monarchy_legacy
 	valid_for_nation_designer = yes
 	nation_designer_cost = 250
 
@@ -333,29 +253,6 @@ athenian_monarchy = {
 		vassal_income = 0.33
 		diplomats = 1
 		free_leader_pool = 2
-	}
-}
-
-athenian_republic_legacy = {
-	icon = "crown"
-	allow_normal_conversion = no
-	legacy_government = yes
-	valid_for_new_country = no
-	allow_convert = no
-	valid_for_new_country = no
-	nation_designer_cost = 250
-
-	republic = yes
-	modifiers = {
-		max_absolutism = -50
-		diplomatic_upkeep = 2
-		vassal_income = 0.5
-		reduced_liberty_desire = -20
-		naval_morale = 0.1
-		galley_power = 0.15
-		development_cost = -0.05
-		republican_tradition = 0.5
-		trade_efficiency = 0.1
 	}
 }
 
@@ -366,7 +263,6 @@ athenian_republic = {
 		has_reform = athenian_republic
 	}
 	valid_for_new_country = no
-	legacy_equivalent = athenian_republic_legacy
 	allow_convert = no
 	valid_for_new_country = no
 	nation_designer_cost = 250
@@ -386,43 +282,6 @@ athenian_republic = {
 }
 
 # German Kaiserreich
-german_kaiserreich_legacy = {
-	# government mechanics flags go here
-	allow_normal_conversion = no
-	icon = "crown"
-	legacy_government = yes
-	valid_for_new_country = no
-	allow_convert = no
-
-	valid_for_nation_designer = yes
-	nation_designer_cost = 100
-
-	monarchy = yes
-	modifiers = {
-		global_unrest = -2
-		global_autonomy = -0.05
-		max_absolutism = 20
-		country_military_power = 1
-		monthly_militarized_society = 0.5
-	}
-
-	custom_attributes = {
-		locked_government_type = yes
-		has_unify_germany_cb = yes
-	}
-
-	conditional = {
-		allow = { has_dlc = "Rights of Man" }
-		government_abilities = {
-			militarization_mechanic
-		}
-	}
-	conditional = {
-		allow = { has_dlc = "Common Sense" }
-		has_parliament = yes
-	}
-}
-
 german_kaiserreich = {
 	icon = "german_kaiserreich"
 	lock_level_when_selected = yes
@@ -435,7 +294,6 @@ german_kaiserreich = {
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 100
-	legacy_equivalent = german_kaiserreich_legacy
 
 	modifiers = {
 		global_unrest = -2
@@ -475,34 +333,6 @@ german_kaiserreich = {
 }
 
 #West Slavic Monarchy
-west_slavic_legacy = {
-	icon = "crown"
-	lock_level_when_selected = yes
-	allow_normal_conversion = no
-	valid_for_nation_designer = no
-	legacy_government = yes
-	valid_for_new_country = no
-	allow_convert = no
-	factions = {
-		west_slav_slovaks
-		west_slav_poles
-		west_slav_czechs
-	}
-	monarchy = yes
-	queen = no
-	heir = no
-
-	modifiers = {
-		num_accepted_cultures = 2
-		global_autonomy = -0.05
-		cavalry_cost = -0.15
-	}
-
-	custom_attributes = {
-		locked_government_type = yes
-	}
-}
-
 west_slavic_monarchy = {
 	icon = "crown"
 	lock_level_when_selected = yes
@@ -511,7 +341,6 @@ west_slavic_monarchy = {
 		tag = ZCV
 	}
 	valid_for_nation_designer = no
-	legacy_equivalent = west_slavic_legacy
 	factions = {
 		west_slav_slovaks
 		west_slav_poles

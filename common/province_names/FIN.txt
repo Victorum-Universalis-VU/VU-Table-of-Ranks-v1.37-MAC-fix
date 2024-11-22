@@ -2,5 +2,6 @@
 
 28 = "Uusimaa"
 30 = "Viipuri"
+132 = { "Judenburg" "Judenburg" }
 2327 = { "Magna" "Magna" }
 4152 = { "Cajanaburg" "Cajanaburg" }

@@ -2,6 +2,7 @@
 
 owner = BAH
 controller = BAH
+add_core = BAH
 culture = marathi
 religion = hinduism
 capital = "Ahmednagar"
@@ -11,23 +12,12 @@ base_tax = 8
 base_production = 8
 base_manpower = 8
 is_city = yes
-add_core = BAH
+
+#Claimants
 add_core = AHM
+add_core = MAR
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#Histories by SF
 1490.1.1 = {
 	owner = AHM
 	controller = AHM

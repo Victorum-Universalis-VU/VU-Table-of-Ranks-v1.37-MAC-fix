@@ -137,7 +137,17 @@ country_event = {
 	}
 
 	immediate = {
-		hidden_effect = { set_global_flag = bottger_happened }
+		hidden_effect = { 
+			set_global_flag = bottger_happened 
+			if = {
+				limit = {
+					61 = { has_manufactory_trigger = yes }
+				}
+				61 = { 
+					owner = { set_country_flag = sax_has_manufactory_flag }
+				}
+			}
+		}
 	}
 
 	option = {
@@ -148,10 +158,16 @@ country_event = {
 			change_trade_goods = chinaware
 			if = {
 				limit = {
-					has_building = weapons
+					owner = { has_country_flag = sax_has_manufactory_flag }
 				}
-				hidden_effect = { remove_building = weapons }
-				add_building = mills
+				remove_building = weapons 
+				if = {
+					limit = { 
+						owner = { adm_tech = 16 } 
+					}
+					add_building = mills 
+				}
+				else = { add_or_upgrade_production_building = yes }
 			}
 		}
 		change_price = {
@@ -160,7 +176,13 @@ country_event = {
 			value = -0.5
 			duration = -1
 		}
-		add_prestige = 20
+		add_prestige_or_monarch_power = { amount = 20 }
+	}
+
+	after = {
+		61 = {
+			owner = { clr_country_flag = sax_has_manufactory_flag }
+		}
 	}
 }
 
@@ -569,53 +591,67 @@ country_event = {
 	major = yes
 
 	trigger = {
-		has_idea = quest_for_the_new_world
-		num_of_ports = 4
-		NOT = {
-			capital_scope = {
-				continent = asia
+		if = {
+			limit = { #So it's easier to see rather than a big OR
+				has_country_flag = orm_spice_trade_trigger_flag
 			}
+			always = yes
 		}
-		NOT = {
-			capital_scope = {
-				continent = oceania
-			}
+		else = {
+		    has_idea = quest_for_the_new_world
+		    num_of_ports = 4
+		    NOT = {
+		    	capital_scope = {
+		    		continent = asia
+		    	}
+		    }
+		    NOT = {
+		    	capital_scope = {
+		    		continent = oceania
+		    	}
+		    }
+		    has_discovered = 1460 # Cape of Good Hope
+		    OR = {
+		    	technology_group = western
+		    	technology_group = dutch_tech_group
+		    	technology_group = english_tech_group
+		    	technology_group = french_tech_group
+		    	technology_group = german_tech_group
+		    	technology_group = italian_tech_group
+		    	technology_group = portuguese_tech_group
+		    	technology_group = roman_tech_group
+		    	technology_group = scandinavian_tech_group
+		    	technology_group = spanish_tech_group
+		    	technology_group = swiss_tech_group
+		    	technology_group = eastern
+		    	technology_group = bohemian_tech_group
+		    	technology_group = byzantine_tech_group
+		    	technology_group = hungarian_tech_group
+		    	technology_group = polish_tech_group
+		    	technology_group = russian_tech_group
+		    	technology_group = bulgarian_tech_group
+		    }
+		    any_active_trade_node = {
+		    	has_merchant = PREV
+		    	OR = {
+		    		province_id = 1361 # Straits of Johor
+		    		province_id = 1343 # Ganges Delta
+		    		province_id = 504 # Thatta
+		    		province_id = 1340 # Comorin Cape
+		    	}
+		    }
+		    NOT = { has_global_flag = spice_trade_happened }
 		}
-		has_discovered = 1460 # Cape of Good Hope
-		OR = {
-			technology_group = western
-			technology_group = dutch_tech_group
-			technology_group = english_tech_group
-			technology_group = french_tech_group
-			technology_group = german_tech_group
-			technology_group = italian_tech_group
-			technology_group = portuguese_tech_group
-			technology_group = roman_tech_group
-			technology_group = scandinavian_tech_group
-			technology_group = spanish_tech_group
-			technology_group = swiss_tech_group
-			technology_group = eastern
-			technology_group = bohemian_tech_group
-			technology_group = byzantine_tech_group
-			technology_group = hungarian_tech_group
-			technology_group = polish_tech_group
-			technology_group = russian_tech_group
-			technology_group = bulgarian_tech_group
-		}
-		any_active_trade_node = {
-			has_merchant = PREV
-			OR = {
-				province_id = 1361 # Straits of Johor
-				province_id = 1343 # Ganges Delta
-				province_id = 504 # Thatta
-				province_id = 1340 # Comorin Cape
-			}
-		}
-		NOT = { has_global_flag = spice_trade_happened }
 	}
 
 	mean_time_to_happen = {
 		months = 1
+	}
+	
+	immediate = {
+		hidden_effect = {
+			set_global_flag = spice_trade_happened
+		}
 	}
 
 
@@ -627,30 +663,24 @@ country_event = {
 			value = 0.25			#VU AddOn changed from 0.5 - Now goes 4-5-3 (Vanilla was 3-4.5-3.3)
 			duration = -1
 		}
-
 		change_price = {
 			trade_goods = cinnamon
 			key = SPICE_TRADE
 			value = 0.285714
 			duration = -1
 		}
-
 		change_price = {
 			trade_goods = nutmeg
 			key = SPICE_TRADE
 			value = 0.3
 			duration = -1
 		}
-
 		change_price = {
 			trade_goods = cloves
 			key = SPICE_TRADE
 			value = 0.285714
 			duration = -1
 		}
-
-
-
 		add_years_of_income  = 0.25
 		add_prestige = 20
 	}
@@ -807,7 +837,6 @@ country_event = {
 			value = -0.3			#VU AddOn changed from -0.25 - Now goes 2.5 - 1 - 2.5 - 1.75 - 2.5 - 2 (Vanilla was 2.5 - 0.625 - 2.5 - 1.875 - 2.5 - 2)
 			duration = 3650
 		}
-
 		change_price = {
 			trade_goods = livestock #Agriculture is having a hard time coping.
 			key = LITTLE_ICE_AGE
@@ -1318,20 +1347,6 @@ country_event = {
 			value = 0.10
 			duration = -1
 		}
-		#VU AddOn cut - Now goes 3 - 3.3 - 3.9 - 5.1 - 3.6 (Vanilla was 3 - 3.45 - 3.9 - 4.65 - 5.4 - 3.45)
-		#change_price = {
-		#	trade_goods = glass
-		#	key = PERMANENT_NAVIES
-		#	value = 0.15
-		#	duration = -1
-		#}
-		#VU AddOn cut - Now goes 2 - 1.8 - 2 - 2.5 - 3 (Vanilla was 2 - 1.5 - 2 - 2.2 - 2.7 - 3.4)
-		#change_price = {
-		#	trade_goods = livestock
-		#	key = PERMANENT_NAVIES
-		#	value = 0.10
-		#	duration = -1
-		#}
 	}
 }
 
@@ -1460,22 +1475,18 @@ country_event = {
 			value = -0.5			#VU AddOn changed from -0.4 - Now goes 4-5-3 (Vanilla was 3-4.5-3.3)
 			duration = -1
 		}
-
 		change_price = {
 			trade_goods = cloves
 			key = DECLINE_OF_SPICE_TRADE
 			value = -0.285714
 			duration = -1
 		}
-
 		change_price = {
 			trade_goods = nutmeg
 			key = DECLINE_OF_SPICE_TRADE
 			value = -0.3
 			duration = -1
 		}
-
-		
 		change_price = {
 			trade_goods = cinnamon
 			key = DECLINE_OF_SPICE_TRADE
@@ -1562,51 +1573,59 @@ country_event = {
 	major = yes
 
 	trigger = {
-		capital_scope = { continent = europe }
-		dip_tech = 35
 		OR = {
-			current_age = age_of_absolutism #Not before this
-			current_age = age_of_revolutions
+			AND = {
+				capital_scope = { continent = europe }
+		        dip_tech = 35
+		        OR = {
+		        	current_age = age_of_absolutism #Not before this
+		        	current_age = age_of_revolutions
+		        }
+		        OR = {
+		        	504 = { #Indus
+		        		trade_share = {
+		        			country = ROOT
+		        			share = 10
+		        		}
+		        	}
+		        	524 = { #Deccan
+		        		trade_share = {
+		        			country = ROOT
+		        			share = 10
+		        		}
+		        	}
+		        	1340 = { #Ceylon
+		        		trade_share = {
+		        			country = ROOT
+		        			share = 10
+		        		}
+		        	}
+		        	1343 = { #Bengal
+		        		trade_share = {
+		        			country = ROOT
+		        			share = 10
+		        		}
+		        	}
+		        	1371 = { #Guanghzou
+		        		trade_share = {
+		        			country = ROOT
+		        			share = 10
+		        		}
+		        	}
+		        	684 = { #Hangzhou
+		        		trade_share = {
+		        			country = ROOT
+		        			share = 10
+		        		}
+		        	}
+		        }
+		        NOT = { has_global_flag = popular_silk_happened }
+			}
+			AND = {
+				tag = MNG 
+				mission_completed = mng_restore_royal_road
+			}
 		}
-		OR = {
-			504 = { #Indus
-				trade_share = {
-					country = ROOT
-					share = 10
-				}
-			}
-			524 = { #Deccan
-				trade_share = {
-					country = ROOT
-					share = 10
-				}
-			}
-			1340 = { #Ceylon
-				trade_share = {
-					country = ROOT
-					share = 10
-				}
-			}
-			1343 = { #Bengal
-				trade_share = {
-					country = ROOT
-					share = 10
-				}
-			}
-			1371 = { #Guanghzou
-				trade_share = {
-					country = ROOT
-					share = 10
-				}
-			}
-			684 = { #Hangzhou
-				trade_share = {
-					country = ROOT
-					share = 10
-				}
-			}
-		}
-		NOT = { has_global_flag = popular_silk_happened }
 	}
 	mean_time_to_happen = {
 		months = 1
@@ -1780,7 +1799,6 @@ country_event = {
 			value = 0.5			#VU AddOn changed from 0.25 - Now goes 3-4.5 (Vanilla was 4-5)
 			duration = -1
 		}
-
 		change_price = {
 			trade_goods = elephants
 			key = IVORY_SHORTAGE
@@ -2071,8 +2089,10 @@ country_event = {
 		}
 		trigger = {
 			event_target:bookmarket_here = {
-				NOT = { trade_goods = books }
-				NOT = { trade_goods = paper }
+				NOT = { 
+					trade_goods = books
+					trade_goods = paper 
+				}
 				province_without_special_goods_produced_trigger = yes #Don't offer if true.
 			}
 		}
@@ -2080,8 +2100,10 @@ country_event = {
 		event_target:bookmarket_here = {
 			if = {
 				limit = { 
-					NOT = { trade_goods = books }	
-					NOT = { trade_goods = paper }
+					NOT = { 
+						trade_goods = books
+						trade_goods = paper 
+					}
 				}
 				change_trade_goods = books
 			}
@@ -2413,7 +2435,11 @@ country_event = {
 					province_without_special_goods_produced_trigger = yes
 				}
 				if = {
-					limit = { NOT = { trade_goods = books } }
+					limit = { 
+						NOT = { 
+							trade_goods = books 
+						} 
+					}
 					change_trade_goods = books
 				}
 				if = {
@@ -2611,6 +2637,7 @@ country_event = {
 					NOT = { province_id = 112 }
 				}
 				save_event_target_as = diamond_city
+				save_global_event_target_as = diamond_city_global
 			}
 		}
 	}
@@ -2964,7 +2991,9 @@ country_event = {
 
 	option = {
 		name = prices.43.a
-		add_prestige = 15
+		add_prestige_or_monarch_power = {
+			amount = 15
+		}
 		change_price = {
 			trade_goods = glass
 			key = BOHEMIAN_GLASS

@@ -248,6 +248,13 @@ byz_pp_balkans_north_italy = {
 				}
 				add_permanent_claim = ROOT
 			}
+			ragusa_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 		    herzegovina_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -298,6 +305,7 @@ byz_pp_balkans_north_italy = {
 				province_id = 7727
 			    area = bosnia_area
 				area = east_adriatic_coast_area
+				area = ragusa_area
 				area = herzegovina_area
 				area = montenegro_area
 				area = rascia_area
@@ -316,6 +324,10 @@ byz_pp_balkans_north_italy = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			east_adriatic_coast_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			ragusa_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -792,6 +804,13 @@ byz_pp_italian = {
 				}
 				add_permanent_claim = ROOT
 			}
+			liechtenstein_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 			tirol_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -874,6 +893,7 @@ byz_pp_italian = {
 				area = inner_austria_area
 				area = romandie_area
 				area = switzerland_area
+				area = liechtenstein_area
 				area = tirol_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -939,6 +959,10 @@ byz_pp_italian = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			switzerland_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			liechtenstein_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}

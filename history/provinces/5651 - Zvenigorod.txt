@@ -3,7 +3,7 @@
 owner = MOS
 controller = MOS
 add_core = MOS
-culture = russian
+culture = muscovite
 religion = orthodox
 capital = "Zvenigorod"
 trade_goods = grain

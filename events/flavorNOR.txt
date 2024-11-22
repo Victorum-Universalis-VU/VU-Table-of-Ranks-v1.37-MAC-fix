@@ -1,9 +1,10 @@
-#VU updated by San Felipe for 1.36
+#Updated to v1.37 - SF
 ###################################
 # Flavor Events for Norway        #
 #                                 #
 # written by Sara Wendel-Örtqvist #
 ###################################
+
 #Adjusted by Dub to account for the new Dano-Norwegian mission trees.
 namespace = flavor_nor
 normal_or_historical_nations = yes

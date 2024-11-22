@@ -1,4 +1,4 @@
-#VU updated by San Felipe for 1.35
+#Updated to v1.37 - SF
 namespace = republics
 
 # Debates in Republics
@@ -3209,6 +3209,12 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		if = {
+			limit = {
+				has_country_flag = ned_buff_statists_candidates_flag
+			}
+			is_statists_in_power = no
+		}
 		NOT = { 
 			has_country_modifier = planned_coup_timer
 		}

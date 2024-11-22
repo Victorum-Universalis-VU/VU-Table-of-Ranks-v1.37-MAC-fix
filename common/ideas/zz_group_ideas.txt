@@ -79,7 +79,7 @@ trading_city_ideas = {
 colonial_ideas = {
 	start = {
 		development_cost = -0.1
-		num_accepted_cultures = -20
+		num_accepted_cultures = -4
 		#no_religion_penalty = yes
 	}
 
@@ -118,6 +118,7 @@ colonial_ideas = {
 	liberty_heroes = {
 		global_unrest = -1
 		free_leader_pool = 1
+		num_accepted_cultures = 2
 	}
 }
 
@@ -447,7 +448,10 @@ dravidian_ideas = {
 	trigger = {
 		culture_group = dravidian
 		NOT = { primary_culture = malayalam }
-		religion = hinduism
+		OR = {
+			religion = hinduism
+			religion = surya_majapahit
+		}
 	}
 	free = yes
 
@@ -669,7 +673,10 @@ horde_ideas = {
 	}
 
 	trigger = {
-		has_reform = steppe_horde
+		OR = {
+			has_reform = steppe_horde
+			has_reform = scythian_horde_reform	
+		}
 	}
 	free = yes
 
@@ -794,6 +801,12 @@ daimyo_ideas = {
 	trigger = {
 		OR = {
 			has_reform = daimyo
+			has_reform = daimyo_barony_reform
+			has_reform = daimyo_viscounty_reform
+			has_reform = daimyo_county_reform
+			has_reform = daimyo_marquisate_reform
+			has_reform = daimyo_duchy_reform
+			has_reform = daimyo_principality_reform
 			has_reform = indep_daimyo
 			has_reform = shogunate
 		}

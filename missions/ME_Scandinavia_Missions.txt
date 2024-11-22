@@ -22,6 +22,7 @@ SCA_missions_1 = {
 				area = svealand_area
 				area = vastra_gotaland_area
 				area = gotaland_area
+				area = gotland_area
 				area = jutland_area
 				area = denmark_area
 				area = norrland_area
@@ -41,6 +42,10 @@ SCA_missions_1 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			gotaland_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			gotland_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -416,6 +421,13 @@ SCA_missions_2 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			riga_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 			curonia_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
@@ -464,6 +476,7 @@ SCA_missions_2 = {
 				area = estonia_ingria_area
 				area = curonia_area
 				area = livonia_area
+				area = riga_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
@@ -477,6 +490,10 @@ SCA_missions_2 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			livonia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			riga_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}

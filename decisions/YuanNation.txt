@@ -1,6 +1,6 @@
+#Update to v1.37 - SF
 country_decisions = {
-
-	yuan_nation = {
+	form_great_yuan = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
@@ -15,12 +15,10 @@ country_decisions = {
 				ai = no
 			}
 			NOT = { exists = YUA }
-			NOT = { tag = MUG } #Delhi is just simply too far away from Beijing to even remotely consider it as a reason for it being able to reform into the Yuan
+			NOT = { tag = MUG }
 			NOT = { tag = QNG }
 			NOT = { tag = MNG }
 			NOT = { tag = MCH }
-			NOT = { tag = TIM } #Herat is just simply too far away from Beijing to even remotely consider it as a reason for it being able to reform into the Yuan
-						 
 			OR = {
 				primary_culture = altaic_new 
 				culture_group = altaic
@@ -124,7 +122,7 @@ country_decisions = {
 				limit = {
 					has_dlc = "Common Sense"
 				}
-				government_rank = 3
+				government_rank = 9
 			}
 			else = {
 				total_development = 2000 #VU Dev Doubling
@@ -248,6 +246,10 @@ country_decisions = {
 						}
 					}
 					set_global_flag = sinicized_altaic_flag
+					remove_accepted_culture = mongol
+					remove_accepted_culture = oirats
+					remove_accepted_culture = khalkha
+					remove_accepted_culture = chahar
 				}
 				custom_tooltip = sinicize_mongols_ct
 			}
@@ -255,10 +257,69 @@ country_decisions = {
 				limit = { has_custom_ideas = no }
 				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
+			swap_non_generic_missions = yes
+			on_change_tag_effect = yes
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 		ai_importance = 400
+	}
+	hordes_restore_yuan = {
+		potential = {
+			has_country_flag = hordes_yuan_restoration
+			NOT = { 
+				YUA = {
+					is_subject_of = ROOT
+				}
+			}
+		}
+		allow = {
+			NOT = { exists = YUA }
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				OR = {
+					region = mongolia_region
+					region = north_china_region
+					region = manchuria_region
+					region = south_china_region
+					region = xinan_region
+				}
+				value = 10
+			}
+		}
+		effect = {
+			custom_tooltip = HORDES_RESTORE_YUAN_EFFECT
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						OR = {
+							region = mongolia_region
+							region = north_china_region
+							region = manchuria_region
+							region = south_china_region
+							region = xinan_region
+						}
+					}
+					add_core = YUA
+					cede_province = YUA
+				}
+				
+				create_subject = {
+					subject_type = mongol_brother_realm
+					subject = YUA
+				}
+				custom_tooltip = ""
+				custom_tooltip = MONGOL_BROTHER_REALM_EXPLANATION
+				
+				YUA = {
+					set_country_flag = yua_subject_less_liberty_desire_flag
+				}
+				
+				clr_country_flag = hordes_yuan_restoration
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
 	}
 }

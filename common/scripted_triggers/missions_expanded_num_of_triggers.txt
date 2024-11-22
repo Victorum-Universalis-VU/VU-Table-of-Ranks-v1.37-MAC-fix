@@ -208,30 +208,30 @@ num_of_adm_clicks = {
 		}
 	}
 }
-me_tim_europe_victory = { 
-	custom_trigger_tooltip = {
-		tooltip = me_tim_defeated_$value$_european_nations
-		check_variable = {
-			which = me_tim_europe_victory
-			value = $value$
-		}
-	}
-}
-METimConquestHorde = {
-	custom_trigger_tooltip = {
-		tooltip = ME_tim_conquered_$value$_provinces
-		check_variable = {
-			which = METimConquestHorde
-			value = $value$
-		}
-	}
-}
-METimArabianProvincesRazed = {
-	custom_trigger_tooltip = {
-		tooltip = ME_tim_razed_$value$_arabian_provinces
-		check_variable = {
-			which = METimArabianProvincesRazed
-			value = $value$
-		}
-	}
-}
+#me_tim_europe_victory = { 
+#	custom_trigger_tooltip = {
+#		tooltip = me_tim_defeated_$value$_european_nations
+#		check_variable = {
+#			which = me_tim_europe_victory
+#			value = $value$
+#		}
+#	}
+#}
+#METimConquestHorde = {
+#	custom_trigger_tooltip = {
+#		tooltip = ME_tim_conquered_$value$_provinces
+#		check_variable = {
+#			which = METimConquestHorde
+#			value = $value$
+#		}
+#	}
+#}
+#METimArabianProvincesRazed = {
+#	custom_trigger_tooltip = {
+#		tooltip = ME_tim_razed_$value$_arabian_provinces
+#		check_variable = {
+#			which = METimArabianProvincesRazed
+#			value = $value$
+#		}
+#	}
+#}

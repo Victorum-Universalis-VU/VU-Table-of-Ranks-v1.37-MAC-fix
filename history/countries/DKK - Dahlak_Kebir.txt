@@ -1,6 +1,6 @@
-government_rank = 2
 government = tribal
 add_government_reform = tribal_kingdom
+government_rank = 6 #Petty_Kingdom
 primary_culture = tigray
 religion = coptic
 technology_group = east_african

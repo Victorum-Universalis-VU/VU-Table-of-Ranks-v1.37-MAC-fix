@@ -2,6 +2,7 @@
 
 owner = QAR
 controller = QAR
+add_core = QAR
 culture = azerbaijani
 religion = shiite
 capital = "Marageh"
@@ -11,17 +12,10 @@ base_tax = 4
 base_production = 4
 base_manpower = 4
 is_city = yes
-add_core = QAR
+
+#Claimants
+add_core = ILK
 add_core = MGR
-
-
-
-
-
-
-
-
-
 
 add_province_triggered_modifier = vu_conquest_of_the_great_fire
 

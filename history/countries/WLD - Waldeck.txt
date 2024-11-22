@@ -1,6 +1,6 @@
 government = monarchy
-add_government_reform = feudalism_reform
-government_rank = 1
+add_government_reform = eue_duchy_reform
+government_rank = 6 #Duchy
 primary_culture = eastphalian
 religion = catholic
 #technology_group = western
@@ -10,7 +10,8 @@ capital = 7315 #Waldeck
 
 1431.1.1 = {
 	monarch = {
-		name = "Anton von Rotenhan"
+		name = "Henry"
+		dynasty = "von Waldeck"
 		birth_date = 1390.1.1
 		adm = 3
 		dip = 3

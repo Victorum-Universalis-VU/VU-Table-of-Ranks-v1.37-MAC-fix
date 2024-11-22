@@ -1,4 +1,4 @@
-#VU updated by San Felipe for 1.35
+#Updated to v1.37 - SF
 ##############################
 # Events for Theocracy       #
 #                            #
@@ -55,17 +55,24 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		is_subject = no
 		NOT = { has_reform = papacy_reform }
 		NOT = { has_country_flag = in_theocracy_heir_selection }
 		NOT = { has_country_flag = is_selecting_stat_bonus_for_heir }
+		OR = {
+			NOT = { has_country_flag = theocracy_heir_counter }
+			had_country_flag = {
+				flag = theocracy_heir_counter
+				days = 40
+			}
+		}
 		has_government_attribute = heir
 	}
 
 	immediate = {
 		hidden_effect = {
 			set_country_flag = in_theocracy_heir_selection
-
+			clr_country_flag = theocracy_heir_counter
+			set_country_flag = theocracy_heir_counter
 			if = {
 				limit = {
 					has_country_flag = KOL_secondogeniture_of_BAV
@@ -127,15 +134,24 @@ country_event = {
 					any_owned_province = {
 						is_capital = no
 						is_state = yes
-						religion = hinduism
+						OR = {
+							religion = hinduism
+							religion = surya_majapahit
+						}
 					}
-					religion = hinduism
+					OR = {
+						religion = hinduism
+						religion = surya_majapahit
+					}
 				}
 				random_owned_province = {
 					limit = { 
 						is_capital = no
 						is_state = yes
-						religion = hinduism
+						OR = {
+							religion = hinduism
+							religion = surya_majapahit
+						}
 					}
 					save_event_target_as = noble_province
 				}
@@ -159,18 +175,27 @@ country_event = {
 			else_if = {
 				limit = {
 					has_estate = estate_vaisyas
-					religion = hinduism
+					OR = {
+						religion = hinduism
+						religion = surya_majapahit
+					}
 					any_owned_province = {
 						is_capital = no
 						is_state = yes
-						religion = hinduism
+						OR = {
+							religion = hinduism
+							religion = surya_majapahit
+						}
 					}
 				}
 				random_owned_province = {
 					limit = { 
 						is_capital = no
 						is_state = yes
-						religion = hinduism
+						OR = {
+							religion = hinduism
+							religion = surya_majapahit
+						}
 					}
 					save_event_target_as = burgher_province
 				}
@@ -194,18 +219,27 @@ country_event = {
 			else_if = {
 				limit = {
 					has_estate = estate_brahmins
-					religion = hinduism
+					OR = {
+						religion = hinduism
+						religion = surya_majapahit
+					}
 					any_owned_province = {
 						is_capital = no
 						is_state = yes
-						religion = hinduism
+						OR = {
+							religion = hinduism
+							religion = surya_majapahit
+						}
 					}
 				}
 				random_owned_province = {
 					limit = { 
 						is_capital = no
 						is_state = yes
-						religion = hinduism
+						OR = {
+							religion = hinduism
+							religion = surya_majapahit
+						}
 					}
 					save_event_target_as = church_province
 				}
@@ -239,7 +273,10 @@ country_event = {
 		else_if = {
 			limit = {
 				has_estate = estate_maratha
-				religion = hinduism
+				OR = {
+					religion = hinduism
+					religion = surya_majapahit
+				}
 			}
 			add_estate_loyalty = {
 				estate = estate_maratha
@@ -249,7 +286,10 @@ country_event = {
 		else_if = {
 			limit = {
 				has_estate = estate_rajput
-				religion = hinduism
+				OR = {
+					religion = hinduism
+					religion = surya_majapahit
+				}
 			}
 			add_estate_loyalty = {
 				estate = estate_rajput
@@ -268,7 +308,10 @@ country_event = {
 		else_if = {
 			limit = {
 				has_estate = estate_brahmins
-				religion = hinduism
+				OR = {
+					religion = hinduism
+					religion = surya_majapahit
+				}
 			}
 			add_estate_loyalty = {
 				estate = estate_brahmins
@@ -414,7 +457,10 @@ country_event = {
 		else_if = {
 			limit = {
 				has_estate = estate_maratha
-				religion = hinduism
+				OR = {
+					religion = hinduism
+					religion = surya_majapahit
+				}
 			}
 			add_estate_loyalty = {
 				estate = estate_maratha
@@ -424,7 +470,10 @@ country_event = {
 		else_if = {
 			limit = {
 				has_estate = estate_rajput
-				religion = hinduism
+				OR = {
+					religion = hinduism
+					religion = surya_majapahit
+				}
 			}
 			add_estate_loyalty = {
 				estate = estate_rajput
@@ -443,7 +492,10 @@ country_event = {
 		else_if = {
 			limit = {
 				has_estate = estate_brahmins
-				religion = hinduism
+				OR = {
+					religion = hinduism
+					religion = surya_majapahit
+				}
 			}
 			add_estate_loyalty = {
 				estate = estate_brahmins
@@ -540,7 +592,10 @@ country_event = {
 		else_if = {
 			limit = {
 				has_estate = estate_vaisyas
-				religion = hinduism
+				OR = {
+					religion = hinduism
+					religion = surya_majapahit
+				}
 			}
 			add_estate_loyalty = {
 				estate = estate_vaisyas
@@ -559,7 +614,10 @@ country_event = {
 		else_if = {
 			limit = {
 				has_estate = estate_brahmins
-				religion = hinduism
+				OR = {
+					religion = hinduism
+					religion = surya_majapahit
+				}
 			}
 			add_estate_loyalty = {
 				estate = estate_brahmins
@@ -689,7 +747,10 @@ country_event = {
 		else_if = {
 			limit = {
 				has_estate = estate_brahmins
-				religion = hinduism
+				OR = {
+					religion = hinduism
+					religion = surya_majapahit
+				}
 			}
 			add_estate_loyalty = {
 				estate = estate_brahmins
@@ -708,7 +769,10 @@ country_event = {
 		else_if = {
 			limit = {
 				has_estate = estate_vaisyas
-				religion = hinduism
+				OR = {
+					religion = hinduism
+					religion = surya_majapahit
+				}
 			}
 			add_estate_loyalty = {
 				estate = estate_vaisyas
@@ -849,7 +913,10 @@ country_event = {
 		else_if = {
 			limit = {
 				has_estate = estate_brahmins
-				religion = hinduism
+				OR = {
+					religion = hinduism
+					religion = surya_majapahit
+				}
 			}
 			add_estate_loyalty = {
 				estate = estate_brahmins
@@ -868,7 +935,10 @@ country_event = {
 		else_if = {
 			limit = {
 				has_estate = estate_maratha
-				religion = hinduism
+				OR = {
+					religion = hinduism
+					religion = surya_majapahit
+				}
 			}
 			add_estate_loyalty = {
 				estate = estate_maratha
@@ -878,7 +948,10 @@ country_event = {
 		else_if = {
 			limit = {
 				has_estate = estate_rajput
-				religion = hinduism
+				OR = {
+					religion = hinduism
+					religion = surya_majapahit
+				}
 			}
 			add_estate_loyalty = {
 				estate = estate_rajput
@@ -1173,7 +1246,8 @@ country_event = {
 				estate = estate_nobles
 				loyalty = -15
 			}
-		}		
+		}
+
 		if = {
 			limit = { has_government_attribute = can_see_theocratic_heir_stats }
 			if = {
@@ -1256,6 +1330,8 @@ country_event = {
 				loyalty = -10
 			}
 		}
+
+		
 		if = {
 			limit = { has_government_attribute = can_see_theocratic_heir_stats }
 			if = {

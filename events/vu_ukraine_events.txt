@@ -57,7 +57,7 @@ country_event = {
 	}
 	option = {
 		name = "vu_ukraine_tsardom_hetman"
-		set_government_rank = 3
+		set_government_rank = 9
 		if = {
 			limit = {
 				is_revolutionary = no

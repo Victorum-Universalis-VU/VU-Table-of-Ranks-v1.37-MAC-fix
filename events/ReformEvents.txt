@@ -956,7 +956,7 @@ country_event = {
 		modifier = {
 			factor = 0.75
 			had_active_policy = {
-				policy = cultural_unity
+				policy = vu_state_nationalism
 				days = 365
 			}
 		}
@@ -1819,93 +1819,93 @@ country_event = {
 	}
 }
 
- country_event = {
-	 id = reform_me_events.27
-	 title = reform_me_events.27.t
-	 desc = reform_me_events.27.d
-	 picture = WESTERNISATION_eventPicture
-	 hidden = yes
+country_event = {
+	id = reform_me_events.27
+	title = reform_me_events.27.t
+	desc = reform_me_events.27.d
+	picture = WESTERNISATION_eventPicture
+	hidden = yes
 	
 
-	 trigger = {
-		 has_government_attribute = enables_town_rights 
-		 any_owned_province = {
-			 OR = {
-				 AND = {
-					 has_estate = estate_burghers
-					 NOT = { has_province_modifier = Town_Rights }
-				 }
-				 AND = {
-					 NOT = { has_estate = estate_burghers }
-					 has_province_modifier = Town_Rights
-				 }
-			 }
-		 }
-	 }
+	trigger = {
+		has_government_attribute = enables_town_rights 
+		any_owned_province = {
+			OR = {
+				AND = {
+					has_estate = estate_burghers
+					NOT = { has_province_modifier = Town_Rights }
+				}
+				AND = {
+					NOT = { has_estate = estate_burghers }
+					has_province_modifier = Town_Rights
+				}
+			}
+		}
+	}
 	
-	 mean_time_to_happen = {
-		 days = 30
-	 }
+	mean_time_to_happen = {
+		days = 30
+	}
 	
-	 immediate = {
-		 every_owned_province = {
-			 limit = {
-				 has_estate = estate_burghers
-				 NOT = { has_province_modifier = Town_Rights }
-             }
-			 add_province_modifier = {
-				 name = "Town_Rights"
-				 duration = -1
-			 }
-		 }
-		 every_owned_province = {
-			 limit = {
-				 NOT = { has_estate = estate_burghers }
-				 has_province_modifier = Town_Rights
-            		}
+	immediate = {
+		every_owned_province = {
+			limit = {
+				has_estate = estate_burghers
+				NOT = { has_province_modifier = Town_Rights }
+            }
+			add_province_modifier = {
+				name = "Town_Rights"
+				duration = -1
+			}
+		}
+		every_owned_province = {
+			limit = {
+				NOT = { has_estate = estate_burghers }
+				has_province_modifier = Town_Rights
+            }
 			remove_province_modifier = Town_Rights
-		 }
-	 }
+		}
+	}
 	
-	 option = {
-		 name = reform_me_events.27.a
+	option = {
+		name = reform_me_events.27.a
 		
-	 }
- }
+	}
+}
 
- country_event = {
-	 id = reform_me_events.28
-	 title = reform_me_events.28.t
-	 desc = reform_me_events.28.d
-	 picture = WESTERNISATION_eventPicture
-	 hidden = yes
+country_event = {
+	id = reform_me_events.28
+	title = reform_me_events.28.t
+	desc = reform_me_events.28.d
+	picture = WESTERNISATION_eventPicture
+	hidden = yes
 	
 
-	 trigger = {
+	trigger = {
 		NOT = { has_government_attribute = enables_town_rights }
-		 any_owned_province = {
-			 has_province_modifier = Town_Rights
-		 }
-	 }
+		any_owned_province = {
+			has_province_modifier = Town_Rights
+		}
+	}
 	
-	 mean_time_to_happen = {
-		 days = 30
-	 }
+	mean_time_to_happen = {
+		days = 30
+	}
 	
-	 immediate = {
+	immediate = {
 		 every_owned_province = {
-			 limit = {
-				 has_province_modifier = Town_Rights
-        		 }
-			 remove_province_modifier = Town_Rights
-		 }
-	 }
+			limit = {
+				has_province_modifier = Town_Rights
+        	}
+			remove_province_modifier = Town_Rights
+		}
+	}
 	
-	 option = {
-		 name = reform_me_events.28.a
+	option = {
+		name = reform_me_events.28.a
 		
-	 }
- }
+	}
+}
 
 country_event = {
 	id = reform_me_events.29
@@ -4188,7 +4188,7 @@ country_event = {
 	option = {
 		name = reform_me_events.66.a
 		
-		add_government_reform = crown_of_castille
+		add_government_reform = crown_of_castile
 	}
 
 	option = {
@@ -6762,7 +6762,7 @@ country_event = {
 	
 
 	trigger = {
-		has_idea = expanded_industrial_capacity
+		has_idea = debt_and_loans
 		any_owned_province = {
 			OR = {
 				AND = {
@@ -9828,7 +9828,7 @@ country_event = {
 						amount = 7
 					}
 					AND = {
-						government_rank = 3
+						government_rank = 9
 						culture_group = malay
 					}
 				}
@@ -10098,7 +10098,7 @@ country_event = {
 						amount = 7
 					}
 					AND = {
-						government_rank = 3
+						government_rank = 9
 						culture_group = malay
 					}
 				}
@@ -10921,7 +10921,7 @@ country_event = {
 	
 
 	trigger = {
-		has_government_attribute = reinforce_the_hwangog_reform
+		has_government_attribute = reinforce_the_gwangmu_reform
 		any_owned_province = {
 			trade_goods = grain
 			NOT = { has_province_modifier = GE_hwangog }
@@ -15185,7 +15185,7 @@ country_event = {
 	# hidden = yes
 
 	trigger = {
-		has_government_attribute = GE_minority_exploitation
+		has_government_attribute = reinforce_the_gwangmu_reform_2
 	}
 	
 	mean_time_to_happen = {

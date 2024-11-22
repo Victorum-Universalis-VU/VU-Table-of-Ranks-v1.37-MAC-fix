@@ -195,8 +195,8 @@ country_event = {
 
 province_event = { #Conversion of england
 	id = vu_romanian_events.4
-	title = vu_romanian_events.4.t 
-	desc = vu_romanian_events.4.d 
+	title = vu_romanian_events.4.t
+	desc = vu_romanian_events.4.d
 	picture = {
 		trigger = {
 			has_dlc = "Purple Phoenix"
@@ -253,7 +253,7 @@ province_event = { #Conversion of england
 	}
 	
 	option = {
-		name = vu_romanian_events.4.a 
+		name = vu_romanian_events.4.a
 
 		change_culture = romano_britanian
 		change_religion = ROOT

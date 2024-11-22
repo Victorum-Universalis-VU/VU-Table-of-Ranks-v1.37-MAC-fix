@@ -1,8 +1,8 @@
 #8026 - Alava
 
-owner = CAS
-controller = CAS
-add_core = CAS
+owner = ALV
+controller = ALV
+add_core = ALV
 culture = basque
 religion = catholic
 capital = "Vitoria"
@@ -13,7 +13,8 @@ trade_goods = fruit
 is_city = yes
 hre = no
 
-
+#Histories
+#1444.11.11 = { owner = ALV controller = ALV add_core = ALV } # Castilian territorial lands - By San Felipe
 
 
 

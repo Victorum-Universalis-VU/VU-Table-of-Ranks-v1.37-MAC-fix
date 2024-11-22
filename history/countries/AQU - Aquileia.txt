@@ -1,12 +1,12 @@
 government = theocracy
 add_government_reform = leading_clergy_reform
+government_rank = 7 #Patriarchate
 primary_culture = venetian
 religion = catholic
 #technology_group = western
 technology_group = italian_tech_group
 unit_type = western
 capital = 111	# Friuli
-government_rank = 1
 
 1394.1.1 = {
 	monarch = {

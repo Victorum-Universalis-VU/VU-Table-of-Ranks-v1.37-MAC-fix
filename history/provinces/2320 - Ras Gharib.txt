@@ -2,6 +2,7 @@
 
 owner = MAM
 controller = MAM
+add_core = MAM
 culture = al_misr_arabic
 religion = sunni
 capital = "Ras Gareb"
@@ -11,24 +12,10 @@ base_tax = 2
 base_production = 2 
 base_manpower = 1 
 is_city = yes
-add_core = MAM
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#Claimants
+add_core = PT0
+add_core = R4S
 
 1517.1.1 = {
 	owner = TUR

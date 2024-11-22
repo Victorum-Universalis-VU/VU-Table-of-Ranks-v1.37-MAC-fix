@@ -950,6 +950,13 @@ lit_dlc_5 = {
 					}
 					add_permanent_claim = ROOT 
 				}
+				riga_area = {
+					limit = { 
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+					add_permanent_claim = ROOT 
+				}
 				estonia_ingria_area = {
 					limit = { 
 						NOT = { owned_by = ROOT }
@@ -1053,6 +1060,7 @@ lit_dlc_5 = {
 		provinces_to_highlight = {
 			OR = {
 				area = livonia_area
+				area = riga_area
 				area = estonia_ingria_area
 				area = curonia_area
 			}
@@ -1062,6 +1070,10 @@ lit_dlc_5 = {
 		}
 		trigger = {
 			livonia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT	
+			}
+			riga_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT	
 			}
@@ -1169,7 +1181,7 @@ lit_dlc_5 = {
 		effect = {
 			if = {
 				limit = { 
-					NOT = { government_rank = 3 }
+					NOT = { government_rank = 9 }
 				}
 				add_government_reform = lithuanian_grand_kingdom
 			}

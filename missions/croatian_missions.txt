@@ -22,7 +22,8 @@ cro_1 = {
 			OR = {
 				province_id = 4753
 				province_id = 136
-				area = east_adriatic_coast_area 
+				area = east_adriatic_coast_area
+				area = ragusa_area
 			}
 			NOT = { owned_by = ROOT }
 			NOT = { province_id = 4754 }
@@ -31,6 +32,14 @@ cro_1 = {
 		trigger = {
 			is_subject = no
 			east_adriatic_coast_area = {
+				type = all
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT
+					province_id = 4754
+					province_id = 136
+				}
+			}
+			ragusa_area = {
 				type = all
 				OR = {
 					country_or_non_sovereign_subject_holds = ROOT
@@ -237,7 +246,16 @@ cro_2 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			east_adriatic_coast_area  = {
+			east_adriatic_coast_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { province_id = 137 }
+					NOT = { province_id = 4754 }
+				}
+				add_permanent_claim = ROOT
+			}
+			ragusa_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }

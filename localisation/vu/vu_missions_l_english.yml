@@ -939,7 +939,7 @@
  swe_found_sala_silver_mine_desc:0 "In the hills north of Västerås lies a great deposit of silver. Not only that; the mountain also houses large deposits of lead and zinc. The mountain also contains a rather fancy green marble that could potentially be exploited. Such a place could only benefit a great nation such as ours, suggesting we should move quickly to establish mining operations in the region."
  swe_control_baltic_trade_title:0 "Control North Baltic Trade"
  swe_control_baltic_trade_desc:0 "The Swedish Empire is united by the Baltic Sea. This necessitates a mighty fleet to protect it and complete domination of the trade going through it."
- swe_control_baltic_trade_tooltip:0 "Controls at least §Y3§! Centers of Trade of at least level §Y2§! in §YBergslagen§!"
+ swe_control_baltic_trade_tooltip:0 "Controls at least §Y3§! Centers of Trade of at least level §Y2§! in §YUppland§!"
  swe_dominium_maris_baltici_title:0 "Dominium Maris Baltici"
  swe_dominium_maris_baltici_desc:0 "To finalize our complete domination of the Baltic, we need to make sure that we control all lands from the straits of Skagerak and Kattegat, to the Gulf of Finland. It all must belong to Sweden."
  #
@@ -1230,6 +1230,46 @@
  USA_missions_liberia_title: "Liberia!"
  USA_missions_liberia_desc: "A land for freedmen and born free men alike, long live Liberia!"
  #
- highlighted_provinces_converted_to_religion:0 "The highlighted provinces are following the §Y[Root.Religion.GetName]§! faith."
+ highlighted_provinces_converted_to_religion: "The highlighted provinces are following the §Y[Root.Religion.GetName]§! faith."
  #
- emp_pap_patrimony_of_st_peter_tt:0 "§Y6§! provinces in §YMarche-Abruzzo§! or §YEmilia-Romagna§! areas are owned by you or your non-tributary subjects"
+ emp_pap_patrimony_of_st_peter_tt: "§Y6§! provinces in §YMarche-Abruzzo§! or §YEmilia-Romagna§! areas are owned by you or your non-tributary subjects"
+ 
+ #New 1.37 Missions by DonBrom
+ #Generic Austrian Missions 
+ vu_austrian_generic_1_title: "Prepare for War"
+ vu_austrian_generic_1_desc: "Let's go!"
+ vu_austrian_generic_2_title: "Chin Dynasty"
+ vu_austrian_generic_2_desc: "ONE chin to rule them all!"
+ vu_austrian_generic_3_title: "Austria United"
+ vu_austrian_generic_3_desc: "Wisdom and Effort."
+ vu_austrian_generic_4_title: "Protected Mountain Pass"
+ vu_austrian_generic_4_desc: "You shall NOT pass!"
+ vu_austrian_generic_5_title: "Reunited at last!"
+ vu_austrian_generic_5_desc: "It is just that we reunite with Tyrol since she has always been part of our house since the passing of the Meinhardiner dynasty."
+ vu_austrian_generic_6_title: "Port of Trieste"
+ vu_austrian_generic_6_desc: "It's ours and we shall TAKE IT!"
+ vu_austrian_generic_7_title: "Black Silver"
+ vu_austrian_generic_7_desc: "What do you mean impure?"
+ vu_austrian_generic_8_title: "Graz Castle"
+ vu_austrian_generic_8_desc: "Standing mighty and proud since the 10th century."
+ vu_austrian_generic_9_title: "Danubian Soil"
+ vu_austrian_generic_9_desc: "More fertile than Chernozem"
+ vu_austrian_generic_10_title: "City of Dreams"
+ vu_austrian_generic_10_desc: "City of Music, City of Prayers, we're claim ALL of them."
+ vu_austrian_generic_11_title: "Carinthian Steel"
+ vu_austrian_generic_11_desc: "Better than Toledo Steel."
+ vu_austrian_generic_12_title: "Cilli Duchies"
+ vu_austrian_generic_12_desc: "Life is too short."
+ vu_austrian_generic_13_title: "Imperial Crownlands"
+ vu_austrian_generic_13_desc: "Indeed..."
+ 
+ #New Spanish Mission - SF
+ spa_bourbonic_renovations_title: "Bourbonic Renovations"
+ spa_bourbonic_renovations_desc: "It is time to move our palace and the Royal Court to a more central part of Madrid, so that we may be better able to administer our people and empire."
+ 
+ #Modifier - SF
+ san_lorenzo_es_corte: "Traslado Real Audiencia a San Lorenzo"
+ desc_san_lorenzo_es_corte: "San Lorenzo has gone from being a small Castilian city to the capital of the Kingdom of Spain. As a result the city is growing very quickly as all the people of our court and administration settle there. Royal architects are also overseeing the expansion of the city in order to create a capital suitable to rule a growing empire such as ours."
+ 
+ #Tooltips - SF
+ spa_recent_change_san_lorenzo_tt: "Has recently changed capital to [8505.GetName] via the '§YTraslado Real Audiencia a San Lorenzo§!' event"

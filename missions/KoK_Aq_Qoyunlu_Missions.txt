@@ -10,7 +10,7 @@ aq_qoyunlu_first = {
 		OR = {
 			tag = AKK
 			AND = {
-				tag = RMM
+				tag = RUM
 				was_tag = AKK
 			}
 		}
@@ -322,7 +322,7 @@ aq_qoyunlu_second = {
 		OR = {
 			tag = AKK
 			AND = {
-				tag = RMM
+				tag = RUM
 				was_tag = AKK
 			}
 		}
@@ -828,7 +828,7 @@ aq_qoyunlu_third = {
 		OR = {
 			tag = AKK
 			AND = {
-				tag = RMM
+				tag = RUM
 				was_tag = AKK
 			}
 		}
@@ -1221,7 +1221,7 @@ aq_qoyunlu_fourth = {
 		OR = {
 			tag = AKK
 			AND = {
-				tag = RMM
+				tag = RUM
 				was_tag = AKK
 			}
 		}
@@ -1744,7 +1744,7 @@ aq_qoyunlu_fifth = {
 		OR = {
 			tag = AKK
 			AND = {
-				tag = RMM
+				tag = RUM
 				was_tag = AKK
 			}
 		}

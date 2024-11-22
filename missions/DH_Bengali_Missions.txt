@@ -678,10 +678,10 @@ bng_slot_3 = {
 				if = {
 					limit = {
 						NOT = {
-							government_rank = 3
+							government_rank = 9
 						}
 					}
-					set_government_rank = 3
+					set_government_rank = 9
 				}			
 				add_prestige = 20
 				capital_scope = {

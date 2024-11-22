@@ -3,7 +3,7 @@
 #Area - Asturias
 
 #Default
-owner = CAS		#Juan II of Castille
+owner = CAS		#Juan II of Castile
 controller = CAS
 add_core = CAS
 culture = galician
@@ -17,7 +17,6 @@ capital = "Lugo"
 is_city = yes
 
 #Claimants
-add_core = GAL
 
 #Buildings
 
@@ -25,15 +24,10 @@ add_core = GAL
 
 #Known by Technology groups
 
-
-
-
-
-
 #Histories
 1215.6.15 = { owner = LON controller = LON add_core = LON } # Leonese territorial lands - By San Felipe
 
-1444.11.11 = { owner = CAS controller = CAS add_core = CAS } # Castilian territorial lands - By San Felipe
+1444.11.11 = { owner = GAL controller = GAL add_core = GAL } # Castilian territorial lands - By San Felipe
 
 1467.1.1 = { unrest = 4 } # Second war of the "irmandiños"
 1470.1.1 = { unrest = 0 } # End of the Second war of the "irmandiños"
@@ -43,7 +37,7 @@ add_core = GAL
 1516.1.23 = {	controller = SPA
 	owner = SPA
 	add_core = SPA
-} # King Fernando dies, Carlos inherits Aragon and becomes co-regent of Castilla
+} # King Fernando dies, Carlos inherits Aragon and becomes co-regent of Castila
 1713.4.11 = { remove_core = CAS }
 1808.6.6 = { revolt = { type = pretender_rebels size = 2 leader = "Fernando" } controller = REB }
 1809.1.1 = { revolt = {} controller = SPA }

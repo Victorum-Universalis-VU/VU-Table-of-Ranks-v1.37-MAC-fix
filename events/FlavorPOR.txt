@@ -910,9 +910,9 @@ country_event = {
 		add_years_of_income = -0.10
 		define_explorer = {
 			name = "Cristóvão Colombo"
-			fire = 1
-			shock = 1
-			manuever = 5
+			fire = 2
+			shock = 2
+			manuever = 6
 			siege = 0
 		}
 		add_country_modifier = {

@@ -1,6 +1,6 @@
 government = monarchy
 add_government_reform = nayankara_reform
-government_rank = 1
+government_rank = 6 #Petty_Kingdom
 primary_culture = kannada
 religion = hinduism
 technology_group = indian
@@ -159,7 +159,7 @@ fixed_capital = 533 # Cannot move capital away from this province & no power cos
 		DIP = 2
 		MIL = 0
 	}
-	government_rank = 2
+	government_rank = 8
 }
 
 1552.1.1 = {

@@ -1,4 +1,5 @@
 ﻿l_english:
+ #Missions:
  MKS_send_settlers_title: "Send Settlers"
  MKS_send_settlers_desc: "Since we took control over both Kalapa and the Sultanate of Buton, our control over settlements in Kendari has been only growing. Despite that, it is clear that if we want to link up our territories we need to send our settlers into the province."
  MKS_kalimantan_title: "Onto Kalimantan"
@@ -40,6 +41,7 @@
  MKS_seas_title: "The Beloved Seas"
  MKS_seas_desc: "The seas are what granted us much of our wealth. What we owe to the waters is innumerable. We shall master the skill of sailing and never let our serene empire be disturbed by foreign sailors."
  
+ #Events:
  ME_Sulawesi_Events.1.t: "Iron Extraction"
  ME_Sulawesi_Events.1.d: "Lake Matano is home to sizeable deposits of Iron. Should we subsidize the extraction effort? Or perhaps iron should remain the secondary produce in the province?"
  ME_Sulawesi_Events.1.a: "Subsidize Iron Extraction."
@@ -59,22 +61,37 @@
  ME_Sulawesi_Events.4.a: "He shall rule [Root.GetName]!"
  ME_Sulawesi_Events.4.b: "A great general he is indeed!"
  
+ #Modifiers:
  MKS_pillar_island_modifier: "The Pillar Island"
+ desc_MKS_pillar_island_modifier: ""
  MKS_trade_deal: "Sulawesi Traders in Northern Australia"
+ desc_MKS_trade_deal: ""
  MKS_trade_deal_non_GE: "Sulawesi Traders in Northern Australia"
+ desc_MKS_trade_deal_non_GE: ""
  MKS_trade_with_australia: "First Tiwi Contacts"
+ desc_MKS_trade_with_australia: ""
  MKS_naval_empire: "Eastern Thalassocracy"
+ desc_MKS_naval_empire: ""
  MKS_iron_extraction: "Iron Deposits of Lake Matano"
  desc_MKS_iron_extraction: ""
  MKS_spice_control_modifier: "Control Mandated by Bajau"
+ desc_MKS_spice_control_modifier: ""
  MKS_ambitions_outwards: "Outward Ambitions"
- MKS_gateway: "Western Gateway"
+ desc_MKS_ambitions_outwards: ""
  MKS_mastery_of_the_seas: "Mastery of the Seas"
+ desc_MKS_mastery_of_the_seas: ""
  MKS_iron_is_secondary: "Secondary Industry"
+ desc_MKS_iron_is_secondary: ""
  MKS_artillery_foundry: "Cannon Foundry"
+ desc_MKS_artillery_foundry: ""
  
+ #Keys:
+ MKS_gateway: "Western Gateway"
+ 
+ #Custom Tooltips:
  MKS_colonization: "'§YSettling the Islands§!' Decision will be unlocked. "
  MKS_if_we_are_the_first: "If we are the first to complete the mission:"
  
+ #Flags:
  MKS_colonize_title: "@[Root.GetTag] - Settling the Islands"
  MKS_colonize_desc: "Having united the core realms of Sulawesi. It is time to bring out the missions outwards. It is time we subdue the tribes of the north and the islands in the south."

@@ -1,6 +1,6 @@
 government = monarchy
-add_government_reform = feudalism_reform
-government_rank = 1
+add_government_reform = eue_duchy_reform
+government_rank = 6 #Duchy
 primary_culture = hessian
 religion = catholic
 #technology_group = western
@@ -8,10 +8,12 @@ technology_group = german_tech_group
 unit_type = western
 capital = 8484 #Sponheim
 
-1431.1.1 = {
+1417.11.19 = {
 	monarch = {
-		name = "Anton von Rotenhan"
-		birth_date = 1390.1.1
+		name = "Frederick I"
+		dynasty = "von Wittelsbach"
+		birth_date = 1417.11.19
+		death_date = 1480.11.29
 		adm = 3
 		dip = 3
 		mil = 2

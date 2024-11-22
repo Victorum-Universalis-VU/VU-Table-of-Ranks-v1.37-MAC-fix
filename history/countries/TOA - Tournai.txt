@@ -1,6 +1,6 @@
 government = republic
 add_government_reform = peasants_republic
-government_rank = 1
+government_rank = 6 #Republic
 primary_culture = ger_flemish
 add_accepted_culture = picard_culture
 religion = catholic

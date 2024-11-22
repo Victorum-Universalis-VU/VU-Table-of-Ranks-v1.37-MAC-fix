@@ -10,7 +10,8 @@ unit_type = eastern
 historical_friend = SER
 
 1389.1.1 = {
-	government_rank = 1
+	add_government_reform = eue_duchy_reform
+	government_rank = 6 #Duchy
 }
 
 1398.1.1 = {
@@ -25,7 +26,8 @@ historical_friend = SER
 }
 
 1402.7.1 = {
-	government_rank = 2
+	add_government_reform = eue_kingdom_reform
+	government_rank = 8
 }
 
 1404.1.1 = {

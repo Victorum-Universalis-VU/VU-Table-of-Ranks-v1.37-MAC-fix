@@ -18,17 +18,13 @@ is_city = yes
 
 #Claimants
 add_core = DAN
+add_core = SKN
 
 #Buildings
 
 #Special Modifiers
 
 #Known by Technology groups
-
-
-
-
-
 
 #Histories by SF
 1440.1.1 = { owner = DAN controller = DAN add_core = DAN } # Danish territorial lands - By San Felipe

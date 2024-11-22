@@ -1,6 +1,6 @@
 government = monarchy
-add_government_reform = feudalism_reform
-government_rank = 1
+add_government_reform = eue_duchy_reform
+government_rank = 6 #Duchy
 primary_culture = lower_saxon
 religion = catholic
 #technology_group = western
@@ -9,7 +9,7 @@ unit_type = western
 capital = 1758	# Hannover
 
 
-1529.1.1  = { religion = protestant }
+1529.1.1 = { religion = protestant }
 
 #Dukes of Braunschweig-Kalenberg
 1636.1.1 = {

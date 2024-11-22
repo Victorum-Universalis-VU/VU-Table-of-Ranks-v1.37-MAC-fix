@@ -1,4 +1,4 @@
-#VU updated by San Felipe for 1.36
+#Updated to v1.37 - SF
 ###############################
 # Events for Malacca          #
 #                             #
@@ -31,7 +31,6 @@ country_event = {
 	
 	option = { 
 		name = flavor_mlc.1.a #Raja Ibrahim will not be forgotten.
-		add_stability = -1
 		kill_ruler = yes
 		set_ruler_flag = mlc_death_or_raja_ibrahim
 	}

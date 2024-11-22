@@ -1,5 +1,6 @@
 government = monarchy
-add_government_reform = mandala_reform
+add_government_reform = thai_monarchy_reform #Was mandala_reform
+government_rank = 8 #Kingdom
 primary_culture = central_thai
 religion = buddhism
 technology_group = chinese
@@ -265,7 +266,7 @@ capital = 600 # Ayutthaya
 }
 
 1564.1.1 = {
-	government_rank = 1
+	government_rank = 6
 }
 
 1568.1.1 = {
@@ -276,11 +277,11 @@ capital = 600 # Ayutthaya
 		dip = 1
 		mil = 0
 	}
-	government_rank = 2
+	government_rank = 8
 }
 
 1569.1.1 = {
-	government_rank = 1
+	government_rank = 6
 }
 
 1569.11.1 = {
@@ -309,7 +310,7 @@ capital = 600 # Ayutthaya
 }
 
 1584.5.3 = {
-	government_rank = 2
+	government_rank = 8
 }
 
 1590.7.1 = {

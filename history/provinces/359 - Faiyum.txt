@@ -2,6 +2,7 @@
 
 owner = MAM
 controller = MAM
+add_core = MAM
 culture = coptic_culture
 religion = coptic
 capital = "Al Fayyum"
@@ -11,11 +12,15 @@ base_tax = 6
 base_production = 6
 base_manpower = 4 
 is_city = yes
-add_core = MAM
+
+#Claimants
+add_core = EGY
+add_core = F4T
 add_core = KEM
+add_core = PT0
+add_core = R4S
 
-
-
+#Histories by SF
 1517.1.1 = {
 	owner = TUR
 	controller = TUR

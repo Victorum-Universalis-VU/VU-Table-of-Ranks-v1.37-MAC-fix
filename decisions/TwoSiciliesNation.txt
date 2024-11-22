@@ -1,3 +1,4 @@
+#Upated to v1.37 - SF
 country_decisions = {
 	two_sicilies_nation = {
 		major = yes
@@ -80,7 +81,6 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = TTS
-			on_change_tag_effect = yes
 			if = {
 				limit = {
 					NOT = { tag = NAP }
@@ -88,14 +88,15 @@ country_decisions = {
 				}
 				swap_non_generic_missions = yes
 			}
+			on_change_tag_effect = yes
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
 				limit = {
 					NOT = {
-						government_rank = 2
+						government_rank = 8
 					}
 				}
-				set_government_rank = 2
+				set_government_rank = 8
 			}
 			set_country_flag = formed_two_sicilies_flag
 			add_prestige = 10

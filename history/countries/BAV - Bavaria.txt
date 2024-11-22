@@ -1,11 +1,29 @@
 government = monarchy
-add_government_reform = feudalism_reform
+add_government_reform = eue_duchy_reform
+government_rank = 6 #Duchy
 #technology_group = western
 technology_group = german_tech_group
 unit_type = western
 primary_culture = bavarian
 religion = catholic
 capital = 65	# München!
+historical_rival = PAL
+
+#Austrian tags
+historical_rival = AUE
+historical_rival = AUH
+historical_rival = AUT
+historical_rival = BRX
+historical_rival = BSN
+historical_rival = CR1
+historical_rival = GRZ
+historical_rival = HAB
+historical_rival = HLR
+historical_rival = SH1
+historical_rival = STY
+historical_rival = TIR
+historical_rival = TNT
+historical_rival = VOR
 
 1503.12.1 = {
 	monarch = {
@@ -40,7 +58,7 @@ capital = 65	# München!
 	}
 }
 
-1508.3.19  = {
+1508.3.19 = {
 	monarch = {
 		name = "Wilhelm IV"
 		dynasty = "von Wittelsbach"
@@ -80,7 +98,7 @@ capital = 65	# München!
 	}
 }
 
-1550.3.7   = {
+1550.3.7 = {
 	monarch = {
 		name = "Albrecht V"
 		dynasty = "von Wittelsbach"
@@ -175,17 +193,17 @@ capital = 65	# München!
 	}
 }
 
-1609.1.1   = { leader = { name = "Tilly"	type = general	fire = 4	shock = 4	manuever = 3	siege = 1	death_date = 1632.4.30 } }
+1609.1.1 = { leader = { name = "Tilly"	type = general	fire = 4	shock = 4	manuever = 3	siege = 1	death_date = 1632.4.30 } }
 
 1609.7.1 = {
 	join_league = catholic
 }
 
-1623.1.1   = { elector = yes }	
+1623.1.1 = { elector = yes }	
 
-1630.1.1   = { leader = { name = "Mercy"	type = general	fire = 3	shock = 3	manuever = 1	siege = 0	death_date = 1645.8.3 } }
+1630.1.1 = { leader = { name = "Mercy"	type = general	fire = 3	shock = 3	manuever = 1	siege = 0	death_date = 1645.8.3 } }
 
-1635.1.1   = { leader = { name = "von Werth"	type = general	fire = 3	shock = 2	manuever = 4	siege = 0	death_date = 1652.9.16 } }
+1635.1.1 = { leader = { name = "von Werth"	type = general	fire = 3	shock = 2	manuever = 4	siege = 0	death_date = 1652.9.16 } }
 
 1635.7.15 = {
 	queen = {
@@ -215,13 +233,13 @@ capital = 65	# München!
 	}
 }
 
-1641.1.1   = { leader = { name = "Grönsfeld"	type = general	fire = 2	shock = 2	manuever = 2	siege = 0	death_date = 1660.1.1 } }
+1641.1.1 = { leader = { name = "Grönsfeld"	type = general	fire = 2	shock = 2	manuever = 2	siege = 0	death_date = 1660.1.1 } }
 
 1647.3.15 = {
 	leave_league = catholic
 }
 
-1651.9.28  = {
+1651.9.28 = {
 	monarch = {
 		name = "Ferdinand Maria I"
 		dynasty = "von Wittelsbach"
@@ -259,7 +277,7 @@ capital = 65	# München!
 	}
 }
 
-1679.5.27  = {
+1679.5.27 = {
 	monarch = {
 		name = "Maximilian II Emanuel"
 		dynasty = "von Wittelsbach"
@@ -315,11 +333,11 @@ capital = 65	# München!
 }
 	
 
-1706.1.1   = { elector = no }
+1706.1.1 = { elector = no }
 
-1714.1.1   = { elector = yes }
+1714.1.1 = { elector = yes }
 
-1726.2.25  = {
+1726.2.25 = {
 	monarch = {
 		name = "Karl Albrecht I"
 		dynasty = "von Wittelsbach"
@@ -355,10 +373,10 @@ capital = 65	# München!
 	}
 }
 
-1740.1.1   = { leader = { name = "Seckendorf"	type = general	fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1763.11.23 } }
+1740.1.1 = { leader = { name = "Seckendorf"	type = general	fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1763.11.23 } }
 
 
-1745.1.21  = {
+1745.1.21 = {
 	monarch = {
 		name = "Maximilian III Joseph"
 		dynasty = "von Wittelsbach"
@@ -447,7 +465,7 @@ capital = 65	# München!
 	}
 }
 
-1799.2.15  = {
+1799.2.15 = {
 	monarch = {
 		name = "Maximilian IV Joseph"
 		dynasty = "von Wittelsbach"
@@ -481,8 +499,8 @@ capital = 65	# München!
 
 }
 
-1806.7.12 = { elector = no government_rank = 1 } # The HRE is formally abolished #government_rank = 2
+1806.7.12 = { elector = no government_rank = 6 } # The HRE is formally abolished #government_rank = 8
 
 1813.10.20 = {
-	government_rank = 2
+	government_rank = 8
 }

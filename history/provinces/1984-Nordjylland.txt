@@ -14,11 +14,8 @@ capital = "Aalborg"
 is_city = yes
 center_of_trade = 1
 
-
-
-
-
-
+#Claims
+add_core = JUT
 
 add_permanent_province_modifier = {
     name = navalbase_modifier

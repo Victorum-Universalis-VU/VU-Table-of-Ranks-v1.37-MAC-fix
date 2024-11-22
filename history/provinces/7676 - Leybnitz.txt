@@ -13,22 +13,8 @@ capital = "Leybnitz"
 is_city = yes
 hre = yes
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#Claimants
+add_core = HAB
 
 #Documented 970 AD
 1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved

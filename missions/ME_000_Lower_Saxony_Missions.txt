@@ -133,7 +133,7 @@ HAN_gen_missions_1 = {
 					}
 				}
 				define_advisor = {
-					type = muscovy_architect
+					type = civil_engineer
 					religion = ROOT
 					culture = ROOT
 					skill = 1
@@ -369,6 +369,20 @@ HAN_gen_missions_3 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			hamburg_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			lauenburg_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 			braunschweig_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT }
@@ -427,6 +441,8 @@ HAN_gen_missions_3 = {
 			OR = {
 				area = weser_area
 				area = holstein_area
+				area = hamburg_area
+				area = lauenburg_area
 				area = braunschweig_area
 				area = lower_saxony_area
 				province_id = 45
@@ -438,6 +454,8 @@ HAN_gen_missions_3 = {
 				OR = {
 					area = weser_area
 					area = holstein_area
+					area = hamburg_area
+					area = lauenburg_area
 					area = braunschweig_area
 					area = lower_saxony_area
 					province_id = 45
@@ -472,6 +490,20 @@ HAN_gen_missions_3 = {
 				add_permanent_claim = ROOT
 			}
 			holstein_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			hamburg_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			lauenburg_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT }
 					NOT = { is_core = ROOT }
@@ -539,6 +571,8 @@ HAN_gen_missions_4 = {
 		provinces_to_highlight = {
 			OR = {
 				area = holstein_area
+				area = hamburg_area
+				area = lauenburg_area
 				province_id = 44
 				province_id = 45
 			}
@@ -547,6 +581,12 @@ HAN_gen_missions_4 = {
 		trigger = {
 			OR = {
 				holstein_area = {
+					owned_by = ROOT
+				}
+				hamburg_area = {
+					owned_by = ROOT
+				}
+				lauenburg_area = {
 					owned_by = ROOT
 				}
 				owns = 45

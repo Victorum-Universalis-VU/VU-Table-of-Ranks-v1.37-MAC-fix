@@ -1,26 +1,3 @@
-#french_feudalism = {
-#	icon = feudalism
-#	allow_normal_conversion = yes
-#	potential = {
-#		OR = {
-#			culture_group = french
-#			has_reform = french_absolutism
-#		}
-#	}
-#	trigger = {
-#		OR = {
-#			culture_group = french
-#			has_reform = french_absolutism
-#		}
-#	}
-#	lock_level_when_selected = no
-#	valid_for_nation_designer = yes
-#	nation_designer_cost = 0
-#	modifiers = {
-#		min_autonomy = 10
-#	}
-#}
-
 ancien_regime_reform = {
 	icon = French_Reformed #ancien_regime
 	allow_normal_conversion = yes
@@ -101,7 +78,7 @@ blood_tax_reform = {
 		NOT = { has_reform = french_absolutism }
 	}
 	trigger = {
-		government_rank = 2
+		government_rank = 8
 	}
 	modifiers = {
 		mil_advisor_cost = -0.10

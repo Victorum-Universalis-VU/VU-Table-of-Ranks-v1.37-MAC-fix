@@ -1097,80 +1097,80 @@ defined_text = {
     }
 }
 
-defined_text = {
-	name = Getme_tim_europe_victory
+#defined_text = {
+#	name = Getme_tim_europe_victory
+#
+#	text = {
+#		localisation_key = ZERO
+#		trigger = {
+#			NOT = {
+#				check_variable = {
+#					which = me_tim_europe_victory
+#					value = 1
+#				}
+#			}
+#		}
+#	}
+#
+#	text = {
+#		localisation_key = me_tim_defeated_tt_european_nations
+#		trigger = {
+#			check_variable = {
+#				which = me_tim_europe_victory
+#				value = 1
+#			}
+#		}
+#	}
+#}
 
-	text = {
-		localisation_key = ZERO
-		trigger = {
-			NOT = {
-				check_variable = {
-					which = me_tim_europe_victory
-					value = 1
-				}
-			}
-		}
-	}
+#defined_text = {
+#	name = GetMETimConquestHorde
+#
+#	text = {
+#		localisation_key = ZERO
+#		trigger = {
+#			NOT = {
+#				check_variable = {
+#					which = METimConquestHorde
+#					value = 1
+#				}
+#			}
+#		}
+#	}
+#
+#	text = {
+#		localisation_key = ME_tim_conquered_tt_provinces
+#		trigger = {
+#			check_variable = {
+#				which = METimConquestHorde
+#				value = 1
+#			}
+#		}
+#	}
+#}
 
-	text = {
-		localisation_key = me_tim_defeated_tt_european_nations
-		trigger = {
-			check_variable = {
-				which = me_tim_europe_victory
-				value = 1
-			}
-		}
-	}
-}
-
-defined_text = {
-	name = GetMETimConquestHorde
-
-	text = {
-		localisation_key = ZERO
-		trigger = {
-			NOT = {
-				check_variable = {
-					which = METimConquestHorde
-					value = 1
-				}
-			}
-		}
-	}
-
-	text = {
-		localisation_key = ME_tim_conquered_tt_provinces
-		trigger = {
-			check_variable = {
-				which = METimConquestHorde
-				value = 1
-			}
-		}
-	}
-}
-
-defined_text = {
-	name = GetMETimArabianProvincesRazed
-
-	text = {
-		localisation_key = ZERO
-		trigger = {
-			NOT = {
-				check_variable = {
-					which = METimArabianProvincesRazed
-					value = 1
-				}
-			}
-		}
-	}
-
-	text = {
-		localisation_key = ME_tim_razed_tt_arabian_provinces
-		trigger = {
-			check_variable = {
-				which = METimArabianProvincesRazed
-				value = 1
-			}
-		}
-	}
-}
+#defined_text = {
+#	name = GetMETimArabianProvincesRazed
+#
+#	text = {
+#		localisation_key = ZERO
+#		trigger = {
+#			NOT = {
+#				check_variable = {
+#					which = METimArabianProvincesRazed
+#					value = 1
+#				}
+#			}
+#		}
+#	}
+#
+#	text = {
+#		localisation_key = ME_tim_razed_tt_arabian_provinces
+#		trigger = {
+#			check_variable = {
+#				which = METimArabianProvincesRazed
+#				value = 1
+#			}
+#		}
+#	}
+#}

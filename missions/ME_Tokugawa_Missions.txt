@@ -8,6 +8,12 @@ TKG_missions_1 = {
 			AND = {
 				NOT = { has_reform = indep_daimyo }
 				NOT = { has_reform = daimyo }
+		        NOT = { has_reform = daimyo_barony_reform }
+		        NOT = { has_reform = daimyo_viscounty_reform }
+		        NOT = { has_reform = daimyo_county_reform }
+		        NOT = { has_reform = daimyo_marquisate_reform }
+		        NOT = { has_reform = daimyo_duchy_reform }
+		        NOT = { has_reform = daimyo_principality_reform }
 				NOT = { has_reform = shogunate }
 			}
 			has_country_flag = use_missions_expanded_missions_instead_of_paradox
@@ -103,6 +109,12 @@ TKG_missions_2 = {
 			AND = {
 				NOT = { has_reform = indep_daimyo }
 				NOT = { has_reform = daimyo }
+		        NOT = { has_reform = daimyo_barony_reform }
+		        NOT = { has_reform = daimyo_viscounty_reform }
+		        NOT = { has_reform = daimyo_county_reform }
+		        NOT = { has_reform = daimyo_marquisate_reform }
+		        NOT = { has_reform = daimyo_duchy_reform }
+		        NOT = { has_reform = daimyo_principality_reform }
 				NOT = { has_reform = shogunate }
 			}
 			has_country_flag = use_missions_expanded_missions_instead_of_paradox
@@ -248,6 +260,12 @@ TKG_missions_3 = {
 			AND = {
 				NOT = { has_reform = indep_daimyo }
 				NOT = { has_reform = daimyo }
+		        NOT = { has_reform = daimyo_barony_reform }
+		        NOT = { has_reform = daimyo_viscounty_reform }
+		        NOT = { has_reform = daimyo_county_reform }
+		        NOT = { has_reform = daimyo_marquisate_reform }
+		        NOT = { has_reform = daimyo_duchy_reform }
+		        NOT = { has_reform = daimyo_principality_reform }
 				NOT = { has_reform = shogunate }
 			}
 			has_country_flag = use_missions_expanded_missions_instead_of_paradox
@@ -326,6 +344,12 @@ TKG_missions_4 = {
 			AND = {
 				NOT = { has_reform = indep_daimyo }
 				NOT = { has_reform = daimyo }
+		        NOT = { has_reform = daimyo_barony_reform }
+		        NOT = { has_reform = daimyo_viscounty_reform }
+		        NOT = { has_reform = daimyo_county_reform }
+		        NOT = { has_reform = daimyo_marquisate_reform }
+		        NOT = { has_reform = daimyo_duchy_reform }
+		        NOT = { has_reform = daimyo_principality_reform }
 				NOT = { has_reform = shogunate }
 			}
 			has_country_flag = use_missions_expanded_missions_instead_of_paradox
@@ -386,6 +410,84 @@ TKG_missions_4 = {
 				every_subject_country = {
 					limit = {
 						is_subject_of_type = daimyo_vassal
+					}
+					add_liberty_desire = -10
+				}
+			}
+			else_if = {
+				limit = {
+					any_subject_country = {
+						is_subject_of_type = daimyo_barony_vassal
+					}
+				}
+				every_subject_country = {
+					limit = {
+						is_subject_of_type = daimyo_barony_vassal
+					}
+					add_liberty_desire = -10
+				}
+			}
+			else_if = {
+				limit = {
+					any_subject_country = {
+						is_subject_of_type = daimyo_viscounty_vassal
+					}
+				}
+				every_subject_country = {
+					limit = {
+						is_subject_of_type = daimyo_viscounty_vassal
+					}
+					add_liberty_desire = -10
+				}
+			}
+			else_if = {
+				limit = {
+					any_subject_country = {
+						is_subject_of_type = daimyo_county_vassal
+					}
+				}
+				every_subject_country = {
+					limit = {
+						is_subject_of_type = daimyo_county_vassal
+					}
+					add_liberty_desire = -10
+				}
+			}
+			else_if = {
+				limit = {
+					any_subject_country = {
+						is_subject_of_type = daimyo_marquisate_vassal
+					}
+				}
+				every_subject_country = {
+					limit = {
+						is_subject_of_type = daimyo_marquisate_vassal
+					}
+					add_liberty_desire = -10
+				}
+			}
+			else_if = {
+				limit = {
+					any_subject_country = {
+						is_subject_of_type = daimyo_duchy_vassal
+					}
+				}
+				every_subject_country = {
+					limit = {
+						is_subject_of_type = daimyo_duchy_vassal
+					}
+					add_liberty_desire = -10
+				}
+			}
+			else_if = {
+				limit = {
+					any_subject_country = {
+						is_subject_of_type = daimyo_principality_vassal
+					}
+				}
+				every_subject_country = {
+					limit = {
+						is_subject_of_type = daimyo_principality_vassal
 					}
 					add_liberty_desire = -10
 				}
@@ -468,6 +570,12 @@ TKG_missions_5 = {
 			AND = {
 				NOT = { has_reform = indep_daimyo }
 				NOT = { has_reform = daimyo }
+		        NOT = { has_reform = daimyo_barony_reform }
+		        NOT = { has_reform = daimyo_viscounty_reform }
+		        NOT = { has_reform = daimyo_county_reform }
+		        NOT = { has_reform = daimyo_marquisate_reform }
+		        NOT = { has_reform = daimyo_duchy_reform }
+		        NOT = { has_reform = daimyo_principality_reform }
 				NOT = { has_reform = shogunate }
 			}
 			has_country_flag = use_missions_expanded_missions_instead_of_paradox

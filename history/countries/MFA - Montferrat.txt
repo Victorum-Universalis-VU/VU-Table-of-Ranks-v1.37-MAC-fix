@@ -1,6 +1,6 @@
 government = monarchy
 add_government_reform = palaiologos_montferrat_reform
-government_rank = 1
+government_rank = 6 #Duchy
 primary_culture = piedmontese
 religion = catholic
 #technology_group = western

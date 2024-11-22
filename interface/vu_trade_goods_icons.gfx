@@ -31,8 +31,8 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_expresso_icon"
-		texturefile = "gfx//interface//trade_goods//expresso_icon.png"
+		name = "GFX_espresso_icon"
+		texturefile = "gfx//interface//trade_goods//espresso_icon.png"
 		loadType = "INGAME"
 	}
 

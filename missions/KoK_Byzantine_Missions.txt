@@ -1,4 +1,4 @@
-#VU - Updated by San Felipe for 1.36.*
+#VU - Updated by San Felipe for 1.37.*
 MEE_BYZ_conquest_1 = {
 	slot = 1
 	generic = no
@@ -76,6 +76,7 @@ MEE_BYZ_conquest_1 = {
 			give_claims = { area = apulia_area }
 			give_claims = { area = calabria_area }
 			give_claims = { area = sicily_area }
+			#give_claims = { area = western_sicily_area } #Removed from VU
 		}
 	}
 	
@@ -88,6 +89,7 @@ MEE_BYZ_conquest_1 = {
 				area = apulia_area
 				area = calabria_area
 				area = sicily_area
+				#area = western_sicily_area #Removed from VU
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
@@ -97,6 +99,7 @@ MEE_BYZ_conquest_1 = {
 					area = apulia_area
 					area = calabria_area
 					area = sicily_area
+					#area = western_sicily_area #Removed from VU
 				}
 				value = 7 
 			}
@@ -111,8 +114,8 @@ MEE_BYZ_conquest_1 = {
 			
 			give_claims = { area = lazio_area }
 			give_claims = { area = central_italy_area }
+			give_claims = { area = san_marino_area }
 			give_claims = { area = naples_area }
-			
 			give_claims = { area = corsica_sardinia_area }
 			give_claims = { area = barbary_coast_area }
 			give_claims = { area = kabylia_area }
@@ -326,6 +329,7 @@ MEE_BYZ_conquest_2 = {
 			OR = {
 				area = croatia_area
 				area = east_adriatic_coast_area
+				area = ragusa_area
 				area = bosnia_area
 				area = slavonia_area
 				area = carinthia_area
@@ -337,6 +341,7 @@ MEE_BYZ_conquest_2 = {
 				OR = {
 					area = croatia_area
 					area = east_adriatic_coast_area
+					area = ragusa_area
 					area = bosnia_area
 					area = slavonia_area
 					area = carinthia_area
@@ -414,17 +419,22 @@ MEE_BYZ_conquest_2 = {
 			give_claims = { area = tuscany_area }
 			give_claims = { area = lazio_area }
 			give_claims = { area = central_italy_area }
+			give_claims = { area = san_marino_area }
 			give_claims = { area = tuscany_area }
-			
 			give_claims = { area = inner_austria_area }
 			give_claims = { area = austria_proper_area }
 			give_claims = { area = tirol_area }
+			#give_claims = { area = east_bavaria_area } #Removed from VU
+			#give_claims = { area = lower_bavaria_area } #Removed from VU
+			#give_claims = { area = upper_bavaria_area } #Removed from VU
 			give_claims = { area = bavaria_area }
 			give_claims = { area = swabia_area }
+			#give_claims = { area = upper_swabia_area } #Removed from VU
+			#give_claims = { area = lower_swabia_area } #Removed from VU
 			give_claims = { area = wurttemburg_area }
 			give_claims = { area = baden_area }
 			give_claims = { area = switzerland_area }
-			
+			give_claims = { area = liechtenstein_area }
 			give_claims = { area = france_region }
 			
 			custom_tooltip = " "
@@ -794,12 +804,16 @@ MEE_BYZ_conquest_3 = {
 				give_claims = { area = west_midlands_area }
 				give_claims = { area = scottish_marches_area }
 				give_claims = { area = yorkshire_area }
+				#give_claims = { area = wessex_area } #Removed from VU
+				#give_claims = { area = home_counties_area } #Removed from VU
 				give_claims = { area = cornwall_area }
 				give_claims = { area = south_east_area }
 				give_claims = { area = greater_london_area }
 				give_claims = { area = east_anglia_area }
 				give_claims = { area = wales_area }
+
 				#Rest of Europe
+				#give_claims = { area = upper_rhineland_area } #Removed from VU
 				give_claims = { area = baden_area }
 				give_claims = { area = romandie_area }
 				give_claims = { area = alsace_area }
@@ -997,7 +1011,7 @@ MEE_BYZ_conquest_4 = {
 				custom_tooltip = " "
 			}
 			else = {
-				add_accepted_culture_or_dip_power = { culture = turkish dip_reward = yes }
+				add_accepted_culture_or_dip_power = { culture = turkish value = 100 }
 				
 				custom_tooltip = " "
 			}
@@ -1304,11 +1318,11 @@ MEE_BYZ_defense_5 = {
 			}
 		}
 		trigger = {
+			151 = {
+				base_manpower = 7
+				owned_by = ROOT
+			}
 			OR = {
-				151 = {
-					base_manpower = 7
-					owned_by = ROOT
-				}
 				has_mil_advisor_2 = yes
 				fortification_expert = 1
 				if = {
@@ -1372,6 +1386,7 @@ MEE_BYZ_defense_5 = {
 					tooltip = BYZ_upgraded_either_walls_to_level_2
 					OR = {
 						151 = { has_province_modifier = BYZ_theodosian_wall_2 } #should't be possible without ownership anyway.
+						151 = { has_province_modifier = BYZ_theodosian_wall_3 } #should't be possible without ownership anyway.
 						4701 = { has_province_modifier = BYZ_hexamilion_wall_2 }
 					}
 				}
@@ -1470,6 +1485,7 @@ MEE_BYZ_conquest_5 = {
 		}
 		effect = {
 			give_claims = { area = imereti_area }
+			#give_claims = { area = kartli_kakheti_area } #Removed in VU
 			give_claims = { area = samtskhe_area }
 			give_claims = { area = circassia_area }
 			give_claims = { area = armenia_area }
@@ -1503,6 +1519,7 @@ MEE_BYZ_conquest_5 = {
 				AND = {
 					OR = {
 						area = imereti_area
+						#area = kartli_kakheti_area #Removed in VU
 						area = samtskhe_area
 						area = circassia_area
 						area = armenia_area
@@ -1544,6 +1561,7 @@ MEE_BYZ_conquest_5 = {
 				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 					OR = {
 						area = imereti_area
+					    #area = kartli_kakheti_area #Removed in VU
 						area = samtskhe_area
 						area = circassia_area
 						area = armenia_area
@@ -1572,6 +1590,7 @@ MEE_BYZ_conquest_5 = {
 					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 						OR = {
 							area = imereti_area
+							#area = kartli_kakheti_area #Removed in VU
 							area = samtskhe_area
 							area = circassia_area
 							area = armenia_area
@@ -1587,6 +1606,7 @@ MEE_BYZ_conquest_5 = {
 							limit = {
 								OR = {
 									area = imereti_area
+									#area = kartli_kakheti_area #Removed in VU
 									area = samtskhe_area
 									area = circassia_area
 									area = armenia_area
@@ -1904,14 +1924,30 @@ MEE_BYZ_economy_1 = {
 					}
 				}
 				AND = {
-					OR = {
-						province_id = 148
-						province_id = 330
-					}
+					province_id = 148
 					OR = {
 						NOT = { owned_by = ROOT }
 						NOT = { has_production_building_trigger = yes }
 					}
+				}
+				AND = {
+					province_id = 330
+                    OR = {
+                        AND = {
+                            trade_goods = gold
+                            OR = {
+                                NOT = { owned_by = ROOT }
+                                NOT = { base_production = 10 }
+                            }
+                        }
+                        AND = {
+                            NOT = { trade_goods = gold }
+                            OR = {
+                                NOT = { owned_by = ROOT }
+                                NOT = { has_production_building_trigger = yes }
+                            }
+                        }
+                    }
 				}
 			}
 		}
@@ -1929,7 +1965,13 @@ MEE_BYZ_economy_1 = {
 			}
 			330 = {
 				owned_by = ROOT
-				has_production_building_trigger = yes
+				if = {
+					limit = {
+						NOT = { trade_goods = gold }
+					}
+					has_production_building_trigger = yes
+				}
+				else = { base_production = 12 }
 			}
 			
 			gold_income = 10

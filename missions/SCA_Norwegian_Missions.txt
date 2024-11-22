@@ -1926,8 +1926,8 @@ nor_army_and_religion_mission_slot = {
 		}
 		effect = {
 			if = {
-				limit = { NOT = { government_rank = 3 } }
-				set_government_rank = 3
+				limit = { NOT = { government_rank = 9 } }
+				set_government_rank = 9
 			}
 			add_country_modifier = {
 				name = nor_scandinavian_empire
@@ -3470,7 +3470,7 @@ nor_sca_navy_slot = {
 			else = {
 				num_of_admirals = 2
 			}
-			government_rank = 2
+			government_rank = 8
 		}
 		effect = {
 			add_country_modifier = {
@@ -3756,11 +3756,14 @@ nor_sca_conquest = {
 				area = vorpommern_area
 				area = mecklenburg_area
 				area = holstein_area
+				area = hamburg_area
+				area = lauenburg_area
 				area = jutland_area
 				area = denmark_area
 				area = skaneland_area
 				area = svealand_area
 				area = gotaland_area
+				area = gotland_area
 				area = norrland_area
 				area = bothnia_area
 				area = finland_area
@@ -3785,11 +3788,14 @@ nor_sca_conquest = {
 						area = vorpommern_area
 						area = mecklenburg_area
 						area = holstein_area
+						area = hamburg_area
+						area = lauenburg_area
 						area = jutland_area
 						area = denmark_area
 						area = skaneland_area
 						area = svealand_area
 						area = gotaland_area
+						area = gotland_area
 						area = norrland_area
 						area = bothnia_area
 						area = finland_area
@@ -3836,6 +3842,10 @@ nor_sca_conquest = {
 					limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } has_port = yes }
 					add_permanent_claim = ROOT
 				}
+				gotland_area = {
+					limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } has_port = yes }
+					add_permanent_claim = ROOT
+				}
 				skaneland_area = {
 					limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } has_port = yes }
 					add_permanent_claim = ROOT
@@ -3849,6 +3859,14 @@ nor_sca_conquest = {
 					add_permanent_claim = ROOT
 				}
 				holstein_area = {
+					limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } has_port = yes }
+					add_permanent_claim = ROOT
+				}
+				hamburg_area = {
+					limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } has_port = yes }
+					add_permanent_claim = ROOT
+				}
+				lauenburg_area = {
 					limit = { NOT = { is_core = ROOT } NOT = { is_permanent_claim = ROOT } has_port = yes }
 					add_permanent_claim = ROOT
 				}
@@ -3894,10 +3912,13 @@ nor_sca_conquest = {
 				area = norrland_area
 				area = bothnia_area
 				area = gotaland_area
+				area = gotland_area
 				area = skaneland_area
 				area = denmark_area
 				area = jutland_area
 				area = holstein_area
+				area = hamburg_area
+				area = lauenburg_area
 				area = mecklenburg_area
 				area = vorpommern_area
 				area = hinter_pommern_area
@@ -3916,10 +3937,13 @@ nor_sca_conquest = {
 				norrland_area = { OR = { country_or_non_sovereign_subject_holds = ROOT has_port = no } type = all }
 				bothnia_area = { OR = { country_or_non_sovereign_subject_holds = ROOT has_port = no } type = all }
 				gotaland_area = { OR = { country_or_non_sovereign_subject_holds = ROOT has_port = no } type = all }
+				gotland_area = { OR = { country_or_non_sovereign_subject_holds = ROOT has_port = no } type = all }
 				skaneland_area = { OR = { country_or_non_sovereign_subject_holds = ROOT has_port = no } type = all }
 				denmark_area = { OR = { country_or_non_sovereign_subject_holds = ROOT has_port = no } type = all }
 				jutland_area = { OR = { country_or_non_sovereign_subject_holds = ROOT has_port = no } type = all }
 				holstein_area = { OR = { country_or_non_sovereign_subject_holds = ROOT has_port = no } type = all }
+				hamburg_area = { OR = { country_or_non_sovereign_subject_holds = ROOT has_port = no } type = all }
+				lauenburg_area = { OR = { country_or_non_sovereign_subject_holds = ROOT has_port = no } type = all }
 				mecklenburg_area = { OR = { country_or_non_sovereign_subject_holds = ROOT has_port = no } type = all }
 				vorpommern_area = { OR = { country_or_non_sovereign_subject_holds = ROOT has_port = no } type = all }
 				hinter_pommern_area = { OR = { country_or_non_sovereign_subject_holds = ROOT has_port = no } type = all }

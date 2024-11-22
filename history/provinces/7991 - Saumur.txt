@@ -16,6 +16,7 @@ hre = no
 
 #Claimants
 add_core = PRO
+add_core = ENG
 
 #Special Modifiers
 

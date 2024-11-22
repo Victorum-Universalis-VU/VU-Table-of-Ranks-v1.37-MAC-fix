@@ -20,5 +20,5 @@
  SMI_ADJ:0 "Sami"
  MLK:0 "Kharabakh"
  MLK_ADJ:0 "Kharabakhi"
- RMM:0 "Rûm"
- RMM_ADJ:0 "Rûmi"
+ #RMM:0 "Rûm"
+ #RMM_ADJ:0 "Rûmi"

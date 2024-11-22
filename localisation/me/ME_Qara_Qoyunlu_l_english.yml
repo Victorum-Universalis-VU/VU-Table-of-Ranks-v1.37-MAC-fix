@@ -198,6 +198,11 @@
  cb_qq_ambition_desc: "It is time for the tribal feuds to cease. We will defeat our opponents and make sure no two lambs graze these lands."
  
  ME_TIM_trib_state: "Timurid Tributary State"
+ ME_TIM_trib_state_title: ""
+ ME_TIM_trib_state_title_plural: ""
+ ME_TIM_trib_state_long_desc: ""
+ ME_TIM_trib_state_is_our: ""
+
  QAR_ME_TIM_trib_state: "We may cancel the §YTributary State§! at any time, should the §Y[From.GetName]§! meddle in our affairs."
  
  #Events:

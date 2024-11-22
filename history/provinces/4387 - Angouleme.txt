@@ -17,14 +17,10 @@ trade_goods = paper
 base_manpower = 2 
 
 #Claimants
+add_core = POI
 add_core = GUY
 
 #Known by Technology groups
-
-
-
-
-
 
 #Histories
 1215.6.15 = { owner = ENG controller = ENG add_core = ENG } # Part of English Duchy of Aquitaine - By San Felipe

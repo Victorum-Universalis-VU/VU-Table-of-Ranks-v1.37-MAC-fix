@@ -1,10 +1,10 @@
 government = tribal
-add_government_reform = tribal_federation
+add_government_reform = islamic_sheikdom_reform
+government_rank = 3 #Sheikdom
 primary_culture = yemeni_culture
 religion = shiite
 technology_group = muslim
 capital = 391	# Najran
-government_rank = 1
 religious_school = ismaili_school
 
 #Banu Yam

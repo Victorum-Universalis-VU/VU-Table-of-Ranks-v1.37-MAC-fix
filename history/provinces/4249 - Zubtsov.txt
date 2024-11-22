@@ -2,7 +2,7 @@
 
 owner = ZBT
 controller = ZBT  
-culture = russian
+culture = muscovite
 religion = orthodox
 hre = no
 base_tax = 6

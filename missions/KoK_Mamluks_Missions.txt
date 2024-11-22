@@ -1,4 +1,4 @@
-#VU - Updated by San Felipe for 1.36.*
+#VU - Updated by San Felipe for 1.37.*
 mam_missions_1 = {
 	slot = 1
 	generic = no
@@ -74,7 +74,11 @@ mam_missions_1 = {
 		effect = {
 			if = {
 				limit = { alliance_with = VEN }
-				custom_tooltip = mam_reward_alliance_yes_tt
+				if = {
+					limit = { has_dlc = "Domination" }
+					custom_tooltip = mam_reward_alliance_yes_tt
+				}
+				else = { custom_tooltip = mam_reward_alliance_yes_tt_no_dlc }
 				tooltip = {
 					358 = {
 						if = {
@@ -95,8 +99,14 @@ mam_missions_1 = {
 				}
 			}
 			else_if = {
-				limit = { has_dlc = "Domination" }
-				custom_tooltip = mam_reward_alliance_no_tt
+				limit = {
+					NOT = { alliance_with = VEN }
+				}
+				if = {
+					limit = { has_dlc = "Domination" }
+					custom_tooltip = mam_reward_alliance_no_tt
+				}
+				else = { custom_tooltip = mam_reward_alliance_no_tt_no_dlc }
 				tooltip = {
 					358 = {
 						if = {
@@ -172,10 +182,13 @@ mam_missions_1 = {
 							amount = 1
 						}
 					}
-					add_country_modifier = {
-						name = mam_ven_cooperation_modifier 
-						duration = -1
-						hidden = yes
+					if = {
+						limit = { has_dlc = "Domination" }
+						add_country_modifier = {
+							name = mam_ven_cooperation_modifier 
+							duration = -1
+							hidden = yes
+						}
 					}
 					358 = {
 						if = {
@@ -668,7 +681,7 @@ mam_missions_2 = {
 				}
 				403 = { 
 					add_great_project_tier = {
-						type = vu_bahla_fort
+						type = nizwa_fort #Was vu_bahla_fort but changed by SF in 1.37
 						tier = 1 
 					}
 				}
@@ -834,7 +847,7 @@ mam_missions_2 = {
 					trade_goods = cloves
 					value = yes
 				}
-				358 = { #Αλεξάνδρεια
+				358 = {
 					trade_share = {
 						country = ROOT
 						share = 51

@@ -3,7 +3,7 @@
 owner = TKD
 controller = TKD
 add_core = TKD
-culture = japanese
+culture = kinki 
 religion = shinto
 capital = "Wakasa"
 trade_goods = rice

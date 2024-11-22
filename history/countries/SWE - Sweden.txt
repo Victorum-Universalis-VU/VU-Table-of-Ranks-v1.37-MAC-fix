@@ -1,5 +1,6 @@
 government = monarchy
 add_government_reform = office_of_lord_regent_reform
+government_rank = 8 #Kingdom
 #technology_group = western
 technology_group = scandinavian_tech_group
 unit_type = western
@@ -90,8 +91,10 @@ set_legacy_government = noble_republic }
 	}
 }
 	
-1464.9.2 = { government = monarchy
-add_government_reform = feudalism_reform }
+1464.9.2 = { 
+	government = monarchy
+	add_government_reform = feudalism_reform 
+}
 
 1465.1.31 = {
 	monarch = {

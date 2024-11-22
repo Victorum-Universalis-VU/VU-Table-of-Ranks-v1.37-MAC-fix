@@ -185,6 +185,13 @@ polotsk_missions_1 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			riga_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 			curonia_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -212,6 +219,7 @@ polotsk_missions_1 = {
 		provinces_to_highlight = {
 			OR = {
 				area = livonia_area
+				area = riga_area
 				area = curonia_area
 				area = latgallia_area
 			}
@@ -220,6 +228,10 @@ polotsk_missions_1 = {
 		position = 10
 		trigger = {
 			livonia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			riga_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}

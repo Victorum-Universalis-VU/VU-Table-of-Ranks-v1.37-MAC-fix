@@ -1,6 +1,6 @@
 government = republic #parliamentary_system
 add_government_reform = athenian_democracy_reform
-government_rank = 2
+government_rank = 8
 primary_culture = athenian
 add_accepted_culture = greek 
 religion = hellenic

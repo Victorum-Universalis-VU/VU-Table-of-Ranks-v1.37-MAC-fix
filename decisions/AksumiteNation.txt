@@ -1,4 +1,4 @@
-#VU updated to 1.35 by San Felipe 
+#VU updated to 1.37.* by San Felipe 
 country_decisions = {
 	aksumite_nation = {
 		major = yes
@@ -118,8 +118,8 @@ country_decisions = {
 			on_change_tag_effect = yes
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
-				limit = { NOT = { government_rank = 3 } }
-				set_government_rank = 3
+				limit = { NOT = { government_rank = 9 } }
+				set_government_rank = 9
 			}
 			set_capital = 1227
 			horn_of_africa_region = {
@@ -141,7 +141,7 @@ country_decisions = {
 			clr_country_flag = eth_can_form_aksumite
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 		ai_importance = 400 #
 	}

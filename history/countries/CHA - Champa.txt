@@ -1,5 +1,6 @@
 government = monarchy
 add_government_reform = mandala_reform
+government_rank = 8 #Kingdom
 primary_culture = cham
 religion = hinduism
 technology_group = chinese
@@ -173,7 +174,7 @@ capital = 607	# Vijaya
 }
 
 1697.1.1 = {
-	government_rank = 1
+	government_rank = 6
 }
 
 1728.1.1 = {

@@ -17,6 +17,135 @@ spriteTypes = {
 	### New Ingame Icons ###
 	
 	#Quonton
+	spriteType = {
+		name = "vu_q_hard_to_colonize"
+		texturefile = "gfx//interface//ideas_EU4//vu_q_hard_to_colonize.dds"
+	}
+
+	spriteType = {
+		name = "vu_everglades"
+		texturefile = "gfx//interface//ideas_EU4//vu_everglades.dds"
+	}
+	
+	spriteType = {
+		name = "vu_michigan_dunes"
+		texturefile = "gfx//interface//ideas_EU4//vu_michigan_dunes.dds"
+	}
+
+	spriteType = {
+		name = "vu_illinois_basin"
+		texturefile = "gfx//interface//ideas_EU4//vu_illinois_basin.dds"
+	}
+
+	spriteType = {
+		name = "vu_hopewell_rocks"
+		texturefile = "gfx//interface//ideas_EU4//vu_hopewell_rocks.dds"
+	}
+
+	spriteType = {
+		name = "vu_cathedral_goves"
+		texturefile = "gfx//interface//ideas_EU4//vu_cathedral_goves.dds"
+	}
+
+	spriteType = {
+		name = "vu_spoted_lake"
+		texturefile = "gfx//interface//ideas_EU4//vu_spoted_lake.dds"
+	}
+
+	spriteType = {
+		name = "vu_the_ozarks"
+		texturefile = "gfx//interface//ideas_EU4//vu_the_ozarks.dds"
+	}
+
+	spriteType = {
+		name = "vu_edwards_plateau"
+		texturefile = "gfx//interface//ideas_EU4//vu_edwards_plateau.dds"
+	}
+
+	spriteType = {
+		name = "vu_redwood_forests"
+		texturefile = "gfx//interface//ideas_EU4//vu_redwood_forests.dds"
+	}
+
+	spriteType = {
+		name = "vu_sequoia_forest"
+		texturefile = "gfx//interface//ideas_EU4//vu_sequoia_forest.dds"
+	}
+
+	spriteType = {
+		name = "vu_superior_forest"
+		texturefile = "gfx//interface//ideas_EU4//vu_superior_forest.dds"
+	}
+
+	spriteType = {
+		name = "vu_wisconsin_dells"
+		texturefile = "gfx//interface//ideas_EU4//vu_wisconsin_dells.dds"
+	}
+
+	spriteType = {
+		name = "vu_black_hills_sd"
+		texturefile = "gfx//interface//ideas_EU4//vu_black_hills_sd.dds"
+	}
+
+	spriteType = {
+		name = "vu_american_prarie"
+		texturefile = "gfx//interface//ideas_EU4//vu_american_prarie.dds"
+	}
+	
+	spriteType = {
+		name = "vu_mojave_desert"
+		texturefile = "gfx//interface//ideas_EU4//vu_mojave_desert.dds"
+	}
+
+	spriteType = {
+		name = "vu_columbian_platau"
+		texturefile = "gfx//interface//ideas_EU4//vu_columbian_platau.dds"
+	}
+
+	spriteType = {
+		name = "vu_great_basin"
+		texturefile = "gfx//interface//ideas_EU4//vu_great_basin.dds"
+	}
+
+	spriteType = {
+		name = "vu_sonoran"
+		texturefile = "gfx//interface//ideas_EU4//vu_sonoran.dds"
+	}
+
+	spriteType = {
+		name = "vu_chihuahuan"
+		texturefile = "gfx//interface//ideas_EU4//vu_chihuahuan.dds"
+	}
+
+	spriteType = {
+		name = "vu_colorado_plateau"
+		texturefile = "gfx//interface//ideas_EU4//vu_colorado_plateau.dds"
+	}
+
+	spriteType = {
+		name = "vu_snake_river"
+		texturefile = "gfx//interface//ideas_EU4//vu_snake_river.dds"
+	}
+
+	spriteType = {
+		name = "vu_wyoming_basin"
+		texturefile = "gfx//interface//ideas_EU4//vu_wyoming_basin.dds"
+	}
+
+	spriteType = {
+		name = "vu_madrean_archipelago"
+		texturefile = "gfx//interface//ideas_EU4//vu_madrean_archipelago.dds"
+	}
+
+	spriteType = {
+		name = "vu_badlansds"
+		texturefile = "gfx//interface//ideas_EU4//vu_badlansds.dds"
+	}
+
+	spriteType = {
+		name = "vu_river_icon"
+		texturefile = "gfx//interface//ideas_EU4//vu_river_icon.dds"
+	}
 
 	spriteType = {
 		name = "GFX_rome_culture_icon_le"

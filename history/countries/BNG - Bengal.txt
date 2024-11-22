@@ -1,5 +1,6 @@
 government = monarchy
 add_government_reform = indian_sultanate_reform
+government_rank = 6 #Sultanate
 primary_culture = bengali
 religion = sunni
 technology_group = indian
@@ -641,7 +642,7 @@ change_brahmins_or_church_land_share_effect = {
 		DIP = 3
 		MIL = 4
 	}
-	government_rank = 1
+	government_rank = 6
 }
 
 1707.3.15 = {

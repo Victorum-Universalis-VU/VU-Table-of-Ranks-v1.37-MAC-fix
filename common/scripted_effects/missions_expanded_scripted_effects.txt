@@ -2333,7 +2333,7 @@ ME_technology_split_120_power = { #placeholder, I will put the implementation he
 
 #tag = { ME_add_to_empire = yes }
 ME_add_to_empire = {
-	#custom_tooltip = ME_join_the_empire
+	custom_tooltip = ME_join_the_empire
 	if = {
 		limit = {
 			capital_scope = {

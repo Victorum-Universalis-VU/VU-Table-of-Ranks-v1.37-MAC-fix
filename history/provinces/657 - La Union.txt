@@ -4,7 +4,7 @@ owner = PGS
 controller = PGS
 add_core = PGS
 culture = pangasinense
-religion = animism
+religion = mahayana
 capital = "Atuley"
 trade_goods = fish
 hre = no
@@ -13,13 +13,18 @@ base_production = 4
 base_manpower = 4
 is_city = yes
 
+1400.1.1 = {
+    add_permanent_province_modifier = {
+        name = indian_minorities
+        duration = -1
+    }
+	add_permanent_province_modifier = {
+        name = japanese_minorities
+        duration = -1
+    }
+}
 
-
-
-
-
- # Ferdinand Magellan
-
+#History by SF
 1572.1.1 = { #Juan de Salcedo explored the area in June 1572, he and his men were involved in a skirmish with 3 Japanese ships. He discovered that there was a settlement in the area, occupied by Japanese and Chinese merchants. The incident earned Agoo the name “El Puerto de Japon”.
 	owner = SPA
 	controller = SPA
@@ -28,29 +33,13 @@ is_city = yes
 	religion = catholic
 	capital = "El Puerto de Japon"
 	trade_goods = fish
-	is_city = yes
 }
-
 1759.1.1 = { #Agustinian friar Jose Torres fused these two settlements to form the town of Pindangan.
-	owner = SPA
-	controller = SPA
-	add_core = SPA
-	culture = castillian
-	religion = catholic
 	capital = "Pindangan" #Local word for a place to dry fish.
-	trade_goods = fish
-	is_city = yes
 }
-
 1786.1.1 = {
-	owner = SPA
-	controller = SPA
-	add_core = SPA
-	culture = castillian
-	religion = catholic
 	capital = "San Fernando" #Named after Saint Ferdinand III of Castile.
 	trade_goods = wine #Basi or native wine made from sugarcane
-	is_city = yes
 }
 
 1807.9.16 = { revolt = { type = nationalist_rebels size = 2 } controller = REB } # Basi Revolt

@@ -15,21 +15,13 @@ is_city = yes
 hre = no
 
 #Claimants
+add_core = DAL
 
 #Buildings
 
 #Special Modifiers
 
 #Known by Technology groups
-
-
-
-
-
-
-
-
-
 
 #Province history completed by - Nikicaga
 1215.6.15 = { owner = SER controller = SER add_core = SER } # Serbian territorial lands - By San Felipe

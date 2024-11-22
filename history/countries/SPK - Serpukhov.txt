@@ -1,11 +1,12 @@
 government = monarchy
 add_government_reform = principality
-government_rank = 1
+government_rank = 7 #Principality
 #technology_group = eastern
 technology_group = russian_tech_group
 unit_type = eastern
 religion = orthodox
-primary_culture = russian
+primary_culture = muscovite
+add_accepted_culture = ryazanian
 capital = 3277
 fixed_capital = 3277
 historical_friend = MOS

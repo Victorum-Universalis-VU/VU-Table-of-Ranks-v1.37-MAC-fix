@@ -1,7 +1,7 @@
 #VU addition for 1.36.2.* by San Felipe
 #country_has_both_paradox_and_golden_bull_missions = {}
 
-has_production_building_trigger = {
+has_production_building_trigger = { #There are 2 of those, should remove one
 	OR = {
 		has_building = workshop
 		has_building = counting_house
@@ -17,7 +17,7 @@ has_production_building_trigger = {
 }
 
 has_manufactory_trigger = { #Province Scope
-	custom_trigger_tooltip = {
+	custom_trigger_tooltip = { #There are 2 of those, should remove one
 		tooltip = has_manufactory_trigger_tooltip
 		OR = {
 			has_building = wharf
@@ -38,4 +38,17 @@ has_manufactory_trigger = { #Province Scope
 	}
 }
 
+has_education_building_trigger = {
+	OR = {
+		has_building = library
+		has_building = school
+	}
+}
 
+has_transportation_trigger = {
+	OR = {
+		has_building = road_system #VU addition
+		has_building = canal_system #VU addition
+		has_building = railway_system #VU addition
+	}
+}

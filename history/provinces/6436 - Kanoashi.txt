@@ -2,7 +2,7 @@
 
 owner = YSM
 controller = YSM
-culture = japanese
+culture = chugoku 
 religion = shinto
 capital = "Hagi"
 trade_goods = rice

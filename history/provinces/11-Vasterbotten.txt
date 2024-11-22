@@ -17,6 +17,7 @@ native_size = 3
 native_ferocity = 2
 
 #Claimants
+add_core = NRB
 
 #Buildings
 

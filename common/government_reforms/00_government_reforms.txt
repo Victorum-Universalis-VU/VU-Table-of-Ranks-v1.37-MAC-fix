@@ -1,3 +1,4 @@
+#NOTE!!! Only Legacy government entries are allowed in this file. Also, legacy entries are used in case you don't have the Dharma dlc. - SF
 defaults_reform = {
 	valid_for_new_country = yes
 	allow_convert = yes
@@ -771,7 +772,7 @@ noble_republic = {
 	valid_for_new_country = yes
 	valid_for_nation_designer = no
 	duration = 4
-
+	queen = no
 	republican_name = yes
 	royal_marriage = yes
 
@@ -940,7 +941,7 @@ constitutional_republic = {
 
 	republican_name = yes
 	royal_marriage = no
-
+	queen = no
 	republic = yes
 	modifiers = {
     	governing_capacity = 150
@@ -994,7 +995,7 @@ revolutionary_republic = {
 	royal_marriage = no
 	revolutionary = yes
 
-    fixed_rank = 3
+    fixed_rank = 6
 	republic = yes
 	modifiers = {
     	governing_capacity = 150
@@ -1150,7 +1151,7 @@ monastic_order_government = {
 	different_religion_acceptance = -20
 	different_religion_group_acceptance = -50
 
-    fixed_rank = 1
+    fixed_rank = 5
 	religion = yes
 	monastic = yes
 
@@ -1221,7 +1222,7 @@ papal_government = {
 	different_religion_acceptance = -20
 	different_religion_group_acceptance = -50
 
-    fixed_rank = 2
+    fixed_rank = 8
 	religion = yes
 	monastic = yes
 	is_eligible_for_hre_emperor = no
@@ -1487,41 +1488,56 @@ siberian_native_council = {
 ##########################################
 
 #Somewhat special for Austria
-austrian_archduchy = {
-	icon = "king"
-	allow_normal_conversion = no
-	legacy_government = yes
-	valid_for_nation_designer = yes
-	potential = {
-		OR = {
-			tag = HAB
-			tag = AUT        #VU - SF addition
-			was_tag = HAB
-			was_tag = AUT    #VU - SF addition
-			has_reform = austrian_archduchy_reform
-		}
-	}
-	monarchy = yes
-	nation_designer_cost = 5
-	modifiers = {
-		governing_capacity = 100
-		prestige = 0.5
-		liberty_desire_from_subject_development = -0.33
-	}
-	ai = {
-		factor = 5
-	}
-}
+#austrian_archduchy_legacy = { #What AUT starts off with on advice of Prussia. - SF
+#	icon = "king"
+#	allow_normal_conversion = no
+#	legacy_government = yes
+#	valid_for_nation_designer = yes
+#	potential = {
+#		tag = AUT
+#		is_part_of_hre = yes #Added on suggestion of Prussia. - SF
+#		#OR = {
+#		#	#tag = HAB #Hashed out on Prussia's suggestion. - SF
+#		#	tag = AUT
+#		#	#was_tag = HAB #Hashed out on Prussia's suggestion. - SF
+#		#	was_tag = AUT
+#		#	has_reform = austrian_archduchy_reform
+#		#}
+#		NOT = { 
+#			#tag = AUT #Hashed out on Prussia's suggestion. - SF
+#			tag = BRX
+#			tag = BRX
+#			tag = BSN
+#			tag = CR1
+#			tag = DTT
+#			tag = GRZ
+#			tag = MBZ
+#			tag = RIJ
+#			tag = SIL
+#			tag = SH1 
+#		}
+#	}
+#	monarchy = yes
+#	nation_designer_cost = 5
+#	modifiers = {
+#		governing_capacity = 100
+#		prestige = 0.5
+#		liberty_desire_from_subject_development = -0.33
+#	}
+#	ai = {
+#		factor = 5
+#	}
+#}
 
 #Special for England
 english_monarchy_legacy = {
 	# government mechanics flags go here
-	icon = "british_queen"
+	icon = "english_monarchy"
 	allow_normal_conversion = no
 	legacy_government = yes
 	valid_for_new_country = no
 	allow_convert = no
-
+	fixed_rank = 8
 	valid_for_nation_designer = yes
 	nation_designer_cost = 15
 	nation_designer_trigger = {
@@ -1650,67 +1666,67 @@ elective_monarchy_legacy = {
 	}
 }
 
-phoenician_elective_monarchical_republic_legacy = {
-	# government mechanics flags go here
-	allow_normal_conversion = no
-	legacy_government = yes
-	icon = "phoenician_republic"
+#phoenician_elective_monarchical_republic_legacy = {
+#	# government mechanics flags go here
+#	allow_normal_conversion = no
+#	legacy_government = yes
+#	icon = "phoenician_republic"
+#
+#	valid_for_new_country = no
+#	allow_convert = no
+#	valid_for_nation_designer = yes
+#	nation_designer_cost = 10
+#	nation_designer_trigger = {
+#		has_dlc = "Res Publica"
+#	}
+#
+#	monarchy = yes
+#	modifiers = {
+#		vassal_income = 0.25
+#		global_unrest = -1
+#		global_autonomy = -0.025
+#		max_absolutism = -30
+#	}
+#
+#	conditional = {
+#		allow = { has_dlc = "Res Publica" }
+#		is_elective = yes
+#	}
+#	ai = {
+#		factor = 5
+#	}
+#}
 
-	valid_for_new_country = no
-	allow_convert = no
-	valid_for_nation_designer = yes
-	nation_designer_cost = 10
-	nation_designer_trigger = {
-		has_dlc = "Res Publica"
-	}
-
-	monarchy = yes
-	modifiers = {
-		vassal_income = 0.25
-		global_unrest = -1
-		global_autonomy = -0.025
-		max_absolutism = -30
-	}
-
-	conditional = {
-		allow = { has_dlc = "Res Publica" }
-		is_elective = yes
-	}
-	ai = {
-		factor = 5
-	}
-}
-
-carthaginian_elective_monarchical_republic_reform_legacy = {
-	# government mechanics flags go here
-	allow_normal_conversion = no
-	legacy_government = yes
-	icon = "crown"
-
-	valid_for_new_country = no
-	allow_convert = no
-	valid_for_nation_designer = yes
-	nation_designer_cost = 10
-	nation_designer_trigger = {
-		has_dlc = "Res Publica"
-	}
-
-	monarchy = yes
-	modifiers = {
-		vassal_income = 0.25
-		global_unrest = -1
-		global_autonomy = -0.025
-		max_absolutism = -30
-	}
-
-	conditional = {
-		allow = { has_dlc = "Res Publica" }
-		is_elective = yes
-	}
-	ai = {
-		factor = 5
-	}
-}
+#carthaginian_elective_monarchical_republic_reform_legacy = {
+#	# government mechanics flags go here
+#	allow_normal_conversion = no
+#	legacy_government = yes
+#	icon = "crown"
+#
+#	valid_for_new_country = no
+#	allow_convert = no
+#	valid_for_nation_designer = yes
+#	nation_designer_cost = 10
+#	nation_designer_trigger = {
+#		has_dlc = "Res Publica"
+#	}
+#
+#	monarchy = yes
+#	modifiers = {
+#		vassal_income = 0.25
+#		global_unrest = -1
+#		global_autonomy = -0.025
+#		max_absolutism = -30
+#	}
+#
+#	conditional = {
+#		allow = { has_dlc = "Res Publica" }
+#		is_elective = yes
+#	}
+#	ai = {
+#		factor = 5
+#	}
+#}
 
 #Special for HRE free cities
 imperial_city = {
@@ -1736,8 +1752,7 @@ imperial_city = {
 		NOT = { num_custom_nation_provinces = 2 }
 	}
 
-
-    fixed_rank = 1
+    fixed_rank = 3
 	republic = yes
 	modifiers = {
 		trade_efficiency = 0.1
@@ -1771,7 +1786,7 @@ trading_city_legacy = {
 		mr_guilds
 	}
 
-    fixed_rank = 1
+    fixed_rank = 2
 	republic = yes
 	modifiers = {
 		global_trade_power = 0.1
@@ -1926,7 +1941,7 @@ celestial_empire_legacy = {
 		bureaucrats
 	}
 
-    fixed_rank = 3
+    fixed_rank = 9
 	modifiers = {
 		prestige = 0.5
 		embracement_cost = 0.1
@@ -2046,7 +2061,12 @@ iqta_legacy = {
 	}
 
 	conditional = {
-		allow = { has_dlc = "Cradle of Civilization" }
+		allow = {
+			OR = {
+				has_dlc = "Cradle of Civilization"
+				has_dlc = "Winds of Change"
+			}
+		}
 		government_abilities = {
 			iqta_mechanic
 		}
@@ -2076,7 +2096,7 @@ daimyo_legacy = {
 		capital_scope = { region = japan_region }
 	}
 
-    fixed_rank = 1
+    #fixed_rank = 1
 	monarchy = yes
 	modifiers = {
 		land_morale = 0.10
@@ -2112,7 +2132,12 @@ indian_sultanate_legacy = {
 	}
 
 	conditional = {
-		allow = { has_dlc = "Cradle of Civilization" }
+		allow = {
+			OR = {
+				has_dlc = "Cradle of Civilization"
+				has_dlc = "Winds of Change"
+			}
+		}
 		government_abilities = {
 			iqta_mechanic
 		}
@@ -2153,7 +2178,7 @@ shogunate_legacy = {
 		}
 	}
 	
-    fixed_rank = 2
+    fixed_rank = 8
 	monarchy = yes
 	modifiers = {
 		governing_capacity = 100
@@ -2214,7 +2239,7 @@ colonial_government_legacy = {
 	republican_name = yes
 	royal_marriage = no
 
-    fixed_rank = 1
+    fixed_rank = 6
 	republic = yes
 	modifiers = {
 		governing_capacity = 100
@@ -2366,7 +2391,7 @@ veche_republic_legacy = {
 		mr_guilds
 	}
 
-    fixed_rank = 1
+    fixed_rank = 7
 	modifiers = {
 		governing_capacity = 150
 		merchants = 1
@@ -2475,7 +2500,7 @@ principality_legacy = {
 		religion = orthodox
 	}
 
-    fixed_rank = 1
+    fixed_rank = 7
 	modifiers = {
 		governing_capacity = 150
 		global_unrest = -1
@@ -2515,7 +2540,7 @@ tsardom_legacy = {
 		religion = orthodox
 	}
 
-    fixed_rank = 3
+    fixed_rank = 9
 	modifiers = {
 		governing_capacity = 300
 		global_manpower_modifier = 0.20
@@ -2555,7 +2580,7 @@ issi_akdom_reform_legacy = {
 		religion = ashurist
 	}
 
-    fixed_rank = 3
+    fixed_rank = 9
 	modifiers = {
 		governing_capacity = 150
 		technology_cost = 0.1
@@ -2594,7 +2619,7 @@ sardom_reform_legacy = {
 		religion = cult_of_marduk
 	}
 
-    fixed_rank = 3
+    fixed_rank = 9
 	modifiers = {
 		global_trade_power = 0.1
 		monarch_diplomatic_power = 2
@@ -2753,7 +2778,7 @@ solomonic_empire_legacy = {
 
 	valid_for_nation_designer = yes
 	nation_designer_cost = 50
-	fixed_rank = 3
+	fixed_rank = 9
 
 
 	republic = yes
@@ -2986,319 +3011,121 @@ feudal_tribe_legacy = {
 
 # Legacy Governments Unique to Beyond the Pale
 
-### Irish Governments ###
-
-irish_clann_legacy = {
-	icon = "crown"
-	legacy_government = yes
-	allow_normal_conversion = no
-	valid_for_new_country = no
-	allow_convert = no
-	valid_for_nation_designer = yes
-	nation_designer_cost = -10
-	nation_designer_trigger = {
-		culture_group = gaelic
-		capital_scope = { region = ireland_region }
-	}
-	monarchy = yes
-	fixed_rank = 1
-	modifiers = {
-		stability_cost_modifier = -0.1
-		global_institution_spread = -0.1
-		global_manpower_modifier = 0.25
-		max_absolutism = -10
-	}
-	ai = { factor = 1 }
-}
-
 ### Welsh Governments ###
 #VU 1.35 Welsh Monarchy
-welsh_lordship_legacy = {
-	icon = "crown"
-	legacy_government = yes
-	allow_normal_conversion = no
-	valid_for_new_country = no
-	allow_convert = no
-	valid_for_nation_designer = yes
-	nation_designer_cost = -10
-	nation_designer_trigger = {
-		primary_culture = welsh
-		#NOT = { culture_group = gaelic }
-		capital_scope = { region = british_isles_region }
-	}
-	monarchy = yes
-	fixed_rank = 1
-	modifiers = {
-		production_efficiency = 0.05
-		global_tax_modifier = 0.05
-		diplomatic_upkeep = -1
-		max_absolutism = 10
-	}
-	ai = { factor = 1 }
-}
+#norman_lordship_legacy = {
+#	icon = "crown"
+#	legacy_government = yes
+#	allow_normal_conversion = no
+#	valid_for_new_country = no
+#	allow_convert = no
+#	valid_for_nation_designer = yes
+#	nation_designer_cost = -10
+#	nation_designer_trigger = {
+#		NOT = { culture_group = gaelic }
+#		capital_scope = { region = ireland_region }
+#	}
+#	monarchy = yes
+#	fixed_rank = 1
+#	modifiers = {
+#		production_efficiency = 0.05
+#		global_tax_modifier = 0.05
+#		diplomatic_upkeep = -1
+#		max_absolutism = 10
+#	}
+#	ai = { factor = 1 }
+#}
 
-welsh_duchy_legacy = {
-	icon = "crown"
-	legacy_government = yes
-	allow_normal_conversion = no
-	valid_for_new_country = no
-	allow_convert = no
-	valid_for_nation_designer = yes
-	nation_designer_cost = 10
-	nation_designer_trigger = {
-		primary_culture = welsh
-		#NOT = { culture_group = gaelic }
-		capital_scope = { region = british_isles_region }
-		num_of_cities = 5
-	}
-	monarchy = yes
-	fixed_rank = 1
-	modifiers = {
-		production_efficiency = 0.15
-		global_tax_modifier = 0.15
-		diplomatic_reputation = -2
-		max_absolutism = 10
-	}
-	ai = { factor = 1 }
-}
+#norman_duchy_legacy = {
+#	icon = "crown"
+#	legacy_government = yes
+#	allow_normal_conversion = no
+#	valid_for_new_country = no
+#	allow_convert = no
+#	valid_for_nation_designer = yes
+#	nation_designer_cost = 10
+#	nation_designer_trigger = {
+#		NOT = { culture_group = gaelic }
+#		capital_scope = { region = ireland_region }
+#		num_of_cities = 5
+#	}
+#	monarchy = yes
+#	fixed_rank = 6
+#	modifiers = {
+#		production_efficiency = 0.15
+#		global_tax_modifier = 0.15
+#		diplomatic_reputation = -2
+#		max_absolutism = 10
+#	}
+#	ai = { factor = 1 }
+#}
 
-welsh_monarchy_legacy = {
-	icon = "crown"
-	legacy_government = yes
-	allow_normal_conversion = no
-	valid_for_new_country = no
-	allow_convert = no
-	valid_for_nation_designer = no
-	monarchy = yes
-	modifiers = {
-		production_efficiency = 0.1
-		global_tax_modifier = 0.1
-		global_autonomy = -0.05
-		max_absolutism = 10
-	}
-	conditional = {
-		allow = { has_dlc = "Common Sense" }
-		has_parliament = yes
-	}
-	ai = { factor = 1 }
-}
+#provincial_kingdom_legacy = {
+#	icon = "crown"
+#	legacy_government = yes
+#	allow_normal_conversion = no
+#	valid_for_new_country = no
+#	allow_convert = no
+#	valid_for_nation_designer = yes
+#	nation_designer_cost = 10
+#	nation_designer_trigger = {
+#		culture_group = gaelic
+#		capital_scope = { region = ireland_region }
+#		num_of_cities = 5
+#	}
+#	monarchy = yes
+#	fixed_rank = 7
+#	modifiers = {
+#		manpower_recovery_speed = 0.2
+#		infantry_power = 0.2
+#		land_morale = 0.1
+#		liberty_desire = 0.15
+#	}
+#	ai = { factor = 1 }
+#}
 
-norman_lordship_legacy = {
-	icon = "crown"
-	legacy_government = yes
-	allow_normal_conversion = no
-	valid_for_new_country = no
-	allow_convert = no
-	valid_for_nation_designer = yes
-	nation_designer_cost = -10
-	nation_designer_trigger = {
-		NOT = { culture_group = gaelic }
-		capital_scope = { region = ireland_region }
-	}
-	monarchy = yes
-	fixed_rank = 1
-	modifiers = {
-		production_efficiency = 0.05
-		global_tax_modifier = 0.05
-		diplomatic_upkeep = -1
-		max_absolutism = 10
-	}
-	ai = { factor = 1 }
-}
+#high_kingship_legacy = {
+#	icon = "crown"
+#	legacy_government = yes
+#	allow_normal_conversion = no
+#	valid_for_new_country = no
+#	allow_convert = no
+#	valid_for_nation_designer = yes
+#	nation_designer_cost = 75
+#	nation_designer_trigger = { culture_group = gaelic }
+#	monarchy = yes
+#	modifiers = {
+#		legitimacy = 1
+#		prestige = 1
+#		max_absolutism = -10
+#	}
+#	conditional = {
+#		allow = { has_dlc = "Common Sense" }
+#		has_parliament = yes
+#	}
+#	ai = { factor = 3 }
+#}
 
-english_lordship_legacy = {
-	icon = "english_lordship_reform"
-	legacy_government = yes
-	allow_normal_conversion = no
-	valid_for_new_country = no
-	allow_convert = no
-	valid_for_nation_designer = yes
-	nation_designer_cost = -10
-	nation_designer_trigger = {
-		NOT = { culture_group = british }
-		capital_scope = { region = british_isles_region }
-		is_subject_of_type = english_peerage #Was appanage
-	}
-	monarchy = yes
-	fixed_rank = 1
-	maintain_dynasty = yes
-	modifiers = {
-		manpower_recovery_speed = 0.1
-		infantry_power = 0.1
-		land_morale = 0.05
-		liberty_desire = 0.1
-	}
-	ai = { factor = 1 }
-}
-
-english_duchy_legacy = {
-	icon = "english_duchy_reform"
-	legacy_government = yes
-	allow_normal_conversion = no
-	valid_for_new_country = no
-	allow_convert = no
-	valid_for_nation_designer = yes
-	nation_designer_cost = 10
-	nation_designer_trigger = {
-		culture_group = british
-		capital_scope = { region = british_isles_region }
-		is_subject_of_type = english_peerage #Was appanage
-		num_of_cities = 5
-	}
-	monarchy = yes
-	fixed_rank = 1
-	maintain_dynasty = yes
-	modifiers = {
-		production_efficiency = -0.05
-		global_institution_spread = -0.05
-		unjustified_demands = -0.2
-		max_absolutism = -10
-	}
-	ai = { factor = 1 }
-}
-
-provincial_kingdom_legacy = {
-	icon = "crown"
-	legacy_government = yes
-	allow_normal_conversion = no
-	valid_for_new_country = no
-	allow_convert = no
-	valid_for_nation_designer = yes
-	nation_designer_cost = 10
-	nation_designer_trigger = {
-		culture_group = gaelic
-		capital_scope = { region = ireland_region }
-		num_of_cities = 5
-	}
-	monarchy = yes
-	fixed_rank = 1
-	modifiers = {
-		manpower_recovery_speed = 0.2
-		infantry_power = 0.2
-		land_morale = 0.1
-		liberty_desire = 0.15
-	}
-	ai = { factor = 1 }
-}
-
-norman_duchy_legacy = {
-	icon = "crown"
-	legacy_government = yes
-	allow_normal_conversion = no
-	valid_for_new_country = no
-	allow_convert = no
-	valid_for_nation_designer = yes
-	nation_designer_cost = 10
-	nation_designer_trigger = {
-		NOT = { culture_group = gaelic }
-		capital_scope = { region = ireland_region }
-		num_of_cities = 5
-	}
-	monarchy = yes
-	fixed_rank = 1
-	modifiers = {
-		production_efficiency = 0.15
-		global_tax_modifier = 0.15
-		diplomatic_reputation = -2
-		max_absolutism = 10
-	}
-	ai = { factor = 1 }
-}
-
-high_kingship_legacy = {
-	icon = "crown"
-	legacy_government = yes
-	allow_normal_conversion = no
-	valid_for_new_country = no
-	allow_convert = no
-	valid_for_nation_designer = yes
-	nation_designer_cost = 75
-	nation_designer_trigger = { culture_group = gaelic }
-	monarchy = yes
-	modifiers = {
-		legitimacy = 1
-		prestige = 1
-		max_absolutism = -10
-	}
-	conditional = {
-		allow = { has_dlc = "Common Sense" }
-		has_parliament = yes
-	}
-	ai = { factor = 3 }
-}
-
-anglo_irish_monarchy_legacy = {			#VU changes this to a cross between an administrative monarchy and a English Monarchy
-	icon = "crown"
-	legacy_government = yes
-	allow_normal_conversion = no
-	valid_for_new_country = no
-	allow_convert = no
-	valid_for_nation_designer = no
-	monarchy = yes
-	modifiers = {
-		production_efficiency = 0.1
-		global_tax_modifier = 0.1
-		global_autonomy = -0.05
-		max_absolutism = 10
-	}
-	conditional = {
-		allow = { has_dlc = "Common Sense" }
-		has_parliament = yes
-	}
-	ai = { factor = 1 }
-}
-
-### Italian Governments ###
-
-# Legacy Governments Unique to Victorum Universalis
-
-puppet_kingdom_of_ireland_legacy = {			#A powerful government type with large bonuses and large penalties for a vassalised KoI. Events should replace this government type if Ireland ceases to be a vassal.
-	icon = "parliament"
-	legacy_government = yes
-	allow_normal_conversion = no
-	valid_for_new_country = no
-	allow_convert = no
-	duration = 8
-	valid_for_nation_designer = no
-	republican_name = no
-	royal_marriage = no
-	republic = yes
-	fixed_rank = 2
-	modifiers = {
-		production_efficiency = 0.2
-		global_tax_modifier = 0.1
-		global_unrest = 3
-		max_absolutism = 10
-	}
-	conditional = {
-		allow = { has_dlc = "Common Sense" }
-		has_parliament = yes
-	}
-	ai = { factor = 3 }
-}
-
-transitional_government_ireland_legacy = {			#A transitionary government based on a republican dictatorship with a parliament
-	icon = "paper_with_seal_3"
-	legacy_government = yes
-	allow_normal_conversion = no
-	valid_for_new_country = no
-	allow_convert = no
-	has_term_election = no
-	valid_for_nation_designer = no
-	republican_name = yes
-	royal_marriage = no
-	dictatorship = yes
-	modifiers = {
-		legitimacy = -0.5
-		stability_cost_modifier = 0.25
-		global_unrest = 5
-	}
-	conditional = {
-		allow = { has_dlc = "Common Sense" }
-		has_parliament = yes
-	}
-	ai = { factor = 3 }
-}
+#anglo_irish_monarchy_legacy = {			#VU changes this to a cross between an administrative monarchy and a English Monarchy
+#	icon = "crown"
+#	legacy_government = yes
+#	allow_normal_conversion = no
+#	valid_for_new_country = no
+#	allow_convert = no
+#	valid_for_nation_designer = no
+#	monarchy = yes
+#	modifiers = {
+#		production_efficiency = 0.1
+#		global_tax_modifier = 0.1
+#		global_autonomy = -0.05
+#		max_absolutism = 10
+#	}
+#	conditional = {
+#		allow = { has_dlc = "Common Sense" }
+#		has_parliament = yes
+#	}
+#	ai = { factor = 1 }
+#}
 
 ##############################
 # Victorian Government Types #
@@ -3359,7 +3186,7 @@ transitional_government_ireland_legacy = {			#A transitionary government based o
 #		}
 #	}
 #}
-#
+
 #parliamentary_democracy = {
 #	# government mechanics flags go here
 #	icon = "constitution"
@@ -3403,930 +3230,454 @@ transitional_government_ireland_legacy = {			#A transitionary government based o
 #	}
 #}
 
-##################
-# PRINCIPALITIES #
-##################
-welsh_principality_legacy = {
-	# government mechanics flags go here
-	icon = "crown"
-	legacy_government = yes
-	monarchy = yes
-	allow_normal_conversion = no
-
-	valid_for_new_country = no
-	allow_convert = no
-
-	valid_for_nation_designer = yes
-	nation_designer_cost = 5
-	nation_designer_trigger = {
-		NOT = { has_reform = revolutionary_empire_reform }
-	    NOT = { religion = orthodox }
-	    religion_group = christian
-		primary_culture = welsh
-	}
-
-    fixed_rank = 1
-	modifiers = {
-		governing_capacity = 25
-		global_unrest = -1
-		global_tax_modifier = 0.05
-	}
-
-	conditional = {
-		allow = { has_dlc = "Third Rome" }
-		#government_abilities = {
-		#	monarchy_mechanic #Removed in 1.35 Domination 
-		#}
-	}
-
-	ai = {
-		factor = 5
-	}
-}
-
-western_principality_legacy = {
-	# government mechanics flags go here
-	icon = "crown"
-	legacy_government = yes
-	monarchy = yes
-	allow_normal_conversion = no
-
-	valid_for_new_country = no
-	allow_convert = no
-
-	valid_for_nation_designer = yes
-	nation_designer_cost = 5
-	nation_designer_trigger = {
-		NOT = { has_reform = revolutionary_empire_reform }
-	    NOT = { religion = orthodox }
-	    NOT = { primary_culture = welsh }
-	    religion_group = christian
-	    OR = {
-		    culture_group = brythonic
-		    culture_group = british
-		    culture_group = french
-		    culture_group = germanic
-		    culture_group = gaelic
-		    culture_group = iberian
-		    culture_group = latin
-		    culture_group = low_franconian
-		    culture_group = scandinavian
-			culture_group = illyrian
-		}
-	}
-
-    fixed_rank = 1
-	modifiers = {
-		governing_capacity = 150
-		global_unrest = -1
-		global_tax_modifier = 0.05
-	}
-
-	conditional = {
-		allow = { has_dlc = "Third Rome" }
-		#government_abilities = {
-		#	monarchy_mechanic #Removed in 1.35 Domination 
-		#}
-	}
-
-	ai = {
-		factor = 5
-	}
-}
-
 ############
 # MONARCHY #
 ############
-
-belgian_kingdom_legacy = {
-	icon = "belgian_monarchy"
-	legacy_government = yes
-	allow_normal_conversion = no
-	valid_for_new_country = no
-	allow_convert = no
-	valid_for_nation_designer = no
-	monarchy = yes
-	modifiers = {
-	    governing_capacity = 75
-		global_unrest = -1
-		production_efficiency = 0.1
-		global_tax_modifier = 0.1
-		global_autonomy = -0.05
-		max_absolutism = 10
-	}
-	conditional = {
-		allow = { has_dlc = "Common Sense" }
-		#government_abilities = {
-		#	monarchy_mechanic #monarchy_mechanic is a reform, are you sure that can be used in government_abilities ?
-		#}
-	}
-	ai = { factor = 1 }
-}
-
-french_kingdom_legacy = {
-	icon = "bourbon_dynasty"
-	legacy_government = yes
-	allow_normal_conversion = no
-	valid_for_new_country = no
-	allow_convert = no
-	valid_for_nation_designer = no
-	monarchy = yes
-	modifiers = {
-	    governing_capacity = 75
-		global_unrest = -1
-		production_efficiency = 0.1
-		global_tax_modifier = 0.1
-		global_autonomy = -0.05
-		max_absolutism = 10
-	}
-	conditional = {
-		allow = { has_dlc = "Common Sense" }
-		#government_abilities = {
-		#	monarchy_mechanic
-		#}
-	}
-	ai = { factor = 1 }
-}
-
-french_monarchic_restoration_reform = {
-	icon = "bourbon_dynasty"
-	allow_normal_conversion = no
-	potential = {
-		has_reform = french_monarchic_restoration_reform
-		dynasty = "Bourbon"
-	}
-	maintain_dynasty = yes
-	royal_marriage = no
-	valid_for_nation_designer = yes
-	nation_designer_cost = 50
-	nation_designer_trigger = {
-	    NOT = { has_reform = revolutionary_empire_reform }
-		culture_group = french
-		dynasty = "Bourbon"
-	}
-	lock_level_when_selected = yes
-	fixed_rank = 3
-	modifiers = {
-		land_morale = 0.1
-		war_exhaustion = -0.03
-		max_absolutism = 10
-		heir_chance = 1
-	}
-	conditional = {
-		allow = { has_dlc = "Common Sense" }
-		has_parliament = no
-	}
-	custom_attributes = {
-		locked_government_type = yes
-	}
-}
-
-first_french_empire_legacy = {
-	# government mechanics flags go here
-	icon = "napoleonic_dynasty"
-	allow_normal_conversion = no
-	legacy_government = yes
-	valid_for_new_country = no
-	valid_for_nation_designer = no
-	monarchy = yes
-	revolutionary = yes
-	modifiers = {
-    	governing_capacity = 150
-		global_manpower_modifier = 0.25
-		land_morale = 0.10
-		global_autonomy = -0.2
-	}
-
-	ai = {
-		factor = 0
-	}
-}
-
-second_french_empire_legacy = {
-	# government mechanics flags go here
-	icon = "napoleonic_dynasty"
-	allow_normal_conversion = no
-	legacy_government = yes
-	valid_for_new_country = no
-	valid_for_nation_designer = no
-	monarchy = yes
-	revolutionary = no
-	modifiers = {
-    	governing_capacity = 150
-		global_manpower_modifier = 0.25
-		land_morale = 0.10
-		global_autonomy = -0.2
-	}
-
-	ai = {
-		factor = 0
-	}
-}
-
-#############
-# REPUBLICS #
-#############
-national_assembly_republic_legacy = {
-	# government mechanics flags go here
-	icon = "national_assembly"
-	allow_normal_conversion = no
-	legacy_government = yes
-	valid_for_new_country = no
-	valid_for_nation_designer = no
-	duration = 4
-
-	republican_name = yes
-	royal_marriage = no
-	revolutionary = yes
-
-    fixed_rank = 3
-	republic = yes
-	modifiers = {
-    	governing_capacity = 150
-		tolerance_heretic = 2
-		land_morale = 0.1
-		global_autonomy = -0.2
-	}
-
-	conditional = {
-		allow = {
-			has_dlc = "Rights of Man"
-		}
-		factions = {
-			rr_jacobins
-			rr_royalists
-			rr_girondists
-		}
-	}
-
-	ai = {
-		factor = 0
-	}
-}
-
-french_second_republic_legacy = {
-	# government mechanics flags go here
-	icon = "second_republic"
-	allow_normal_conversion = no
-	legacy_government = yes
-	valid_for_new_country = no
-	valid_for_nation_designer = no
-	duration = 4
-
-	republican_name = yes
-	royal_marriage = no
-	revolutionary = no
-
-    fixed_rank = 3
-	republic = yes
-	modifiers = {
-    	governing_capacity = 150
-		tolerance_heretic = 2
-		land_morale = 0.1
-		global_autonomy = -0.2
-	}
-
-	conditional = {
-		allow = {
-			has_dlc = "Rights of Man"
-		}
-		factions = {
-			rr_jacobins
-			rr_royalists
-			rr_girondists
-		}
-	}
-
-	ai = {
-		factor = 0
-	}
-}
-
-french_third_republic_legacy = {
-	# government mechanics flags go here
-	icon = "third_republic"
-	allow_normal_conversion = no
-	legacy_government = yes
-	valid_for_new_country = no
-	valid_for_nation_designer = no
-	duration = 4
-
-	republican_name = yes
-	royal_marriage = no
-	revolutionary = no
-
-    fixed_rank = 3
-	republic = yes
-	modifiers = {
-    	governing_capacity = 150
-		tolerance_heretic = 2
-		land_morale = 0.1
-		global_autonomy = -0.2
-	}
-
-	conditional = {
-		allow = {
-			has_dlc = "Rights of Man"
-		}
-		factions = {
-			rr_jacobins
-			rr_royalists
-			rr_girondists
-		}
-	}
-
-	ai = {
-		factor = 0
-	}
-}
+#french_monarchic_restoration_legacy = {
+#	icon = "bourbon_dynasty"
+#	allow_normal_conversion = no
+#	potential = {
+#		has_reform = french_monarchic_restoration_reform
+#		dynasty = "Bourbon"
+#	}
+#	maintain_dynasty = yes
+#	royal_marriage = no
+#	valid_for_nation_designer = yes
+#	nation_designer_cost = 50
+#	nation_designer_trigger = {
+#	    NOT = { has_reform = revolutionary_empire_reform }
+#		culture_group = french
+#		dynasty = "Bourbon"
+#	}
+#	lock_level_when_selected = yes
+#	fixed_rank = 8
+#	modifiers = {
+#		land_morale = 0.1
+#		war_exhaustion = -0.03
+#		max_absolutism = 10
+#		heir_chance = 1
+#	}
+#	conditional = {
+#		allow = { has_dlc = "Common Sense" }
+#		has_parliament = no
+#	}
+#	custom_attributes = {
+#		locked_government_type = yes
+#	}
+#}
 
 ############
 # IMPERIAL # Create entry in 00_governments
 ############
-french_first_empire_restoration_reform = {
-    # French unique gov 1814 – 1815, France is ruled by Napoleon III
-	icon = "napoleonic_dynasty"
-	allow_normal_conversion = no
-	potential = {
-		has_reform = french_first_empire_restoration_reform
-		dynasty = "Bonaparte"
-	}
-	maintain_dynasty = yes
-	royal_marriage = no
-	valid_for_nation_designer = yes
-	nation_designer_cost = 50
-	nation_designer_trigger = {
-	    NOT = { has_reform = revolutionary_empire_reform }
-		culture_group = french
-		dynasty = "Bonaparte"
-	}
-	lock_level_when_selected = yes
-	fixed_rank = 3
-	modifiers = {
-		land_morale = 0.1
-		war_exhaustion = -0.03
-		max_absolutism = 10
-		heir_chance = 1
-	}
-	conditional = {
-		allow = { has_dlc = "Common Sense" }
-		has_parliament = no
-	}
-	custom_attributes = {
-		locked_government_type = yes
-	}
-}
+#french_first_empire_restoration_legacy = {
+#    # French unique gov 1814 – 1815, France is ruled by Napoleon III
+#	icon = "napoleonic_dynasty"
+#	allow_normal_conversion = no
+#	potential = {
+#		has_reform = french_first_empire_restoration_reform
+#		dynasty = "Bonaparte"
+#	}
+#	maintain_dynasty = yes
+#	royal_marriage = no
+#	valid_for_nation_designer = yes
+#	nation_designer_cost = 50
+#	nation_designer_trigger = {
+#	    NOT = { has_reform = revolutionary_empire_reform }
+#		culture_group = french
+#		dynasty = "Bonaparte"
+#	}
+#	lock_level_when_selected = yes
+#	fixed_rank = 9
+#	modifiers = {
+#		land_morale = 0.1
+#		war_exhaustion = -0.03
+#		max_absolutism = 10
+#		heir_chance = 1
+#	}
+#	conditional = {
+#		allow = { has_dlc = "Common Sense" }
+#		has_parliament = no
+#	}
+#	custom_attributes = {
+#		locked_government_type = yes
+#	}
+#}
 
 ##############
 # OLIGARCHIC #
 ##############
-directory_republic_legacy = {
-	# government mechanics flags go here
-	icon = "directory"
-	allow_normal_conversion = yes
-	legacy_government = yes
-	duration = 4
-	valid_for_new_country = yes
-	valid_for_nation_designer = yes
-	nation_designer_cost = 0
-	
-	revolutionary = yes
-
-	republican_name = yes
-	royal_marriage = no
-	
-	republic = yes
-	modifiers = {
-		global_tax_modifier = 0.05
-		stability_cost_modifier = -0.05
-		global_autonomy = -0.025
-		max_absolutism = -40
-    	governing_capacity = 100
-	}
-
-	ai = {
-		factor = 0
-	}
-}
-
 #VU 1.35 changes this to a cross between an administrative monarchy and a Byzantine Monarchy
-greek_lordship_legacy = {
-	icon = "crown"
-	legacy_government = yes
-	allow_normal_conversion = no
-	valid_for_new_country = no
-	allow_convert = no
-	valid_for_nation_designer = yes
-	nation_designer_cost = 10
-	nation_designer_trigger = {
-		culture_group = byzantine
-		NOT = { culture_group = south_slavic }
-		capital_scope = { region = balkan_region }
-		num_of_cities = 5
-	}
-	monarchy = yes
-	#fixed_rank = 1
-	modifiers = {
-		production_efficiency = 0.15
-		global_tax_modifier = 0.15
-		diplomatic_reputation = -2
-		max_absolutism = 10
-	}
-	ai = { factor = 1 }
-}
-
-greek_duchy_legacy = {
-	icon = "crown"
-	legacy_government = yes
-	allow_normal_conversion = no
-	valid_for_new_country = no
-	allow_convert = no
-	valid_for_nation_designer = yes
-	nation_designer_cost = 10
-	nation_designer_trigger = {
-		culture_group = byzantine
-		capital_scope = { region = balkan_region }
-		num_of_cities = 5
-	}
-	monarchy = yes
-	#fixed_rank = 1
-	modifiers = {
-		production_efficiency = -0.05
-		global_institution_spread = -0.05
-		unjustified_demands = -0.2
-		max_absolutism = -10
-	}
-	ai = { factor = 1 }
-}
-
-greek_roman_governors_legacy = {
-	icon = "crown"
-	legacy_government = yes
-	allow_normal_conversion = no
-	valid_for_new_country = no
-	allow_convert = no
-	valid_for_nation_designer = no
-	monarchy = yes
-	modifiers = {
-		production_efficiency = 0.1
-		global_tax_modifier = 0.1
-		global_autonomy = -0.05
-		max_absolutism = 10
-	}
-	conditional = {
-		allow = { has_dlc = "Common Sense" }
-		has_parliament = yes
-	}
-	ai = { factor = 1 }
-}
-
 #Start of VU addition by San Felipe
-restoration_reform = {
-	icon = "shogunate"
-	allow_normal_conversion = no
-	potential = {
-		has_reform = restoration_reform
-		dynasty = "Yamato"
-	}
-	maintain_dynasty = yes
-	royal_marriage = no
-	valid_for_nation_designer = yes
-	nation_designer_cost = 50
-	nation_designer_trigger = {
-		culture_group = japanese_g
-		dynasty = "Yamato"
-	}
-	lock_level_when_selected = yes
-	fixed_rank = 3
-	modifiers = {
-		land_morale = 0.1
-		war_exhaustion = -0.03
-		max_absolutism = 10
-		heir_chance = 1
-	}
-	conditional = {
-		allow = { has_dlc = "Common Sense" }
-		has_parliament = yes
-	}
-	custom_attributes = {
-		locked_government_type = yes
-	}
-}
+#roman_diarchy_legacy = {
+#    icon = "roman_diarchy_reform"
+#	allow_normal_conversion = no
+#	legacy_government = yes
+#    duration = 1
+#    valid_for_new_country = no
+#    valid_for_nation_designer = yes
+#	nation_designer_trigger = {
+#		culture_group = latin
+#	}
+#	nation_designer_cost = 30
+#    republican_name = yes
+#    royal_marriage = yes
+#	potential = {
+#	    OR = {
+#		   tag = SNM
+#		   tag = ROM
+#		   was_tag = ROM
+#		   has_reform = roman_diarchy_reform
+#		}
+#		NOT = { has_reform = revolutionary_council_reform }
+#		NOT = { has_reform = absolute_president_reform }
+#		NOT = { has_reform = frequent_elections_reform }
+#		NOT = { has_reform = consolidation_of_power_reform }
+#		NOT = { has_reform = consolidate_power_into_different_candidates_reform }
+#	}
+#	
+#	republic = yes
+#	modifiers = {
+#   		governing_capacity = 100
+#		years_of_nationalism = -5
+#		land_morale = 0.1
+#		max_absolutism = -30
+#		global_autonomy = -0.075
+#	}
+#	conditional = {
+#		allow = { has_dlc = "Common Sense" }
+#		has_parliament = yes
+#	}
+#	custom_attributes = {
+#		locked_government_type = yes
+#	}
+#    
+#    #rank = {
+#    #    1 = {
+#    #        years_of_nationalism = -5
+#    #        land_morale = 0.05
+#    #        global_autonomy = -0.05
+#    #    }
+#    #    2 = {
+#    #        years_of_nationalism = -5
+#    #        land_morale = 0.1
+#    #        global_autonomy = -0.075
+#    #    }
+#    #    3 = {
+#    #        years_of_nationalism = -5
+#    #        land_morale = 0.15
+#    #        global_autonomy = -0.10
+#    #    }
+#    #}
+#}
 
-roman_diarchy = {
-    icon = "roman_diarchy_reform"
-	allow_normal_conversion = no
-	legacy_government = yes
-    duration = 1
-    valid_for_new_country = no
-    valid_for_nation_designer = yes
-	nation_designer_trigger = {
-		culture_group = latin
-	}
-	nation_designer_cost = 30
-    republican_name = yes
-    royal_marriage = yes
-	potential = {
-	    OR = {
-		   tag = SNM
-		   tag = ROM
-		   was_tag = ROM
-		   has_reform = roman_diarchy_reform
-		}
-		NOT = { has_reform = revolutionary_council_reform }
-		NOT = { has_reform = absolute_president_reform }
-		NOT = { has_reform = frequent_elections_reform }
-		NOT = { has_reform = consolidation_of_power_reform }
-		NOT = { has_reform = consolidate_power_into_different_candidates_reform }
-	}
-	
-	republic = yes
-	modifiers = {
-   		governing_capacity = 100
-		years_of_nationalism = -5
-		land_morale = 0.1
-		max_absolutism = -30
-		global_autonomy = -0.075
-	}
-	conditional = {
-		allow = { has_dlc = "Common Sense" }
-		has_parliament = yes
-	}
-	custom_attributes = {
-		locked_government_type = yes
-	}
-    
-    #rank = {
-    #    1 = {
-    #        years_of_nationalism = -5
-    #        land_morale = 0.05
-    #        global_autonomy = -0.05
-    #    }
-    #    2 = {
-    #        years_of_nationalism = -5
-    #        land_morale = 0.1
-    #        global_autonomy = -0.075
-    #    }
-    #    3 = {
-    #        years_of_nationalism = -5
-    #        land_morale = 0.15
-    #        global_autonomy = -0.10
-    #    }
-    #}
-}
-
-althing_republic = {
-	# government mechanics flags go here
-	icon = "althing_elite_reform"
-	allow_normal_conversion = yes
-	legacy_government = yes
-	valid_for_new_country = yes
-	valid_for_nation_designer = no
-	duration = 4
-
-	republican_name = yes
-	royal_marriage = yes
-	
-	monarchy = yes
-	modifiers = {
-   		governing_capacity = 100
-		tolerance_heretic = 1
-		land_morale = 0.1
-		max_absolutism = -40
-	}
-
-	ai = {
-		factor = 0
-	}
-}
+#althing_republic_legacy = {
+#	# government mechanics flags go here
+#	icon = "althing_elite_reform"
+#	allow_normal_conversion = yes
+#	legacy_government = yes
+#	valid_for_new_country = yes
+#	valid_for_nation_designer = no
+#	duration = 4
+#
+#	republican_name = yes
+#	royal_marriage = yes
+#	
+#	monarchy = yes
+#	modifiers = {
+#   		governing_capacity = 100
+#		tolerance_heretic = 1
+#		land_morale = 0.1
+#		max_absolutism = -40
+#	}
+#
+#	ai = {
+#		factor = 0
+#	}
+#}
 
 #Start of VU additions by San Felipe
-church_of_france = {
-	# government mechanics flags go here
-	icon = "arcbishop_of_reims"
-	allow_normal_conversion = no
-	allow_convert = no
-	legacy_government = yes
-	valid_for_new_country = no
-	valid_for_nation_designer = no
-	rulers_can_be_generals = no
-
-	royal_marriage = no
-
-	different_religion_acceptance = -20
-	different_religion_group_acceptance = -50
-
-    fixed_rank = 2
-	religion = yes
-	monastic = yes
-	modifiers = {
-		legitimacy = 1
-        power_projection_from_insults = 0.1
-        global_tax_income = 12
-	}
-
-	conditional = {
-		allow = {
-			has_dlc = "Common Sense"
-		}
-
-		has_devotion = yes
-	}
-
-	ai = {
-		factor = 0
-	}
-}
-
-church_of_england = {
-	# government mechanics flags go here
-	icon = "arcbishop_of_canterbury"
-	allow_normal_conversion = no
-	allow_convert = no
-	legacy_government = yes
-	valid_for_new_country = no
-	valid_for_nation_designer = no
-	rulers_can_be_generals = no
-
-	royal_marriage = no
-
-	different_religion_acceptance = -20
-	different_religion_group_acceptance = -50
-
-    fixed_rank = 2
-	religion = yes
-	monastic = yes
-	modifiers = {
-		land_morale = 0.1
-        global_trade_power = 0.05
-        global_tax_modifier = 0.05
-	}
-
-	conditional = {
-		allow = {
-			has_dlc = "Common Sense"
-		}
-
-		has_devotion = yes
-	}
-
-	ai = {
-		factor = 0
-	}
-}
+#prince_archbishopric_of_andorra_legacy = {
+#	icon = "prince_archbishopric_of_andorra_reform"
+#	allow_normal_conversion = no
+#	allow_convert = no
+#	legacy_government = yes
+#	valid_for_new_country = no
+#	valid_for_nation_designer = no
+#	rulers_can_be_generals = no
+#	royal_marriage = no
+#	different_religion_acceptance = -20
+#	different_religion_group_acceptance = -50
+#    fixed_rank = 7
+#	religion = yes
+#	monastic = yes
+#	modifiers = {
+#		land_morale = 0.1
+#        global_trade_power = 0.05
+#        global_tax_modifier = 0.05
+#	}
+#	conditional = {
+#		allow = {
+#			has_dlc = "Common Sense"
+#		}
+#		has_devotion = yes
+#	}
+#	ai = {
+#		factor = 0
+#	}
+#}
 
 #Special for Scotland
-scottish_monarchy_legacy = {
-	# government mechanics flags go here
-	icon = "scottish_monarchy"
-	allow_normal_conversion = no
-	legacy_government = yes
-	valid_for_new_country = no
-	allow_convert = no
-
-	valid_for_nation_designer = yes
-	nation_designer_cost = 10
-	nation_designer_trigger = {
-		has_dlc = "Common Sense"
-	}
-
-	monarchy = yes
-	start_territory_to_estates = 0.2
-	modifiers = {
-		legitimacy = 0.35
-		global_unrest = -0.75
-		global_autonomy = -0.035
-		max_absolutism = -25
-	}
-
-	conditional = {
-		allow = {
-			has_dlc = "Common Sense"
-		}
-		custom_attributes = {
-			enables_privy_council = yes #pseudoparliament and a development of the King's Council
-			#has_unify_british_isles_cb = yes
-		}   #fixdis every option is the same
-	}
-	ai = {
-		factor = 5
-	}
-}
+#scottish_monarchy_legacy = {
+#	# government mechanics flags go here
+#	icon = "scottish_monarchy"
+#	allow_normal_conversion = no
+#	legacy_government = yes
+#	valid_for_new_country = no
+#	allow_convert = no
+#
+#	valid_for_nation_designer = yes
+#	nation_designer_cost = 10
+#	nation_designer_trigger = {
+#		has_dlc = "Common Sense"
+#	}
+#
+#	monarchy = yes
+#	start_territory_to_estates = 0.2
+#	modifiers = {
+#		legitimacy = 0.35
+#		global_unrest = -0.75
+#		global_autonomy = -0.035
+#		max_absolutism = -25
+#	}
+#
+#	conditional = {
+#		allow = {
+#			has_dlc = "Common Sense"
+#		}
+#		custom_attributes = {
+#			enables_privy_council = yes #pseudoparliament and a development of the King's Council
+#			#has_unify_british_isles_cb = yes
+#		}   #fixdis every option is the same
+#	}
+#	ai = {
+#		factor = 5
+#	}
+#}
 
 #End of VU addition by San Felipe
 
 #VU additions by DonBrom
 
 #Theban gov reform
-theban_league_legacy = {
-	icon = "theban_league_republic_reform"
-	allow_normal_conversion = no
-	legacy_government = yes
-	duration = 2
-	valid_for_new_country = no
-	valid_for_nation_designer = yes
-	nation_designer_cost = 30
+#theban_league_legacy = {
+#	icon = "theban_league_republic_reform"
+#	allow_normal_conversion = no
+#	legacy_government = yes
+#	duration = 2
+#	valid_for_new_country = no
+#	valid_for_nation_designer = yes
+#	nation_designer_cost = 30
+#
+#	republican_name = yes
+#	royal_marriage = no
+#
+#	potential = {
+#	    OR = {
+#		   tag = THB
+#		   was_tag = THB
+#		   has_reform = theban_league_reform
+#		}
+#	}
+#
+#	republic = yes
+#
+#	modifiers = {
+#		global_trade_power = 0.10
+#		merchants = 1
+#		trade_efficiency = 0.10
+#		max_absolutism = -50
+#	}
+#
+#	factions = {
+#		mr_aristocrats
+#		mr_traders
+#		mr_guilds
+#	}
+#}
 
-	republican_name = yes
-	royal_marriage = no
+#spartan_diarchy_legacy = {
+#    icon = "spartan_diarchy_republic_reform"
+#	allow_normal_conversion = no
+#	legacy_government = yes
+#    valid_for_new_country = no
+#    valid_for_nation_designer = yes
+#
+#	nation_designer_cost = 30
+#    republican_name = yes
+#    royal_marriage = yes
+#
+#	potential = {
+#	    OR = {
+#		   tag = SPT
+#		   was_tag = SPT
+#		   has_reform = spartan_diarchy_reform
+#		}
+#	}
+#	
+#	republic = yes
+#
+#	modifiers = {
+#   		governing_capacity_modifier = -0.20
+#		years_of_nationalism = -5
+#		land_morale = 0.1
+#		max_absolutism = 10
+#	}
+#	conditional = {
+#		allow = { has_dlc = "Common Sense" }
+#		has_parliament = yes
+#	}
+#	custom_attributes = {
+#		locked_government_type = yes
+#	}
+#}
 
-	potential = {
-	    OR = {
-		   tag = THB
-		   was_tag = THB
-		   has_reform = theban_league_reform
-		}
-	}
+#athenian_democracy_legacy = {
+#	icon = "athenian_democracy_reform"
+#	allow_normal_conversion = yes
+#	legacy_government = yes
+#	valid_for_new_country = yes
+#	valid_for_nation_designer = no
+#	duration = 1
+#
+#	republican_name = yes
+#	royal_marriage = no
+#
+#	potential = {
+#	    OR = {
+#		   tag = AAT
+#		   was_tag = AAT
+#		   has_reform = athenian_democracy_reform
+#		}
+#	}
+#
+#	republic = yes
+#
+#	modifiers = {
+#		heavy_ship_power = 0.1
+#		ship_durability = 0.05
+#    	global_ship_trade_power = 0.15
+#		max_absolutism = -50
+#	}
+#
+#	conditional = {
+#		allow = { has_dlc = "Common Sense" }
+#		has_parliament = yes
+#	}
+#
+#}
 
-	republic = yes
+#corinthian_oligarchy_legacy = {
+#	icon = "corinthian_oligarchy_republic_reform"
+#	allow_normal_conversion = yes
+#	legacy_government = yes
+#	duration = 4
+#	valid_for_new_country = yes
+#	valid_for_nation_designer = yes
+#	nation_designer_cost = 0
+#
+#	potential = {
+#	    OR = {
+#		   tag = CTH
+#		   was_tag = CTH
+#		   has_reform = corinthian_oligarchy_reform
+#		}
+#	}
+#
+#	republican_name = yes
+#	royal_marriage = no
+#	
+#
+#
+#	republic = yes
+#
+#	modifiers = {
+#		production_efficiency = 0.10
+#		mercantilism_cost = -0.1
+#		global_trade_goods_size = 0.05
+#	}
+#}
 
-	modifiers = {
-		global_trade_power = 0.10
-		merchants = 1
-		trade_efficiency = 0.10
-		max_absolutism = -50
-	}
+#selucian_kingdom_legacy = {
+#	icon = "selucian_monarchy_reform"
+#	legacy_government = yes
+#	allow_normal_conversion = no
+#
+#	valid_for_new_country = no
+#	allow_convert = no
+#
+#	maintain_dynasty = yes
+#
+#	allow_vassal_war = no
+#	allow_vassal_alliance = no
+#
+#	valid_for_nation_designer = yes
+#	nation_designer_cost = 50
+#
+#	potential = {
+#	    OR = {
+#		   tag = SEL
+#		   was_tag = SEL
+#		   has_reform = selucian_kingdom_reform
+#		}
+#	}
+#
+#	conditional = {
+#		allow = { has_dlc = "Mandate of Heaven" }
+#		government_abilities = {
+#			shogunate_mechanic
+#		}
+#	}
+#	
+#    fixed_rank = 8
+#	monarchy = yes
+#
+#	modifiers = {
+#		governing_capacity_modifier = -0.2
+#		max_absolutism = 5
+#		reduced_liberty_desire = 15
+#		vassal_forcelimit_bonus = 0.1
+#	}
+#
+#	can_change_primary_culture = no
+#}
 
-	factions = {
-		mr_aristocrats
-		mr_traders
-		mr_guilds
-	}
-}
-
-spartan_diarchy_legacy = {
-    icon = "spartan_diarchy_republic_reform"
-	allow_normal_conversion = no
-	legacy_government = yes
-    valid_for_new_country = no
-    valid_for_nation_designer = yes
-
-	nation_designer_cost = 30
-    republican_name = yes
-    royal_marriage = yes
-
-	potential = {
-	    OR = {
-		   tag = SPT
-		   was_tag = SPT
-		   has_reform = spartan_diarchy_reform
-		}
-	}
-	
-	republic = yes
-
-	modifiers = {
-   		governing_capacity_modifier = -0.20
-		years_of_nationalism = -5
-		land_morale = 0.1
-		max_absolutism = 10
-	}
-	conditional = {
-		allow = { has_dlc = "Common Sense" }
-		has_parliament = yes
-	}
-	custom_attributes = {
-		locked_government_type = yes
-	}
-}
-
-athenian_democracy_legacy = {
-	icon = "athenian_democracy_reform"
-	allow_normal_conversion = yes
-	legacy_government = yes
-	valid_for_new_country = yes
-	valid_for_nation_designer = no
-	duration = 1
-
-	republican_name = yes
-	royal_marriage = no
-
-	potential = {
-	    OR = {
-		   tag = AAT
-		   was_tag = AAT
-		   has_reform = athenian_democracy_reform
-		}
-	}
-
-	republic = yes
-
-	modifiers = {
-		heavy_ship_power = 0.1
-		ship_durability = 0.05
-    	global_ship_trade_power = 0.15
-		max_absolutism = -50
-	}
-
-	conditional = {
-		allow = { has_dlc = "Common Sense" }
-		has_parliament = yes
-	}
-
-}
-
-corinthian_oligarchy_legacy = {
-	icon = "corinthian_oligarchy_republic_reform"
-	allow_normal_conversion = yes
-	legacy_government = yes
-	duration = 4
-	valid_for_new_country = yes
-	valid_for_nation_designer = yes
-	nation_designer_cost = 0
-
-	potential = {
-	    OR = {
-		   tag = CTH
-		   was_tag = CTH
-		   has_reform = corinthian_oligarchy_reform
-		}
-	}
-
-	republican_name = yes
-	royal_marriage = no
-	
-
-
-	republic = yes
-
-	modifiers = {
-		production_efficiency = 0.10
-		mercantilism_cost = -0.1
-		global_trade_goods_size = 0.05
-	}
-}
-
-selucian_kingdom_legacy = {
-	icon = "selucian_monarchy_reform"
-	legacy_government = yes
-	allow_normal_conversion = no
-
-	valid_for_new_country = no
-	allow_convert = no
-
-	maintain_dynasty = yes
-
-	allow_vassal_war = no
-	allow_vassal_alliance = no
-
-	valid_for_nation_designer = yes
-	nation_designer_cost = 50
-
-	potential = {
-	    OR = {
-		   tag = SEL
-		   was_tag = SEL
-		   has_reform = selucian_kingdom_reform
-		}
-	}
-
-	conditional = {
-		allow = { has_dlc = "Mandate of Heaven" }
-		government_abilities = {
-			shogunate_mechanic
-		}
-	}
-	
-    fixed_rank = 3
-	monarchy = yes
-
-	modifiers = {
-		governing_capacity_modifier = -0.2
-		max_absolutism = 5
-		reduced_liberty_desire = 15
-		vassal_forcelimit_bonus = 0.1
-	}
-
-	can_change_primary_culture = no
-}
-
-selucian_satrapy_legacy = {
-	icon = "selucian_satrapy_monarchy_reform"
-	legacy_government = yes
-	allow_normal_conversion = no
-
-	valid_for_new_country = no
-	allow_convert = no
-
-	potential = {
-		OR = {
-			is_subject_of = SEL
-			has_reform = selucian_satrapy_reform
-		}
-	}
-
-	maintain_dynasty = yes
-
-	valid_for_nation_designer = yes
-	nation_designer_cost = 0
-
-    fixed_rank = 1
-
-	monarchy = yes
-
-	modifiers = {
-		global_manpower_modifier = 0.10
-		infantry_power = 0.10
-	}
-}
+#selucian_satrapy_legacy = {
+#	icon = "selucian_satrapy_monarchy_reform"
+#	legacy_government = yes
+#	allow_normal_conversion = no
+#
+#	valid_for_new_country = no
+#	allow_convert = no
+#
+#	potential = {
+#		OR = {
+#			is_subject_of = SEL
+#			has_reform = selucian_satrapy_reform
+#		}
+#	}
+#
+#	maintain_dynasty = yes
+#
+#	valid_for_nation_designer = yes
+#	nation_designer_cost = 0
+#
+#    fixed_rank = 5
+#
+#	monarchy = yes
+#
+#	modifiers = {
+#		global_manpower_modifier = 0.10
+#		infantry_power = 0.10
+#	}
+#}
 

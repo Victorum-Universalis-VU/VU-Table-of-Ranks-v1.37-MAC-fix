@@ -1418,6 +1418,7 @@ france_missions_3 = {
 				area = north_rhine_area
 				area = lower_rhineland_area
 				area = hesse_area
+				area = frankfurt_area
 				area = palatinate_area
 				area = baden_area
 				area = wurttemburg_area
@@ -1456,6 +1457,10 @@ france_missions_3 = {
 					type = all
 					country_or_non_sovereign_subject_holds = ROOT
 				}
+				frankfurt_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
 				baden_area = {
 					type = all
 					country_or_non_sovereign_subject_holds = ROOT
@@ -1479,6 +1484,10 @@ france_missions_3 = {
 					owned_by = ROOT
 				}
 				hesse_area = {
+					type = all
+					owned_by = ROOT
+				}
+				frankfurt_area = {
 					type = all
 					owned_by = ROOT
 				}
@@ -3644,17 +3653,7 @@ france_missions_5 = {
 				}
 			}
 			if = {
-				limit = { has_dlc = "Mare Nostrum" }
-				define_advisor = {
-					type = jean_baptiste
-					name = "Jean Baptiste"
-					skill = 3
-					culture = ROOT
-					religion = ROOT
-					discount = yes
-				}
-			}
-			else = {
+			    limit = { has_dlc = "Mare Nostrum" } #Added this in - SF
 				define_advisor = {
 					type = trader
 					name = "Jean Baptiste"

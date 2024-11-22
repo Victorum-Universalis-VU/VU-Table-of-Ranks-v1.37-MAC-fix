@@ -427,7 +427,7 @@ country_decisions = {
 			emperor = {
 				country_event = { id = hre_event.5 }
 			}
-			set_government_rank = 3
+			set_government_rank = 9
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300

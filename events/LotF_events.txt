@@ -16,9 +16,9 @@ country_event = { #Changes to USA tag from colonial
         hidden_effect = { 
 			if = {
 				limit = {
-					NOT = { government_rank = 2 }
+					NOT = { government_rank = 8 }
 				}
-				set_government_rank = 2
+				set_government_rank = 8
 			}
 			remove_country_modifier = navigation_acts_1
 			GBR = { remove_country_modifier = navigation_acts_2 }

@@ -3,7 +3,7 @@
 owner = TSU
 controller = TSU
 add_core = TSU
-culture = kyushuan
+culture = honichi 
 religion = shinto
 capital = "Kadokawa"
 trade_goods = tea

@@ -2,6 +2,7 @@
 
 owner = TIM
 controller = TIM
+add_core = TIM
 culture = khorasani		##Ahal area populated by persian-speaking people until 1800's. Nisa seems to be border of iranian reach
 religion = sunni
 capital = "Nisa"
@@ -11,19 +12,10 @@ base_tax = 2
 base_production = 2 
 base_manpower = 2 
 is_city = yes
-add_core = TIM
+
+#Claimants
 add_core = KHI
-
-
-
-
-
-
-
-
-
-
-
+add_core = PRT
 
 1409.5.13 = { #Ulugh Beg is made Governor of Samarkand
 	owner = TRS

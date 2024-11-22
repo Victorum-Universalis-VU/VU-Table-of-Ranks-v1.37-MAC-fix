@@ -15,13 +15,8 @@ capital = "Lienz"
 is_city = yes	
 hre = yes
 
-
-
-
-
-
-
-
+#Claimants
+add_core = HAB
 
 1444.11.16 = { #VictorumUniversalis batch edit shortcut second performance start begins
 	owner = HAB

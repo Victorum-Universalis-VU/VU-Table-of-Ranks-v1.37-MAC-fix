@@ -66,8 +66,10 @@
 5261 = "Borsa'id"
 5560 = { "Foça" "Foça" }
 
+#Europe
 124 = "Massina"
 125 = "Balarm"
+132 = { "Judenburg" "Judenburg" }
 196 = "Tolosha"
 206 = "Shant Yakub"
 208 = "Liyun"

@@ -145,6 +145,7 @@
 118 = "Rome"
 120 = "Abruzzen"
 121 = "Napels"
+132 = { "Judenburg" "Judenburg" }
 134 = "Wenen"
 168 = "Normandië"
 182 = "Vermandland"
@@ -199,7 +200,7 @@
 4349 = { "Lagune" "Calamba" }
 4350 = { "Westerse Mindoro" "Caminawit" }
 4351 = { "Westerse Zwarten" "Bacolod Stad" }
-4352 = { "Cebu-eiland" "Cebu Stad" }
+4352 = { "Cebu" "Cebu Stad" }
 4353 = { "Leyte" "Carigara" }
 4354 = { "Zamboanga" "Zamboanga Stad" }
 7166 = { "Noord Agusan" "Butuan" }

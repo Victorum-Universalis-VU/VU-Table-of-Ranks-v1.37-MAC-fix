@@ -1,6 +1,7 @@
+#CDB - Cordoba
 government = monarchy
-add_government_reform = feudalism_reform
-government_rank = 2
+add_government_reform = kingdom_of_castile_and_leon
+government_rank = 8 #Kingdom
 #primary_culture = andalusi_culture
 primary_culture = andalucian
 religion = catholic
@@ -8,3 +9,4 @@ religion = catholic
 technology_group = spanish_tech_group
 unit_type = western
 capital = 225 # Cordoba
+historical_friend = CAS

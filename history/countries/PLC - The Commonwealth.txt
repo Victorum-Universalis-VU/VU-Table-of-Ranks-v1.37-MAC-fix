@@ -1,5 +1,6 @@
 government = monarchy
 add_government_reform = elective_monarchy
+government_rank = 8 #Kingdom
 primary_culture = polish
 add_accepted_culture = lithuanian
 add_accepted_culture = prussian
@@ -9,6 +10,10 @@ religion = catholic
 technology_group = polish_tech_group
 unit_type = eastern
 capital = 262 # Krakow
+
+1439.10.27 = {
+    historical_friend = BOH
+}
 
 1444.10.1 = {
 	set_estate_privilege = estate_nobles_golden_liberty

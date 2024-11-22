@@ -7,7 +7,7 @@
 129 = "Kranjska"	# Krain
 130 = "Istra"		# Istria
 131 = "Zagreb"		# Zagreb
-132 = "Stajerska"	# Steiermark
+132 = { "Judenburg" "Judenburg" }
 133 = "Linec"		# Linz
 134 = "Dunaj"		# Wien
 142 = "Krf"			# Corfu

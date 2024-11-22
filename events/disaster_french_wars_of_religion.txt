@@ -1094,6 +1094,7 @@ country_event  = {
 						area = lorraine_area
 						area = palatinate_area
 						area = hesse_area
+						area = frankfurt_area
 						area = north_rhine_area
 					}
 				}
@@ -1109,6 +1110,7 @@ country_event  = {
 						area = lorraine_area
 						area = palatinate_area
 						area = hesse_area
+						area = frankfurt_area
 						area = north_rhine_area
 					}
 				}

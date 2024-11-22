@@ -1,25 +1,23 @@
 #3054 - Lugano
 
-owner = MLO
-controller = MLO 
+owner = TCN
+controller = TCN 
+add_core = TCN
 culture = lombard
 religion = catholic
-capital = "Lugano"
+capital = "Ticino" #Was Lugano
 trade_goods = livestock
 hre = yes
 base_tax = 3
 base_production = 3
 base_manpower = 2
 is_city = yes
+
+#Claimants
 add_core = MLO
 add_core = SWI
 
-
-
-
-
-
-
+#History by SF
 1513.1.1 = {
 	owner = SWI
 	controller = SWI

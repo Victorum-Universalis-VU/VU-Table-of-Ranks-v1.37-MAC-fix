@@ -1,6 +1,6 @@
 government = monarchy
 add_government_reform = daimyo
-government_rank = 1
+government_rank = 1 #Daimyo_Lordship
 primary_culture = kyushuan
 religion = shinto
 technology_group = japanese
@@ -16,7 +16,7 @@ capital = 4182	# Hizen
 		}
 }
 
-1372.1.30  = {
+1372.1.30 = {
 	monarch = {
 		name = "Fuyusuke" # 1294 - 1375.9.22 
 		dynasty = "Shoni"
@@ -26,7 +26,7 @@ capital = 4182	# Hizen
 		}
 }
 
-1375.9.22  = {
+1375.9.22 = {
 	monarch = {
 		name = "Fuyusuke" # ?? - ??
 		dynasty = "Shoni"

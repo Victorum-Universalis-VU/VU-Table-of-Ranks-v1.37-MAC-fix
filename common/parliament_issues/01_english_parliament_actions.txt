@@ -1,4 +1,4 @@
-#VU updated by San Felipe for 1.35
+#VU updated by San Felipe for 1.37
 #For all the English Parliament Issues which should be unique.
 english_french_act_of_union = {
 	category = 4
@@ -19,19 +19,19 @@ english_french_act_of_union = {
 				owns_core_province = 237		# Oxfordshire
 				owns_core_province = 234		# Wessex
 				owns_core_province = 236		# London
-				owns_core_province = 177		# Maine
-				owns_core_province = 183		# Paris
-				owns_core_province = 178		# Anjou
-				178 = {							# Anjou
-					is_state = yes
-				}
+				#owns_core_province = 177		# Maine
+				#owns_core_province = 183		# Paris
+				#owns_core_province = 178		# Anjou
+				#178 = {							# Anjou
+				#	is_state = yes
+				#}
 			}
 			AND = {
 				OR = {
 					FRA = {	junior_union_with = ENG	}
 					FRA = {	is_subject_of = ENG	}
 				}
-				FRA = { NOT = { num_of_cities = 40 } }
+				FRA = { NOT = { num_of_cities = 400 } } #Was 80 but changed by SF in VU v1.37 was arbitrary and stupid.
 			}
 		}
 		adm_tech = 27
@@ -47,7 +47,7 @@ english_french_act_of_union = {
 					exists = yes
 					ai = yes
 					is_subject_of = ROOT
-					NOT = { num_of_cities = 40 }
+					NOT = { num_of_cities = 400 } #Was 80 but changed by SF in VU v1.37 was arbitrary and stupid.
 				}
 			}
 			tooltip = {
@@ -75,13 +75,29 @@ english_french_act_of_union = {
 		change_tag = AVE
 		hidden_effect = {
 			on_change_tag_effect = yes
-			restore_country_name = yes
+			if = {
+				limit = {
+					OR = {
+						NOT = { has_country_flag = ave_theocracy_name }
+						NOT = { has_country_flag = ave_republic_name }
+						NOT = { has_country_flag = ave_state_name }
+						NOT = { has_country_flag = ave_empire_name }
+					}
+				}
+				restore_country_name = yes
+			}
+			if = {
+				limit = {
+					has_country_modifier = ave_anglo_french_imperium
+				}
+				country_event = { id = flavor_gbr.20 }	#Renew renaming
+			}
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
 				limit = {
-					NOT = { government_rank = 2 }
+					NOT = { government_rank = 8 }
 				}
-				set_government_rank = 2
+				set_government_rank = 8
 			}
 			if = {
 				limit = { 
@@ -202,9 +218,9 @@ english_scottish_act_of_union = {
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
 				limit = {
-					NOT = { government_rank = 2 }
+					NOT = { government_rank = 8 }
 				}
-				set_government_rank = 2
+				set_government_rank = 8
 			}
 			if = {
 				limit = { 
@@ -357,12 +373,31 @@ crown_of_iberia_act = {
 		}
 		custom_tooltip = crown_of_iberia_act_at
 		hidden_effect = {
-			random_owned_province = {
-				limit = { region = iberia_region }
-				add_base_production = 1
-				type = random
-				amount = 10
+			random_owned_province = { limit = { NOT = { has_province_flag = received_reward } region = iberia_region } add_base_production = 1 set_province_flag = received_reward }
+			random_owned_province = { limit = { NOT = { has_province_flag = received_reward } region = iberia_region } add_base_production = 1 set_province_flag = received_reward }
+			random_owned_province = { limit = { NOT = { has_province_flag = received_reward } region = iberia_region } add_base_production = 1 set_province_flag = received_reward }
+			random_owned_province = { limit = { NOT = { has_province_flag = received_reward } region = iberia_region } add_base_production = 1 set_province_flag = received_reward }
+			random_owned_province = { limit = { NOT = { has_province_flag = received_reward } region = iberia_region } add_base_production = 1 set_province_flag = received_reward }
+			random_owned_province = { limit = { NOT = { has_province_flag = received_reward } region = iberia_region } add_base_production = 1 set_province_flag = received_reward }
+			random_owned_province = { limit = { NOT = { has_province_flag = received_reward } region = iberia_region } add_base_production = 1 set_province_flag = received_reward }
+			random_owned_province = { limit = { NOT = { has_province_flag = received_reward } region = iberia_region } add_base_production = 1 set_province_flag = received_reward }
+			random_owned_province = { limit = { NOT = { has_province_flag = received_reward } region = iberia_region } add_base_production = 1 set_province_flag = received_reward }
+			random_owned_province = { limit = { NOT = { has_province_flag = received_reward } region = iberia_region } add_base_production = 1 set_province_flag = received_reward }
+			every_owned_province = {
+				limit = {
+					has_province_flag = received_reward
+				}
+				clr_province_flag = received_reward
 			}
+			#iberia_region = {
+			#	limit = {
+			#	  owned_by = ROOT
+			#	}
+			#	add_base_production = 1
+			#  
+			#	type = random
+			#	amount = 10
+			#}
 		}
 		country_event = {
 			id = flavor_gbr.23
@@ -414,12 +449,31 @@ crown_of_italy_act = {
 		}
 		custom_tooltip = crown_of_italy_act_at
 		hidden_effect = {
-			random_owned_province = {
-				limit = { region = italy_region	}
-				add_base_production = 1
-				type = random
-				amount = 10
+			random_owned_province = { limit = { NOT = { has_province_flag = received_reward } region = italy_region } add_base_production = 1 set_province_flag = received_reward }
+			random_owned_province = { limit = { NOT = { has_province_flag = received_reward } region = italy_region } add_base_production = 1 set_province_flag = received_reward }
+			random_owned_province = { limit = { NOT = { has_province_flag = received_reward } region = italy_region } add_base_production = 1 set_province_flag = received_reward }
+			random_owned_province = { limit = { NOT = { has_province_flag = received_reward } region = italy_region } add_base_production = 1 set_province_flag = received_reward }
+			random_owned_province = { limit = { NOT = { has_province_flag = received_reward } region = italy_region } add_base_production = 1 set_province_flag = received_reward }
+			random_owned_province = { limit = { NOT = { has_province_flag = received_reward } region = italy_region } add_base_production = 1 set_province_flag = received_reward }
+			random_owned_province = { limit = { NOT = { has_province_flag = received_reward } region = italy_region } add_base_production = 1 set_province_flag = received_reward }
+			random_owned_province = { limit = { NOT = { has_province_flag = received_reward } region = italy_region } add_base_production = 1 set_province_flag = received_reward }
+			random_owned_province = { limit = { NOT = { has_province_flag = received_reward } region = italy_region } add_base_production = 1 set_province_flag = received_reward }
+			random_owned_province = { limit = { NOT = { has_province_flag = received_reward } region = italy_region } add_base_production = 1 set_province_flag = received_reward }
+			every_owned_province = {
+				limit = {
+					has_province_flag = received_reward
+				}
+				clr_province_flag = received_reward
 			}
+			#italy_region = {
+			#	limit = {
+			#		owned_by = ROOT
+			#	}
+			#	add_base_production = 1
+			#  
+			#	type = random
+			#	amount = 10
+			#}
 		}
 		country_event = {
 			id = flavor_gbr.24
@@ -506,7 +560,7 @@ bill_of_rights_act = {
 			parliament_action = bill_of_rights_act
 		}
 		add_country_modifier = {
-			name = abadoned_religious_rebels
+			name = bill_of_rights_parliament
 			duration = -1
 		}
 		custom_tooltip = bill_of_rights_act_tt
@@ -545,7 +599,7 @@ the_black_act = {
 		set_parliament_action_flag = {
 			parliament_action = the_black_act
 		}
-		add_stability = 3
+		add_stability_or_adm_power = yes
 	}
 	
 	modifier = {
@@ -639,81 +693,6 @@ the_tea_act = {
 		factor = 1
 	}
 }
-
-#the_habeas_corpus_act = {
-#	category = 4
-#
-#	allow = {
-#		has_not_enacted_parliament_action = {
-#			parliament_action = the_habeas_corpus_act
-#		}
-#		has_government_attribute = english_parliament
-#	}
-#	
-#	effect = {
-#		set_parliament_action_flag = {
-#			parliament_action = the_habeas_corpus_act
-#		}
-#	}
-#	
-#	chance = {
-#		factor = 0.5
-#	}
-#
-#	ai_will_do = {
-#		factor = 1
-#	}
-#}
-#
-#the_quartering_act = {
-#	category = 4
-#
-#	allow = {
-#		has_not_enacted_parliament_action = {
-#			parliament_action = the_quartering_act
-#		}
-#		has_government_attribute = english_parliament
-#	}
-#	
-#	effect = {
-#		set_parliament_action_flag = {
-#			parliament_action = the_quartering_act
-#		}
-#	}
-#	
-#	chance = {
-#		factor = 0.5
-#	}
-#
-#	ai_will_do = {
-#		factor = 1
-#	}
-#}
-#
-#the_mutiny_act = {
-#	category = 4
-#
-#	allow = {
-#		has_not_enacted_parliament_action = {
-#			parliament_action = the_mutiny_act
-#		}
-#		has_government_attribute = english_parliament
-#	}
-#	
-#	effect = {
-#		set_parliament_action_flag = {
-#			parliament_action = the_mutiny_act
-#		}
-#	}
-#		
-#	chance = {
-#		factor = 0.5
-#	}
-#
-#	ai_will_do = {
-#		factor = 1
-#	}
-#}
 
 colonial_venture_act = {
 	category = 4

@@ -205,7 +205,7 @@ country_event = { #3 Government of Avaria
 	option = { #Remain normal government
 		name = vu_mission_events.1.a
 		change_government_reform_progress = 200
-		set_government_rank = 2
+		set_government_rank = 8
 		add_army_professionalism = 0.05
 		change_adm = 1
 		change_dip = 1
@@ -333,7 +333,7 @@ country_event = { #5 Avarian Khaganate is reborn
 
 	option = { #And so we conquer
 		name = vu_mission_events.3.a
-		set_government_rank = 3
+		set_government_rank = 9
 		override_country_name = VU_NAME_AVAR_KHAGANATE
 		add_manpower = 10
 		add_army_tradition = 25

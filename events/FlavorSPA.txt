@@ -2112,7 +2112,7 @@ country_event = {
 		owns_core_province = 213
 		owns_core_province = 214
 		owns_core_province = 208
-		owns_core_province = 217
+		owns_core_province = 8505
 		NOT = { exists = CAS }
 		NOT = { exists = ARA }
 		NOT = { exists = NAV }
@@ -2159,7 +2159,7 @@ country_event = {
 						province_id = 213
 						province_id = 214
 						province_id = 208
-						province_id = 217
+						province_id = 8505
 					}
 					has_seat_in_parliament = no
 				}
@@ -2177,7 +2177,7 @@ country_event = {
 						province_id = 213
 						province_id = 214
 						province_id = 208
-						province_id = 217
+						province_id = 8505
 					}
 					is_capital = no
 				}
@@ -2234,7 +2234,7 @@ country_event = {
 	}
 }
 
-# Sólo Madrid es corte
+#Sólo San Lorenzo es corte
 country_event = {
 	id = flavor_spa.6
 	title = "flavor_spa.6.t"
@@ -2242,7 +2242,6 @@ country_event = {
 	picture = CITY_DEVELOPMENT_eventPicture
 	
 	fire_only_once = yes
-	
 	
 	trigger = {
 		OR = {
@@ -2252,10 +2251,10 @@ country_event = {
 			tag = BBS
 			tag = CSP
 		}
-		owns_core_province = 217 #Madrid
+		owns_core_province = 8505 #San Lorenzo - Outskirts of Madrid
 		owns_core_province = 215 #Valladolid
 		owns_core_province = 219 #Toledo
-		NOT = { capital = 217 } #Madrid
+		NOT = { capital = 8505 } #Madrid
 		num_of_cities = 25
 		government = monarchy
 		is_year = 1520
@@ -2266,8 +2265,7 @@ country_event = {
 		months = 180
 	}
 	
-
-	option = {		# Move the Court to Madrid
+	option = { #Move the Court to San Lorenzo es Corte
 		name = "flavor_spa.6.a"
 		ai_chance = {
 			factor = 90
@@ -2290,10 +2288,10 @@ country_event = {
 			add_base_tax = -1
 			add_base_production = -1
 		}
-		set_capital = 217
-		217 = {
+		set_capital = 8505
+		8505 = {
 			add_province_modifier = {
-				name = "solo_madrid_es_corte"
+				name = "san_lorenzo_es_corte"
 				duration = 3650
 			}
 			center_of_trade = 2
@@ -2308,7 +2306,7 @@ country_event = {
 			}
 		}
 	}
-	option = {		# X remains a fine capital.
+	option = { #X remains a fine capital.
 		name = "flavor_spa.6.b"
 		ai_chance = {
 			factor = 10
@@ -3406,13 +3404,13 @@ country_event = { #San Lorenzo de El Escorial
 	picture = GREAT_BUILDING_eventPicture
 	fire_only_once = yes 
 	is_triggered_only = yes 
-	goto = 217
+	goto = 8505
 	option = { 
 		name = flavor_spa.23.a 
 		
 		if = { 
 			limit = { has_dlc = "Leviathan" } 
-			217 = {
+			8505 = {
 				add_great_project_tier = {
 					type = el_escorial
 					tier = 2 
@@ -3424,7 +3422,7 @@ country_event = { #San Lorenzo de El Escorial
 				name = spa_san_lorenzo_escorial_modifier
 				duration = 9125
 			}
-			217 = {
+			8505 = {
 				add_base_production = 2 
 				add_base_manpower = 1
 			}
@@ -3710,3 +3708,100 @@ country_event = {
 	}
 }
 
+#VU addition by SF
+#Sólo San Madrid es corte
+#country_event = {
+#	id = flavor_spa.110
+#	title = "flavor_spa.110.t"
+#	desc = "flavor_spa.110.d"
+#	picture = CITY_DEVELOPMENT_eventPicture
+#	
+#	fire_only_once = yes
+#	
+#	trigger = {
+#		OR = {
+#		    tag = SPA
+#			tag = BSP
+#			tag = SPB
+#			tag = BBS
+#			tag = CSP
+#		}
+#		owns_core_province = 217 #Madrid
+#		NOT = { capital = 217 } #Madrid
+#		government = monarchy
+#		is_year = 1700
+#		NOT = { is_year = 1860 }
+#	}
+#	
+#	mean_time_to_happen = {
+#		months = 180
+#	}
+#
+#	option = { #Move the Court to Madrid
+#		name = "flavor_spa.110.a"
+#		ai_chance = {
+#			factor = 90
+#			modifier = {
+#				factor = 0
+#				NOT = { primary_culture = castillian }
+#			}
+#		}
+#		set_capital = 217
+#		217 = {
+#			add_province_modifier = {
+#				name = "solo_madrid_es_corte"
+#				duration = 3650
+#			}
+#			center_of_trade = 2
+#			add_base_tax = 3
+#			add_base_production = 3
+#			add_base_manpower = 3
+#			if = { 
+#				limit = { 
+#					NOT = { trade_goods = cloth }
+#				}
+#				change_trade_goods = cloth
+#			}
+#		}
+#	}
+#	option = {	#X remains a fine capital.
+#		name = "flavor_spa.110.b"
+#		ai_chance = {
+#			factor = 10
+#		}
+#		add_stability_or_adm_power = yes
+#	}
+#}
+
+country_event = { #San Lorenzo de El Escorial 
+	id = flavor_spa.111
+	title = flavor_spa.111.t
+	desc = flavor_spa.111.d
+	picture = GREAT_BUILDING_eventPicture
+	fire_only_once = yes 
+	is_triggered_only = yes 
+	goto = 8505
+	option = { 
+		name = flavor_spa.111.a 
+		
+		if = { 
+			limit = { has_dlc = "Leviathan" } 
+			8505 = {
+				add_great_project_tier = {
+					type = palacio_de_madrid
+					tier = 2 
+				}
+			}
+		}
+		else = {
+			add_country_modifier = {
+				name = spa_palacio_de_madrid #spa_san_lorenzo_escorial_modifier
+				duration = 9125
+			}
+			8505 = {
+				add_base_production = 2 
+				add_base_manpower = 1
+			}
+		}
+	}
+}

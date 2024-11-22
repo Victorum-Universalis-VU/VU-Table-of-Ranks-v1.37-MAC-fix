@@ -1,18 +1,14 @@
-#2409 - Bahmut
-
-latent_trade_goods = {
-	coal
-}
+#2409 - Kamensk
 
 owner = GOL
 controller = GOL
 culture = mishary
 religion = sunni
 hre = no
-base_tax = 1
+base_tax = 2
 base_production = 1
 trade_goods = iron
-base_manpower = 2
+base_manpower = 3
 capital = "Kamensk"
 is_city = yes
 add_core = GOL

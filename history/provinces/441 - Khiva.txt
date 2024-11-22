@@ -2,6 +2,7 @@
 
 owner = TIM
 controller = TIM
+add_core = TIM
 culture = uzbehk
 religion = sunni
 capital = "Khiva"
@@ -11,20 +12,10 @@ base_tax = 6
 base_production = 6
 base_manpower = 6
 is_city = yes
-add_core = TIM
+
+#Claimants
+add_core = K4W
 add_core = KHI
-
-
-
-
-
-
-
-
-
-
-
-
 
 extra_cost = 8
 center_of_trade = 2

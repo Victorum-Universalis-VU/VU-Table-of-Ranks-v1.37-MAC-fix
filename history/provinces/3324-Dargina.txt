@@ -3,7 +3,6 @@
 owner = GAZ
 controller = GAZ
 add_core = GAZ
-add_core = KTG
 culture = dargic
 religion = sunni
 capital = "Buvtugay"	#Uncertain
@@ -14,30 +13,9 @@ base_production = 2
 base_manpower = 3 
 is_city = yes
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#Claimants
+add_core = DAG
+add_core = KTG
 
 1444.1.1 = { add_local_autonomy = 60 } #Semi-independent tribes
 1555.1.1 = { 

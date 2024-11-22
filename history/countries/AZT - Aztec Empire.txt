@@ -215,5 +215,5 @@ add_army_professionalism = 0.1
 }
 
 1521.8.13 = {
-	government_rank = 1
+	government_rank = 6
 }

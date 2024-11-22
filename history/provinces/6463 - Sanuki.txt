@@ -2,7 +2,7 @@
 
 owner = MYI
 controller = MYI
-culture = japanese
+culture = shikoku
 religion = shinto
 capital = "Takamatsu"
 trade_goods = fish

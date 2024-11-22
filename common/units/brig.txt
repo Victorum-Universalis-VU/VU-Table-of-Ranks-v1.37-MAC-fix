@@ -2,8 +2,8 @@
 type = transport
 
 hull_size = 18
-base_cannons = 6
-blockade = 5
+base_cannons = 7
+blockade = 7
 
 sail_speed = 7
 

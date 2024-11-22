@@ -496,8 +496,8 @@ got_monarchy_slot_2 = {
 						}
 					}
 					if = {
-						limit = { NOT = { government_rank = 2 } }
-						set_government_rank = 2
+						limit = { NOT = { government_rank = 8 } }
+						set_government_rank = 8
 					}
 					add_prestige = 100
 				}
@@ -912,6 +912,20 @@ got_republic_slot_1 = {
 				add_permanent_claim = ROOT
 			}
 			holstein_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			hamburg_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			lauenburg_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
@@ -2173,12 +2187,15 @@ got_pirate_slot_4 = {
 						OR = {
 							area = karelia_area
 							area = holstein_area
+							area = hamburg_area
+							area = lauenburg_area
 							area = mecklenburg_area
 							area = hinter_pommern_area
 							area = vorpommern_area
 							area = estonia_ingria_area
 							area = curonia_area
 							area = livonia_area
+							area = riga_area
 							area = east_prussia_area
 							area = west_prussia_area
 						}

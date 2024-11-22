@@ -4,7 +4,6 @@
 owner = ARA
 controller = ARA
 add_core = ARA
-add_core = VAL
 culture = catalan
 religion = catholic
 capital = "Dénia"
@@ -16,7 +15,6 @@ is_city = yes
 hre = no
 
 #Claimants
-add_core = VAL
 
 #Buildings
 
@@ -24,12 +22,6 @@ add_core = VAL
 
 #Known by Technology groups
 
-
-
-
-
-
 #Histories
 1215.6.15 = { owner = AMD controller = AMD add_core = AMD } # Alhomad territorial lands - By San Felipe
-
-1444.11.11 = { owner = ARA controller = ARA add_core = ARA } # Aragonese territorial lands - By San Felipe
+1444.11.11 = { owner = VAL controller = VAL add_core = VAL } # Aragonese territorial lands - By San Felipe

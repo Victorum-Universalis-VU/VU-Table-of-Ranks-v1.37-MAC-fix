@@ -3,6 +3,275 @@
 ##################################################################################################
 #VU Quonton additions - ect
 
+vu_the_great_american_west = {
+  trade_value = 0.1
+  local_core_creation = 0.25
+  trade_goods_size_modifier = 0.05
+  supply_limit_modifier = -0.2
+  local_colony_cost_modifier = 1.5
+  local_colonial_growth = -40
+  trade_goods_size = 0.05
+  picture = "vu_the_great_american_west"
+}
+
+vu_tex_high_plains = {
+	supply_limit = 2
+	local_development_cost = -0.10
+	local_build_cost = -0.25
+	local_production_efficiency = 0.05
+}
+
+vu_everglades = {
+	trade_value = 0.5
+	trade_goods_size = 0.5
+	supply_limit_modifier = -0.2
+	local_colony_cost_modifier = 0.75
+	local_colonial_growth = -10
+	local_development_cost = 0.1
+	picture = "vu_everglades"
+}
+
+vu_michigan_dunes = {
+  trade_value = 0.1
+  local_development_cost = 0.1
+  local_colonial_growth = -10 
+  picture = "vu_michigan_dunes"
+}
+
+vu_illinois_basin = {
+  trade_value = 0.05
+  local_production_efficiency = 0.05
+  trade_goods_size_modifier = 0.05
+  trade_value_modifier = 0.05
+  picture = "vu_illinois_basin"
+}
+
+vu_hopewell_rocks = {
+  trade_value = 0.1
+  province_trade_power_value = 4
+  trade_value_modifier = 0.05
+  picture = "vu_hopewell_rocks"
+}
+
+vu_cathedral_goves = {
+  trade_value = 0.2
+  local_production_efficiency = 0.1
+  trade_goods_size_modifier = 0.05
+  trade_value_modifier = 0.05
+  trade_goods_size = 0.05
+  picture = "vu_cathedral_goves"
+}
+
+vu_spoted_lake = {
+  trade_value = 0.15
+  province_trade_power_value = 4
+  local_production_efficiency = 0.05
+  trade_value_modifier = 0.1
+  picture = "vu_spoted_lake"
+}
+
+vu_the_ozarks = {
+  trade_value = 0.1
+  local_colonial_growth = -10 
+  max_attrition = 1
+  local_production_efficiency = 0.05
+  trade_value_modifier = 0.05
+  picture = "vu_the_ozarks"
+}
+
+vu_edwards_plateau = {
+  trade_value = 0.1
+  local_development_cost = 0.1
+  trade_value_modifier = 0.05
+  local_colonial_growth = -10 
+  max_attrition = 1
+  local_hostile_attrition = 1
+  picture = "vu_edwards_plateau"
+}
+
+vu_redwood_forests = {
+  trade_value = 0.5
+  local_production_efficiency = 0.1
+  trade_goods_size_modifier = 0.05
+  trade_value_modifier = 0.10
+  trade_goods_size = 0.05
+  picture = "vu_redwood_forests"
+}
+
+vu_sequoia_forest = {
+  trade_value = 0.5
+  local_production_efficiency = 0.1
+  trade_goods_size_modifier = 0.05
+  trade_value_modifier = 0.10
+  trade_goods_size = 0.05
+  picture = "vu_sequoia_forest"
+}
+
+vu_superior_forest = {
+  trade_value = 0.25
+  local_production_efficiency = 0.1
+  trade_goods_size_modifier = 0.05
+  trade_value_modifier = 0.10
+  trade_goods_size = 0.05
+  picture = "vu_superior_forest"
+}
+
+vu_wisconsin_dells = {
+  local_development_cost = -0.05
+  trade_value = 0.5
+  province_trade_power_value = 2
+  trade_value_modifier = 0.10
+  picture = "vu_wisconsin_dells"
+}
+
+vu_black_hills_sd = {
+  local_development_cost = -0.1
+  trade_value = 1.0
+  local_core_creation = 0.25
+  local_production_efficiency = 0.05
+  trade_goods_size_modifier = 0.05
+  trade_value_modifier = 0.10
+  picture = "vu_black_hills_sd"
+}
+
+vu_american_prarie = {
+  trade_value = 0.1
+  local_build_cost = 0.10
+  local_build_time = 0.20
+  local_core_creation = 0.20
+  local_production_efficiency = 0.05
+  trade_goods_size_modifier = 0.05
+  trade_value_modifier = 0.05
+  trade_goods_size = 0.05
+  picture = "vu_american_prarie"
+}
+
+vu_mojave_desert = {
+  local_development_cost = 0.15
+  trade_value = 0.1
+  local_colonial_growth = -15 
+  max_attrition = 1
+  local_hostile_attrition = 1
+  supply_limit_modifier = -0.1
+  local_colony_cost_modifier = 1.0
+  picture = "vu_mojave_desert"
+}
+
+vu_columbian_platau = {
+  local_development_cost = 0.05
+  trade_value = 0.1
+  local_colonial_growth = -10 
+  max_attrition = 1
+  local_hostile_attrition = 1
+  supply_limit_modifier = -0.1
+  local_colony_cost_modifier = 0.5
+  trade_goods_size_modifier = 0.05
+  picture = "vu_columbian_platau"
+}
+
+vu_great_basin = {
+  local_development_cost = 0.1
+  trade_value = 0.05
+  local_colonial_growth = -10 
+  max_attrition = 1
+  local_hostile_attrition = 1
+  supply_limit_modifier = -0.1
+  local_colony_cost_modifier = 0.5
+  picture = "vu_great_basin"
+}
+
+vu_sonoran = {
+  local_development_cost = 0.1
+  trade_value = 0.05
+  local_colonial_growth = -10 
+  max_attrition = 1
+  local_hostile_attrition = 1
+  supply_limit_modifier = -0.1
+  local_colony_cost_modifier = 0.5
+  picture = "vu_sonoran"
+}
+
+vu_chihuahuan = {
+  local_development_cost = 0.1
+  trade_value = 0.05
+  local_colonial_growth = -10 
+  max_attrition = 1
+  local_hostile_attrition = 1
+  supply_limit_modifier = -0.1
+  local_colony_cost_modifier = 0.5
+  picture = "vu_chihuahuan"
+}
+
+vu_colorado_plateau = {
+  local_development_cost = 0.1
+  trade_value = 0.05
+  local_colonial_growth = -10 
+  max_attrition = 1
+  local_hostile_attrition = 1
+  supply_limit_modifier = -0.1
+  local_colony_cost_modifier = 0.5
+  picture = "vu_colorado_plateau"
+}
+
+vu_snake_river = {
+  local_development_cost = 0.05
+  trade_value = 0.1
+  local_colonial_growth = -10 
+  max_attrition = 1
+  local_hostile_attrition = 1
+  supply_limit_modifier = -0.1
+  local_colony_cost_modifier = 0.5
+  trade_goods_size_modifier = 0.05
+  picture = "vu_snake_river"
+}
+
+vu_wyoming_basin = {
+  local_development_cost = 0.05
+  trade_value = 0.05
+  local_colonial_growth = -10 
+  max_attrition = 1
+  local_hostile_attrition = 1
+  supply_limit_modifier = -0.1
+  local_colony_cost_modifier = 0.5
+  picture = "vu_wyoming_basin"
+}
+
+vu_madrean_archipelago = {
+  local_development_cost = -0.05
+  trade_value = 0.1
+  local_colonial_growth = -10 
+  max_attrition = 1
+  local_hostile_attrition = 1
+  supply_limit_modifier = -0.1
+  local_colony_cost_modifier = 0.5
+  picture = "vu_madrean_archipelago"
+}
+
+vu_badlands = {
+  trade_value_modifier = 0.1
+  trade_value = 0.5
+  max_attrition = 3
+  attrition = 1
+  local_hostile_attrition = 1
+  picture = "vu_badlansds"
+}
+
+vu_mississippi_river = {
+  local_development_cost = -0.075
+  province_trade_power_value = 4
+  trade_value = 0.5
+  picture = "vu_river_icon"
+}
+
+vu_st_lawrence_river = {
+  local_development_cost = -0.05
+  local_ship_repair = 0.1
+  ship_recruit_speed = -0.1
+  hostile_fleet_attrition = 1
+  trade_value = 0.25
+  picture = "vu_river_icon"
+}
+
 vu_german_settlement = {
   local_culture_conversion_cost = 1
   local_culture_conversion_time = 0.50
@@ -993,10 +1262,6 @@ counter_reformation = {
 	technology_cost = 0.05
 	idea_cost = 0.05
 	religion = yes
-}
-
-russian_patriarchate = {
-	war_exhaustion_cost = -0.20
 }
 
 consecrated_ground = {
@@ -2069,6 +2334,7 @@ important_natural_harbor = {
 #Tradepost
 trade_post_modifier = {
 	province_trade_power_value = 10
+	monthly_authority_power = -0.01 #VU added from 1.37 by SF
 	#naval_forcelimit = 1
 	picture = "province_trade_power_value"
 }
@@ -2261,7 +2527,7 @@ mekong_estuary_modifier = {
 }
 
 mississippi_estuary_modifier = {
-	province_trade_power_value = 10
+	province_trade_power_value = 30
 	picture = "estuary_icon"
 }
 
@@ -2380,6 +2646,75 @@ orinoco_estuary_modifier = {
 	picture = "estuary_icon"
 }
 
+churchill_estuary_modifier = {
+	province_trade_power_value = 10
+	picture = "estuary_icon"
+}
+
+thames_con_estuary_modifier = {
+	province_trade_power_value = 10
+	picture = "estuary_icon"
+}
+
+ohio_estuary_modifier = {
+	province_trade_power_value = 10
+	picture = "estuary_icon"
+}
+
+missouri_estuary_modifier = {
+	province_trade_power_value = 10
+	picture = "estuary_icon"
+}
+
+illinois_estuary_modifier = {
+	province_trade_power_value = 10
+	picture = "estuary_icon"
+}
+
+tennessee_estuary_modifier = {
+	province_trade_power_value = 10
+	picture = "estuary_icon"
+}
+
+wabash_estuary_modifier = {
+	province_trade_power_value = 10
+	picture = "estuary_icon"
+}
+
+north_platte_estuary_modifier = {
+	province_trade_power_value = 10
+	picture = "estuary_icon"
+}
+
+texan_colorado_estuary_modifier = {
+	province_trade_power_value = 10
+	picture = "estuary_icon"
+}
+
+arkansas_estuary_modifier = {
+	province_trade_power_value = 10
+	picture = "estuary_icon"
+}
+
+red_river_estuary_modifier = {
+	province_trade_power_value = 10
+	picture = "estuary_icon"
+}
+
+sabine_estuary_modifier = {
+	province_trade_power_value = 10
+	picture = "estuary_icon"
+}
+
+maumee_estuary_modifier = {
+	province_trade_power_value = 10
+	picture = "estuary_icon"
+}
+
+minnesota_estuary_modifier = {
+	province_trade_power_value = 10
+	picture = "estuary_icon"
+}
 # England flavor modifiers
 
 lollards = {
@@ -2390,6 +2725,7 @@ lollards = {
 justices_of_peace = {
 	stability_cost_modifier = -0.1
 	state_maintenance_modifier = -0.1
+	monthly_authority_power = -0.05 #VU added from 1.37 by SF
 }
 
 the_admirality = {
@@ -4905,7 +5241,7 @@ ven_ten_restrained = {
 
 ven_council_of_ten_strong = {
 	mr_aristocrats_influence = 0.05
-	#global_tax_modifier = 0.1
+	monthly_authority_power = 0.05 #VU added from 1.37 by SF
 	global_autonomy = -0.05
 	republican_tradition = -1 #By giving a single institution much larger influence than any other.
 }
@@ -7496,6 +7832,11 @@ castilian_grammar = {
 	stability_cost_modifier = 0.1
 }
 
+san_lorenzo_es_corte = {
+	prestige = 1
+	global_autonomy = -0.03
+}
+
 solo_madrid_es_corte = {
 	prestige = 1
 	global_autonomy = -0.03
@@ -9576,6 +9917,11 @@ harmonized_buddhism = { #Theravada
 
 harmonized_mahayana = {
 	idea_cost = -0.07
+	religion = yes
+}
+
+harmonized_ahom = {
+	idea_cost = -0.06
 	religion = yes
 }
 
@@ -12865,6 +13211,11 @@ junior_islam_cult = {
 	religion = yes
 }
 
+junior_ahom_cult = {
+	global_institution_spread = 0.03
+	religion = yes
+}
+
 junior_buddhism_cult = {
 	development_cost = -0.05
 	religion = yes
@@ -12946,6 +13297,11 @@ primary_christianity_cult = {
 }
 
 primary_islam_cult = {
+	global_institution_spread = 0.1
+	religion = yes
+}
+
+primary_ahom_cult = {
 	global_institution_spread = 0.1
 	religion = yes
 }
@@ -14228,6 +14584,18 @@ embraced_passive_conversion_methods = {
 	religion = yes
 }
 
+#Theodoro rewards
+feo_buffed_freedom_of_steppes_mod = {
+	local_unrest = -2
+}
+feo_cossack_self_governance_buff_mod = {
+	local_state_maintenance_modifier = -0.1
+	local_religious_unity_contribution = -1
+}
+feo_upgrade_prime_herding_rights_mod = {
+	local_manpower_modifier = 0.1
+}
+
 #Grand Vizier Modifiers
 grand_vizier_philosopher = {
 	yearly_corruption = -0.05
@@ -14333,6 +14701,18 @@ grand_vizier_grand_captain = {
 	yearly_corruption = -0.05
 	country_military_power = 1
 	siege_ability = 0.1
+}
+
+estate_church_TIM_promote_ijazah_scaling = {
+	yearly_innovativeness = 0.5
+}
+
+TIM_full_army_trad = {
+	army_tradition = 1 
+}
+
+TIM_full_army_prof = {
+	yearly_army_professionalism = 0.01 
 }
 
 #Perisna Influence Counter
@@ -15334,6 +15714,46 @@ san_francisco_bay_modifier = {
 	picture = "bay_icon"
 }
 
+san_diego_bay_modifier = {
+	province_trade_power_value = 2
+	naval_forcelimit = 2
+	local_development_cost = -0.05
+	local_sailors_modifier = 0.25
+	picture = "bay_icon"
+}
+
+tampa_bay_modifier = {
+	province_trade_power_value = 10
+	naval_forcelimit = 1
+	local_development_cost = -0.1
+	local_sailors_modifier = 0.25
+	picture = "bay_icon"
+}
+
+galveston_bay_modifier = {
+	province_trade_power_value = 5
+	naval_forcelimit = 1
+	local_development_cost = -0.075
+	local_sailors_modifier = 0.25
+	picture = "bay_icon"
+}
+
+ekron_bay_modifier = {
+	province_trade_power_value = 5
+	naval_forcelimit = 1
+	local_development_cost = -0.05
+	local_sailors_modifier = 0.25
+	picture = "bay_icon"
+}
+
+cook_inlet_bay_modifier = {
+	province_trade_power_value = 5
+	naval_forcelimit = 1
+	local_development_cost = -0.05
+	local_sailors_modifier = 0.25
+	picture = "bay_icon"
+}
+
 #Cut for now
 #golden_gate_strait_modifier = {
 #	province_trade_power_value = 5
@@ -15794,48 +16214,61 @@ chocolate_hills_modifier = {
 
 niagara_falls_modifier = {
   diplomatic_reputation = 0.5
+  trade_value = 1
   prestige = 0.4
 	picture = "niagara_falls_icon"
 }
 
 victoria_falls_modifier = {
   diplomatic_reputation = 0.5
+  trade_value = 1
   prestige = 0.4
 	picture = "victoria_falls_icon"
 }
 
 yosemite_modifier = {
-  diplomatic_reputation = 0.5
   prestige = 0.4
+  trade_value = 1
+  local_tax_modifier = 0.1
+  local_colonial_growth = -5
+  adm_tech_cost_modifier = -0.05
 	picture = "yosemite_icon"
 }
 
 grand_canyon_modifier = {
-  diplomatic_reputation = 0.5
-  prestige = 0.4
+  prestige = 0.2
+  trade_value = 1
+  local_tax_modifier = 0.1
+  local_colonial_growth = -10
+  local_development_cost = 0.05
+  morale_damage = 0.025
 	picture = "grand_canyon_icon"
 }
 
 mt_fuji_modifier = {
   diplomatic_reputation = 0.5
+  trade_value = 1
   prestige = 0.4
 	picture = "mt_fuji_icon"
 }
 
 mt_kilimanjaro_modifier = {
   diplomatic_reputation = 0.5
+  trade_value = 1
   prestige = 0.4
 	picture = "mt_kilimanjaro_icon"
 }
 
 mt_uluru_modifier = {
   diplomatic_reputation = 0.5
+  trade_value = 1
   prestige = 0.4
 	picture = "mt_uluru_icon"
 }
 
 guilin_mts_modifier = {
   diplomatic_reputation = 0.5
+  trade_value = 1
   prestige = 0.4
   picture = "guilin_mts_icon"
 }
@@ -15851,18 +16284,21 @@ yuanyang_rice_terraces_modifier = {
 
 phuket_islands_modifier = {
   diplomatic_reputation = 0.5
+  trade_value = 1
   prestige = 0.4
 	picture = "phuket_islands_icon"
 }
 
 deans_blue_hole_modifier = {
   diplomatic_reputation = 0.5
+  trade_value = 1
   prestige = 0.4
 	picture = "deans_blue_hole_icon"
 }
 
 northern_lights_modifier = {
   diplomatic_reputation = 0.5
+  trade_value = 1
   prestige = 0.4
 	picture = "northern_lights_icon"
 }
@@ -15951,7 +16387,7 @@ aurora_borealis = { # Extreme latitude provinces, weaker than Polar Lights modif
 	local_unrest = -0.25
 	trade_value = 0.1
 	local_missionary_strength = 0.0025
-	picture = "idea_cost"
+	picture = "northern_lights_icon"
 }
 
 plitvice = { # Plitvice lakes in Croatia

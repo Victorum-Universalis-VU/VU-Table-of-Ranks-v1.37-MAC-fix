@@ -4,7 +4,7 @@ owner = POL
 controller = POL
 add_core = POL
 add_core = VOL
-culture = ruthenian
+culture = volhynian
 religion = orthodox
 capital = "Sambir"
 base_tax = 2
@@ -60,22 +60,22 @@ hre = no
 	unrest = 0
 }
 1867.3.30 = {
-	owner = AHE
-	controller = AHE
-	add_core = AHE
+	owner = AUH
+	controller = AUH
+	add_core = AUH
 	remove_core = HAB
 } # Austria-Hungary is formed
 1914.8.15 = {
 	controller = RUS
 }
 1915.6.1 = {
-	controller = AHE
+	controller = AUH
 }
 1918.11.7 = {
 	owner = VOL
 	controller = VOL
 	add_core = POL
-	remove_core = AHE
+	remove_core = AUH
 } # West Ukraine declares independence, end of WWI
 1919.5.1 = {
 	owner = POL

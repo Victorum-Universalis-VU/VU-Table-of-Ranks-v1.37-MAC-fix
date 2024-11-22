@@ -1,3 +1,4 @@
+#Updated to v1.37 - SF
 # The Reformation Branches Out
 country_event = {
 	id = 2011
@@ -41,6 +42,10 @@ country_event = {
 	mean_time_to_happen = {
 		months = 80
 		
+		modifier = {
+			factor = 0.5
+			religion_years = { protestant = 15 }
+		}
 		modifier = {
 			factor = 0.95
 			religion_years = { protestant = 20 }			#This was just the same as trigger, making it effectively half the MTTH... making it dynamic and adding a few below
@@ -108,6 +113,26 @@ country_event = {
 		modifier = {
 			factor = 2.0
 			government = theocracy
+		}
+		modifier = {
+			factor = 8.0
+			OR = {
+				NOT = { exists = PAP }
+				PAP = { is_part_of_hre = no }
+			}
+			OR = {
+				culture_group = latin
+				culture_group = iberian
+			}
+		}
+		modifier = {
+			factor = 0.75
+			PAP = { is_part_of_hre = yes }
+			is_part_of_hre = no
+			OR = {
+				culture_group = latin
+				culture_group = iberian
+			}
 		}
 		modifier = {
 			factor = 0.5

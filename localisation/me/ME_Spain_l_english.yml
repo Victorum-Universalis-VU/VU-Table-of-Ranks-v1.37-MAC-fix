@@ -1,5 +1,5 @@
 ﻿l_english:
- # Missions:
+ #Missions:
  spain_prepare_the_reconquista_title: "Prepare Reconquista"
  spain_prepare_the_reconquista_desc: "For too long have we failed in our duty of care to the peoples of Iberia. We should prepare to bound them under one banner."
  spain_reclaim_andalucia_title: "Reclaim Andalucia"
@@ -162,86 +162,136 @@
  SPA_HAB_UNION_EVENT_WILL_WORSEN_OPINION: "\n§YThis will worsen the opinion of all our rivals, enemies and HRE members of us.§!"
  SPA_HAS_MOST_DEVELOPMENT_IN_EUROPE: "§Y[Root.GetName]§! has the most §Ydevelopment§! of all European countries"
  
- # Event Modifiers:
+ #Event Modifiers:
  spain_army_buildings: "Improved Army Infrastructure"
+ desc_spain_army_buildings: ""
  spain_naval_buildings: "Improved Naval Infrastructure"
+ desc_spain_naval_buildings: ""
  spain_production_buildings: "Economic Recovery"
+ desc_spain_production_buildings: ""
  spain_trade_buildings: "Improved Trade Infrastructure"
+ desc_spain_trade_buildings: ""
  spain_build_manufactories_modifier: "Early Industrialization"
+ desc_spain_build_manufactories_modifier: ""
  spain_build_churches_modifier: "New Churches"
+ desc_spain_build_churches_modifier: ""
  spain_build_cathedrals_modifier: "New Cathedrals"
+ desc_spain_build_cathedrals_modifier: ""
  spain_prepare_reconquista_modifier: "Prepared for the Reconquista"
+ desc_spain_prepare_reconquista_modifier: ""
  spain_conquer_atlantic_islands_modifier: "Iberian Domination"
+ desc_spain_conquer_atlantic_islands_modifier: ""
  spain_the_malian_gold_modifier: "The Malian Gold"
+ desc_spain_the_malian_gold_modifier: ""
  spain_conquer_kongo_modifier: "Spanish Kongo"
+ desc_spain_conquer_kongo_modifier: ""
  spain_colonize_the_cape_modifier: "Spanish Cape of Good Hope"
+ desc_spain_colonize_the_cape_modifier: ""
  spain_discover_mexico_modifier: "Discovered Mexico"
+ desc_spain_discover_mexico_modifier: ""
  spain_the_atztec_savages_modifier: "The New World"
+ desc_spain_the_atztec_savages_modifier: ""
  spain_colonize_mexico_modifier: "Spanish Mexico"
+ desc_spain_colonize_mexico_modifier: ""
  spain_conquer_french_pyrenees_modifier: "Conquered the French Pyrenees"
+ desc_spain_conquer_french_pyrenees_modifier: ""
  spain_better_than_france_modifier: "Better than France"
+ desc_spain_better_than_france_modifier: ""
  spain_vassalize_france_modifier: "Vassalization of France"
+ desc_spain_vassalize_france_modifier: ""
  spain_beginning_of_a_colonial_empire_modifier: "Beginning of a Colonial Empire"
+ desc_spain_beginning_of_a_colonial_empire_modifier: ""
  spain_conquistadors_modifier: "Conquistadors"
+ desc_spain_conquistadors_modifier: ""
  spain_discover_the_caribbeans_modifier: "Discovered the Caribbeans"
+ desc_spain_discover_the_caribbeans_modifier: ""
  spain_colonize_the_caribbeans_modifier: "Spanish Caribbeans"
+ desc_spain_colonize_the_caribbeans_modifier: ""
  spain_colonize_la_plata_modifier: "Spanish La Plata"
+ desc_spain_colonize_la_plata_modifier: ""
  spain_control_trade_node_sevilla_modifier: "Sevillan Trade Power"
- spain_control_trade_node_sevilla_modifier_desc:0 "Sevillan Trade Power"
+ desc_spain_control_trade_node_sevilla_modifier: "Sevillan Trade Power"
  spain_conquer_maghreb_cot_modifier: "The Berber Crusade"
+ desc_spain_conquer_maghreb_cot_modifier: ""
  spain_control_trade_node_genoa_modifier: "Genoan Trade Power"
+ desc_spain_control_trade_node_genoa_modifier: ""
  spain_become_a_colonial_empire_modifier: "Colonial Empire"
+ desc_spain_become_a_colonial_empire_modifier: ""
  spain_discover_south_america_modifier: "Discovered South America"
+ desc_spain_discover_south_america_modifier: ""
  spain_colonize_colombia_modifier: "Spanish Colombia"
+ desc_spain_colonize_colombia_modifier: ""
  spain_discover_peru_modifier: "Discovered Peru"
+ desc_spain_discover_peru_modifier: ""
  spain_conquer_genoa_and_milan_modifier: "North Italian Ambitions"
- spain_conquer_genoa_and_milan_modifier_desc:0 "North Italian Ambitions"
+ desc_spain_conquer_genoa_and_milan_modifier: ""
  spain_the_spanish_armada_modifier: "The Spanish Armada"
+ desc_spain_the_spanish_armada_modifier: ""
  spain_an_unholy_alliance_modifier: "An Unholy Alliance"
+ desc_spain_an_unholy_alliance_modifier: ""
  spain_become_papal_controller_modifier: "Curia Controller"
+ desc_spain_become_papal_controller_modifier: ""
  spain_the_last_crusade_modifier: "The Last Crusade"
+ desc_spain_the_last_crusade_modifier: ""
  spain_colonize_the_philippines_modifier: "Spanish Philippines"
+ desc_spain_colonize_the_philippines_modifier: ""
  spain_colonize_brazil_modifier: "Spanish Brazil"
+ desc_spain_colonize_brazil_modifier: ""
  spain_the_incan_gold_modifier: "The Incan Gold"
+ desc_spain_the_incan_gold_modifier: ""
  spain_colonize_peru_modifier: "Spanish Peru"
+ desc_spain_colonize_peru_modifier: ""
  spain_imperial_ambitions_modifier: "Imperial Ambitions"
+ desc_spain_imperial_ambitions_modifier: ""
  spain_become_emperor_modifier: "Spanish Holy Roman Emperor"
+ desc_spain_become_emperor_modifier: ""
  spain_become_hre_member_modifier: "Member of the Holy Roman Empire"
+ desc_spain_become_hre_member_modifier: ""
  spain_catholic_spanish_lands_modifier: "Catholic Spanish Lands"
+ desc_spain_catholic_spanish_lands_modifier: ""
  spain_strong_catholic_league_modifier: "A Strong Catholic League"
+ desc_spain_strong_catholic_league_modifier: ""
  spain_win_the_league_war_modifier: "Winner of the Religious War"
+ desc_spain_win_the_league_war_modifier: ""
  spain_catholic_electors_modifier: "Electors of the True Faith"
+ desc_spain_catholic_electors_modifier: ""
  spain_spanish_inquisition_modifier: "The Spanish Inquisition"
+ desc_spain_spanish_inquisition_modifier: ""
  spain_catholic_hre_modifier: "The Catholic Empire"
+ desc_spain_catholic_hre_modifier: ""
  spain_catholic_empire_modifier: "One Empire - One Faith"
+ desc_spain_catholic_empire_modifier: ""
  spain_conquer_moroccan_coast_modifier: "The North African Coast"
+ desc_spain_conquer_moroccan_coast_modifier: ""
  spain_control_trade_node_venice_modifier: "Venetian Trade Power"
+ desc_spain_control_trade_node_venice_modifier: ""
  spain_become_an_empire_modifier: "The Spanish Empire"
+ desc_spain_become_an_empire_modifier: ""
  spain_catholic_spanish_lands_province_modifier: "The Spanish Inquisition"
+ desc_spain_catholic_spanish_lands_province_modifier: ""
  spain_annexed_milan_province_modifier: "Milanese Autonomy"
+ desc_spain_annexed_milan_province_modifier: ""
  spain_spanish_hegemony_modifier: "Spanish Hegemony"
+ desc_spain_spanish_hegemony_modifier: ""
  spain_released_jerusalem_modifier: "Released the Kingdom of Jerusalem"
+ desc_spain_released_jerusalem_modifier: ""
  spain_not_released_jerusalem_modifier: "Refused to release the Kingdom of Jerusalem"
- 
- # Triggered Modifiers:
- ## Country:
+ desc_spain_not_released_jerusalem_modifier: ""
  the_milan_duchy_vassal_triggered_modifier: "The Milan Duchy"
  desc_the_milan_duchy_vassal_triggered_modifier: "The Milan areas are reigned by our royal vassal. We were so kind to not annex them, but on the other hand keep them so close that Milan practically is our land."
- 
- ## Province:
  spain_iron_fist_in_the_netherlands_province_modifier: "Spanish rule in the Netherlands"
- spain_iron_fist_in_the_netherlands_province_modifier_desc: "The rule of §Y[Root.Owner.Monarch.GetName]§! is harsh. Although it seems that many people in this province are thinking about revolting against §Y[Root.Owner.GetName]§!, the violent and punishing reign of their oppressors hinders them to actually do it.\n"
+ desc_spain_iron_fist_in_the_netherlands_province_modifier: "The rule of §Y[Root.Owner.Monarch.GetName]§! is harsh. Although it seems that many people in this province are thinking about revolting against §Y[Root.Owner.GetName]§!, the violent and punishing reign of their oppressors hinders them to actually do it.\n"
  
  SPA_RULER_RULES_WITH_IRON_FIST: "The mission §YIron Fist in the Netherlands§! was enacted during the rule of §Y[This.Monarch.GetName]§!"
  
- # Opinion Modifiers:
+ #Opinion Modifiers:
  spain_habsburg_union_small_opinion: "Demanded to unite the Habsburg lands"
  spain_habsburg_union_elector_opinion: "Demanded to unite the Habsburg lands"
  spain_habsburg_union_opinion: "Claimed to be the important \"von Habsburg\" branch"
  spain_released_jerusalem_opinion: "Released Kingdom of Jerusalem"
  spain_not_released_jerusalem_opinion: "Refused to release Kingdom of Jerusalem"
  
- # Events:
+ #Events:
  ME_Spain_Events.EVTNAME1: "The Milan Duchy"
  ME_Spain_Events.EVTDESC1: "We have a claim on the Milanese crown, the richest of the Lombard states. \nHowever this land is too far away to reign and control it properly. Because of this, we might want to consider to have it being ruled by very loyal subjects."
  ME_Spain_Events1.EVTOPT1: "The land belongs to us."
@@ -256,6 +306,8 @@
  ME_Spain_Events.EVTDESC3: "The [From.GetAdjective] branch of the Habsburg dynasty claims to be the most powerful one. They say they need to save the Austrian lands from pretender rebels. \nThey see no other way than uniting both empires under their ruler and because we are family, they send a diplomatic request. However, they will probably try to get their will by force, if we don't accept now."
  ME_Spain_Events3.EVTOPT1: "Form the Habsburg Union."
  ME_Spain_Events3.EVTOPT2: "We will stay the dominant of the Habsburg dynasty!"
+
+ ME_Spain_Events4.EVTOPT1: ""
  
  ME_Spain_Events.EVTNAME5: "Spanish Hegemony"
  ME_Spain_Events.EVTDESC5: "Spain is the most powerful nation now in Europe. We surpassed France and England. No country can stop us now."
@@ -265,6 +317,10 @@
  ME_Spain_Events.EVTDESC6: "[From.GetName] demands that we convert to the [From.Religion.getName] faith. How should we react to this outrages demand?"
  ME_Spain_Events6.EVTOPT1: "We have to give in."
  ME_Spain_Events6.EVTOPT2: "We will never bow to the filthy [From.Religion.GetName]s!"
+
+ ME_Spain_Events7.EVTOPT1: ""
+ 
+ ME_Spain_Events8.EVTOPT1: ""
 
  ME_Spain_Events.EVTNAME9: "Administration of the Holy Land"
  ME_Spain_Events.EVTDESC9: "After so many years under Muslim supression, we finally got control over Jerusalem. Now we have the choice between keeping the land under Spanish rule, which would be the best way to protect it, but what will be viewed negatively by the Catholic world. Or we can release the Kingdom of Jerusalem, which will make it harder to defend the Holy Land, but which will be appreciated by the other Catholic countries."
@@ -279,7 +335,7 @@
  HAB_NEEDS_TO_AGREE_TO_BECOME_SPA_PU: "§R[HAB.GetName] must accept this request for the effect to happen. \n   Otherwise the following will come into effect:§!"
  SPA_HAB_UNION_WILL_ALWAYS_BREAK_ON_MONARCH_DEATH: "\n\n§YThe union with [HAB.GetName] will break after the death of the ruler, under which reign the union was established. Although we will always be able to restore it by war, this applies to all unions with [HAB.GetName].§!"
  
- # CB and War Goal Stuff:
+ #CB and War Goal Stuff:
  cb_conquer_center_of_trades: "Conquer Centers of Trade"
  cb_conquer_center_of_trades_desc: "We need to control the rich and important centers of trade in their lands to increase our trade power and influence in their region."
  take_cot: "Take Centers of Trade"
@@ -287,14 +343,14 @@
  
  ALL_CENTERS_OF_TRADE: "All Center of Trade provinces"
  
- # Decisions:
+ #Decisions:
  SPA_build_el_escorial_title: "Build the \"Monasterio del Escorial\""
  SPA_build_el_escorial_desc: "The Royal Site of San Lorenzo de El Escorial is the historical residence of the rulers of Spain. \n\nConstructing this palace in our capital will give us better control over our whole country, helping us to centralize the power into one place and person."
  
  START_CONSTRUCTION_OF_EL_ESCORIAL: "Start construction of §YMonasterio del Escorial§! in §Y[This.GetName]§!. \nThis will cost §Y10,000§! ¤ and will take §Y20 years§!."
  EFFECTS_OF_EL_ESCORIAL: "\nThe §YMonasterio del Escorial§! has the following effects when finished: \n   Yearly Prestige: §G+0.50§! \n   Yearly Legitimacy: §G+1.00§! \n   Yearly Papal Influence: §G+1.00§! \n   State Maintenance Cost: §G-10.00%§! \n   Global Autonomy: §G-0.05§! \n   Yearly Absolutism: §G+0.05§!"
  
- # Buildings:
+ #Buildings:
  building_el_escorial: "Monasterio del Escorial"
  building_el_escorial_desc: "The Royal Site of San Lorenzo de El Escorial is the residence of the rulers of Spain."
  

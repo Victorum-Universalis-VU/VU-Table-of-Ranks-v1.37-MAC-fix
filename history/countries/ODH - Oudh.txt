@@ -1,5 +1,6 @@
 government = monarchy
 add_government_reform = indian_sultanate_reform
+government_rank = 6 #Sultanate
 technology_group = indian
 religion = shiite
 primary_culture = avadhi
@@ -9,7 +10,7 @@ religious_school = jafari_school
 # Nawabs of Awadh/Oudh
 
 1724.10.9 = {
-	government_rank = 1
+	government_rank = 6
 	monarch = {
 		name = "Muhammad Sa'adat Khan"
 		dynasty = "Awadhi"

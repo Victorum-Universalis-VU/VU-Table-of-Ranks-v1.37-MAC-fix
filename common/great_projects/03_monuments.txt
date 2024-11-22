@@ -523,7 +523,7 @@ abbaye_mont_saint_michel = { #Abbaye du Mont-Saint-Michel
     }
 } 
 
-chateau_angers = { #ChÃÂ¢teau d'Angers
+chateau_angers = { #Château d'Angers
     start = 178
     
     date = 1201.01.01
@@ -795,7 +795,7 @@ palais_des_tuileries = { #Palais des Tuileries
 		country_modifiers = {
 			global_tax_modifier = 0.15
 			state_maintenance_modifier = -0.2
-			administrative_efficiency = 0.2
+			administrative_efficiency = 0.1
 			prestige = 0.2
 		}
 
@@ -804,6 +804,7 @@ palais_des_tuileries = { #Palais des Tuileries
 		}
 	}
 	
+	#VU Update - Modified with advice and suggestions from Prussia. By SF
 	tier_3 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
@@ -828,7 +829,7 @@ palais_des_tuileries = { #Palais des Tuileries
 		country_modifiers = {
 			global_tax_modifier = 0.2
 			state_maintenance_modifier = -0.3
-			administrative_efficiency = 0.3
+			administrative_efficiency = 0.2
 			prestige = 0.5
 		}
 

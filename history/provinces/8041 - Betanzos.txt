@@ -15,7 +15,6 @@ is_city = yes
 hre = no
 
 #Claimants
-add_core = GAL
 
 #Buildings
 
@@ -23,12 +22,7 @@ add_core = GAL
 
 #Known by Technology groups
 
-
-
-
-
-
 #Histories
 1215.6.15 = { owner = LON controller = LON add_core = LON } # Leonese territorial lands - By San Felipe
 
-1444.11.11 = { owner = CAS controller = CAS add_core = CAS } # Castilian territorial lands - By San Felipe
+1444.11.11 = { owner = GAL controller = GAL add_core = GAL } # Castilian territorial lands - By San Felipe

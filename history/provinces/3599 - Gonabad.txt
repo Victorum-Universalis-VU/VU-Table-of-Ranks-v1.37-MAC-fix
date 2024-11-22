@@ -2,6 +2,7 @@
 
 owner = TIM
 controller = TIM
+add_core = TIM
 culture = khorasani
 religion = sunni
 capital = "Gonabad"
@@ -11,21 +12,15 @@ base_tax = 2
 base_production = 3
 base_manpower = 2
 is_city = yes
-add_core = TIM
-add_core = KHO
+
 fort_15th = yes			#Forud, Zibad castles and many more
 
+#Claimants
+add_core = KHO
+add_core = R4S
+add_core = SAS
 
-
-
-
-
-
-
-
-
-
-
+#Histories by Sf
 1449.2.1 = { #Conquered by Babur bin Baysunkur
 	owner = KHO
 	controller = KHO

@@ -15,7 +15,7 @@ country_event = {
 	trigger = {
 		tag = PRU
 		government = monarchy
-		NOT = { government_rank = 2 }
+		NOT = { government_rank = 8 }
 		is_subject = no
 		total_development = 400 #VU Dev Doubling
 		has_regency = no
@@ -39,7 +39,7 @@ country_event = {
 			set_imperial_incident = incident_king_in_prussia
 		}
 		else = {
-			set_government_rank = 2
+			set_government_rank = 8
 			add_prestige = 20
 			add_legitimacy = 20
 		}
@@ -73,7 +73,7 @@ country_event = {
 		}
 		tooltip = {
 			PRU = {
-				set_government_rank = 2
+				set_government_rank = 8
 				add_prestige = 25
 				add_legitimacy = 25
 				reverse_add_opinion = {
@@ -161,7 +161,7 @@ country_event = {
 			has_country_flag = king_in_prussia_elevated
 		}
 		name = king_in_prussia.3.a
-		set_government_rank = 2
+		set_government_rank = 8
 		add_prestige = 25
 		add_legitimacy = 25
 		reverse_add_opinion = {
@@ -174,7 +174,7 @@ country_event = {
 			has_country_flag = king_in_prussia_compromise
 		}
 		name = king_in_prussia.3.b
-		set_government_rank = 2
+		set_government_rank = 8
 		add_prestige = 10
 		add_legitimacy = 10
 		reverse_add_opinion = {
@@ -194,7 +194,7 @@ country_event = {
 			}
 		}
 		name = king_in_prussia.3.c
-		set_government_rank = 2
+		set_government_rank = 8
 		set_in_empire = no
 		reverse_add_opinion = {
 			who = emperor

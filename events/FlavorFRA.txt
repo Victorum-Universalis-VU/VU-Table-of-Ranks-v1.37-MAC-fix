@@ -140,7 +140,7 @@ country_event = {
 		}
 	}
 
-	option = { # Time to build a stronger nation
+	option = {			# Time to build a stronger nation
 		name = "flavor_fra.EVTOPTA3104"
 		add_stability_or_adm_power = yes
 		add_adm_power = 50
@@ -203,6 +203,7 @@ country_event = {
 					area = naples_area
 					area = apulia_area
 					area = calabria_area
+					#area = western_sicily_area
 					province_id = 120
 				}
 			}
@@ -216,18 +217,18 @@ country_event = {
 	
 	option = {		# Let us claim what is rightfully Ours!
 		name = "flavor_fra.EVTOPTA3105"
-		if = { limit = { tag = FRA }
-			if = {
-				limit = {
-					exists = NAP
-					NAP = { is_subject = no }
-				}
-				add_casus_belli = {
-					type = cb_restore_personal_union
-					months = 600
-					target = NAP
-				}
+		if = {
+			limit = {
+				exists = NAP
+				NAP = { is_subject = no }
 			}
+			add_casus_belli = {
+				type = cb_restore_personal_union
+				months = 600
+				target = NAP
+			}
+		}
+		else_if = {
 			every_province = {
 				limit = {
 					OR = {
@@ -236,6 +237,8 @@ country_event = {
 						area = apulia_area
 						area = calabria_area
 						area = abruzzo_area
+						#area = western_sicily_area
+						#province_id = 120
 					}
 					OR = {
 						owned_by = NAP 
@@ -293,6 +296,8 @@ country_event = {
 						area = apulia_area
 						area = calabria_area
 						area = abruzzo_area
+						#area = western_sicily_area
+						#province_id = 120
 					}
 				}
 			}
@@ -324,6 +329,8 @@ country_event = {
 						area = apulia_area
 						area = calabria_area
 						area = abruzzo_area
+						#area = western_sicily_area
+						#province_id = 120
 					}
 				}
 			}
@@ -541,8 +548,7 @@ country_event = {
 				size = 2
 			}
 		}
-	}
-	
+	}	
 	option = {		# Kill them and expropriate their land
 		name = "flavor_fra.EVTOPTB3118"
 		add_years_of_income = 0.5
@@ -1319,7 +1325,7 @@ country_event = {
 		add_adm_power = 50
 		define_advisor = {
 			type = statesman
-			name = "Charles François de Broglie"
+			name = "Charles-François de Broglie"
 			culture = gascon
 			discount = yes
 			skill = 2
@@ -1353,7 +1359,7 @@ country_event = {
 		add_adm_power = 50
 		define_advisor = {
 			type = statesman
-			name = "André-Hercule de Fleury"
+			name = "NAME_ANDRE_HERCULE_DE_FLEURY"
 			culture = occitain
 			religion = catholic
 			discount = yes

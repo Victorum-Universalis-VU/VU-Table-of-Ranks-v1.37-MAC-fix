@@ -3,7 +3,14 @@ country_decisions = {
 	restore_byzantine_empire = {
 		major = yes
 		potential = {
-			was_never_end_game_tag_trigger = yes
+			OR = {
+				was_never_end_game_tag_trigger = yes
+				AND = {
+					was_tag = BYZ
+					tag = MOE
+					has_country_flag = BYZ_accepted_ottoman_threat
+				}
+			}
 			normal_or_historical_nations = yes
 			NOT = { has_country_flag = formed_byzantium_flag }
 			OR = {
@@ -106,7 +113,6 @@ country_decisions = {
 				move_capital_effect = yes
 			}
 			change_tag = BYZ
-			restore_country_name = yes
 			if = {
 				limit = {
 					NOT = { culture_group = byzantine }
@@ -115,6 +121,7 @@ country_decisions = {
 				add_accepted_culture = greek
 			}
 			swap_non_generic_missions = yes
+			on_change_tag_effect = yes
 			every_province = {
 				limit = {
 					OR = {
@@ -137,10 +144,10 @@ country_decisions = {
 				name = "centralization_modifier"
 				duration = 7300
 			}
-			add_prestige = 25			#10 to 25 prestige, this is quite an accomplishment -Darth Modus
+			add_prestige = 25 #10 to 25 prestige, this is quite an accomplishment - Darth Modus
 			BYZ = {
 				add_core = 151 # Constantinople
-				change_primary_culture = greek			#Culture turns to greek now, instead of BYZ changing to culture. Works better for events, and represents that standard 'greek' is whoever controls Constantinople
+				change_primary_culture = greek	#Culture turns to greek now, instead of BYZ changing to culture. Works better for events, and represents that standard 'greek' is whoever controls Constantinople
 			}
 			if = {
 				limit = {
@@ -175,15 +182,52 @@ country_decisions = {
 				show_ambient_object = hagia_sophia
 				hide_ambient_object = hagia_sophia_minarets
 			}
-			set_government_rank = 3
+			if = {
+				limit = { NOT = { government = monarchy } }
+				change_government = monarchy
+			}
+			if = {
+				limit = { has_not_locked_first_tier_reform = yes }
+				add_government_reform = byzantine_autocracy_reform
+			}
+			set_government_rank = 9
 			if = {
 				limit = { has_custom_ideas = no }
 				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
 			set_country_flag = formed_byzantium_flag
+			if = {
+				limit = { has_country_flag = feo_byzantium_formation_stats_flag }
+				change_ruler_stat = {
+					type = adm
+					amount = 1
+				}
+				change_ruler_stat = {
+					type = dip
+					amount = 1
+				}
+				change_ruler_stat = {
+					type = mil
+					amount = 1
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = BYZ_accepted_ottoman_threat
+				}
+				clr_country_flag = BYZ_accepted_ottoman_threat 
+			}
+			if = {
+				limit = {
+					has_country_flag = tre_byzantium_forming_bonus_mana
+				}
+				add_adm_power = 100
+				add_dip_power = 100
+				add_mil_power = 100
+			}
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 	

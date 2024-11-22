@@ -3,7 +3,7 @@
 owner = STM
 controller = STM
 add_core = STM
-culture = togoku
+culture = kanto 
 religion = shinto
 capital = "Asai"
 trade_goods = rice

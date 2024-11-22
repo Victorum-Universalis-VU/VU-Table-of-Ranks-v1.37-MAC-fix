@@ -680,6 +680,7 @@ herders_of_the_steppe = {
 	potential = {
 		OR = {
 			has_reform = steppe_horde
+			has_reform = scythian_horde_reform	
 			has_reform = tribal_federation
 		}
 	}
@@ -773,24 +774,6 @@ snow_life_reform = {
 	}
 }
 
-#T3
-
-sheikhdom_reform = {
-	icon = noble_muslim
-	allow_normal_conversion = yes
-	potential = {
-		culture_group = turko_semitic
-		NOT = { primary_culture = turkish }
-	}
-	modifiers = {
-		tolerance_own = 1
-		warscore_cost_vs_other_religion = -0.10
-	}
-	ai = {
-		factor = 10
-	}
-}
-
 adoption_of_christianity_reform = {
 	icon = kongolese_cross
 	allow_normal_conversion = yes
@@ -810,7 +793,10 @@ great_code_of_nomads = {
 	icon = steppe_buddhists
 	allow_normal_conversion = yes
 	potential = {
-		has_reform = steppe_horde
+		OR = {
+			has_reform = steppe_horde
+			has_reform = scythian_horde_reform	
+		}
 		religion_group = eastern
 		OR = {
 			religion_group = eastern

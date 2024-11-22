@@ -4,18 +4,11 @@ graphical_culture = turkishgfx #muslimgfx
 
 color = { 189  68  194 }				#Lavender-ish, for no reason in particular
 
-historical_idea_groups = {					#Copied from Karaman
+historical_idea_groups = {
 	defensive_ideas
-	offensive_ideas
-	spy_ideas
-	trade_ideas
-	religious_ideas
-	diplomatic_ideas
-	quality_ideas
-	administrative_ideas
 }
 
-historical_units = {					#Copied from Karaman for now
+historical_units = {
 	persian_footsoldier
 	persian_cavalry_charge
 	persian_shamshir
@@ -29,7 +22,7 @@ historical_units = {					#Copied from Karaman for now
 	persian_rifle
 }
 
-monarch_names = {					#Copied from Karaman for now
+monarch_names = {
 	"Muhammed #0" = 20
 	"Izzeddin #0" = 20
 	"Taceddin #0" = 20
@@ -50,40 +43,40 @@ monarch_names = {					#Copied from Karaman for now
 	"Safiye #0" = -1
 	"Umut #0" = -1
 	"Ziynet #0" = -1
-	"Zübeyde #0" = -1
+	"Zï¿½beyde #0" = -1
 }
 
-leader_names = {					#Copied from Karaman for now
+leader_names = {
 	Alemdar Amasyali Ayas
 	Bali Barbaros Bayram
-	Cezzar Çandarli Çelebi Cerrah Çerkes Civan Çuhadar
+	Cezzar ï¿½andarli ï¿½elebi Cerrah ï¿½erkes Civan ï¿½uhadar
 	Damad Dervis Defterdar
-	Gedik Gazi Gümülcineli Gürcü
+	Gedik Gazi Gï¿½mï¿½lcineli Gï¿½rcï¿½
 	Hadim Hekimoglu Hersekli
-	Köprülü Kemal Küçük Koca Karamanli Köse Kara Kanijeli Kemankes Kaymak Kavalali
+	Kï¿½prï¿½lï¿½ Kemal Kï¿½ï¿½ï¿½k Koca Karamanli Kï¿½se Kara Kanijeli Kemankes Kaymak Kavalali
 	Ishak Izzed
 	Lala Lefkeli
-	Malkoç Müezzinzade
+	Malkoï¿½ Mï¿½ezzinzade
 	Nevsehirli Nisanci
-	Oruç Uluç Osmancikli Ohrili Oflu
+	Oruï¿½ Uluï¿½ Osmancikli Ohrili Oflu
 	Rumi
 	Piri Pargali Piyale Pehlivan
 	Salih Sokullu Sari Silahdar Semiz Serdar
 	Topal Tayyar Turgut Tarhuncu
 	Veli
-	Yemisçi
+	Yemisï¿½i
 }
 
-ship_names = {					#Copied from Karaman for now
+ship_names = {
 	"Nure Sufi" Sadaddin "Karaman Bey" Ermenek
-	Mut Gülnar Mer Silifke Cilicia Larande
-	Bunsuz "Zeynül-Hac" "Semseddin Mehmet" Göksu
+	Mut Gï¿½lnar Mer Silifke Cilicia Larande
+	Bunsuz "Zeynï¿½l-Hac" "Semseddin Mehmet" Gï¿½ksu
 }
 
-army_names = {					#Copied from Karaman for now
+army_names = {
 	"$PROVINCE$ Ordusu"
 }
 
-fleet_names = {					#Copied from Karaman for now
-	"$PROVINCE$ Donanmasî"
+fleet_names = {
+	"$PROVINCE$ Donanmasï¿½"
 }

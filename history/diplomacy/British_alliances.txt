@@ -8,100 +8,24 @@
 ######################## England (VU) #########################
 #################################################################
 
-###########
-# Marches #
-###########
+##################
+# Archbishoprics #
+##################
 
-march = {
+dependency = {
+	subject_type = "european_archbishopric"
 	first = ENG
 	second = ARC
 	start_date = 597.1.1 
 	end_date = 1836.6.5
 }
 
-march = {
+dependency = {
+	subject_type = "european_bishopric"
 	first = ENG
 	second = DUR
 	start_date = 1291.1.1 
 	end_date = 1836.6.5
-}
-
-march = {
-	first = ENG
-	second = WMC
-	start_date = 1444.1.1
-	end_date = 1444.11.16 #VictorumUniversalis batch edit shortcut second performance start begins
-}
-
-march = {
-	first = ENG
-	second = WMC
-	start_date = 1444.11.18 #VictorumUniversalis batch edit shortcut second performance start ends
-	end_date = 1535.2.4
-}
-
-march = {
-	first = ENG
-	second = JER
-	start_date = 1444.1.1
-	end_date = 1444.11.16 #VictorumUniversalis batch edit shortcut second performance start begins
-}
-
-march = {
-	first = ENG
-	second = JER
-	start_date = 1444.11.18 #VictorumUniversalis batch edit shortcut second performance start ends
-	end_date = 1707.5.12
-}
-
-##########
-# Unions #
-##########
-
-union = {
-	first = ENG
-	second = WLS
-	start_date = 1444.1.1
-	end_date = 1444.11.16 #VictorumUniversalis batch edit shortcut second performance start begins
-}
-
-union = {
-	first = ENG
-	second = WLS
-	start_date = 1444.11.18 #VictorumUniversalis batch edit shortcut second performance start ends
-	end_date = 1542.1.22
-}
-
-#Creation of the Kingdom of Ireland
-union = {
-	first = ENG
-	second = ANI
-	start_date = 1541.6.18			#Creation
-	end_date = 1642.3.17			#Confederate Ireland
-}
-
-# England-Scotland
-union = {
-	first = ENG
-	second = SCO
-	start_date = 1603.3.24
-	end_date = 1640.1.1
-}
-
-# England-Scotland
-union = {
-	first = ENG
-	second = SCO
-	start_date = 1652.4.21
-	end_date = 1707.5.12
-}
-
-#Reestablishment of the Kingdom of Ireland, after Cromwellian reconquest of Ireland
-union = {
-	first = ENG
-	second = ANI
-	start_date = 1652.4.21
-	end_date = 1801.1.1
 }
 
 #################################################################
@@ -446,12 +370,12 @@ alliance = {
 # Marches #
 ###########
 
-march = {
-	first = GBR
-	second = JER
-	start_date = 1707.5.12
-	end_date = 1837.1.1
-}
+#march = {
+#	first = GBR
+#	second = JER
+#	start_date = 1707.5.12
+#	end_date = 1837.1.1
+#}
 
 ################
 # Dependencies #
@@ -460,7 +384,7 @@ march = {
 #Peerages
 #English Duchy of Buckingham
 dependency = {
-	subject_type = "english_peerage"
+	subject_type = "english_duchy"
 	first = ENG
 	second = BCK
 	start_date = 1444.1.1
@@ -469,7 +393,7 @@ dependency = {
 
 #English Duchy of Bedford
 dependency = {
-	subject_type = "english_peerage"
+	subject_type = "english_duchy"
 	first = ENG
 	second = BED
 	start_date = 1435.1.1
@@ -478,7 +402,7 @@ dependency = {
 
 #English Duchy of Exeter
 dependency = {
-	subject_type = "english_peerage"
+	subject_type = "english_duchy"
 	first = ENG
 	second = EXE
 	start_date = 1443.1.6
@@ -487,7 +411,7 @@ dependency = {
 
 #English Duchy of Gloucester
 dependency = {
-	subject_type = "english_peerage"
+	subject_type = "english_duchy"
 	first = ENG
 	second = GLR
 	start_date = 1414.5.16
@@ -496,7 +420,7 @@ dependency = {
 
 #English Duchy of Norfolk
 dependency = {
-	subject_type = "english_peerage"
+	subject_type = "english_duchy"
 	first = ENG
 	second = NFL
 	start_date = 1444.11.11
@@ -505,7 +429,7 @@ dependency = {
 
 #English Duchy of Somerset
 dependency = {
-	subject_type = "english_peerage"
+	subject_type = "english_duchy"
 	first = ENG
 	second = SM1
 	start_date = 1444.1.1
@@ -514,7 +438,7 @@ dependency = {
 
 #English Duchy of York
 dependency = {
-	subject_type = "english_peerage"
+	subject_type = "english_duchy"
 	first = ENG
 	second = YRK
 	start_date = 1415.1.1
@@ -523,34 +447,16 @@ dependency = {
 
 #English Duchy of Northumberland
 dependency = {
-	subject_type = "english_peerage"
+	subject_type = "english_duchy"
 	first = ENG
 	second = NOL
 	start_date = 1414.5.11
 	end_date = 2024.2.28
 }
 
-#English Duchy of Mann
-dependency = {                        #VU - Changed from a march to English Peerage on advice of Prussia. By SF
-	subject_type = "english_peerage"
-	first = ENG
-	second = KOI
-	start_date = 1444.1.1
-	end_date = 1444.11.16             #VictorumUniversalis batch edit shortcut second performance start begins
-}
-
-#British Duchy of Mann
-dependency = {                        #VU - Changed from a march to English Peerage on advice of Prussia. By SF
-	subject_type = "english_peerage"
-	first = GBR
-	second = KOI
-	start_date = 1707.5.12
-	end_date = 1765.5.10			  #Isle of Man Purchase Act 1765
-}
-
 #English Earldom of Warwick
 dependency = {
-	subject_type = "english_peerage"
+	subject_type = "english_earldom"
 	first = ENG
 	second = WRK
 	start_date = 1444.7.23
@@ -559,7 +465,7 @@ dependency = {
 
 #English Earldom of Richmond
 dependency = {
-	subject_type = "english_peerage"
+	subject_type = "english_earldom"
 	first = ENG
 	second = RCH
 	start_date = 1444.11.11
@@ -568,7 +474,7 @@ dependency = {
 
 #English Earldom of Rutland
 dependency = {
-	subject_type = "english_peerage"
+	subject_type = "english_earldom"
 	first = ENG
 	second = RT1
 	start_date = 1443.5.17
@@ -577,7 +483,7 @@ dependency = {
 
 #English Earldom of Lincoln
 dependency = {
-	subject_type = "english_peerage"
+	subject_type = "english_earldom"
 	first = ENG
 	second = LNN
 	start_date = 1415.10.25
@@ -586,7 +492,7 @@ dependency = {
 
 #English Earldom of Oxford
 dependency = {
-	subject_type = "english_peerage"
+	subject_type = "english_earldom"
 	first = ENG
 	second = OXF
 	start_date = 1429.1.1
@@ -595,7 +501,7 @@ dependency = {
 
 #English Duchy of Alencon
 dependency = {
-	subject_type = "vassal"
+	subject_type = "english_duchy"
 	first = ENG
 	second = ALE
 	start_date = 1424.8.17
@@ -604,7 +510,7 @@ dependency = {
 
 #English Dukes of Maine
 dependency = {
-	subject_type = "vassal"
+	subject_type = "english_duchy"
 	first = ENG
 	second = MNE
 	start_date = 1424.8.17
@@ -613,42 +519,79 @@ dependency = {
 
 #English Peerage of Mann
 dependency = {
-	subject_type = "english_peerage"
+	subject_type = "english_earldom"
 	first = ENG
 	second = KOI
-	start_date = 1444.11.18 #VictorumUniversalis batch edit shortcut second performance start ends
+	start_date = 1444.1.1
 	end_date = 1707.5.12
 }
 
-##########
-# Unions #
-##########
+dependency = {
+	subject_type = "english_marquisate"
+	first = ENG
+	second = WMC
+	start_date = 1444.1.1
+	end_date = 1536.1.1 #Dissolved - Prussia
+}
+
+dependency = {
+	subject_type = "english_earldom"
+	first = ENG
+	second = JER
+	start_date = 1444.1.1
+	end_date = 1707.1.1 #Reduced to a crown dependency - Prussia
+}
+
+########################
+# British Crown Unions #
+########################
+
+dependency = {
+	subject_type = "english_crown_PU"
+	first = ENG
+	second = WLS
+	start_date = 1444.1.1
+	end_date = 1444.11.16 #VictorumUniversalis batch edit shortcut second performance start begins
+}
+
+dependency = {
+	subject_type = "english_crown_PU"
+	first = ENG
+	second = WLS
+	start_date = 1444.11.18 #VictorumUniversalis batch edit shortcut second performance start ends
+	end_date = 1542.1.22
+}
 
 # England-Chester (Earldom of Chester)
-union = {
+dependency = {
+	subject_type = "english_crown_PU"
 	first = ENG
 	second = CST
 	start_date = 1067.1.1
 	end_date = 1536.1.1
 }
 
-# England-Netherlands
-union = {
+# England-Scotland
+dependency = {
+	subject_type = "english_crown_PU"
 	first = ENG
-	second = NED
-	start_date = 1689.2.13
-	end_date = 1702.1.1
+	second = SCO
+	start_date = 1603.3.24
+	end_date = 1640.1.1
 }
 
-union = {
-	first = GBR
-	second = ANI
-	start_date = 1707.5.12
-	end_date = 1801.1.1
-}	#Union, creation of the United Kingdoms
+# England-Scotland
+dependency = {
+	subject_type = "english_crown_PU"
+	first = ENG
+	second = SCO
+	start_date = 1652.4.21
+	end_date = 1707.5.12
+}
 
 # England-Hannover
-union = {
+dependency = {
+	subject_type = "english_crown_PU"
 	first = GBR
 	second = HAN
 	start_date = 1714.8.1
@@ -656,12 +599,52 @@ union = {
 }
 
 # England-Hannover
-union = {
+dependency = {
+	subject_type = "english_crown_PU"
 	first = GBR
 	second = HAN
 	start_date = 1813.10.13
 	end_date = 1837.6.20
 }
+
+##########
+# Unions #
+##########
+
+#Creation of the Kingdom of Ireland
+dependency = {
+	subject_type = "english_crown_PU"
+	first = ENG
+	second = ANI
+	start_date = 1541.6.18			#Creation
+	end_date = 1642.3.17			#Confederate Ireland
+}
+
+#Reestablishment of the Kingdom of Ireland, after Cromwellian reconquest of Ireland
+dependency = {
+	subject_type = "english_crown_PU"
+	first = ENG
+	second = ANI
+	start_date = 1652.4.21
+	end_date = 1801.1.1
+}
+
+# England-Netherlands
+dependency = {
+	subject_type = "english_crown_PU"
+	first = ENG
+	second = NED
+	start_date = 1689.2.13
+	end_date = 1702.1.1
+}
+
+dependency = {
+	subject_type = "english_crown_PU"
+	first = GBR
+	second = ANI
+	start_date = 1707.5.12
+	end_date = 1801.1.1
+}	#Union, creation of the United Kingdoms
 
 #################################################################
 ####################### Scotland (VU) #########################
@@ -692,7 +675,7 @@ royal_marriage = {
 
 #Scotland-Isles
 dependency = {
-	subject_type = scottish_clan
+	subject_type = "scottish_clan"
 	first = SCO
 	second = MDD #Was LOI
 	start_date = 1444.1.1
@@ -700,7 +683,7 @@ dependency = {
 }
 
 dependency = {
-	subject_type = scottish_clan
+	subject_type = "scottish_clan"
 	first = SCO
 	second = MCD #Was LOI
 	start_date = 1444.1.1
@@ -708,7 +691,7 @@ dependency = {
 }
 
 dependency = {
-	subject_type = scottish_clan
+	subject_type = "scottish_clan"
 	first = SCO
 	second = MCN #Was LOI
 	start_date = 1444.1.1
@@ -716,7 +699,7 @@ dependency = {
 }
 
 dependency = {
-	subject_type = scottish_clan
+	subject_type = "scottish_clan"
 	first = SCO
 	second = CBE
 	start_date = 1444.1.1
@@ -724,7 +707,7 @@ dependency = {
 }
 
 dependency = {
-	subject_type = scottish_clan
+	subject_type = "scottish_clan"
 	first = SCO
 	second = CM1
 	start_date = 1444.1.1
@@ -732,7 +715,7 @@ dependency = {
 }
 
 dependency = {
-	subject_type = scottish_clan
+	subject_type = "scottish_clan"
 	first = SCO
 	second = DUG
 	start_date = 1444.1.1
@@ -740,7 +723,7 @@ dependency = {
 }
 
 dependency = {
-	subject_type = scottish_clan
+	subject_type = "scottish_clan"
 	first = SCO
 	second = GOR
 	start_date = 1444.1.1
@@ -748,7 +731,7 @@ dependency = {
 }
 
 dependency = {
-	subject_type = scottish_clan
+	subject_type = "scottish_clan"
 	first = SCO
 	second = RLL
 	start_date = 1444.1.1
@@ -756,7 +739,7 @@ dependency = {
 }
 
 dependency = {
-	subject_type = scottish_clan
+	subject_type = "scottish_clan"
 	first = SCO
 	second = SNC
 	start_date = 1444.1.1

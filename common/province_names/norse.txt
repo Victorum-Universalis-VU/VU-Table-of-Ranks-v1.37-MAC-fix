@@ -75,6 +75,7 @@
 116 = "Florens" #Firenze = Florens
 117 = "Langasyn" #Siena = Langasyn
 118 = "Rómaborgr" #Roma = Rómaborgr
+132 = { "Judenburg" "Judenburg" }
 134 = "Vinarborgr"
 142 = "Maríuhofn"
 151 = "Miklagardhr"

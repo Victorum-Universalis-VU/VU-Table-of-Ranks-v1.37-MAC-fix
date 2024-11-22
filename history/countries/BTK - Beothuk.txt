@@ -1,6 +1,6 @@
 government = republic
 add_government_reform = althing_elite_reform
-government_rank = 1
+government_rank = 6
 primary_culture = beothuk
 religion = norse_pagan_reformed
 #technology_group = western

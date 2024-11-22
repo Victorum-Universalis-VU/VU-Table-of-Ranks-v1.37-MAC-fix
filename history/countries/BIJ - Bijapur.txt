@@ -1,5 +1,6 @@
 government = monarchy
 add_government_reform = indian_sultanate_reform
+government_rank = 6 #Sultanate
 technology_group = indian
 religion = shiite
 primary_culture = kannada
@@ -15,7 +16,7 @@ religious_school = jafari_school
 		ADM = 4
 		MIL = 5
 	}
-	government_rank = 1
+	government_rank = 6
 }
 
 1498.1.1 = {
@@ -57,7 +58,7 @@ religious_school = jafari_school
 }
 
 1518.1.1 = {
-	government_rank = 2
+	government_rank = 8
 }
 
 1534.8.27 = {
@@ -118,7 +119,7 @@ religious_school = jafari_school
 		ADM = 2
 		MIL = 1
 	}
-	government_rank = 1
+	government_rank = 6
 }
 
 1557.1.1 = {
@@ -136,7 +137,7 @@ religious_school = jafari_school
 }
 
 1564.1.1 = {
-	government_rank = 2
+	government_rank = 8
 }
 
 1580.4.11 = {
@@ -174,7 +175,7 @@ religious_school = jafari_school
 }
 
 1636.1.1 = {
-	government_rank = 1
+	government_rank = 6
 }
 
 1637.1.1 = {
@@ -202,7 +203,7 @@ religious_school = jafari_school
 }
 
 1657.1.1 = {
-	government_rank = 2
+	government_rank = 8
 }
 
 1660.1.1 = {

@@ -4,8 +4,8 @@ owner = TDO
 controller = TDO
 add_core = TDO
 culture = filipino
-religion = animism
-capital = "Malolos"
+religion = hinduism
+capital = "Paluslos"
 trade_goods = spices
 hre = no
 base_tax = 8
@@ -13,14 +13,16 @@ base_production = 8
 base_manpower = 8
 is_city = yes
 
-
-
- # Ferdinand Magellan 
-1570.5.1 = {
+#Ferdinand Magellan 
+1572.4.5 = {
 	owner = SPA
 	controller = SPA
+	add_core = SPA
 	religion = catholic
-	add_core = SPA 
+	capital = "Calumpit" #Resulting name after Miguel Lopez de Legazpi merged 8 villages - SF
+}
+1581.1.1 = {
+	capital = "Malolos" #Resulting name after Spaniards confused local dialect and word for down stream - SF
 }
 1587.1.1 = {
 	revolt = {
@@ -31,8 +33,13 @@ is_city = yes
 	controller = REB
 }
 1588.1.1 = {
-	revolt = { }
 	controller = SPA
+}
+1600.1.1 = {
+	add_permanent_province_modifier = {
+        name = chinese_minorities
+        duration = -1
+    }
 }
 1762.10.6 = {
 	controller = GBR

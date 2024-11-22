@@ -2,6 +2,7 @@
 
 owner = BAH
 controller = BAH
+add_core = BAH
 culture = gondi
 religion = hinduism
 capital = "Wairagarh"
@@ -11,24 +12,14 @@ base_tax = 6
 base_production = 6
 base_manpower = 6
 is_city = yes
-add_core = BRR
-add_core = BAH
+
 add_brahmins_or_church_effect = yes
 
+#Claimants
+add_core = BRR
+add_core = MAR
 
-
-
-
-
-
-
-
- 
-
-
-
-
-
+#Histories by SF
 1490.1.1 = {
 	remove_core = BAH
 	controller = BRR

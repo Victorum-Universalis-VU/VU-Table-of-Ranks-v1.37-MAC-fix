@@ -225,10 +225,10 @@ country_event = {
 			}
 		}
 		
-		custom_tooltip = TLC_may_form_algiers
+		custom_tooltip = TLC_may_form_algiers_tt
 		set_country_flag = TLC_may_form_algiers
 		
-		custom_tooltip = TLC_distribute_5_base_tax_amongst_algerian_provs
+		custom_tooltip = TLC_distribute_5_base_tax_amongst_algerian_provs_tt
 		hidden_effect = {
 			for = {
 				amount = 5 
@@ -254,7 +254,7 @@ country_event = {
 			duration = 7300
 		}
 		
-		custom_tooltip = TLC_distribute_5_base_tax_amongst_berber_provs
+		custom_tooltip = TLC_distribute_5_base_tax_amongst_berber_provs_tt
 		hidden_effect = {
 			for = {
 				amount = 5 

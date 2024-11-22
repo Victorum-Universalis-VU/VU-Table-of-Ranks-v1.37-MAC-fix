@@ -14,7 +14,7 @@ country_event = {
 
 	trigger = {
 		has_dlc = "Cradle of Civilization"
-		ME_tribal_federation_trigger = yes
+		has_reform = tribal_federation
 		num_of_cities = 3
 		any_owned_province = {
 			is_capital = no
@@ -89,8 +89,6 @@ country_event = {
 				duration = 3650
 			}
 		}
-		
-		QIR_add_turkic_tribes_loyalty = { amount = -10 }
 	}
 }
 
@@ -103,7 +101,7 @@ country_event = {
 
 	trigger = {
 		has_dlc = "Cradle of Civilization"
-		ME_tribal_federation_trigger = yes
+		has_reform = tribal_federation
 		num_of_cities = 3
 		has_government_power = {
 			mechanic_type = tribal_federation_mechanic
@@ -195,20 +193,6 @@ country_event = {
 				name = "urbanites_chastised"
 				duration = 3650
 			}
-			
-			if = {
-				limit = {
-					base_tax = 3
-				}
-				add_base_tax = -2
-			}
-			else_if = {
-				limit = {
-					base_tax = 2
-				}
-				add_base_tax = -1
-			}
-			else = { }
 		}
 	}
 	option = {
@@ -240,7 +224,7 @@ country_event = {
 
 	trigger = {
 		has_dlc = "Cradle of Civilization"
-		ME_tribal_federation_trigger = yes
+		has_reform = tribal_federation
 		num_of_cities = 7
 		has_government_power = {
 			mechanic_type = tribal_federation_mechanic
@@ -298,11 +282,6 @@ country_event = {
 		ai_chance = {
 			factor = 25
 		}
-		
-		QIR_add_turkic_tribes_loyalty = { amount = 5 }
-		
-		custom_tooltip = " "
-		
 		add_government_power = {
 			mechanic_type = tribal_federation_mechanic
 			power_type = tribal_allegiance
@@ -429,8 +408,7 @@ country_event = {
 
 	trigger = {
 		has_dlc = "Cradle of Civilization"
-		ME_tribal_federation_trigger = yes
-		religion_group = muslim
+		has_reform = tribal_federation
 		OR = {
 			NOT = { piety = 0 }
 			any_owned_province = {
@@ -491,7 +469,7 @@ country_event = {
 			value = 10
 		}
 		define_advisor = {
-			type = sufi_scholar_advisor #changed this to ME sufi scholar advisor
+			type = researcher
 			skill = 2
 			discount = yes
 			religion = event_target:sufi_came_from_here
@@ -504,8 +482,6 @@ country_event = {
 			}
 			add_local_autonomy = 80
 		}
-		
-		QIR_add_turkic_tribes_loyalty = { amount = 10 }
 	}
 	option = {
 		name = tribal_federation_events.4.b #
@@ -532,11 +508,10 @@ country_event = {
 
 	trigger = {
 		has_dlc = "Cradle of Civilization"
-		ME_tribal_federation_trigger = yes
+		has_reform = tribal_federation
 		any_neighbor_country = {
 			has_reform = feudal_theocracy
 		}
-		NOT = { has_country_modifier = divided_loyalties } #not accounted in trigger.
 		any_owned_province = {
 			NOT = { has_province_modifier = religious_propaganda }
 			NOT = { has_province_modifier = divided_loyalties }
@@ -582,8 +557,6 @@ country_event = {
 				duration = 3650
 			}
 		}
-		
-		QIR_add_turkic_tribes_loyalty = { amount = 10 }
 	}
 	option = {
 		name = tribal_federation_events.5.b #
@@ -622,14 +595,14 @@ country_event = {
 
 	trigger = {
 		has_dlc = "Cradle of Civilization"
-		ME_tribal_federation_trigger = yes
+		has_reform = tribal_federation
 		any_owned_province = {
 			NOT = { is_state_core = ROOT }
 			development = 10
 			is_capital = no
 			NOT = { has_province_modifier = strong_local_clan }
 			NOT = { has_province_modifier = strong_national_clan }
-			NOT = { area = CAPITAL } #I know it may be surprising, but this does work.
+			NOT = { area = CAPITAL }
 		}
 	}
 	
@@ -705,12 +678,7 @@ country_event = {
 				}
 				save_event_target_as = clan_province
 			}
-			
 			event_target:clan_province = {
-				# export_to_variable = {
-					# which = ME_fed_clan_province_variable
-					# value = trigger_value:development
-				# }
 				area = {
 					limit = {
 						owned_by = ROOT
@@ -731,7 +699,6 @@ country_event = {
 						}
 					}
 				}
-				
 			}
 		}
 	}
@@ -742,21 +709,16 @@ country_event = {
 		days = 1
 	}
 
-	#Options in this events are quite upsetting, local modifier, while area wide, barely matters in the long term. Will also 
 	option = { 
-		name = tribal_federation_events.6.a # support local clans.
+		name = tribal_federation_events.6.a #
 		ai_chance = {
 			factor = 50
 		}
-		
 		add_government_power = {
 			mechanic_type = tribal_federation_mechanic
 			power_type = tribal_allegiance
 			value = -5
 		}
-		
-		custom_tooltip = " "
-		
 		custom_tooltip = ME_fed_gain_adm_power #with tribal allegiance an this added, this should matter at any stage of the game!
 		hidden_effect = {
 			event_target:clan_province = {
@@ -775,9 +737,6 @@ country_event = {
 				}
 			}
 		}
-		
-		custom_tooltip = " "
-		
 		event_target:clan_province = {
 			area = {
 				limit = { owned_by = ROOT }
@@ -793,17 +752,12 @@ country_event = {
 		ai_chance = {
 			factor = 50
 		}
-		
 		add_government_power = {
 			mechanic_type = tribal_federation_mechanic
 			power_type = tribal_allegiance
 			value = 20
 		}
-		
 		add_legitimacy = 5
-		
-		custom_tooltip = " "
-		
 		event_target:clan_province = {
 			area = {
 				limit = { owned_by = ROOT }
@@ -813,10 +767,7 @@ country_event = {
 				}
 			}
 		}
-		
-		QIR_add_turkic_tribes_loyalty = { amount = 10 }
 	}
-	
 	after = {
 		event_target:clan_province = {
 			set_variable = {
@@ -837,7 +788,7 @@ country_event = {
 
 	trigger = {
 		has_dlc = "Cradle of Civilization"
-		ME_tribal_federation_trigger = yes
+		has_reform = tribal_federation
 		NOT = { 
 			has_government_power = {
 				mechanic_type = tribal_federation_mechanic
@@ -883,8 +834,6 @@ country_event = {
 				size = 1
 			}
 		}
-		
-		QIR_add_turkic_tribes_loyalty = { amount = -10 }
 	}
 }
 
@@ -897,7 +846,7 @@ country_event = {
 
 	trigger = {
 		has_dlc = "Cradle of Civilization"
-		ME_tribal_federation_trigger = yes
+		has_reform = tribal_federation
 		any_active_trade_node = {
 			any_trade_node_member_province = {
 				owned_by = ROOT
@@ -1065,7 +1014,7 @@ country_event = {
 
 	trigger = {
 		has_dlc = "Cradle of Civilization"
-		ME_tribal_federation_trigger = yes
+		has_reform = tribal_federation
 		has_government_power = {
 			mechanic_type = tribal_federation_mechanic
 			power_type = tribal_allegiance
@@ -1088,12 +1037,6 @@ country_event = {
 			value = 10
 		}
 		add_army_professionalism = -0.015
-		
-		custom_tooltip = " "
-		
-		add_yearly_manpower = 0.5 #extra effect
-		
-		QIR_add_turkic_tribes_loyalty = { amount = 5 }
 		ai_chance = {
 			factor = 25
 		}
@@ -1106,10 +1049,6 @@ country_event = {
 			value = -10
 		}
 		add_army_professionalism = 0.015
-		
-		custom_tooltip = " "
-		
-		add_mil_power = 50 #extra effect
 		ai_chance = {
 			factor = 75
 		}
@@ -1126,9 +1065,8 @@ province_event = {
 	trigger = {
 		has_dlc = "Cradle of Civilization"
 		NOT = { controlled_by = owner }
-		NOT = { is_core = controller }
 		controller = {
-			ME_tribal_federation_trigger = yes
+			has_reform = tribal_federation
 			has_government_power = {
 				mechanic_type = tribal_federation_mechanic
 				power_type = tribal_allegiance
@@ -1141,7 +1079,7 @@ province_event = {
 			}
 		}
 		owner = {
-			ME_tribal_federation_trigger = yes
+			has_reform = tribal_federation
 			NOT = { has_ruler_flag = province_defected_to_tribe }
 			NOT = { 
 				has_government_power = {
@@ -1172,7 +1110,7 @@ province_event = {
 			country_event = { id = tribal_federation_events.12 }
 			set_ruler_flag = province_defected_to_tribe
 		}
-		add_core = controller
+		cede_province = controller
 	}
 	option = {
 		name = tribal_federation_events.11.b
@@ -1202,12 +1140,6 @@ country_event = {
 			mechanic_type = tribal_federation_mechanic
 			power_type = tribal_allegiance
 			value = -15
-		}
-		
-		tooltip = {
-			FROM = {
-				add_core = controller
-			}
 		}
 	}
 }

@@ -1,6 +1,7 @@
+#BAL - Baluchistan
 government = tribal
-add_government_reform = tribal_kingdom
-government_rank = 1
+add_government_reform = steppe_horde
+government_rank = 8 #Khanate
 primary_culture = baluchi
 religion = sunni
 #technology_group = muslim

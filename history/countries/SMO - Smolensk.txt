@@ -1,8 +1,8 @@
 government = monarchy
 add_government_reform = principality
-government_rank = 1
+government_rank = 7 #Principality
 primary_culture = byelorussian
-add_accepted_culture = russian
+add_accepted_culture = muscovite
 religion = orthodox
 #technology_group = eastern
 technology_group = russian_tech_group

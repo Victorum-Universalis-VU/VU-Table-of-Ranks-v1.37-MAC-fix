@@ -17,6 +17,10 @@ native_ferocity = 2
 native_hostileness = 1 	#The Friendly/well behaved ones
 
 
+add_permanent_province_modifier = {
+    name = vu_colorado_plateau 
+    duration = -1
+}
 
 
 1444.11.15 = { #VictorumUniversalis batch edit shortcut no native start date begin

@@ -1,7 +1,7 @@
 #1083 - Vetluga ( formerly Zavolochye )
 
-owner = MOS
-controller = MOS
+owner = UMA
+controller = UMA
 capital = "Varnavino"			#Would prefer a better settlement
 culture = vu_mari
 religion = orthodox
@@ -12,7 +12,6 @@ base_production = 2
 base_manpower = 2 
 is_city = yes
 add_core = NZH
-add_core = MOS
 add_core = UMA
 
 

@@ -1400,7 +1400,7 @@ country_event = {
 		name = flavor_gbr.20.a
 		trigger = {
 			government = monarchy
-			government_rank = 3
+			government_rank = 9
 		}
 		override_country_name = AV3
 		set_country_flag = ave_empire_name
@@ -1414,8 +1414,8 @@ country_event = {
 		name = flavor_gbr.20.b
 		trigger = {
 			government = monarchy
-			government_rank = 2
-			NOT = { government_rank = 3 }
+			government_rank = 8
+			NOT = { government_rank = 9 }
 		}
 		restore_country_name = yes
 		ai_chance = {
@@ -1428,7 +1428,7 @@ country_event = {
 		name = flavor_gbr.20.c
 		trigger = {
 			government = monarchy
-			NOT = { government_rank = 2 }
+			NOT = { government_rank = 8 }
 		}
 		override_country_name = AV2
 		set_country_flag = ave_duchy_name
@@ -1543,7 +1543,7 @@ country_event = {
 	fire_only_once = yes
 	trigger = {
 		tag = AVE
-		government_rank = 3
+		government_rank = 9
 		num_of_cities = 200
 		has_any_disaster = no
 		is_bankrupt = no
@@ -3529,7 +3529,7 @@ country_event = {
 			tag = GBR
 			tag = AVE
 		}
-		government_rank = 3
+		government_rank = 9
 		is_bankrupt = no
 		has_any_disaster = no
 		stability = 3

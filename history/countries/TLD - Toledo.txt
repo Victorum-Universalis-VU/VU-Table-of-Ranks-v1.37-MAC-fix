@@ -1,7 +1,9 @@
+#TLD - Toledo
 government = monarchy
-add_government_reform = feudalism_reform
-government_rank = 2
+add_government_reform = kingdom_of_castile_and_leon
+government_rank = 8 #Kingdom
 primary_culture = castillian
+religion = catholic
 #technology_group = western
 technology_group = spanish_tech_group
 unit_type = western

@@ -1034,6 +1034,7 @@ RHN_missions_3 = {
 		provinces_to_highlight = {
 			OR = {
 				area = hesse_area
+				area = frankfurt_area
 				area = north_rhine_area
 				area = lower_rhineland_area
 				area = palatinate_area

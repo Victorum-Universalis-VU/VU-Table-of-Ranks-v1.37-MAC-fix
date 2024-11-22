@@ -3480,8 +3480,8 @@ country_event = {
 	option = {
 		name = flavor_swe.109.a
 		if = {
-			limit = { NOT = { government_rank = 3 } }
-			set_government_rank = 3
+			limit = { NOT = { government_rank = 9 } }
+			set_government_rank = 9
 		}
 		add_country_modifier = {
 			name = sca_great_empire_of_scandinavia
@@ -3979,6 +3979,13 @@ country_event = {
 			add_permanent_claim = ROOT
 		}
 		livonia_area = {
+			limit = {
+				NOT = { is_core = ROOT }
+				NOT = { is_permanent_claim = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
+		riga_area = {
 			limit = {
 				NOT = { is_core = ROOT }
 				NOT = { is_permanent_claim = ROOT }

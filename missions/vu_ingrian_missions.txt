@@ -76,6 +76,13 @@ ingrian_missions_1 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			riga_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 			latgallia_area = {
 				limit = {
 					NOT = { is_core = ROOT }

@@ -1,3 +1,4 @@
+#Update to v1.37 - SF
 namespace = incident_pope
 
 # Pope wants to join the Empire
@@ -83,7 +84,6 @@ country_event = {
 				who = ROOT
 				modifier = opinion_pap_joins_empire
 			}
-			every_subject_country = { set_in_empire = yes }
 		}
 		if = {
 			limit = {

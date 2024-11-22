@@ -1,5 +1,6 @@
 government = monarchy
-add_government_reform = timurid_governor
+add_government_reform = islamic_emirate_reform
+government_rank = 5 #Emirate
 #technology_group = muslim
 technology_group = persian_tech_group
 unit_type = muslim
@@ -8,8 +9,6 @@ primary_culture = afghani
 capital = 451	# Kabul
 religious_school = hanafi_school
 
-set_country_flag = ME_can_use_timurid_legitimacy
-save_global_event_target_as = ME_succession_crisis_AFG
 #set_variable = {
 #	which = timurid_legitimacy_value
 #	value = 0

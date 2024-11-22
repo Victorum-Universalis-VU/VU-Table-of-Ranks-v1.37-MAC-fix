@@ -1,6 +1,6 @@
 government = monarchy
 add_government_reform = scottish_monarchy #Known as the Privy Council of Scotland based off the King's Council or curia regis
-government_rank = 2
+government_rank = 8
 primary_culture = scottish
 add_accepted_culture = highland_scottish
 add_accepted_culture = gallgaidheil

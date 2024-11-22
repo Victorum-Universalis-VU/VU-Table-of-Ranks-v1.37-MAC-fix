@@ -1,5 +1,6 @@
 government = tribal
-add_government_reform = tribal_federation
+add_government_reform = persianate_tribal_confederation
+government_rank = 6 #Confederation
 primary_culture = azerbaijani
 #add_accepted_culture = armenian
 add_accepted_culture = kurdish

@@ -90,7 +90,7 @@ ME_become_caliphate_effect = {
 				add_government_reform = ME_caliphate_reform_sunni_arabian
 			}
 			else = {
-				add_government_reform = ME_caliphate_reform_sunni
+				add_government_reform = caliphate_reform
 			}
 			hidden_effect = {
 				save_global_event_target_as = ME_caliphate_tag

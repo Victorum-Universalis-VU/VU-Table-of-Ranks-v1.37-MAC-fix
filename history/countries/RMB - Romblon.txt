@@ -4,7 +4,6 @@ technology_group = chinese
 primary_culture = romblomanon
 capital = 8712 #Romblon
 religion = animism
-government_rank = 1
 
 1365.1.1 = {
 	monarch = {

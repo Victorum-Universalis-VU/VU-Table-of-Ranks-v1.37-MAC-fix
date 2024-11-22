@@ -277,6 +277,7 @@ guiTypes = {
 			maxHeight = 18
 			format = left
 		}
+		
 
 		iconType =
 		{

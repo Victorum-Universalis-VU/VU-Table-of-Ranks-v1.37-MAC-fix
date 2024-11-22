@@ -130,6 +130,13 @@ emp_naples_2 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			san_marino_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 			emilia_romagna_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -200,6 +207,7 @@ emp_naples_2 = {
 		provinces_to_highlight = {
 			OR = {
 				area = east_adriatic_coast_area
+				area = ragusa_area
 				area = croatia_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -209,6 +217,7 @@ emp_naples_2 = {
 				value = 8
 				OR = {
 					area = east_adriatic_coast_area
+					area = ragusa_area
 					area = croatia_area
 				}
 			}
@@ -375,6 +384,13 @@ emp_naples_3 = {
 		}
 		effect = {
 			east_adriatic_coast_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			ragusa_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }

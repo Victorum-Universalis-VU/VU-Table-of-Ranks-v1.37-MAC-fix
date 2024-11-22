@@ -67,5 +67,5 @@ add_local_autonomy = 10
 	remove_core = TUR
 } #War ends
 1913.9.1 = { culture = greek }
-1915.12.15 = { controller = AHE } #WW1
+1915.12.15 = { controller = AUH }
 1916.7.25 = { controller = GRE }

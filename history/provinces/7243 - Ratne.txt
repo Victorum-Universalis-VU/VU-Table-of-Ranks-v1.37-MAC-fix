@@ -4,7 +4,7 @@
 owner = KIR
 controller = KIR
 add_core = KIR
-culture = ruthenian
+culture = polesian
 religion = slavic_pagan_reformed
 capital = "Ratne"
 base_tax = 2

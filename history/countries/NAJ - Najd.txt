@@ -1,5 +1,6 @@
 government = tribal
-add_government_reform = tribal_federation
+add_government_reform = islamic_sultanate_reform
+government_rank = 6 #Sultanate
 technology_group = muslim
 primary_culture = bedouin_arabic
 religion = sunni
@@ -475,7 +476,8 @@ religious_school = hanbali_school
 		mil = 2
 	}
 	government = monarchy
-add_government_reform = iqta
+	add_government_reform = islamic_malikate_reform
+	government_rank = 8 #Malikate
 }
 
 1725.6.12 = {

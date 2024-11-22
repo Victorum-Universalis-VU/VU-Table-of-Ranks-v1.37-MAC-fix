@@ -1,7 +1,7 @@
 #RT1 - Rutland
 government = monarchy
-add_government_reform = english_lordship_reform #Earldom
-government_rank = 1
+add_government_reform = eng_earldom_reform
+government_rank = 4 #Earldom
 #technology_group = western
 technology_group = english_tech_group
 unit_type = western

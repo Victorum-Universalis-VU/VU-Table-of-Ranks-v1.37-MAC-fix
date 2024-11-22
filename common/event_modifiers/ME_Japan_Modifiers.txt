@@ -89,7 +89,7 @@ jap_togen_daikon = {
 	republican_tradition = 0.5
 	meritocracy = 0.75
 	army_tradition = 0.5
-	governing_capacity = 150
+	governing_capacity = 1500
 }
 jap_indochinese_red_seal_ship = {
 	trade_efficiency = 0.10

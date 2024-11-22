@@ -628,9 +628,9 @@ country_event = { # After the Greek Revolution
 		remove_non_electors_emperors_from_empire_effect = yes
 		if = {
 			limit = {
-				NOT = { government_rank = 2 }
+				NOT = { government_rank = 8 }
 			}
-			set_government_rank = 2
+			set_government_rank = 8
 		}
 		random_owned_province = {
 			limit = { culture = greek }
@@ -968,9 +968,9 @@ country_event = { # The Self-Crowning of The King of Jerusalem
 			}
 			if = {
 				limit = {
-					NOT = { government_rank = 2 }
+					NOT = { government_rank = 8 }
 				}
-				set_government_rank = 2
+				set_government_rank = 8
 			}
 			set_country_flag = formed_jerusalem
 		}
@@ -1047,9 +1047,9 @@ country_event = { # The Self-Crowning of The King of Jerusalem
 			}
 			if = {
 				limit = {
-					NOT = { government_rank = 2 }
+					NOT = { government_rank = 8 }
 				}
-				set_government_rank = 2
+				set_government_rank = 8
 			}
 			set_country_flag = formed_jerusalem
 		}
@@ -1317,9 +1317,9 @@ country_event = { # Coronation Day for Cyprus 22
 			}
 			if = {
 				limit = {
-					NOT = { government_rank = 2 }
+					NOT = { government_rank = 8 }
 				}
-				set_government_rank = 2
+				set_government_rank = 8
 			}
 			set_country_flag = formed_jerusalem
 		}
@@ -1417,9 +1417,9 @@ country_event = { # Coronation Day for Cyprus 22
 			}
 			if = {
 				limit = {
-					NOT = { government_rank = 2 }
+					NOT = { government_rank = 8 }
 				}
-				set_government_rank = 2
+				set_government_rank = 8
 			}
 			set_country_flag = formed_jerusalem
 		}

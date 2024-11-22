@@ -118,7 +118,7 @@
 128 = "Baja Carintia"
 4759 = "Alta Carintia"
 129 = "Carniola"
-132 = "Estiria"
+132 = { "Judenburg" "Judenburg" }
 134 = "Viena"
 165 = "Berna"
 166 = "Waldstätten"
@@ -182,6 +182,7 @@
 2662 = "Comayagua"
 2667 = "Laredo"
 2668 = "Rio Bravo"
+8904 = { "Lazaro Cardenas" "Lazaro Cardenas" }
 
 
 #USA

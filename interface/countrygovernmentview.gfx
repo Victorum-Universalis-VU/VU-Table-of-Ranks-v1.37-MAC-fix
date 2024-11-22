@@ -28,7 +28,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_government_upgrade_strip"
 		texturefile = "gfx/interface/government_upgrade_strip.dds"
-		noOfFrames = 3
+		noOfFrames = 9
 	}
 
 	spriteType = {
@@ -159,6 +159,125 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_court_union"
 		texturefile = "gfx//interface//icon_diplomacy_inunion.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_court_aragonese_union"
+		texturefile = "gfx//interface//icon_aragonese_diplomacy_inunion.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_court_austrian_union"
+		texturefile = "gfx//interface//icon_austrian_diplomacy_inunion.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_court_benelux_union"
+		texturefile = "gfx//interface//icon_benelux_diplomacy_inunion.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_court_bohemian_union"
+		texturefile = "gfx//interface//icon_bohemian_diplomacy_inunion.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_court_burgundian_union"
+		texturefile = "gfx//interface//icon_burgundian_diplomacy_inunion.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_court_byzantine_union"
+		texturefile = "gfx//interface//icon_byzantine_diplomacy_inunion.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_court_danish_union"
+		texturefile = "gfx//interface//icon_danish_diplomacy_inunion.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_court_english_union"
+		texturefile = "gfx//interface//icon_english_diplomacy_inunion.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_court_french_union"
+		texturefile = "gfx//interface//icon_french_diplomacy_inunion.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_court_german_union"
+		texturefile = "gfx//interface//icon_german_diplomacy_inunion.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_court_hungarian_union"
+		texturefile = "gfx//interface//icon_hungarian_diplomacy_inunion.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_court_italian_union"
+		texturefile = "gfx//interface//icon_italian_diplomacy_inunion.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_court_polish_union"
+		texturefile = "gfx//interface//icon_polish_diplomacy_inunion.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_court_portuguese_union"
+		texturefile = "gfx//interface//icon_portuguese_diplomacy_inunion.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_court_russian_union"
+		texturefile = "gfx//interface//icon_russian_diplomacy_inunion.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_court_spanish_union"
+		texturefile = "gfx//interface//icon_spanish_diplomacy_inunion.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_court_swedish_union"
+		texturefile = "gfx//interface//icon_swedish_diplomacy_inunion.dds"
 		loadType = "INGAME"
 		transparencecheck = yes
 	}

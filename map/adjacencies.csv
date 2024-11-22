@@ -1,5 +1,10 @@
 #So there are two ways of connecting this. First is to use coordinates ;start_x;start_y;stop_x;stop_y; which can be gathered by opening bmp map and then refering to how Rob has explained it in the server map room or to do it the automatic way by simply entering -1;-1;-1;-1; which will automatically connect two provinces. 
 From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
+8804;8867;sea;8798;-1;-1;-1;-1;Independence-Gladstone
+898;8867;sea;8798;-1;-1;-1;-1;Kansas City-Gladstone
+900;8865;sea;8798;-1;-1;-1;-1;St.Louis-St.Charles
+8856;8859;sea;7412;-1;-1;-1;-1;Kentucky-Tennessee
+8832;8815;sea;8799;-1;-1;-1;-1;Ohio-Kentucky
 7127;7129;sea;1319;-1;-1;-1;-1;Kavala-Iskece
 4705;7134;sea;3347;-1;-1;-1;-1;Dedeagac-Ainos
 7130;149;sea;3347;-1;-1;-1;-1;Dimetoka-Edirne
@@ -52,8 +57,8 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 2499;2668;sea;6077;-1;-1;-1;-1;Rio Grande-Borrado
 988;944;sea;7342;-1;-1;-1;-1;Simcoe-Detroit
 2584;993;sea;6037;-1;-1;-1;-1;Osheaga-Weskarini
-5060;993;sea;7340;-1;-1;-1;-1;Ktineketolekwac-Weskarini
-994;2583;sea;7340;-1;-1;-1;-1;Quebec-Shawenigane
+8905;993;sea;7340;-1;-1;-1;-1;Ktineketolekwac-Weskarini
+994;8906;sea;7340;-1;-1;-1;-1;Quebec-Shawenigane
 961;989;sea;7340;-1;-1;-1;-1;Fort Stanwix-Cataraqui
 8434;4111;sea;1275;-1;-1;-1;-1;Saint Georges d'Oleron-Aunis
 8434;8435;sea;1275;-1;-1;-1;-1;Saint Georges d'Oleron-Royan
@@ -226,10 +231,10 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 5236;5238;sea;1432;-1;-1;-1;-1;New Georgia-Vangunu
 3851;3837;sea;7352;-1;-1;-1;-1;South Barkindji - North Barkindji
 3779;4868;sea;1414;-1;-1;-1;-1;Wybalenna - Pyemmairrener
-1001;5039;sea;1661;-1;-1;-1;-1;Soto-Manidoowaaling
+1001;4972;sea;1661;-1;-1;-1;-1;Soto-Manidoowaaling
 911;1001;sea;1663;-1;-1;-1;-1;Menominee-Sault
-911;5039;sea;1661;-1;-1;-1;-1;Belem-Manidoowaaling
-4973;5039;sea;1661;-1;-1;-1;-1;Waanabidebiing-Manidoowaaling
+911;4972;sea;1661;-1;-1;-1;-1;Belem-Manidoowaaling
+4973;4972;sea;1661;-1;-1;-1;-1;Waanabidebiing-Manidoowaaling
 2576;2578;sea;1490;-1;-1;-1;-1;Mingan-Anticosti
 985;983;sea;1491;-1;-1;-1;-1;Mikmaq-Epekwitk
 366;5096;sea;1471;-1;-1;-1;-1;The Canarias-Tenerife
@@ -264,7 +269,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 5731;5732;sea;1559;-1;-1;-1;-1;Heiltsuk-Wuikinuxv
 2609;5866;sea;1559;-1;-1;-1;-1;Tsmsyan-Kichxaan
 2021;5030;sea;1556;-1;-1;-1;-1;Miwok-Ohlone
-5030;5814;sea;1556;-1;-1;-1;-1;Ohlone-Ohloneii
+5030;8842;sea;1556;-1;-1;-1;-1;Ohlone-Ohloneii
 4698;7125;sea;8358;-1;-1;-1;-1;Cephalonia-Lefkada
 4698;7126;sea;8358;-1;-1;-1;-1;Cephalonia-Zakynthos
 3178;7112;sea;1312;-1;-1;-1;-1;Patras-Naupaktos
@@ -344,14 +349,14 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 7185;7189;sea;4357;-1;-1;-1;-1;Agutuya-Cuyo-Calamian
 2699;8294;sea;1397;-1;-1;-1;-1;Bikol-Lawan
 654;4353;sea;1397;-1;-1;-1;-1;Samar-Leyte
-4352;8713;sea;1397;-1;-1;-1;-1;Cebu-Leyte
+3532;3533;sea;1397;-1;-1;-1;-1;Central_Sugbu-Bohol
 4354;8720;sea;1398;-1;-1;-1;-1;Zamboanga-Taguima
 8721;651;sea;1398;-1;-1;-1;-1;Tawi Tawi-Sulu
 651;8720;sea;1398;-1;-1;-1;-1;Sulu-Taguima
 2686;8649;sea;1361;-1;-1;-1;-1;Bintan-Singapura
 4815;8649;sea;1361;-1;-1;-1;-1;Johor-Singapura
-8297;8714;sea;1397;-1;-1;-1;-1;Dagit-Subanen
-4352;4353;sea;1397;-1;-1;-1;-1;Cebu-Leyte
+3546;3547;sea;1397;-1;-1;-1;-1;Tanjay-Dumanhug
+3532;4353;sea;1397;-1;-1;-1;-1;Central_Sugbu-Leyte
 2699;8716;sea;1397;-1;-1;-1;-1;Bikol-Masbate
 8267;7161;sea;1393;-1;-1;-1;-1;Babuyan-Batanes
 8267;658;sea;1393;-1;-1;-1;-1;Babuyan-Cagayan
@@ -362,9 +367,9 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 8290;8712;sea;1397;-1;-1;-1;-1;Pinamalayan-Romblon
 8712;8292;sea;1397;-1;-1;-1;-1;Romblon-Aklan
 2700;8716;sea;1397;-1;-1;-1;-1;Panay-Masbate
-2700;7184;sea;1397;-1;-1;-1;-1;Panay-Guimaras
-7184;4351;sea;1397;-1;-1;-1;-1;Guimaras-Buglas
-8297;4352;sea;1397;-1;-1;-1;-1;Dagit-Cebu
+3542;7184;sea;1397;-1;-1;-1;-1;Iron_Irong-Guimaras
+7184;3544;sea;1397;-1;-1;-1;-1;Guimaras-Bago
+8297;3532;sea;1397;-1;-1;-1;-1;Dagit-Central_Sugbu
 7182;8297;sea;1397;-1;-1;-1;-1;Siquijor-Dagit
 7181;7167;sea;1397;-1;-1;-1;-1;Camiguin-Himologan
 8296;8298;sea;1402;-1;-1;-1;-1;Mairete-Dinagat
@@ -390,7 +395,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 1881;5586;sea;1523;-1;-1;-1;-1;Anguilla-St Martin
 5584;493;sea;6087;-1;-1;-1;-1;St Croix-St Thomas
 492;5584;sea;6086;-1;-1;-1;-1;Puerto Rico-St Croix
-5920;965;sea;7356;-1;-1;-1;-1;Long Island-Manhattan
+8825;965;sea;7356;-1;-1;-1;-1;Brooklyn-Manhattan
 5921;2639;sea;5929;-1;-1;-1;-1;Statten Island-Raritan
 6006;6003;sea;1505;-1;-1;-1;-1;Florida Keys-Sowena
 6011;6012;sea;1502;-1;-1;-1;-1;Grand Bahama-Great Abaco
@@ -422,12 +427,12 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 6565;6559;sea;5301;-1;-1;-1;-1;Abu Minqar-Mut
 6559;1233;sea;5301;-1;-1;-1;-1;Mut-Kharga
 893;5993;sea;7336;-1;-1;-1;-1;Chitimacha-Huoma
-2529;4885;sea;7337;-1;-1;-1;-1;Natchez-Avoyel
-919;4923;sea;7337;-1;-1;-1;-1;Chickasha-Pacaha
+8858;4885;sea;7337;-1;-1;-1;-1;Natchez-Avoyel
+8856;918;sea;7337;-1;-1;-1;-1;Chickasha-Pacaha
 917;900;sea;7413;-1;-1;-1;-1;Cahokia-Tamaroa
 5924;963;sea;5926;-1;-1;-1;-1;U-puku-ipi-sing-Machkantowoon
 4872;987;sea;7341;-1;-1;-1;-1;Wenrohonon-Onguiaarhra
-965;5922;sea;7339;-1;-1;-1;-1;Manahattan-Pomperaug
+965;8909;sea;7339;-1;-1;-1;-1;Manahattan-Pomperaug
 5984;2010;sea;5985;-1;-1;-1;-1;Nowashe-Saukiog
 5976;5977;sea;6022;-1;-1;-1;-1;Shawhomett-Aquidnett
 5937;956;sea;5930;-1;-1;-1;-1;Unalachtigo-Sakimauchheening
@@ -640,8 +645,21 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 8404;6129;sea;3604;-1;-1;-1;-1;Chagai-Zahedan
 8115;5831;sea;3584;-1;-1;-1;-1;Reus-Tortosa
 44;53;sea;3586;-1;-1;-1;-1;Harmburg-Luneburg
-4786;2964;sea;3586;-1;-1;-1;-1;Prignitz-Altmark
 8266;2969;sea;3587;-1;-1;-1;-1;Lebus-Sternberg
 4523;1859;sea;7311;-1;-1;-1;-1;Inowclaw-Kulm
 5375;4779;sea;1319;-1;-1;-1;-1;Imbros-Gelibolu
+7120;7127;sea;1319;-1;-1;-1;-1;Halkidiki-Kavala
+940;8834;sea;8799;-1;-1;-1;-1;Louisville-Ohio
+903;4900;sea;8798;-1;-1;-1;-1;Omaha-Iowa
+900;4904;sea;7412;-1;-1;-1;-1;St.Louis-Springfield
+4905;4903;sea;7413;-1;-1;-1;-1;Cedar Rapids-Rock Island
+2512;5621;sea;8797;-1;-1;-1;-1;St.Paul-Minneapolis
+8800;2517;sea;8797;-1;-1;-1;-1;St.Cloud-Cambridge
+873;5749;sea;7354;-1;-1;-1;-1;Oregon-Washington
+5805;5755;sea;7354;-1;-1;-1;-1;Portland-Washington
+5039;4972;sea;6071;-1;-1;-1;-1;Huron-Manitoulin
+8842;4638;sea;1556;-1;-1;-1;-1;Wint'uh-Huichin
+2957;8536;sea;8355;-1;-1;-1;-1;Regensburg-Lappersdorf
+3531;7319;sea;8355;-1;-1;-1;-1;Rothschwaige-Dachau
+3528;2964;sea;8795;-1;-1;-1;-1;Bismark-Altmark
 -1;-1;;-1;-1;-1;-1;-1;-1;

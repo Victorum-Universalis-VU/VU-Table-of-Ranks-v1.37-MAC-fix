@@ -1,4 +1,4 @@
-#VU updated by San Felipe for 1.35
+#Updated to v1.37 - SF
 # Alcheringa events for the countries, which don't have access to the missions for unlocking the stories
 namespace = alcheringa_events
 
@@ -95,6 +95,10 @@ country_event = {
 			type = all
 			country_or_non_sovereign_subject_holds = ROOT
 		}
+		#makassar_area = {
+		#	type = all
+		#	country_or_non_sovereign_subject_holds = ROOT
+		#}
 	}
 
 	immediate = {
@@ -244,10 +248,8 @@ country_event = {
 				AND = {
 					religion_group = eastern
 					NOT = {
-						OR = {
-							religion = shinto
-							religion = confucianism
-						}
+						religion = shinto
+						religion = confucianism
 					}
 				}
 			}

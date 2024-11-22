@@ -583,7 +583,10 @@ ilkhanate_missions_2 = {
 								OR = {
 									NOT = { is_neighbor_of = MNG }
 									NOT = { total_development = 300 }
-									NOT = { has_reform = steppe_horde }
+									NOT = { 
+										has_reform = steppe_horde
+										has_reform = scythian_horde_reform
+									}
 								}
 							}
 						}
@@ -1629,9 +1632,9 @@ ilkhanate_missions_5 = {
 		effect = {
 			if = {
 				limit = {
-					NOT = { government_rank = 3 }
+					NOT = { government_rank = 9 }
 				}
-				set_government_rank = 3
+				set_government_rank = 9
 			}
 			crimea_region = {
 				limit = {

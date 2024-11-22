@@ -56,42 +56,23 @@ spriteTypes = {
 		effectFile = "gfx/FX/progress.lua"
 	}
 
-	### 22 Conquest Frenzy ###
-	spriteType = {
-		name = "GFX_conquest_frenzy_appeasement"
-		texturefile = "gfx//interface//government_mechanics//conquest_frenzy//conquest_frenzy_appeasement.dds"
-		loadType = "INGAME"
-		transparencecheck = yes
-	}
-	spriteType = {
-		name = "GFX_conquest_frenzy_peaceful"
-		texturefile = "gfx//interface//government_mechanics//conquest_frenzy//conquest_frenzy_peaceful.dds"
-		loadType = "INGAME"
-		transparencecheck = yes
-	}
-	spriteType = {
-		name = "GFX_conquest_frenzy_war"
-		texturefile = "gfx//interface//government_mechanics//conquest_frenzy//conquest_frenzy_war.dds"
-		loadType = "INGAME"
-		transparencecheck = yes
-	}
-	
-	spriteType = {
-		name = "GFX_caliphal_fatwa_button"
-		texturefile = "gfx//interface//government_mechanics//caliphal_legitimacy//caliphal_fatwa_button.dds"
-		loadType = "INGAME"
-		transparencecheck = yes
-	}
-	spriteType = {
-		name = "GFX_caliphal_call_to_arms_button"
-		texturefile = "gfx//interface//government_mechanics//caliphal_legitimacy//caliphal_call_to_arms_button.dds"
-		loadType = "INGAME"
-		transparencecheck = yes
-	}
-	spriteType = {
-		name = "GFX_caliphal_proclaim_divince_guidance_button"
-		texturefile = "gfx//interface//government_mechanics//caliphal_legitimacy//caliphal_proclaim_divince_guidance_button.dds"
-		loadType = "INGAME"
-		transparencecheck = yes
-	}
+	### 22 Conquest Frenzy ### Removed in VU for v1.37 by SF
+	#spriteType = {
+	#	name = "GFX_conquest_frenzy_appeasement"
+	#	texturefile = "gfx//interface//government_mechanics//conquest_frenzy//conquest_frenzy_appeasement.dds"
+	#	loadType = "INGAME"
+	#	transparencecheck = yes
+	#}
+	#spriteType = {
+	#	name = "GFX_conquest_frenzy_peaceful"
+	#	texturefile = "gfx//interface//government_mechanics//conquest_frenzy//conquest_frenzy_peaceful.dds"
+	#	loadType = "INGAME"
+	#	transparencecheck = yes
+	#}
+	#spriteType = {
+	#	name = "GFX_conquest_frenzy_war"
+	#	texturefile = "gfx//interface//government_mechanics//conquest_frenzy//conquest_frenzy_war.dds"
+	#	loadType = "INGAME"
+	#	transparencecheck = yes
+	#}
 }

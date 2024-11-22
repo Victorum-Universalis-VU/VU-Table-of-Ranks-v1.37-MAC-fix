@@ -23,20 +23,19 @@ add_core = POL
 
 #Known by Technology groups
 
+#Histories by DonBrom & SF
+1300.1.1 = {
+	culture = saxon #Added by SF in VU v1.37 on advice of Don Brom since according to his sources, Polabian Slavs had already been fully assimilated by the Germans.
+}
 
-
-
-
-
-#Histories by docRobert & SF
 1444.1.11 = {
-	culture = saxon
 	owner = BRA
 	controller = BRA
 	remove_core = SIL
 	remove_core = POL
 	add_core = BRA
 }
+
 1539.1.1 = { religion = protestant }
 1594.1.1 = { fort_15th = no fort_16th = yes }
 1650.1.1 = { culture = prussian }

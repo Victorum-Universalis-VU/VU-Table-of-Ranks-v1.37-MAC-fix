@@ -6,7 +6,7 @@ latent_trade_goods = {
 
 owner = UES
 controller = UES
-culture = togoku
+culture = hokuriku 
 religion = shinto
 capital = "Naoetsu"
 trade_goods = rice

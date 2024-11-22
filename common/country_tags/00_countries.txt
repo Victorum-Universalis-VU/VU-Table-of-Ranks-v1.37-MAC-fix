@@ -71,7 +71,7 @@ TRY = "countries/Tyrconnell.txt"
 FLY = "countries/Faly.txt"
 MCM = "countries/MacCarthy.txt" #Kingdom of Desmond
 KOI = "countries/Mann.txt"
-LOI = "countries/TheIsles.txt"                #VU - Still in the game but turned off at the start of 1444 on Actually Prussia's suggestion. By San Felipe
+LOI = "countries/TheIsles.txt"
 EIC	= "countries/EastIndiaCompany.txt"
 
 #Colonies
@@ -194,10 +194,13 @@ VER = "countries/Verden.txt"
 NSA = "countries/Nassau.txt"
 RVA = "countries/Ravensburg.txt"
 DTT = "countries/Dithmarschen.txt"
+AUH = "countries/Austriahungary.txt"
+GMA = "countries/Greatmoravia.txt"
 	
 #Spain
 ARA	= "countries/Aragon.txt"
 CAS	= "countries/Castille.txt"
+CAT	= "countries/Catalunya.txt"
 GRA	= "countries/Granada.txt"
 NAV	= "countries/Navarra.txt"
 POR	= "countries/Portugal.txt"
@@ -245,6 +248,7 @@ LIE	= "countries/Liege.txt"
 LUX	= "countries/Luxembourg.txt"
 NED	= "countries/Netherlands.txt"
 UTR	= "countries/Utrecht.txt"
+VOC = "countries/VOC.txt"
 
 #Russia 
 ARM	= "countries/Armenia.txt"
@@ -301,11 +305,11 @@ SHR	= "countries/Sharjah.txt"
 SRV = "countries/Shirvanshah.txt"
 YAS = "countries/Yas.txt"
 YEM = "countries/Yemen.txt"
-HSN = "countries/Ayyubids.txt"
+HSN = "countries/Hisn Kayfa.txt"
 BTL = "countries/Bitlis.txt"
 
 #Asia Minor		
-AKK	= "countries/AkKoyunlu.txt"
+AKK	= "countries/Ak Koyunlu.txt"
 AYD	= "countries/Aydin.txt"
 CND	= "countries/Candar.txt"
 DUL	= "countries/Dulkadir.txt"
@@ -321,6 +325,7 @@ MLK = "countries/Kashen.txt"
 SME = "countries/Samtskhe.txt"
 ARL = "countries/Ardabil.txt"
 MSY = "countries/Mushashaiyyah.txt"
+RUM = "countries/Rum.txt"
 	
 #Maghreb
 ALG	= "countries/Algiers.txt"
@@ -411,7 +416,6 @@ MLI = "countries/Malindi.txt"
 AJU = "countries/Ajuuraan.txt"
 MDI = "countries/Mogadishu.txt"
 ENA = "countries/Eneara.txt"
-#NEW ORIGINS 1.32 Tags
 WGD = "countries/Wagadugu.txt"
 ZND = "countries/Zandoma.txt"
 GUR = "countries/Gurma.txt"
@@ -1096,10 +1100,5 @@ ISR = "countries/Israel.txt"
 #Converter tags:
 #JOM = countries/Jomsvikings.txt
 #HAH = countries/Hashshashin.txt
-#ISR = countries/Israel.txt
 #TEM = countries/KnightsTemplar.txt
 #TRL = countries/Trapalanda.txt
-
-#VU Removed Tags in 1.35
-RUM = "countries/Rum.txt"
-CAT	= "countries/Catalunya.txt"

@@ -1,7 +1,7 @@
 #CM1 - Cameron
 government = monarchy
-add_government_reform = highland_clan_reform #Was scottish_monarchy
-government_rank = 1
+add_government_reform = highland_clan_reform
+government_rank = 1 #Clan
 primary_culture = highland_scottish
 add_accepted_culture = scottish
 add_accepted_culture = gallgaidheil

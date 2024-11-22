@@ -282,7 +282,7 @@ puppet_state = {
 	can_transfer_in_peace = no
 	extend_trading_range = yes
 
-	max_government_rank = 1
+	max_government_rank = 6
 	cities_required_for_bonuses = 0 #0
 	trust_on_start = 35
 
@@ -363,13 +363,7 @@ roman_client_kingdom = {
 				is_playing_custom_nation = yes
 				primary_culture = roman
 			}
-			#VU - Hashed this out as it has nothing to do with our mod. By San Felipe
-			#AND = {
-			#	has_global_flag = extended_timeline_mod
-			#	#tag = ROW
-			#}
 		}
-		#NOT = { has_reform = salic_reform }
 	}
 
 	# Properties:
@@ -380,7 +374,7 @@ roman_client_kingdom = {
 	allows_taking_land_without_independence = no
 	extend_trading_range = yes
 
-	max_government_rank = 2
+	max_government_rank = 8
 
 	base_liberty_desire = -10.0
 	liberty_desire_development_ratio = 0.25
@@ -482,7 +476,7 @@ voivodeship = {
 	can_transfer_in_peace = no
 	extend_trading_range = yes
 
-	max_government_rank = 1
+	max_government_rank = 6
 	cities_required_for_bonuses = 0 #0
 	trust_on_start = 35
 
@@ -492,7 +486,7 @@ voivodeship = {
 	forcelimit_to_overlord = 0.33
 	military_focus = 1.5
 
-	relative_power_class = 2
+	relative_power_class = 1 #VU update on Prussia's suggestions for potential future changes. By SF
 	diplomacy_view_class = 1
 
 	restoration_cb = cb_disloyal_vassal
@@ -546,14 +540,13 @@ fief_subject = {
 		OR = {
 			has_reform = feudalism_reform
 			# Governments Expanded reforms
-			#has_reform = french_feudalism
 			has_reform = ancien_regime_reform
 			has_reform = arch_monarchy_reform
 			has_reform = grand_duchy_reform
 			has_reform = lithuania_warlord_duke
 			has_reform = beylik_government
-			has_reform = kingdom_of_castille_and_leon
-			has_reform = crown_of_castille
+			has_reform = kingdom_of_castile_and_leon
+			has_reform = crown_of_castile
 			has_reform = hispanic_kingdom
 			has_reform = crown_of_aragon
 			has_reform = portuguese_monarchy_reform
@@ -561,13 +554,11 @@ fief_subject = {
 			has_reform = crown_of_saint_wenceslaus
 			has_reform = office_of_lord_regent_reform
 			has_reform = arch_king_reform
+			has_reform = austrian_duchy_reform
 			has_reform = austrian_archduchy_reform
-			has_reform = habsburg_monarchy_reform
-			has_reform = austrian_empire_reform
+			has_reform = austrian_dual_monarchy
+			has_reform = austrian_absolute_monarchy
 			has_reform = granadan_iqta_reform
-			# Extended Timeline reforms
-			#has_reform = salic_reform
-			#has_reform = imperial_march_reform
 		}
 	}
 
@@ -583,7 +574,7 @@ fief_subject = {
 	gets_help_with_rebels = yes
 	extend_trading_range = yes
 
-	max_government_rank = 1
+	max_government_rank = 6
 	cities_required_for_bonuses = 0 #0
 	trust_on_start = 50
 
@@ -695,7 +686,7 @@ crusader_state_vassal = {
 	extend_trading_range = yes
 	overlord_can_be_subject = yes
 
-	max_government_rank = 2
+	max_government_rank = 8
 	cities_required_for_bonuses = 0 #0
 	trust_on_start = 50
 
@@ -760,26 +751,6 @@ crusader_state_vassal = {
 	subject_opinion_modifier = is_crusader_state_vassal
 }
 
-#salic_personal_union = {
-#	copy_from = personal_union
-#	count = personal_union
-#
-#	# Graphics:
-#	sprite = GFX_court_union
-#	diplomacy_overlord_sprite = GFX_diplomacy_leadunions
-#	diplomacy_subject_sprite = GFX_diplomacy_inunion
-#
-#	# Triggers:
-#	is_potential_overlord = {
-#		is_subject = no
-#		#has_reform = salic_reform
-#	}
-#
-#	# Properties:
-#	can_be_integrated = no
-#	can_be_annexed = yes
-#}
-
 nahuatl_vassal = {
 	copy_from = vassal
 	count = vassal
@@ -800,7 +771,7 @@ nahuatl_vassal = {
 	takes_diplo_slot = no
 	overlord_can_be_subject = yes
 
-	max_government_rank = 1
+	max_government_rank = 6
 
 	base_liberty_desire = -10.0
 
@@ -871,7 +842,7 @@ peasant_vassal = {
 	can_concentrate_development = no
 	can_have_great_projects_moved_by_overlord = no
 
-	max_government_rank = 1
+	max_government_rank = 6
 
 	base_liberty_desire = 0.0
 	liberty_desire_negative_prestige = 1.0
@@ -1073,7 +1044,7 @@ imperial_tributary_state = {
 			tag = ROM
 			AND = {
 				OR = {
-					government_rank = 3
+					government_rank = 9
 					AND = {
 						NOT = { has_dlc = "Common Sense" }
 						total_development = 1000
@@ -1103,7 +1074,7 @@ imperial_tributary_state = {
 	can_concentrate_development = no
 	can_have_great_projects_moved_by_overlord = no
 
-	max_government_rank = 2
+	max_government_rank = 8
 
 	liberty_desire_negative_prestige = 0.5
 	liberty_desire_development_ratio = 0.175
@@ -1293,7 +1264,7 @@ muslim_tributary_vassal = {
 		is_subject = no
 		religion_group = muslim
 		OR = {
-			government_rank = 2
+			government_rank = 8
 			AND = {
 				NOT = { has_dlc = "Common Sense" }
 				total_development = 300
@@ -1320,7 +1291,7 @@ muslim_tributary_vassal = {
 	can_send_missionary_to_subject = no
 	overlord_can_fabricate_for = no
 
-	max_government_rank = 2
+	max_government_rank = 8
 	cities_required_for_bonuses = 0 #0
 	trust_on_start = 0
 
@@ -1627,7 +1598,7 @@ integrated_tribe_subject = {
 	can_set_mil_focus = no
 	extend_trading_range = yes
 
-	max_government_rank = 1
+	max_government_rank = 6
 
 	base_liberty_desire = -5.0
 	liberty_desire_development_ratio = 0.25
@@ -2013,7 +1984,7 @@ persian_satrapy = {
 	transfer_subjects_when_made = yes
 	extend_trading_range = yes
 
-	max_government_rank = 1
+	max_government_rank = 6
 
 	base_liberty_desire = -20.0
 	liberty_desire_negative_prestige = 0.05
@@ -2385,7 +2356,7 @@ brother_kingdom = {
 	can_have_great_projects_moved_by_overlord = no
 	extend_trading_range = yes
 
-	max_government_rank = 2
+	max_government_rank = 8
 
 	liberty_desire_negative_prestige = 0.5
 	forcelimit_to_overlord = 0.1
@@ -2476,19 +2447,19 @@ iqta_vassal = {
 		religion_group = muslim
 		OR = {
 			is_defender_of_faith = yes
-			government_rank = 3
+			government_rank = 9
 			AND = {
 				NOT = { has_dlc = "Common Sense" }
 				total_development = 1000
 			}
 			# Missions Expanded reforms
 			has_reform = caliphate_theocracy_reform
-			has_reform = ME_caliphate_reform_sunni
+			has_reform = caliphate_reform
 			has_reform = ME_caliphate_reform_sunni_andalusia
 			has_reform = ME_caliphate_reform_sunni_arabian
 			AND = {
 				OR = {
-					government_rank = 2
+					government_rank = 8
 					AND = {
 						NOT = { has_dlc = "Common Sense" }
 						total_development = 300
@@ -2521,7 +2492,7 @@ iqta_vassal = {
 	pays_overlord = 0.25
 	extend_trading_range = yes
 
-	max_government_rank = 1
+	max_government_rank = 6
 
 	liberty_desire_development_ratio = 0.2
 	liberty_desire_same_dynasty = -5.0
@@ -2987,7 +2958,7 @@ pagan_chiefdom = {
 	gets_help_with_rebels = yes
 	extend_trading_range = yes
 
-	max_government_rank = 1
+	max_government_rank = 6
 
 	base_liberty_desire = -5.0
 	liberty_desire_negative_prestige = 0.1
@@ -3153,7 +3124,7 @@ native_reserve = {
 	overlord_can_fabricate_for = no
 	extend_trading_range = yes
 
-	max_government_rank = 1
+	max_government_rank = 6
 
 	liberty_desire_development_ratio = 0.125
 	military_focus = 0.0
@@ -3310,7 +3281,7 @@ administrative_region = {
 	can_set_mil_focus = no
 	extend_trading_range = yes
 
-	max_government_rank = 1
+	max_government_rank = 6
 
 	liberty_desire_development_ratio = 0.125
 	liberty_desire_same_dynasty = -5.0
@@ -3523,7 +3494,7 @@ viking_settlement = {
 
 	liberty_desire_development_ratio = 0.075
 
-	max_government_rank = 1
+	max_government_rank = 6
 	cities_required_for_bonuses = 0 #10
 
 	naval_forcelimit_to_overlord = 0.25
@@ -3616,6 +3587,10 @@ banking_family_subject = {
 			government = republic
 			# Monarchy
 			has_reform = plutocratic_reform
+			has_reform = huangdom_reform
+			has_reform = rahanate_reform
+			has_reform = datunate_reform
+			has_reform = lakanate_reform
 			has_reform = enforce_trader_privileges_reform
 			has_reform = bengali_reform
 			has_reform = meritocratic_focus_reform
@@ -3647,7 +3622,7 @@ banking_family_subject = {
 	can_have_great_projects_moved_by_overlord = no
 	extend_trading_range = yes
 
-	max_government_rank = 1
+	max_government_rank = 6
 	cities_required_for_bonuses = 0
 	trust_on_start = 35
 
@@ -3769,7 +3744,7 @@ palatinate_vassal = {
 	}
 
 	# Properties:
-	max_government_rank = 2
+	max_government_rank = 8
 
 	pays_overlord = 0
 
@@ -4118,7 +4093,7 @@ stato_da_mar_vassal = {
 	gets_help_with_rebels = yes
 	extend_trading_range = yes
 
-	max_government_rank = 1
+	max_government_rank = 6
 	cities_required_for_bonuses = 0
 	trust_on_start = 35
 
@@ -4242,7 +4217,7 @@ medieval_vassal = {
 	is_potential_overlord = {
 		is_subject = no
 		OR = {
-			government_rank = 2
+			government_rank = 8
 			AND = {
 				NOT = { has_dlc = "Common Sense" }
 				total_development = 300
@@ -4285,14 +4260,13 @@ medieval_vassal = {
 					has_reform = feudalism_reform
 					has_reform = feudal_theocracy
 					# Governments Expanded reforms
-					#has_reform = french_feudalism
 					has_reform = ancien_regime_reform
 					has_reform = arch_monarchy_reform
 					has_reform = grand_duchy_reform
 					has_reform = lithuania_warlord_duke
 					has_reform = beylik_government
-					has_reform = kingdom_of_castille_and_leon
-					has_reform = crown_of_castille
+					has_reform = kingdom_of_castile_and_leon
+					has_reform = crown_of_castile
 					has_reform = hispanic_kingdom
 					has_reform = crown_of_aragon
 					has_reform = portuguese_monarchy_reform
@@ -4300,13 +4274,11 @@ medieval_vassal = {
 					has_reform = crown_of_saint_wenceslaus
 					has_reform = office_of_lord_regent_reform
 					has_reform = arch_king_reform
+					has_reform = austrian_duchy_reform
 					has_reform = austrian_archduchy_reform
-					has_reform = habsburg_monarchy_reform
-					has_reform = austrian_empire_reform
+					has_reform = austrian_dual_monarchy
+					has_reform = austrian_absolute_monarchy
 					has_reform = granadan_iqta_reform
-					# Extended Timeline reforms
-					#has_reform = salic_reform
-					#has_reform = imperial_march_reform
 					# Custom Rule
 					#has_government_attribute = can_create_medieval_vassal_rule
 				}
@@ -4335,7 +4307,7 @@ medieval_vassal = {
 	should_quit_wars_on_activation = no
 	transfer_subjects_when_made = yes
 
-	max_government_rank = 1
+	max_government_rank = 6
 	cities_required_for_bonuses = 0
 	trust_on_start = 35
 
@@ -4420,75 +4392,4 @@ medieval_vassal = {
 
 	overlord_opinion_modifier = is_medieval_vassal
 	subject_opinion_modifier = is_medieval_vassal
-}
-
-#VU
-canton = {
-	copy_from = default
-	
-	# Graphics:
-	sprite = GFX_icon_canton
-	diplomacy_overlord_sprite = GFX_diplomacy_leadcanton
-	diplomacy_subject_sprite = GFX_diplomacy_amcanton
-	
-	# Triggers:
-	is_potential_overlord = { has_country_flag = can_make_canton } 			# This part is not copied in copy_from. Actual default is equivalent to always = yes
-	
-	# Properties:
-	can_fight_independence_war = yes
-	joins_overlords_wars = yes
-	overlord_can_be_subject = yes 
-	can_be_annexed = yes 
-	takes_diplo_slot = no
-	can_release_in_peace = yes
-	counts_for_borders = yes
-	overlord_enforce_peace_attacking = yes
-	can_use_claims = yes	
-	share_rebel_popup = yes	
-	can_set_mil_focus = yes
-	can_send_missionary_to_subject = yes	
-	overlord_can_fabricate_for = yes
-	max_government_rank = 1
-	
-	base_liberty_desire = 0.0
-	liberty_desire_negative_prestige = 0.0
-	liberty_desire_development_ratio = 0.2
-	liberty_desire_same_dynasty = -10.0
-	pays_overlord = 1.0
-	forcelimit_to_overlord = 0.25
-	manpower_to_overlord = 0.1
-	
-	relative_power_class = 1
-	restoration_cb = cb_disloyal_vassal
-	
-	# Subject Interactions:
-	scutage = yes
-	place_relative_on_throne = yes
-	sacrifice_ruler = yes
-	sacrifice_heir = yes
-	divert_trade = yes
-	seize_territory = yes
-	embargo_rivals = yes
-	send_officers = yes
-	placate_rulers = yes
-	takeondebt = yes
-	knowledge_sharing = yes
-	
-	# Modifiers:
-	modifier_subject = clear 
-	modifier_subject = {
-		modifier = vassal_nation
-	}
-	
-	modifier_overlord = clear
-	modifier_overlord = {
-		modifier = vassal_subject
-	}
-	modifier_overlord = {
-		modifier = swi_canton_republican_ties_modifier
-	}
-	
-	
-	overlord_opinion_modifier = is_vassal
-	subject_opinion_modifier = is_vassal
 }

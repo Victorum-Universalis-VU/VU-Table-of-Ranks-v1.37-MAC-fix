@@ -105,7 +105,7 @@
  phetracha_arrested_tt:0 "Reach §Y-10 Openness§! (currently §Y[Root.siam_openness.GetValue]§!"
  khmer_dark_age_tt:0 "§YAll power costs§! are increased by §R25%§!"
  vu_venetian_genoese_thalassocracy_tooltip:0 "§Y[Root.GetName]§! is the strongest Trade Power in §YGenoa§!, §YVenice§!, §YNaples§!, §YRagusa§!, §YTunis§!, §YAegean Sea§! & §YCairo§!."
- vu_dutch_hansa_thalassocracy_tooltip:0 "§Y[Root.GetName]§! is the strongest Trade Power in §YEnglish Channel§!, §YCologne§!, §YNorth Sea§!, §YLübeck§!, §YBergslagen§!, §YDanzig§! & §YNovgorod§!."
+ vu_dutch_hansa_thalassocracy_tooltip:0 "§Y[Root.GetName]§! is the strongest Trade Power in §YEnglish Channel§!, §YCologne§!, §YNorth Sea§!, §YLübeck§!, §YUppland§!, §YDanzig§! & §YNovgorod§!."
  vu_oman_zanzibar_thalassocracy_tooltip:0 "§Y[Root.GetName]§! is the strongest Trade Power in §YGulf of Aden§!, §YGujarat§!, §YCoromandel§!, §YBengal§!, §YMalacca§!, §YThe Moluccas§! & §YAustralia§!."
  vu_ming_goes_maritime_thalassocracy_tooltip:0 "§Y[Root.GetName]§! is the strongest Trade Power in §YBeijing§!, §YHangzhou§!, §YNippon§!, §YGirin§!, §YCanton§!, §YSiam§! & §YPhilippines§!."
  dan_strengthen_sound_toll_tooltip:0 "§Y[Root.GetName]§! has at least one Center of Trade of level §Y3§! in either [12.GetName], [7766.GetName] or [6.GetName]."
@@ -127,8 +127,8 @@
  flavor_spa.7.tooltip:0 "§YEvery owned province§! with §Y[GRA.Culture.GetName]§! culture and a §Y[GRA.GetAdjective]§! core will change religion to §YSunni§!. They will also have a §Y40%§! chance of rising up in revolt, spawning §YSeparatist§! rebels."
  eng_rb_furnaces_tt:0 " provinces in the §YBritish Isles§! region: \nOwned by §Y[Root.GetName]§!\nHave a §YFurnace§!"
  #
- vu_mission_tooltip_guyana_colonisation:0 "§Y[Root.GetName]§! or their subjects own at least 5 province in the Colombia colonial region."
- vu_mission_tooltip_belize_and_honduras_colonisation:0 "§Y[Root.GetName]§! or their subjects own at least 5 province in the Colombia colonial region."
+ #vu_mission_tooltip_guyana_colonisation:0 "§Y[Root.GetName]§! or their subjects own at least 5 province in the Colombia colonial region."
+ #vu_mission_tooltip_belize_and_honduras_colonisation:0 "§Y[Root.GetName]§! or their subjects own at least 5 province in the Colombia colonial region."
  #
  #Mission Trigger Tooltips
  miss_discover_sumatran:0 "§Y[Root.GetName]§! has discovered any province in the Sumatra region."
@@ -141,60 +141,60 @@
  #Tooltips for nation formations, general x of x provinces. Note the hegemony ones (usually 90% or more) are all at the end together.
  ###########################
  #European Nation Formation Tooltips
- ireland_provincial_kingdom_hegemony_tooltip_a:0 "Own 2 of Connacht's 3 traditional provinces as cores"
- ireland_provincial_kingdom_hegemony_tooltip_b:0 "Own 4 of Munster's 5 traditional provinces as cores"
- ireland_provincial_kingdom_hegemony_tooltip_c:0 "Own 3 of Leinster's 4 traditional provinces as cores"
- ireland_provincial_kingdom_hegemony_tooltip_d:0 "Own 4 of Ulster's 5 traditional provinces as cores"
- celtic_nation_required_provinces_tooltip_a:0 "Own 9 of Ireland's 17 traditional provinces as cores"
- celtic_nation_required_provinces_tooltip_b:0 "Own 9 of Scotland's 17 traditional provinces as cores"
- celtic_nation_required_provinces_tooltip_c:0 "Own 3 of Wales' 6 traditional provinces as cores"
- celtic_nation_required_provinces_tooltip_d:0 "Own 1 of Cornwall's 2 traditional provinces as cores"
- celtic_nation_required_provinces_tooltip_e:0 "Own 3 of Brittany's 6 traditional provinces as cores"
- two_thirds_of_ireland_tooltip:0 "Own 12 of Ireland's 17 traditional provinces as cores"
- three_quarters_of_ireland_tooltip:0 "Own 13 of Ireland's 17 traditional provinces as cores"
- two_thirds_of_scotland_tooltip:0 "Own 12 of Scotland's 17 traditional provinces as cores"
- three_quarters_of_scotland_tooltip:0 "Own 13 of Scotland's 17 traditional provinces as cores"
- two_thirds_of_england_tooltip:0 "Own 16 of England's 24 traditional provinces as cores"
- two_thirds_of_britain_tooltip:0 "Own at least 33 of Britain's 49 provinces as cores"
- three_quarters_of_britain_tooltip:0 "Own at least 78 of Britain's 104 provinces as cores"
- two_thirds_of_france_tooltip:0 "Own at least 111 of France's 166 provinces as cores"
- three_quarters_of_france_tooltip:0 "Own at least 125 of France's 166 provinces as cores"
- half_of_greece_tooltip:0 "Own at least 23 of Greece's 55 provinces as cores"
+ #ireland_provincial_kingdom_hegemony_tooltip_a:0 "Own 2 of Connacht's 3 traditional provinces as cores"
+ #ireland_provincial_kingdom_hegemony_tooltip_b:0 "Own 4 of Munster's 5 traditional provinces as cores"
+ #ireland_provincial_kingdom_hegemony_tooltip_c:0 "Own 3 of Leinster's 4 traditional provinces as cores"
+ #ireland_provincial_kingdom_hegemony_tooltip_d:0 "Own 4 of Ulster's 5 traditional provinces as cores"
+ #celtic_nation_required_provinces_tooltip_a:0 "Own 9 of Ireland's 17 traditional provinces as cores"
+ #celtic_nation_required_provinces_tooltip_b:0 "Own 9 of Scotland's 17 traditional provinces as cores"
+ #celtic_nation_required_provinces_tooltip_c:0 "Own 3 of Wales' 6 traditional provinces as cores"
+ #celtic_nation_required_provinces_tooltip_d:0 "Own 1 of Cornwall's 2 traditional provinces as cores"
+ #celtic_nation_required_provinces_tooltip_e:0 "Own 3 of Brittany's 6 traditional provinces as cores"
+ #two_thirds_of_ireland_tooltip:0 "Own 12 of Ireland's 17 traditional provinces as cores"
+ #three_quarters_of_ireland_tooltip:0 "Own 13 of Ireland's 17 traditional provinces as cores"
+ #two_thirds_of_scotland_tooltip:0 "Own 12 of Scotland's 17 traditional provinces as cores"
+ #three_quarters_of_scotland_tooltip:0 "Own 13 of Scotland's 17 traditional provinces as cores"
+ #two_thirds_of_england_tooltip:0 "Own 16 of England's 24 traditional provinces as cores"
+ #two_thirds_of_britain_tooltip:0 "Own at least 33 of Britain's 49 provinces as cores"
+ #three_quarters_of_britain_tooltip:0 "Own at least 78 of Britain's 104 provinces as cores"
+ #two_thirds_of_france_tooltip:0 "Own at least 111 of France's 166 provinces as cores"
+ #three_quarters_of_france_tooltip:0 "Own at least 125 of France's 166 provinces as cores"
+ #half_of_greece_tooltip:0 "Own at least 23 of Greece's 55 provinces as cores"
  vu_no_other_surviving_pomeranian_minors:0 "No divisions of the Duchy of Pomerania still exist."
- two_thirds_of_pomerania_tooltip:0 "Own 10 of Pomerania's 14 provinces as cores"
+ #two_thirds_of_pomerania_tooltip:0 "Own 10 of Pomerania's 14 provinces as cores"
  vu_reunifies_duchy_of_pomerania:0 "Reunifies the Duchy of Pomerania."
  #
  #Middle East Tooltip
- half_of_yemen_tooltip:0 "Own 5 provinces as cores in Lower and/or Upper Yemen"
+ #half_of_yemen_tooltip:0 "Own 5 provinces as cores in Lower and/or Upper Yemen"
  half_of_najd_tooltip:0 "Own 6 provinces as cores in Najd and/or Al-Yamama"
- half_of_greater_armenia_tooltip:0 "Own 6 provinces as cores in Armenia and/or Vaspurakan"
+ #half_of_greater_armenia_tooltip:0 "Own 6 provinces as cores in Armenia and/or Vaspurakan"
  #
  #Eastern Europe
- two_thirds_of_poland_tooltip:0 "Own at least 24 of Poland's 36 provinces as cores"
+ #two_thirds_of_poland_tooltip:0 "Own at least 24 of Poland's 36 provinces as cores"
  #
  #Mission Tooltip
- vu_southern_russia_perm_claims:0 "Grants permanent claims on Southern Russia"
- vu_northern_russia_perm_claims:0 "Grants permanent claims on Northern Russia"
- vu_greece_perm_claims:0 "Grants permanent claims on Greece"
- vu_wild_fields_perm_claims:0 "Grants permanent claims on the Wild Fields"
- vu_novgorod_perm_claims:0 "Grants permanent claims on nearby lands owned by Novgorod"
+ #vu_southern_russia_perm_claims:0 "Grants permanent claims on Southern Russia"
+ #vu_northern_russia_perm_claims:0 "Grants permanent claims on Northern Russia"
+ #vu_greece_perm_claims:0 "Grants permanent claims on Greece"
+ #vu_wild_fields_perm_claims:0 "Grants permanent claims on the Wild Fields"
+ #vu_novgorod_perm_claims:0 "Grants permanent claims on nearby lands owned by Novgorod"
  vu_venice_perm_claims:0 "Grants permanent claims on neraby lands owned by Venice"
  #
  #Hegemony Tooltips (Typically 90 percent of a region)
- hegemony_over_britain_tooltip:0 "At least 45 of Britain's 49 provinces owned as cores by self or subject"
- hegemony_over_ireland_tooltip:0 "At least 16 of Ireland's 17 provinces owned as cores by self or subject"
+ #hegemony_over_britain_tooltip:0 "At least 45 of Britain's 49 provinces owned as cores by self or subject"
+ #hegemony_over_ireland_tooltip:0 "At least 16 of Ireland's 17 provinces owned as cores by self or subject"
  hegemony_over_france_tooltip:0 "At least 149 of France's 166 provinces owned as cores by self or subject"
- hegemony_over_iberia_tooltip:0 "At least 115 of Iberia's 153 provinces owned as cores by self or subject"          #Less than 90% (75%) for Iberia because we're not counting Portugal. Modern Spain borders contain 123 provinces, 81 in Castile, 41 more in Aragon, Granada, and Navarre, and another 1 in Portugal. Another way of looking at this is 95% of non-Portuguese Iberia.
- hegemony_over_italy_tooltip:0 "At least 106 of Italy's 163 provinces owned as cores by self or subject"          #Less than 90% (65%) for Italy. Italy region contains 163 provinces, 79 in the North, 18 in Tuscany, 21 in the Lazio-Umbria-Marche, 34 in the Naples-Sicily, and 11 in Sardinia-Corsica. Modern Italian borders contain 153 of those provinces. Another way of looking at this is 90% of continental, non-Neapolitan, Italy.
+ #hegemony_over_iberia_tooltip:0 "At least 115 of Iberia's 153 provinces owned as cores by self or subject"          #Less than 90% (75%) for Iberia because we're not counting Portugal. Modern Spain borders contain 123 provinces, 81 in Castile, 41 more in Aragon, Granada, and Navarre, and another 1 in Portugal. Another way of looking at this is 95% of non-Portuguese Iberia.
+ #hegemony_over_italy_tooltip:0 "At least 106 of Italy's 163 provinces owned as cores by self or subject"          #Less than 90% (65%) for Italy. Italy region contains 163 provinces, 79 in the North, 18 in Tuscany, 21 in the Lazio-Umbria-Marche, 34 in the Naples-Sicily, and 11 in Sardinia-Corsica. Modern Italian borders contain 153 of those provinces. Another way of looking at this is 90% of continental, non-Neapolitan, Italy.
 
  ###########################
  #All other tooltips, generally to shorten, clean up, or make legible complicated code for a friendly UI
  ###########################
  #Institution overhauls
  tooltip_development_8_post_1500:0 "8 development province - post 1500"
- tooltip_development_5_post_1550:0 "5 development province - post 1550"
+ #tooltip_development_5_post_1550:0 "5 development province - post 1550"
  tooltip_development_8_post_1550:0 "8 development province - post 1550"
- tooltip_northern_italian_renaissance:0 "Province in Northern Italy"
+ #tooltip_northern_italian_renaissance:0 "Province in Northern Italy"
  tooltip_all_italian_renaissance:0 "Province in mainland Italy"
  tooltip_flanders_renaissance:0 "Province in Flanders"
  tooltip_has_colonial_subject_in_new_world_vu_addon_a:0 "Capital of a nation with a colonial vassal"
@@ -202,7 +202,7 @@
  tooltip_has_colonial_subject_in_new_world_vu_addon_c:0 "Mainland core of a nation with a colonial vassal"
  tooltip_colonial_overlord_new_world_i_vu_addon_a:0 "Colonial overlord has embraced §YColonialism§"
  tooltip_colonialism_exploration_small_bonus_vu_addon_a:0 "Important port (at least 10 trade power) of a nation who has discovered land in the New World"
- tooltip_any_neighbor_has_embraced_global_trade_vu_addon_a:0 "Adjacent unowned province has §YGlobal Trade§!"
+ #tooltip_any_neighbor_has_embraced_global_trade_vu_addon_a:0 "Adjacent unowned province has §YGlobal Trade§!"
  tooltip_vu_add_new_instituiton_details_a:0 "Located in Northern Italy"
  tooltip_vu_add_new_instituiton_details_b:0 "Development at least 20 and a Capital"
  tooltip_vu_add_new_instituiton_details_c:0 "Located in the Old World"
@@ -255,14 +255,14 @@
  #vu_tooltip_extremely_well_developed_province:0 "Extremely developed province (at least 40)" #VU - Hashed out for v1.36.2.*. By San Felipe
 
  #All others
- emilia_in_hre_tooltip_vul:0 "Emilia Area is in the Empire or a vassal of the Emperor."
- permanent_claim_on_all_gaelic_lands_tooltip:0 "[Root.GetName] gains a permanent claim on all of Ireland and northern Britain"
+ #emilia_in_hre_tooltip_vul:0 "Emilia Area is in the Empire or a vassal of the Emperor."
+ #permanent_claim_on_all_gaelic_lands_tooltip:0 "[Root.GetName] gains a permanent claim on all of Ireland and northern Britain"
  permanent_claim_on_all_celtic_lands_tooltip:0 "[Root.GetName] gains a permanent claim on all of Ireland, Scotland, Mann, Wales, Cornwall, and Brittany."
  temp_claim_on_all_britain_tooltip:0 "[Root.GetName] gains a claim on all of England."
  merges_celtic_cultures_tooltip:0 "Unites the Gaelic and Brythonic peoples."
  merges_celtic_cultures_tooltip_b:0 "The $PROVINCECULTURE$ culture in [Root.GetName] moves to the Celtic culture group"
  merges_celtic_cultures_tooltip_c:0 "The primary and/or accepted Brythonic and Gaelic cultures in [Root.GetName] move to the Celtic culture group"
- tooltip_vu_marcharid_of_brittany_is_alive:0 "Marc'harid de Dreux is alive"
+ #tooltip_vu_marcharid_of_brittany_is_alive:0 "Marc'harid de Dreux is alive"
  tooltip_vu_close_relative_tanist:0 "A close relative will be selected as Tanist. This candidate will be average, but possess a strong claim."
  tooltip_vu_cousin_tanist:0 "A particularly competent cousin will be selected as Tanist. This candidate will have superior abilities, but a weaker claim."
  tooltip_vu_keep_current_tanist:0 "[Root.Heir.GetName] will remain Tanist."
@@ -547,3 +547,10 @@
  tooltip_any_friendly_coast_border_province_has_embraced_nationalism_same_religion: ""
  tooltip_any_friendly_coast_border_province_has_embraced_nationalism_diff_religion: ""
  set_center_level_5_center_of_trade_tt: ""
+ estate_nobles_highland_fortifications_revoke_tt: ""
+ incidents_bur_inheritance.3.b.tt: ""
+ defender_of_faith_limits_tt: "You must have at least 25k soldiers and have a border with an different faith."
+ me_tim_supported_nomads_tt: "The Timmurids have supported the nomads."
+ wls_colonize_thirteen_colonies_tooltip: "Colonise the Thirteen Colonies."
+ 
+ CANNOT_ANNEX_PEERAGE: "This subject type cannot be annexed until 25 years have passed."

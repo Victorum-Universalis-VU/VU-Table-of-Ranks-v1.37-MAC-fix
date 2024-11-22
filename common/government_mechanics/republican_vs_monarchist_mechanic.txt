@@ -136,6 +136,7 @@ republican_vs_monarchist_mechanic = {
 							area = corsica_sardinia_area
 							area = tuscany_area
 							area = central_italy_area
+							area = san_marino_area
 							area = lazio_area
 						}
 					}

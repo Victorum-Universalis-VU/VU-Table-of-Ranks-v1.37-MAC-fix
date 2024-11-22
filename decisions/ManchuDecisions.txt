@@ -77,13 +77,13 @@ country_decisions = {
 		effect = {
 			add_prestige = 25
 			change_tag = MCH
-			on_change_tag_effect = yes
 			swap_non_generic_missions = yes
+			on_change_tag_effect = yes
 			if = {
 				limit = {
-					NOT = { government_rank = 2 }
+					NOT = { government_rank = 8 }
 				}
-				set_government_rank = 2
+				set_government_rank = 8
 			}
 			change_primary_culture = manchu_new
 			set_ruler_culture = manchu_new
@@ -209,6 +209,7 @@ country_decisions = {
 					num_of_cities = 5
 				}
 			}
+
 		}
 		provinces_to_highlight = {
 			OR = {
@@ -245,7 +246,7 @@ country_decisions = {
 				limit = {
 					has_dlc = "Common Sense"
 				}
-				government_rank = 3
+				government_rank = 9
 			}
 			else = {
 				total_development = 2000 #VU Development Doubling by San Felipe
@@ -258,10 +259,9 @@ country_decisions = {
 				add_core = QNG
 			}
 			change_tag = QNG
-			on_change_tag_effect = yes
-			restore_country_name = yes 
 			swap_non_generic_missions = yes
-			set_government_rank = 3
+			on_change_tag_effect = yes
+			set_government_rank = 9
 			south_china_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
@@ -286,7 +286,10 @@ country_decisions = {
 			}
 			if = {
 				limit = {
-					has_reform = steppe_horde
+					OR = {
+				    	has_reform = steppe_horde
+				    	has_reform = scythian_horde_reform
+				    }
 				}
 				change_government = monarchy
 				#set_legacy_government = despotic_monarchy

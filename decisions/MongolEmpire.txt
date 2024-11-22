@@ -1,3 +1,4 @@
+#Update to v1.37 - SF
 country_decisions = {
 
 	restore_mongol_empire = {
@@ -8,6 +9,10 @@ country_decisions = {
 				tag = YUA
 				tag = GLH
 				tag = ILK
+				custom_trigger_tooltip = {
+					tooltip = IS_CHAGATAI
+					has_country_flag = chagatai_formed_flag
+				}
 				has_reform = holy_horde_reform
 				was_never_end_game_tag_trigger = yes
 			}
@@ -61,6 +66,10 @@ country_decisions = {
 					tag = YUA
 					tag = GLH
 					tag = ILK
+					custom_trigger_tooltip = {
+						tooltip = IS_CHAGATAI
+						has_country_flag = chagatai_formed_flag
+					}
 					has_reform = holy_horde_reform
 				}
 			}
@@ -69,6 +78,10 @@ country_decisions = {
 					tag = YUA
 					tag = GLH
 					tag = ILK
+					custom_trigger_tooltip = {
+						tooltip = IS_CHAGATAI
+						has_country_flag = chagatai_formed_flag
+					}
 				}
 			}
 			custom_trigger_tooltip = {
@@ -77,21 +90,21 @@ country_decisions = {
 					type = all
 					OR = {
 						is_empty = yes
-						owned_by = ROOT
+						country_or_non_sovereign_subject_holds = ROOT
 					}
 				}
 			}
 			central_asia_region = {
 				type = all
-				owned_by = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 			crimea_region = {
 				type = all
-				owned_by = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
 			}
-			1816 = { owned_by = ROOT } # beijing		
-			1821 = { owned_by = ROOT }
-			667 = { owned_by = ROOT }
+			1816 = { country_or_non_sovereign_subject_holds = ROOT } # beijing		
+			1821 = { country_or_non_sovereign_subject_holds = ROOT }
+			667 = { country_or_non_sovereign_subject_holds = ROOT }
 			khorasan_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -120,10 +133,10 @@ country_decisions = {
 			if = {
 				limit = {
 					NOT = {
-						government_rank = 3
+						government_rank = 9
 					}
 				}
-				set_government_rank = 3
+				set_government_rank = 9
 			}
 			if = {
 				limit = {
@@ -230,7 +243,10 @@ country_decisions = {
 			capital_scope = {
 				region = persia_region
 			}
-			has_reform = steppe_horde
+			OR = {
+				has_reform = steppe_horde
+				has_reform = scythian_horde_reform
+			}
 			NOT = { tag = TIM }
 			NOT = { tag = PER }
 			NOT = { tag = PAP }
@@ -260,7 +276,7 @@ country_decisions = {
 				name = "centralization_modifier"
 				duration = 7300
 			}
-			add_prestige_or_monarch_power = { amount = 25 }
+			add_prestige = 25
 			if = {
 				limit = { has_custom_ideas = no }
 				country_event = { id = ideagroups.1 } #Swap Ideas

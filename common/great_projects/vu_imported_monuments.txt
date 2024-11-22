@@ -378,7 +378,7 @@ vu_escola_de_marina = {
 			navy_tradition_decay = -0.005
 			naval_tradition_from_battle = 1
 			naval_tradition_from_trade = 1
-			admiral_skill_gain_modifier = 0.01 #apparently, as per 1.34 patch notes, this can be used on countries now too
+			#admiral_skill_gain_modifier = 0.01 #apparently, as per 1.34 patch notes, this can be used on countries now too
 		}
 	}
 }
@@ -565,192 +565,6 @@ vu_kinkaku_ji = {
 		}
 	}
 }
-
-#vu_arc_of_triumph = {
-#	# province it starts in
-#	start = 183
-#	
-#	# date built in real life (so anything built during game time will be there if you start a game after that date)
-#	date = 1806.01.01
-#	
-#	#time to build
-#	time = {
-#		months = 120
-#	}
-#	
-#	#how much to build one
-#	build_cost = 0
-#	
-#	#can we move it?
-#	can_be_moved = yes
-#	
-#	#time to move the project one unit of distance, in days
-#	move_days_per_unit_distance = 1
-#	
-#	#tier that the project starts at when first placed in the game (be that at game start or when built by a country as the game progresses)
-#	starting_tier = 0
-#	
-#	#project type
-#	type = monument
-#
-#	#can we build it?
-#	build_trigger = {
-#		is_year = 1800
-#		owner = {
-#			OR = {
-#				tag = FRA
-#				has_reform = revolutionary_republic_reform
-#				has_reform = junior_revolutionary_republic_reform
-#				has_reform = revolutionary_empire_reform
-#			}
-#		}
-#		current_age = age_of_revolutions 
-#	}
-#	
-#	can_use_modifiers_trigger = {
-#		is_year = 1800
-#		owner = {
-#			OR = {
-#				tag = FRA
-#				has_reform = revolutionary_republic_reform
-#				has_reform = junior_revolutionary_republic_reform
-#				has_reform = revolutionary_empire_reform
-#			}
-#		}
-#		current_age = age_of_revolutions 
-#	}
-#
-#	#can our country upgrade it?
-#	can_upgrade_trigger = {
-#		is_year = 1800
-#		owner = {
-#			OR = {
-#				tag = FRA
-#				has_reform = revolutionary_republic_reform
-#				has_reform = junior_revolutionary_republic_reform
-#				has_reform = revolutionary_empire_reform
-#			}
-#		}
-#		current_age = age_of_revolutions 
-#	}
-#
-#	#can our country keep it or is it destroyed when we get hold of it?
-#	keep_trigger = {
-#			
-#	}
-#
-#	#tier data
-#	tier_0 = {
-#		#time to upgrade to this level (0 for tier 0)
-#		upgrade_time = {
-#			months = 0
-#		}
-#
-#		#cost to upgrade to this level (0 for tier 0)
-#		cost_to_upgrade = {
-#			factor = 0
-#		}
-#
-#		#what modifiers are added to the province when we have this project here on this tier
-#		province_modifiers = {
-#		}
-#
-#		#what modifiers are added to the provinces in the map area when we have this project here on this tier
-#		area_modifier = {
-#		}
-#
-#		#what modifiers are added to the country when we have this project here on this tier
-#		country_modifiers = {
-#		}
-#	}
-#
-#	tier_1 = {
-#		#time to upgrade to this level (0 for tier 0)
-#		upgrade_time = {
-#			months = 120
-#		}
-#
-#		#cost to upgrade to this level (0 for tier 0)
-#		cost_to_upgrade = {
-#			factor = 2500
-#		}
-#
-#		#what modifiers are added to the province when we have this project here on this tier
-#		province_modifiers = {
-#		}
-#
-#		#what modifiers are added to the provinces in the map area when we have this project here on this tier
-#		area_modifier = {
-#			
-#		}
-#
-#		#what modifiers are added to the country when we have this project here on this tier
-#		country_modifiers = {
-#			prestige = 0.5
-#			mil_tech_cost_modifier = -0.05
-#			power_projection_from_insults = 0.5
-#		}
-#	}
-#
-#	tier_2 = {
-#		#time to upgrade to this level (0 for tier 0)
-#		upgrade_time = {
-#			months = 120
-#		}
-#
-#		#cost to upgrade to this level (0 for tier 0)
-#		cost_to_upgrade = {
-#			factor = 5000
-#		}
-#
-#		#what modifiers are added to the province when we have this project here on this tier
-#		province_modifiers = {
-#		}
-#
-#		#what modifiers are added to the provinces in the map area when we have this project here on this tier
-#		area_modifier = {
-#		
-#		}
-#
-#		#what modifiers are added to the country when we have this project here on this tier
-#		country_modifiers = {
-#			prestige = 1 
-#			mil_tech_cost_modifier = -0.1
-#			possible_mil_policy = 1	
-#			power_projection_from_insults = 0.5
-#		}
-#	}
-#
-#	tier_3 = {
-#		#time to upgrade to this level (0 for tier 0)
-#		upgrade_time = {
-#			months = 120
-#		}
-#
-#		#cost to upgrade to this level (0 for tier 0)
-#		cost_to_upgrade = {
-#			factor = 7500
-#		}
-#
-#		#what modifiers are added to the province when we have this project here on this tier
-#		province_modifiers = {
-#		}
-#
-#		#what modifiers are added to the provinces in the map area when we have this project here on this tier
-#		area_modifier = {
-#			
-#		}
-#
-#		#what modifiers are added to the country when we have this project here on this tier
-#		country_modifiers = {
-#			prestige = 1 
-#			mil_tech_cost_modifier = -0.1
-#			possible_mil_policy = 1	
-#			power_projection_from_insults = 1
-#			max_revolutionary_zeal = 10 
-#		}
-#	}
-#}
 
 vu_terracotta_army = { #costs are high but it's ming so... yeah
 	# province it starts in
@@ -1760,148 +1574,6 @@ vu_lingyin_temple = {
 	}
 }
 
-vu_university_vienna = {
-	start = 134
-	
-	date = 1365.01.01
-	
-	time = {
-		months = 120
-	}
-	
-	build_cost = 0
-	
-	can_be_moved = no
-	
-	move_days_per_unit_distance = 2
-	
-	starting_tier = 1
-	
-	type = monument
-
-	build_trigger = {
-	    culture_group = germanic
-		OR = {
-			has_owner_culture = yes
-			has_owner_accepted_culture = yes
-		}
-	}
-	
-	can_use_modifiers_trigger = {
-		culture_group = germanic
-		OR = {
-			has_owner_culture = yes
-			has_owner_accepted_culture = yes
-		}	
-	}
-
-	can_upgrade_trigger = {
-		culture_group = germanic
-		OR = {
-			has_owner_culture = yes
-			has_owner_accepted_culture = yes
-		}
-		has_building = university 
-		OR = { 
-			owner = { innovativeness = 40 } 
-			owner = { adm = 6 }
-			owner = { full_idea_group = innovativeness_ideas }
-		}
-	}
-
-	keep_trigger = {
-	}
-
-	tier_0 = {
-		upgrade_time = {
-			months = 0
-		}
-
-		cost_to_upgrade = {
-			factor = 0
-		}
-
-		province_modifiers = {
-		}
-
-		area_modifier = {
-		}
-
-		country_modifiers = {
-		}
-	}
-
-	tier_1 = {
-		upgrade_time = {
-			months = 120
-		}
-
-		cost_to_upgrade = {
-			factor = 1500
-		}
-
-		province_modifiers = {
-			institution_growth = 6
-			
-		}
-
-		area_modifier = {
-		}
-
-		country_modifiers = {
-			embracement_cost = -0.05
-			innovativeness_gain = 0.20
-		}
-	}
-
-	tier_2 = {
-		upgrade_time = {
-			months = 120
-		}
-
-		cost_to_upgrade = {
-			factor = 3000
-		}
-
-		province_modifiers = {
-			institution_growth = 12
-		}
-
-		area_modifier = {
-		}
-
-		country_modifiers = {
-			embracement_cost = -0.1
-			innovativeness_gain = 0.25
-		}
-	}
-
-	tier_3 = {
-		upgrade_time = {
-			months = 120
-		}
-
-		cost_to_upgrade = {
-			factor = 9000
-		}
-
-		province_modifiers = {
-			institution_growth = 60
-			
-		}
-
-		area_modifier = {
-		}
-
-		country_modifiers = {
-			embracement_cost = -0.1
-			innovativeness_gain = 0.25
-			monarch_admin_power = 1 
-		}
-		
-	}
-}
-
 vu_white_tower = {
 	start = 148
 	
@@ -2291,21 +1963,6 @@ vu_brugge_dike = {
 		}
 		
 		on_upgraded = {
-			# custom_tooltip = tt_if_engineering_ideas_tt
-			# if = {
-				# limit = {
-					# has_global_flag = idea_groups_expanded_mod_active
-					# owner = {
-						# OR = {
-							# full_idea_group = engineer_idea_groups_expanded
-							# full_idea_group = economic_ideas 
-						# }
-					# }
-				# }
-				# add_base_tax = 1 
-				# add_base_production = 1 
-				# add_base_manpower = 1
-			# }
 			add_base_tax = 1 
 			add_base_production = 1 
 			add_base_manpower = 1
@@ -3272,7 +2929,7 @@ vu_topkapi_palace = {
 	build_trigger = {
 		OR = {
 			owned_by = TUR 
-			owned_by = RMM
+			owned_by = RUM
 			AND = {
 				has_owner_religion = yes
 				religion_group = muslim 
@@ -3283,7 +2940,7 @@ vu_topkapi_palace = {
 	can_use_modifiers_trigger = {
 		OR = {
 			owned_by = TUR 
-			owned_by = RMM
+			owned_by = RUM
 			AND = {
 				has_owner_religion = yes
 				religion_group = muslim 
@@ -3294,7 +2951,7 @@ vu_topkapi_palace = {
 	can_upgrade_trigger = {
 		OR = {
 			owned_by = TUR 
-			owned_by = RMM
+			owned_by = RUM
 			AND = {
 				has_owner_religion = yes
 				religion_group = muslim 

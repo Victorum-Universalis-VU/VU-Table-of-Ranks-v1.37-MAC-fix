@@ -1,6 +1,6 @@
 government = monarchy
-add_government_reform = feudalism_reform
-government_rank = 1
+add_government_reform = eue_duchy_reform
+government_rank = 6 #Duchy
 #technology_group = eastern
 technology_group = polish_tech_group
 unit_type = western
@@ -12,7 +12,7 @@ capital = 4238 #Legnica
 1436.5.30 = {
 	monarch = {
 		name = "Elisabeth"
-		dynasty = "Hohenzollern"
+		dynasty = "von Hohenzollern"
 		culture = saxon
 		birth_date = 1403.5.1
 		female = yes

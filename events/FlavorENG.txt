@@ -2942,6 +2942,22 @@ country_event = {
 			age = 24
 		}
 	}
+
+	option = {
+		name = flavor_eng.9237.c  # It is time for peace, let us join our two houses together in marriage 
+		ai_chance = { factor = 100 }
+		add_stability_or_adm_power = yes
+		define_heir = {
+			claim = 100
+			name = "Henry #0"
+			dynasty = "Plantagenet"
+			culture = english
+			adm = 3
+			dip = 4
+			mil = 2
+			age = 24
+		}
+	}
 }
 	
 # Rule Britannia - Oxbridge rivalry

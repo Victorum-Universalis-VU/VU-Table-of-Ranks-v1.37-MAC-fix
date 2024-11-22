@@ -33,7 +33,7 @@ dependency = {
 dependency = {
 	subject_type = "tributary_state"
 	first = KAZ
-	second = VYA
+	second = UMA
 	start_date = 1444.1.1
 	end_date = 1489.1.1
 }
@@ -87,7 +87,8 @@ alliance = {
 ###########
 
 # Muscovy and Pskov
-vassal = {
+dependency = {
+	subject_type = "russian_principality"
 	first = MOS
 	second = PSK
 	start_date = 1444.1.1
@@ -95,7 +96,8 @@ vassal = {
 }
 
 # Muscovy and Yaroslavl
-vassal = {
+dependency = {
+	subject_type = "russian_principality"
 	first = MOS
 	second = YAR
 	start_date = 1444.1.1
@@ -103,15 +105,26 @@ vassal = {
 }
 
 # Muscovy and Beloozero
-vassal = {
+dependency = {
+	subject_type = "russian_principality"
 	first = MOS
 	second = BLO
 	start_date = 1444.1.1
 	end_date = 1486.1.1
 }
 
+# Muscovy and Serpukhov
+dependency = {
+	subject_type = "russian_principality"
+	first = MOS
+	second = SPK
+	start_date = 1444.1.1
+	end_date = 1486.1.1
+}
+
 # Muscovy and Rostov
-vassal = {
+dependency = {
+	subject_type = "russian_principality"
 	first = MOS
 	second = RSO
 	start_date = 1444.1.1
@@ -127,7 +140,8 @@ vassal = {
 }
 
 # Muscovite vassal - Great Perm
-vassal = {
+dependency = {
+	subject_type = "russian_principality"
 	first = MOS
 	second = PRM
 	start_date = 1444.11.11
@@ -520,7 +534,8 @@ vassal = {
 ##########
 
 # Peter III of Russia, Holstein-Gottorp
-union = {
+dependency = {
+	subject_type = "russian_crown_PU"
 	first = RUS
 	second = SHL
 	start_date = 1762.1.5

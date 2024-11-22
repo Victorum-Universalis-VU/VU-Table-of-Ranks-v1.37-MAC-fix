@@ -752,6 +752,22 @@ vu_dithmarschen_missions_4 = {
 				} 
 				add_permanent_claim = ROOT
 			}
+			hamburg_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { owned_by = ROOT }
+				} 
+				add_permanent_claim = ROOT
+			}
+			lauenburg_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { owned_by = ROOT }
+				} 
+				add_permanent_claim = ROOT
+			}
 			mecklenburg_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -884,12 +900,24 @@ vu_dithmarschen_missions_5 = {
 		icon = mission_rb_unite_the_clans
 		required_missions = { dtt_protect_ppl }
 		position = 2 
-		provinces_to_highlight = { 
-			area = holstein_area 
+		provinces_to_highlight = {
+			OR = {
+				area = holstein_area
+				area = hamburg_area
+				area = lauenburg_area
+			} 
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
 			holstein_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			hamburg_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			lauenburg_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT 
 			}

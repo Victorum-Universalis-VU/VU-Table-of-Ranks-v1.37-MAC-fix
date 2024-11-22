@@ -16,14 +16,16 @@
  estate_noble_hajduk_desc:0 "A hajduk, hajdúk or hajdú is a type of irregular infantry found in Central and parts of Southeast Europe from the late 16th to mid 19th centuries. They have reputations ranging from bandits to freedom fighters depending on time, place, and their enemies."
  #
  estate_peasant_expand_hajduk: "Expanded the Hajduks"
- estate_peasant_expand_hajduk_desc: "We must expand the Hajduk if we wish to save our holy land from heathens and heretics.The Hadjuks are often found in the European lands of the Ottoman Empire, the term hajduk was used to describe bandits and brigands of the Balkans, while in Central Europe for the West Slavs, Hungarians, and Germans, it was used to refer to outlaws who protected Christians against provocative actions by the Ottomans." 
+ estate_peasant_expand_hajduk_desc: "We must expand the Hajduk if we wish to save our holy land from heathens and heretics.The Hadjuks are often found in the European lands of the Ottoman Empire, the term hajduk was used to describe bandits and brigands of the Balkans, while in Central Europe for the West Slavs, Hungarians, and Germans, it was used to refer to outlaws who protected Christians against provocative actions by the Ottomans."
+
  #New estate privileges replacing Hegemoniacles
+ 
  #End of Quonton additions
- estate_nobles_very_strong_duchies: "Very Strong Duchies"
+ estate_nobles_very_strong_duchies: "Very Strong Subjects"
  estate_nobles_very_strong_duchies_trigger_tooltip: "§Y[Root.GetName]§! has at least 4 vassals and marches."
  estate_nobles_very_strong_duchies_desc: "[Root.GetUsableNameCap] is a very decentralized nation in which local dukes and counts have considerable independence from the [Root.Monarch.GetTitle]. This system has its benefits but makes maintaining the primacy of royal power a significant challenge."
  #
- estate_nobles_extremely_strong_duchies: "Extremely Strong Duchies"
+ estate_nobles_extremely_strong_duchies: "Extremely Strong Subjects"
  estate_nobles_extremely_strong_duchies_trigger_tooltip: "§Y[Root.GetName]§! has at least 6 vassals and marches."
  estate_nobles_extremely_strong_duchies_desc: "[Root.GetUsableNameCap] is an extremely decentralized nation in which local dukes and counts have considerable independence from the [Root.Monarch.GetTitle]. This system has its benefits but makes maintaining the primacy of royal power a significant challenge."
  #
@@ -118,7 +120,21 @@
  #More Estates taken from the missing loc entries file
  GRA_estate_dhimmi_manpower_effect_tooltip: "Dhimmi Manpower"
  GRA_estate_dhimmi_manpower_revoke_effect_tooltip: "Revoke Dhimmi Manpower"
- estate_burghers_steppe_development_rt: "Steppe Development"
+ #estate_burghers_steppe_development_rt: "Steppe Development"
  estate_industrial_decentralized_industry_desc: "Decentralized Industry"
  estate_industrial_land_appropriation_desc: "Land Appropriation"
  estate_industrial_facilitate_industrial_growth_desc: "Facilitate Industrial Growth"
+
+ vu_emperor_dip_decrease: "Imperial Neglect"
+ vu_elector_dip_decrease: "Electoral Neglect"
+ vu_prince_dip_decrease: "Princely Neglect"
+
+ vu_ruler_studying: "Studious Ruler"
+ vu_ruler_general_studying: "Studious Military General"
+ vu_war_ruler_studying: "Studious Ruler"
+ vu_war_ruler_general_studying: "Studious Military General"
+
+ vu_heir_studying: "Studious Heir"
+ vu_heir_general_studying: "Studious Military General"
+ vu_war_ruler_studying: "Studious Heir"
+ vu_war_ruler_general_studying: "Studious Military General"

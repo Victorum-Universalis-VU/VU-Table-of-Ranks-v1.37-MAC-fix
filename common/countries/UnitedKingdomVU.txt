@@ -8,13 +8,6 @@ revolutionary_colors = { 5  13  0 }
 
 historical_idea_groups = {
 	administrative_ideas
-	exploration_ideas
-	quality_ideas
-	maritime_ideas
-	economic_ideas
-	expansion_ideas
-	trade_ideas
-	naval_ideas
 }
 
 historical_units = {
@@ -98,17 +91,18 @@ monarch_names = {
 leader_names = {
 	Albemarle Amherst Anson
 	Buckingham Braddock Byron Burgoyne Beresford Brock Benbow Blake Bedford Boscawen Baffin Button
-	Clarence "de Clifford" Cromwell Cumberland Clinton Cornwallis Clive Cabot Carleton Cavendish Cook Churchill
-	Dampier Davis Drake
+	Campbell Clarence "de Clifford" Cromwell Cumberland Clinton Cornwallis Clive Cabot Carleton Cavendish Cook
+	Dampier Davis "de la Pole" Douglas Drake
+	Beaufort
 	Essex
 	Fairfax Frobisher
 	Gloucester Gilbert
 	Howe Howard Herbert Hawke Hood Hastings Hudson
-	Leicester
-	Middleton Moore
+	Leicester Leslie
+	Marlborough Middleton Moore
 	Northumberland Norfolk
 	Procter
-	Rooke Rodney Raleigh
+	Richard Rooke Rodney Raleigh
 	Salisbury Somerset Suffolk Saunders Smith
 	Talbot Tarleton
 	Uxbridge
@@ -176,35 +170,42 @@ ship_names = {
 }
 
 army_names = {
-	"Royal Army" "Army of Scotland" "Army of Ireland" "$PROVINCE$ Regiment" "Northern Army" "Coldstream Guards" "King's Own" "Royal Grenadiers" "Royal Welch Fusiliers" 
+	"Royal Army" "Army of Scotland" "Army of Ireland" "Northern Army" "Coldstream Guards" "King's Own" "Royal Grenadiers" "Royal Welch Fusiliers" 
 	"Scots Guards" "Duke of Cumberland" "Duke of Norfolk" "Duke of Buckingham's" "Expiditionary Force" "Royal Welsh" "Royal Irish Fusiliers" "Guards Brigade" 
 	"Queen's Own" "Prince Rupert's" "Duke of Wellington's" "Earl of Gloucester's" "Lord Cornwallis" Black "Carabiniers and Greys" "Royal Dragoon Guards" 
 	"Royal Irish" "Royal Hussars" "Light Dragoons" "Royal Lancers" "The Life Guards" "Royal Horse Guards" "Royal Yeomanry" "Irish Guards" "Welsh Guards" 
 	"Regiment of Scotland" "Royal Hampshires" "Princess of Wales's" "Duke of Lancaster's" "Royal Fusiliers" "Anglian Regiment" "Yorkshire Regiment" 
 	"Mercian Regiment" "Royal Inniskilling Fusiliers" "The Rifles" "Wiltshire Regiment" "Royal Engineers" "Royal Monmouthshire" "Honourable Artillery Company" 
-	"King's German Legion‎" "North Irish Horse‎" "Argyll & Sutherland Highlanders‎" "Earl of Carrick's" "Scottish Rifles" "Fife & Forfar Yeomanry" Cameronians 
+	"King's German Legion" "North Irish Horse" "Argyll & Sutherland Highlanders" "Earl of Carrick's" "Scottish Rifles" "Fife & Forfar Yeomanry" Cameronians 
 	"Earl of Angus's" "Earl of Dumbarton's" "Scots Dragoons" "Manus O'Cahan's" "Black Watch" "Royal Highlanders" "Breadalbane Regiment" "Volunteer Battalion" 
 	"Caithness Legion" "Princess Mary's" "Cumberland Highlanders" "Clan-Alpine Fencibles" "Fraser Regiment" "Fifeshire Militia" "Fincastle's Horse" "Scottish Horse" 
 	"Scottish Guards" "Gordon Highlanders" "Glengarry Fencibles" "Scottish Borderers" "Atholl Highlanders" "Argyle Fencibles" "Duke of Argyle's" "Lovat Scouts" 
 	"Scots Brigade" "Scots Fusiliers of Canada" "Seaforth Highlanders" "Scottish Yeomanry" "Royal Highland Fusiliers" "Royal Inverness Highlanders" "Royal Scots" 
 	"Royal Scots Fusiliers" "Royal Scots Greys" "Regiment of the Isles" "Macdonald Fencibles" "Ross-shire Highlanders" "Rothesay Highlanders" 
-	"Regiment of Wales‎" "Caithness Highlanders" "Perthshire Fencibles" "South Wales Borderers‎" "Men of Harlech" "Regiment of Foot" "Welch Regiment" 
-	"Irish Guards" "Royal Ulster Rifles‎" "South Irish Horse‎" "Connaught Rangers‎‎" "Liverpool Irish" "Royal Irish Rangers" "Royal Munster Fusiliers" 
+	"Regiment of Wales" "Caithness Highlanders" "Perthshire Fencibles" "South Wales Borderers" "Men of Harlech" "Regiment of Foot" "Welch Regiment" 
+	"Irish Guards" "Royal Ulster Rifles" "South Irish Horse" "Connaught Rangers" "Liverpool Irish" "Royal Irish Rangers" "Royal Munster Fusiliers" 
 	"Royal Ulster Rifles" "Queen's Royal Irish" "Kings's Royal Irish" "Royal Irish Lancers" "Duke of Shrewsbury's" "Earl of Bath's" "Earl of Plymouth's" 
-	"King's Regiment" "Lord Cavendish's" "Lord Herbert's" "Queen Dowager's" "Earl of Granard's" "Royal Artillery‎" "Manx Regiment" "Lincolnshire Regiment‎"
+	"King's Regiment" "Lord Cavendish's" "Lord Herbert's" "Queen Dowager's" "Earl of Granard's" "Royal Artillery" "Manx Regiment" "Lincolnshire Regiment"
 	"Cheshire Regiment" "Green Howards" "King's Royal Rifle Corps" "Lancashire Fusiliers" Buffs "Royal Warwickshire" "Royal Leicestershire" 
 	"Liverpool Volunteers" "King's American Regiment" "British Legion" "New York Volunteers" "Volunteers of Ireland" "Foot Guards" "Kentish Regiment" 
 	"Royal Northumberland Fusiliers" "Norfolk Regiment" "Prince of Wales's Own" "Enniskillen Regiment" "Royal Highland" "Frasers Highlanders" 
 	"Glasgow Volunteers" "Jamaica Regiment" "Shropshire Volunteers" "Yorkshire Volunteers" "King's Rangers" "King's Orange Rangers" "King's Carolina Rangers" 
-	"Hompesch Hussars" "Roll's Regiment" "Régiment Royal Louis" "Royal Gurkha Rifles‎" "Prince Consort's Own" "Princess Consort's Own" "Tangier Regiment" "Greek Regiment" 
+	"Hompesch Hussars" "Roll's Regiment" "Régiment Royal Louis" "Royal Gurkha Rifles" "Prince Consort's Own" "Princess Consort's Own" "Tangier Regiment" "Greek Regiment" 
 	"Bombay Regiment" "West India Regiment" "East India Regiment" "South India Regiment" "North India Regiment" "Duke of Sussex's" "Nottinghamshire Regiment" 
 	"Oxfordshire Regiment" "Manchester Volunteers" "Royal Bombay Fusiliers" "King's Irish Infantry" "New Brunswick Regiment" "Madras Regiment" "Royal Canadian" 
 	"Earl of Ulster's" "Duke of Albany's Own" "West Suffolk Regiment" "Staffordshire Regiment" "Durham Regiment" "Regiment of Marines" "Stirlingshire Regiment" 
-	"Cambridgeshire Regiment" "Royal Musqueteers" "Volunteer Hunters"
+	"Cambridgeshire Regiment" "Royal Musqueteers" "Volunteer Hunters" "Home Army" "Army of Austria" "Army of Bohemia" "Army of Moravia" "Army of Hungary" "Army of Italy" "Army of Silesia" "Army of Transylvania" "Army of Albania" "Army of Greece" 
+	"Army of Croatia" "Army of Poland" "Army of the Dalmatian Coast" "Army of Bavaria" "Army of Thuringia" "Army of Franconia" "Army of Swabia" "Army of the Rhine" "Westphalian Army" "Saxon Army" "Army of Brandenburg" "Army of Pomerania" 
+	"Army of Schleswig-Holstein" "Lower Saxon Army" "Army of Denmark" "Army of Sweden" "Army of the Baltic Sea" "Army of Finland" "Army of Slovakia" "Army of Norway" "Army of the Netherlands" "Army of Switzerland" "Army of Tyrol" "Army of Styria" 
+	"Army of the Alps" "Army of Lorraine" "Army of France" "Army of Burgundy" "Army of Brittany" "Army of Provence" "Army of Naples" "Army of Bulgaria" "Army of Iberia" "Army of Catalonia" "Army of the Pyrenees" "Army of Portugal" "Army of Macedonia" 
+	"Army of East Prussia" "Army of Anatolia" "Army of Mesopotamia" "Army of Syria" "Army of Palestine" "Army of Arabia" "Army of Persia" "Army of the Caucasus" "Army of Northern India" "Army of Central India" "Army of Western India" 
+	"Army of Eastern India" "Army of Burma" "Army of Indochina" "Army of China" "Army of Egypt" "Army of Libya" "Army of North Africa" "Army of East Africa" "Army of West Africa" "Army of South Africa" "Army of Australia" "Army of the East Indies" 
+	"Pacific Garrison" "Army of Japan" "Army of Siberia" "Army of Central Asia" "Army of the Himalayas" "Army of Cameroon" "Army of Tanganyika" "Army of Greenland" "Army of Iceland" "Army of North America" "Army of the Caribbean" "Army of Venezuela" 
+	"Army of Central America" "Army of Brazil" "Army of Peru" "Army of Colombia" "Army of Papua New Guinea" "Army of Bolivia" "Army of Chile" "Army of Argentina" "Army of Afghanistan" "Army of Cuba" "Army of the Indus" "Army of Malaya" 
+	"Army of the Philippines" "Army of New Zealand" "Army of Bosnia" "Army of the Balkans" "Army of Ukraine" "$PROVINCE$ Regiment"
 }
 
 fleet_names = {
-	"Royal Navy" "Blue Squadron" "Red Squadron" "White Squadron" "Channel Squadron" "North Sea Squadron" "North Sea Fleet" "Channel Fleet" "Atlantic Fleet" 
-	"Baltic Fleet" "Pacific Fleet" "East Indies Fleet" "Home Fleet" "Mediterranean Fleet" "Reserve Fleet" "Eastern Fleet" "Grand Fleet" "Far East Fleet" 
-	"First Fleet" "Second Fleet" "Third Fleet" "Western Fleet"
+	"Royal Navy" "Blue Squadron" "Red Squadron" "White Squadron" "Channel Squadron" "North Sea Squadron" "North Sea Fleet" "Channel Fleet" "Atlantic Fleet" "Caribbean Fleet" "Baltic Fleet" "Pacific Fleet" "East Indies Fleet" "Home Fleet" 
+	"Mediterranean Fleet" "Reserve Fleet" "Eastern Fleet" "Grand Fleet" "Far East Fleet" "First Fleet" "Second Fleet" "Third Fleet" "Western Fleet"
 }

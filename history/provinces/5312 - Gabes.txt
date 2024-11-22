@@ -14,25 +14,24 @@ base_manpower = 1
 is_city = yes
 
 #Claimants
+add_core = R4S
 
 #Buildings
 
 #Special Modifiers
 
-#Known by Technology groups
-
-
-
-
-
-
-
-
-
 #Histories
-1215.6.15 = { owner = MAM controller = MAM add_core = MAM } # Mamluk territorial lands - By San Felipe
+1215.6.15 = { 
+	owner = MAM 
+	controller = MAM 
+	add_core = MAM 
+} # Mamluk territorial lands - By San Felipe
 
-1444.11.11 = { owner = TUN controller = TUN add_core = TUN } # Tunisian territorial lands - By San Felipe
+1444.11.11 = { 
+	owner = TUN 
+	controller = TUN 
+	add_core = TUN 
+} # Tunisian territorial lands - By San Felipe
 
 1491.1.1 = {
 	base_tax = 4

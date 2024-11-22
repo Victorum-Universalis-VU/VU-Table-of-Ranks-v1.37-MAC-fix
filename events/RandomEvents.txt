@@ -1,3 +1,4 @@
+#Updated to 1.37 - SF
 #########################################################
 #		Gift to the state								#
 #########################################################
@@ -1303,6 +1304,7 @@ country_event = {
 	mean_time_to_happen = {
 		days = 1
 	}
+	
 
 	option = {
 		name = "EVTOPTA5027"		# Invest in army technology
@@ -2212,7 +2214,10 @@ country_event = {
 			factor = 100
 			modifier = { 
 				factor = 0
-				has_reform = steppe_horde
+				OR = {
+					has_reform = steppe_horde
+					has_reform = scythian_horde_reform
+				}
 				NOT = { horde_unity = 50 }
 			}
 			modifier = { 
@@ -2227,7 +2232,7 @@ country_event = {
 		reduce_mandate_effect = yes
 	}
 	option = {
-		name = "personality_options.5054.b"
+		name = "personality_options.5054.b"		# 
 		highlight = yes
 		trigger = { ruler_has_personality_ancestor = { key = just } }
 		ai_chance = { 
@@ -3300,7 +3305,10 @@ country_event = {
 			}
 			modifier = {
 				factor = 0.5
-				has_reform = steppe_horde
+				OR = {
+					has_reform = steppe_horde
+					has_reform = scythian_horde_reform
+				}
 				NOT = { legitimacy_or_horde_unity = 50 }
 			}
 			modifier = {
@@ -3917,8 +3925,7 @@ country_event = {
 					}
 				}
 			}
-			else = {
-		  
+			else = {		  
 				army_tradition = root
 				all_neighbor_country = {
 					OR = {
@@ -3929,6 +3936,7 @@ country_event = {
 			}
 		}
 	}
+
 	immediate = {
 		hidden_effect = {
 			random_known_country = {
@@ -5461,6 +5469,7 @@ country_event = {
 			}
 			add_republican_tradition = 5
 			add_corruption = -2
+			add_years_of_income = -0.3
 		}
 		if = {
 			limit = {
@@ -7034,9 +7043,7 @@ country_event = {
 					is_core = root
 					OR = {
 					    trade_goods = gems
-						#VU addition by San Felipe
-						trade_goods = diamonds
-						#End of VU addition by San Felipe
+						trade_goods = diamonds #VU addition by SF
 						trade_goods = incense
 						trade_goods = spices
 						trade_goods = silk
@@ -7883,6 +7890,7 @@ country_event = {
 		NOT = {
 			has_country_modifier = warriors_do_not_read_books
 		}
+		NOT = { has_country_flag = warriors_can_read_books }
 	}
 	
 	mean_time_to_happen = {
@@ -9004,10 +9012,10 @@ country_event = {
 			factor = 2.5
 			OR = {
 				tag = FRA
-				tag = BFR
-				tag = NPF
-				tag = OFR
-				tag = FSE
+				tag = BFR #VU addition by San Felipe
+				tag = NPF #VU addition by San Felipe
+				tag = OFR #VU addition by San Felipe
+				tag = FSE #VU addition by San Felipe
 			}
 		}
 	}
@@ -9584,9 +9592,9 @@ country_event = {
 		}
 		OR = {
 			bengal_region = {
-				NOT = {	is_core = ROOT }
-				NOT = {	owned_by = ROOT }
 				NOT = {
+					is_core = ROOT
+					owned_by = ROOT
 					owner = {
 						has_country_modifier = dutch_india_trade_co 
 						has_country_flag = trade_company 
@@ -9598,9 +9606,9 @@ country_event = {
 				}
 			}
 			coromandel_region = {
-				NOT = {	is_core = ROOT }
-				NOT = {	owned_by = ROOT	}
 				NOT = {
+					is_core = ROOT
+					owned_by = ROOT
 					owner = {
 						has_country_modifier = dutch_india_trade_co 
 						has_country_flag = trade_company 
@@ -9612,9 +9620,9 @@ country_event = {
 				}
 			}
 			west_india_region = {
-				NOT = {	is_core = ROOT }
-				NOT = {	owned_by = ROOT	}
 				NOT = {
+					is_core = ROOT
+					owned_by = ROOT
 					owner = {
 						has_country_modifier = dutch_india_trade_co 
 						has_country_flag = trade_company 
@@ -9645,9 +9653,9 @@ country_event = {
 					region = west_india_region
 					region = coromandel_region
 				}
-				NOT ={ is_core = ROOT }
-				NOT ={ owned_by = ROOT }
 				NOT ={
+					is_core = ROOT
+					owned_by = ROOT
 					owner = {
 						has_country_modifier = dutch_india_trade_co 
 						has_country_flag = trade_company 
@@ -10268,6 +10276,7 @@ country_event = {
 					culture = normand
 					culture = gascon
 					culture = burgundian
+					culture = anglois
 				}
 			}
 		}
@@ -10289,6 +10298,7 @@ country_event = {
 					culture = normand
 					culture = gascon
 					culture = burgundian
+					culture = anglois
 				}
 			}
 		}
@@ -10382,6 +10392,7 @@ country_event = {
 						culture = normand
 						culture = gascon
 						culture = burgundian
+						culture = anglois
 					}
 				}
 			}
@@ -10401,6 +10412,7 @@ country_event = {
 						culture = normand
 						culture = gascon
 						culture = burgundian
+						culture = anglois
 					}
 				}
 			}
@@ -10540,6 +10552,7 @@ country_event = {
 							culture = normand
 							culture = gascon
 							culture = burgundian
+							culture = anglois
 						}
 					}
 				}
@@ -10556,6 +10569,7 @@ country_event = {
 							culture = normand
 							culture = gascon
 							culture = burgundian
+							culture = anglois
 						}
 					}
 					save_event_target_as = quebecois_province
@@ -10577,6 +10591,7 @@ country_event = {
 							culture = normand
 							culture = gascon
 							culture = burgundian
+							culture = anglois
 						}
 					}
 				}
@@ -10592,6 +10607,7 @@ country_event = {
 							culture = normand
 							culture = gascon
 							culture = burgundian
+							culture = anglois
 						}
 					}
 					save_event_target_as = louisianans_province
@@ -10840,6 +10856,7 @@ country_event = {
 					culture = normand
 					culture = gascon
 					culture = burgundian
+					culture = anglois
 				}
 			}
 		}
@@ -10862,6 +10879,7 @@ country_event = {
 						culture = normand
 						culture = gascon
 						culture = burgundian
+						culture = anglois
 					}
 				}
 				change_culture = quebecois
@@ -10884,6 +10902,7 @@ country_event = {
 					culture = normand
 					culture = gascon
 					culture = burgundian
+					culture = anglois
 				}
 			}
 			ai = no
@@ -10910,6 +10929,7 @@ country_event = {
 					culture = normand
 					culture = gascon
 					culture = burgundian
+					culture = anglois
 				}
 			}
 		}
@@ -10955,6 +10975,7 @@ country_event = {
 					culture = normand
 					culture = gascon
 					culture = burgundian
+					culture = anglois
 				}
 			}
 			ai = no
@@ -11951,8 +11972,10 @@ country_event = {
 			ai = yes
 			is_free_or_tributary_trigger = yes
 			num_of_cities = 4
-			NOT = {	alliance_with = ROOT }
-			NOT = {	war_with = ROOT	}
+			NOT = {
+				alliance_with = ROOT
+				war_with = ROOT
+			}
 		}
 	}
 	
@@ -12600,6 +12623,7 @@ country_event = {
 	}
 }
 
+
 ######### Product Events #######
 
 # Excellent Year
@@ -12904,8 +12928,43 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA6428"
-		add_years_of_income = 1.0
-		add_inflation = 1
+		if = {
+			limit = {
+				has_dlc = "Leviathan"
+				any_owned_province = {
+					has_great_project = {
+						type = golden_kremnica
+						tier = 2
+					}
+				}
+				NOT = {
+					any_owned_province = {
+						has_great_project = {
+							type = golden_kremnica
+							tier = 3
+						}
+					}
+				}
+			}
+			add_years_of_income = 1.5
+			add_inflation = 1
+		}
+		else_if = {
+			limit = {
+				any_owned_province = {
+					has_great_project = {
+						type = golden_kremnica
+						tier = 3
+					}
+				}
+			}
+			add_years_of_income = 2
+			add_inflation = 1
+		}
+		else = {
+			add_years_of_income = 1.0
+			add_inflation = 1
+		}
 	}
 }
 

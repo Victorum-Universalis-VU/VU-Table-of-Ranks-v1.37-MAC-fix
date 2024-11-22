@@ -225,14 +225,6 @@
  START_CONSTRUCTION_OF_WHITE_HOUSE_BUILDING: "Start construction of §YWhite House§! in §Y[This.GetName]§!. \nThis will cost §Y2,000§! ¤ and take §Y8 years§!."
  EFFECTS_OF_WHITE_HOUSE_BUILDING: "\nThe §YWhite House§! has the following effects when finished: \n   Yearly Prestige: §G+0.50§! \n   Admistrative Efficiency: §G+2.5%§!"
 
- # Advisors:
- usa_secretary_of_the_treasury: "Secretary of the Treasury"
- usa_secretary_of_the_treasury_desc: ""
- usa_head_diplomat: "Head Diplomat"
- usa_head_diplomat_desc: ""
- usa_secretary_of_war: "Secretary of War"
- usa_secretary_of_war_desc: ""
-
  # War Stuff:
  cb_usa_defense_of_the_americas: "Defense of the Americas"
  cb_usa_defense_of_the_americas_desc: "We have to defend the Americas from the Europeans. Freedom for America!"

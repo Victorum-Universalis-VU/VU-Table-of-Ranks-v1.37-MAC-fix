@@ -88,20 +88,36 @@ spriteTypes = {
 		texturefile = "gfx//interface//government_reform_icons//religious_leader.dds"
 	}
 	spriteType = {
-		name = "government_reform_reims"
-		texturefile = "gfx//interface//government_reform_icons//reims.dds"
+		name = "government_reform_papal_arcbishop"
+		texturefile = "gfx//interface//government_reform_icons//religion//papal_arcbishop.dds"
 	}
+
 	spriteType = {
-		name = "government_reform_arcbishop_of_reims"
-		texturefile = "gfx//interface//government_reform_icons//arcbishop_of_reims.dds"
+		name = "government_reform_abbacy"
+		texturefile = "gfx//interface//government_reform_icons//christianity//abbacy.dds"
+	}
+
+	spriteType = {
+		name = "government_reform_bishop"
+		texturefile = "gfx//interface//government_reform_icons//christianity//bishop.dds"
+	}
+
+	spriteType = {
+		name = "government_reform_archbishop"
+		texturefile = "gfx//interface//government_reform_icons//christianity//archbishop.dds"
+	}
+
+	spriteType = {
+		name = "government_reform_durham"
+		texturefile = "gfx//interface//government_reform_icons//church_of_england//durham.dds"
 	}
 	spriteType = {
 		name = "government_reform_canterbury"
-		texturefile = "gfx//interface//government_reform_icons//canterbury.dds"
+		texturefile = "gfx//interface//government_reform_icons//church_of_england//canterbury.dds"
 	}
 	spriteType = {
 		name = "government_reform_arcbishop_of_canterbury"
-		texturefile = "gfx//interface//government_reform_icons//arcbishop_of_canterbury.dds"
+		texturefile = "gfx//interface//government_reform_icons//church_of_england//arcbishop_of_canterbury.dds"
 	}
 	spriteType = {
 		name = "government_reform_rioting_burning"
@@ -156,12 +172,12 @@ spriteTypes = {
 		texturefile = "gfx//interface//government_reform_icons//ballot_box.dds"
 	}
 	spriteType = {
-		name = "government_reform_british_queen"
-		texturefile = "gfx//interface//government_reform_icons//british_queen.dds"
-	}
-	spriteType = {
 		name = "government_reform_chieftain"
 		texturefile = "gfx//interface//government_reform_icons//chieftain.dds"
+	}
+	spriteType = {
+		name = "government_reform_persianate"
+		texturefile = "gfx//interface//government_reform_icons//islamic//persianate_tribal_confederation.dds"
 	}
 	spriteType = {
 		name = "government_reform_church"
@@ -214,6 +230,22 @@ spriteTypes = {
 	spriteType = {
 		name = "government_reform_asian_scripture"
 		texturefile = "gfx//interface//government_reform_icons//asian_scripture.dds"
+	}
+	spriteType = {
+		name = "government_reform_huangdom"
+		texturefile = "gfx//interface//government_reform_icons//east_asian//huangdom.dds"
+	}
+	spriteType = {
+		name = "government_reform_rahanate"
+		texturefile = "gfx//interface//government_reform_icons//east_asian//rahanate.dds"
+	}
+	spriteType = {
+		name = "government_reform_datunate"
+		texturefile = "gfx//interface//government_reform_icons//east_asian//datunate.dds"
+	}
+	spriteType = {
+		name = "government_reform_lakanate"
+		texturefile = "gfx//interface//government_reform_icons//east_asian//lakanate.dds"
 	}
 	spriteType = {
 		name = "government_reform_chinese_palace"
@@ -341,6 +373,36 @@ spriteTypes = {
 		name = "government_reform_daimyo"
 		texturefile = "gfx//interface//government_reform_icons//daimyo.dds"
 	}
+
+	spriteType = {
+		name = "government_reform_daimyo_barony_reform"
+		texturefile = "gfx//interface//government_reform_icons//japan//daimyo_barony_reform.dds"
+	}
+
+	spriteType = {
+		name = "government_reform_daimyo_viscounty_reform"
+		texturefile = "gfx//interface//government_reform_icons//japan//daimyo_viscounty_reform.dds"
+	}
+
+	spriteType = {
+		name = "government_reform_daimyo_county_reform"
+		texturefile = "gfx//interface//government_reform_icons//japan//daimyo_county_reform.dds"
+	}
+
+	spriteType = {
+		name = "government_reform_daimyo_marquisate_reform"
+		texturefile = "gfx//interface//government_reform_icons//japan//daimyo_marquisate_reform.dds"
+	}
+
+	spriteType = {
+		name = "government_reform_daimyo_duchy_reform"
+		texturefile = "gfx//interface//government_reform_icons//japan//daimyo_duchy_reform.dds"
+	}
+
+	spriteType = {
+		name = "government_reform_daimyo_principality_reform"
+		texturefile = "gfx//interface//government_reform_icons//japan//daimyo_principality_reform.dds"
+	}
 	
 	spriteType = {
 		name = "government_reform_shogunate"
@@ -420,11 +482,6 @@ spriteTypes = {
 	spriteType = {
 		name = "government_reform_elective_monarchy"
 		texturefile = "gfx//interface//government_reform_icons//elective_monarchy.dds"
-	}
-	
-	spriteType = {
-		name = "government_reform_english_monarchy"
-		texturefile = "gfx//interface//government_reform_icons//english_monarchy.dds"
 	}
 	
 	spriteType = {
@@ -521,10 +578,15 @@ spriteTypes = {
 		name = "government_reform_admiralty_reform"
 		texturefile = "gfx//interface//government_reform_icons//admiralty_reform.dds"
 	}
+
+	spriteType = {
+		name = "government_reform_austrian_duchy_reform"
+		texturefile = "gfx//interface//government_reform_icons//austrian//austrian_duchy_reform.dds"
+	}
 			
 	spriteType = {
 		name = "government_reform_austrian_archduchy_reform"
-		texturefile = "gfx//interface//government_reform_icons//austrian_archduchy_reform.dds"
+		texturefile = "gfx//interface//government_reform_icons//austrian//austrian_archduchy_reform.dds"
 	}
 			
 	spriteType = {
@@ -632,7 +694,12 @@ spriteTypes = {
 	#New addition by San Felipe
 	spriteType = {
 		name = "government_reform_macedonian_monarchy_reform"
-		texturefile = "gfx/interface/government_reform_icons/macedonian_monarchy_reform.dds"
+		texturefile = "gfx/interface/government_reform_icons/hellenic/macedonian_monarchy_reform.dds"
+	}
+
+	spriteType = {
+		name = "government_reform_ptolemaic_monarchy_reform"
+		texturefile = "gfx/interface/government_reform_icons/hellenic/ptolemy.dds"
 	}
 
 	spriteType = {
@@ -645,14 +712,108 @@ spriteTypes = {
 		texturefile = "gfx/interface/government_reform_icons/highland_clan_reform.dds"
 	}
 
+	#New VU v1.37 additions by SF #
 	spriteType = {
-		name = "government_reform_english_lordship_reform"
-		texturefile = "gfx/interface/government_reform_icons/english_lordship_reform.dds"
+		name = "government_reform_eue_lordship_reform"
+		texturefile = "gfx/interface/government_reform_icons/eue_reforms/eue_lordship_reform.dds"
+	}
+	
+	spriteType = {
+		name = "government_reform_eue_barony_reform"
+		texturefile = "gfx/interface/government_reform_icons/eue_reforms/eue_barony_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_eue_viscounty_reform"
+		texturefile = "gfx/interface/government_reform_icons/eue_reforms/eue_viscounty_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_eue_county_reform"
+		texturefile = "gfx/interface/government_reform_icons/eue_reforms/eue_county_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_eng_earldom_reform"
+		texturefile = "gfx/interface/government_reform_icons/eue_reforms/eng_earldom_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_eue_marquisate_reform"
+		texturefile = "gfx/interface/government_reform_icons/eue_reforms/eue_marquisate_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_eue_duchy_reform"
+		texturefile = "gfx/interface/government_reform_icons/eue_reforms/eue_duchy_reform.dds"
 	}
 
 	spriteType = {
-		name = "government_reform_english_duchy_reform"
-		texturefile = "gfx/interface/government_reform_icons/english_duchy_reform.dds"
+		name = "government_reform_eue_principality_reform"
+		texturefile = "gfx/interface/government_reform_icons/eue_reforms/eue_principality.dds"
+	}
+
+	spriteType = {
+		name = "government_reform_eue_kingdom_reform"
+		texturefile = "gfx/interface/government_reform_icons/eue_reforms/eue_kingdom_reform.dds"
+	}
+
+	#Islamic
+	spriteType = {
+		name = "government_reform_islamic_imamate_reform"
+		texturefile = "gfx/interface/government_reform_icons/islamic/islamic_imamate_reform.dds"
+	}
+
+	spriteType = {
+		name = "government_reform_islamic_grand_muftate_reform"
+		texturefile = "gfx/interface/government_reform_icons/islamic/islamic_grand_muftate_reform.dds"
+	}
+
+	spriteType = {
+		name = "government_reform_islamic_sheikdom_reform"
+		texturefile = "gfx/interface/government_reform_icons/islamic/islamic_sheikdom_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_islamic_sharifate_reform"
+		texturefile = "gfx/interface/government_reform_icons/islamic/islamic_sharifate_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_islamic_mystic_order"
+		texturefile = "gfx/interface/government_reform_icons/islamic/islamic_mystic_order.dds"
+	}
+	spriteType = {
+		name = "government_reform_islamic_emirate_reform"
+		texturefile = "gfx/interface/government_reform_icons/islamic/islamic_emirate_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_islamic_governate_reform"
+		texturefile = "gfx/interface/government_reform_icons/islamic/islamic_governate_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_islamic_sultanate_reform"
+		texturefile = "gfx/interface/government_reform_icons/islamic/islamic_sultanate_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_islamic_taifa_reform"
+		texturefile = "gfx/interface/government_reform_icons/islamic/islamic_taifa_reform.dds"
+	}
+
+	spriteType = {
+		name = "government_reform_islamic_malikate_reform"
+		texturefile = "gfx/interface/government_reform_icons/islamic/islamic_malikate_reform.dds"
+	}
+
+	#Prince-Archbishopric of Andorra
+	spriteType = {
+		name = "government_reform_prince_archbishopric_of_andorra_reform"
+		texturefile = "gfx/interface/government_reform_icons/andorra/prince_archbishopric_reform.dds"
+	}
+
+	#Prince-Provost of Ellwangen
+	spriteType = {
+		name = "government_reform_prince_provost_reform"
+		texturefile = "gfx/interface/government_reform_icons/ellwangen/prince_provost_reform.dds"
+	}
+
+	#Imperial Abbacy
+	spriteType = {
+		name = "government_reform_imperial_abbacy_reform"
+		texturefile = "gfx/interface/government_reform_icons/hre/imperial_abbacy_reform.dds"
 	}
 
 	#End of New Additions by San Felipe 
@@ -1219,33 +1380,13 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "government_reform_house_of_lords"
-		texturefile = "gfx//interface//government_reform_icons//dlc//domination//house_of_lords.dds"
-	}
-
-	spriteType = {
-		name = "government_reform_anglican_state_church"
-		texturefile = "gfx//interface//government_reform_icons//dlc//domination//anglican_state_church.dds"
-	}
-
-	spriteType = {
-		name = "government_reform_english_conciliarism"
-		texturefile = "gfx//interface//government_reform_icons//dlc//domination//english_conciliarism.dds"
-	}
-
-	spriteType = {
-		name = "government_reform_british_monarchy"
-		texturefile = "gfx//interface//government_reform_icons//dlc//domination//british_monarchy.dds"
-	}
-
-	spriteType = {
-		name = "government_reform_british_absolutism"
-		texturefile = "gfx//interface//government_reform_icons//dlc//domination//british_absolutism.dds"
-	}
-
-	spriteType = {
 		name = "government_reform_caliphate"
 		texturefile = "gfx//interface//government_reform_icons//dlc//domination//caliphate.dds"
+	}
+
+	spriteType = {
+		name = "government_reform_amirate"
+		texturefile = "gfx//interface//government_reform_icons//islamic//islamic_amirate_reform.dds"
 	}
 
 	spriteType = {
@@ -1644,6 +1785,120 @@ spriteTypes = {
 		name = "government_reform_turkoman_ottoman_institutions"
 		texturefile = "gfx//interface//government_reform_icons//dlc//king_of_kings//turkoman_ottoman_institutions.dds"
 	}
+
+	### WOC // 1.37 Reforms
+	spriteType = {
+		name = "government_reform_andean_empire_reform"
+		texturefile = "gfx//interface//government_reform_icons//dlc//winds_of_change//andean_empire_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_apostolic_kingdom"
+		texturefile = "gfx//interface//government_reform_icons//dlc//winds_of_change//apostolic_kingdom.dds"
+	}
+	spriteType = {
+		name = "government_reform_arabian_plutocracy_reform"
+		texturefile = "gfx//interface//government_reform_icons//dlc//winds_of_change//arabian_plutocracy_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_ayyubid_dynasty"
+		texturefile = "gfx//interface//government_reform_icons//dlc//winds_of_change//ayyubid_dynasty.dds"
+	}
+	spriteType = {
+		name = "government_reform_aztec_empire_reform"
+		texturefile = "gfx//interface//government_reform_icons//dlc//winds_of_change//aztec_empire_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_blood_theocracy_reform"
+		texturefile = "gfx//interface//government_reform_icons//dlc//winds_of_change//blood_theocracy_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_cuman_lancers_reform"
+		texturefile = "gfx//interface//government_reform_icons//dlc//winds_of_change//cuman_lancers_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_divine_kingship_reform"
+		texturefile = "gfx//interface//government_reform_icons//dlc//winds_of_change//divine_kingship_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_divine_kingship_reform"
+		texturefile = "gfx//interface//government_reform_icons//dlc//winds_of_change//divine_kingship_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_dutch_architecture"
+		texturefile = "gfx//interface//government_reform_icons//dlc//winds_of_change//dutch_architecture.dds"
+	}
+	spriteType = {
+		name = "government_reform_extend_the_unio_trium_nationum_reform"
+		texturefile = "gfx//interface//government_reform_icons//dlc//winds_of_change//extend_the_unio_trium_nationum_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_german_cultural_disunity_reform"
+		texturefile = "gfx//interface//government_reform_icons//dlc//winds_of_change//german_cultural_disunity_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_gothic_monarchy_reform"
+		texturefile = "gfx//interface//government_reform_icons//dlc//winds_of_change//gothic_monarchy_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_maya_confederation_reform"
+		texturefile = "gfx//interface//government_reform_icons//dlc//winds_of_change//maya_confederation_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_merchant_aristocracy_reform"
+		texturefile = "gfx//interface//government_reform_icons//dlc//winds_of_change//merchant_aristocracy_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_merchant_representation_reform"
+		texturefile = "gfx//interface//government_reform_icons//dlc//winds_of_change//merchant_representation_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_modern_economics_reform"
+		texturefile = "gfx//interface//government_reform_icons//dlc//winds_of_change//modern_economics_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_nahuatl_monarchy_reform"
+		texturefile = "gfx//interface//government_reform_icons//dlc//winds_of_change//nahuatl_monarchy_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_ned_dykes"
+		texturefile = "gfx//interface//government_reform_icons//dlc//winds_of_change//ned_dykes.dds"
+	}
+	spriteType = {
+		name = "government_reform_ned_friesland"
+		texturefile = "gfx//interface//government_reform_icons//dlc//winds_of_change//ned_friesland.dds"
+	}
+	spriteType = {
+		name = "government_reform_orangist_stadholders_reform"
+		texturefile = "gfx//interface//government_reform_icons//dlc//winds_of_change//orangist_stadholders_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_russian_mercenary_guard_reform"
+		texturefile = "gfx//interface//government_reform_icons//dlc//winds_of_change//russian_mercenary_guard_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_seven_provinces_reform"
+		texturefile = "gfx//interface//government_reform_icons//dlc//winds_of_change//seven_provinces_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_support_state_reform"
+		texturefile = "gfx//interface//government_reform_icons//dlc//winds_of_change//support_state_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_timurid_diwan_reform"
+		texturefile = "gfx//interface//government_reform_icons//dlc//winds_of_change//timurid_diwan_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_ven_army_republic"
+		texturefile = "gfx//interface//government_reform_icons//dlc//winds_of_change//ven_army_republic.dds"
+	}
+	spriteType = {
+		name = "government_reform_ven_promissione_ducale_reform"
+		texturefile = "gfx//interface//government_reform_icons//dlc//winds_of_change//ven_promissione_ducale_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_vozove_hradby_reform"
+		texturefile = "gfx//interface//government_reform_icons//dlc//winds_of_change//vozove_hradby_reform.dds"
+	}
 	
 ################################
 ## VU Additions by San Felipe ##
@@ -1848,5 +2103,129 @@ spriteTypes = {
 	spriteType = {
 		name = "government_reform_sardom_reform"
 		texturefile = "gfx//interface//government_reform_icons//sardom_reform.dds"
+	}
+
+	#BRITISH
+	spriteType = {
+		name = "government_reform_house_of_lords"
+		texturefile = "gfx//interface//government_reform_icons//british//house_of_lords.dds"
+	}
+
+	spriteType = {
+		name = "government_reform_anglican_state_church"
+		texturefile = "gfx//interface//government_reform_icons//british//anglican_state_church.dds"
+	}
+
+	spriteType = {
+		name = "government_reform_english_conciliarism"
+		texturefile = "gfx//interface//government_reform_icons//british//english_conciliarism.dds"
+	}
+
+	spriteType = {
+		name = "government_reform_british_absolutism"
+		texturefile = "gfx//interface//government_reform_icons//british//british_absolutism.dds"
+	}
+
+	spriteType = {
+		name = "government_reform_english_monarchy"
+		texturefile = "gfx//interface//government_reform_icons//british//english_monarchy.dds"
+	}
+
+	spriteType = {
+		name = "government_reform_british_monarchy"
+		texturefile = "gfx//interface//government_reform_icons//british//british_monarchy.dds"
+	}
+	
+	spriteType = {
+		name = "government_reform_british_queen"
+		texturefile = "gfx//interface//government_reform_icons//british//british_queen.dds"
+	}
+
+	spriteType = {
+		name = "government_reform_english_monarchy"
+		texturefile = "gfx//interface//government_reform_icons//british//english_monarchy.dds"
+	}
+
+	spriteType = {
+		name = "government_reform_english_privy_council"
+		texturefile = "gfx//interface//government_reform_icons//british//english_privy_council.dds"
+	}
+
+	#SLOVAKIAN
+	spriteType = {
+		name = "government_reform_duchy_of_nitra"
+		texturefile = "gfx//interface//government_reform_icons//slovakia//slovakian_monarchy.dds"
+	}
+
+	#GEORGIAN
+	spriteType = {
+		name = "government_reform_malikat_of_georgia"
+		texturefile = "gfx//interface//government_reform_icons//georgia//malikat_of_georgia.dds"
+	}
+
+	#CROATIAN
+	spriteType = {
+		name = "government_reform_croatian_monarchy"
+		texturefile = "gfx//interface//government_reform_icons//georgia//croatian_monarchy.dds"
+	}
+
+	#PERSIA
+	spriteType = {
+		name = "government_reform_persian_shahenshahdom"
+		texturefile = "gfx//interface//government_reform_icons//persia//persian_shahenshahdom.dds"
+	}
+
+	#GHAZINATE
+	spriteType = {
+		name = "government_reform_ghazinate"
+		texturefile = "gfx//interface//government_reform_icons//steppe_horiding//ghazi_ho.dds"
+	}
+
+	#SCYTHIAN HORDEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE!
+	spriteType = {
+		name = "government_reform_scythian_horde"
+		texturefile = "gfx//interface//government_reform_icons//steppe_horiding//scythian_bob.dds"
+	}
+
+	#DRAGON THRONE
+	spriteType = {
+		name = "government_reform_dragon_throne"
+		texturefile = "gfx//interface//government_reform_icons//china//dragon_throne.dds"
+	}
+
+	#CHRYSANTHEMUM THRONE
+	spriteType = {
+		name = "government_reform_chrysanthemum_throne"
+		texturefile = "gfx//interface//government_reform_icons//japan//chrysanthemum_throne.dds"
+	}
+
+	#ZAMORIN OF CALCUTTA
+	spriteType = {
+		name = "government_reform_zamorin_of_calcutta"
+		texturefile = "gfx//interface//government_reform_icons//india//zamorin_of_calcutta.dds"
+	}
+
+	#THOMDOM OF CALCUTTA
+	spriteType = {
+		name = "government_reform_thomdom"
+		texturefile = "gfx//interface//government_reform_icons//india//thomdom.dds"
+	}
+
+	#ARYACAKRAVARTI DYNASTY
+	spriteType = {
+		name = "government_reform_aryacakravarti_dynasty"
+		texturefile = "gfx//interface//government_reform_icons//india//aryacakravarti_dynasty.dds"
+	}
+
+	#BURMESE MONARCHY
+	spriteType = {
+		name = "government_reform_burmese_monarchy"
+		texturefile = "gfx//interface//government_reform_icons//burmese//burmese_monarchy.dds"
+	}
+
+	#THAI MONARCHY
+	spriteType = {
+		name = "government_reform_thai_monarchy"
+		texturefile = "gfx//interface//government_reform_icons//thai//thai_monarchy.dds"
 	}
 }

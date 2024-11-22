@@ -1,5 +1,6 @@
 government = monarchy
-add_government_reform = feudalism_reform
+add_government_reform = apostolic_kingdom
+government_rank = 8 #Kingdom
 primary_culture = hungarian
 add_accepted_culture = slovak
 add_accepted_culture = romanian
@@ -43,6 +44,10 @@ change_estate_land_share = {
 		siege = 1	
 		death_date = 1445.1.1 
 	} 
+}
+
+1439.10.27 = {
+    historical_rival = BOH
 }
 
 # Personal union with Habsburg under Albrecht II 1437-39

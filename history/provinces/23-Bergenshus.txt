@@ -15,9 +15,8 @@ base_manpower = 4
 is_city = yes
 capital = "Bergen"
 
-
-
-
+#Claimants
+add_core = HOR
 
 center_of_trade = 1
 extra_cost = 15

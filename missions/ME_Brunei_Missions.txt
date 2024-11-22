@@ -372,7 +372,7 @@ BEI_missions_2 = {
 			total_development = 200
 		}
 		effect = {
-			set_government_rank = 3 #empire
+			set_government_rank = 9 #empire
 			add_country_modifier = {
 				name = BEI_bruneian_empire_modifier
 				duration = -1

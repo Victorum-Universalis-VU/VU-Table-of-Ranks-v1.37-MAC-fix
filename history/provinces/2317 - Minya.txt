@@ -2,6 +2,7 @@
 
 owner = MAM
 controller = MAM
+add_core = MAM
 culture = al_misr_arabic
 religion = sunni
 capital = "El Minya"
@@ -11,18 +12,12 @@ base_tax = 5
 base_production = 5
 base_manpower = 4 
 is_city = yes
-add_core = MAM
+
+#Claimants
+add_core = EGY
 add_core = KEM
-
-
-
-
-
-
-
-
-
-
+add_core = PT0
+add_core = R4S
 
 1517.1.1 = {
 	owner = TUR

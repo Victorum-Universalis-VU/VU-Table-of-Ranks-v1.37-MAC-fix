@@ -420,9 +420,6 @@ l_english:
  HNS_we_have_25_trade_share: "We have §G5.0%§! Trade Share in the Trade Node §Y[From.GetName]§! belongs to."
  HNS_we_have_no_hansa_outpost: "We have no §YHanseatic Outpost§! in the in the Trade Node §Y[From.GetName]§! belongs to."
  
- travelling_merchant: "Travelling Merchant"
- travelling_merchant_desc: "Travelling Merchants were opportunists who ventured forth into the lands far away in order to bring the foreign marvels home and to sell them at a reasonable profit."
- 
  HNS_call_hansetag_title: "@HNS Call for a Hansetag"
  HNS_call_hansetag_desc: "Hansetage (Hanseatic Days) were meetings held by the representatives of the Hanseatic Leagues' members. Those were usually held in Lubeck, due to its central position, but could also be held in other Hanseatic cities, prime or not. The meetings were called whenever needed. Unfortunately though, the turnout was quite low, which was the leading cause for many issues. Never was there more than half of the cities' representatives on a single meeting, despite the sanctions that were placed on insubordinate cities. Despite that, it is time we reform this institution and make it into a permanent body of our confederation."
  HNS_hansehalle_decision_title: "@HNS Upgrade the Hansehalle"
@@ -483,3 +480,7 @@ l_english:
  HNS7_COC: "Subsidize Private Trade"
  HNS7_COC_desc: "A professional navy is good and all, but expanding our horizons to include more private individuals will simply increase trade on our behalf. More business means more income!"
  HNS_ideas_COC_bonus: "Hanseatic Ambitions"
+
+ #Modifiers:
+ HNS_skane_market_1: "Skane Market"
+ desc_HNS_skane_market_1: ""

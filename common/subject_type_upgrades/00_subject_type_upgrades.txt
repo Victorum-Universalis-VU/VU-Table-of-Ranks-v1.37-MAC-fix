@@ -218,6 +218,7 @@ allow_autonomous_trade = {
 		OR = {
 			is_subject_of_type = self_governing_colony
 			is_subject_of_type = commercial_enterprise
+			is_subject_of_type = self_governing_dominion_vu
 		}
 		colonial_parent = {
 			adm_power_cost = 25
@@ -243,6 +244,7 @@ allow_autonomous_taxing = {
 		OR = {
 			is_subject_of_type = self_governing_colony
 			is_subject_of_type = commercial_enterprise
+			is_subject_of_type = self_governing_dominion_vu
 		}
 		colonial_parent = {
 			adm_power_cost = 25
@@ -268,6 +270,7 @@ allow_autonomous_militias = {
 		OR = {
 			is_subject_of_type = self_governing_colony
 			is_subject_of_type = commercial_enterprise
+			is_subject_of_type = self_governing_dominion_vu
 		}
 		colonial_parent = {
 			adm_power_cost = 25
@@ -293,6 +296,7 @@ allow_autonomous_navy = {
 		OR = {
 			is_subject_of_type = self_governing_colony
 			is_subject_of_type = commercial_enterprise
+			is_subject_of_type = self_governing_dominion_vu
 		}
 		colonial_parent = {
 			adm_power_cost = 25
@@ -313,56 +317,83 @@ allow_autonomous_navy = {
 	}
 }
 
-#Self-Governing Dominion VU Upgrades
-allow_autonomous_trade = {
+increase_voc_eastindiamen_construction = {
 	can_upgrade_trigger = {
-		is_subject_of_type = self_governing_dominion_vu
+		tag = VOC
 		colonial_parent = {
-			adm_power_cost = 25
+			adm_power_cost = 100
 		}
 	}
 	
 	cost = 100
-
+	
 	effect = {
 		colonial_parent = {
-			adm_power_cost = -25
+			adm_power_cost = 100
+		}
+		hidden_effect = {
+			set_country_flag = has_increased_voc_eastindiamen_construction
 		}
 	}
-	
+
+	removed_effect = {
+		hidden_effect = {
+			clr_country_flag = has_increased_voc_eastindiamen_construction
+		}
+	}
+
+	modifier_overlord = {
+		has_voc_indiamen = yes
+		allowed_voc_indiamen_fraction = 0.05
+	}
+
 	modifier_subject = {
-		global_own_trade_power = 0.05
-		liberty_desire = -5
+		allowed_voc_indiamen_fraction = -0.05
+		liberty_desire = 10
 	}
 }
 
-allow_autonomous_taxing = {
+increase_asian_trade_routes_influence = {
 	can_upgrade_trigger = {
-		is_subject_of_type = self_governing_dominion_vu
+		tag = VOC
 		colonial_parent = {
-			adm_power_cost = 25
+			dip_power_cost = 100
 		}
 	}
 	
 	cost = 100
-
+	
 	effect = {
 		colonial_parent = {
-			adm_power_cost = -25
+			dip_power_cost = 100
+		}
+		hidden_effect = {
+			set_country_flag = has_increased_asian_trade_routes_influence
 		}
 	}
-	
+
+	removed_effect = {
+		hidden_effect = {
+			clr_country_flag = has_increased_asian_trade_routes_influence
+		}
+	}
+
+	modifier_overlord = {
+		merchants = 1
+		placed_merchant_power_modifier = 0.1 
+	}
+
 	modifier_subject = {
-		global_tax_modifier = 0.05
-		liberty_desire = -5
+		merchants = -1
+		liberty_desire = 10
 	}
 }
 
-allow_autonomous_militias = {
+increase_trade_company_control = {
 	can_upgrade_trigger = {
-		is_subject_of_type = self_governing_dominion_vu
+		tag = VOC
 		colonial_parent = {
-			adm_power_cost = 25
+			dip_power_cost = 100
 		}
 	}
 	
@@ -370,21 +401,34 @@ allow_autonomous_militias = {
 	
 	effect = {
 		colonial_parent = {
-			adm_power_cost = -25
+			dip_power_cost = 100
+		}
+		hidden_effect = {
+			set_country_flag = has_increased_trade_company_control
 		}
 	}
 
+	removed_effect = {
+		hidden_effect = {
+			clr_country_flag = has_increased_trade_company_control
+		}
+	}
+
+	modifier_overlord = {
+		trade_efficiency = 0.05
+	}
+
 	modifier_subject = {
-		global_manpower_modifier = 0.05
-		liberty_desire = -5
+		trade_efficiency = -0.05
+		liberty_desire = 10
 	}
 }
 
-allow_autonomous_navy = {
+allow_religious_conquests = {
 	can_upgrade_trigger = {
-		is_subject_of_type = self_governing_dominion_vu
+		tag = VOC
 		colonial_parent = {
-			adm_power_cost = 25
+			mil_power_cost = 100
 		}
 	}
 	
@@ -392,12 +436,25 @@ allow_autonomous_navy = {
 	
 	effect = {
 		colonial_parent = {
-			adm_power_cost = -25
+			mil_power_cost = 100
+		}
+		hidden_effect = {
+			set_country_flag = has_allowed_religious_conquests
 		}
 	}
 
+	removed_effect = {
+		hidden_effect = {
+			clr_country_flag = has_allowed_religious_conquests
+		}
+	}
+
+	modifier_overlord = {
+		missionaries = -1
+	}
+
 	modifier_subject = {
-		global_sailors_modifier = 0.1
-		liberty_desire = -5
+		cb_on_religious_enemies = yes
+		global_missionary_strength = 0.02
 	}
 }

@@ -17,6 +17,7 @@ capital = "Hamar"
 is_city = yes
 
 #Claimants
+add_core = AKE
 add_core = NOR
 
 #Buildings
@@ -24,9 +25,6 @@ add_core = NOR
 #Special Modifiers
 
 #Known by Technology groups
-
-
-
 
 #Histories by SF
 1440.1.1 = { 
@@ -47,7 +45,7 @@ add_core = NOR
 	controller = DAN
 	add_core = DAN
 	religion = protestant
-} # 'Handf√§stningen'(Unknown date)
+} # 'Handf‰stningen'(Unknown date)
 1630.1.1 = { 
 	trade_goods = copper 
 } # Approximate date

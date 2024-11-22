@@ -8,13 +8,6 @@ revolutionary_colors = { 8 5 8 }
 
 historical_idea_groups = {
 	maritime_ideas
-	economic_ideas
-	defensive_ideas
-	offensive_ideas
-	diplomatic_ideas
-	aristocracy_ideas
-	spy_ideas
-	religious_ideas
 }
 
 historical_units = {
@@ -75,7 +68,7 @@ monarch_names = {
 	"Joakim #0" = 10
 	"Zack #0" = 10
 	"Pierre #0" = 10
-	"Céline #0" = -10
+	"Cï¿½line #0" = -10
 	"James #0" = 10
 	"Byron #0" = 10
 	
@@ -91,7 +84,7 @@ monarch_names = {
 	"Adam #0" = 5
 	"Viktor #0" = 2
 	"Stefan #0" = 5
-	"Björn #0" = 5
+	"Bjï¿½rn #0" = 5
 	"Nina #0" = -5
 	"Marie #0" = -10
 	"Valeska #0" = -10
@@ -111,20 +104,20 @@ leader_names = {
     Bergqwist
 	Berni
 	Bjarnehed
-	Björk
+	Bjï¿½rk
 	Borg
 	Drevendal
 	"du Plessis"
-	Edström
+	Edstrï¿½m
 	Eklund
 	Eriksson
 	Foxander
-	Fåhraeus
+	Fï¿½hraeus
 	Gidfors
 	Gladh
 	Hansson
 	Hesselborn
-	Höglund
+	Hï¿½glund
 	Holmgren
 	Isaksson
 	Jakobsson
@@ -138,9 +131,9 @@ leader_names = {
 	Kowalcyzk
 	Kuiper
 	Kundak-Cowall
-	Lagerbäck
+	Lagerbï¿½ck
 	Lohmander
-	Lerström
+	Lerstrï¿½m
 	Lind
 	Mannetje
 	Martins
@@ -151,11 +144,11 @@ leader_names = {
 	Palmqvist
 	Rodriguez
 	Ropert
-	Rönn
+	Rï¿½nn
 	Sarell
-	Schießl
+	Schieï¿½l
 	Skoglund
-	Sjöström
+	Sjï¿½strï¿½m
 	Sommerdahl
 	Strid
 	Tammpere
@@ -166,10 +159,10 @@ leader_names = {
 	Thulin
 	Zetterman
 	Villberg
-	Åberg
-	Åslund
+	ï¿½berg
+	ï¿½slund
 	Virtanen
-	Wendel-Örtqvist
+	Wendel-ï¿½rtqvist
 	Young
 	Pazos
 }
@@ -177,14 +170,14 @@ leader_names = {
 ship_names = {
 	Burgsvik
 	Djauvik
-	Fårösund
-	Gnisvärd
+	Fï¿½rï¿½sund
+	Gnisvï¿½rd
 	Klintehamn
 	Hoburgen
 	Katthamra
 	Drake
 	Ljugarn
 	Slite
-    Västergarn
+    Vï¿½stergarn
     Visby
 }

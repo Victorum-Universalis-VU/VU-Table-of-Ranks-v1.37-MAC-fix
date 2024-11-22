@@ -1181,6 +1181,7 @@ ARA_missions_3 = {
 			OR = {
 				area = rascia_area
 				area = east_adriatic_coast_area
+				area = ragusa_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
@@ -1190,6 +1191,10 @@ ARA_missions_3 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			east_adriatic_coast_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			ragusa_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -1525,6 +1530,7 @@ ARA_missions_4 = {
 		provinces_to_highlight = {
 			OR = {
 				area = central_italy_area
+				area = san_marino_area
 				area = tuscany_area
 				area = lazio_area
 			}
@@ -1536,6 +1542,10 @@ ARA_missions_4 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			central_italy_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			san_marino_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -1610,6 +1620,13 @@ ARA_missions_4 = {
 		}
 		effect = {
 			east_adriatic_coast_area = {
+				limit = {
+					NOT = { owned_by = ROOT	}
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			ragusa_area = {
 				limit = {
 					NOT = { owned_by = ROOT	}
 					NOT = { is_core = ROOT }
@@ -1807,6 +1824,13 @@ ARA_missions_5 = {
 				}
 			}
 			central_italy_area = {
+				limit = {
+					NOT = { owned_by = ROOT	}
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			san_marino_area = {
 				limit = {
 					NOT = { owned_by = ROOT	}
 					NOT = { is_core = ROOT }

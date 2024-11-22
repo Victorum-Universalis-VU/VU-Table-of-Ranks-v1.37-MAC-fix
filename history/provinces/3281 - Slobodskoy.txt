@@ -1,16 +1,16 @@
  
-#3281 - Slobodskoy
+#3281 - Khlynov
 
 owner = VYA
 controller = VYA
-culture = russian
+culture = muscovite
 religion = orthodox
 hre = no
-base_tax = 3
+base_tax = 2
 base_production = 3 
 trade_goods = naval_supplies
 base_manpower = 2 
-capital = "Vyatka"
+capital = "Khlynov"
 is_city = yes
 add_core = VYA
 

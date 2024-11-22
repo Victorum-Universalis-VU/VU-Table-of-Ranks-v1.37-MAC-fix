@@ -1,5 +1,6 @@
 government = monarchy
 add_government_reform = bohemian_elective_kingdom_reform
+government_rank = 8 #Kingdom
 primary_culture = czech
 religion = catholic
 elector = yes
@@ -12,6 +13,16 @@ add_accepted_culture = franconian
 add_accepted_culture = slovak
 add_accepted_culture = silesian_german
 add_army_professionalism = 0.1
+historical_rival = HUN
+#historical_rival = BRA #Hashed out due to Don's advice since it makes diplomacy between brandenburg and bohemia impossible. - SF
+historical_rival = AUT
+historical_rival = HAB
+historical_rival = CR1
+historical_rival = STY
+historical_rival = PAP
+historical_friend = SAX
+historical_friend = POL
+historical_friend = PLC
 
 change_estate_land_share = {
 	estate = estate_burghers
@@ -36,7 +47,7 @@ add_country_modifier = {
 
 1378.11.29 = {
 	monarch = {
-		name = "V√°clav IV"
+		name = "V·clav IV"
 		dynasty = "von Luxemburg"
 		birth_date = 1361.2.26
 		adm = 2
@@ -49,7 +60,7 @@ add_country_modifier = {
 
 1419.1.1 = { leader = {	name = "Jan Zizka" type = general fire = 6 shock = 4 manuever = 6 siege = 5	death_date = 1424.10.11 } }
 
-1419.1.1 = { leader = {	name = "Prokop Hol√Ω" type = general	fire = 4 shock = 3 manuever = 5	siege = 1 death_date = 1434.5.30 } }
+1419.1.1 = { leader = {	name = "Prokop Hol˝" type = general	fire = 4 shock = 3 manuever = 5	siege = 1 death_date = 1434.5.30 } }
 
 # Personal Union with Habsburg under Albrecht II 1437-1439
 
@@ -81,7 +92,7 @@ add_country_modifier = {
 
 1457.11.24 = {
 	monarch = {
-		name = "Jir√≠"
+		name = "JirÌ"
 		dynasty = "z Podebrad"
 		birth_date = 1420.4.23
 		adm = 5
@@ -91,7 +102,7 @@ add_country_modifier = {
 	queen = {
 		country_of_origin = BOH
 		name = "Joanna"
-		dynasty = "Rozmit√°l"
+		dynasty = "Rozmit·l"
 		birth_date = 1430.1.1
 		death_date = 1475.11.12
 		female = yes
@@ -130,7 +141,7 @@ add_country_modifier = {
 	queen = {
 		country_of_origin = NAP
 		name = "Beatrice"
-		dynasty = "de Trast√°mara"
+		dynasty = "de Trast·mara"
 		birth_date = 1457.11.16
 		death_date = 1500.4.7 #annulled, real death: 1508.9.23
 		female = yes

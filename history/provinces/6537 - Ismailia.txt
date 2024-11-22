@@ -13,22 +13,10 @@ base_production = 3
 base_manpower = 1
 is_city = yes
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#Claimants
+add_core = EGY
+add_core = PT0
+add_core = R4S
 
 1517.1.1 = {
 	owner = TUR

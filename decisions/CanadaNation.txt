@@ -1,3 +1,4 @@
+#VU updated to v1.37 by San Felipe 
 country_decisions = {
 
 	canada_nation = {
@@ -65,7 +66,6 @@ country_decisions = {
 				is_city = yes
 			}
 			NOT = { exists = CAN }
-			is_free_or_tributary_trigger = yes
 		}
 		effect = {
 			hidden_effect = {
@@ -95,9 +95,9 @@ country_decisions = {
 			}
 			if = {
 				limit = {
-					NOT = { government_rank = 2 }
+					NOT = { government_rank = 8 }
 				}
-				set_government_rank = 2
+				set_government_rank = 8
 			}
 			colonial_canada = {
 				limit = {
@@ -109,7 +109,7 @@ country_decisions = {
 				name = "centralization_modifier"
 				duration = 7300
 			}
-			add_prestige_or_monarch_power = { amount = 25 }
+			add_prestige = 25
 			if = {
 				limit = { has_custom_ideas = no }
 				country_event = { id = ideagroups.1 } #Swap Ideas
@@ -117,10 +117,7 @@ country_decisions = {
 			#can't have more than one elective monarchy in the game
 			if = {
 				limit = {
-					OR = {
-						has_reform = elective_monarchy
-						has_reform = phoenician_elective_monarchical_republic
-					}
+					has_reform = elective_monarchy
 				}
 				change_government = monarchy
 				add_government_reform = feudalism_reform

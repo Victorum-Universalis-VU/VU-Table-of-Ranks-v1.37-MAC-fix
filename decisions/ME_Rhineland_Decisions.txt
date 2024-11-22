@@ -6,6 +6,9 @@ country_decisions = {
 				hesse_area = {
 					NOT = { has_building = blast_furnace }
 				}
+				frankfurt_area = {
+					NOT = { has_building = blast_furnace }
+				}
 				north_rhine_area = {
 					NOT = { has_building = blast_furnace }
 				}
@@ -39,6 +42,7 @@ country_decisions = {
 					}
 					OR = {
 						area = hesse_area
+						area = frankfurt_area
 						area = north_rhine_area
 						area = lower_rhineland_area
 						area = palatinate_area
@@ -49,6 +53,7 @@ country_decisions = {
 				else = {
 					OR = {
 						area = hesse_area
+						area = frankfurt_area
 						area = north_rhine_area
 						area = lower_rhineland_area
 						area = palatinate_area
@@ -80,6 +85,7 @@ country_decisions = {
 			owned_by = ROOT
 			OR = {
 				area = hesse_area
+				area = frankfurt_area
 				area = north_rhine_area
 				area = lower_rhineland_area
 				area = palatinate_area

@@ -1,3 +1,4 @@
+#Updated to v1.37 - SF
 estate_nobles_land_rights = {
 	icon = privilege_grant_autonomy
 	land_share = 5
@@ -27,17 +28,20 @@ estate_nobles_land_rights = {
 		}
 	}
 
+
 	benefits = {
 		governing_capacity = 200
+	}
+	conditional_modifier = {
+		trigger = { has_country_flag = ned_land_rights_buff_flag }
+		modifier = {
+			governing_capacity = 50
+		}
 	}
 	conditional_modifier = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.05 }
 	}
-	#conditional_modifier = {
-	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
-	#	modifier = { monthly_ottoman_decadence = 0.02 }
-	#}
 	ai_will_do = {
 		factor = 5
 		modifier = {
@@ -127,7 +131,7 @@ estate_nobles_land_rights = {
 		modifier = {
 			factor = 5
 			NOT = { adm_tech = 29 }
-			NOT = { government_rank = 1 }
+			NOT = { government_rank = 6 }
 			governing_capacity_percentage = 0.65
 		}
 		#Tag specific convincement - after tech 17 (+250 governing capacity) it should not play a role anymore
@@ -281,12 +285,16 @@ estate_nobles_nobility_primacy = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.05 }
 	}
-	#conditional_modifier = {
-	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
-	#	modifier = { monthly_ottoman_decadence = 0.02 }
-	#}
+	conditional_modifier = {
+		trigger = { has_country_flag = GER_upgrade_primacy_of_the_nobility_flag }
+		modifier = { mil_tech_cost_modifier = -0.1 }
+	}
+	conditional_modifier = {
+		trigger = { has_country_flag = azt_imperial_tributes_flag }
+		modifier = { monarch_power_tribute = 1 }
+	}
 	ai_will_do = {
-		factor = 12
+		factor = 100
 		modifier = {
 			factor = 0
 			OR = {
@@ -334,10 +342,26 @@ estate_nobles_officer_corp = {
 		NOT = { has_estate = estate_qizilbash }
 	}
 	can_select = {
-		army_tradition = 30
+		if = {
+			limit = {
+				NOT = { has_country_flag = azt_free_officer_corp_flag }
+			}
+			army_tradition = 30
+		}
 	}
 	on_granted = {
-		add_army_tradition = -15
+		if = {
+			limit = {
+				NOT = { has_country_flag = azt_free_officer_corp_flag }
+			}
+			add_army_tradition = -5
+		}
+		if = {
+			limit = {
+				has_country_flag = hab_military_reform_flag
+			}
+			custom_tooltip = HAB_WHEN_AT_WAR_GRANT_MORALE
+		}
 	}
 	penalties = {
 	}
@@ -346,13 +370,35 @@ estate_nobles_officer_corp = {
 		army_tradition_decay = -0.005
 	}
 	conditional_modifier = {
+		trigger = { 
+			NOT = { has_country_flag = TIM_upgrade_amirs_in_officer_corps_mission_flag }
+		}
+		modifier = {
+			general_cost = -0.1
+		}
+	}
+	conditional_modifier = {
+		trigger = { has_country_flag = TIM_upgrade_amirs_in_officer_corps_mission_flag }
+		modifier = {
+			general_cost = -0.2
+			movement_speed = 0.05
+		}
+	}
+	conditional_modifier = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.05 }
 	}
-	#conditional_modifier = {
-	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
-	#	modifier = { monthly_ottoman_decadence = 0.02 }
-	#}
+	conditional_modifier = {
+		trigger = { has_country_flag = feo_buff_nobility_officer_corp_flag }
+		modifier = { global_regiment_cost = -0.1 }
+	}
+	conditional_modifier = {
+		trigger = { 
+			has_country_flag = hab_military_reform_flag
+			is_at_war = yes 
+		}
+		modifier = { land_morale = 0.1 }
+	}
 	ai_will_do = {
 		factor = 0
 	}
@@ -383,9 +429,31 @@ estate_nobles_levies = {
 			NOT = { has_estate_privilege = estate_maratha_levies_for_muslims }
 		}
 	}
+	on_granted = {
+		if = {
+			limit = { has_country_flag = azt_noble_levies_loyalty_buff_flag }
+			custom_tooltip = azt_estate_nobles_levies_scaled_modifier_tt
+		}
+	} 
 	modifier_by_land_ownership = {
 		global_tax_modifier = -0.10
 		global_manpower_modifier = 0.25
+	}
+	influence_scaled_conditional_modifier = {
+		trigger = {
+			has_country_flag = azt_buff_noble_levies_flag
+		}
+		modifier = {
+			global_regiment_cost = -0.1
+		}
+	}
+	loyalty_scaled_conditional_modifier = {
+		trigger = {
+			has_country_flag = azt_noble_levies_loyalty_buff_flag
+		}
+		modifier = {
+			global_manpower_modifier = 0.15
+		}
 	}
 	penalties = {
 	}
@@ -405,10 +473,6 @@ estate_nobles_levies = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.05 }
 	}
-	#conditional_modifier = {
-	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
-	#	modifier = { monthly_ottoman_decadence = 0.02 }
-	#}
 	ai_will_do = {
 		factor = 5
 		modifier = {
@@ -490,10 +554,6 @@ estate_nobles_advisors = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.05 }
 	}
-	#conditional_modifier = {
-	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
-	#	modifier = { monthly_ottoman_decadence = 0.02 }
-	#}
 	ai_will_do = {
 		factor = 10
 		modifier = {
@@ -521,10 +581,6 @@ estate_nobles_right_of_counsel = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.05 }
 	}
-	#conditional_modifier = {
-	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
-	#	modifier = { monthly_ottoman_decadence = 0.02 }
-	#}
 	ai_will_do = {
 		factor = 10
 		modifier = {
@@ -540,6 +596,7 @@ estate_nobles_french_strong_duchies = {
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
 	loyalty = 0.1
 	influence = 0.1
+	check_valid_when_tag_switching = no
 	is_valid = {
 		OR = {
 			has_estate_privilege = estate_nobles_french_strong_duchies
@@ -562,6 +619,8 @@ estate_nobles_french_strong_duchies = {
 				is_subject_of_type = client_march
 				is_subject_of_type = client_vassal
 				is_subject_of_type = personal_union
+				is_subject_of_type = incorporated_vassal
+				is_subject_of_type = integrated_personal_union
 				is_subject_of_type = naval_march
 				is_subject_of_type = defensive_march 
 				is_subject_of_type = march
@@ -588,6 +647,8 @@ estate_nobles_french_strong_duchies = {
 						is_subject_of_type = client_march
 						is_subject_of_type = client_vassal
 						is_subject_of_type = personal_union
+						is_subject_of_type = incorporated_vassal
+						is_subject_of_type = integrated_personal_union
 						is_subject_of_type = naval_march
 						is_subject_of_type = defensive_march 
 						is_subject_of_type = march
@@ -662,38 +723,20 @@ estate_nobles_supremacy_over_crown = {
 	penalties = {
 	}
 	benefits = {
-		burghers_loyalty_modifier = 0.1
-		church_loyalty_modifier = 0.1
-		dhimmi_loyalty_modifier = 0.1
-		cossacks_loyalty_modifier = 0.1
-		rajput_loyalty_modifier = 0.1
-		brahmins_hindu_loyalty_modifier = 0.1
-		brahmins_muslim_loyalty_modifier = 0.1
-		brahmins_other_loyalty_modifier = 0.1
-		maratha_loyalty_modifier = 0.1
-		jains_loyalty_modifier = 0.1
-		vaisyas_loyalty_modifier = 0.1
-		nomadic_tribes_loyalty_modifier = 0.1
-		janissaries_loyalty_modifier = 0.1
-		eunuchs_loyalty_modifier = 0.1
-		qizilbash_loyalty_modifier = 0.1
-		ghulams_loyalty_modifier = 0.1
-		burghers_influence_modifier = 0.1
-		church_influence_modifier = 0.1
-		dhimmi_influence_modifier = 0.1
-		cossacks_influence_modifier = 0.1
-		rajput_influence_modifier = 0.1
-		brahmins_hindu_influence_modifier = 0.1
-		brahmins_muslim_influence_modifier = 0.1
-		brahmins_other_influence_modifier = 0.1
-		maratha_influence_modifier = 0.1
-		jains_influence_modifier = 0.1
-		vaisyas_influence_modifier = 0.1
-		nomadic_tribes_influence_modifier = 0.1
-		janissaries_influence_modifier = 0.1
-		eunuchs_influence_modifier = 0.1
-		qizilbash_influence_modifier = 0.1
-		ghulams_influence_modifier = 0.1
+		all_estate_loyalty_equilibrium = 0.1
+		all_estate_influence_modifier = 0.1
+	}
+	loyalty_scaled_conditional_modifier = {
+		trigger = {
+			has_country_flag = hab_second_option_flag
+			estate_influence = {
+				estate = estate_nobles
+				influence = 80
+			}
+		}
+		modifier = {
+			global_manpower_modifier = 0.2
+		}
 	}
 	mechanics = {
 		can_give_agendas_without_interaction
@@ -702,10 +745,7 @@ estate_nobles_supremacy_over_crown = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.05 }
 	}
-	#conditional_modifier = {
-	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
-	#	modifier = { monthly_ottoman_decadence = 0.02 }
-	#}
+
 	ai_will_do = {
 		factor = 10
 	}
@@ -1071,11 +1111,27 @@ estate_nobles_junker_primacy = {
 	penalties = {
 		#all_power_cost = 0.05
 	}
-	benefits = {
-		monthly_militarized_society = 0.02
-		monthly_prussian_militarized_society_1 = 0.02
-		monthly_prussian_militarized_society_2 = 0.05
-		monthly_prussian_militarized_society_3 = 0.075
+	conditional_modifier = {
+		trigger = {
+			has_country_flag = GER_upgrade_the_junker_primacy_flag 
+		}
+		modifier = {
+			monthly_militarized_society = 0.06
+			monthly_prussian_militarized_society_1 = 0.04
+			monthly_prussian_militarized_society_2 = 0.1
+			monthly_prussian_militarized_society_3 = 0.15
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			NOT = { has_country_flag = GER_upgrade_the_junker_primacy_flag }
+		}
+		modifier = {
+			monthly_militarized_society = 0.02
+			monthly_prussian_militarized_society_1 = 0.02
+			monthly_prussian_militarized_society_2 = 0.05
+			monthly_prussian_militarized_society_3 = 0.075
+		}
 	}
 	ai_will_do = {
 		factor = 1
@@ -1096,24 +1152,274 @@ estate_nobles_strong_duchies = {
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
 	influence = 0.1
 	loyalty = 0.05
+	check_valid_when_tag_switching = no
 	is_valid = {
 		any_subject_country = {
 			OR = {
-				is_subject_of_type = appanage
-				is_subject_of_type = vassal
+			    #Brother Kingdom
+			    #is_subject_of_type = brother_kingdom
+			    #Silesian Duchy
+			    #is_subject_of_type = silesian_duke
+			    #Appenage
+			    is_subject_of_type = appanage
+			    #Marches
+			    is_subject_of_type = march
+			    is_subject_of_type = naval_march
+			    is_subject_of_type = defensive_march
+			    is_subject_of_type = client_march
+			    is_subject_of_type = religious_march
+			    is_subject_of_type = agricultural_march
+			    #Status Ponifincii
+			    is_subject_of_type = papal_subject_vu
+			    is_subject_of_type = papal_sanctuary_subject
+			    #Voivodeship
+			    is_subject_of_type = voivodeship
+			    #Vassals
+			    is_subject_of_type = vassal
 				is_subject_of_type = client_vassal
-				is_subject_of_type = march
-				is_subject_of_type = client_march
-				is_subject_of_type = personal_union
-				is_subject_of_type = naval_march
-				is_subject_of_type = defensive_march 
-				is_subject_of_type = march
-				is_subject_of_type = viceroyalty_vu
-				is_subject_of_type = religious_march
-				is_subject_of_type = agricultural_march 
-				is_subject_of_type = medieval_vassal 
-				#is_subject_of_type = silesian_duke
+				is_subject_of_type = incorporated_vassal
+				is_subject_of_type = medieval_vassal
 				is_subject_of_type = mandala_trade_vassal
+				#Viceroyalty
+				is_subject_of_type = viceroyalty_vu
+			    #Japanese Daimyos
+			    is_subject_of_type = daimyo_vassal
+			    is_subject_of_type = daimyo_barony_vassal
+			    is_subject_of_type = daimyo_viscounty_vassal
+			    is_subject_of_type = daimyo_county_vassal
+			    is_subject_of_type = daimyo_marquisate_vassal
+			    is_subject_of_type = daimyo_duchy_vassal
+			    is_subject_of_type = daimyo_principality_vassal
+			    #Scottish Clans
+			    is_subject_of_type = scottish_clan
+			    #Personal Unions
+			    is_subject_of_type = aragonese_crown_PU
+			    is_subject_of_type = austrian_crown_PU
+			    is_subject_of_type = benelux_crown_PU
+			    is_subject_of_type = bohemian_crown_PU
+			    is_subject_of_type = burgundian_crown_PU
+			    is_subject_of_type = byzantine_crown_PU
+			    is_subject_of_type = danish_crown_PU
+			    is_subject_of_type = english_crown_PU
+			    is_subject_of_type = french_crown_PU
+			    is_subject_of_type = german_crown_PU
+			    is_subject_of_type = hungarian_crown_PU
+				is_subject_of_type = italian_crown_PU
+			    is_subject_of_type = polish_crown_PU
+			    is_subject_of_type = portuguese_crown_PU
+				is_subject_of_type = russian_crown_PU
+			    is_subject_of_type = spanish_crown_PU
+			    is_subject_of_type = swedish_crown_PU
+			    is_subject_of_type = personal_union
+				is_subject_of_type = integrated_personal_union
+			    #Swiss Cantons
+			    is_subject_of_type = canton
+			    is_subject_of_type = autonomous_canton
+			    #European & Archbishoprics
+			    is_subject_of_type = european_abbacy
+			    is_subject_of_type = european_bishopric
+			    is_subject_of_type = european_archbishopric
+			    #Islamic Subjects
+			    is_subject_of_type = islamic_imamate			#Equivalent to Lordship  
+			    is_subject_of_type = islamic_grand_muftate			#Equivalent to barony
+			    is_subject_of_type = islamic_sheikdom			#Equivalent to viscounty
+			    is_subject_of_type = islamic_sharifate			#Equivalent to county
+			    is_subject_of_type = islamic_emirate			#Equivalent to marquisate
+			    is_subject_of_type = islamic_governate			#Equivalent to marquisate
+			    is_subject_of_type = islamic_sultanate			#Equivalent to duchy
+			    is_subject_of_type = islamic_taifa			#Equivalent to principality
+			    is_subject_of_type = islamic_malikate			#Equivalent to kingdom
+			    #Anglois Subjects
+			    is_subject_of_type = anglois_lordship
+			    is_subject_of_type = anglois_barony
+			    is_subject_of_type = anglois_viscounty
+			    is_subject_of_type = anglois_county
+			    is_subject_of_type = anglois_marquisate
+			    is_subject_of_type = anglois_duchy
+			    is_subject_of_type = anglois_principality
+			    is_subject_of_type = anglois_kingdom
+			    #Aragonese Subjects
+			    is_subject_of_type = aragonese_lordship
+			    is_subject_of_type = aragonese_barony
+			    is_subject_of_type = aragonese_viscounty
+			    is_subject_of_type = aragonese_county
+			    is_subject_of_type = aragonese_marquisate
+			    is_subject_of_type = aragonese_duchy
+			    is_subject_of_type = aragonese_principality
+			    is_subject_of_type = aragonese_kingdom
+			    #Austrian Subjects
+			    is_subject_of_type = austrian_lordship
+			    is_subject_of_type = austrian_barony
+			    is_subject_of_type = austrian_viscounty
+			    is_subject_of_type = austrian_county
+			    is_subject_of_type = austrian_marquisate
+			    is_subject_of_type = austrian_duchy
+			    is_subject_of_type = austrian_principality
+			    is_subject_of_type = austrian_kingdom
+				#Baltic Subjects
+			    is_subject_of_type = baltic_lordship
+			    is_subject_of_type = baltic_barony
+			    is_subject_of_type = baltic_viscounty
+			    is_subject_of_type = baltic_county
+			    is_subject_of_type = baltic_marquisate
+			    is_subject_of_type = baltic_duchy
+			    is_subject_of_type = baltic_principality
+			    is_subject_of_type = baltic_kingdom
+			    #Belgian Subjects
+			    is_subject_of_type = belgian_lordship
+			    is_subject_of_type = belgian_barony
+			    is_subject_of_type = belgian_viscounty
+			    is_subject_of_type = belgian_county
+			    is_subject_of_type = belgian_marquisate
+			    is_subject_of_type = belgian_duchy
+			    is_subject_of_type = belgian_principality
+			    is_subject_of_type = belgian_kingdom
+			    #Bohemian Subjects
+			    is_subject_of_type = bohemian_lordship
+			    is_subject_of_type = bohemian_barony
+			    is_subject_of_type = bohemian_viscounty
+			    is_subject_of_type = bohemian_county
+			    is_subject_of_type = bohemian_marquisate
+			    is_subject_of_type = bohemian_duchy
+			    is_subject_of_type = bohemian_principality
+			    is_subject_of_type = bohemian_kingdom
+			    #Byzantine Subjects
+			    is_subject_of_type = byzantine_lordship
+			    is_subject_of_type = byzantine_barony
+			    is_subject_of_type = byzantine_viscounty
+			    is_subject_of_type = byzantine_county
+			    is_subject_of_type = byzantine_marquisate
+			    is_subject_of_type = byzantine_duchy
+			    is_subject_of_type = byzantine_principality
+			    is_subject_of_type = byzantine_kingdom
+			    #Castilian
+			    is_subject_of_type = castilian_lordship
+			    is_subject_of_type = castilian_barony
+			    is_subject_of_type = castilian_viscounty
+			    is_subject_of_type = castilian_county
+			    is_subject_of_type = castilian_marquisate
+			    is_subject_of_type = castilian_duchy
+			    is_subject_of_type = castilian_principality
+			    is_subject_of_type = castilian_kingdom
+			    #Danish Subjects
+			    is_subject_of_type = danish_lordship
+			    is_subject_of_type = danish_barony
+			    is_subject_of_type = danish_viscounty
+			    is_subject_of_type = danish_county
+			    is_subject_of_type = danish_marquisate
+			    is_subject_of_type = danish_duchy
+			    is_subject_of_type = danish_principality
+			    is_subject_of_type = danish_kingdom
+			    #Dutch Subjects
+			    is_subject_of_type = dutch_lordship
+			    is_subject_of_type = dutch_barony
+			    is_subject_of_type = dutch_viscounty
+			    is_subject_of_type = dutch_county
+			    is_subject_of_type = dutch_marquisate
+			    is_subject_of_type = dutch_duchy
+			    is_subject_of_type = dutch_principality
+			    is_subject_of_type = dutch_kingdom
+			    #English
+			    is_subject_of_type = english_lordship
+			    is_subject_of_type = english_barony
+			    is_subject_of_type = english_viscounty
+			    is_subject_of_type = english_earldom
+			    is_subject_of_type = english_marquisate
+			    is_subject_of_type = english_duchy
+			    is_subject_of_type = english_principality
+			    is_subject_of_type = english_kingdom
+			    #French Subjects
+			    is_subject_of_type = french_lordship
+			    is_subject_of_type = french_barony
+			    is_subject_of_type = french_viscounty
+			    is_subject_of_type = french_county
+			    is_subject_of_type = french_marquisate
+			    is_subject_of_type = french_duchy
+			    is_subject_of_type = french_principality
+			    is_subject_of_type = french_kingdom
+			    #German Subjects
+			    is_subject_of_type = german_lordship
+			    is_subject_of_type = german_barony
+			    is_subject_of_type = german_viscounty
+			    is_subject_of_type = german_county
+			    is_subject_of_type = german_marquisate
+			    is_subject_of_type = german_duchy
+			    is_subject_of_type = german_principality
+			    is_subject_of_type = german_kingdom
+			    #Hungarian Subjects
+			    is_subject_of_type = hungarian_lordship
+			    is_subject_of_type = hungarian_barony
+			    is_subject_of_type = hungarian_viscounty
+			    is_subject_of_type = hungarian_county
+			    is_subject_of_type = hungarian_marquisate
+			    is_subject_of_type = hungarian_duchy
+			    is_subject_of_type = hungarian_principality
+			    is_subject_of_type = hungarian_kingdom
+			    #Italian Subjects
+			    is_subject_of_type = italian_lordship
+			    is_subject_of_type = italian_barony
+			    is_subject_of_type = italian_viscounty
+			    is_subject_of_type = italian_county
+			    is_subject_of_type = italian_marquisate
+			    is_subject_of_type = italian_duchy
+			    is_subject_of_type = italian_principality
+			    is_subject_of_type = italian_kingdom
+				#Mongolian Subjects
+				is_subject_of_type = mongolian_vassal
+			    #Norwegian Subjects
+			    is_subject_of_type = norwegian_lordship
+			    is_subject_of_type = norwegian_barony
+			    is_subject_of_type = norwegian_viscounty
+			    is_subject_of_type = norwegian_county
+			    is_subject_of_type = norwegian_marquisate
+			    is_subject_of_type = norwegian_duchy
+			    is_subject_of_type = norwegian_principality
+			    is_subject_of_type = norwegian_kingdom
+			    #Polish Subjects
+			    is_subject_of_type = polish_lordship
+			    is_subject_of_type = polish_barony
+			    is_subject_of_type = polish_viscounty
+			    is_subject_of_type = polish_county
+			    is_subject_of_type = polish_marquisate
+			    is_subject_of_type = polish_duchy
+			    is_subject_of_type = polish_principality
+			    is_subject_of_type = polish_kingdom
+			    #Portuguese Subjects
+			    is_subject_of_type = portuguese_lordship
+			    is_subject_of_type = portuguese_barony
+			    is_subject_of_type = portuguese_viscounty
+			    is_subject_of_type = portuguese_county
+			    is_subject_of_type = portuguese_marquisate
+			    is_subject_of_type = portuguese_duchy
+			    is_subject_of_type = portuguese_principality
+			    is_subject_of_type = portuguese_kingdom
+			    #Prussian Subjects
+			    is_subject_of_type = prussian_lordship
+			    is_subject_of_type = prussian_barony
+			    is_subject_of_type = prussian_viscounty
+			    is_subject_of_type = prussian_county
+			    is_subject_of_type = prussian_marquisate
+			    is_subject_of_type = prussian_duchy
+			    is_subject_of_type = prussian_principality
+			    is_subject_of_type = prussian_kingdom
+			    #Russian Subjects
+			    is_subject_of_type = russian_lordship
+			    is_subject_of_type = russian_barony
+			    is_subject_of_type = russian_viscounty
+			    is_subject_of_type = russian_county
+			    is_subject_of_type = russian_marquisate
+			    is_subject_of_type = russian_duchy
+			    is_subject_of_type = russian_principality
+			    is_subject_of_type = russian_kingdom
+			    #Swedish Subjects
+			    is_subject_of_type = swedish_lordship
+			    is_subject_of_type = swedish_barony
+			    is_subject_of_type = swedish_viscounty
+			    is_subject_of_type = swedish_county
+			    is_subject_of_type = swedish_marquisate
+			    is_subject_of_type = swedish_duchy
+			    is_subject_of_type = swedish_principality
+			    is_subject_of_type = swedish_kingdom
 			}
 		}
 		NOT = { has_estate_privilege = estate_nobles_french_strong_duchies }
@@ -1126,7 +1432,8 @@ estate_nobles_strong_duchies = {
 				    tag = FSE
 				    tag = NPF
 				    tag = OFR
-					has_reform = english_monarchy # VU
+					has_reform = english_monarchy
+					has_reform = british_monarchy
 					has_reform = scottish_monarchy # VU
 				}
 				NOT = { has_estate_privilege = estate_nobles_strong_duchies }
@@ -1140,22 +1447,271 @@ estate_nobles_strong_duchies = {
 				amount = 2
 				all_subject_country = {
 					OR = {
-						is_subject_of_type = appanage
-						is_subject_of_type = vassal
-						is_subject_of_type = client_vassal
-						is_subject_of_type = march
-						is_subject_of_type = client_march
-						is_subject_of_type = personal_union
-						is_subject_of_type = naval_march
-						is_subject_of_type = defensive_march 
-						is_subject_of_type = march
-						is_subject_of_type = viceroyalty_vu
-						is_subject_of_type = religious_march
-						is_subject_of_type = agricultural_march 
-						is_subject_of_type = medieval_vassal 
-						#is_subject_of_type = silesian_duke
-						is_subject_of_type = mandala_trade_vassal
-					}
+			            #Brother Kingdom
+			            #is_subject_of_type = brother_kingdom
+			            #Silesian Duchy
+			            #is_subject_of_type = silesian_duke
+			            #Appenage
+			            is_subject_of_type = appanage
+			            #Marches
+			            is_subject_of_type = march
+			            is_subject_of_type = naval_march
+			            is_subject_of_type = defensive_march
+			            is_subject_of_type = client_march
+			            is_subject_of_type = religious_march
+			            is_subject_of_type = agricultural_march
+			            #Status Ponifincii
+			            is_subject_of_type = papal_subject_vu
+			            is_subject_of_type = papal_sanctuary_subject
+			            #Voivodeship
+			            is_subject_of_type = voivodeship
+			            #Vassals
+			            is_subject_of_type = vassal
+			        	is_subject_of_type = client_vassal
+			        	is_subject_of_type = incorporated_vassal
+			        	is_subject_of_type = medieval_vassal
+			        	is_subject_of_type = mandala_trade_vassal
+			        	#Viceroyalty
+			        	is_subject_of_type = viceroyalty_vu
+			            #Japanese Daimyos
+			            is_subject_of_type = daimyo_vassal
+			            is_subject_of_type = daimyo_barony_vassal
+			            is_subject_of_type = daimyo_viscounty_vassal
+			            is_subject_of_type = daimyo_county_vassal
+			            is_subject_of_type = daimyo_marquisate_vassal
+			            is_subject_of_type = daimyo_duchy_vassal
+			            is_subject_of_type = daimyo_principality_vassal
+			            #Scottish Clans
+			            is_subject_of_type = scottish_clan
+			            #Personal Unions
+			            is_subject_of_type = aragonese_crown_PU
+			            is_subject_of_type = austrian_crown_PU
+			            is_subject_of_type = benelux_crown_PU
+			            is_subject_of_type = bohemian_crown_PU
+			            is_subject_of_type = burgundian_crown_PU
+			            is_subject_of_type = byzantine_crown_PU
+			            is_subject_of_type = danish_crown_PU
+			            is_subject_of_type = english_crown_PU
+			            is_subject_of_type = french_crown_PU
+			            is_subject_of_type = german_crown_PU
+			            is_subject_of_type = hungarian_crown_PU
+						is_subject_of_type = italian_crown_PU
+			            is_subject_of_type = polish_crown_PU
+			            is_subject_of_type = portuguese_crown_PU
+						is_subject_of_type = russian_crown_PU
+			            is_subject_of_type = spanish_crown_PU
+			            is_subject_of_type = swedish_crown_PU
+			            is_subject_of_type = personal_union
+			        	is_subject_of_type = integrated_personal_union
+			            #Swiss Cantons
+			            is_subject_of_type = canton
+			            is_subject_of_type = autonomous_canton
+			            #European & Archbishoprics
+			            is_subject_of_type = european_abbacy
+			            is_subject_of_type = european_bishopric
+			            is_subject_of_type = european_archbishopric
+			            #Islamic Subjects
+			            is_subject_of_type = islamic_imamate			#Equivalent to Lordship  
+			            is_subject_of_type = islamic_grand_muftate			#Equivalent to barony
+			            is_subject_of_type = islamic_sheikdom			#Equivalent to viscounty
+			            is_subject_of_type = islamic_sharifate			#Equivalent to county
+			            is_subject_of_type = islamic_emirate			#Equivalent to marquisate
+			            is_subject_of_type = islamic_governate			#Equivalent to marquisate
+			            is_subject_of_type = islamic_sultanate			#Equivalent to duchy
+			            is_subject_of_type = islamic_taifa			#Equivalent to principality
+			            is_subject_of_type = islamic_malikate			#Equivalent to kingdom
+			            #Anglois Subjects
+			            is_subject_of_type = anglois_lordship
+			            is_subject_of_type = anglois_barony
+			            is_subject_of_type = anglois_viscounty
+			            is_subject_of_type = anglois_county
+			            is_subject_of_type = anglois_marquisate
+			            is_subject_of_type = anglois_duchy
+			            is_subject_of_type = anglois_principality
+			            is_subject_of_type = anglois_kingdom
+			            #Aragonese Subjects
+			            is_subject_of_type = aragonese_lordship
+			            is_subject_of_type = aragonese_barony
+			            is_subject_of_type = aragonese_viscounty
+			            is_subject_of_type = aragonese_county
+			            is_subject_of_type = aragonese_marquisate
+			            is_subject_of_type = aragonese_duchy
+			            is_subject_of_type = aragonese_principality
+			            is_subject_of_type = aragonese_kingdom
+			            #Austrian Subjects
+			            is_subject_of_type = austrian_lordship
+			            is_subject_of_type = austrian_barony
+			            is_subject_of_type = austrian_viscounty
+			            is_subject_of_type = austrian_county
+			            is_subject_of_type = austrian_marquisate
+			            is_subject_of_type = austrian_duchy
+			            is_subject_of_type = austrian_principality
+			            is_subject_of_type = austrian_kingdom
+						#Baltic Subjects
+			            is_subject_of_type = baltic_lordship
+			            is_subject_of_type = baltic_barony
+			            is_subject_of_type = baltic_viscounty
+			            is_subject_of_type = baltic_county
+			            is_subject_of_type = baltic_marquisate
+			            is_subject_of_type = baltic_duchy
+			            is_subject_of_type = baltic_principality
+			            is_subject_of_type = baltic_kingdom
+			            #Belgian Subjects
+			            is_subject_of_type = belgian_lordship
+			            is_subject_of_type = belgian_barony
+			            is_subject_of_type = belgian_viscounty
+			            is_subject_of_type = belgian_county
+			            is_subject_of_type = belgian_marquisate
+			            is_subject_of_type = belgian_duchy
+			            is_subject_of_type = belgian_principality
+			            is_subject_of_type = belgian_kingdom
+			            #Bohemian Subjects
+			            is_subject_of_type = bohemian_lordship
+			            is_subject_of_type = bohemian_barony
+			            is_subject_of_type = bohemian_viscounty
+			            is_subject_of_type = bohemian_county
+			            is_subject_of_type = bohemian_marquisate
+			            is_subject_of_type = bohemian_duchy
+			            is_subject_of_type = bohemian_principality
+			            is_subject_of_type = bohemian_kingdom
+			            #Byzantine Subjects
+			            is_subject_of_type = byzantine_lordship
+			            is_subject_of_type = byzantine_barony
+			            is_subject_of_type = byzantine_viscounty
+			            is_subject_of_type = byzantine_county
+			            is_subject_of_type = byzantine_marquisate
+			            is_subject_of_type = byzantine_duchy
+			            is_subject_of_type = byzantine_principality
+			            is_subject_of_type = byzantine_kingdom
+			            #Castilian
+			            is_subject_of_type = castilian_lordship
+			            is_subject_of_type = castilian_barony
+			            is_subject_of_type = castilian_viscounty
+			            is_subject_of_type = castilian_county
+			            is_subject_of_type = castilian_marquisate
+			            is_subject_of_type = castilian_duchy
+			            is_subject_of_type = castilian_principality
+			            is_subject_of_type = castilian_kingdom
+			            #Danish Subjects
+			            is_subject_of_type = danish_lordship
+			            is_subject_of_type = danish_barony
+			            is_subject_of_type = danish_viscounty
+			            is_subject_of_type = danish_county
+			            is_subject_of_type = danish_marquisate
+			            is_subject_of_type = danish_duchy
+			            is_subject_of_type = danish_principality
+			            is_subject_of_type = danish_kingdom
+			            #Dutch Subjects
+			            is_subject_of_type = dutch_lordship
+			            is_subject_of_type = dutch_barony
+			            is_subject_of_type = dutch_viscounty
+			            is_subject_of_type = dutch_county
+			            is_subject_of_type = dutch_marquisate
+			            is_subject_of_type = dutch_duchy
+			            is_subject_of_type = dutch_principality
+			            is_subject_of_type = dutch_kingdom
+			            #English
+			            is_subject_of_type = english_lordship
+			            is_subject_of_type = english_barony
+			            is_subject_of_type = english_viscounty
+			            is_subject_of_type = english_earldom
+			            is_subject_of_type = english_marquisate
+			            is_subject_of_type = english_duchy
+			            is_subject_of_type = english_principality
+			            is_subject_of_type = english_kingdom
+			            #French Subjects
+			            is_subject_of_type = french_lordship
+			            is_subject_of_type = french_barony
+			            is_subject_of_type = french_viscounty
+			            is_subject_of_type = french_county
+			            is_subject_of_type = french_marquisate
+			            is_subject_of_type = french_duchy
+			            is_subject_of_type = french_principality
+			            is_subject_of_type = french_kingdom
+			            #German Subjects
+			            is_subject_of_type = german_lordship
+			            is_subject_of_type = german_barony
+			            is_subject_of_type = german_viscounty
+			            is_subject_of_type = german_county
+			            is_subject_of_type = german_marquisate
+			            is_subject_of_type = german_duchy
+			            is_subject_of_type = german_principality
+			            is_subject_of_type = german_kingdom
+			            #Hungarian Subjects
+			            is_subject_of_type = hungarian_lordship
+			            is_subject_of_type = hungarian_barony
+			            is_subject_of_type = hungarian_viscounty
+			            is_subject_of_type = hungarian_county
+			            is_subject_of_type = hungarian_marquisate
+			            is_subject_of_type = hungarian_duchy
+			            is_subject_of_type = hungarian_principality
+			            is_subject_of_type = hungarian_kingdom
+			            #Italian Subjects
+			            is_subject_of_type = italian_lordship
+			            is_subject_of_type = italian_barony
+			            is_subject_of_type = italian_viscounty
+			            is_subject_of_type = italian_county
+			            is_subject_of_type = italian_marquisate
+			            is_subject_of_type = italian_duchy
+			            is_subject_of_type = italian_principality
+			            is_subject_of_type = italian_kingdom
+						#Mongolian Subjects
+						is_subject_of_type = mongolian_vassal
+			            #Norwegian Subjects
+			            is_subject_of_type = norwegian_lordship
+			            is_subject_of_type = norwegian_barony
+			            is_subject_of_type = norwegian_viscounty
+			            is_subject_of_type = norwegian_county
+			            is_subject_of_type = norwegian_marquisate
+			            is_subject_of_type = norwegian_duchy
+			            is_subject_of_type = norwegian_principality
+			            is_subject_of_type = norwegian_kingdom
+			            #Polish Subjects
+			            is_subject_of_type = polish_lordship
+			            is_subject_of_type = polish_barony
+			            is_subject_of_type = polish_viscounty
+			            is_subject_of_type = polish_county
+			            is_subject_of_type = polish_marquisate
+			            is_subject_of_type = polish_duchy
+			            is_subject_of_type = polish_principality
+			            is_subject_of_type = polish_kingdom
+			            #Portuguese Subjects
+			            is_subject_of_type = portuguese_lordship
+			            is_subject_of_type = portuguese_barony
+			            is_subject_of_type = portuguese_viscounty
+			            is_subject_of_type = portuguese_county
+			            is_subject_of_type = portuguese_marquisate
+			            is_subject_of_type = portuguese_duchy
+			            is_subject_of_type = portuguese_principality
+			            is_subject_of_type = portuguese_kingdom
+			            #Prussian Subjects
+			            is_subject_of_type = prussian_lordship
+			            is_subject_of_type = prussian_barony
+			            is_subject_of_type = prussian_viscounty
+			            is_subject_of_type = prussian_county
+			            is_subject_of_type = prussian_marquisate
+			            is_subject_of_type = prussian_duchy
+			            is_subject_of_type = prussian_principality
+			            is_subject_of_type = prussian_kingdom
+			            #Russian Subjects
+			            is_subject_of_type = russian_lordship
+			            is_subject_of_type = russian_barony
+			            is_subject_of_type = russian_viscounty
+			            is_subject_of_type = russian_county
+			            is_subject_of_type = russian_marquisate
+			            is_subject_of_type = russian_duchy
+			            is_subject_of_type = russian_principality
+			            is_subject_of_type = russian_kingdom
+			            #Swedish Subjects
+			            is_subject_of_type = swedish_lordship
+			            is_subject_of_type = swedish_barony
+			            is_subject_of_type = swedish_viscounty
+			            is_subject_of_type = swedish_county
+			            is_subject_of_type = swedish_marquisate
+			            is_subject_of_type = swedish_duchy
+			            is_subject_of_type = swedish_principality
+			            is_subject_of_type = swedish_kingdom
+			        }
 				}
 			}
 		}
@@ -1176,10 +1732,17 @@ estate_nobles_strong_duchies = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.05 }
 	}
-	#conditional_modifier = {
-	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
-	#	modifier = { monthly_ottoman_decadence = 0.02 }
-	#}
+	conditional_modifier = {
+		trigger = { has_country_flag = hun_upgrade_strong_duchies }
+		modifier = { 	vassal_forcelimit_bonus = 0.5 }
+	}
+	conditional_modifier = {
+		trigger = { has_country_flag = hab_upgraded_strong_duchies }
+		modifier = { 
+			vassal_forcelimit_bonus = 0.25
+			vassal_income = 0.1
+		}
+	}
 	ai_will_do = {
 		factor = 2
 		modifier = {
@@ -1219,7 +1782,7 @@ estate_nobles_golden_liberty = {
 		OR = {
 			has_estate_privilege = estate_nobles_golden_liberty #Poland starts with it
 			has_reform = elective_monarchy
-			has_reform = phoenician_elective_monarchical_republic
+			has_reform = phoenician_elective_monarchical_republic #VU addition by SF & Prussia
 			has_reform = polish_elective_monarchy 
 		}
 	}
@@ -1238,7 +1801,7 @@ estate_nobles_golden_liberty = {
 				AND = { 
 					NOT = { has_reform = polish_elective_monarchy } 
 					NOT = { has_reform = elective_monarchy }
-					NOT = { has_reform = phoenician_elective_monarchical_republic }
+					NOT = { has_reform = phoenician_elective_monarchical_republic } #VU addition by SF & Prussia
 				}
 				has_reform = polish_autocratic_monarchy
 				mission_completed = plc_golden_liberty
@@ -1292,7 +1855,7 @@ estate_nobles_golden_liberty = {
 			limit = {
 				OR = { 
 					has_reform = elective_monarchy
-					has_reform = phoenician_elective_monarchical_republic
+					has_reform = phoenician_elective_monarchical_republic #VU addition by SF & Prussia
 					has_reform = polish_elective_monarchy
 				}
 				has_estate = estate_nobles
@@ -1365,7 +1928,7 @@ estate_nobles_veto_heir_apparent = {
 		OR = { 
 			has_reform = polish_elective_monarchy
 			has_reform = elective_monarchy
-			has_reform = phoenician_elective_monarchical_republic
+			has_reform = phoenician_elective_monarchical_republic #VU addition by SF & Prussia
 		}
 	}
 	penalties = {
@@ -1401,10 +1964,6 @@ estate_nobles_statutory_rights = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.05 }
 	}
-	#conditional_modifier = {
-	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
-	#	modifier = { monthly_ottoman_decadence = 0.02 }
-	#}
 	ai_will_do = {
 		factor = 0
 	}
@@ -1446,14 +2005,23 @@ estate_nobles_better_integration = {
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
 	influence = 0.15
 	loyalty = 0.05
+	check_valid_when_tag_switching = no
 	is_valid = {
 		any_subject_country = {
 			OR = {
 				is_subject_of_type = vassal
 				is_subject_of_type = client_vassal
 				is_subject_of_type = daimyo_vassal
+				is_subject_of_type = daimyo_barony_vassal
+				is_subject_of_type = daimyo_viscounty_vassal
+				is_subject_of_type = daimyo_county_vassal
+				is_subject_of_type = daimyo_marquisate_vassal
+				is_subject_of_type = daimyo_duchy_vassal
+				is_subject_of_type = daimyo_principality_vassal
 				is_subject_of_type = personal_union
 				is_subject_of_type = appanage
+				is_subject_of_type = incorporated_vassal
+				is_subject_of_type = integrated_personal_union
 			}
 		}
 	}
@@ -1479,10 +2047,6 @@ estate_nobles_better_integration = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.05 }
 	}
-	#conditional_modifier = {
-	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
-	#	modifier = { monthly_ottoman_decadence = 0.02 }
-	#}
 	ai_will_do = {
 		factor = 10
 	}
@@ -1502,6 +2066,7 @@ estate_nobles_neighbor_raids = {
 			technology_group = central_african
 			technology_group = sub_saharan
 			has_reform = steppe_horde
+			has_reform = scythian_horde_reform	
 			has_reform = great_mongol_state_reform
 		}
 	}
@@ -1685,7 +2250,7 @@ estate_nobles_grant_power_to_the_bashorun = {
 			NOT = { has_country_flag = can_create_tributaries_flag }
 			NOT = { is_nomad = yes }
 			NOT = { religion_group = eastern }
-			NOT = { religion_group = buddhist_group }
+			NOT = { religion_group = buddhist_group } #VU addition by RobertK
 			NOT = { technology_group = chinese }
 			NOT = { technology_group = polynesian_tech }
 		}
@@ -2499,8 +3064,8 @@ estate_nobles_early_serfdom = {
 			has_reform = principality
 			has_reform = veche_republic
 			has_reform = tsardom
-			has_reform = issi_akdom_reform
-			has_reform = sardom_reform
+			has_reform = issi_akdom_reform #VU addition by SF & Prussia
+			has_reform = sardom_reform #VU addition by SF & Prussia
 			has_reform = russian_empire_reform
 			has_reform = great_veche_republic
 			has_reform = great_russian_republic_reform
@@ -2583,8 +3148,8 @@ estate_nobles_legalized_serfdom = {
 			has_reform = principality
 			has_reform = veche_republic
 			has_reform = tsardom
-			has_reform = issi_akdom_reform
-			has_reform = sardom_reform
+			has_reform = issi_akdom_reform #VU addition by SF & Prussia
+			has_reform = sardom_reform #VU addition by SF & Prussia
 			has_reform = russian_empire_reform
 			has_reform = great_veche_republic
 			has_reform = great_russian_republic_reform
@@ -2664,8 +3229,8 @@ estate_nobles_total_serfdom = {
 			has_reform = principality
 			has_reform = veche_republic
 			has_reform = tsardom
-			has_reform = issi_akdom_reform
-			has_reform = sardom_reform
+			has_reform = issi_akdom_reform #VU addition by SF & Prussia
+			has_reform = sardom_reform #VU addition by SF & Prussia
 			has_reform = russian_empire_reform
 			has_reform = great_veche_republic
 			has_reform = great_russian_republic_reform
@@ -2744,8 +3309,8 @@ estate_nobles_restricted_serfdom = {
 			has_reform = principality
 			has_reform = veche_republic
 			has_reform = tsardom
-			has_reform = issi_akdom_reform
-			has_reform = sardom_reform
+			has_reform = issi_akdom_reform #VU addition by SF & Prussia
+			has_reform = sardom_reform #VU addition by SF & Prussia
 			has_reform = russian_empire_reform
 			has_reform = great_veche_republic
 			has_reform = great_russian_republic_reform
@@ -2820,8 +3385,8 @@ estate_nobles_devastating_serfdom = {
 			has_reform = principality
 			has_reform = veche_republic
 			has_reform = tsardom
-			has_reform = issi_akdom_reform
-			has_reform = sardom_reform
+			has_reform = issi_akdom_reform #VU addition by SF & Prussia
+			has_reform = sardom_reform #VU addition by SF & Prussia
 			has_reform = russian_empire_reform
 			has_reform = great_veche_republic
 			has_reform = great_russian_republic_reform
@@ -2898,8 +3463,8 @@ estate_nobles_increased_peasant_freedom = {
 			has_reform = principality
 			has_reform = veche_republic
 			has_reform = tsardom
-			has_reform = issi_akdom_reform
-			has_reform = sardom_reform
+			has_reform = issi_akdom_reform #VU addition by SF & Prussia
+			has_reform = sardom_reform #VU addition by SF & Prussia
 			has_reform = russian_empire_reform
 			has_reform = great_veche_republic
 			has_reform = great_russian_republic_reform
@@ -2980,8 +3545,8 @@ estate_nobles_peasant_liberation = {
 			has_reform = principality
 			has_reform = veche_republic
 			has_reform = tsardom
-			has_reform = issi_akdom_reform
-			has_reform = sardom_reform
+			has_reform = issi_akdom_reform #VU addition by SF & Prussia
+			has_reform = sardom_reform #VU addition by SF & Prussia
 			has_reform = russian_empire_reform
 			has_reform = great_veche_republic
 			has_reform = great_russian_republic_reform
@@ -3090,7 +3655,7 @@ estate_nobles_factionalist_nobility = {
 	}
 	ai_will_do = {
 		factor = 1
-	}#TODO
+	}
 }
 estate_nobles_consolidated_noble_contracts = {
 	icon = privilege_centralized
@@ -3208,6 +3773,24 @@ estate_nobles_development_of_castles = {
 	influence = 0.05
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	conditional_modifier = {
+		trigger = {
+			has_country_flag = ITA_upgrade_the_expand_the_fortifications_privilege_flag
+		}
+		modifier = {
+			garrison_size = 0.1
+			max_absolutism = 5
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			has_country_flag = TIM_upgrade_expand_the_fortifications_flag
+		}
+		modifier = {
+			defensiveness = 0.05 
+			fort_maintenance_modifier = -0.05
+		}
+	}
 	is_valid = {
 		has_dlc = "Domination"
 	}
@@ -3278,10 +3861,6 @@ estate_nobles_development_of_castles = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.05 }
 	}
-	#conditional_modifier = {
-	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
-	#	modifier = { monthly_ottoman_decadence = 0.02 }
-	#}
 	ai_will_do = {
 		factor = 0
 	}
@@ -3292,6 +3871,14 @@ estate_nobles_statesman_servitude = {
 	influence = 0.05
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	conditional_modifier = {
+		trigger = {
+			has_country_flag = GER_upgrade_the_statesman_privilege_flag 
+		}
+		modifier = {
+			max_absolutism = 5
+		}
+	}
 	is_valid = {
 		has_dlc = "Domination"
 	}
@@ -3316,10 +3903,6 @@ estate_nobles_statesman_servitude = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.05 }
 	}
-	#conditional_modifier = {
-	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
-	#	modifier = { monthly_ottoman_decadence = 0.02 }
-	#}
 	ai_will_do = {
 		factor = 0
 	}
@@ -3398,10 +3981,6 @@ estate_nobles_royal_court_tasks = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.05 }
 	}
-	#conditional_modifier = {
-	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
-	#	modifier = { monthly_ottoman_decadence = 0.02 }
-	#}
 	ai_will_do = {
 		factor = 0
 	}
@@ -3436,10 +4015,6 @@ estate_nobles_diet_right = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.05 }
 	}
-	#conditional_modifier = {
-	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
-	#	modifier = { monthly_ottoman_decadence = 0.02 }
-	#}
 	ai_will_do = {
 		factor = 10
 		modifier = {
@@ -3476,10 +4051,6 @@ estate_nobles_force_conscription = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.05 }
 	}
-	#conditional_modifier = {
-	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
-	#	modifier = { monthly_ottoman_decadence = 0.02 }
-	#}
 	ai_will_do = {
 		factor = 0
 	}
@@ -3522,10 +4093,6 @@ estate_nobles_noble_officer_right = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.05 }
 	}
-	#conditional_modifier = {
-	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
-	#	modifier = { monthly_ottoman_decadence = 0.02 }
-	#}
 	ai_will_do = {
 		factor = 0
 	}
@@ -3577,10 +4144,6 @@ estate_nobles_expedition_rights = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.05 }
 	}
-	#conditional_modifier = {
-	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
-	#	modifier = { monthly_ottoman_decadence = 0.02 }
-	#}
 	ai_will_do = {
 		factor = 0
 	}
@@ -3992,5 +4555,1089 @@ estate_nobles_enlist_the_mamluks = {
 	}
 	ai_will_do = {
 		factor = 100
+	}
+}
+
+estate_nobles_ITA_military_governors = {
+	icon = estate_nobles_ITA_military_governors
+	loyalty = 0
+	influence = 0.1
+	max_absolutism = 0
+	is_valid = {
+		OR = {
+			has_country_flag = ITA_enable_privilege_for_military_governors_flag
+			tag = ROM 
+			was_tag = ROM
+		}
+	}
+	benefits = {
+		state_governing_cost = -0.05
+	}
+	on_granted = {
+		custom_tooltip = ITA_specify_the_conditional_effects
+	}
+	conditional_modifier = {
+		trigger = {
+			is_at_war = yes
+		}
+		modifier = {
+			global_autonomy = -0.05 #halve the penalty
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			has_country_flag = ITA_upgrade_military_governorship_with_autonomy_in_terr_flag
+		}
+		modifier = {
+			min_autonomy_in_territories = -0.05
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			has_country_flag = ITA_upgrade_military_governorship_with_abso_flag
+		}
+		modifier = {
+			max_absolutism = 5
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			has_country_flag = ITA_upgrade_military_governorship_with_army_quality_flag
+		}
+		modifier = {
+			army_tradition = 1
+			leader_land_shock = 1
+		}
+	}
+	
+	conditional_modifier = {
+		trigger = {
+			has_government_attribute = enables_pronoias #for roman empire specifically
+		}
+		modifier = {
+			num_of_pronoiars = 1
+		}
+	}
+	ai_will_do = {
+		factor = 100
+	}
+}
+
+estate_nobles_GER_diploma_andreanum = {
+	icon = estate_nobles_GER_diploma_andreanum
+	loyalty = 0.1
+	influence = 0.05
+	max_absolutism = -5
+	is_valid = {
+		has_country_flag = GER_unlock_diploma_andreanum_flag
+	}
+	benefits = {
+		territories_governing_cost = -0.05
+	}
+	on_granted = {
+		custom_tooltip = GER_low_average_autonomy_buff
+	}
+	conditional_modifier = {
+		trigger = {
+			NOT = { average_autonomy = 25 }
+		}
+		modifier = {
+			manpower_in_accepted_culture_provinces = 0.1
+		}
+	}
+	ai_will_do = {
+		factor = 100
+	}
+}
+
+estate_nobles_orangist_privileges = {
+	icon = privilege_royal_authority
+	max_absolutism = 5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	influence = 0.1
+	is_valid = {
+		has_country_flag = ned_buff_orangist_candidates_flag
+	}
+	on_granted = {
+		custom_tooltip = NED_UNLOCK_OVERTHROW_STATIST_CANDIDATES
+	}
+	penalties = {
+	
+	}
+	benefits = {
+	}
+	conditional_modifier = {
+		trigger = { has_government_mechanic = russian_modernization_mechanic }
+		modifier = { monthly_russian_modernization = -0.03 }
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+estate_nobles_vegvar_system = {
+	icon = estate_nobles_vegvar_system
+	max_absolutism = -5
+	loyalty = 0.1
+	influence = 0.05
+	is_valid = {
+		has_unlocked_estate_privilege = {
+			estate_privilege = estate_nobles_vegvar_system
+		}
+	}
+	can_select = {
+		any_owned_province = {
+			any_neighbor_province = {
+				NOT = { owned_by = ROOT }
+			}
+			has_fort_building_trigger = yes
+		}
+	}
+	on_granted = {
+		custom_tooltip = estate_nobles_vegvar_system_tt
+		tooltip = {
+			add_province_modifier = {
+				name = estate_nobles_vegvar_system_modifier
+				duration = -1
+				desc = hun_vegvar_province_desc
+			}
+		}
+	}
+	on_granted_province = {
+		if = {
+			limit = {
+				any_neighbor_province = {
+					NOT = { owned_by = ROOT }
+				}
+				has_fort_building_trigger = yes
+			}
+			add_province_modifier = {
+				name = estate_nobles_vegvar_system_modifier
+				duration = -1
+			}
+		}
+	}
+	on_revoked = {
+		custom_tooltip = estate_nobles_vegvar_system_rt
+	}
+	on_revoked_province = {
+		if = {
+			limit = { has_province_modifier = estate_nobles_vegvar_system_modifier }
+			remove_province_modifier = estate_nobles_vegvar_system_modifier
+		}
+	}
+	on_invalid = {
+	}
+	on_invalid_province = {
+		if = {
+			limit = { has_province_modifier = estate_nobles_vegvar_system_modifier }
+			remove_province_modifier = estate_nobles_vegvar_system_modifier
+		}
+	}
+	ai_will_do = {
+		factor = 100
+	}
+}
+
+estate_nobles_MAY_arm_nobles_with_obsidian_blades = {
+	icon = privilege_macuahuitl
+	max_absolutism = -5
+	conditional_modifier = {
+		trigger = {
+			has_absolutism_reduction_for_estate_privileges = yes 
+		} 
+		modifier = { max_absolutism = 1 } 
+	}
+	conditional_modifier = {
+		trigger = {
+			has_country_flag = MAY_upgrade_obsidian_privilege_flag
+		}
+		modifier = { max_absolutism = 5 }
+	}
+	influence = 0.05
+	loyalty = 0.1
+	is_valid = {
+		OR = {
+			technology_group = mesoamerican
+			AND = {
+				technology_group = high_american
+				OR = {
+					was_tag = MAY
+					tag = MAY
+					has_country_flag = unlock_aztec_missions_flag
+					was_tag = AZT
+					tag = AZT
+				}
+			}
+		}
+	}
+	benefits = {
+		infantry_cost = -0.05
+	}
+	on_granted = {
+		if = {
+			limit = {
+				has_country_flag = azt_obsidian_blades_buff_flag
+			}
+			custom_tooltip = AZT_buffed_conditional_benefit_for_obsidian
+		}
+		else_if = {
+			limit = {
+				has_country_flag = MAY_upgrade_obsidian_privilege_flag
+			}
+			custom_tooltip = MAY_buffed_conditional_benefit_for_obsidian
+		}
+		else = {
+			custom_tooltip = MAY_conditional_benefit_for_obsidian
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			NOT = { has_country_flag = azt_obsidian_blades_buff_flag }
+			NOT = { has_country_flag = MAY_upgrade_obsidian_privilege_flag }
+			has_obsidian_source_trigger = yes
+		}
+		modifier = {
+			infantry_power = 0.1
+			nobles_influence_modifier = 0.05
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			has_country_flag = MAY_upgrade_obsidian_privilege_flag
+			has_obsidian_source_trigger = yes
+		}
+		modifier = {
+			infantry_power = 0.1
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			has_country_flag = azt_obsidian_blades_buff_flag
+			has_obsidian_source_trigger = yes
+		}
+		modifier = {
+			infantry_power = 0.15
+			nobles_influence_modifier = 0.05
+		}
+	}
+	ai_will_do = {
+		factor = 100
+		modifier = {
+			factor = 0
+			is_absolutism_active = yes
+		}
+	}
+}
+
+estate_nobles_MAY_spread_dynastic_influence = {
+	icon = privilege_mayan_crown
+	loyalty = 0
+	influence = 0.1
+	max_absolutism = -10
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
+	is_valid = {
+		has_country_flag = MAY_unlock_privilege_for_tributaries_flag
+	}
+	penalties = {
+		reduced_liberty_desire = -10
+	}
+	benefits = {
+		annexation_relations_impact = -0.25
+	}
+	on_granted = {
+		custom_tooltip = MAY_benefits_of_dynastic_influence
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+estate_nobles_AZT_triple_alliance = {
+	icon = estate_burghers_monopoly_of_coffee
+	loyalty = 0.05
+	influence = 0.1
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	is_valid = {
+		has_estate_privilege = estate_nobles_AZT_triple_alliance
+	}
+	can_select = {
+	
+	}
+	benefits = {
+		vassal_forcelimit_bonus = 1
+		vassal_income = 0.3
+		liberty_desire_from_subject_development = -0.25
+	}
+	conditional_modifier = {
+		trigger = {
+			NOT = { has_country_flag = azt_triple_alliance_buff }
+		}
+		modifier = {
+			governing_capacity_modifier = -0.5
+			governing_capacity = -100
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			has_country_flag = azt_triple_alliance_buff
+		}
+		modifier = {
+			governing_capacity_modifier = -0.25
+		}
+	}
+	can_revoke = {
+		custom_trigger_tooltip = {
+			tooltip = AZT_revokable_via_mission
+			always = no
+		}
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+estate_nobles_AZT_warrior_culture = {
+	icon = privilege_demand_more_troops
+	loyalty = 0.05
+	influence = 0.1
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	is_valid = {
+		has_country_flag = azt_military_culture_flag
+	}
+	
+	on_granted = {
+		custom_tooltip = AZT_grant_bonuses_to_culture_province
+		tooltip	= {
+			if = {
+				limit = {
+					has_country_flag = azt_buffed_military_society_flag
+				}
+				add_province_modifier = {
+					name = azt_military_culture_modifier_buffed
+					duration = -1
+				}
+			}
+			else = {
+				add_province_modifier = {
+					name = azt_military_culture_modifier
+					duration = -1
+				}
+			}
+		}
+	}
+	
+	on_granted_province = {
+		hidden_effect = {
+			if = {
+				limit = {
+					culture = ROOT
+					owner = {
+						NOT = { has_country_flag = azt_buffed_military_society_flag }
+					}
+				}
+				add_province_modifier = {
+					name = azt_military_culture_modifier
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					culture = ROOT
+					owner = {
+						has_country_flag = azt_buffed_military_society_flag
+					}
+				}
+				add_province_modifier = {
+					name = azt_military_culture_modifier_buffed
+					duration = -1
+				}
+			}
+		}
+	}
+	
+	on_revoked = {
+		custom_tooltip = AZT_REVOKE_PRIVILEGE_BONUSES
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						has_province_modifier = azt_military_culture_modifier
+						has_province_modifier = azt_military_culture_modifier_buffed
+					}
+				}
+				remove_province_modifier = azt_military_culture_modifier
+				remove_province_modifier = azt_military_culture_modifier_buffed
+			}
+		}
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+
+estate_nobles_reformatio_sigismundi = {
+	icon = privilege_coup_detat
+	max_absolutism = -10
+	influence = 0.15
+	loyalty = 0.10
+	is_valid = {
+		has_unlocked_estate_privilege = {
+			estate_privilege = estate_nobles_reformatio_sigismundi
+		}
+		custom_trigger_tooltip = {
+			tooltip = estate_nobles_reformatio_sigismundi_has_eligible_province_tt
+			any_owned_province = {
+				has_owner_accepted_culture = no
+				culture_group = germanic
+			}
+		}
+	}
+	can_select = {
+		custom_trigger_tooltip = {
+			tooltip = has_unlocked_estate_nobles_reformatio_sigismundi
+			has_unlocked_estate_privilege = {
+				estate_privilege = estate_nobles_reformatio_sigismundi
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = estate_nobles_reformatio_sigismundi_has_eligible_province_tt
+			any_owned_province = {
+				has_owner_accepted_culture = no
+				culture_group = germanic
+			}
+		}
+	}
+	on_granted = {
+		custom_tooltip = estate_nobles_reformatio_sigismundi_gt
+	}
+	on_granted_province = {
+		if = {
+			limit = {
+				NOT = {
+					has_owner_accepted_culture = yes
+				}
+				culture_group = germanic
+			}
+			add_province_modifier = {
+				name = boh_cultural_integration
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_province_modifier = boh_cultural_integration
+			}
+			remove_province_modifier = boh_cultural_integration
+		}
+	}
+	on_revoked = {
+		custom_tooltip = estate_nobles_reformatio_sigismundi_rk
+	}
+	on_revoked_province = {
+		if = {
+			limit = {
+				has_province_modifier = boh_cultural_integration
+			}
+			remove_province_modifier = boh_cultural_integration
+		}
+	}
+	on_invalid = {
+	}
+	on_invalid_province = {
+		if = {
+			limit = {
+				has_province_modifier = boh_cultural_integration
+			}
+			remove_province_modifier = boh_cultural_integration
+		}
+	}
+	penalties = {
+	}
+	benefits = {
+	}
+	ai_will_do = {
+		factor = 1000
+	}
+}
+
+estate_nobles_basqaq_autonomy = {
+	icon = privilege_basqaqs
+	max_absolutism = -10
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
+	loyalty = 0.05
+	influence = 0.1
+	is_valid = {
+		has_country_flag = hordes_basqaqs_unlocked_flag
+	}
+	can_select = {
+		NOT = { has_estate_privilege = estate_nomadic_tribes_basqaq_autonomy }
+	}
+	penalties = {
+		governing_capacity_modifier = -0.1
+	}
+	
+	benefits = {
+		monarch_power_tribute = 1
+		manpower_recovery_speed = 0.10
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+estate_nobles_imperial_war_leader = {
+	icon = privilege_grant_autonomy
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	loyalty = 0.0
+	influence = 0.05
+	is_valid = {
+		has_country_flag = hab_imperial_warleader_flag
+	}
+	can_select = {
+	}
+	on_granted = {
+	}
+	penalties = {
+		relation_with_same_culture_group = -10
+	}
+	benefits = {
+		army_tradition_from_battle = 0.5
+		land_morale = 0.05
+	}
+	ai_will_do = {
+		factor = 5
+	}
+}
+
+estate_nobles_hab_habsburg_connections = {
+	icon = privilege_grant_autonomy
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	loyalty = 0.05
+	influence = 0.1
+	is_valid = {
+		has_country_flag = hab_unlocked_habsburg_connections
+	}
+	can_select = {
+	}
+	on_granted = {
+	}
+	loyalty_scaled_conditional_modifier = {
+		trigger = {
+			always = yes
+		}
+		modifier = {
+			country_diplomatic_power = 2
+			diplomatic_reputation = 2
+		}
+	}
+	ai_will_do = {
+		factor = 5
+	}
+}
+
+estate_nobles_habsburg_disunity = {
+	icon = privilege_grant_autonomy
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	loyalty = 0
+	influence = 0.05
+	is_valid = {
+		has_country_flag = hab_ladislaus_postumus_heir
+		NOT = {
+			has_country_flag = hab_united_habsburg_land
+		}
+	}
+	can_select = {
+	}
+	penalties = {
+		global_autonomy = 0.05
+		global_tax_modifier = -0.1
+	}
+	can_revoke = {
+		OR = {
+			custom_trigger_tooltip = {
+				tooltip = HAB_LADISLAUS_IS_RULER_OR_DEAD
+				always = no
+			}
+			custom_trigger_tooltip = {
+				tooltip = HAB_ENACTED_UNITE_HABSBURG_LANDS_DECISION
+				always = no
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 5
+	}
+}
+
+estate_nobles_melting_pot_of_cultures = {
+	icon = privilege_grant_autonomy
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	loyalty = 0
+	influence = 0.05
+	is_valid = {
+		has_country_flag = hab_melting_pot_flag
+	}
+	on_granted = {
+		custom_tooltip = HAB_EXPLAIN_MODIFIERS_MELTING_POT
+	}
+	on_granted_province = {
+		if = {
+			limit = {
+				OR = {
+					culture = hungarian
+					culture = transylvanian
+				}
+			}
+			add_province_modifier = {
+				name = hab_hungarian_province
+				duration = -1
+				hidden = yes
+			}
+		}
+		else_if = {
+			limit = {
+				culture_group = west_slavic
+			}
+			add_province_modifier = {
+				name = hab_west_slavic_province
+				duration = -1
+				hidden = yes
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = {
+					culture_group = ROOT
+					culture = hungarian
+					culture = transylvanian
+					culture_group = west_slavic
+				}
+			}
+			add_province_modifier = {
+				name = hab_minority_province
+				duration = -1
+				hidden = yes
+			}
+		}
+	}
+
+	on_revoked_province = {
+		if = {
+			limit = {
+				has_province_modifier = hab_hungarian_province
+			}
+			remove_province_modifier = hab_hungarian_province
+		}
+		if = {
+			limit = {
+				has_province_modifier = hab_west_slavic_province
+			}
+			remove_province_modifier = hab_west_slavic_province
+		}
+		if = {
+			limit = {
+				has_province_modifier = hab_minority_province
+			}
+			remove_province_modifier = hab_minority_province
+		}
+	}
+
+	penalties = {
+		global_autonomy = 0.05
+		global_tax_modifier = -0.1
+	}
+	ai_will_do = {
+		factor = 5
+	}
+}
+
+estate_nobles_hab_von_raab_restructions = {
+	icon = privilege_grant_autonomy
+	max_absolutism = 5
+	loyalty = -0.1
+	influence = -0.05
+	is_valid = {
+		has_country_flag = hab_von_raab_restrictions_flag
+	}
+	can_select = {
+	}
+	on_granted = {
+		custom_tooltip = VON_RAAB_RESTRICTIONS_TOOLTIP
+	}
+	loyalty_scaled_conditional_modifier = {
+		trigger = {
+			NOT = {
+				estate_influence = {
+					estate = estate_nobles
+					influence = 40
+				}
+			}
+		}
+		modifier = {
+			development_cost = -0.075
+		}
+	}
+	ai_will_do = {
+		factor = 5
+	}
+}
+
+estate_nobles_TIM_soyurghal_grants = {
+	icon = privilege_grant_autonomy
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	influence = 0.1
+	loyalty = 0.05
+	is_valid = {
+		OR = {
+			tag = TIM
+			was_tag = TIM
+		}
+		NOT = { has_country_flag = estate_nobles_TIM_soyurghal_grants_revoked }
+	}
+	penalties = {
+		global_tax_modifier = -0.1
+		reform_progress_growth = -0.1
+	}
+	benefits = {
+		army_tradition_decay = -0.01
+	}
+	can_revoke = {
+		custom_trigger_tooltip = {
+			tooltip = BYZ_revokable_via_decision
+			always = no
+		}
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+estate_nobles_TIM_chagatai_warriors = {
+	icon = privilege_timurid_helmet
+	max_absolutism = -10
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
+	influence = 0.15
+	loyalty = 0.05
+	is_valid = {
+		has_country_flag = TIM_unlock_privilege_about_chagatai_flag
+	}
+	benefits = {
+		cavalry_power = 0.05
+		cav_to_inf_ratio = 0.25
+	}
+	influence_scaled_conditional_modifier = {
+		trigger = {
+			always = yes
+		}
+		modifier = {
+			army_tradition = 0.5
+		}
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+estate_nobles_TIM_appease_the_elites = {
+	icon = privilege_army_tradition
+	max_absolutism = -10
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
+	influence = 0.15
+	loyalty = 0.05
+	is_valid = {
+		has_country_flag = TIM_unlock_appease_the_elites_privilege_flag
+	}
+	penalties = {
+		land_forcelimit_modifier = -0.1
+	}
+	
+	influence_scaled_conditional_modifier = {
+		trigger = {
+			has_dlc = "Cradle of Civilization"
+			NOT = { 
+				estate_influence = {
+					estate = estate_nobles
+					influence = 100
+				}
+			}
+		}
+		modifier = {
+			yearly_army_professionalism = 0.01
+		}
+	}
+	
+	influence_scaled_conditional_modifier = {
+		trigger = {
+			NOT = { has_dlc = "Cradle of Civilization" }
+			NOT = { 
+				estate_influence = {
+					estate = estate_nobles
+					influence = 100
+				}
+			}
+		}
+		modifier = {
+			army_tradition = 1
+		}
+	}
+	
+	conditional_modifier = {
+		trigger = {
+			NOT = { has_dlc = "Cradle of Civilization" }
+			estate_influence = {
+				estate = estate_nobles
+				influence = 100
+			}
+		}
+		modifier = {
+			army_tradition = 1
+		}
+	}
+	
+	conditional_modifier = {
+		trigger = {
+			has_dlc = "Cradle of Civilization"
+			estate_influence = {
+				estate = estate_nobles
+				influence = 100
+			}
+		}
+		modifier = {
+			yearly_army_professionalism = 0.01
+		}
+	}
+	
+	on_granted = {
+		custom_tooltip = scaling_with_estate_influence_tt
+		tooltip = {
+			if = {
+				limit = {
+					has_dlc = "Cradle of Civilization"
+				}
+				add_country_modifier = {
+					name = TIM_full_army_prof
+					duration = -1
+					desc = UNTIL_REVOKED
+				}
+			}
+			else = {
+				add_country_modifier = {
+					name = TIM_full_army_trad
+					duration = -1
+					desc = UNTIL_REVOKED
+				}
+			}
+		}
+	}
+	ai_will_do = {
+		factor = 0 
+	}
+}
+
+estate_nobles_MUG_development_of_the_subah = {
+	icon = privilege_states
+	influence = 0.05
+	max_absolutism = -5
+	loyalty = 0
+	is_valid = {
+		has_country_flag = MUG_unlock_privilege_subahs_flag
+	}
+	
+	benefits = {
+		state_governing_cost = -0.15
+	}
+	penalties = {
+		province_warscore_cost = 0.05
+	}
+	
+	ai_will_do = {
+		factor = 1 #AI will not expand quickly enough
+	}
+}
+
+estate_nobles_four_class_system = {
+	icon = estate_eunuchs_establish_favor_system_privilege
+	max_absolutism = -10
+	influence = 0.05
+	loyalty = 0.05
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
+	is_valid = {
+		has_country_flag = yua_four_class_system_flag
+	}
+	loyalty_scaled_conditional_modifier = {
+		trigger = { always = yes }
+		modifier = {
+			advisor_cost = -0.15
+		}
+	}
+	
+	loyalty_scaled_conditional_modifier = {
+		trigger = { is_emperor_of_china = yes }
+		modifier = {
+			imperial_mandate = 0.05
+		}
+	}
+	
+	loyalty_scaled_conditional_modifier = {
+		trigger = { is_emperor_of_china = no }
+		modifier = {
+			global_autonomy = -0.05
+		}
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+estate_nobles_hungarian_nobility_privileges = {
+	icon = privilege_grant_autonomy
+	max_absolutism = -15
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 3 } }
+	loyalty = 0.05
+	influence = 0.1
+	is_valid = {
+		has_dlc = "Winds of Change"
+		OR = {
+			current_age = age_of_absolutism
+			current_age = age_of_revolutions
+		}
+		NOT = { has_country_flag = hun_no_more_hungarian_privileges_flag }
+		NOT = { exists = HUN }
+		OR = {
+			tag = HAB
+			AND = {
+				was_tag = HAB
+				tag = AUH
+			}
+		}
+		num_of_owned_provinces_with = {
+			value = 5
+			OR = {
+				culture = hungarian
+				is_core = HUN
+			}
+		}
+	}
+	on_granted = {
+		custom_tooltip = HAB_ALL_HUNGARIAN_PROVINCES_GAIN_THE_FOLLOWING
+		tooltip = {
+			add_province_modifier = {
+				name = hab_hungarian_privileges
+				duration = -1
+			}
+		}
+	}
+	on_granted_province = {
+		if = {
+			limit = {
+				OR = {
+					culture = hungarian
+					is_core = HUN
+				}
+			}
+			add_province_modifier = {
+				name = hab_hungarian_privileges
+				duration = -1
+			}
+		}
+	}
+
+	on_revoked_province = {
+		if = {
+			limit = {
+				has_province_modifier = hab_hungarian_privileges
+			}
+			remove_province_modifier = hab_hungarian_privileges
+		}
+	}
+	
+	can_revoke = {
+		NOT = { tag = AUH }
+	}
+	cooldown_years = 25
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+estate_nobles_austrian_nobility_privileges = {
+	icon = privilege_grant_autonomy
+	max_absolutism = -15
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 3 } }
+	loyalty = 0.05
+	influence = 0.1
+	is_valid = {
+		has_dlc = "Winds of Change"
+		OR = {
+			current_age = age_of_absolutism
+			current_age = age_of_revolutions
+		}
+		NOT = { has_country_flag = hun_no_more_austrian_privileges_flag }
+		NOT = { exists = HAB }
+		OR = {
+			tag = HUN
+			AND = {
+				was_tag = HUN
+				tag = AUH
+			}
+		}
+		num_of_owned_provinces_with = {
+			value = 5
+			OR = {
+				culture = austrian
+				is_core = HAB
+			}
+		}
+	}
+	on_granted = {
+		custom_tooltip = HUN_ALL_AUSTRIAN_PROVINCES_GAIN_THE_FOLLOWING
+		tooltip = {
+			add_province_modifier = {
+				name = hun_austrian_privileges
+				duration = -1
+			}
+		}
+	}
+	on_granted_province = {
+		if = {
+			limit = {
+				OR = {
+					culture = austrian
+					is_core = HAB
+				}
+			}
+			add_province_modifier = {
+				name = hun_austrian_privileges
+				duration = -1
+			}
+		}
+	}
+
+	on_revoked_province = {
+		if = {
+			limit = {
+				has_province_modifier = hun_austrian_privileges
+			}
+			remove_province_modifier = hun_austrian_privileges
+		}
+	}
+	
+	can_revoke = {
+		NOT = { tag = AUH }
+	}
+	cooldown_years = 25
+	ai_will_do = {
+		factor = 1
 	}
 }

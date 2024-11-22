@@ -2,7 +2,7 @@
 
 owner = MRI
 controller = MRI
-culture = japanese
+culture = chugoku 
 religion = shinto
 capital = "Fuchu"
 trade_goods = iron

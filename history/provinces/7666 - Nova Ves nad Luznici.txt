@@ -18,7 +18,16 @@ is_city = yes
 add_core = HAB
 
 1179.1.1 = { owner = AUT controller = AUT add_core = AUT capital = "Neuhaus" } # Lost to Austria in 1179
-1220.1.1 = { capital = "Jindrich" } # First documented in 1220 and named after the Jindrich I Vítkovec, founder of the line of lords of Hradec 
+1220.1.1 = { 
+    capital = "Jindrichuv Hradec" #Renamed by DonBrom
+	owner = BOH
+	controller = BOH
+	add_core = BOH
+	remove_core = AUT
+} # First documented in 1220 and named after the Jindrich I Vítkovec, founder of the line of lords of Hradec 
+1370.1.1 = {
+    trade_goods = beer #Beer brewing becomes prominent and in 1600s becomes the biggest beer brewer, only becoming defunct in 1967. - DonBrom 
+}
 1410.1.1 = { capital = "Jindrichuv Hradec" } # Named changed in 1410 to the present and current name of Jindrichuv Hradec
 1419.12.1 = { unrest = 5 } # Hussite Wars, Battle of Nekmir
 1436.7.5 = { unrest = 0 } # Peace is signed in Jihlava

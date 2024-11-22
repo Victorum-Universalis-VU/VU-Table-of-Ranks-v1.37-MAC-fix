@@ -1,3 +1,4 @@
+#GEM - German Empire
 graphical_culture = westerngfx
 
 #color = { 75  130  135 }
@@ -6,13 +7,6 @@ revolutionary_colors = { 1  5  8 }
 
 historical_idea_groups = {
 	trade_ideas
-	defensive_ideas
-	economic_ideas
-	maritime_ideas
-	offensive_ideas
-	innovativeness_ideas
-	quality_ideas
-	quantity_ideas
 }
 
 historical_units = {
@@ -103,7 +97,7 @@ leader_names = {
 }
 
 ship_names = {
-	"Adler von Lübeck" "Admiralität von Hamburg" "Arche Noah" "Brandenburgischer Dragoner" "Brunte Kuh" "Charlotte Louise" "Churfürst von Brandenburg"
+	"Großdeutschland" "Friedrich der Große" "Adler von Lübeck" "Admiralität von Hamburg" "Arche Noah" "Brandenburgischer Dragoner" "Brunte Kuh" "Charlotte Louise" "Churfürst von Brandenburg"
 	"Churfürtstlische Liebjagd" "Churprinz von Brandenburg" "Clevesche Lindenbaum" "Der Große Adler" "Der Jungste Prinz von Churlandt" "Der Rote Löve"
 	"Die Drey Heringe" "Die Sieben Provinzien" "Drei Heringe" "Engel Gabriel" "Fliegender Drache" "Fliegender Hirsch" "Friedrich Carl" "Friedrich der Große"
 	"Friedrich Wilhelm zu Pferde" "Friedrich Wilhelm" "Füchslein" "Gelber Löve" "Goldener Löve" "Grafschaft Mark" "Große Jacht" "Großer Kurfürst" "Grüner Drache"
@@ -123,13 +117,24 @@ ship_names = {
 	Meermann Meerweib Mercurius Merkur Meteor Meve Mohr Mohrian Morian Mummelpot Musquito Nassau Natter Neptun Neptunus Niobe Odin Oldenburg Orpheus Pallas Parsimonia
 	Patienta Pax Pfeil Pierelepomp Pietas Pommern Posen Post Potsdam Preußen Prosperpina Prudentia Rheinland Ringeltaube Roland Rommelpot Roon Rosenfelde Rover Sachsen
 	Salamander Schwalbe Schwann Scientia Seeadler Seemoewe Seeritter Siegfried Spandau Sperber Stralsund Syrig Temperantia Thetis Tiger Undine Vineta Walfisch Wasserhund
-	Weissenburg Wespe Westfalen Wettin Windhund Wittelsbach Wolkensäule Württemberg Wörth Zähringen Ägir
+	Weissenburg Wespe Westfalen Wettin Windhund Wittelsbach Wolkensäule Württemberg Wörth Zähringen Ägir 
 }
 
 army_names = {
-	"Kaiserliche Armee" "Armee von $PROVINCE$" 
+	"Königliche Armee" "Sturmtruppen-Division" "Großdeutschland" "Armee von Österreich" "Armee von Böhmen" "Armee von Mähren" "Armee von Ungarn" "Armee von Italien" "Armee von Schlesien" "Armee von Siebenbürgen" "Armee von Albanien" 
+	"Armee von Griechenland" "Armee von Kroatien" "Armee von Polen" "Armee der dalmatinischen Küste" "Armee von Bayern" "Armee von Thüringen" "Armee von Franken" "Armee von Schwaben" "Rheinarmee" "Westfälische Armee" 
+	"Sächsische Armee" "Armee von Brandenburg" "Armee von Pommern" "Armee von Schleswig-Holstein" "Niedersächsische Armee" "Armee von Dänemark" "Armee von Schweden" "Armee der Ostsee" "Armee von Finnland" "Armee der Slowakei" 
+	"Armee von Norwegen" "Armee der Niederlande" "Armee der Schweiz" "Armee von Tirol" "Armee der Steiermark" "Armee der Alpen" "Armee von Lothringen" "Armee von Frankreich" "Armee von Burgund" "Armee der Bretagne" "Armee der Provence" 
+	"Armee von Neapel" "Armee von Bulgarien" "Armee von Iberia" "Armee von Katalonien" "Armee der Pyrenäen" "Armee von Portugal" "Armee von Schottland" "Armee von England" "Armee von Mazedonien" "Armee Ostpreußens" "Armee von Irland" 
+	"Armee von Anatolien" "Armee von Mesopotamien" "Armee von Syrien" "Armee von Palästina" "Armee von Arabien" "Armee von Persien" "Armee des Kaukasus" "Armee von Indien" "Armee von Burma" "Armee von Indochina" "Armee von China" 
+	"Armee von Ägypten" "Armee von Libyen" "Armee von Nordafrika" "Armee Ostafrikas" "Armee von Westafrika" "Armee von Südafrika" "Armee von Australien" "Armee von Ostindien" "Pazifik-Garnison" "Armee von Japan" "Armee von Sibirien" 
+	"Armee Zentralasiens" "Armee des Himalaya" "Armee von Kamerun" "Armee von Tanganyika" "Armee von Grönland" "Armee von Island" "Armee von Nordamerika" "Armee der Karibik" "Armee von Neu-Venedig" "Armee von Mittelamerika" 
+	"Armee von Brasilien" "Armee von Peru" "Armee von Kolumbien" "Armee von Papua-Neuguinea" "Armee von Bolivien" "Armee von Chile" "Armee von Argentinien" "Armee von Afghanistan" "Armee von Kuba" "Armee des Indus" "Armee von Malaya" 
+	"Armee der Philippinen" "Armee von Neuseeland" "Armee von Bosnien" "Armee des Balkans" "Armee der Ukraine" "Jäger-Division" "Gebirgsjäger-Division" "Volksgrenadier-Division" "Volkssturm-Division" "Leibstandarte-Division" 
+	"Das Reich-Division" "Armee von $PROVINCE$"
 }
 
 fleet_names = {
-	"Kriegsmarine" "Kaiserliche Flotte" "Reichsmarine" "Baltische Flotte" "Nordseeflotte" "Atlantikflotte" "Kanalflotte" "Ostafrikanische Flotte" "Westafrikanische Flotte" "Karibische Flotte" "Indische Flotte" "Pazifikflotte" "Mittelmeerflotte" "Ost See Squadron"
+	"Kriegsmarine" "Kaiserliche Flotte" "Reichsmarine" "Böhmische Flotte" "Baltische Flotte" "Nordsee Flotte" "Atlantik Flotte" "Kanal Flotte" "Ostafrikanische Flotte" "Westafrikanische Flotte" "Karibische Flotte" "Indische Flotte" 
+	"Asiatische Flotte" "Pazifikflotte" "Mittelmeer Flotte" "Ost See Squadron"
 }

@@ -1,7 +1,8 @@
 #403 - Nizwa
 
-owner = OMA
-controller = OMA
+owner = MUS
+controller = MUS
+add_core = MUS
 culture = omani_culture
 religion = ibadi
 capital = "Bahla"			#Nizwa in vanilla, but Bahla was more important at this point
@@ -11,21 +12,10 @@ base_tax = 4
 base_production = 4
 base_manpower = 4
 is_city = yes
-add_core = OMA
 fort_15th = yes
 
+#Claimants
+add_core = OMA
+add_core = R4S
 
-
-
-
-
-
-
-
-
-
-
-
-#Interior largely avoids Portuguese influence, remains more or less independent througout the period, as far as I can tell. Might make it a protectorate, vassal, or new tributary at some point, but no history changes
-
-
+#Histories by SF

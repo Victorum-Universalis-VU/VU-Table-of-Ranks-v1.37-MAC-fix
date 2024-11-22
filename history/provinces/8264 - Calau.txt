@@ -24,14 +24,7 @@ hre = yes
 
 #Known by Technology groups
 
-
-
-
-
-
 #Histories by docRobert & SF
 1444.1.1 = {
-	owner = BOH
-	controller = BOH
 	add_core = BOH
 }

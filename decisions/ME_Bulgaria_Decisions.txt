@@ -94,7 +94,7 @@ country_decisions = {
 					set_in_empire = no
 				}
 			}
-			set_government_rank = 3
+			set_government_rank = 9
 			add_prestige_or_monarch_power = { amount = 50 }
 			add_core = 118 # Rome
 			if = {
@@ -130,7 +130,7 @@ country_decisions = {
 				province_id = 2954
 				province_id = 134
 				province_id = 343
-				province_id = 217
+				province_id = 8505
 			}
 			OR = {
 				NOT = { owned_by = ROOT }
@@ -143,7 +143,7 @@ country_decisions = {
 			owns_core_province = 2954
 			owns_core_province = 134
 			owns_core_province = 343
-			owns_core_province = 217
+			owns_core_province = 8505
 		}
 		effect = {
 			385 = {

@@ -35,7 +35,6 @@ VBZ = "countries/Velbazhd.txt"
 
 #VU - Bohemia
 EGR = "countries/Eger.txt"
-GMV = "countries/GreatMoravia.txt"
 
 #VU - Caucasus
 ABZ = "countries/Abazinia.txt"
@@ -68,7 +67,6 @@ RIJ = "countries/Rijeka.txt"
 
 #VU - England
 ARC	= "countries/ArchbishopricofCanterbury.txt"
-AFU = "countries/Anglo-French Union.txt"
 BCK = "countries/Buckingham.txt"
 BED = "countries/Bedford.txt"
 CST = "countries/Chester.txt"
@@ -108,6 +106,7 @@ FSE = "countries/French_Second_Empire.txt"
 FSR = "countries/French_Second_Republic.txt"
 LAO = "countries/Laon.txt"
 LGR = "countries/Langres.txt"
+LMG = "countries/Limoges.txt"
 LXL = "countries/Luxeuil.txt"
 MNE = "countries/Maine.txt"
 MTZ = "countries/Metz.txt"
@@ -115,10 +114,12 @@ NEM = "countries/Nemours.txt"
 NPF = "countries/Napoleonic_France.txt"
 OFR = "countries/Orleanist_France.txt"
 ONG = "countries/Orange.txt"
+PRI = "countries/Paris.txt"             #I hate waves - DM
 POI = "countries/Poitou.txt"
 PTH = "countries/Ponthieu.txt"
 RET = "countries/Rethel.txt"
 RHM = "countries/Reims.txt"
+ROU = "countries/Rouen.txt"
 RVF = "countries/Rev_France.txt"
 STV = "countries/Stavelot.txt"
 TFR = "countries/French_Third_Republic.txt"
@@ -134,7 +135,6 @@ VRD = "countries/County_of_Vermandois.txt"
 
 #VU - Germany
 ABG = "countries/Arenberg.txt"
-AHE = "countries/Austria_Hungary.txt"
 AHS = "countries/Ahaus.txt"
 AUE = "countries/Austrian_Empire.txt"
 BBH = "countries/Bentheim.txt"
@@ -158,7 +158,6 @@ EVS = "countries/Eberstein.txt"
 FEN = "countries/Fenestrange.txt"
 FKS = "countries/Lordship_of_Falkenstein.txt"
 FLD = "countries/Fulda.txt"
-FRE = "countries/Frisia.txt"
 FRG = "countries/BishopricFreising.txt"
 FUR = "countries/Principality_of_Furstenberg.txt"
 GBC = "countries/AbbacyGengenbach.txt"
@@ -189,6 +188,7 @@ LEU = "countries/Leuchtenberg.txt"
 LIC = "countries/Lordship_of_Lichtenberg.txt"
 LIN = "countries/Leiningen.txt"
 LMP = "countries/Limpurg.txt"
+LTS = "countries/Liechtenstein.txt"
 LWN = "countries/Lowenstein.txt"
 MGB = "countries/MargraviateBurgau.txt"
 MKK = "countries/Mark.txt"
@@ -199,9 +199,12 @@ NEU = "countries/County_of_Neuenburg.txt"
 NGC = "countries/North_German_Confederation.txt"
 OLE = "countries/Oels.txt"
 OET = "countries/Oettingen.txt"
+PBR = "countries/Prince_Bishopric_Regensberg.txt"
+PFU = "countries/Pfullendorf.txt"
 PRR = "countries/Prum.txt"
 RAT = "countries/Ratzeburg.txt"
 RAU = "countries/Raugraviate.txt"
+REU = "countries/Reutlingen.txt"
 RHE = "countries/Rheingau.txt"
 RPL = "countries/Rappoltstein.txt"
 SAA = "countries/Saarbrucken.txt"
@@ -260,16 +263,27 @@ LHU = "countries/LowerHungary.txt"
 UHU = "countries/UpperHungary.txt"
 
 #VU - Iberia
+AGV = "countries/Algarve.txt"
+ALV = "countries/Alava.txt"
 AOR = "countries/Andorra.txt"
 BBS = "countries/Bourbon_Spain_BBS.txt"
+BDH = "countries/Badajoz.txt"
+BJA = "countries/D_Beja.txt"
+BZA = "countries/Braganza.txt"
 #BSH = "countries/Bourbon_Spain_BSH.txt"
 BSP = "countries/Burgundian_Spain.txt"
 CDB = "countries/Cordoba.txt"
+CIM = "countries/Coimbra.txt"
+CIU = "countries/Ciudad_Real.txt"
 CSP = "countries/Carlist_Spain.txt"
-CTT = "countries/CatalunyaVU.txt"
+EVR = "countries/Evora.txt"
+GUP = "countries/Senorio_de_Guizpucoa.txt"
 IBE = "countries/Iberia.txt"
 #ISP = "countries/Imperial_Spain.txt"
 JAE = "countries/Jaen.txt"
+KGD = "countries/Kingdom_of_Granada.txt"
+LBC = "countries/Lordship_of_Biscay.txt"   #VU Addition by Prussia & integrated by SF 
+MLN = "countries/Senorio_de_Molina.txt"
 MUR = "countries/Murcia.txt"
 SPB = "countries/Bourbon_Spain_SPB.txt"
 SVL = "countries/Seville.txt"
@@ -403,7 +417,6 @@ OSL = "countries/OselWiek.txt"
 BEL = "countries/Belgium.txt"
 GRN = "countries/Groningen.txt"
 LBG = "countries/Limburg.txt"
-ZDN = "countries/Zenden.txt"
 ZEE = "countries/Zeeland.txt"
 ZPN = "countries/Zutphen.txt"
 
@@ -452,6 +465,7 @@ BSV = "countries/Bratslav.txt"
 CUV = "countries/Chuvash.txt"
 DRP = "countries/Dorpat.txt"
 DTK = "countries/Drutsk.txt"
+ERZ = "countries/Erzya.txt"
 GLC = "countries/RussianGalich.txt"
 KIR = "countries/Kievan RUS.txt"
 MLL = "countries/Mologa.txt"
@@ -478,7 +492,6 @@ BGR = "countries/Bagler.txt"
 BRK = "countries/Birkaland.txt"
 DLA = "countries/Dalarna.txt"
 DNR = "countries/DenmarkNorway.txt"
-ERZ = "countries/Erzya.txt"
 FAR = "countries/FaroeIslands.txt"
 GHL = "countries/G.Helsingia.txt"
 HAL = "countries/Halsingland.txt"
@@ -509,6 +522,7 @@ SKN = "countries/Skane.txt"
 SMG = "countries/Samogitia.txt"
 STH = "countries/Stockholm.txt"
 STP = "countries/Stolp.txt"
+SVD = "countries/Svealand.txt"
 TRD = "countries/Trondelag.txt"
 TVA = "countries/Tavastia.txt"
 UDM = "countries/Udmurtia.txt"
@@ -539,7 +553,16 @@ SNC = "countries/Sinclair.txt"
 SLA = "countries/Slavonia.txt"
 
 #VU - Switzerland
+ARU = "countries/Aargau.txt"
+BFB = "countries/Bishopric_of_Fribourg.txt"
+BRN = "countries/Berne.txt"
 BSL = "countries/Basel.txt"
+FRB = "countries/Friburg.txt"
+TCN = "countries/Ticino.txt"
+TGA = "countries/Thurgau.txt"
+VUD = "countries/Vaud.txt"
+ZDN = "countries/Zenden.txt"
+ZUR = "countries/Zurich.txt"
 
 #VU - Wales
 BRY = "countries/Brycheiniog.txt"
@@ -618,7 +641,7 @@ KUK = "countries/Kuku.txt"
 NBA = "countries/Nubia.txt"
 
 #VU - Morocco
-AMD = "countries/Almohad_Caliphate.txt"
+AMD = "countries/Almohads.txt"
 ANF = "countries/Anfa.txt"
 DBD = "countries/Debdou.txt"
 RGR = "countries/Regraga.txt"
@@ -638,7 +661,6 @@ OTN = "countries/OttomanTunisia.txt"
 CHB = "countries/Chobanids.txt"
 KEM = "countries/Keme.txt"
 NIC = "countries/Nicea.txt"
-RMM = "countries/RumVU.txt"
 RML = "countries/Rumelia.txt"
 
 #VU - Armenia
@@ -726,12 +748,27 @@ UNZ = "countries/Unaizah.txt"
 PLE = "countries/Palestine.txt"
 
 #VU - Philippines
+AET = "countries/Aeta.txt"
+CAI = "countries/Cainta.txt"
 DPT = "countries/Dapitan.txt"
+ESK = "countries/Eskaya.txt"
+IBL = "countries/Ibalon.txt"
 IFG = "countries/Ifugao.txt"
+ILO = "countries/Iloko.txt"
 IVT = "countries/Ivata.txt"
+KSG = "countries/Kasiguranin.txt"
+LAW = "countries/Lawan.txt"
+MA1 = "countries/Ma_i.txt"
+MR3 = "countries/Mairete.txt"
+N4M = "countries/Namayan.txt"
+P4R = "countries/Paranan.txt"
 PHI = "countries/Philippines.txt"
+PRH = "countries/Porohanon.txt"
+PUL = "countries/Pulilu.txt"
 RMB = "countries/Romblon.txt"
 SAB = "countries/Subanen.txt"
+SUR = "countries/Surigaonon.txt"
+TAY = "countries/Taytay.txt"
 
 #VU - Papua New Guinea
 HUL = "countries/Huli.txt"
@@ -931,32 +968,37 @@ YZZ = "countries/Kalaallisut.txt"
 ##############
 # ME-VU Tags #
 ##############
-ABA = "countries/AbbasidsME.txt"
-RSL = "countries/RasulidsME.txt"
-BAG = "countries/Baghdad.txt"
-JAL = "countries/Jalayirids.txt"
-QIZ = "countries/Qizil_Qoyunlu.txt"
-RST = "countries/Rustamids.txt"
-BKT = "countries/Bektashi.txt"
-LRP = "countries/LesserPoland.txt"
-GNE = "countries/Gniezno.txt"
-KUY = "countries/Kuyavia.txt"
-AYY = "countries/AyyubidsME.txt" #Yes there is already a tag for Ayyubids but this one is for a formable for Hisn Kaifa/Kayfa
+ABA = "countries/Abbasids.txt"
+AYY = "countries/Ayyubids.txt"
 AZE = "countries/Azerbaijan.txt"
+BAG = "countries/Baghdad.txt"
+BKT = "countries/Bektashi.txt"
 BRL = "countries/Braelyc.txt"
+BUY = "countries/Buyids.txt"
 CAU = "countries/Caucasia.txt"
 DAG = "countries/Dagestan.txt"
 FRX = "countries/Francia.txt"
+GHZ = "countries/Ghaznavids.txt"
+GNE = "countries/Gniezno.txt"
 GRC = "countries/GranColombia.txt"
 HBC = "countries/HudsonsBayCompany.txt"
 HER = "countries/Herat.txt"
 HNS = "countries/UnitedHansa.txt"
+IRN = "countries/Iran.txt"
+JAL = "countries/Jalayirids.txt"
 JOS = "countries/Joseon.txt"
+KH4 = "countries/Kalat.txt"
 KRD = "countries/Kurdistan.txt"
+KUY = "countries/Kuyavia.txt"
+LRP = "countries/LesserPoland.txt"
 MCC = "countries/Mecca.txt"
+QIZ = "countries/Qizil_Qoyunlu.txt"
 REA = "countries/RomanAmerica.txt"
 REI = "countries/RomanIndia.txt"
 RHN = "countries/Rhineland.txt"
+RSL = "countries/RasulidsME.txt"
+RST = "countries/Rustamids.txt"
+SFF = "countries/Saffarids.txt"
 SOE = "countries/Soest.txt"
 TRK = "countries/QirQoyunlu.txt"
 TRN = "countries/Tatarstan.txt"
@@ -965,6 +1007,132 @@ ZCV = "countries/Zapadoslavia.txt"
 
 #Malaya
 XSN = "countries/Singora.txt"
+
+#######################
+# PRUSSIA's LARP Tags #
+#######################
+AC8 = "countries/Achaemenid.txt"                #Empire
+AKD = "countries/Akkad.txt"                     #Empire
+A1P = "countries/Aleppo.txt"                    #Emirate
+ALM = "countries/Almoravids.txt"                #Emirate
+B4N = "countries/Bahrain.txt"                   #Emirate
+D4M = "countries/Damascus.txt"                  #Emirate
+F4T = "countries/Fatimids.txt"                  #Caliphate
+GHU = "countries/Ghurid.txt"                    #Malikate
+J0R = "countries/Jordan.txt"                    #Malikate
+K4W = "countries/Khwarazmia.txt"                
+KUW = "countries/Kuwait.txt"                    #Emirate
+M3D = "countries/Media.txt"                     #Shadom Māda
+NAB = "countries/Nabatea.txt"                   #Petty_Kingdom
+PRT = "countries/Parthia.txt"                   #Empire
+PT0 = "countries/Ptolemaic_Egypt.txt"           #Empire
+Q4T = "countries/Qatar.txt"                     #Emirate
+R4S = "countries/Rashidun.txt"                  #Caliphate
+SAS = "countries/Sasanian.txt"                  #Empire
+SCY = "countries/Scythia.txt"                   #Khanate
+S3L = "countries/Seljuks.txt"                   #Sultanate
+T4I = "countries/Taiwan.txt"                    #Republic
+U4E = "countries/United_Arab_Emirates.txt"      #Emirate
+UMY = "countries/Umayyad_Caliphate.txt"         #Caliphate
+Z3N = "countries/Zengids.txt"                   #Sultanate
+
+#Crusader States
+AC3 = "countries/Acre.txt"                      #Principality
+A9T = "countries/Antioch.txt"                   #Principality
+A5C = "countries/Ascalon.txt"                   #Lordship
+EDS = "countries/Edessa.txt"                    #Countship
+EBL = "countries/Ibelin.txt"                    #Barony
+K3R = "countries/Kerak.txt"                     #Lordship
+T3P = "countries/CrusaderTripoli.txt"           #Countship
+
+#US 51 States (all republics)
+A1B = "countries/Alabama.txt"                   
+AR1 = "countries/Arizona.txt"
+AR5 = "countries/Arkansas.txt"
+C0L = "countries/Colorado.txt"
+C0N = "countries/Connecticut.txt"
+D3L = "countries/Delaware.txt"
+D0C = "countries/District_of_Columbia.txt"
+G30 = "countries/GeorgiaUS.txt"
+ID4 = "countries/Idaho.txt"
+IL1 = "countries/Illinois.txt"
+IN9 = "countries/Indiana.txt"
+I0W = "countries/Iowa.txt"
+K4N = "countries/Kansas.txt"
+K3N = "countries/Kentucky.txt"
+M41 = "countries/Maine.txt"
+N3H = "countries/New_Hampshire.txt"
+N0C = "countries/North_Carolina.txt"
+M42 = "countries/Massachusetts.txt"
+R01 = "countries/Rhode_Island.txt"
+S0C = "countries/South_Carolina.txt"
+S0D = "countries/South_Dakota.txt"               #Home of Silius Sodus - Prussia
+T3N = "countries/Tennessee.txt"
+N3B = "countries/Nebraska.txt"
+N3V = "countries/Nevada.txt"
+N3Y = "countries/New_York.txt"
+N3J = "countries/New_Jersey.txt"
+N3M = "countries/New_Mexico.txt"
+N0D = "countries/North_Dakota.txt"
+M4R = "countries/Maryland.txt"
+M1C = "countries/Michigan.txt"
+M1N = "countries/Minnesota.txt"
+M15 = "countries/Mississippi.txt"
+M1S = "countries/Missouri.txt"
+M0N = "countries/Montana.txt"
+OH1 = "countries/Ohio.txt"
+OK4 = "countries/Oklahoma.txt"
+OR3 = "countries/Oregon.txt"
+P3N = "countries/Pennsylvania.txt"
+PU3 = "countries/Puerto_Rico.txt"
+U74 = "countries/Utah.txt"
+V1R = "countries/Virginia.txt"
+W4S = "countries/Washington.txt"
+WV1 = "countries/West_Virginia.txt"
+W15 = "countries/Wisconsin.txt"
+WY0 = "countries/Wyoming.txt"
+
+#South_America (all republics)
+YW4 = "countries/Y_Wladfa.txt"
+
+#Asia (all republics)
+M4C = "countries/Macau.txt"
+Q1N = "countries/Tsingtao.txt"
+
+#British Colonies
+#Africa (all republics)
+C4P = "countries/Cape_Colony.txt"
+N4T = "countries/Natal.txt"
+OR6 = "countries/Orange_Free_State.txt"
+R0D = "countries/Rhodesia.txt"
+TR4 = "countries/Transvaal.txt"
+
+#Asia (Crown Colonies)
+HK6 = "countries/Hong_Kong.txt"
+S1N = "countries/Singapore_PRU.txt"
+
+#Atlantic
+F4L = "countries/Falkland_Islands.txt"
+H3L = "countries/Heligoland.txt"
+S4T = "countries/Saint_Helena.txt"
+
+#Indian Ocean
+B1T = "countries/Diego_Garcia.txt"
+
+#Mediterranean
+C0R = "countries/Anglo_Corsica.txt"
+C5U = "countries/Anglo_Corfu.txt"
+C7P = "countries/Anglo_Cyprus.txt"
+G1B = "countries/Anglo_Gibraltar.txt"
+M4L = "countries/Anglo_Malta.txt"
+M3N = "countries/Anglo_Menorca.txt"
+
+#West Indies (crown colonies/dominions)
+B4H = "countries/Bahamas.txt"
+B3R = "countries/Bermuda.txt"
+J4M = "countries/Jamaica.txt"
+L3W = "countries/Leward_Island.txt"
+W1N = "countries/Windward_Island.txt"
 
 #########################################################
 # Subjects Expanded Tags by LimonenZitrone & San Felipe #
@@ -1326,6 +1494,8 @@ KYG = "countries/Kyrgyz.txt"                     #Currently in VU
 #TUH = "countries/Tiruchi.txt"
 #RCR = "countries/Recherla.txt"
 #KVE = "countries/Kondaveedu.txt"
+
+GAG = "countries/Gargonia.txt"
 
 ###################
 # Recyclable Tags #

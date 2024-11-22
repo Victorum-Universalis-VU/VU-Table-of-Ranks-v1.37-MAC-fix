@@ -1,6 +1,6 @@
 government = monarchy
 add_government_reform = plutocratic_reform
-government_rank = 2
+government_rank = 3 #Raja
 primary_culture = malayan
 religion = hinduism
 technology_group = chinese

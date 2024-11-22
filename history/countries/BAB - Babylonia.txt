@@ -1,6 +1,6 @@
 government = monarchy
 add_government_reform = sardom_reform
-government_rank = 3
+government_rank = 9 #Sardom
 technology_group = muslim
 religion = cult_of_marduk
 primary_culture = babylonian

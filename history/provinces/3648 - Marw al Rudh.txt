@@ -2,6 +2,7 @@
 
 owner = TIM
 controller = TIM
+add_core = TIM
 culture = khorasani			#northern pashto
 religion = sunni
 capital = "Marw al-Rudh"
@@ -11,19 +12,9 @@ base_tax = 5
 base_production = 5
 base_manpower = 5
 is_city = yes
-add_core = TIM
+
+#Claimants
 add_core = AFG
-
-
-
-
-
-
-
-
-
-
-
 
 1410.1.1 = {
 	base_tax = 2

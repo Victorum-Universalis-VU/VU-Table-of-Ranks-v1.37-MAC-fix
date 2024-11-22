@@ -1,5 +1,5 @@
 government = republic
-government_rank = 3
+government_rank = 6 #Colony
 primary_culture = castillian
 religion = catholic
 #technology_group = western
@@ -170,7 +170,10 @@ capital = 787	# Santiago
 	}
 }
 
-1818.2.18 = { add_government_reform = presidential_despot_reform }
+1818.2.18 = { 
+	add_government_reform = presidential_despot_reform 
+	government_rank = 7 #Dominion
+}
 
 1818.2.18 = {
 	monarch = {
