@@ -224,6 +224,14 @@ is_dutch_province_subject = {
 	opinion = 25
 }
 
+is_canadian_province_subject = {
+    opinion = 25
+}
+
+is_commonwealth_subject = {
+    opinion = 25
+}
+
 declined_establish_dutch_province_subject_opinion = {
 	opinion = -25
 	yearly_decay = 1
@@ -490,28 +498,6 @@ is_religious_march = {
 declined_ask_to_become_religious_march = {
 	opinion = -25
 	yearly_decay = 1
-	min = -100
-}
-
-is_stato_da_mar_vassal = {
-	opinion = 50
-}
-
-declined_establish_stato_da_mar_vassal_opinion = {
-	opinion = -25
-	yearly_decay = 1
-	min = -100
-}
-
-declined_ask_to_become_stato_da_mar_vassal = {
-	opinion = -25
-	yearly_decay = 1
-	min = -100
-}
-
-stato_da_mar_vassal_forced = {
-	opinion = -100
-	yearly_decay = 5
 	min = -100
 }
 

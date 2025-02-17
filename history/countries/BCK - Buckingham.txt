@@ -6,7 +6,8 @@ government_rank = 6 #Duchy
 technology_group = english_tech_group
 unit_type = western
 religion = catholic
-primary_culture = english
+primary_culture = buckinghamite
+add_accepted_culture = midlander
 capital = 8125 #Buckingham
 
 1444.1.1 = {

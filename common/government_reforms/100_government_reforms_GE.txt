@@ -142,14 +142,8 @@
 			war_exhaustion = -0.025
 		}
 		custom_attributes = {
-			has_swedish_lordship = yes
-			has_swedish_barony = yes
-			has_swedish_viscounty = yes
-			has_swedish_county = yes
-			has_swedish_marquisate = yes
-			has_swedish_duchy = yes
-			has_swedish_principality = yes
-			has_swedish_kingdom = yes
+			vu_has_ToR_subjects = yes
+			vu_has_ToR_crowns = yes
 		}
 		ai = {
 			factor = 100
@@ -192,14 +186,8 @@
 			diplomatic_annexation_cost = -0.05
 		}
 		custom_attributes = {
-			has_danish_lordship = yes
-			has_danish_barony = yes
-			has_danish_viscounty = yes
-			has_danish_county = yes
-			has_danish_marquisate = yes
-			has_danish_duchy = yes
-			has_danish_principality = yes
-			has_danish_kingdom = yes
+			vu_has_ToR_subjects = yes
+			vu_has_ToR_crowns = yes
 		}
 		ai = {
 			factor = 100
@@ -228,14 +216,8 @@
 		}
 		custom_attributes = {
 			enables_national_strenghtening_project = yes #+15% Manpower, -0.05 monthly devastation and -10 Hostile Movement Speed in provinces with accepted culture.
-			has_polish_lordship = yes
-			has_polish_barony = yes
-			has_polish_viscounty = yes
-			has_polish_county = yes
-			has_polish_marquisate = yes
-			has_polish_duchy = yes
-			has_polish_principality = yes
-			has_polish_kingdom = yes
+			vu_has_ToR_subjects = yes
+			vu_has_ToR_crowns = yes
 		}
 		conditional = {
 	    	allow = { has_dlc = "Common Sense" }
@@ -485,13 +467,13 @@
 			duration = 100
 			has_term_election = yes
 			states_general_mechanic = {
-				GE_shogun = {
+				VU_shogun = {
 					free_leader_pool = 1
 					army_tradition_decay = -0.005
 					legitimacy = -1
 				}
 				
-				GE_imperials = {
+				VU_imperials = {
 					yearly_absolutism = 0.1
 					global_autonomy = -0.05
 					legitimacy = 1
@@ -554,9 +536,9 @@
 			enables_royal_council = yes
 		}
 		factions = {
-			GE_orthodox
-			GE_coptic
-			GE_sunni
+			VU_orthodox
+			VU_coptic
+			VU_sunni
 		}
 		ai = {
 			factor = 100
@@ -708,7 +690,7 @@
 		icon = serbian_despotate
 		allow_normal_conversion = yes
 		valid_for_nation_designer = no
-		fixed_rank = 8
+		fixed_rank = 7
 		potential = {
 			OR = {
 				primary_culture = serbian
@@ -790,7 +772,7 @@
 	}
 
 	united_holy_roman_empire_reform = {
-		icon = GE_HRE
+		icon = VU_HRE
 		allow_normal_conversion = yes
 		valid_for_nation_designer = no
 		potential = {
@@ -820,7 +802,7 @@
 	}
 
 	duchy_of_luxembourg_reform = {
-		icon = GE_luxembourg_0
+		icon = VU_luxembourg_0
 		allow_normal_conversion = yes
 		valid_for_nation_designer = no
 		potential = {
@@ -916,7 +898,7 @@
 		#
 	}
 
-	papal_embassy_GE_reform = {
+	papal_embassy_VU_reform = {
 		icon = papal_embassy
 		allow_normal_conversion = yes
 		potential = {
@@ -1660,14 +1642,7 @@
 			legitimacy = 0.5
 		}
 		custom_attributes = {
-			has_norwegian_lordship = yes
-			has_norwegian_barony = yes
-			has_norwegian_viscounty = yes
-			has_norwegian_county = yes
-			has_norwegian_marquisate = yes
-			has_norwegian_duchy = yes
-			has_norwegian_principality = yes
-			has_norwegian_kingdom = yes
+			vu_has_ToR_subjects = yes
 		}
 		ai = {
 			factor = 100
@@ -2396,13 +2371,13 @@
 		potential = {
 			OR = {
 				has_reform = clans_of_ireland_reform
-				primary_culture = irish
+				primary_culture = celtic_irish_culture
 			}
 		}
 		trigger = {
 			OR = {
 				has_reform = clans_of_ireland_reform
-				primary_culture = irish
+				primary_culture = celtic_irish_culture
 			}
 		}
 		modifiers = {
@@ -2586,7 +2561,7 @@
 	}
 
 	gibraltar_of_the_north_reform = {
-		icon = GE_luxembourg_2
+		icon = VU_luxembourg_2
 		allow_normal_conversion = yes
 		valid_for_nation_designer = no
 		effect = {
@@ -2652,7 +2627,7 @@
 				has_reform = wattasid_viziers_reform
 			}
 			custom_trigger_tooltip = {
-				tooltip = GE_Killed_The_Wattasids_Tooltip
+				tooltip = VU_Killed_The_Wattasids_tooltip
 				NOT = { has_country_flag = Killed_the_Wattasids }
 			}
 		}
@@ -4259,7 +4234,7 @@
 	}
 
 	crossroads_of_cultures_reform = {
-		icon = GE_luxembourg_1
+		icon = VU_luxembourg_1
 		allow_normal_conversion = yes
 		potential = {
 			OR = {
@@ -4798,14 +4773,6 @@
 		}
 		custom_attributes = {
 			enables_immigrant_settlements = yes
-			has_prussian_lordship = yes
-			has_prussian_barony = yes
-			has_prussian_viscounty = yes
-			has_prussian_county = yes
-			has_prussian_marquisate = yes
-			has_prussian_duchy = yes
-			has_prussian_principality = yes
-			has_prussian_kingdom = yes
 		}
 		ai = {
 			factor = 100
@@ -5236,10 +5203,10 @@
 			if = {
 				limit = {
 					NOT = {
-						has_country_flag = GE_ottonain_handfeste
+						has_country_flag = VU_ottonain_handfeste
 					}
 				}
-				set_country_flag = GE_ottonain_handfeste
+				set_country_flag = VU_ottonain_handfeste
 				add_years_of_income = 2.5
 			}
 		}
@@ -5479,9 +5446,9 @@
 			stability_cost_modifier = -0.10
 		}
 		factions = {
-			GE_Senate
-			GE_Pentarchy
-			GE_Army
+			VU_Senate
+			VU_Pentarchy
+			VU_Army
 		}
 		ai = {
 			factor = 100
@@ -5643,7 +5610,7 @@
 	}
 
 	hof_van_brabant_reform = {
-		icon = GE_luxembourg_3
+		icon = VU_luxembourg_3
 		allow_normal_conversion = yes
 		potential = {
 			OR = {
@@ -7191,7 +7158,7 @@
 		potential = {}
 		modifiers = {
 			drill_gain_modifier = 0.25
-			yearly_army_professionalism = 0.001
+			yearly_army_professionalism = 0.01 #Changed this to 0.01 from 0.001 - SF
 		}
 		custom_attributes = {
 			enables_general_guards = yes #+1.25 AP per General
@@ -7438,6 +7405,8 @@
 		potential = {
 			OR = {
 				primary_culture = scottish
+				primary_culture = celtic_lowland_scottish
+				primary_culture = celtic_highland_scottish_culture
 				has_reform = abolish_manrent_reform
 				AND = {
 					accepted_culture = scottish
@@ -7451,6 +7420,8 @@
 		trigger = {
 			OR = {
 				primary_culture = scottish
+				primary_culture = celtic_lowland_scottish
+				primary_culture = celtic_highland_scottish_culture
 				has_reform = abolish_manrent_reform
 				AND = {
 					accepted_culture = scottish
@@ -8585,7 +8556,7 @@
 	}
 
 	empowered_royal_trading_company_reform = {
-		icon = "GE_trader"
+		icon = "VU_trader"
 		allow_normal_conversion = yes
 		potential = {
 			check_variable = {

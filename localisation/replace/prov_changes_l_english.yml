@@ -26,7 +26,8 @@
  PROV139:0 "Mostar"
  PROV140:0 "Doboj"
  PROV141:0 "Sumadija"
- PROV143:0 "Berat"
+ PROV143:0 "Selenicë"
+ PROV_ADJ143:0 "Selenicë"
  PROV145:0 "Laconia"
  PROV152:0 "Varazdin"
  PROV160:0 "Craiova"
@@ -444,7 +445,7 @@
  PROV2020:0 "Boho'inee"
  PROV2021:0 "Ramai"
  PROV2022:0 "K'íis Gwáayaay" #Xaayda
- PROV2023:0 "Lackawanna 
+ PROV2023:0 "Lackawanna"
  PROV2143:0 "Huainan"
  PROV2154:0 "Ketangalan"
  PROV2178:0 "Lintong"

@@ -5,11 +5,12 @@
 #Core Details
 capital = "Drogheda"
 is_city = yes
-owner = ENG
-controller = ENG
+owner = ANI
+controller = ANI
+add_core = ANI
 
 #Demographics
-culture = irish
+culture = celtic_irish_culture #Was irish
 religion = catholic
 
 #Development and Trade
@@ -18,8 +19,7 @@ base_production = 2
 base_manpower = 1
 trade_goods = livestock
 
-
-#Cores and Occupation (Alphabetical after current)
+#Claimants
 add_core = ENG
 add_core = MTH
 
@@ -32,13 +32,6 @@ fort_15th = yes
 #Special Modifiers
 
 #Discoveries
-
-
-
-
-
-
-
 1541.6.18 = {
 	owner = ANI
 	controller = ANI

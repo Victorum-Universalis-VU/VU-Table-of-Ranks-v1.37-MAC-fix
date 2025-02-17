@@ -1,5 +1,5 @@
 government = monarchy
-add_government_reform = eue_duchy_reform #appanage_reform
+add_government_reform = feudalism_reform #appanage_reform
 government_rank = 6 #Duchy
 #technology_group = western
 technology_group = french_tech_group
@@ -8,6 +8,8 @@ primary_culture = normand
 add_accepted_culture = cosmopolitan_french
 religion = catholic
 capital = 168	# Caen
+historical_rival = BRI
+historical_rival = ANJ
 
 1465.8.15 = {
 	monarch = {

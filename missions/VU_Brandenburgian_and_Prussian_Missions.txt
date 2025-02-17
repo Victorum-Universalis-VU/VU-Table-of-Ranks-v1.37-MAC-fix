@@ -928,6 +928,20 @@ BRA_missions_4 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			mittelmark_area = { #Added by Don so you can acually get to Saxony
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			altmark_area = { #Added by Don so you can acually get to Saxony
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 			thuringia_area = {
 				limit = {
 					NOT = {
@@ -937,7 +951,6 @@ BRA_missions_4 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			
 			if = { 
 				limit = { 
 					has_dlc = "Domination" 
@@ -1329,12 +1342,13 @@ BRA_missions_4 = {
 		required_missions = { BRA_concluding_the_transition }
 		position = 7
 		provinces_to_highlight = {
-			province_id = 2969
-			OR = {
-				NOT = { owned_by = ROOT }
-				AND = {
-					NOT = { has_building = university }
-					NOT = { num_of_times_improved = 13 }
+			2969 = {
+				OR = {
+					NOT = { owned_by = ROOT }
+					OR = {
+						has_education_building_trigger = no
+						NOT = { num_of_times_improved = 13 }
+					}
 				}
 			}
 		}
@@ -1342,7 +1356,7 @@ BRA_missions_4 = {
 			2969 = {
 				owned_by = ROOT
 				OR = {
-					has_building = university
+					has_education_building_trigger = yes
 					num_of_times_improved = 13
 				}
 			}
@@ -2243,7 +2257,7 @@ PRU_missions_1_vassal = {
 			calc_true_if = {
 				all_subject_country = {
 					NOT = { liberty_desire = 5 }
-					is_subject_of_type = prussian_vassal
+					is_subject_of_type = prussian_vassal #Need to look at this Don - SF
 				}
 				amount = 3
 			}

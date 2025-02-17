@@ -1,3 +1,16 @@
+# Forward declaring all subject types so they can refer to each other in triggers etc. (Not sure if it's necessary but I like to have a list at the start of the file as in 00_subject_types) By Altan
+
+timar = {}
+permanent_union = {}
+prussian_congress_vassal = {}
+prussian_vassal = {}
+brotherly_order = {}
+french_hre_subject = {}
+ME_personal_union = {}
+ME_Austrian_personal_union = {}
+ME_TIM_trib_state = {}
+
+
 timar = {
 	copy_from = tributary_state
 
@@ -60,7 +73,7 @@ timar = {
 }
 
 permanent_union = {
-	copy_from = default
+	copy_from = personal_union
 
 	# Graphics:
 	sprite = GFX_court_union
@@ -135,7 +148,6 @@ prussian_vassal = {
 
 	takes_diplo_slot = no
 }
-
 brotherly_order = {
 	copy_from = vassal
 	count = vassal
@@ -161,7 +173,6 @@ brotherly_order = {
 		other_overlord = all
 	}
 }
-
 french_hre_subject = {
 	copy_from = default
 
@@ -199,6 +210,7 @@ french_hre_subject = {
 	overlord_can_fabricate_for = no
 	does_overlord_size_count_for_warscore_cost = no
 	can_concentrate_development = no
+	can_be_annexed = no
 
 	max_government_rank = 0
 	cities_required_for_bonuses = 0

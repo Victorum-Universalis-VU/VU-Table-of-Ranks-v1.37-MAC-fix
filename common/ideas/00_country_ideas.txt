@@ -1,8 +1,5 @@
-# Do not change tags in here without changing every other reference to them.
-# Do not change tags in here without changing every other reference to them.
-# If adding new groups or ideas, make sure they are unique.
-
-# This one is the first for the case that some country manages to become fully Norse.
+#VU 1.37.* update by SF
+#Key contributors to the file: SF, Prussia, Lukas, Altan, Yeti, Don      
 
 STY_ideas = {
     start = {
@@ -324,7 +321,7 @@ AVE_ideas = {
 		num_of_parliament_issues = 1
 	}
 	lessons_of_the_anglo_french_wars = {
-		discipline = 0.05
+		land_morale = 0.2 #Added by Prussia - Fremch Elan
 	}
 	the_many_thrones = {
 		heir_chance = 0.5
@@ -332,6 +329,7 @@ AVE_ideas = {
 	}
 	reformed_angevin_infantry = {
 		infantry_power = 0.1
+		discipline = 0.05 #Moved by Prussia
 	}
 	seneschal_of_france = {
 		governing_capacity_modifier = 0.15
@@ -460,7 +458,7 @@ DAN_ideas = {
 	}
 	dan_royal_mercenaries = {
 		shock_damage = 0.1
-		mercenary_discipline = 0.05
+		mercenary_discipline = 0.15 #Edited by Prussia - merc equivelent of morale and 5% is pathetic
 	}
 	dan_naval_heroes = {
 		leader_naval_shock = 1
@@ -993,7 +991,7 @@ FRA_ideas = {
 	}
 	lessons_hundred_years_war = {
 		army_tradition = 0.5
-		land_morale = 0.15
+		land_morale = 0.2 #Put back to the old 'Elan' value - Prussia
 	}
 	estates_general = {
 		reform_progress_growth = 0.1
@@ -1049,8 +1047,8 @@ FRA_ideas_2 = {
 		years_of_nationalism = -10
 	}
 	elan = {
-		land_morale = 0.15
-		morale_damage = 0.05
+		land_morale = 0.2 #Returned to old pre-Domination value - Prussia
+		morale_damage = 0.1 #0.05 was kinda pathetic - Prussia
 	}
 	mandats_territoriaux = {
 		production_efficiency = 0.15
@@ -1809,7 +1807,7 @@ POR_ideas = {
 	free = yes		#will be added at load.
 	
 	legacy_of_the_navigator = {
-		naval_morale = 0.1
+		naval_morale = 0.2 #Edited by Prussia - Portugal had one of the most potent navies during the early colonial era. Despite its small size, it won numerous victories against far superior forces.
 		range = 0.20
 	}
 	afonsine_ordinances = {
@@ -1819,7 +1817,7 @@ POR_ideas = {
 		global_trade_power = 0.1
 	}
 	land_before_faith = {
-		global_colonial_growth = 15
+		global_colonial_growth = 20 #Edited by Prussia - Portugal had full papal backing in the Treaty of Tordesillas to colonize huge swathes of the world
 	}
 	the_bandeirantes = {
 		trade_efficiency = 0.15
@@ -2345,9 +2343,10 @@ BUR_Ideas = {
 	}
 	compagnies_ordonnance = {
 		merc_maintenance_modifier = -0.15
+		mercenary_manpower = 0.5 #Moved from bur_estates_general by Prussia
 	}
 	bur_estates_general = {
-		mercenary_manpower = 0.5
+		liberty_desire_from_subject_development = -0.2 #Added by Prussia because Burgundy having no ideas to help with subjects makes literaly no sense, and they control some highly developed lands through subjects.
 	}
 	reform_of_feudal_army = {
 		discipline = 0.05
@@ -2390,7 +2389,7 @@ GEN_Ideas = {
 		trade_efficiency = 0.1
 	}
 	serene_republic_of_genoa = {
-		republican_tradition = 0.2
+		republican_tradition = 0.3 #Increased to match Venice's RT increase - Prussia
 	}
 	the_university_of_genoa = {
 		technology_cost = -0.05
@@ -2400,7 +2399,7 @@ GEN_Ideas = {
 		naval_forcelimit_modifier = 0.2
 	}
 	reorganise_mercenary_regiments = {
-		mercenary_discipline = 0.05
+		mercenary_discipline = 0.1 #Increased by Prussia, 5% was pathetic
 	}
 }
 
@@ -3751,7 +3750,7 @@ MAR_ideas = {
 			tag = MAR	#Marathas
 			tag = BDA	#Baroda
 			AND = {
-				TAG = GWA
+				tag = GWA
 				primary_culture = marathi
 			} #Sindhias of Gwalior
 		}
@@ -4187,7 +4186,7 @@ TUS_ideas = {
 		papal_influence = 2
 		church_power_modifier = 0.1
 		monthly_fervor_increase = 0.25
-		development_cost = -0.1
+		development_cost = -0.2 #Edited by Prussia. Located in highly fertile lands that would be ripe for development.
 	}
 	
 	bonus = {
@@ -4207,7 +4206,7 @@ TUS_ideas = {
 		technology_cost = -0.05
 	}
 	tuscan_condottieri = {
-		merc_maintenance_modifier = -0.15
+		merc_maintenance_modifier = -0.2 #Edited by Prussia. The Italian Wars were well known for mercenary armies
 	}
 	tuscan_banking = {
 		interest = -0.5
@@ -4359,12 +4358,12 @@ SON_ideas = {
 
 BRI_ideas = {
 	start = {
-		navy_tradition = 1
-		trade_steering = 0.10
+		land_forcelimit_modifier = 0.15
+		naval_forcelimit_modifier = 0.15
 	}
 	
 	bonus = {
-		naval_forcelimit_modifier = 0.25
+		army_tradition = 1
 	}
 	
 	trigger = {
@@ -4394,6 +4393,7 @@ BRI_ideas = {
 	}
 	league_of_the_public_weal = {
 		diplomatic_reputation = 1
+		land_morale = 0.15
 	}
 	catholicon = {
 		prestige = 1
@@ -5485,8 +5485,8 @@ KBO_ideas = {
 
 FEO_ideas = {
 	start = {
-		global_trade_power = 0.1
-		army_tradition_decay = -0.01
+		land_morale = 0.15
+		army_tradition = 1
 	}
 
 	bonus = {
@@ -5499,25 +5499,28 @@ FEO_ideas = {
 	free = yes		#will be added at load.
 
 	principate_guard = {
-		merc_maintenance_modifier = -0.15
+		merc_maintenance_modifier = -0.25
 	}
 	komnin_paleolog_gavras = {
-		heir_chance = 0.5		
+		heir_chance = 0.5
+		legitimacy = 1		
 	}
 	aristocracy_in_moskovia = {
 		diplomatic_reputation = 1
 	}
 	avlita_port = {
 		trade_efficiency = 0.1
+		global_trade_power = 0.1
 	}
 	mangup_kalamita = {
 		defensiveness = 0.25
 	}
 	turms = {
-		global_tax_modifier = 0.1
+		global_tax_modifier = 0.2
 	}
 	cave_monasteries = {
 		tolerance_own = 1
+		global_missionary_strength = 0.02
 	}
 }
 
@@ -6033,7 +6036,7 @@ AIR_ideas = {
 	}
 	
 	trigger = {
-		TAG = AIR
+		tag = AIR
 	}
 	
 	free = yes		#will be added at load.
@@ -6128,7 +6131,7 @@ fulani_jihad_ideas = {
 	
 	trigger = {
 		OR = {
-			TAG = SOK
+			tag = SOK
 			has_country_flag = fulani_jihad_state
 		}
 	}
@@ -6180,7 +6183,7 @@ TAR_ideas = {
 	}
 	
 	trigger = {
-		TAG = TAR
+		tag = TAR
 	}
 	
 	free = yes		#will be added at load.
@@ -6399,7 +6402,7 @@ ALB_ideas = {
 	}
 	
 	trigger = {
-		tag = ALB
+		primary_culture = albanian
 	}
 	free = yes
 	
@@ -7163,11 +7166,12 @@ ARM_ideas = {
 WLS_ideas = {
 	start = {
 		hostile_attrition = 1
-		land_morale = 0.1
+		land_morale = 0.15
 	}
 
 	bonus = {
-		land_forcelimit_modifier = 0.25
+		land_forcelimit_modifier = 0.20
+		fire_damage = 0.15
 	}
 	
 	trigger = {
@@ -7193,8 +7197,10 @@ WLS_ideas = {
 	}
 	economic_revival = {
 		production_efficiency = 0.1
+		global_trade_goods_size_modifier = 0.1
 	}
 	prifysgolion_cymru = {
+		technology_cost = -0.05
 		idea_cost = -0.1
 	}
 	welsh_church = {
@@ -7215,10 +7221,10 @@ hausa_ideas = {
 	
 	trigger = {
 		OR = {
-			TAG = KTS
-			TAG = KAN
-			TAG = ZZZ
-			TAG = HAU
+			tag = KTS
+			tag = KAN
+			tag = ZZZ
+			tag = HAU
 		}
 	}
 	
@@ -14299,7 +14305,7 @@ irish_ideas = {
 	    OR = {
 			tag = IRE
 			AND = { #VU
-				primary_culture = irish
+				primary_culture = celtic_irish_culture
 				NOT = {
 					OR = {
 						tag = CEL
@@ -14460,8 +14466,8 @@ CRN_ideas = {
 # Manx ideas
 KOI_ideas = {
 	start = {
-		global_sailors_modifier = 0.2
-		global_ship_cost = -0.1
+		naval_morale = 0.15
+		global_ship_cost = -0.15
 	}
 	
 	bonus = {
@@ -14477,13 +14483,15 @@ KOI_ideas = {
 		diplomats = 1
 	}
 	mann_kings = {
-		core_creation = -0.10
+		land_morale = 0.15
 	}
 	mann_tynwald = {
 		advisor_pool = 1
+		advisor_cost = -0.15
 	}
 	mann_and_the_isles = {
-		naval_morale = 0.15
+		navy_tradition = 1
+		global_sailors_modifier = 0.15
 	}
 	mann_act_of_settlement = {
 		global_unrest = -1
@@ -14492,7 +14500,8 @@ KOI_ideas = {
 		global_heretic_missionary_strength = 0.02
 	}
 	mann_act_of_revestment = {
-		diplomatic_annexation_cost = -0.15
+		core_creation = -0.20
+		ignore_coring_distance = yes
 	}
 }
 
@@ -16142,8 +16151,7 @@ OIR_ideas = {
 		global_manpower_modifier = 0.25
 	}
 	glory_of_conquest = { #also used in Horde ideas, KHA_ideas and CHG_ideas
-		may_establish_frontier = yes
-		auto_explore_adjacent_to_colony = yes
+
 	}
 }
 
@@ -16185,8 +16193,7 @@ KHA_ideas = {
 		movement_speed = 0.1
 	}
 	MNG_kheshig = {
-		may_establish_frontier = yes
-		auto_explore_adjacent_to_colony = yes
+		cavalry_shock = 0.5
 	}
 }
 
@@ -16212,8 +16219,6 @@ CHG_ideas = {
 	CHG_border_wars = {
 		land_morale = 0.05
 		manpower_recovery_speed = 0.15
-		may_establish_frontier = yes
-		auto_explore_adjacent_to_colony = yes
 	}
 	sons_of_chagatai = {
 		diplomatic_annexation_cost = -0.15
@@ -16228,6 +16233,7 @@ CHG_ideas = {
 		diplomats = 1
 	}
 	glory_of_conquest = {
+		cavalry_shock = 0.5
 		#global_manpower_modifier = 0.25 (effect taken in OIR idea)
 	}
 }
@@ -18775,7 +18781,7 @@ st_polten_ideas = {
 		prestige = 0.5
 	}
 	defend_st_polten_lands = {
- 		land_morale = 1
+ 		land_morale = 0.1
 	}	
 	expand_sankt_polten = {
 		development_cost_modifier = -0.1

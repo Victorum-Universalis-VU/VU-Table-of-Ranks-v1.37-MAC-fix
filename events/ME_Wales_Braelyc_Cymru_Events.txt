@@ -44,7 +44,7 @@ country_event = { #Brothers of cornwall
 				change_government = monarchy
 				add_government_reform = feudalism_reform
 				add_government_reform = parliamentary_reform
-				change_primary_culture = cornish
+				change_primary_culture = celtic_cornish_culture
 			}
 		}
 		custom_tooltip = wls_crn_ideas_tooltip
@@ -107,7 +107,7 @@ country_event = { #Senedd Cymru
 				limit = {
 					has_dlc = "American Dream"
 				}
-				add_government_reform = federal_republic
+				add_government_reform = US_constitutional_republic
 			}
 			else = {
 				add_government_reform = oligarchy_reform

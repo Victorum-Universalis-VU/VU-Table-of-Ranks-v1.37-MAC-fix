@@ -270,7 +270,11 @@ SCO_Ideas = {
 	}
 	
 	trigger = {
-		primary_culture = scottish
+		OR = {
+			primary_culture = scottish
+			primary_culture = celtic_lowland_scottish
+			primary_culture = celtic_highland_scottish_culture
+		}
 		NOT = {
 			OR = {
 				tag = CEL
@@ -496,8 +500,8 @@ bengali_ideas = {
 	trigger = {
 		OR = {
 			primary_culture = bengali
-			TAG = KMT
-			TAG = KAC
+			tag = KMT
+			tag = KAC
 		}
 	}
     free = yes       #will be added at load.
@@ -693,9 +697,7 @@ horde_ideas = {
 		leader_land_shock = 1
 	}
 	tradition_of_conquest = {
-		#core_creation = -0.25 (effect taken in CHG_ideas)
-		may_establish_frontier = yes
-		auto_explore_adjacent_to_colony = yes
+		#core_creation = -0.25 (effect taken in CHG_ideas)	
 	}
 	logistics_of_khan = {
 		#manpower_recovery_speed = 0.2 (effect taken in GLH_ideas)
@@ -1864,9 +1866,9 @@ pacific_northwest_ideas = {
 
 	trigger = {
 		OR = {
-			TAG = SAL
-			TAG = HDA
-			TAG = CNK
+			tag = SAL
+			tag = HDA
+			tag = CNK
 		}
 	}
 
@@ -2740,7 +2742,7 @@ highland_scottish_ideas = {
 	}
 
 	trigger = {
-		primary_culture = highland_scottish
+		primary_culture = celtic_highland_scottish_culture
 	}
 
 	free = yes

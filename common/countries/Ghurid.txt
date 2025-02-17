@@ -7,6 +7,13 @@ historical_score = 600
 revolutionary_colors = { 10  0  5 }
 
 historical_idea_groups = {
+	religious_ideas
+	offensive_ideas
+	trade_ideas
+	quality_ideas
+	court_ideas
+	judiciary_ideas
+	mercenary_ideas
 	defensive_ideas
 }
 

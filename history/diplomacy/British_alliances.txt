@@ -16,7 +16,7 @@ dependency = {
 	subject_type = "european_archbishopric"
 	first = ENG
 	second = ARC
-	start_date = 597.1.1 
+	start_date = 1444.1.1 #Was 597.1.1 
 	end_date = 1836.6.5
 }
 
@@ -24,7 +24,7 @@ dependency = {
 	subject_type = "european_bishopric"
 	first = ENG
 	second = DUR
-	start_date = 1291.1.1 
+	start_date = 1444.1.1 #Was 1291.1.1 
 	end_date = 1836.6.5
 }
 
@@ -414,7 +414,7 @@ dependency = {
 	subject_type = "english_duchy"
 	first = ENG
 	second = GLR
-	start_date = 1414.5.16
+	start_date = 1444.1.1 #Was 1414.5.16
 	end_date = 1726.1.1
 }
 
@@ -441,7 +441,7 @@ dependency = {
 	subject_type = "english_duchy"
 	first = ENG
 	second = YRK
-	start_date = 1415.1.1
+	start_date = 1444.1.1 #Was 1415.1.1
 	end_date = 1903.12.31
 }
 
@@ -450,7 +450,7 @@ dependency = {
 	subject_type = "english_duchy"
 	first = ENG
 	second = NOL
-	start_date = 1414.5.11
+	start_date = 1444.1.1 #Was 1414.5.11
 	end_date = 2024.2.28
 }
 
@@ -486,7 +486,7 @@ dependency = {
 	subject_type = "english_earldom"
 	first = ENG
 	second = LNN
-	start_date = 1415.10.25
+	start_date = 1444.1.1 #Was 1415.10.25
 	end_date = 1487.1.1
 }
 
@@ -495,7 +495,7 @@ dependency = {
 	subject_type = "english_earldom"
 	first = ENG
 	second = OXF
-	start_date = 1429.1.1
+	start_date = 1444.1.1 #Was 1429.1.1
 	end_date = 1703.1.1
 }
 
@@ -547,7 +547,7 @@ dependency = {
 ########################
 
 dependency = {
-	subject_type = "english_crown_PU"
+	subject_type = english_crown_PU
 	first = ENG
 	second = WLS
 	start_date = 1444.1.1
@@ -555,7 +555,7 @@ dependency = {
 }
 
 dependency = {
-	subject_type = "english_crown_PU"
+	subject_type = english_crown_PU
 	first = ENG
 	second = WLS
 	start_date = 1444.11.18 #VictorumUniversalis batch edit shortcut second performance start ends
@@ -564,16 +564,16 @@ dependency = {
 
 # England-Chester (Earldom of Chester)
 dependency = {
-	subject_type = "english_crown_PU"
+	subject_type = english_crown_PU
 	first = ENG
 	second = CST
-	start_date = 1067.1.1
+	start_date = 1444.1.1 #Was 1067.1.1
 	end_date = 1536.1.1
 }
 
 # England-Scotland
 dependency = {
-	subject_type = "english_crown_PU"
+	subject_type = english_crown_PU
 	first = ENG
 	second = SCO
 	start_date = 1603.3.24
@@ -582,7 +582,7 @@ dependency = {
 
 # England-Scotland
 dependency = {
-	subject_type = "english_crown_PU"
+	subject_type = english_crown_PU
 	first = ENG
 	second = SCO
 	start_date = 1652.4.21
@@ -591,7 +591,7 @@ dependency = {
 
 # England-Hannover
 dependency = {
-	subject_type = "english_crown_PU"
+	subject_type = english_crown_PU
 	first = GBR
 	second = HAN
 	start_date = 1714.8.1
@@ -600,11 +600,29 @@ dependency = {
 
 # England-Hannover
 dependency = {
-	subject_type = "english_crown_PU"
+	subject_type = english_crown_PU
 	first = GBR
 	second = HAN
 	start_date = 1813.10.13
 	end_date = 1837.6.20
+}
+
+# Duchy of Cornwall
+dependency = {
+	subject_type = english_crown_PU
+	first = ENG
+	second = CRN
+	start_date = 1444.1.1
+	end_date = 1542.1.22
+}
+
+# Lordship of Ireland
+dependency = {
+	subject_type = english_crown_PU
+	first = ENG
+	second = ANI
+	start_date = 1444.1.1 #Was 1177.1.1
+	end_date = 1542.1.22
 }
 
 ##########
@@ -613,7 +631,7 @@ dependency = {
 
 #Creation of the Kingdom of Ireland
 dependency = {
-	subject_type = "english_crown_PU"
+	subject_type = english_crown_PU
 	first = ENG
 	second = ANI
 	start_date = 1541.6.18			#Creation
@@ -622,7 +640,7 @@ dependency = {
 
 #Reestablishment of the Kingdom of Ireland, after Cromwellian reconquest of Ireland
 dependency = {
-	subject_type = "english_crown_PU"
+	subject_type = english_crown_PU
 	first = ENG
 	second = ANI
 	start_date = 1652.4.21
@@ -631,7 +649,7 @@ dependency = {
 
 # England-Netherlands
 dependency = {
-	subject_type = "english_crown_PU"
+	subject_type = english_crown_PU
 	first = ENG
 	second = NED
 	start_date = 1689.2.13
@@ -639,7 +657,7 @@ dependency = {
 }
 
 dependency = {
-	subject_type = "english_crown_PU"
+	subject_type = english_crown_PU
 	first = GBR
 	second = ANI
 	start_date = 1707.5.12

@@ -1,8 +1,8 @@
 #6979 - Sigmaringen
 
-owner = FUR
-controller = FUR
-add_core = FUR
+owner = STU
+controller = STU
+add_core = STU
 culture = swabian
 capital = "Sigmaringen"
 religion = catholic
@@ -13,11 +13,8 @@ base_manpower = 2
 is_city = yes
 hre = yes
 
-
-
-
-
-
+#Claimants
+add_claim = WER
 
 #Documented 1077 AD
 1525.1.1 = { religion = protestant }

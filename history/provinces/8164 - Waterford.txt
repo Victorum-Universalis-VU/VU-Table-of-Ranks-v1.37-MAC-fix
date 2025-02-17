@@ -2,9 +2,10 @@
 
 capital = "Waterford"
 is_city = yes
-owner = ENG
-controller = ENG
-culture = irish
+owner = ANI
+controller = ANI
+add_core = ANI
+culture = celtic_irish_culture #Was irish
 religion = catholic
 base_tax = 4
 base_production = 1
@@ -26,12 +27,10 @@ add_permanent_province_modifier = {
     duration = -1
 }
 
+#Claimants
+add_core = ENG
+
 #Discoveries
-
-
-
-
-
 
 #Histories
 1291.1.1 = {

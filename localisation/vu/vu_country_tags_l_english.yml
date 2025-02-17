@@ -286,8 +286,8 @@
  GLW_ADJ: "Galway"
  MYO: "Mayo"
  MYO_ADJ: "Mayo"
- ANI: "Kingdom of Ireland"
- ANI_ADJ: "Hiberno-Norman"
+ ANI: "Lordship of Ireland"
+ ANI_ADJ: "Anglo-Irish"
  BLG: "Bologna"
  BLG_ADJ: "Bolognesi"
  SZO: "Saluzzo"
@@ -380,8 +380,8 @@
  KMI_ADJ: "Kamminer"
  RPN: "Ruppin"
  RPN_ADJ: "Ruppiner"
- STR: "Stargard"
- STR_ADJ: "Stargarder"
+ STR: "Mecklenburg-Stargard"
+ STR_ADJ: "Mecklenburg-Stargarder"
  OSL: "Ösel–Wiek"
  OSL_ADJ: "Öselian"
  DRP: "Dorpat"
@@ -408,6 +408,8 @@
  SHE_ADJ: "Sheki"
  HOY: "Hoya"
  HOY_ADJ: "Hoyan"
+ M5H: "Mecklenburg-Schwerin"
+ M5H_ADJ: "Mecklenburg-Schweriner"
  
  #VU Additions
  VOR: "Further Austria"
@@ -594,8 +596,8 @@
  PUL_ADJ: "Pulilun"
  N4M: "Namayan"
  N4M_ADJ: "Namayan"
- KMB: "Klumbach"
- KMB_ADJ: "Klumbachan"
+ KMB: "Kulmbach"
+ KMB_ADJ: "Kulmbachan"
  KMP: "Kempten"
  KMP_ADJ: "Kemptburgan"
  KRH: "Kirchberg"
@@ -1451,10 +1453,20 @@
  KGD_ADJ: "Granada"
  
  #Germany
+ A8B: "Erzbistum Bremen"
+ A8B_ADJ: "Bremer"
+ FBB: "Freyberg"
+ FBB_ADJ: "Freyberger"
+ FC5: "Freie Stadt Schömberg"
+ FC5_ADJ: "Schömberger"
+ K0R: "Königsegg-Rothenfels"
+ K0R_ADJ: "Königsegger"
  PFU: "Pfullendorf"
  PFU_ADJ: "Pfullendorfer"
  REU: "Reutlingen"
  REU_ADJ: "Reutlingener"
+ ST6: "St.Gallen"
+ ST6_ADJ: "St.Gallen"
 
  #Switzerland
  ARU: "Aargau"
@@ -1477,3 +1489,9 @@
  #Persia
  K4W: "Khwarazmia"
  K4W_ADJ: "Khwarazmian"
+
+ #Norway
+ DLA: "Dalarna" 
+ DLA_ADJ: "Dalarner"
+ AGD: "Agder"
+ AGD_ADJ: "Agderan"

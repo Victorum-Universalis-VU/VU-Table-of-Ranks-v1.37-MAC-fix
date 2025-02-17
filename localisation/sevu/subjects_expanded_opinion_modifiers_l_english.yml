@@ -63,6 +63,16 @@
  declined_ask_for_dutch_province_subject_opinion: "Offer for Dutch Province declined"
  dutch_province_subject_declined_freedom: "Declined Independence"
 
+ is_canadian_province_subject: "Canadian Province"
+ declined_establish_canadian_province_subject_opinion: "Demand of Canadian Province declined"
+ declined_ask_for_canadian_province_subject_opinion: "Offer for Canadian Province declined"
+ canadian_province_subject_declined_freedom: "Declined Independence"
+
+ is_commonwealth_subject: "Commonwealth"
+ declined_establish_commonwealth_subject_opinion: "Demand of Commonwealth declined"
+ declined_ask_for_commonwealth_subject_opinion: "Offer for Commonwealth declined"
+ commonwealth_subject_declined_freedom: "Declined Independence"
+
  is_revolution_subject: "Revolutionary Confederation"
  revolution_subject_forced: "Forced Revolutionary Confederation"
 
@@ -127,11 +137,6 @@
 
  is_religious_march: "Religious March"
  declined_ask_to_become_religious_march: "Offer for Religious March declined"
-
- is_stato_da_mar_vassal: "Stato da Màr"
- declined_establish_stato_da_mar_vassal_opinion: "Demand for Stato da Màr declined"
- declined_ask_to_become_stato_da_mar_vassal: "Offer for Stato da Màr declined"
- stato_da_mar_vassal_forced: "Forced Stato da Màr"
 
  is_medieval_vassal: "Medieval Vassal"
  declined_establish_medieval_vassal_opinion: "Demand for Medieval Vassal declined"

@@ -3,7 +3,7 @@
 owner = ANR
 add_core = ANR
 controller = ANR
-culture = irish
+culture = celtic_irish_culture #Was irish
 religion = catholic
 hre = no
 base_tax = 4 
@@ -13,6 +13,9 @@ trade_goods = whiskey #Irish Whiskey (by San Felipe).
 capital = "Cois Abhann Dalla"
 #capital = "Carraig Fhearghais"
 is_city = yes
+
+#Claimants
+add_core = ANI
 
 #Histories
 

@@ -225,7 +225,7 @@ country_event = {
 		OR = {
 			AND = {
 				tag = USA
-				culture_group = british
+                culture_group = british
 			}
 			AND = {
 				is_former_colonial_nation = yes
@@ -233,7 +233,7 @@ country_event = {
 					colonial_region = colonial_eastern_america
 					is_core = ROOT
 				}
-				culture_group = british
+                culture_group = british
 				NOT = { exists = USA }
 			}
 		}
@@ -438,12 +438,12 @@ country_event = {
 	option = {
 		name = "usa_dlc.EVTOPTA11"
 		change_government = republic
-		add_government_reform = american_republic
+		add_government_reform = continental_congress
 	}
 	option = {
 		name = "usa_dlc.EVTOPTB11"
 		change_government = republic
-		add_government_reform = federal_republic
+		add_government_reform = US_constitutional_republic
 	}
 	option = {
 		name = "usa_dlc.EVTOPTC11"

@@ -1,3 +1,4 @@
+#BER - Berry
 government = monarchy
 add_government_reform = eue_duchy_reform #appanage_reform
 government_rank = 6 #Duchy

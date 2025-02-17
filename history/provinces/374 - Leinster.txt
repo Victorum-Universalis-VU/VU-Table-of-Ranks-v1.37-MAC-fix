@@ -3,7 +3,7 @@
 owner = LGN
 controller = LGN
 add_core = LGN
-culture = irish
+culture = celtic_irish_culture #Was irish
 religion = catholic
 capital = "Fearna Mór Maedhóg"
 is_city = yes
@@ -20,6 +20,7 @@ add_permanent_province_modifier = {
 }
 
 #Claimants
+add_core = ANI
 
 #Histories by SF
 1215.6.15 = { 

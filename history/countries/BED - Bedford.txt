@@ -6,7 +6,8 @@ government_rank = 6 #Duchy
 technology_group = english_tech_group
 unit_type = western
 religion = catholic
-primary_culture = english
+primary_culture = bedfordian
+add_accepted_culture = lutonian
 capital = 7435 #Bedford
 
 1400.1.1 = {

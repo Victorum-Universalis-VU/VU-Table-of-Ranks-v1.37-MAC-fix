@@ -390,6 +390,7 @@ gov_daimyo = {
 	trigger = {
 		OR = {
 			has_reform = daimyo
+			has_reform = indep_daimyo
 			has_reform = daimyo_barony_reform
 			has_reform = daimyo_viscounty_reform
 			has_reform = daimyo_county_reform
@@ -787,7 +788,7 @@ gov_constitutional_republic = {
 		6 = CONSTITUTIONAL_REPUBLIC
 		7 = HIGH_CONSTITUTIONAL_REPUBLIC
 		8 = GRAND_CONSTITUTIONAL_REPUBLIC
-		9 = FEDERAL_REPUBLIC
+		9 = US_FEDERAL_REPUBLIC
 	}
 	
 	ruler_male = {
@@ -808,8 +809,9 @@ gov_constitutional_republic = {
 		government = republic
 		OR = {
 		    tag = USA
+			has_reform = continental_congress
 			has_reform = constitutional_republic
-			has_reform = federal_republic
+			has_reform = US_constitutional_republic
 			has_reform = presidential_reform
 			has_reform = parliamentary_reform
 		}
@@ -863,51 +865,6 @@ gov_constitutional_republic = {
 #        }
 #    }
 #}
-
-ger_marquisate_reform = {
-	rank = {
-		5 = GER_MARQUISATE_1
-	}
-	
-	ruler_male = {
-		5 = GER_MARQUIS_1
-	}
-	
-	ruler_female = {
-		5 = GER_MARCHIONESS_fem_1
-	}
-	
-	consort_male = {
-		5 = GER_MARQUIS_1
-	}
-
-	consort_female = {
-		5 = GER_MARCHIONESS_fem_1
-	}
-	
-	heir_male = {
-		5 = GER_LORD_1
-	}
-
-	heir_female = {
-		5 = GER_LADY_fem_1
-	}
-	
-	trigger = {
-		has_reform = eue_marquisate_reform
-		culture_group = germanic
-		NOT = {
-			culture = ger_dutch        #Dutch
-            culture = ger_brabantian   #Belgian
-            culture = ger_dutch_saxon  #Dutch
-            culture = ger_zeelandic    #Dutch
-            culture = ger_limburgish   #Dutch
-            culture = ger_guelders     #Dutch
-            culture = ger_flemish      #Belgian
-			culture_group = low_franconian #Low Countries
-		}
-	}
-}
 
 #Ikko-Ikki Peasants
 

@@ -6,7 +6,14 @@ color = { 61 8 81 }
 revolutionary_colors = { 5  1  8 }
 
 historical_idea_groups = {
+	health_ideas
 	defensive_ideas
+	humanist_ideas
+	trade_ideas
+	society_ideas
+	cavalry_focus_ideas
+	mercenary_ideas
+	offensive_ideas
 }
 
 historical_units = {
@@ -72,7 +79,6 @@ monarch_names = {
 	"Stefanos #0" = 0
 	"Theodoros #0" = 0
 	"Timotheos #0" = 0
-	
 	"Agape #0" = -1
 	"Photine #0" = -1
 	"Sotiria #0" = -1

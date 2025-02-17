@@ -10,6 +10,13 @@ revolutionary_colors = { 14 0 10 }
 
 historical_idea_groups = {
 	plutocracy_ideas
+ 	humanist_ideas
+ 	fishing_ideas
+ 	maritime_ideas
+ 	agricultural_ideas
+	defensive_ideas
+	trade_ideas
+	logistics_ideas
 }
 
 historical_units = {

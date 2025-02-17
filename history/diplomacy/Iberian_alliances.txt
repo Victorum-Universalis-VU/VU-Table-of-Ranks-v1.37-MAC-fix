@@ -34,6 +34,13 @@ guarantee = {
 	end_date = 1479.9.4
 }
 
+guarantee = {
+	first = ARA
+	second = ALB
+	start_date = 1443.11.18 #VictorumUniversalis batch edit shortcut second performance start ends
+	end_date = 1479.9.4
+}
+
 ###################
 # Royal Marriages #
 ###################
@@ -103,23 +110,23 @@ alliance = {
 ######################
 #VU additions by Prussia and integrated by SF
 dependency = {
-	subject_type = "aragonese_crown_PU"
+	subject_type = aragonese_crown_PU
 	first = ARA
 	second = SAR
-	start_date = 1324.1.1
+	start_date = 1444.1.1 #Was 1324.1.1
 	end_date = 1474.12.11
 }
 
 dependency = {
-	subject_type = "aragonese_crown_PU"
+	subject_type = aragonese_crown_PU
 	first = ARA
 	second = COR
-	start_date = 1324.1.1
+	start_date = 1444.1.1 #Was 1324.1.1
 	end_date = 1474.12.11
 }
 
 dependency = {
-	subject_type = "aragonese_crown_PU"
+	subject_type = aragonese_crown_PU
 	first = ARA
 	second = SIC
 	start_date = 1409.7.26
@@ -127,26 +134,26 @@ dependency = {
 }
 
 dependency = {
-	subject_type = "aragonese_crown_PU"
+	subject_type = aragonese_crown_PU
 	first = ARA
 	second = CAT
-	start_date = 1137.1.1
+	start_date = 1444.1.1 #Was 1137.1.1
 	end_date = 1474.12.11
 }
 
 dependency = {
-	subject_type = "aragonese_crown_PU"
+	subject_type = aragonese_crown_PU
 	first = ARA
 	second = MJO
-	start_date = 1344.1.1
+	start_date = 1444.1.1 #Was 1344.1.1
 	end_date = 1474.12.11
 }
 
 dependency = {
-	subject_type = "aragonese_crown_PU"
+	subject_type = aragonese_crown_PU
 	first = ARA
 	second = VAL
-	start_date = 1238.1.1
+	start_date = 1444.1.1 #Was 1238.1.1
 	end_date = 1474.12.11
 }
 
@@ -156,7 +163,7 @@ dependency = {
 
 #Aragon and Sicily, Alfons V/Alfonso I
 dependency = {
-	subject_type = "aragonese_crown_PU"
+	subject_type = aragonese_crown_PU
 	first = ARA
 	second = NAP
 	start_date = 1442.3.3
@@ -169,7 +176,7 @@ dependency = {
 
 #Get's created through event!!! 
 dependency = {
-	subject_type = "aragonese_crown_PU"
+	subject_type = aragonese_crown_PU
 	first = ARA
 	second = NAV
 	start_date = 1458.6.29
@@ -422,50 +429,50 @@ union = {
 
 #VU additions by Prussia and integrated by SF
 dependency = {
-	subject_type = "spanish_crown_PU"
+	subject_type = spanish_crown_PU
 	first = CAS
 	second = LON
-	start_date = 1230.12.10
+	start_date = 1444.1.1 #Was 1230.12.10
 	end_date = 1903.12.31
 }
 
 dependency = {
-	subject_type = "spanish_crown_PU"
+	subject_type = spanish_crown_PU
 	first = CAS
 	second = ASU
-	start_date = 1388.12.1
+	start_date = 1444.1.1 #Was 1388.12.1
 	end_date = 1903.12.31
 }
 
 dependency = {
-	subject_type = "spanish_crown_PU"
+	subject_type = spanish_crown_PU
 	first = CAS
 	second = TLD
-	start_date = 1085.1.1
+	start_date = 1444.1.1 #Was 1085.1.1
 	end_date = 1833.1.1
 }
 
 dependency = {
-	subject_type = "spanish_crown_PU"
+	subject_type = spanish_crown_PU
 	first = CAS
 	second = MUR
-	start_date = 1266.12.1
+	start_date = 1444.1.1 #Was 1266.12.1
 	end_date = 1833.1.1
 }
 
 dependency = {
-	subject_type = "spanish_crown_PU"
+	subject_type = spanish_crown_PU
 	first = CAS
 	second = CDB
-	start_date = 1236.1.1
+	start_date = 1444.1.1 #Was 1236.1.1
 	end_date = 1833.1.1
 }
 
 dependency = {
-	subject_type = "spanish_crown_PU"
+	subject_type = spanish_crown_PU
 	first = CAS
 	second = JAE
-	start_date = 1246.1.1
+	start_date = 1444.1.1 #Was 1246.1.1
 	end_date = 1833.1.1
 }
 
@@ -477,26 +484,26 @@ dependency = {
 #}
 
 dependency = {
-	subject_type = "spanish_crown_PU"
+	subject_type = spanish_crown_PU
 	first = CAS
 	second = SVL
-	start_date = 1248.1.1
+	start_date = 1444.1.1 #Was 1248.1.1
 	end_date = 1833.1.1 #Nueva Planta
 }
 
 dependency = {
-	subject_type = "spanish_crown_PU"
+	subject_type = spanish_crown_PU
 	first = CAS
 	second = BDH
-	start_date = 1248.1.1
+	start_date = 1444.1.1 #Was 1248.1.1
 	end_date = 1833.1.1 #Nueva Planta
 }
 
 dependency = {
-	subject_type = "spanish_crown_PU"
+	subject_type = spanish_crown_PU
 	first = CAS
 	second = GAL
-	start_date = 1248.1.1
+	start_date = 1444.1.1 #Was 1248.1.1
 	end_date = 1833.1.1 #Nueva Planta
 }
 
@@ -508,7 +515,7 @@ dependency = {
 	subject_type = "castilian_lordship"
 	first = CAS
 	second = ALV
-	start_date = 1248.1.1
+	start_date = 1444.1.1 #Was 1248.1.1
 	end_date = 1833.1.1 #Nueva Planta
 }
 
@@ -516,7 +523,7 @@ dependency = {
 	subject_type = "castilian_lordship"
 	first = CAS
 	second = GUP
-	start_date = 1248.1.1
+	start_date = 1444.1.1 #Was 1248.1.1
 	end_date = 1833.1.1 #Nueva Planta
 }
 
@@ -524,7 +531,7 @@ dependency = {
 	subject_type = "castilian_lordship"
 	first = CAS
 	second = LBC
-	start_date = 1379.12.1
+	start_date = 1444.1.1 #Was 1379.12.1
 	end_date = 1876.1.1
 }
 
@@ -665,26 +672,26 @@ royal_marriage = {
 # Counties #
 ############
 dependency = {
-	subject_type = "portuguese_county"
+	subject_type = "portuguese_duchy"
 	first = POR
 	second = BZA
-	start_date = 1242.3.1
+	start_date = 1444.1.1 #Was 1242.3.1
 	end_date = 1910.10.5
 }
 
 dependency = {
-	subject_type = "portuguese_county"
+	subject_type = "portuguese_duchy"
 	first = POR
 	second = CIM
-	start_date = 1242.3.1
+	start_date = 1444.1.1 #Was 1242.3.1
 	end_date = 1910.10.5
 }
 
 dependency = {
-	subject_type = "portuguese_county"
+	subject_type = "portuguese_duchy"
 	first = POR
 	second = BJA
-	start_date = 1242.3.1
+	start_date = 1444.1.1 #Was 1242.3.1
 	end_date = 1910.10.5
 }
 
@@ -693,9 +700,9 @@ dependency = {
 ###########################
 
 dependency = {
-	subject_type = "portuguese_crown_PU"
+	subject_type = portuguese_crown_PU
 	first = POR
 	second = AGV
-	start_date = 1242.3.1
+	start_date = 1444.1.1 #Was 1242.3.1
 	end_date = 1910.10.5
 }

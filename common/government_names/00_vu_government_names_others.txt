@@ -430,99 +430,6 @@ ecclesiastical_duchy_niesse = {
 	}
 }
 
-german_nobility = {
-    rank = {
-		1 = GERMAN_LORDSHIP
-		2 = GERMAN_BARONY
-		3 = GERMAN_VISCOUNTY
-        4 = GERMAN_COUNTY
-		5 = GERMAN_MARGRAVIATE
-        6 = GERMAN_DUCHY
-		7 = GERMAN_PRINCIPALITY
-		8 = GERMAN_KINGDOM_VU
-		9 = GERMAN_EMPIRE
-    }
-    
-    ruler_male = {
-		1 = GERMAN_LORD
-		2 = GERMAN_BARON
-		3 = GERMAN_VISCOUNT
-        4 = GERMAN_COUNT
-		5 = GERMAN_MARGRAVE
-        6 = GERMAN_DUKE
-		7 = GERMAN_PRINCE
-		8 = GERMAN_KING
-		9 = GERMAN_EMPEROR
-    }
-
-	ruler_female = {
-		1 = GERMAN_DAME_fem
-		2 = GERMAN_BARONESS_fem
-		3 = GERMAN_VISCOUNTESS_fem
-        4 = GERMAN_COUNTESS_fem
-		5 = GERMAN_MARGRAVINE_fem
-        6 = GERMAN_DUCHESS_fem
-		7 = GERMAN_PRINCESS_fem
-		8 = GERMAN_QUEEN_fem
-		9 = GERMAN_EMPRESS_fem
-    }
-
-	consort_male = {
-		1 = GERMAN_LORD_CONSORT
-		2 = GERMAN_BARON_CONSORT
-		3 = GERMAN_VISCOUNT_CONSORT
-        4 = GERMAN_COUNT_CONSORT
-		5 = GERMAN_MARGRAVE_CONSORT
-        6 = GERMAN_DUKE_CONSORT
-		7 = GERMAN_PRINCE_CONSORT
-		8 = GERMAN_KING_CONSORT
-		9 = GERMAN_EMPEROR_CONSORT
-	}
-	
-	consort_female = {
-		1 = GERMAN_DAME_CONSORT_fem
-		2 = GERMAN_BARONESS_CONSORT_fem
-		3 = GERMAN_VISCOUNTESS_CONSORT_fem
-        4 = GERMAN_COUNTESS_CONSORT_fem
-		5 = GERMAN_MARGRAVINE_CONSORT_fem
-        6 = GERMAN_DUCHESS_CONSORT_fem
-		7 = GERMAN_PRINCESS_CONSORT_fem
-		8 = GERMAN_QUEEN_CONSORT_fem
-		9 = GERMAN_EMPRESS_CONSORT_fem
-	}
-
-	heir_male = {
-		1 = GERMAN_LORD
-		2 = GERMAN_LORD
-		3 = GERMAN_LORD
-        4 = GERMAN_LORD
-		5 = GERMAN_LORD
-        6 = GERMAN_LORD
-		7 = GERMAN_PRINCE
-		8 = GERMAN_PRINCE
-		9 = GERMAN_PRINCE
-	}
-	
-	heir_female = {
-		1 = GERMAN_DAME_fem
-		2 = GERMAN_LADY_fem
-		3 = GERMAN_LADY_fem
-        4 = GERMAN_LADY_fem
-		5 = GERMAN_LADY_fem
-        6 = GERMAN_LADY_fem
-		7 = GERMAN_PRINCESS_fem
-		8 = GERMAN_PRINCESS_fem
-		9 = GERMAN_PRINCESS_fem
-	}
-	
-    trigger = {
-	    culture_group = germanic
-		has_reform = feudalism_reform
-		is_part_of_hre = yes
-		NOT = { has_reform = revolutionary_empire_reform }
-	}
-}
-
 german_electorate = {
     rank = {
 		4 = GERMAN_COUNTY_PALATINATE_ELECTORATE
@@ -1552,47 +1459,10 @@ principality_of_wales = {
 	}
 
     trigger = {
-        primary_culture = welsh
+        primary_culture = celtic_welsh_culture
         has_reform = welsh_principality
     }
 }
-
-#gov_scottish_clan_reform = {
-#	rank = {
-#		1 = SCOTTISH_CLAN
-#	}
-#	
-#	ruler_male = {
-#		1 = SCOTTISH_CHIEFTAIN
-#	}
-#	
-#	ruler_female = {
-#		1 = SCOTTISH_CHIEFTESS_fem
-#	}
-#	
-#	consort_male = {
-#		1 = SCOTTISH_CONSORT
-#	}
-#
-#	consort_female = {
-#		1 = SCOTTISH_CONSORT_fem
-#	}
-#
-#	heir_male = {
-#		1 = SCOTTISH_HEIR
-#	}
-#
-#	heir_female = {
-#		1 = SCOTTISH_HEIRESS_fem
-#	}
-#	
-#	trigger = {
-#		OR = {
-#			has_reform = lowland_clan_reform
-#			has_reform = highland_clan_reform
-#		}
-#	}
-#}
 
 #english_kingdom = {
 #	rank = {
@@ -2187,102 +2057,204 @@ gov_welsh_monarchy = { #Welsh minor kingdoms.
 	}
 }
 
-scottish_vassal_monarchy = {
-	rank = {
-		1 = SCOTTISH_CLAN_1
-		2 = SCOTTISH_CLAN_1
-		3 = SCOTTISH_CLAN_1
-		4 = SCOTTISH_EARLDOM
-		5 = SCOTTISH_PETTY_KINGDOM
-		6 = SCOTTISH_PETTY_KINGDOM
-		7 = SCOTTISH_PETTY_KINGDOM
-		8 = SCOTTISH_PETTY_KINGDOM
-		9 = SCOTTISH_PETTY_KINGDOM
-	}	
-	
-	ruler_male = {
-		1 = SCOTTISH_CHIEFTAIN
-		2 = SCOTTISH_CHIEFTAIN
-		3 = SCOTTISH_CHIEFTAIN
-		4 = SCOTTISH_EARL
-		5 = SCOTTISH_PETTY_KING
-		6 = SCOTTISH_PETTY_KING
-		7 = SCOTTISH_PETTY_KING
-		8 = SCOTTISH_PETTY_KING
-		9 = SCOTTISH_PETTY_KING
-	}
-	
-	ruler_female = {
-		1 = SCOTTISH_CHIEFTESS_fem
-		2 = SCOTTISH_CHIEFTESS_fem
-		3 = SCOTTISH_CHIEFTESS_fem
-		4 = SCOTTISH_COUNTESS_fem
-		5 = SCOTTISH_PETTY_QUEEN_fem
-		6 = SCOTTISH_PETTY_QUEEN_fem
-		7 = SCOTTISH_PETTY_QUEEN_fem
-		8 = SCOTTISH_PETTY_QUEEN_fem
-		9 = SCOTTISH_PETTY_QUEEN_fem
-	}
-	
-	consort_male = {
-		1 = SCOTTISH_CONSORT
-		2 = SCOTTISH_CONSORT
-		3 = SCOTTISH_CONSORT
-		4 = SCOTTISH_CONSORT
-		5 = SCOTTISH_CONSORT
-		6 = SCOTTISH_CONSORT
-		7 = SCOTTISH_CONSORT
-		8 = SCOTTISH_CONSORT
-		9 = SCOTTISH_CONSORT
-	}
+gov_scottish_clan_reform = {
+    rank = {
+        1 = SCOTTISH_CLAN_1
+        2 = SCOTTISH_CLAN_1
+        3 = SCOTTISH_CLAN_2
+        4 = SCOTTISH_EARLDOM
+        5 = SCOTTISH_MARQUISATE
+        6 = SCOTTISH_DUCHY
+        7 = SCOTTISH_PETTY_KINGDOM
+        8 = SCOTTISH_HIGH_KINGDOM
+        9 = SCOTTISH_KINGDOM
+    }
 
-	consort_female = {
-		1 = SCOTTISH_CONSORT_fem
-		2 = SCOTTISH_CONSORT_fem	
-		3 = SCOTTISH_CONSORT_fem
-		4 = SCOTTISH_CONSORT_fem
-		5 = SCOTTISH_CONSORT_fem
-		6 = SCOTTISH_CONSORT_fem
-		7 = SCOTTISH_CONSORT_fem
-		8 = SCOTTISH_CONSORT_fem	
-		9 = SCOTTISH_CONSORT_fem
-	}
-	
-	heir_male = {
-		1 = SCOTTISH_HEIR
-		2 = SCOTTISH_HEIR
-		3 = SCOTTISH_HEIR
-		4 = SCOTTISH_HEIR
-		5 = SCOTTISH_HEIR
-		6 = SCOTTISH_HEIR
-		7 = SCOTTISH_HEIR
-		8 = SCOTTISH_HEIR
-		9 = SCOTTISH_HEIR
-	}
+    ruler_male = {
+        1 = SCOTTISH_CHIEFTAIN
+        2 = SCOTTISH_CHIEFTAIN
+        3 = SCOTTISH_CHIEFTAIN
+        4 = SCOTTISH_EARL
+        5 = SCOTTISH_MARQUEES
+        6 = SCOTTISH_DUKE
+        7 = SCOTTISH_PETTY_KING
+        8 = SCOTTISH_HIGH_KING
+        9 = SCOTTISH_KING
+    }
 
-	heir_female = {
-		1 = SCOTTISH_HEIRESS_fem
-		2 = SCOTTISH_HEIRESS_fem
-		3 = SCOTTISH_HEIRESS_fem
-		4 = SCOTTISH_HEIRESS_fem
-		5 = SCOTTISH_HEIRESS_fem
-		6 = SCOTTISH_HEIRESS_fem
-		7 = SCOTTISH_HEIRESS_fem
-		8 = SCOTTISH_HEIRESS_fem
-		9 = SCOTTISH_HEIRESS_fem
-	}
-	
-	trigger = {
-		government = monarchy
-		overlord = {
-		    OR = {
-			    primary_culture = highland_scottish
-				primary_culture = scottish
-			}
-		}
-		NOT = { has_reform = revolutionary_empire_reform }
-	}
+    ruler_female = {
+        1 = SCOTTISH_CHIEFTESS_fem
+        2 = SCOTTISH_CHIEFTESS_fem
+        3 = SCOTTISH_CHIEFTESS_fem
+        4 = SCOTTISH_COUNTESS_fem
+        5 = SCOTTISH_MARCHIONESS_fem
+        6 = SCOTTISH_DUCHESS_fem
+        7 = SCOTTISH_PETTY_QUEEN_fem
+        8 = SCOTTISH_HIGH_QUEEN_fem
+        9 = SCOTTISH_QUEEN_fem
+    }
+
+    consort_male = {
+        1 = SCOTTISH_CONSORT
+        2 = SCOTTISH_CONSORT
+        3 = SCOTTISH_CONSORT
+        4 = SCOTTISH_EARL_CONSORT
+        5 = SCOTTISH_MARQUEES_CONSORT
+        6 = SCOTTISH_DUKE_CONSORT
+        7 = SCOTTISH_PRINCE_CONSORT
+        8 = SCOTTISH_PRINCE_CONSORT
+        9 = SCOTTISH_PRINCE_CONSORT
+    }
+
+    consort_female = {
+        1 = SCOTTISH_CONSORT_fem
+        2 = SCOTTISH_CONSORT_fem
+        3 = SCOTTISH_CONSORT_fem
+        4 = SCOTTISH_COUNTESS_CONSORT_fem
+        5 = SCOTTISH_MARCHIONESS_CONSORT_fem
+        6 = SCOTTISH_DUCHESS_CONSORT_fem
+        7 = SCOTTISH_PRINCESS_CONSORT_fem
+        8 = SCOTTISH_PRINCESS_CONSORT_fem
+        9 = SCOTTISH_PRINCESS_CONSORT_fem
+    }
+
+    heir_male = {
+        1 = SCOTTISH_HEIR
+        2 = SCOTTISH_HEIR
+        3 = SCOTTISH_HEIR
+        4 = SCOTTISH_HEIR
+        5 = SCOTTISH_HEIR
+        6 = SCOTTISH_PRINCE
+        7 = SCOTTISH_PRINCE
+        8 = SCOTTISH_PRINCE
+        9 = SCOTTISH_PRINCE
+    }
+
+    heir_female = {
+        1 = SCOTTISH_HEIRESS_fem
+        2 = SCOTTISH_HEIRESS_fem
+        3 = SCOTTISH_HEIRESS_fem
+        4 = SCOTTISH_HEIRESS_fem
+        5 = SCOTTISH_HEIRESS_fem
+        6 = SCOTTISH_PRINCESS_fem
+        7 = SCOTTISH_PRINCESS_fem
+        8 = SCOTTISH_PRINCESS_fem
+        9 = SCOTTISH_PRINCESS_fem
+    }
+
+    trigger = {
+        government = monarchy
+        OR = {
+            is_subject_of_type = scottish_clan
+            has_reform = scottish_monarchy
+            have_had_reform = scottish_monarchy
+            has_reform = lowland_clan_reform
+            have_had_reform = lowland_clan_reform
+            has_reform = highland_clan_reform
+            have_had_reform = highland_clan_reform
+			primary_culture = scottish
+			primary_culture = celtic_lowland_scottish
+			primary_culture = celtic_highland_scottish_culture
+        }
+    }
 }
+
+#scottish_vassal_monarchy = {
+#	rank = {
+#		1 = SCOTTISH_CLAN_1
+#		2 = SCOTTISH_CLAN_1
+#		3 = SCOTTISH_CLAN_1
+#		4 = SCOTTISH_EARLDOM
+#		5 = SCOTTISH_PETTY_KINGDOM
+#		6 = SCOTTISH_PETTY_KINGDOM
+#		7 = SCOTTISH_PETTY_KINGDOM
+#		8 = SCOTTISH_PETTY_KINGDOM
+#		9 = SCOTTISH_PETTY_KINGDOM
+#	}	
+#	
+#	ruler_male = {
+#		1 = SCOTTISH_CHIEFTAIN
+#		2 = SCOTTISH_CHIEFTAIN
+#		3 = SCOTTISH_CHIEFTAIN
+#		4 = SCOTTISH_EARL
+#		5 = SCOTTISH_PETTY_KING
+#		6 = SCOTTISH_PETTY_KING
+#		7 = SCOTTISH_PETTY_KING
+#		8 = SCOTTISH_PETTY_KING
+#		9 = SCOTTISH_PETTY_KING
+#	}
+#	
+#	ruler_female = {
+#		1 = SCOTTISH_CHIEFTESS_fem
+#		2 = SCOTTISH_CHIEFTESS_fem
+#		3 = SCOTTISH_CHIEFTESS_fem
+#		4 = SCOTTISH_COUNTESS_fem
+#		5 = SCOTTISH_PETTY_QUEEN_fem
+#		6 = SCOTTISH_PETTY_QUEEN_fem
+#		7 = SCOTTISH_PETTY_QUEEN_fem
+#		8 = SCOTTISH_PETTY_QUEEN_fem
+#		9 = SCOTTISH_PETTY_QUEEN_fem
+#	}
+#	
+#	consort_male = {
+#		1 = SCOTTISH_CONSORT
+#		2 = SCOTTISH_CONSORT
+#		3 = SCOTTISH_CONSORT
+#		4 = SCOTTISH_CONSORT
+#		5 = SCOTTISH_CONSORT
+#		6 = SCOTTISH_CONSORT
+#		7 = SCOTTISH_CONSORT
+#		8 = SCOTTISH_CONSORT
+#		9 = SCOTTISH_CONSORT
+#	}
+#
+#	consort_female = {
+#		1 = SCOTTISH_CONSORT_fem
+#		2 = SCOTTISH_CONSORT_fem	
+#		3 = SCOTTISH_CONSORT_fem
+#		4 = SCOTTISH_CONSORT_fem
+#		5 = SCOTTISH_CONSORT_fem
+#		6 = SCOTTISH_CONSORT_fem
+#		7 = SCOTTISH_CONSORT_fem
+#		8 = SCOTTISH_CONSORT_fem	
+#		9 = SCOTTISH_CONSORT_fem
+#	}
+#	
+#	heir_male = {
+#		1 = SCOTTISH_HEIR
+#		2 = SCOTTISH_HEIR
+#		3 = SCOTTISH_HEIR
+#		4 = SCOTTISH_HEIR
+#		5 = SCOTTISH_HEIR
+#		6 = SCOTTISH_HEIR
+#		7 = SCOTTISH_HEIR
+#		8 = SCOTTISH_HEIR
+#		9 = SCOTTISH_HEIR
+#	}
+#
+#	heir_female = {
+#		1 = SCOTTISH_HEIRESS_fem
+#		2 = SCOTTISH_HEIRESS_fem
+#		3 = SCOTTISH_HEIRESS_fem
+#		4 = SCOTTISH_HEIRESS_fem
+#		5 = SCOTTISH_HEIRESS_fem
+#		6 = SCOTTISH_HEIRESS_fem
+#		7 = SCOTTISH_HEIRESS_fem
+#		8 = SCOTTISH_HEIRESS_fem
+#		9 = SCOTTISH_HEIRESS_fem
+#	}
+#	
+#	trigger = {
+#		government = monarchy
+#		overlord = {
+#		    OR = {
+#			    primary_culture = celtic_highland_scottish_culture
+#				primary_culture = scottish
+#			}
+#		}
+#		NOT = { has_reform = revolutionary_empire_reform }
+#	}
+#}
 
 gov_provincial_kingdom = { #Provincial Kingdom formables Munster, Leinster, Ulster & Connacht, by Irish
 	rank = {
@@ -2923,49 +2895,6 @@ judicate_monarchy = {
 	}
 }
 
-luxembourger_grand_duchy = {
-	rank = {
-		6 = LUX_DUCHY
-		7 = LUX_GRAND_DUCHY
-		8 = LUX_GRAND_DUCHY
-		9 = LUX_GRAND_DUCHY
-	}
-
-	ruler_male = {
-		6 = LUX_DUKE
-		7 = LUX_GRAND_DUKE
-		8 = LUX_GRAND_DUKE
-		9 = LUX_GRAND_DUKE
-	}
-
-	ruler_female = {
-		6 = LUX_DUCHESS_fem
-		7 = LUX_GRAND_DUCHESS_fem
-		8 = LUX_GRAND_DUCHESS_fem
-		9 = LUX_GRAND_DUCHESS_fem
-	}
-
-	heir_male = {
-		6 = LUX_PRINCE
-		7 = LUX_PRINCE
-		8 = LUX_PRINCE
-		9 = LUX_PRINCE
-	}
-
-	heir_female = {
-		6 = LUX_PRINCESS_fem
-		7 = LUX_PRINCESS_fem
-		8 = LUX_PRINCESS_fem
-		9 = LUX_PRINCESS_fem
-	}
-
-	trigger = {
-		government = monarchy
-		tag = LUX
-		NOT = { has_reform = revolutionary_empire_reform }
-	}
-}
-
 pavian_principality = {
 	rank = {
 		4 = PAV_PRINCIPALITY
@@ -2998,7 +2927,7 @@ pavian_principality = {
 ### LAND OF THE FREE ###
 ########################
 
-confederate_republic = {
+confederate_states_republic = {
 	rank = {
 		6 = CONFEDERATE_REPUBLIC
 		7 = HIGH_CONFEDERATE_REPUBLIC
@@ -3015,7 +2944,10 @@ confederate_republic = {
 
 	trigger = {
 		government = republic
-		has_reform = confederate_republic
+		OR = {
+			has_reform = confederate_states_republic
+			have_had_reform = confederate_states_republic
+		}
 	}
 }
 

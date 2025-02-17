@@ -127,7 +127,7 @@ NDiplomacy = {
 	MAX_PEACE_TREATY_COST = 200,					-- in diplo power
 	
 	DESIRED_NUM_OF_ELECTORS = 7,
-	MAX_FREE_CITIES = 50,							-- from 15 to 50 -don
+	MAX_FREE_CITIES = 25,							-- from 15 to 50 -don but brought back down to 25
 	MIN_NUM_ELECTORS_FOR_REMOVE_ELECTORATE = 2,		-- Limit is inclusive.
 	HRE_PRINCE_AUTHORITY_THRESHOLD = 35,			-- Threshold below which you lose IA, and above which you gain it
 	IMPERIAL_AUTHORITY_FROM_PRINCES = 0.075,			-- Scales to threshold
@@ -153,7 +153,7 @@ NDiplomacy = {
 	EXCOMMUNICATE_ACTION_MONTHS = 12, 				-- Excommunication "cooldown" (months)
 	CRUSADE_TIMEOUT_YEARS = 10, 					-- Crusade timeout (years)
 	WE_IMPACT_ON_ANNEX_INTEGRATE = -0.05,			-- multiplied with current WE
-	TRUCE_YEARS = 2.5, 								-- _DDEF_TRUCE_YEARS_; Years of Truce --lowered by don, modus and prussia
+	TRUCE_YEARS = 5, 								-- _DDEF_TRUCE_YEARS_; Years of Truce --lowered by don, modus and prussia
 	SCALED_TRUCE_YEARS = 10,						-- Additional years of truce based on % of warscore taken in war (100% warscore = full scaled truce years)
 	REQUEST_HEIR_TRUCE = 5,
 	REQUEST_HEIR_AE = 20,
@@ -236,8 +236,8 @@ NDiplomacy = {
 	AE_SAME_RELIGION_GROUP = 0.0,
 	AE_DIFFERENT_RELIGION = -0.75,          -- -75% reduction (originally -0.5)
 	AE_HRE_INTERNAL = 0.5,					-- halved by don (undone after some testing)
-	AE_ATTACKER_DEVELOPMENT = 0.004,		-- +50% cap (at 1000 development)
-	AE_DEFENDER_DEVELOPMENT = 0.004,		-- -50% cap (at 1000 development)
+	AE_ATTACKER_DEVELOPMENT = 0.005,		-- +50% cap (at 1000 development) slightly increased from 0.004
+	AE_DEFENDER_DEVELOPMENT = 0.005,		-- -50% cap (at 1000 development) slightly increased from 0.004
 	AE_DISTANCE_BASE = 0.75, 				--0.75 per 100 distance
 	AE_SAME_OVERLORD = 0.5,
 	AE_PROVINCE_CAP = 15,					-- Decreased this to 40 from 50 Province development above this will not count for AE (also used for warscore cost cap) 
@@ -287,8 +287,8 @@ NDiplomacy = {
 	PO_END_RIVALRY_PRESTIGE = 20,
 
 	PEACE_COST_PRIMITIVE_NERF = 0.5,				-- war score cost multiplier vs primitives
-	PEACE_COST_DEMAND_PROVINCE = 0.1,				-- Decreased this to 0.4 from 0.5 Demand a province (scales by province wealth, also used for annex) --halved by Don
-	PEACE_COST_CONCEDE_PROVINCE = 0.1,				-- Demand colonial area province concession. --hlaved by Don
+	PEACE_COST_DEMAND_PROVINCE = 0.2,				-- Decreased this to 0.4 from 0.5 Demand a province (scales by province wealth, also used for annex) --halved by Don
+	PEACE_COST_CONCEDE_PROVINCE = 0.2,				-- Demand colonial area province concession. --hlaved by Don
 	PEACE_COST_BECOME_VASSAL = 0.2,					-- Vassalize a country (scales by province wealth)
 	PEACE_COST_PILLAGE_CAPITAL = 10,				-- Pillage a capital state's dev (scales by province wealth) -- VU increase cost to 10 from 1 to discourage pillaging
 	PEACE_COST_RETURN_CORE = 0.2,					-- Return a core (scales by province wealth)
@@ -362,8 +362,8 @@ NDiplomacy = {
 	ELECTIVE_VICTORY_PRESTIGE = 25,					-- Prestige for getting a heir from your country onto the throne of an elective nation
 	ELECTIVE_VICTORY_LEGITIMACY = 10,				-- Legitimacy for getting a heir from your country onto the throne of an elective nation
 
-	INTEGRATE_UNION_MIN_YEARS = 25,					-- Number of years before a union can be integrated -halved by don and prussia
-	INTEGRATE_VASSAL_MIN_YEARS = 5,				-- Number of years before a vassal can be integrated -halved by don and prussia
+	INTEGRATE_UNION_MIN_YEARS = 25,					-- Number of years before a union can be integrated halved by don from 50 to 25 on Prussia's advice
+	INTEGRATE_VASSAL_MIN_YEARS = 5,				    -- Number of years before a vassal can be integrated -halved by don and prussia
 
 	MONTHS_BEFORE_TOTAL_OCCUPATION = 12,			-- Before this many months have passed in the war, you cannot gain 100% warscore by just occupying the warleader -lowered from 24, because why? -don
 
@@ -622,15 +622,15 @@ NCountry = {
 	PRESTIGE_GAIN_FOR_GOV_RANK_3 = 20,			-- Prestige gained on upgrading to government rank 3 - Vicounty
 	MIN_PRESTIGE_FOR_GOV_RANK_2 = 10,			-- Required prestige to to upgrade to government rank 2
 	MIN_PRESTIGE_FOR_GOV_RANK_3 = 20,			-- Required prestige to to upgrade to government rank 3
-	MIN_DEVELOPMENT_FOR_GOV_RANK_2 = 15,		-- Need at least this much development to upgrade to Viscounty government rank 2
-	MIN_DEVELOPMENT_FOR_GOV_RANK_3 = 0,		-- Need at least this much development to upgrade to County government rank 3
+	MIN_DEVELOPMENT_FOR_GOV_RANK_2 = 30,		-- Need at least this much development to upgrade to Viscounty government rank 2
+	MIN_DEVELOPMENT_FOR_GOV_RANK_3 = 100,		-- Need at least this much development to upgrade to County government rank 3 
 	PRESTIGE_GAIN_FOR_GOV_RANK_X = 30,					-- Prestige gained on upgrading to government rank above 3               Was 25
 	MIN_PRESTIGE_FOR_GOV_RANK_X = 75,					-- Was 75 Required prestige to to upgrade to government above 3                 Was 75
-	ADDITIONAL_MIN_DEVELOPMENT_FOR_GOV_RANK_X = 100,    -- Was 3000 ADDITIONAL development needed to upgrade to government rank above 3   Was 3000
+	ADDITIONAL_MIN_DEVELOPMENT_FOR_GOV_RANK_X = 200,    -- Was 3000 ADDITIONAL development needed to upgrade to government rank above 3   Was 3000 -- Being able to form an empire with 600 dev was a bit too easy
 	MAX_GOV_RANK = 9,									-- Max possible is 10
 
 	PARLIAMENT_BACKING_PERCENTAGE = 25,			-- average percent of seats backing an issue (0-100)
-	PARLIAMENT_EFFECT_DURATION = 10,				-- in years
+	PARLIAMENT_EFFECT_DURATION = 10,			-- in years
 	PARLIAMENT_DEBATE_DURATION = 5,				-- in years
 	NUM_PARLIAMENT_ISSUES = 5,
 	PARLIAMENT_PRESTIGE_HIT = -20,				-- penalty if failed debate.
@@ -667,7 +667,7 @@ NCountry = {
 	POLICY_COST = 1,								-- Monthly cost per policy
 	BASE_POSSIBLE_POLICIES = 4,						-- How many policies in a category a nation can have as a base
 	BASE_FREE_POLICIES = 2,							-- How many policies in a category a nation get for free
-	SEIZE_COURT_RESOURCES_SUBJECT_LOSS_MULTIPLIER = 0.5, --when seizing court resources through interaction, how much does the subject lose as a proportion of what the overlord gains
+	SEIZE_COURT_RESOURCES_SUBJECT_LOSS_MULTIPLIER = 1, --when seizing court resources through interaction, how much does the subject lose as a proportion of what the overlord gains
 	MONTHS_OF_MANPOWER_FOR_SEIZE_COURT_RESOURCES = 12,
 	REQUEST_EXTRA_LEVIES_SUBJECT_LOSS_MULTIPLIER = 0.5, --when requesting extra levies through interaction, how much does the subject lose as a proportion of what the overlord gains
 	MONTHS_OF_MANPOWER_FOR_REQUEST_EXTRA_LEVIES = 12,
@@ -725,11 +725,11 @@ NCountry = {
 	NAT_FOCUS_DECREASE = -1,							-- power taken away from non national focus power
 	NAT_FOCUS_INCREASE = 2,							-- extra power given to national focus power
 	NAT_FOCUS_YEARS = 10,							-- years before you can change focus again
-	NAT_FOCUS_YEARS_RANK = 5,						-- how many years are removed from nat focus cooldown per gov rank above 1
+	NAT_FOCUS_YEARS_RANK = 0,						-- how many years are removed from nat focus cooldown per gov rank above 1 - Set to zero by SF and confirmed by Yeti
 	POWER_MAX = 2500,								-- how much power can be stored at maximum. Set this to 2.5k due to the edumacation mechanic and because of the increase in required power points for certain tasks that Rob has increased the cost of - Darth Modus (minimum value, will increase with missing techs, etc.)
 	DISMANTLE_HRE_PRESTIGE = 100,					-- Prestige gain on dismantling HRE
 	CROWN_LANDS_ALERT_THRESHOLD = 30,
-	FREE_IDEA_GROUP_COST  = 3,						-- modifier on cheapness of "free" idea group
+	FREE_IDEA_GROUP_COST  = 8,						-- modifier on cheapness of "free" idea group #Was 3, set it to 8 because too OP imo, can be revised when we work again on the 1215 bookmark - by Altan
 	CONVERSION_COOLDOWN = 120,						-- months before you can convert again.
 	CONVERSION_COOLDOWN_SECONDARY = 120,			-- months before you can convert secondary religion again.
 
@@ -738,7 +738,7 @@ NCountry = {
 	TECH_AHEAD_OF_TIME = 0.1,		-- per year ahead.
 
 
-	PS_BUY_IDEA = 100,				-- decreased to 100 due to new Idea Groups 
+	PS_BUY_IDEA = 100,				-- decreased to 100 due to new Idea Groups
 	PS_BUY_NATIVE_ADVANCEMENT = 500,
 	PS_BUY_RELIGIOUS_REFORM = 0,
 	PS_ADVANCE_TECH = 600,
@@ -926,8 +926,8 @@ NCountry = {
 	REQUEST_EXTRA_LEVIES_MAX_LIBERTY_DESIRE = 25,
 	REQUEST_EXTRA_LEVIES_COOLDOWN_MONTHS = 60,
 
-	SEIZE_COURT_RESOURCES_MAX_LIBERTY_DESIRE = 25,
-	SEIZE_COURT_RESOURCES_COOLDOWN_MONTHS = 60,
+	SEIZE_COURT_RESOURCES_MAX_LIBERTY_DESIRE = 35,
+	SEIZE_COURT_RESOURCES_COOLDOWN_MONTHS = 180,
 
 	MIN_LIBERTY_DESIRE = 0,							-- Min total (effective) liberty desire
 	MAX_LIBERTY_DESIRE = 100,						-- Max total (effective) liberty desire

@@ -983,7 +983,8 @@ byzantine_missions_1 = {
 		position = 24 
 		trigger = {
 			num_of_owned_provinces_with = {
-				has_building = university 
+				#has_building = university 
+				has_education_building_trigger = yes
 				development = 30 
 				value = 10 
 			}
@@ -1125,7 +1126,7 @@ byzantine_missions_2 = {
 				add_accepted_culture = tuscan 
 				add_accepted_culture = sicilian 
 			}			
-			ME_give_claims = { region = italy_region }
+			VU_give_claims = { region = italy_region }
 		}
 	}
 	
@@ -1449,7 +1450,7 @@ byzantine_missions_2 = {
 				has_owner_religion = yes 
 				OR = {
 					num_of_times_improved = 10 
-					has_building = university 
+					has_building = university
 				}
 			}
 			if = {
@@ -1476,7 +1477,7 @@ byzantine_missions_2 = {
 			358 = {
 				if = {
 					limit = { 
-						has_building = university 
+						has_building = university
 					}
 					owner = {
 						add_country_modifier = {
@@ -2173,7 +2174,7 @@ byzantine_missions_3 = {
 			#}
 			ME_add_or_reset_golden_age = yes
 			custom_tooltip = " "
-			add_government_reform = byzantine_late_autocracy
+			add_government_reform = late_byzantine_imperial_autocracy
 			custom_tooltip = " "
 			custom_tooltip = byz_every_20_dev_province_tt
 			hidden_effect = {
@@ -4182,11 +4183,7 @@ byzantine_missions_5 = {
 		position = 22 
 		trigger = {
 			num_of_owned_provinces_with = {
-				OR = {
-					has_building = naval_base 
-					has_building = naval_arsenal
-					has_building = coastal_artillery
-				}
+				has_coast_defense_building_trigger = yes
 				value = 8 
 			}
 			sailors_percentage = 0.75
@@ -4219,11 +4216,7 @@ byzantine_missions_5 = {
 			hidden_effect = {
 				every_owned_province = {
 					limit = { 
-						OR = {
-							has_building = naval_base 
-							has_building = naval_arsenal
-							has_building = coastal_artillery
-						}
+						has_coast_defense_building_trigger = yes
 					}
 					add_province_modifier = {
 						name = byz_byzantine_coastal_fortifications_modifier

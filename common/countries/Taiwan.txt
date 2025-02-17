@@ -6,6 +6,13 @@ color = { 218  234  15 }
 
 historical_idea_groups = {
 	trade_ideas
+	society_ideas
+	quality_ideas
+	state_affairs_ideas
+	maritime_ideas
+	defensive_ideas
+	light_ship_ideas
+	innovativeness_ideas
 }
 
 historical_units = {
