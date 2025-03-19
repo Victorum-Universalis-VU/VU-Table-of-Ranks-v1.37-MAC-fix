@@ -450,7 +450,7 @@ sacred_kingdom = {
 }
 
 matrilineal_system = {
-	icon = "british_queen"
+	icon = "african_national_geographic_queen"
 	allow_normal_conversion = yes
 	valid_for_nation_designer = yes
 	nation_designer_cost = 30
@@ -462,7 +462,7 @@ matrilineal_system = {
 			primary_culture = rufaa_culture
 			primary_culture = berta_culture
 			primary_culture = luo_culture
-			have_had_reform = matrilineal_system
+			has_reform = matrilineal_system
 		}
 	}
 	trigger = {
@@ -472,7 +472,7 @@ matrilineal_system = {
 			primary_culture = rufaa_culture
 			primary_culture = berta_culture
 			primary_culture = luo_culture
-			have_had_reform = matrilineal_system
+			has_reform = matrilineal_system
 		}
 	}
 	modifiers = {
